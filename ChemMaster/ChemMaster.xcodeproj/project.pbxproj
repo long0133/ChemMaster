@@ -23,6 +23,11 @@
 		4E2A820E1D0DA7A40082D785 /* CYLBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2A820B1D0DA7A40082D785 /* CYLBadgeView.m */; };
 		4E2A820F1D0DA7A40082D785 /* UpImageDownTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2A820D1D0DA7A40082D785 /* UpImageDownTitleButton.m */; };
 		4E2A82131D0DB2970082D785 /* CYLTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2A82121D0DB2970082D785 /* CYLTabBarButton.m */; };
+		4E2A82191D0EE0460082D785 /* CYLHeaderReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2A82181D0EE0460082D785 /* CYLHeaderReusableView.m */; };
+		4E2A821C1D0EE7950082D785 /* CYLEditorChociseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2A821B1D0EE7950082D785 /* CYLEditorChociseModel.m */; };
+		4E2A82221D0FE1C70082D785 /* CYLHightLightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2A82211D0FE1C70082D785 /* CYLHightLightCell.m */; };
+		4E2A82251D0FE2860082D785 /* CYLHightLightModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2A82241D0FE2860082D785 /* CYLHightLightModel.m */; };
+		CE31C95ACD49967E9DCE28CC /* libPods-ChemMaster.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A756A2C6D2E97427A9486FDB /* libPods-ChemMaster.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +82,17 @@
 		4E2A82101D0DA7E30082D785 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		4E2A82111D0DB2970082D785 /* CYLTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTabBarButton.h; sourceTree = "<group>"; };
 		4E2A82121D0DB2970082D785 /* CYLTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLTabBarButton.m; sourceTree = "<group>"; };
+		4E2A82171D0EE0460082D785 /* CYLHeaderReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLHeaderReusableView.h; sourceTree = "<group>"; };
+		4E2A82181D0EE0460082D785 /* CYLHeaderReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLHeaderReusableView.m; sourceTree = "<group>"; };
+		4E2A821A1D0EE7950082D785 /* CYLEditorChociseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLEditorChociseModel.h; sourceTree = "<group>"; };
+		4E2A821B1D0EE7950082D785 /* CYLEditorChociseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLEditorChociseModel.m; sourceTree = "<group>"; };
+		4E2A82201D0FE1C70082D785 /* CYLHightLightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLHightLightCell.h; sourceTree = "<group>"; };
+		4E2A82211D0FE1C70082D785 /* CYLHightLightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLHightLightCell.m; sourceTree = "<group>"; };
+		4E2A82231D0FE2860082D785 /* CYLHightLightModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLHightLightModel.h; sourceTree = "<group>"; };
+		4E2A82241D0FE2860082D785 /* CYLHightLightModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLHightLightModel.m; sourceTree = "<group>"; };
+		730560DAAF9BC4822389DB9E /* Pods-ChemMaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChemMaster.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChemMaster/Pods-ChemMaster.release.xcconfig"; sourceTree = "<group>"; };
+		A756A2C6D2E97427A9486FDB /* libPods-ChemMaster.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChemMaster.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E01F783DFEA3D2E60DFA70CE /* Pods-ChemMaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChemMaster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChemMaster/Pods-ChemMaster.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE31C95ACD49967E9DCE28CC /* libPods-ChemMaster.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +121,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EF9E25ECFB95701308F5A24 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E01F783DFEA3D2E60DFA70CE /* Pods-ChemMaster.debug.xcconfig */,
+				730560DAAF9BC4822389DB9E /* Pods-ChemMaster.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4E2A819A1D0D9BCF0082D785 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +137,8 @@
 				4E2A81BF1D0D9BCF0082D785 /* ChemMasterTests */,
 				4E2A81CA1D0D9BD00082D785 /* ChemMasterUITests */,
 				4E2A81A41D0D9BCF0082D785 /* Products */,
+				2EF9E25ECFB95701308F5A24 /* Pods */,
+				9D8459DEB8A9F70BCD5E3FEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -231,6 +259,10 @@
 		4E2A81E01D0D9E080082D785 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4E2A821A1D0EE7950082D785 /* CYLEditorChociseModel.h */,
+				4E2A821B1D0EE7950082D785 /* CYLEditorChociseModel.m */,
+				4E2A82231D0FE2860082D785 /* CYLHightLightModel.h */,
+				4E2A82241D0FE2860082D785 /* CYLHightLightModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -238,6 +270,10 @@
 		4E2A81E11D0D9E080082D785 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4E2A82171D0EE0460082D785 /* CYLHeaderReusableView.h */,
+				4E2A82181D0EE0460082D785 /* CYLHeaderReusableView.m */,
+				4E2A82201D0FE1C70082D785 /* CYLHightLightCell.h */,
+				4E2A82211D0FE1C70082D785 /* CYLHightLightCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -360,6 +396,14 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		9D8459DEB8A9F70BCD5E3FEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A756A2C6D2E97427A9486FDB /* libPods-ChemMaster.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -367,9 +411,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E2A81D01D0D9BD00082D785 /* Build configuration list for PBXNativeTarget "ChemMaster" */;
 			buildPhases = (
+				42D3EEB4F156F55EC57BAE5E /* 📦 Check Pods Manifest.lock */,
 				4E2A819F1D0D9BCF0082D785 /* Sources */,
 				4E2A81A01D0D9BCF0082D785 /* Frameworks */,
 				4E2A81A11D0D9BCF0082D785 /* Resources */,
+				D05F6E0664A78F23DF183EF1 /* 📦 Embed Pods Frameworks */,
+				6D29B907680187FD3283E301 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -485,21 +532,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		42D3EEB4F156F55EC57BAE5E /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6D29B907680187FD3283E301 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChemMaster/Pods-ChemMaster-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D05F6E0664A78F23DF183EF1 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChemMaster/Pods-ChemMaster-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4E2A819F1D0D9BCF0082D785 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E2A82221D0FE1C70082D785 /* CYLHightLightCell.m in Sources */,
 				4E2A82131D0DB2970082D785 /* CYLTabBarButton.m in Sources */,
 				4E2A820F1D0DA7A40082D785 /* UpImageDownTitleButton.m in Sources */,
 				4E2A82041D0DA6580082D785 /* CYLNaviViewController.m in Sources */,
+				4E2A82251D0FE2860082D785 /* CYLHightLightModel.m in Sources */,
 				4E2A81EF1D0D9FE50082D785 /* CYLDrawViewController.m in Sources */,
 				4E2A81E91D0D9FB90082D785 /* CYLMainViewController.m in Sources */,
 				4E2A81AB1D0D9BCF0082D785 /* AppDelegate.m in Sources */,
+				4E2A821C1D0EE7950082D785 /* CYLEditorChociseModel.m in Sources */,
 				4E2A81F61D0DA0220082D785 /* CYLSearchViewController.m in Sources */,
 				4E2A82051D0DA6580082D785 /* CYLTabBarController.m in Sources */,
 				4E2A81EC1D0D9FCC0082D785 /* CYLMineViewController.m in Sources */,
 				4E2A820E1D0DA7A40082D785 /* CYLBadgeView.m in Sources */,
+				4E2A82191D0EE0460082D785 /* CYLHeaderReusableView.m in Sources */,
 				4E2A82081D0DA6B40082D785 /* CYLTabBar.m in Sources */,
 				4E2A81A81D0D9BCF0082D785 /* main.m in Sources */,
 			);
@@ -632,6 +731,7 @@
 		};
 		4E2A81D11D0D9BD00082D785 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E01F783DFEA3D2E60DFA70CE /* Pods-ChemMaster.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = ChemMaster/Classes/Other/PrefixHeader.pch;
@@ -644,6 +744,7 @@
 		};
 		4E2A81D21D0D9BD00082D785 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 730560DAAF9BC4822389DB9E /* Pods-ChemMaster.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = ChemMaster/Classes/Other/PrefixHeader.pch;
@@ -719,6 +820,7 @@
 				4E2A81D21D0D9BD00082D785 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E2A81D31D0D9BD00082D785 /* Build configuration list for PBXNativeTarget "ChemMasterTests" */ = {
 			isa = XCConfigurationList;
@@ -727,6 +829,7 @@
 				4E2A81D51D0D9BD00082D785 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E2A81D61D0D9BD00082D785 /* Build configuration list for PBXNativeTarget "ChemMasterUITests" */ = {
 			isa = XCConfigurationList;
@@ -735,6 +838,7 @@
 				4E2A81D81D0D9BD00082D785 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -19,6 +19,8 @@
 
 @end
 
+#define color(x) x/255 * 1.0
+
 @implementation CYLTabBarController
 
 - (void)viewDidLoad {
@@ -33,6 +35,8 @@
 {
     CYLTabBar *tabBar = [[CYLTabBar alloc] init];
     tabBar.frame = self.tabBar.bounds;
+    
+    tabBar.backgroundColor = [UIColor grayColor];
     
     tabBar.delegate =self;
     
@@ -58,16 +62,16 @@
 - (void)setUpAllViewContoller
 {
     CYLMainViewController *mainVC = [[CYLMainViewController alloc] init];
-    [self setUpOneViewController:mainVC withImage:[UIImage imageNamed:@"house"] selectedImage:[UIImage imageNamed:@"sel_house"] andTitle:@"首页"];
+    [self setUpOneViewController:mainVC withImage:[UIImage imageNamed:@"home"] selectedImage:[UIImage imageNamed:@"sel_home"] andTitle:@"首页"];
     
     CYLSearchViewController *searchVC = [[CYLSearchViewController alloc] init];
-    [self setUpOneViewController:searchVC withImage:[UIImage imageNamed:@"searching"] selectedImage:[UIImage imageNamed:@"sel_searching"] andTitle:@"搜索"];
+    [self setUpOneViewController:searchVC withImage:[UIImage imageNamed:@"search"] selectedImage:[UIImage imageNamed:@"sel_search"] andTitle:@"搜索"];
     
     CYLDrawViewController *drawVC = [[CYLDrawViewController alloc] init];
-    [self setUpOneViewController:drawVC withImage:[UIImage imageNamed:@"drawing"] selectedImage:[UIImage imageNamed:@"sel_draw"] andTitle:@"绘制"];
+    [self setUpOneViewController:drawVC withImage:[UIImage imageNamed:@"draw"] selectedImage:[UIImage imageNamed:@"sel_draw"] andTitle:@"绘制"];
     
     CYLMineViewController *mineVC = [[CYLMineViewController alloc] init];
-    [self setUpOneViewController:mineVC withImage:[UIImage imageNamed:@"user"] selectedImage:[UIImage imageNamed:@"sel_user"] andTitle:@"用户"];
+    [self setUpOneViewController:mineVC withImage:[UIImage imageNamed:@"mine"] selectedImage:[UIImage imageNamed:@"sel_mine"] andTitle:@"我的"];
     
 }
 

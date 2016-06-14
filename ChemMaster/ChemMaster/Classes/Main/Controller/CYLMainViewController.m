@@ -5,11 +5,20 @@
 //  Created by GARY on 16/6/12.
 //  Copyright © 2016年 GARY. All rights reserved.
 //
-
+#import <WebKit/WebKit.h>
 #import "CYLMainViewController.h"
+#import "CYLHeaderReusableView.h"
+#import "CYLEditorChociseModel.h"
+#import "CYLHightLightCell.h"
+#import "CYLHightLightModel.h"
 
-@interface CYLMainViewController ()
 
+@interface CYLMainViewController ()<CYLHeaderReusableViewDelegate,CYLHightLightCellDelegate>
+@property (nonatomic, strong) NSArray *headerModelArray;
+
+@property (nonatomic, strong) WKWebView *WebView;
+
+@property (nonatomic , strong) NSArray *highLightArray;
 @end
 
 @implementation CYLMainViewController
@@ -20,86 +29,134 @@ static NSString * const reuseIdentifier = @"Cell";
 {
     UICollectionViewFlowLayout *flowLayOut = [[UICollectionViewFlowLayout alloc] init];
     
+    flowLayOut.headerReferenceSize = CGSizeMake(ScreenW, 200);
+    
+    flowLayOut.itemSize = CGSizeMake(ScreenW, 100);
+    
+    flowLayOut.minimumLineSpacing = 20;
+    
     return [super initWithCollectionViewLayout:flowLayOut];
 }
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.collectionView.backgroundColor = [UIColor lightGrayColor];
+
+    [self.collectionView registerClass:[CYLHightLightCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
-    // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    [self.collectionView registerClass:[CYLHeaderReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"header"];
     
-    // Do any additional setup after loading the view.
+    [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"footer"];
+    
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of items
-    return 0;
+
+    return self.highLightArray.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
-    // Configure the cell
+    CYLHightLightCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    
+    cell.model = self.highLightArray[indexPath.row];
+    
+    cell.delegate = self;
     
     return cell;
 }
 
-#pragma mark <UICollectionViewDelegate>
-
-/*
-// Uncomment this method to specify if the specified item should be highlighted during tracking
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
-	return YES;
+- (UICollectionReusableView*)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
+{
+    CYLHeaderReusableView *view = nil;
+    
+    if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
+        
+        view = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"header" forIndexPath:indexPath];
+        
+        if (indexPath.section == 0) {
+    
+            [view HeaderScrollViewWithModelArray:self.headerModelArray];
+            
+            view.delegate = self;
+        }
+        else
+        {
+            view.backgroundColor = randomColor;
+        }
+        
+        
+    }
+    else
+    {
+        view = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"footer" forIndexPath:indexPath];
+    }
+    
+    view.backgroundColor = randomColor;
+    
+    return view;
 }
-*/
 
-/*
-// Uncomment this method to specify if the specified item should be selected
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
-}
-*/
-
-/*
-// Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
-	return NO;
+#pragma CYLHeaderReusableViewDelegate
+#warning 点击推荐显示详情未完成
+//显示webView
+- (void)HeaderReusableView:(CYLHeaderReusableView *)View didChoiceEditorModel:(CYLEditorChociseModel *)model
+{
+    
+   
 }
 
-- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	return NO;
+
+#pragma mark - CYLHightLightCellDelegate
+#warning 返回功能，toolbar添加 未完成
+- (void)HightLightCellDidClickButton:(UIButton *)btn
+{
+    if ([btn.titleLabel.text isEqualToString:@"acs"]) {
+        
+        [self.WebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://pubs.acs.org/"]]];
+    }
+    else if ([btn.titleLabel.text isEqualToString:@"angew"])
+    {
+        [self.WebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://onlinelibrary.wiley.com/"]]];
+    }
+    else
+    {
+        [self.WebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.rsc.org/"]]];
+    }
 }
 
-- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	
+#pragma mark - 懒加载
+- (NSArray *)headerModelArray
+{
+    if (_headerModelArray == nil) {
+        _headerModelArray = [CYLEditorChociseModel modelArray];
+    }
+   return _headerModelArray;
 }
-*/
 
+-(NSArray *)highLightArray
+{
+    if (_highLightArray == nil) {
+        _highLightArray = [CYLHightLightModel highLightModelArray];
+    }
+    return _highLightArray;
+}
+
+- (WKWebView *)WebView{
+    if (_WebView == nil) {
+        _WebView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, ScreenW, ScreenH)];
+        _WebView.allowsBackForwardNavigationGestures = YES;
+        [KWindow addSubview:_WebView];
+    }
+    return _WebView;
+}
 @end
