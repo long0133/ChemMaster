@@ -11,14 +11,16 @@
 #import "CYLEditorChociseModel.h"
 #import "CYLHightLightCell.h"
 #import "CYLHightLightModel.h"
+#import "CYLWebViewController.h"
+
 
 
 @interface CYLMainViewController ()<CYLHeaderReusableViewDelegate,CYLHightLightCellDelegate>
 @property (nonatomic, strong) NSArray *headerModelArray;
 
-@property (nonatomic, strong) WKWebView *WebView;
-
 @property (nonatomic , strong) NSArray *highLightArray;
+
+@property (nonatomic,strong) CYLWebViewController *webVC;
 @end
 
 @implementation CYLMainViewController
@@ -31,7 +33,7 @@ static NSString * const reuseIdentifier = @"Cell";
     
     flowLayOut.headerReferenceSize = CGSizeMake(ScreenW, 200);
     
-    flowLayOut.itemSize = CGSizeMake(ScreenW, 100);
+    flowLayOut.itemSize = CGSizeMake(150, 150);
     
     flowLayOut.minimumLineSpacing = 20;
     
@@ -42,7 +44,7 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.collectionView.backgroundColor = [UIColor lightGrayColor];
+    self.collectionView.backgroundColor = [UIColor whiteColor];
 
     [self.collectionView registerClass:[CYLHightLightCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
@@ -71,6 +73,8 @@ static NSString * const reuseIdentifier = @"Cell";
     cell.model = self.highLightArray[indexPath.row];
     
     cell.delegate = self;
+    
+    cell.backgroundColor = randomColor;
     
     return cell;
 }
@@ -101,8 +105,6 @@ static NSString * const reuseIdentifier = @"Cell";
         view = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"footer" forIndexPath:indexPath];
     }
     
-    view.backgroundColor = randomColor;
-    
     return view;
 }
 
@@ -111,27 +113,34 @@ static NSString * const reuseIdentifier = @"Cell";
 //显示webView
 - (void)HeaderReusableView:(CYLHeaderReusableView *)View didChoiceEditorModel:(CYLEditorChociseModel *)model
 {
-    
-   
+    self.webVC = nil;
+    [self.webVC setUrl:[NSURL URLWithString:[NSString stringWithFormat:@"http://pubs.acs.org/doi/full/%@",model.doi]]];
+    [self.navigationController presentViewController:_webVC animated:YES completion:nil];
 }
 
 
-#pragma mark - CYLHightLightCellDelegate
-#warning 返回功能，toolbar添加 未完成
+#pragma mark - CYLHightLightCellDelegate 点击跳转到网页
 - (void)HightLightCellDidClickButton:(UIButton *)btn
 {
     if ([btn.titleLabel.text isEqualToString:@"acs"]) {
         
-        [self.WebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://pubs.acs.org/"]]];
+        self.webVC = nil;
+        [self.webVC setUrl:[NSURL URLWithString:@"http://pubs.acs.org/"]];
+        
+        
     }
-    else if ([btn.titleLabel.text isEqualToString:@"angew"])
+    else if ([btn.titleLabel.text isEqualToString:@"wiley"])
     {
-        [self.WebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://onlinelibrary.wiley.com/"]]];
+        self.webVC = nil;
+        [self.webVC setUrl:[NSURL URLWithString:@"http://onlinelibrary.wiley.com/"]];
     }
     else
     {
-        [self.WebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.rsc.org/"]]];
+        self.webVC = nil;
+        [self.webVC setUrl:[NSURL URLWithString:@"http://www.rsc.org/"]];
     }
+    
+    [self.navigationController presentViewController:_webVC animated:YES completion:nil];
 }
 
 #pragma mark - 懒加载
@@ -151,12 +160,12 @@ static NSString * const reuseIdentifier = @"Cell";
     return _highLightArray;
 }
 
-- (WKWebView *)WebView{
-    if (_WebView == nil) {
-        _WebView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, ScreenW, ScreenH)];
-        _WebView.allowsBackForwardNavigationGestures = YES;
-        [KWindow addSubview:_WebView];
+-(CYLWebViewController *)webVC
+{
+    if (_webVC == nil) {
+        _webVC = [[CYLWebViewController alloc] init];
     }
-    return _WebView;
+    return _webVC;
 }
+
 @end

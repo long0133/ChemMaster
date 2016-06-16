@@ -2,5 +2,6 @@ target :ChemMaster do
 
 pod 'Masonry'
 pod ‘MJExtension’
-
+pod ‘SDWebImage’
+pod ’hpple’
 end

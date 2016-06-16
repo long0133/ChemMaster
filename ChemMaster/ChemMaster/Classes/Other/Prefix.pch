@@ -1,15 +1,18 @@
 //
-//  PrefixHeader.pch
+//  Prefix.pch
 //  ChemMaster
 //
-//  Created by GARY on 16/6/12.
+//  Created by GARY on 16/6/15.
 //  Copyright © 2016年 GARY. All rights reserved.
 //
+
+
+#import "catagory/UIImage+CYLImageExtension.h"
+
 
 #define ScreenW [UIScreen mainScreen].bounds.size.width
 #define ScreenH [UIScreen mainScreen].bounds.size.height
 #define randomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1]
 #define KWindow [UIApplication sharedApplication].keyWindow
-
-
 #define color(x) x/255 * 1.0
+

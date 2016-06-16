@@ -9,6 +9,8 @@
 #import "CYLHeaderReusableView.h"
 #import "CYLEditorChociseModel.h"
 #import <Masonry.h>
+#import <UIButton+WebCache.h>
+#import <UIImageView+WebCache.h>
 typedef NS_ENUM(NSInteger, CYLFont)
 {
     CYLFontExtraSmall = 10,
@@ -43,6 +45,31 @@ typedef NS_ENUM(NSInteger, CYLFont)
 
 
 @implementation CYLHeaderReusableView
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    NSTimer *timer = [NSTimer timerWithTimeInterval:2.5 target:self selector:@selector(rollTheImage) userInfo:nil repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
+    
+   return [super initWithFrame:frame];
+}
+
+- (void)rollTheImage
+{
+    CGPoint offSet = self.scrollView.contentOffset;
+    
+    offSet.x += ScreenW;
+    
+    [self.scrollView setContentOffset:offSet animated:YES];
+    self.pageControll.currentPage = offSet.x / ScreenW;
+    [self showAbstractWithIndex:_pageControll.currentPage];
+    
+    if (self.scrollView.contentOffset.x >= self.scrollView.contentSize.width - ScreenW) {
+        [self.scrollView setContentOffset:CGPointZero animated:YES];
+        self.pageControll.currentPage = 0;
+        [self showAbstractWithIndex:_pageControll.currentPage];
+    }
+}
 
 #pragma mark - 懒加载
 - (NSMutableArray *)scrollViewBtnArray
@@ -92,6 +119,7 @@ typedef NS_ENUM(NSInteger, CYLFont)
     [self showAbstractWithIndex:0];
 }
 
+
 //设置scrollview
 - (void)setUpScrollView
 {
@@ -128,26 +156,29 @@ typedef NS_ENUM(NSInteger, CYLFont)
                     picPath = dict[@"imageHighResRelativeURL"];
                 }
             }
-            
-            NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://pubs.acs.org/editorschoice/%@",picPath]]];
-        
-           dispatch_async(dispatch_get_main_queue(), ^{
-              
-               UIButton *imageBtn = [[UIButton alloc] initWithFrame:CGRectMake(i * ScreenW, 0, ScreenW, self.scrollView.frame.size.height)];
-               
-               imageBtn.tag = i;
-               
-               [imageBtn setImage:[UIImage imageWithData:data] forState:UIControlStateNormal];
-               
-               [imageBtn addTarget:self action:@selector(imageBtnDIdClick:) forControlEvents:UIControlEventTouchUpInside];
-               
-               [self.scrollView addSubview:imageBtn];
-               
-               [self.scrollViewBtnArray addObject:imageBtn];
-           });
+            dispatch_async(dispatch_get_main_queue(), ^{
+                
+                UIButton *imageBtn = [[UIButton alloc] initWithFrame:CGRectMake(i * ScreenW, 0, ScreenW, self.scrollView.frame.size.height)];
+                
+                imageBtn.tag = i;
+                
+                NSString *imageUrl = [NSString stringWithFormat:@"http://pubs.acs.org/editorschoice/%@",picPath];
+                
+                [imageBtn sd_setImageWithURL:[NSURL URLWithString:imageUrl] forState:UIControlStateNormal placeholderImage:[UIImage imageNamed:@"placehoder"]];
+                
+                [imageBtn addTarget:self action:@selector(imageBtnDIdClick:) forControlEvents:UIControlEventTouchUpInside];
+                
+                imageBtn.backgroundColor = [UIColor whiteColor];
+                
+                [self.scrollView addSubview:imageBtn];
+                
+                [self.scrollViewBtnArray addObject:imageBtn];
+            });
         });
     }
 }
+
+
 
 //设置pageControll
 - (void)setUpPageControll
@@ -160,7 +191,7 @@ typedef NS_ENUM(NSInteger, CYLFont)
     
     _pageControll.currentPageIndicatorTintColor = [UIColor yellowColor];
     
-    _pageControll.pageIndicatorTintColor = [UIColor lightGrayColor];
+    _pageControll.pageIndicatorTintColor = [UIColor whiteColor];
     
     [self addSubview:_pageControll];
 }
@@ -199,11 +230,11 @@ typedef NS_ENUM(NSInteger, CYLFont)
         make.height.mas_equalTo(20);
     }];
     
-//    [_descLable mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.left.right.equalTo(self);
-//        make.top.equalTo(_coverView).offset(2);
-//        make.bottom.equalTo(_pageControll.mas_top).offset(12);
-//    }];
+    [_descLable mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(self);
+        make.top.equalTo(_coverView).offset(15);
+        make.bottom.equalTo(_pageControll.mas_top).offset(12);
+    }];
 }
 
 
@@ -222,18 +253,9 @@ typedef NS_ENUM(NSInteger, CYLFont)
 {
     CYLEditorChociseModel *model = _modelArray[index];
     
-    NSMutableDictionary *attribute = [NSMutableDictionary dictionary];
-    
-    attribute[NSFontAttributeName] = [UIFont systemFontOfSize:CYLFontsmall];
-    
-    CGRect rect = [model.articleAbstract boundingRectWithSize:CGSizeMake(ScreenW, _coverView.frame.size.height) options:NSStringDrawingUsesLineFragmentOrigin attributes:attribute context:nil];
-    
     self.journalLable.text = model.journal[@"abbrevJournalTitle"];
-    
-    self.descLable.frame = CGRectMake(0, _coverView.frame.origin.y + 5, rect.size.width, rect.size.height);
-    
-    self.descLable.text = model.articleAbstract;
-    
+
+    self.descLable.text = model.articleAbstract;    
 }
 
 

@@ -14,9 +14,11 @@
 {
     _model = model;
     
-    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, ScreenW, self.frame.size.height)];
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, self.contentView.frame.size.width, self.contentView.frame.size.height)];
     
-    [btn setImage:model.img forState:UIControlStateNormal];
+    [btn setBackgroundImage:model.img forState:UIControlStateNormal];
+    
+    [btn.imageView sizeToFit];
     
     [btn setTitle:model.journalName forState:UIControlStateNormal];
     [btn setTitleColor:[UIColor clearColor] forState:UIControlStateNormal];

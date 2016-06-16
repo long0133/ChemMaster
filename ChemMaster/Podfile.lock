@@ -1,15 +1,23 @@
 PODS:
+  - hpple (0.2.0)
   - Masonry (1.0.0)
   - MJExtension (3.0.10)
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
 
 DEPENDENCIES:
+  - hpple
   - Masonry
   - MJExtension
+  - SDWebImage
 
 SPEC CHECKSUMS:
+  hpple: 3b765f96fc2cd56ad1a49aef6f7be5cb2aa64b57
   Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
   MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
 
-PODFILE CHECKSUM: 949ed6241d8799a11d7b226fec3836bdd421ebbe
+PODFILE CHECKSUM: 01b2c96e7db1b2bf07a7aa5679d626e5fe8850f3
 
 COCOAPODS: 1.0.0
