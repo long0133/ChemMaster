@@ -35,9 +35,8 @@
 {
     if (_resultVC == nil) {
         _resultVC = [CYLResultViewController ResultViewControllerWithResultArray:self.resultArray andHtmlData:self.htmlData];
-        _resultVC.view.hidden = YES;
-//        [self.view addSubview:_resultVC.view];
-//        [self addChildViewController:_resultVC];
+        _resultVC.hidesBottomBarWhenPushed = YES;
+        _resultVC.title = @"搜索结果";
         
     }
     return _resultVC;
@@ -71,6 +70,7 @@
     [self.view addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(resignKeyBoard)]];
     
     [self setUpUI];
+
 }
 
 - (void)resignKeyBoard
@@ -90,6 +90,9 @@
     
     _TextField = [[UITextField alloc] init];
     _TextField.borderStyle = UITextBorderStyleRoundedRect;
+    self.TextField.font = [UIFont systemFontOfSize:10];
+    _TextField.clearButtonMode = UITextFieldViewModeWhileEditing;
+    self.TextField.placeholder = @"请输入反应名称 如:Claisen";
     [self.view addSubview:_TextField];
     
     _selectBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -170,7 +173,7 @@
         
         [self.resultArray removeAllObjects];
         
-        self.resultVC.view.hidden = NO;
+//        self.resultVC.view.hidden = NO;
         
         NSString *ResultUrlString = [NSString stringWithFormat:@"http://www.organic-chemistry.org/search/search.cgi?zoom_sort=0&zoom_query=%@",self.TextField.text];
         
@@ -215,7 +218,7 @@
             }
         }
         
-        [self.navigationController presentViewController:self.resultVC animated:YES completion:nil];
+        [self.navigationController pushViewController:self.resultVC animated:YES];
         [self.resultVC.tableView reloadData];
         [self resignKeyBoard];
     }//if

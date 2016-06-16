@@ -11,5 +11,5 @@
 @interface CYLReactionDetailViewController : UIViewController
 @property (nonatomic , strong) CYLDetailModel *detailModel;
 
-- (instancetype)initWithDetailModel:(CYLDetailModel*)model;
++ (instancetype)DetailViewControllerWithDetailModel:(CYLDetailModel*)model;
 @end

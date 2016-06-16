@@ -15,7 +15,6 @@
 
 @property (nonatomic, strong) NSArray *resultArray;
 @property (nonatomic, strong) NSData *htmlData;
-@property (nonatomic, strong) UIButton *returnBtn;
 @end
 
 static NSString *ID = @"cell";
@@ -23,11 +22,7 @@ static NSString *ID = @"cell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:ID];
-    
-    
-    self.returnBtn.frame = CGRectMake(ScreenW - 44, ScreenH - 44, 44, 44);
 }
 
 + (instancetype)ResultViewControllerWithResultArray:(NSArray*)array andHtmlData:(NSData*)data;
@@ -70,7 +65,7 @@ static NSString *ID = @"cell";
     //cell的模型
     CYLResultModel *cellModel = self.resultArray[indexPath.row];
     
-    //detaile的模型
+    //detail的模型
     CYLDetailModel *detailModel = [[CYLDetailModel alloc] init];
     
     //解析html
@@ -90,10 +85,9 @@ static NSString *ID = @"cell";
         for (TFHppleElement *subElement in [element.children[1] children]) {
             
             //获取相关反应的链接
-            NSString *RRURL = [subElement objectForKey:@"herf"];
+            NSString *RRURL = [subElement objectForKey:@"href"];
             
             if (RRURL != NULL) {
-                
                 NSString *fullPath = [NSString stringWithFormat:@"http://www.organic-chemistry.org/namedreactions/%@", [subElement objectForKey:@"href"]];
                 
                 [detailModel.RRURL_stringArray addObject:fullPath];
@@ -119,8 +113,9 @@ static NSString *ID = @"cell";
     }
     
     //弹出内容显示界面
-    CYLReactionDetailViewController *RVC = [[CYLReactionDetailViewController alloc]initWithDetailModel:detailModel];
-    [self.navigationController presentViewController:RVC animated:YES completion:nil];
+    CYLReactionDetailViewController *RVC = [CYLReactionDetailViewController DetailViewControllerWithDetailModel:detailModel];
+    [self.navigationController presentViewController:RVC animated:YES completion:^{
+    }];
     
 }
 
@@ -144,21 +139,5 @@ static NSString *ID = @"cell";
 -(BOOL)prefersStatusBarHidden
 {
     return  YES;
-}
-
-- (UIButton *)returnBtn
-{
-    if (_returnBtn == nil) {
-        _returnBtn = [[UIButton alloc] init];
-        [_returnBtn setImage:[UIImage imageNamed:@"Cancel-icon"] forState:UIControlStateNormal];
-        [_returnBtn addTarget:self action:@selector(returnToSearch) forControlEvents:UIControlEventTouchUpInside];
-        [self.view addSubview:_returnBtn];
-    }
-    return _returnBtn;
-}
-
-- (void)returnToSearch
-{
-    [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end
