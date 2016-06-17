@@ -12,11 +12,11 @@
 
 +(NSArray *)highLightModelArray
 {
-    CYLHightLightModel *acs = [self modelWithImage:[UIImage imageCompressForSize:[UIImage imageNamed:@"acs"] targetSize:CGSizeMake(150, 150)] andName:@"acs"];
+    CYLHightLightModel *acs = [self modelWithImage:[UIImage imageNamed:@"acs"] andName:@"acs"];
     
-     CYLHightLightModel *wiley = [self modelWithImage:[UIImage imageCompressForSize:[UIImage imageNamed:@"wiley"] targetSize:CGSizeMake(150, 150)] andName:@"wiley"];
+     CYLHightLightModel *wiley = [self modelWithImage:[UIImage imageNamed:@"wiley"] andName:@"wiley"];
     
-     CYLHightLightModel *rsc = [self modelWithImage:[UIImage imageCompressForSize:[UIImage imageNamed:@"rsc"] targetSize:CGSizeMake(150, 150)] andName:@"rsc"];
+     CYLHightLightModel *rsc = [self modelWithImage:[UIImage imageNamed:@"rsc"] andName:@"rsc"];
     
     NSArray *modelArray = @[acs,wiley,rsc];
     

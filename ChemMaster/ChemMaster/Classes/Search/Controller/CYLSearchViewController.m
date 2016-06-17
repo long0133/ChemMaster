@@ -9,6 +9,7 @@
 #import "CYLSearchViewController.h"
 #import "CYLResultModel.h"
 #import "CYLResultViewController.h"
+#import "CYLWebViewController.h"
 #import <Masonry.h>
 #import <TFHpple.h>
 
@@ -17,6 +18,7 @@
 @property (nonatomic, strong) UIImageView *logoView;
 
 @property (nonatomic, strong) UIButton *selectBtn;
+@property (nonatomic , assign) BOOL selectBtnStatus;
 @property (nonatomic ,strong) UIPickerView *selPicker;
 
 @property (nonatomic, strong) NSString *selectedPickerString;
@@ -146,17 +148,21 @@
         make.width.mas_equalTo(30);
         make.height.mas_equalTo(30);
     }];
-    
-//    [_resultVC.view mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.equalTo(self.TextField.mas_bottom).offset(50);
-//        make.left.right.equalTo(self.view);
-//        make.bottom.equalTo(self.view).offset(-44);
-//        make.width.equalTo(self.view);
-//    }];
 }
 
 - (void)selectBtnClicked
 {
+    //修改btn的图标
+    if (_selectBtnStatus) {
+        [_selectBtn setImage:[UIImage imageCompressForSize:[UIImage imageNamed:@"arrow-down"] targetSize:CGSizeMake(10, 10)] forState:UIControlStateNormal];
+    }
+    else
+    {
+        [_selectBtn setImage:[UIImage imageCompressForSize:[UIImage imageNamed:@"Arrows-Up-4-icon"] targetSize:CGSizeMake(10, 10)] forState:UIControlStateNormal];
+    }
+    
+    _selectBtnStatus = !_selectBtnStatus;
+    
     self.selPicker.hidden = !self.selPicker.hidden;
 }
 
@@ -222,6 +228,13 @@
         [self.resultVC.tableView reloadData];
         [self resignKeyBoard];
     }//if
+    else
+    {
+        //选中化合物查询时
+        CYLWebViewController *wenVC = [CYLWebViewController initWithURL:[NSURL URLWithString:@"http://pubchem.ncbi.nlm.nih.gov/compound/702#section=Names-and-Identifiers"]];
+        [self.navigationController presentViewController:wenVC animated:YES completion:nil];
+        
+    }
 }
 
 #pragma mark - pickerView
@@ -260,7 +273,8 @@
     {
         [self.selectBtn setTitle:@"Component:" forState:UIControlStateNormal];
         self.TextField.font = [UIFont systemFontOfSize:10];
-        self.TextField.placeholder = @"请输入化合物名称";
+        self.TextField.placeholder = @"请输入化合物名称,CAS";
     }
+    self.TextField.text = nil;
 }
 @end

@@ -8,6 +8,7 @@
 
 #import "CYLReactionDetailViewController.h"
 #import <UIImageView+WebCache.h>
+#import <UIButton+WebCache.h>
 @interface CYLReactionDetailViewController ()
 
 @property (nonatomic, strong) UIScrollView *contentScrollView;
@@ -18,9 +19,23 @@
 
 @property (nonatomic, assign) NSInteger CurrentH;
 
+@property (nonatomic, strong) UIView *CoverView;
+
+@property (nonatomic, strong) UIImageView *bigImageView;
+
+@property (nonatomic, strong) NSMutableArray *imageCache;
+
 @end
 
 @implementation CYLReactionDetailViewController
+
+- (NSMutableArray *)imageCache
+{
+    if (_imageCache == nil) {
+        _imageCache = [NSMutableArray array];
+    }
+    return _imageCache;
+}
 
 -(NSMutableArray *)scrollSubViewsArray
 {
@@ -55,6 +70,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    self.contentScrollView.backgroundColor = [UIColor colorWithRed:0.96 green:0.96 blue:0.86 alpha:1];
     self.contentScrollView.backgroundColor = [UIColor lightGrayColor];
     
     _cancleBtn = [[UIButton alloc] initWithFrame:CGRectMake(ScreenW - 44, ScreenH - 44, 33, 33)];
@@ -67,7 +83,8 @@
 - (NSInteger)caculateContentSizeForScrollView
 {
     //取出内容数组
-    NSArray *contentArray = self.detailModel.contentArray;
+    NSMutableArray *contentArray = self.detailModel.contentArray;
+    [contentArray removeLastObject];
     
     NSInteger i = 0;
     
@@ -106,6 +123,16 @@
 #pragma mark - contentArray中的text String 的处理
 - (void)textStringTreatmentFromContentString:(NSString*)contentString
 {
+//    NSArray *subStringArray = [contentString componentsSeparatedByString:@" "];
+//    NSMutableArray *temp = [NSMutableArray array];
+//    for (__strong NSString *subString in subStringArray) {
+////        subString = [subString stringByReplacingOccurrencesOfString:@";\n" withString:@" "];
+//        subString = [subString stringByReplacingOccurrencesOfString:@" " withString:@""];
+//        [temp addObject:subString];
+//    }
+//    NSLog(@"%@",temp);
+    
+    
     //处理字符串 删除标签
     contentString = [contentString stringByReplacingOccurrencesOfString:@"<i>" withString:@""];
     contentString = [contentString stringByReplacingOccurrencesOfString:@"</i>" withString:@""];
@@ -114,6 +141,9 @@
     ;
     contentString = [contentString stringByReplacingOccurrencesOfString:@".shtm" withString:@""];
     contentString = [contentString stringByReplacingOccurrencesOfString:@">" withString:@""];
+    contentString = [NSString stringWithFormat:@"  %@",contentString];
+    contentString = [contentString stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    
     UILabel *lable = [[UILabel alloc] init];
     lable.font = [UIFont systemFontOfSize:13];
     lable.numberOfLines = 0;
@@ -141,48 +171,105 @@
 {
     //如果是图片
     //图片URL
-    
+    NSLog(@"%@",contentString);
+    if ([contentString containsString:@"href"]) {//去除lecture内容
+        return;
+    }
+    contentString = [contentString stringByReplacingOccurrencesOfString:@"GIF" withString:@"gif"];
     NSString *imageURL = nil;
+//    if ([contentString containsString:@"width"]) {
     
-    if ([contentString containsString:@"width"]) {
-        
         //img含有宽高信息
-        NSRange range = NSMakeRange(10, 11);
+        NSRange ScrRange = [contentString rangeOfString:@"src="""];
+        NSRange gifRange = [contentString rangeOfString:@".gif"];
         
-        NSString *subString = [contentString substringWithRange:range];
+        NSInteger startPoint = (ScrRange.location + ScrRange.length + 1);
+        NSInteger length = ((gifRange.location + gifRange.length) - (ScrRange.location + ScrRange.length) - 1);
         
-        imageURL = [NSString stringWithFormat:@"http://www.organic-chemistry.org/namedreactions/%@",subString];
-    }
-    else if ([contentString containsString:@"border"])
-    { //截取的img不带图片宽高信息 但有border信息
-        NSString *subString = [contentString substringFromIndex:21];
-        subString = [subString substringToIndex:subString.length - 3];
+        NSRange currectRange = NSMakeRange(startPoint,length);
         
-        imageURL = [NSString stringWithFormat:@"http://www.organic-chemistry.org/namedreactions/%@",subString];
-        imageURL = [imageURL stringByReplacingOccurrencesOfString:@"""" withString:@""];
-        
-    }
-    else
-    {
-        //img不含任何属性
-        NSString *subString = [contentString substringFromIndex:10];
-        subString = [subString substringToIndex:subString.length - 3];
+        NSString *subString = [contentString substringWithRange:currectRange];
         
         imageURL = [NSString stringWithFormat:@"http://www.organic-chemistry.org/namedreactions/%@",subString];
+//    }
+//    else if ([contentString containsString:@"border"])
+//    { //截取的img不带图片宽高信息 但有border信息
+//        NSString *subString = [contentString substringFromIndex:21];
+//        subString = [subString substringToIndex:subString.length - 3];
+//        
+//        imageURL = [NSString stringWithFormat:@"http://www.organic-chemistry.org/namedreactions/%@",subString];
+//        imageURL = [imageURL stringByReplacingOccurrencesOfString:@"""" withString:@""];
+//    }
+//    else
+//    {
+//        //img不含任何属性
+//        NSString *subString = [contentString substringFromIndex:10];
+//        subString = [subString substringToIndex:subString.length - 3];
+//        
+//        imageURL = [NSString stringWithFormat:@"http://www.organic-chemistry.org/namedreactions/%@",subString];
+//        
+//    }
+    
+    //最终处理字符串URL使其不带无关尾巴
+    if (!([[imageURL substringFromIndex:imageURL.length - 1] isEqualToString:@"f"] || [[imageURL substringFromIndex:imageURL.length - 1] isEqualToString:@"F"])) {
+        
+        NSRange range = NSMakeRange(0, 0);
+        if ([imageURL containsString:@"gif"]) {
+            range = [imageURL rangeOfString:@"gif"];
+            imageURL = [imageURL substringToIndex:(range.location + range.length)];
+        }
+        else
+        {
+            range = [imageURL rangeOfString:@"GIF"];
+            imageURL = [imageURL substringToIndex:(range.location + range.length)];
+        }
         
     }
     
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, _CurrentH, ScreenW, 70)];
-    imageView.contentMode = UIViewContentModeScaleAspectFit;
+    UIButton *imageButton = [[UIButton alloc] initWithFrame:CGRectMake(0, _CurrentH, ScreenW, 70)];
     
-    [imageView sd_setImageWithURL:[NSURL URLWithString:imageURL]];
+    [imageButton setContentMode:UIViewContentModeScaleAspectFit];
+    [imageButton sd_setBackgroundImageWithURL:[NSURL URLWithString:imageURL] forState:UIControlStateNormal];
+    [imageButton addTarget:self action:@selector(ShowBigImage:) forControlEvents:UIControlEventTouchUpInside];
     
-    [self.scrollSubViewsArray addObject:imageView];
-    _CurrentH += imageView.frame.size.height;
-    
+    [self.scrollSubViewsArray addObject:imageButton];
+    _CurrentH += imageButton.frame.size.height;
 
 }
 
+- (void)ShowBigImage:(UIButton*)btn
+{
+    
+    [self CoverView];
+    
+    _bigImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height/3, ScreenW,self.view.frame.size.height/3)];
+    _bigImageView.contentMode = UIViewContentModeScaleAspectFit;
+    [KWindow addSubview:_bigImageView];
+    
+    _bigImageView.image = btn.currentBackgroundImage;
+}
+
+- (UIView *)CoverView
+{
+    if (_CoverView == nil) {
+        _CoverView = [[UIView alloc] initWithFrame:self.view.frame];
+        [KWindow addSubview:_CoverView];
+        _CoverView.backgroundColor = [UIColor blackColor];
+        _CoverView.alpha = 0.7;
+        
+        [_CoverView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeCover)]];
+    }
+    return _CoverView;
+}
+
+- (void)closeCover
+{
+    [_bigImageView removeFromSuperview];
+    _bigImageView = nil;
+    
+    [self.CoverView removeFromSuperview];
+    self.CoverView = nil;
+}
 
 - (void)dismiss
 {

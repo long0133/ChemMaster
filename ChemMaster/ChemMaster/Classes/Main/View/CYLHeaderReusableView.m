@@ -119,7 +119,7 @@ typedef NS_ENUM(NSInteger, CYLFont)
     [self showAbstractWithIndex:0];
 }
 
-
+#pragma mark - 获取json数据
 //设置scrollview
 - (void)setUpScrollView
 {
@@ -255,7 +255,11 @@ typedef NS_ENUM(NSInteger, CYLFont)
     
     self.journalLable.text = model.journal[@"abbrevJournalTitle"];
 
-    self.descLable.text = model.articleAbstract;    
+    NSString *descString = [model.articleAbstract stringByReplacingOccurrencesOfString:@"<p>" withString:@""];
+    descString = [descString stringByReplacingOccurrencesOfString:@"<sub>" withString:@""];
+    descString = [descString stringByReplacingOccurrencesOfString:@"</sub>" withString:@""];
+    
+    self.descLable.text = descString;
 }
 
 

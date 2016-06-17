@@ -33,9 +33,9 @@ static NSString * const reuseIdentifier = @"Cell";
     
     flowLayOut.headerReferenceSize = CGSizeMake(ScreenW, 200);
     
-    flowLayOut.itemSize = CGSizeMake(150, 150);
+    flowLayOut.itemSize = CGSizeMake(ScreenW, 80);
     
-    flowLayOut.minimumLineSpacing = 20;
+    flowLayOut.minimumLineSpacing = 30;
     
     return [super initWithCollectionViewLayout:flowLayOut];
 }
@@ -73,8 +73,6 @@ static NSString * const reuseIdentifier = @"Cell";
     cell.model = self.highLightArray[indexPath.row];
     
     cell.delegate = self;
-    
-    cell.backgroundColor = randomColor;
     
     return cell;
 }

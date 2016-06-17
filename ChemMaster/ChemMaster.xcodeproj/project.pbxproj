@@ -521,6 +521,7 @@
 				TargetAttributes = {
 					4E2A81A21D0D9BCF0082D785 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = WNNZLJCCS5;
 					};
 					4E2A81BB1D0D9BCF0082D785 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -786,11 +787,13 @@
 			baseConfigurationReference = E01F783DFEA3D2E60DFA70CE /* Pods-ChemMaster.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = ChemMaster/Classes/Other/Prefix.pch;
 				INFOPLIST_FILE = ChemMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-01.ChemMaster";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -799,11 +802,13 @@
 			baseConfigurationReference = 730560DAAF9BC4822389DB9E /* Pods-ChemMaster.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = ChemMaster/Classes/Other/Prefix.pch;
 				INFOPLIST_FILE = ChemMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-01.ChemMaster";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
