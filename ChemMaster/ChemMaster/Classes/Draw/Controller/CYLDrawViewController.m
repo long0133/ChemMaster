@@ -7,12 +7,17 @@
 //
 
 #import "CYLDrawViewController.h"
-
+#import "CYLDrawView.h"
 @interface CYLDrawViewController ()
 
 @end
 
 @implementation CYLDrawViewController
+
+- (void)loadView
+{
+    self.view = [[CYLDrawView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

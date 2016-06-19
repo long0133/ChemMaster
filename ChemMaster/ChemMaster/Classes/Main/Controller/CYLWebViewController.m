@@ -112,24 +112,33 @@
         
         //设置按钮
         UIImage *goBackImage = [UIImage imageNamed:@"Arrows-Back-icon"];
-        goBackImage = [UIImage imageCompressForSize:goBackImage targetSize:CGSizeMake(30, 30)];
-        UIBarButtonItem *goBack = [[UIBarButtonItem alloc] initWithImage:goBackImage style:UIBarButtonItemStyleDone target:self action:@selector(Back)];
+        UIButton *GoBanckBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 35, 35)];
+        [GoBanckBtn setImage:goBackImage forState:UIControlStateNormal];
+        [GoBanckBtn addTarget:self action:@selector(Back) forControlEvents:UIControlEventTouchUpInside];
+        UIBarButtonItem *goBack = [[UIBarButtonItem alloc] initWithCustomView:GoBanckBtn];
         
         UIImage *forwardImage = [UIImage imageNamed:@"Arrows-Forward-icon"];
-        forwardImage = [UIImage imageCompressForSize:forwardImage targetSize:CGSizeMake(30, 30)];
-        UIBarButtonItem *forward = [[UIBarButtonItem alloc] initWithImage:forwardImage style:UIBarButtonItemStyleDone target:self action:@selector(Forward)];
+        UIButton *forwardBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 35, 35)];
+        [forwardBtn setImage:forwardImage forState:UIControlStateNormal];
+        [forwardBtn addTarget:self action:@selector(Forward) forControlEvents:UIControlEventTouchUpInside];
+        UIBarButtonItem *forwar = [[UIBarButtonItem alloc] initWithCustomView:forwardBtn];
+        
         
         UIBarButtonItem *spacing = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
         
-        UIImage *refreshImage = [UIImage imageNamed:@"Refresh-icon"];
-        refreshImage = [UIImage imageCompressForSize:refreshImage targetSize:CGSizeMake(30, 30)];
-        UIBarButtonItem *refresh = [[UIBarButtonItem alloc] initWithImage:refreshImage style:UIBarButtonItemStyleDone target:self action:@selector(refresh)];
+        UIImage *RefeshImage = [UIImage imageNamed:@"Refresh-icon"];
+        UIButton *refeshBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 35, 35)];
+        [refeshBtn setImage:RefeshImage forState:UIControlStateNormal];
+        [refeshBtn addTarget:self action:@selector(refresh) forControlEvents:UIControlEventTouchUpInside];
+        UIBarButtonItem *refesh = [[UIBarButtonItem alloc] initWithCustomView:refeshBtn];
         
-        UIImage *cancleImage = [UIImage imageNamed:@"Cancel-icon"];
-        cancleImage = [UIImage imageCompressForSize:cancleImage targetSize:CGSizeMake(30, 30)];
-        UIBarButtonItem *cancle = [[UIBarButtonItem alloc] initWithImage:cancleImage style:UIBarButtonItemStyleDone target:self action:@selector(returnToMain)];
+        UIImage *closeImage = [UIImage imageNamed:@"Cancel-icon"];
+        UIButton *closeBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 35, 35)];
+        [closeBtn setImage:closeImage forState:UIControlStateNormal];
+        [closeBtn addTarget:self action:@selector(returnToMain) forControlEvents:UIControlEventTouchUpInside];
+        UIBarButtonItem *close = [[UIBarButtonItem alloc] initWithCustomView:closeBtn];
         
-        _toolBar.items = @[goBack, forward, spacing, refresh, cancle];
+        _toolBar.items = @[goBack, forwar, spacing, refesh, close];
         
         _toolBar.backgroundColor = randomColor;
         

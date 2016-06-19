@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E1377EC1D152A6900857C36 /* CYLDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1377EB1D152A6900857C36 /* CYLDrawView.m */; };
+		4E1377EF1D152B2400857C36 /* CYLToolBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1377EE1D152B2400857C36 /* CYLToolBarView.m */; };
 		4E2A81A81D0D9BCF0082D785 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2A81A71D0D9BCF0082D785 /* main.m */; };
 		4E2A81AB1D0D9BCF0082D785 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2A81AA1D0D9BCF0082D785 /* AppDelegate.m */; };
 		4E2A81B31D0D9BCF0082D785 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E2A81B21D0D9BCF0082D785 /* Assets.xcassets */; };
@@ -27,6 +29,10 @@
 		4E2A821C1D0EE7950082D785 /* CYLEditorChociseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2A821B1D0EE7950082D785 /* CYLEditorChociseModel.m */; };
 		4E2A82221D0FE1C70082D785 /* CYLHightLightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2A82211D0FE1C70082D785 /* CYLHightLightCell.m */; };
 		4E2A82251D0FE2860082D785 /* CYLHightLightModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2A82241D0FE2860082D785 /* CYLHightLightModel.m */; };
+		4EAC5D821D14094600199DAA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAC5D811D14094600199DAA /* CoreGraphics.framework */; };
+		4EAC5D841D14094D00199DAA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAC5D831D14094D00199DAA /* QuartzCore.framework */; };
+		4EAC5D861D1409E700199DAA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAC5D851D1409E700199DAA /* UIKit.framework */; };
+		4EAC5D881D1409F100199DAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAC5D871D1409F100199DAA /* Foundation.framework */; };
 		4ECC97B81D10F16200D5000C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ECC97B71D10F16200D5000C /* WebKit.framework */; };
 		4ECC97BE1D10F3F800D5000C /* CYLWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECC97BD1D10F3F800D5000C /* CYLWebViewController.m */; };
 		4ECC97C21D11029600D5000C /* UIImage+CYLImageExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECC97C11D11029600D5000C /* UIImage+CYLImageExtension.m */; };
@@ -56,6 +62,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E1377EA1D152A6900857C36 /* CYLDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLDrawView.h; sourceTree = "<group>"; };
+		4E1377EB1D152A6900857C36 /* CYLDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLDrawView.m; sourceTree = "<group>"; };
+		4E1377ED1D152B2400857C36 /* CYLToolBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLToolBarView.h; sourceTree = "<group>"; };
+		4E1377EE1D152B2400857C36 /* CYLToolBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLToolBarView.m; sourceTree = "<group>"; };
 		4E2A81A31D0D9BCF0082D785 /* ChemMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChemMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E2A81A71D0D9BCF0082D785 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4E2A81A91D0D9BCF0082D785 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -97,6 +107,10 @@
 		4E2A82211D0FE1C70082D785 /* CYLHightLightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLHightLightCell.m; sourceTree = "<group>"; };
 		4E2A82231D0FE2860082D785 /* CYLHightLightModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLHightLightModel.h; sourceTree = "<group>"; };
 		4E2A82241D0FE2860082D785 /* CYLHightLightModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLHightLightModel.m; sourceTree = "<group>"; };
+		4EAC5D811D14094600199DAA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4EAC5D831D14094D00199DAA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4EAC5D851D1409E700199DAA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4EAC5D871D1409F100199DAA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4ECC97B71D10F16200D5000C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		4ECC97BC1D10F3F800D5000C /* CYLWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLWebViewController.h; sourceTree = "<group>"; };
 		4ECC97BD1D10F3F800D5000C /* CYLWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLWebViewController.m; sourceTree = "<group>"; };
@@ -122,6 +136,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EAC5D881D1409F100199DAA /* Foundation.framework in Frameworks */,
+				4EAC5D861D1409E700199DAA /* UIKit.framework in Frameworks */,
+				4EAC5D841D14094D00199DAA /* QuartzCore.framework in Frameworks */,
+				4EAC5D821D14094600199DAA /* CoreGraphics.framework in Frameworks */,
 				4ECC97C51D118DEE00D5000C /* libxml2.2.tbd in Frameworks */,
 				4ECC97B81D10F16200D5000C /* WebKit.framework in Frameworks */,
 				CE31C95ACD49967E9DCE28CC /* libPods-ChemMaster.a in Frameworks */,
@@ -257,6 +275,10 @@
 		4E2A81DD1D0D9E080082D785 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4E1377EA1D152A6900857C36 /* CYLDrawView.h */,
+				4E1377EB1D152A6900857C36 /* CYLDrawView.m */,
+				4E1377ED1D152B2400857C36 /* CYLToolBarView.h */,
+				4E1377EE1D152B2400857C36 /* CYLToolBarView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -361,12 +383,9 @@
 		4E2A81F11D0DA0120082D785 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4E2A81F41D0DA0220082D785 /* CYLSearchViewController.h */,
-				4E2A81F51D0DA0220082D785 /* CYLSearchViewController.m */,
-				4ECC97C61D1197D800D5000C /* CYLResultViewController.h */,
-				4ECC97C71D1197D800D5000C /* CYLResultViewController.m */,
-				4ECC97CF1D12818A00D5000C /* CYLReactionDetailViewController.h */,
-				4ECC97D01D12818A00D5000C /* CYLReactionDetailViewController.m */,
+				4EAC5D771D1400C900199DAA /* Search ViewController */,
+				4EAC5D781D1400E500199DAA /* Result ViewController */,
+				4EAC5D791D14010800199DAA /* Result Detail ViewController */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -423,12 +442,47 @@
 		4E2A82091D0DA7A40082D785 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				4EAC5D801D14082800199DAA /* loading Animation */,
 				4E2A820A1D0DA7A40082D785 /* CYLBadgeView.h */,
 				4E2A820B1D0DA7A40082D785 /* CYLBadgeView.m */,
 				4E2A820C1D0DA7A40082D785 /* UpImageDownTitleButton.h */,
 				4E2A820D1D0DA7A40082D785 /* UpImageDownTitleButton.m */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		4EAC5D771D1400C900199DAA /* Search ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4E2A81F41D0DA0220082D785 /* CYLSearchViewController.h */,
+				4E2A81F51D0DA0220082D785 /* CYLSearchViewController.m */,
+			);
+			name = "Search ViewController";
+			sourceTree = "<group>";
+		};
+		4EAC5D781D1400E500199DAA /* Result ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4ECC97C61D1197D800D5000C /* CYLResultViewController.h */,
+				4ECC97C71D1197D800D5000C /* CYLResultViewController.m */,
+			);
+			name = "Result ViewController";
+			sourceTree = "<group>";
+		};
+		4EAC5D791D14010800199DAA /* Result Detail ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4ECC97CF1D12818A00D5000C /* CYLReactionDetailViewController.h */,
+				4ECC97D01D12818A00D5000C /* CYLReactionDetailViewController.m */,
+			);
+			name = "Result Detail ViewController";
+			sourceTree = "<group>";
+		};
+		4EAC5D801D14082800199DAA /* loading Animation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "loading Animation";
 			sourceTree = "<group>";
 		};
 		4ECC97BF1D11027B00D5000C /* catagory */ = {
@@ -443,6 +497,10 @@
 		9D8459DEB8A9F70BCD5E3FEB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4EAC5D871D1409F100199DAA /* Foundation.framework */,
+				4EAC5D851D1409E700199DAA /* UIKit.framework */,
+				4EAC5D831D14094D00199DAA /* QuartzCore.framework */,
+				4EAC5D811D14094600199DAA /* CoreGraphics.framework */,
 				4ECC97C41D118DEE00D5000C /* libxml2.2.tbd */,
 				4ECC97B71D10F16200D5000C /* WebKit.framework */,
 				A756A2C6D2E97427A9486FDB /* libPods-ChemMaster.a */,
@@ -633,6 +691,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E2A82221D0FE1C70082D785 /* CYLHightLightCell.m in Sources */,
+				4E1377EF1D152B2400857C36 /* CYLToolBarView.m in Sources */,
 				4E2A82131D0DB2970082D785 /* CYLTabBarButton.m in Sources */,
 				4E2A820F1D0DA7A40082D785 /* UpImageDownTitleButton.m in Sources */,
 				4E2A82041D0DA6580082D785 /* CYLNaviViewController.m in Sources */,
@@ -644,6 +703,7 @@
 				4ECC97D11D12818A00D5000C /* CYLReactionDetailViewController.m in Sources */,
 				4E2A821C1D0EE7950082D785 /* CYLEditorChociseModel.m in Sources */,
 				4E2A81F61D0DA0220082D785 /* CYLSearchViewController.m in Sources */,
+				4E1377EC1D152A6900857C36 /* CYLDrawView.m in Sources */,
 				4ECC97CB1D1197E900D5000C /* CYLResultModel.m in Sources */,
 				4E2A82051D0DA6580082D785 /* CYLTabBarController.m in Sources */,
 				4E2A81EC1D0D9FCC0082D785 /* CYLMineViewController.m in Sources */,

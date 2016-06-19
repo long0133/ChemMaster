@@ -10,6 +10,7 @@
 #import "CYLResultModel.h"
 #import "CYLDetailModel.h"
 #import "CYLReactionDetailViewController.h"
+#import <SVProgressHUD.h>
 #import <TFHpple.h>
 @interface CYLResultViewController ()
 
@@ -61,62 +62,76 @@ static NSString *ID = @"cell";
 #pragma mark - 点击相应结果，发送请求 解析相应 包装成模型 显示在detailView
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [SVProgressHUD show];
+    tableView.allowsSelection = NO;
     
-    //cell的模型
-    CYLResultModel *cellModel = self.resultArray[indexPath.row];
-    
-    //detail的模型
-    CYLDetailModel *detailModel = [[CYLDetailModel alloc] init];
-    
-    //解析html
-    NSData *htmlData = [NSData dataWithContentsOfURL:[NSURL URLWithString:cellModel.urlString]];
-    
-    TFHpple *parser = [[TFHpple alloc] initWithHTMLData:htmlData];
-    
-    
-    //获得更对信息 以及相关反应内容
-    NSArray *array = [parser searchWithXPathQuery:@"//div[@id='references']"];
-    for (TFHppleElement *element in array) {
-        //获取更多信息的链接
-        NSString *FutherMoreSubUrl = [element.firstChild.children[3] objectForKey:@"href"];
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
         
-        detailModel.FIURL_string = [NSString stringWithFormat:@"http://www.organic-chemistry.org%@",FutherMoreSubUrl];
+        //cell的模型
+        CYLResultModel *cellModel = self.resultArray[indexPath.row];
         
-        for (TFHppleElement *subElement in [element.children[1] children]) {
+        //detail的模型
+        CYLDetailModel *detailModel = [[CYLDetailModel alloc] init];
+        
+        //解析html
+        NSData *htmlData = [NSData dataWithContentsOfURL:[NSURL URLWithString:cellModel.urlString]];
+        
+        TFHpple *parser = [[TFHpple alloc] initWithHTMLData:htmlData];
+        
+        
+        //获得更对信息 以及相关反应内容
+        NSArray *array = [parser searchWithXPathQuery:@"//div[@id='references']"];
+        for (TFHppleElement *element in array) {
+            //获取更多信息的链接
+            NSString *FutherMoreSubUrl = [element.firstChild.children[3] objectForKey:@"href"];
             
-            //获取相关反应的链接
-            NSString *RRURL = [subElement objectForKey:@"href"];
+            detailModel.FIURL_string = [NSString stringWithFormat:@"http://www.organic-chemistry.org%@",FutherMoreSubUrl];
             
-            if (RRURL != NULL) {
-                NSString *fullPath = [NSString stringWithFormat:@"http://www.organic-chemistry.org/namedreactions/%@", [subElement objectForKey:@"href"]];
+            for (TFHppleElement *subElement in [element.children[1] children]) {
                 
-                [detailModel.RRURL_stringArray addObject:fullPath];
+                //获取相关反应的链接
+                NSString *RRURL = [subElement objectForKey:@"href"];
+                
+                if (RRURL != NULL) {
+                    NSString *fullPath = [NSString stringWithFormat:@"http://www.organic-chemistry.org/namedreactions/%@", [subElement objectForKey:@"href"]];
+                    
+                    [detailModel.RRURL_stringArray addObject:fullPath];
+                }
             }
         }
-    }
-    
-    //获得概述内容
-    NSArray *pElements = [parser searchWithXPathQuery:@"//p"];
-    
-    for (TFHppleElement *pElement in pElements) {
         
-        NSString *raw = [pElement.raw stringByReplacingOccurrencesOfString:@"<p>" withString:@""];
-        raw = [raw stringByReplacingOccurrencesOfString:@"</p>" withString:@""];
-        raw = [raw stringByReplacingOccurrencesOfString:@"<b>" withString:@""];
-        raw = [raw stringByReplacingOccurrencesOfString:@"</b>" withString:@""];
-        raw = [raw stringByReplacingOccurrencesOfString:@"<br/>" withString:@" "];
-        raw = [raw stringByReplacingOccurrencesOfString:@"&#13" withString:@""];
+        //获得概述内容
+        NSArray *pElements = [parser searchWithXPathQuery:@"//p"];
         
-        if (raw != NULL) {
-            [detailModel.contentArray addObject:raw];
+        for (TFHppleElement *pElement in pElements) {
+            
+            NSString *raw = [pElement.raw stringByReplacingOccurrencesOfString:@"<p>" withString:@""];
+            raw = [raw stringByReplacingOccurrencesOfString:@"</p>" withString:@""];
+            raw = [raw stringByReplacingOccurrencesOfString:@"<b>" withString:@""];
+            raw = [raw stringByReplacingOccurrencesOfString:@"</b>" withString:@""];
+            raw = [raw stringByReplacingOccurrencesOfString:@"<br/>" withString:@" "];
+            raw = [raw stringByReplacingOccurrencesOfString:@"&#13" withString:@""];
+            
+            if (raw != NULL) {
+                [detailModel.contentArray addObject:raw];
+            }
         }
-    }
-    
-    //弹出内容显示界面
-    CYLReactionDetailViewController *RVC = [CYLReactionDetailViewController DetailViewControllerWithDetailModel:detailModel];
-    [self.navigationController presentViewController:RVC animated:YES completion:^{
-    }];
-    
+        
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+            //弹出内容显示界面
+            CYLReactionDetailViewController *RVC = [CYLReactionDetailViewController DetailViewControllerWithDetailModel:detailModel];
+            [self.navigationController presentViewController:RVC animated:YES completion:^{
+            }];
+            
+            [SVProgressHUD dismiss];
+            tableView.allowsSelection = YES;
+            
+        });
+  
+    });
+  
 }
 
 //header

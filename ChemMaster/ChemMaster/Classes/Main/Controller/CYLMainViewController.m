@@ -35,7 +35,7 @@ static NSString * const reuseIdentifier = @"Cell";
     
     flowLayOut.itemSize = CGSizeMake(ScreenW, 80);
     
-    flowLayOut.minimumLineSpacing = 30;
+    flowLayOut.minimumLineSpacing = 10;
     
     return [super initWithCollectionViewLayout:flowLayOut];
 }
@@ -44,7 +44,7 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.collectionView.backgroundColor = [UIColor whiteColor];
+    self.collectionView.backgroundColor = [UIColor lightTextColor];
 
     [self.collectionView registerClass:[CYLHightLightCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
@@ -107,7 +107,6 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 #pragma CYLHeaderReusableViewDelegate
-#warning 点击推荐显示详情未完成
 //显示webView
 - (void)HeaderReusableView:(CYLHeaderReusableView *)View didChoiceEditorModel:(CYLEditorChociseModel *)model
 {
@@ -120,22 +119,31 @@ static NSString * const reuseIdentifier = @"Cell";
 #pragma mark - CYLHightLightCellDelegate 点击跳转到网页
 - (void)HightLightCellDidClickButton:(UIButton *)btn
 {
+    self.webVC = nil;
+    
     if ([btn.titleLabel.text isEqualToString:@"acs"]) {
         
-        self.webVC = nil;
         [self.webVC setUrl:[NSURL URLWithString:@"http://pubs.acs.org/"]];
         
         
     }
     else if ([btn.titleLabel.text isEqualToString:@"wiley"])
     {
-        self.webVC = nil;
+        
         [self.webVC setUrl:[NSURL URLWithString:@"http://onlinelibrary.wiley.com/"]];
+    }
+    else if ([btn.titleLabel.text isEqualToString:@"rsc"])
+    {
+        
+        [self.webVC setUrl:[NSURL URLWithString:@"http://www.rsc.org/"]];
+    }
+    else if ([btn.titleLabel.text isEqualToString:@"scifinder"])
+    {
+        [self.webVC setUrl:[NSURL URLWithString:@"https://scifinder.cas.org/scifinder/login?TYPE=33554433&REALMOID=06-b7b15cf0-642b-1005-963a-830c809fff21&GUID=&SMAUTHREASON=0&METHOD=GET&SMAGENTNAME=-SM-FHxmv6Blb2O%2b68n7uQIlYwcPj%2b%2fjdayUkPrBmlztjSCocFf%2f%2bxVhofBIIzNCuD49&TARGET=-SM-http%3a%2f%2fscifinder%2ecas%2eorg%3a443%2fscifinder%2f"]];
     }
     else
     {
-        self.webVC = nil;
-        [self.webVC setUrl:[NSURL URLWithString:@"http://www.rsc.org/"]];
+        [self.webVC setUrl:[NSURL URLWithString:@"https://www.baidu.com/link?url=f8dGIsoNDNrRmY82CiGuFvLV4uqVYDmUo-ipUj0lx4S&wd=&eqid=c5e444f8000210e30000000357654058"]];
     }
     
     [self.navigationController presentViewController:_webVC animated:YES completion:nil];

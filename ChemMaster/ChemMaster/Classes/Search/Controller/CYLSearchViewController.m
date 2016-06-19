@@ -10,6 +10,7 @@
 #import "CYLResultModel.h"
 #import "CYLResultViewController.h"
 #import "CYLWebViewController.h"
+#import <SVProgressHUD.h>
 #import <Masonry.h>
 #import <TFHpple.h>
 
@@ -167,19 +168,18 @@
 }
 
 #pragma mark - 点击搜索按钮 解析html 获得结果模型组
-#warning 解析html未完成
 - (void)searchBtnClicked
 {
-    /*
-     2016-06-16 00:14:45.718 ChemMaster[14498:453622] _BSMachError: (os/kern) invalid capability (20)
-     2016-06-16 00:14:45.718 ChemMaster[14498:453845] _BSMachError: (os/kern) invalid name (15)
-     */
-    
     if ([self.selPicker selectedRowInComponent:0] == 0) { //选中人名反应时
         
-        [self.resultArray removeAllObjects];
+        [self resignKeyBoard];
         
-//        self.resultVC.view.hidden = NO;
+        [SVProgressHUD show];
+        
+        self.NRSearchBtn.enabled = NO;
+        self.TextField.enabled = NO;
+        
+        [self.resultArray removeAllObjects];
         
         NSString *ResultUrlString = [NSString stringWithFormat:@"http://www.organic-chemistry.org/search/search.cgi?zoom_sort=0&zoom_query=%@",self.TextField.text];
         
@@ -189,49 +189,60 @@
            ResultUrlString = [ResultUrlString stringByReplacingOccurrencesOfString:@" " withString:@""];
         }
         
-        _htmlData = [NSData dataWithContentsOfURL:[NSURL URLWithString:ResultUrlString]];
         
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
             
-        });
-        
-        TFHpple *parser = [[TFHpple alloc] initWithHTMLData:_htmlData];
-        
-        NSArray *dataArray = [parser searchWithXPathQuery:@"//div"];
-        
-        for (TFHppleElement *element in dataArray) {
             
-            if ([[element objectForKey:@"class"] isEqualToString:@"infoline"] ) {
+            _htmlData = [NSData dataWithContentsOfURL:[NSURL URLWithString:ResultUrlString]];
+            
+            TFHpple *parser = [[TFHpple alloc] initWithHTMLData:_htmlData];
+            
+            NSArray *dataArray = [parser searchWithXPathQuery:@"//div"];
+            
+            for (TFHppleElement *element in dataArray) {
                 
-                NSString *subString = [element.raw substringFromIndex:27];
-                
-                NSString *urlString = [subString stringByReplacingOccurrencesOfString:@"</div>" withString:@""];
-                
-                BOOL isNameReaction = [urlString containsString:@"namedreactions"];
-                
-                NSString *resultName = [urlString lastPathComponent];
-
-                resultName = [resultName stringByDeletingPathExtension];
-                
-                CYLResultModel *resultModel = [[CYLResultModel alloc] init];
-                
-                if (isNameReaction) {//时人名反应类别则存入数组
-                    resultModel.resultName = resultName;
-                    resultModel.urlString = urlString;
-                    resultModel.isNameReaction = isNameReaction;
-                    [self.resultArray addObject:resultModel];
-                }//if
+                if ([[element objectForKey:@"class"] isEqualToString:@"infoline"] ) {
+                    
+                    NSString *subString = [element.raw substringFromIndex:27];
+                    
+                    NSString *urlString = [subString stringByReplacingOccurrencesOfString:@"</div>" withString:@""];
+                    
+                    BOOL isNameReaction = [urlString containsString:@"namedreactions"];
+                    
+                    NSString *resultName = [urlString lastPathComponent];
+                    
+                    resultName = [resultName stringByDeletingPathExtension];
+                    
+                    CYLResultModel *resultModel = [[CYLResultModel alloc] init];
+                    
+                    if (isNameReaction) {//时人名反应类别则存入数组
+                        resultModel.resultName = resultName;
+                        resultModel.urlString = urlString;
+                        resultModel.isNameReaction = isNameReaction;
+                        [self.resultArray addObject:resultModel];
+                    }//if
+                }
             }
-        }
-        
-        [self.navigationController pushViewController:self.resultVC animated:YES];
-        [self.resultVC.tableView reloadData];
-        [self resignKeyBoard];
+            
+            dispatch_sync(dispatch_get_main_queue(), ^{
+                
+                NSLog(@"%@",self.resultArray);
+                [self.navigationController pushViewController:self.resultVC animated:YES];
+                [self.resultVC.tableView reloadData];
+                
+                
+                [SVProgressHUD dismiss];
+                self.NRSearchBtn.enabled = YES;
+                self.TextField.enabled = YES;
+            });
+        });
     }//if
     else
     {
         //选中化合物查询时
-        CYLWebViewController *wenVC = [CYLWebViewController initWithURL:[NSURL URLWithString:@"http://pubchem.ncbi.nlm.nih.gov/compound/702#section=Names-and-Identifiers"]];
+        NSString *ComponendUrl = [NSString stringWithFormat:@"http://pubchem.ncbi.nlm.nih.gov/search/#collection=compounds&query_type=text&query=%%22%@%%22",self.TextField.text];
+        
+        CYLWebViewController *wenVC = [CYLWebViewController initWithURL:[NSURL URLWithString:ComponendUrl]];
         [self.navigationController presentViewController:wenVC animated:YES completion:nil];
         
     }

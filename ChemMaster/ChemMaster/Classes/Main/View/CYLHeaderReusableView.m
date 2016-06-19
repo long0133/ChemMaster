@@ -226,7 +226,8 @@ typedef NS_ENUM(NSInteger, CYLFont)
     }];
     
     [_journalLable mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.left.right.equalTo(self.coverView);
+        make.top.right.equalTo(self.coverView);
+        make.left.equalTo(self.coverView).offset(5);
         make.height.mas_equalTo(20);
     }];
     
@@ -256,8 +257,10 @@ typedef NS_ENUM(NSInteger, CYLFont)
     self.journalLable.text = model.journal[@"abbrevJournalTitle"];
 
     NSString *descString = [model.articleAbstract stringByReplacingOccurrencesOfString:@"<p>" withString:@""];
-    descString = [descString stringByReplacingOccurrencesOfString:@"<sub>" withString:@""];
-    descString = [descString stringByReplacingOccurrencesOfString:@"</sub>" withString:@""];
+    
+    descString = [descString stringByReplacingOccurrencesOfString:@"\n" withString:@" "];
+    descString = [NSString stringWithFormat:@"  %@",descString];
+    descString = [self flattenHTML:descString trimWhiteSpace:NO];
     
     self.descLable.text = descString;
 }
@@ -273,6 +276,26 @@ typedef NS_ENUM(NSInteger, CYLFont)
     }
 }
 
+//去除html所有标签
+- (NSString *)flattenHTML:(NSString *)html trimWhiteSpace:(BOOL)trim
+{
+    NSScanner *theScanner = [NSScanner scannerWithString:html];
+    NSString *text = nil;
+    
+    while ([theScanner isAtEnd] == NO) {
+        // find start of tag
+        [theScanner scanUpToString:@"<" intoString:NULL] ;
+        // find end of tag
+        [theScanner scanUpToString:@">" intoString:&text] ;
+        // replace the found tag with a space
+        //(you can filter multi-spaces out later if you wish)
+        html = [html stringByReplacingOccurrencesOfString:
+                [ NSString stringWithFormat:@"%@>", text]
+                                               withString:@""];
+    }
+    
+    return trim ? [html stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] : html;
+}
 @end
 
 

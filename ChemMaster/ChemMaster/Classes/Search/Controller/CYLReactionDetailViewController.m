@@ -134,14 +134,16 @@
     
     
     //处理字符串 删除标签
-    contentString = [contentString stringByReplacingOccurrencesOfString:@"<i>" withString:@""];
-    contentString = [contentString stringByReplacingOccurrencesOfString:@"</i>" withString:@""];
-    contentString = [contentString stringByReplacingOccurrencesOfString:@"</a>" withString:@""];
-    contentString = [contentString stringByReplacingOccurrencesOfString:@"<a href=" withString:@""]
-    ;
-    contentString = [contentString stringByReplacingOccurrencesOfString:@".shtm" withString:@""];
-    contentString = [contentString stringByReplacingOccurrencesOfString:@">" withString:@""];
-    contentString = [NSString stringWithFormat:@"  %@",contentString];
+//    contentString = [contentString stringByReplacingOccurrencesOfString:@"<i>" withString:@""];
+//    contentString = [contentString stringByReplacingOccurrencesOfString:@"</i>" withString:@""];
+//    contentString = [contentString stringByReplacingOccurrencesOfString:@"</a>" withString:@""];
+//    contentString = [contentString stringByReplacingOccurrencesOfString:@"<a href=" withString:@""]
+//    ;
+//    contentString = [contentString stringByReplacingOccurrencesOfString:@".shtm" withString:@""];
+//    contentString = [contentString stringByReplacingOccurrencesOfString:@">" withString:@""];
+//    contentString = [NSString stringWithFormat:@"  %@",contentString];
+    
+    contentString = [self flattenHTML:contentString trimWhiteSpace:NO];
     contentString = [contentString stringByReplacingOccurrencesOfString:@"\n" withString:@""];
     
     UILabel *lable = [[UILabel alloc] init];
@@ -170,45 +172,35 @@
 - (void)imageStringTreatmentFromContentString:(NSString*)contentString
 {
     //如果是图片
-    //图片URL
-    NSLog(@"%@",contentString);
+    
+    NSRange ScrRange = NSMakeRange(0, 0);
+    NSRange gifRange = NSMakeRange(0, 0);
+    NSString *imageURL = nil;
+
     if ([contentString containsString:@"href"]) {//去除lecture内容
         return;
     }
-    contentString = [contentString stringByReplacingOccurrencesOfString:@"GIF" withString:@"gif"];
-    NSString *imageURL = nil;
-//    if ([contentString containsString:@"width"]) {
     
-        //img含有宽高信息
-        NSRange ScrRange = [contentString rangeOfString:@"src="""];
-        NSRange gifRange = [contentString rangeOfString:@".gif"];
-        
-        NSInteger startPoint = (ScrRange.location + ScrRange.length + 1);
-        NSInteger length = ((gifRange.location + gifRange.length) - (ScrRange.location + ScrRange.length) - 1);
-        
-        NSRange currectRange = NSMakeRange(startPoint,length);
-        
-        NSString *subString = [contentString substringWithRange:currectRange];
-        
-        imageURL = [NSString stringWithFormat:@"http://www.organic-chemistry.org/namedreactions/%@",subString];
-//    }
-//    else if ([contentString containsString:@"border"])
-//    { //截取的img不带图片宽高信息 但有border信息
-//        NSString *subString = [contentString substringFromIndex:21];
-//        subString = [subString substringToIndex:subString.length - 3];
-//        
-//        imageURL = [NSString stringWithFormat:@"http://www.organic-chemistry.org/namedreactions/%@",subString];
-//        imageURL = [imageURL stringByReplacingOccurrencesOfString:@"""" withString:@""];
-//    }
-//    else
-//    {
-//        //img不含任何属性
-//        NSString *subString = [contentString substringFromIndex:10];
-//        subString = [subString substringToIndex:subString.length - 3];
-//        
-//        imageURL = [NSString stringWithFormat:@"http://www.organic-chemistry.org/namedreactions/%@",subString];
-//        
-//    }
+    if ([contentString containsString:@"gif"]) {
+        //img含.gif
+        ScrRange = [contentString rangeOfString:@"src="""];
+        gifRange = [contentString rangeOfString:@".gif"];
+  
+    }
+    else
+    {  //img含有.GIF
+        ScrRange = [contentString rangeOfString:@"src="""];
+        gifRange = [contentString rangeOfString:@".GIF"];
+    }
+    
+    NSInteger startPoint = (ScrRange.location + ScrRange.length + 1);
+    NSInteger length = ((gifRange.location + gifRange.length) - (ScrRange.location + ScrRange.length) - 1);
+    
+    NSRange currectRange = NSMakeRange(startPoint,length);
+    
+    NSString *subString = [contentString substringWithRange:currectRange];
+    
+    imageURL = [NSString stringWithFormat:@"http://www.organic-chemistry.org/namedreactions/%@",subString];
     
     //最终处理字符串URL使其不带无关尾巴
     if (!([[imageURL substringFromIndex:imageURL.length - 1] isEqualToString:@"f"] || [[imageURL substringFromIndex:imageURL.length - 1] isEqualToString:@"F"])) {
@@ -228,7 +220,11 @@
     
     UIButton *imageButton = [[UIButton alloc] initWithFrame:CGRectMake(0, _CurrentH, ScreenW, 70)];
     
-    [imageButton setContentMode:UIViewContentModeScaleAspectFit];
+    imageButton.contentEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
+    [imageButton.imageView setContentMode:UIViewContentModeCenter];
+    imageButton.clipsToBounds = YES;
+    
+    
     [imageButton sd_setBackgroundImageWithURL:[NSURL URLWithString:imageURL] forState:UIControlStateNormal];
     [imageButton addTarget:self action:@selector(ShowBigImage:) forControlEvents:UIControlEventTouchUpInside];
     
@@ -249,6 +245,7 @@
     _bigImageView.image = btn.currentBackgroundImage;
 }
 
+//懒加载
 - (UIView *)CoverView
 {
     if (_CoverView == nil) {
@@ -276,6 +273,28 @@
     [_cancleBtn removeFromSuperview];
     _cancleBtn = nil;
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+//去除html所有标签
+- (NSString *)flattenHTML:(NSString *)html trimWhiteSpace:(BOOL)trim
+{
+    NSScanner *theScanner = [NSScanner scannerWithString:html];
+    NSString *text = nil;
+    
+    while ([theScanner isAtEnd] == NO) {
+        // find start of tag
+        [theScanner scanUpToString:@"<" intoString:NULL] ;
+        // find end of tag
+        [theScanner scanUpToString:@">" intoString:&text] ;
+        // replace the found tag with a space
+        //(you can filter multi-spaces out later if you wish)
+        html = [html stringByReplacingOccurrencesOfString:
+                [ NSString stringWithFormat:@"%@>", text]
+                                               withString:@""];
+    }
+    
+    return trim ? [html stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] : html;
 }
 
 + (instancetype)DetailViewControllerWithDetailModel:(CYLDetailModel *)model

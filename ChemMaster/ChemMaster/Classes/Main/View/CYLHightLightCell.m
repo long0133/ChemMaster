@@ -8,22 +8,43 @@
 
 #import "CYLHightLightCell.h"
 
+@interface CYLHightLightCell ()
+
+@property (nonatomic, strong) UIButton *btn;
+
+@end
+
 @implementation CYLHightLightCell
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    if (self = [super initWithFrame:frame]) {
+        self.backgroundColor = [UIColor whiteColor];
+    }
+    return self;
+}
+
+#pragma mark - 懒加载
+- (UIButton *)btn
+{
+    if (_btn == nil) {
+        
+       _btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, self.contentView.frame.size.width, self.contentView.frame.size.height)];
+        [_btn setTitleColor:[UIColor clearColor] forState:UIControlStateNormal];
+        [_btn addTarget:self action:@selector(didClickBtn:) forControlEvents:UIControlEventTouchUpInside];
+        
+        [self.contentView addSubview:_btn];
+    }
+    return _btn;
+}
 
 - (void)setModel:(CYLHightLightModel *)model
 {
     _model = model;
-    
-    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, self.contentView.frame.size.width, self.contentView.frame.size.height)];
 
-    [btn setBackgroundImage:model.img forState:UIControlStateNormal];
+    [self.btn setBackgroundImage:model.img forState:UIControlStateNormal];
+    [self.btn setTitle:model.journalName forState:UIControlStateNormal];
     
-    [btn setTitle:model.journalName forState:UIControlStateNormal];
-    [btn setTitleColor:[UIColor clearColor] forState:UIControlStateNormal];
-    
-    [btn addTarget:self action:@selector(didClickBtn:) forControlEvents:UIControlEventTouchUpInside];
-    
-    [self.contentView addSubview:btn];
 }
 
 -(void)didClickBtn:(UIButton*)btn

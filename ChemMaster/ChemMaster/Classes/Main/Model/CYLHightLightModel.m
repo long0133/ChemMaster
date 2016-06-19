@@ -16,9 +16,13 @@
     
      CYLHightLightModel *wiley = [self modelWithImage:[UIImage imageNamed:@"wiley"] andName:@"wiley"];
     
-     CYLHightLightModel *rsc = [self modelWithImage:[UIImage imageNamed:@"rsc"] andName:@"rsc"];
+     CYLHightLightModel *rsc = [self modelWithImage:[UIImage imageNamed:@"RSC"] andName:@"rsc"];
     
-    NSArray *modelArray = @[acs,wiley,rsc];
+    CYLHightLightModel *scifinder = [self modelWithImage:[UIImage imageNamed:@"scifinder"] andName:@"scifinder"];
+    
+    CYLHightLightModel *reaxys = [self modelWithImage:[UIImage imageNamed:@"reaxys"] andName:@"reaxys"];
+    
+    NSArray *modelArray = @[acs,wiley,rsc,scifinder,reaxys];
     
     return modelArray;
 }
