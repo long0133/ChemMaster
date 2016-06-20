@@ -175,6 +175,7 @@
         [self resignKeyBoard];
         
         [SVProgressHUD show];
+        [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
         
         self.NRSearchBtn.enabled = NO;
         self.TextField.enabled = NO;

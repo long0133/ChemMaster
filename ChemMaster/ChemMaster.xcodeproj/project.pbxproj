@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4E1377EC1D152A6900857C36 /* CYLDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1377EB1D152A6900857C36 /* CYLDrawView.m */; };
 		4E1377EF1D152B2400857C36 /* CYLToolBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1377EE1D152B2400857C36 /* CYLToolBarView.m */; };
+		4E1377F51D16516400857C36 /* CYLChemicalBond.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1377F41D16516400857C36 /* CYLChemicalBond.m */; };
+		4E1377F91D16640500857C36 /* CYLCarbonAtom.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1377F81D16640500857C36 /* CYLCarbonAtom.m */; };
 		4E2A81A81D0D9BCF0082D785 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2A81A71D0D9BCF0082D785 /* main.m */; };
 		4E2A81AB1D0D9BCF0082D785 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2A81AA1D0D9BCF0082D785 /* AppDelegate.m */; };
 		4E2A81B31D0D9BCF0082D785 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E2A81B21D0D9BCF0082D785 /* Assets.xcassets */; };
@@ -66,6 +68,10 @@
 		4E1377EB1D152A6900857C36 /* CYLDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLDrawView.m; sourceTree = "<group>"; };
 		4E1377ED1D152B2400857C36 /* CYLToolBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLToolBarView.h; sourceTree = "<group>"; };
 		4E1377EE1D152B2400857C36 /* CYLToolBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLToolBarView.m; sourceTree = "<group>"; };
+		4E1377F31D16516400857C36 /* CYLChemicalBond.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLChemicalBond.h; sourceTree = "<group>"; };
+		4E1377F41D16516400857C36 /* CYLChemicalBond.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLChemicalBond.m; sourceTree = "<group>"; };
+		4E1377F71D16640500857C36 /* CYLCarbonAtom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLCarbonAtom.h; sourceTree = "<group>"; };
+		4E1377F81D16640500857C36 /* CYLCarbonAtom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLCarbonAtom.m; sourceTree = "<group>"; };
 		4E2A81A31D0D9BCF0082D785 /* ChemMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChemMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E2A81A71D0D9BCF0082D785 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4E2A81A91D0D9BCF0082D785 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -172,6 +178,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4E1377F61D1663F200857C36 /* Atoms */ = {
+			isa = PBXGroup;
+			children = (
+				4E1377F71D16640500857C36 /* CYLCarbonAtom.h */,
+				4E1377F81D16640500857C36 /* CYLCarbonAtom.m */,
+			);
+			name = Atoms;
+			sourceTree = "<group>";
+		};
 		4E2A819A1D0D9BCF0082D785 = {
 			isa = PBXGroup;
 			children = (
@@ -268,6 +283,9 @@
 		4E2A81DC1D0D9E080082D785 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4E1377F61D1663F200857C36 /* Atoms */,
+				4E1377F31D16516400857C36 /* CYLChemicalBond.h */,
+				4E1377F41D16516400857C36 /* CYLChemicalBond.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -691,6 +709,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E2A82221D0FE1C70082D785 /* CYLHightLightCell.m in Sources */,
+				4E1377F51D16516400857C36 /* CYLChemicalBond.m in Sources */,
 				4E1377EF1D152B2400857C36 /* CYLToolBarView.m in Sources */,
 				4E2A82131D0DB2970082D785 /* CYLTabBarButton.m in Sources */,
 				4E2A820F1D0DA7A40082D785 /* UpImageDownTitleButton.m in Sources */,
@@ -699,6 +718,7 @@
 				4E2A81EF1D0D9FE50082D785 /* CYLDrawViewController.m in Sources */,
 				4E2A81E91D0D9FB90082D785 /* CYLMainViewController.m in Sources */,
 				4E2A81AB1D0D9BCF0082D785 /* AppDelegate.m in Sources */,
+				4E1377F91D16640500857C36 /* CYLCarbonAtom.m in Sources */,
 				4ECC97C81D1197D800D5000C /* CYLResultViewController.m in Sources */,
 				4ECC97D11D12818A00D5000C /* CYLReactionDetailViewController.m in Sources */,
 				4E2A821C1D0EE7950082D785 /* CYLEditorChociseModel.m in Sources */,
