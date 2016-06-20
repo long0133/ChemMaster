@@ -18,6 +18,7 @@
 @property (nonatomic, strong) UIButton *cancleBtn;
 
 @property (nonatomic, assign) NSInteger CurrentH;
+@property (nonatomic, assign) NSInteger maxWidth;
 
 @property (nonatomic, strong) UIView *CoverView;
 
@@ -25,9 +26,21 @@
 
 @property (nonatomic, strong) NSMutableArray *imageCache;
 
+@property (nonatomic, strong) NSMutableArray *contentAfterTreatment;
+
 @end
 
 @implementation CYLReactionDetailViewController
+
+- (NSMutableArray *)contentAfterTreatment
+{
+    if (_contentAfterTreatment == nil) {
+        _contentAfterTreatment = [NSMutableArray array];
+        
+        [self contentsTreatment];
+    }
+    return _contentAfterTreatment;
+}
 
 - (NSMutableArray *)imageCache
 {
@@ -37,28 +50,26 @@
     return _imageCache;
 }
 
--(NSMutableArray *)scrollSubViewsArray
+- (UIScrollView *)contentScrollView
+{
+    if (_contentScrollView == nil) {
+        
+        _contentScrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
+        
+        _contentScrollView.backgroundColor = [UIColor whiteColor];
+        
+        [_contentScrollView setContentSize:CGSizeMake(_maxWidth, [self caculateHightForContentScrollViw])];
+        NSLog(@"%ld", _maxWidth);
+    }
+    return _contentScrollView;
+}
+
+- (NSMutableArray *)scrollSubViewsArray
 {
     if (_scrollSubViewsArray == nil) {
         _scrollSubViewsArray = [NSMutableArray array];
     }
     return _scrollSubViewsArray;
-}
-
-- (UIScrollView *)contentScrollView
-{
-    if (_contentScrollView == nil) {
-        _contentScrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
-        
-        _contentScrollView.contentSize = CGSizeMake(ScreenW, [self caculateContentSizeForScrollView]);
-        
-        //布局子控件
-        for (id obj in self.scrollSubViewsArray) {
-            
-            [_contentScrollView addSubview:obj];
-        }
-    }
-    return _contentScrollView;
 }
 
 - (void)loadView
@@ -70,17 +81,80 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.contentScrollView.backgroundColor = [UIColor colorWithRed:0.96 green:0.96 blue:0.86 alpha:1];
-    self.contentScrollView.backgroundColor = [UIColor lightGrayColor];
     
     _cancleBtn = [[UIButton alloc] initWithFrame:CGRectMake(ScreenW - 44, ScreenH - 44, 33, 33)];
     [_cancleBtn setImage:[UIImage imageNamed:@"Cancel-icon"] forState:UIControlStateNormal];
     [_cancleBtn addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
     [KWindow addSubview:_cancleBtn];
+    
+    NSLog(@"%@",self.scrollSubViewsArray);
 }
 
-#pragma mark - 计算scrollview的ContentSize
-- (NSInteger)caculateContentSizeForScrollView
+
+#pragma mark - 获得处理后字符串计算高度 与布局
+- (NSInteger)caculateHightForContentScrollViw
+{
+    _CurrentH = 0;
+    _maxWidth = ScreenW;
+    
+    for (NSString *content in self.contentAfterTreatment) {
+        
+        if ([content containsString:@"http"])
+        {
+            //图片
+
+            
+            UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:content]]];
+
+            CGFloat Scale = 1;
+            
+            if (image.size.width > ScreenW) {
+                
+               Scale = ScreenW / image.size.width;
+            }
+
+            
+            UIButton *imageBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, _CurrentH, image.size.width * Scale, image.size.height * Scale)];
+            
+            [imageBtn setBackgroundImage:image forState:UIControlStateNormal];
+        
+            [imageBtn addTarget:self action:@selector(ShowBigImage:) forControlEvents:UIControlEventTouchUpInside];
+
+
+            if (_maxWidth <= image.size.width) {
+                _maxWidth = image.size.width;
+            }
+            
+            [self.contentScrollView addSubview:imageBtn];
+            
+            _CurrentH += imageBtn.frame.size.height + 10;
+            
+        }
+        else
+        {
+            //文字
+            NSMutableDictionary *attr = [NSMutableDictionary dictionary];
+            attr[NSFontAttributeName] = [UIFont systemFontOfSize:14];
+            
+            CGRect rect = [content boundingRectWithSize:CGSizeMake(ScreenW, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:attr context:nil];
+            
+            UILabel *lable = [[UILabel alloc] initWithFrame:CGRectMake(0, _CurrentH, rect.size.width, rect.size.height)];
+            lable.numberOfLines = 0;
+            lable.font = attr[NSFontAttributeName];
+            lable.text = content;
+            
+            [self.contentScrollView addSubview:lable];
+            
+            _CurrentH += lable.frame.size.height + 10;
+        }
+    }
+
+    return _CurrentH;
+}
+
+
+#pragma mark - 处理html解析获得的字符串
+- (NSInteger)contentsTreatment
 {
     //取出内容数组
     NSMutableArray *contentArray = self.detailModel.contentArray;
@@ -118,53 +192,23 @@
             [self textStringTreatmentFromContentString:contentString];
         }
     }
+    
+    NSLog(@"%@",self.contentAfterTreatment);
+    
     return _CurrentH;
 }
 #pragma mark - contentArray中的text String 的处理
 - (void)textStringTreatmentFromContentString:(NSString*)contentString
 {
-//    NSArray *subStringArray = [contentString componentsSeparatedByString:@" "];
-//    NSMutableArray *temp = [NSMutableArray array];
-//    for (__strong NSString *subString in subStringArray) {
-////        subString = [subString stringByReplacingOccurrencesOfString:@";\n" withString:@" "];
-//        subString = [subString stringByReplacingOccurrencesOfString:@" " withString:@""];
-//        [temp addObject:subString];
-//    }
-//    NSLog(@"%@",temp);
-    
-    
-    //处理字符串 删除标签
-//    contentString = [contentString stringByReplacingOccurrencesOfString:@"<i>" withString:@""];
-//    contentString = [contentString stringByReplacingOccurrencesOfString:@"</i>" withString:@""];
-//    contentString = [contentString stringByReplacingOccurrencesOfString:@"</a>" withString:@""];
-//    contentString = [contentString stringByReplacingOccurrencesOfString:@"<a href=" withString:@""]
-//    ;
-//    contentString = [contentString stringByReplacingOccurrencesOfString:@".shtm" withString:@""];
-//    contentString = [contentString stringByReplacingOccurrencesOfString:@">" withString:@""];
-//    contentString = [NSString stringWithFormat:@"  %@",contentString];
-    
+
     contentString = [self flattenHTML:contentString trimWhiteSpace:NO];
     contentString = [contentString stringByReplacingOccurrencesOfString:@"\n" withString:@""];
-    
-    UILabel *lable = [[UILabel alloc] init];
-    lable.font = [UIFont systemFontOfSize:13];
-    lable.numberOfLines = 0;
-    
-    NSMutableDictionary *attr = [NSMutableDictionary dictionary];
-    attr[NSFontAttributeName] = [UIFont systemFontOfSize:13];
-    
-    CGRect rect = [contentString boundingRectWithSize:CGSizeMake(ScreenW, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:attr context:nil];
-    lable.frame = CGRectMake(0, _CurrentH, rect.size.width, rect.size.height);
-    
-    [self.scrollSubViewsArray addObject:lable];
+
     
     //取得文本内容
     NSString *textString = [contentString stringByReplacingOccurrencesOfString:@";" withString:@" "];
     
-    lable.text = textString;
-    
-    _CurrentH += lable.frame.size.height;
-    
+    [self.contentAfterTreatment addObject:textString];
 }
 
 
@@ -218,20 +262,11 @@
         
     }
     
-    UIButton *imageButton = [[UIButton alloc] initWithFrame:CGRectMake(0, _CurrentH, ScreenW, 70)];
-    
-    imageButton.contentEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
-    [imageButton.imageView setContentMode:UIViewContentModeCenter];
-    imageButton.clipsToBounds = YES;
-    
-    
-    [imageButton sd_setBackgroundImageWithURL:[NSURL URLWithString:imageURL] forState:UIControlStateNormal];
-    [imageButton addTarget:self action:@selector(ShowBigImage:) forControlEvents:UIControlEventTouchUpInside];
-    
-    [self.scrollSubViewsArray addObject:imageButton];
-    _CurrentH += imageButton.frame.size.height;
+    [self.contentAfterTreatment addObject:imageURL];
 
 }
+
+
 
 - (void)ShowBigImage:(UIButton*)btn
 {
@@ -297,6 +332,7 @@
     return trim ? [html stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] : html;
 }
 
+#pragma mark - 初始化方法
 + (instancetype)DetailViewControllerWithDetailModel:(CYLDetailModel *)model
 {
     CYLReactionDetailViewController *rVC = [[CYLReactionDetailViewController alloc] init];
@@ -310,5 +346,6 @@
 {
     return YES;
 }
+
 
 @end

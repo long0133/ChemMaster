@@ -11,6 +11,7 @@
 		4E1377EF1D152B2400857C36 /* CYLToolBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1377EE1D152B2400857C36 /* CYLToolBarView.m */; };
 		4E1377F51D16516400857C36 /* CYLChemicalBond.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1377F41D16516400857C36 /* CYLChemicalBond.m */; };
 		4E1377F91D16640500857C36 /* CYLCarbonAtom.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1377F81D16640500857C36 /* CYLCarbonAtom.m */; };
+		4E1377FB1D17DFB400857C36 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E1377FA1D17DFB400857C36 /* libxml2.tbd */; };
 		4E2A81A81D0D9BCF0082D785 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2A81A71D0D9BCF0082D785 /* main.m */; };
 		4E2A81AB1D0D9BCF0082D785 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2A81AA1D0D9BCF0082D785 /* AppDelegate.m */; };
 		4E2A81B31D0D9BCF0082D785 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E2A81B21D0D9BCF0082D785 /* Assets.xcassets */; };
@@ -72,6 +73,7 @@
 		4E1377F41D16516400857C36 /* CYLChemicalBond.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLChemicalBond.m; sourceTree = "<group>"; };
 		4E1377F71D16640500857C36 /* CYLCarbonAtom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLCarbonAtom.h; sourceTree = "<group>"; };
 		4E1377F81D16640500857C36 /* CYLCarbonAtom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLCarbonAtom.m; sourceTree = "<group>"; };
+		4E1377FA1D17DFB400857C36 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		4E2A81A31D0D9BCF0082D785 /* ChemMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChemMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E2A81A71D0D9BCF0082D785 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4E2A81A91D0D9BCF0082D785 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E1377FB1D17DFB400857C36 /* libxml2.tbd in Frameworks */,
 				4EAC5D881D1409F100199DAA /* Foundation.framework in Frameworks */,
 				4EAC5D861D1409E700199DAA /* UIKit.framework in Frameworks */,
 				4EAC5D841D14094D00199DAA /* QuartzCore.framework in Frameworks */,
@@ -515,6 +518,7 @@
 		9D8459DEB8A9F70BCD5E3FEB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4E1377FA1D17DFB400857C36 /* libxml2.tbd */,
 				4EAC5D871D1409F100199DAA /* Foundation.framework */,
 				4EAC5D851D1409E700199DAA /* UIKit.framework */,
 				4EAC5D831D14094D00199DAA /* QuartzCore.framework */,
