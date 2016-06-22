@@ -32,6 +32,11 @@
 		4E2A821C1D0EE7950082D785 /* CYLEditorChociseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2A821B1D0EE7950082D785 /* CYLEditorChociseModel.m */; };
 		4E2A82221D0FE1C70082D785 /* CYLHightLightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2A82211D0FE1C70082D785 /* CYLHightLightCell.m */; };
 		4E2A82251D0FE2860082D785 /* CYLHightLightModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2A82241D0FE2860082D785 /* CYLHightLightModel.m */; };
+		4E5F79821D196551009AD7DC /* CYLnameReactionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F79811D196551009AD7DC /* CYLnameReactionListViewController.m */; };
+		4E5F79861D19891E009AD7DC /* CYLTotalSythesisListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F79851D19891E009AD7DC /* CYLTotalSythesisListViewController.m */; };
+		4E5F798A1D1A492A009AD7DC /* NSString+CYLNsstring.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F79891D1A492A009AD7DC /* NSString+CYLNsstring.m */; };
+		4E5F798D1D1A4CFE009AD7DC /* CYLTotalSynDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F798C1D1A4CFE009AD7DC /* CYLTotalSynDetailViewController.m */; };
+		4E5F79911D1A5ECC009AD7DC /* UIColor+CYLColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F79901D1A5ECC009AD7DC /* UIColor+CYLColor.m */; };
 		4EAC5D821D14094600199DAA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAC5D811D14094600199DAA /* CoreGraphics.framework */; };
 		4EAC5D841D14094D00199DAA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAC5D831D14094D00199DAA /* QuartzCore.framework */; };
 		4EAC5D861D1409E700199DAA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAC5D851D1409E700199DAA /* UIKit.framework */; };
@@ -115,6 +120,16 @@
 		4E2A82211D0FE1C70082D785 /* CYLHightLightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLHightLightCell.m; sourceTree = "<group>"; };
 		4E2A82231D0FE2860082D785 /* CYLHightLightModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLHightLightModel.h; sourceTree = "<group>"; };
 		4E2A82241D0FE2860082D785 /* CYLHightLightModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLHightLightModel.m; sourceTree = "<group>"; };
+		4E5F79801D196551009AD7DC /* CYLnameReactionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLnameReactionListViewController.h; sourceTree = "<group>"; };
+		4E5F79811D196551009AD7DC /* CYLnameReactionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLnameReactionListViewController.m; sourceTree = "<group>"; };
+		4E5F79841D19891E009AD7DC /* CYLTotalSythesisListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTotalSythesisListViewController.h; sourceTree = "<group>"; };
+		4E5F79851D19891E009AD7DC /* CYLTotalSythesisListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLTotalSythesisListViewController.m; sourceTree = "<group>"; };
+		4E5F79881D1A492A009AD7DC /* NSString+CYLNsstring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CYLNsstring.h"; sourceTree = "<group>"; };
+		4E5F79891D1A492A009AD7DC /* NSString+CYLNsstring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CYLNsstring.m"; sourceTree = "<group>"; };
+		4E5F798B1D1A4CFE009AD7DC /* CYLTotalSynDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTotalSynDetailViewController.h; sourceTree = "<group>"; };
+		4E5F798C1D1A4CFE009AD7DC /* CYLTotalSynDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLTotalSynDetailViewController.m; sourceTree = "<group>"; };
+		4E5F798F1D1A5ECC009AD7DC /* UIColor+CYLColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CYLColor.h"; sourceTree = "<group>"; };
+		4E5F79901D1A5ECC009AD7DC /* UIColor+CYLColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CYLColor.m"; sourceTree = "<group>"; };
 		4EAC5D811D14094600199DAA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4EAC5D831D14094D00199DAA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4EAC5D851D1409E700199DAA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -472,11 +487,41 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		4E5F79831D1965EA009AD7DC /* nameReactionList */ = {
+			isa = PBXGroup;
+			children = (
+				4E5F79801D196551009AD7DC /* CYLnameReactionListViewController.h */,
+				4E5F79811D196551009AD7DC /* CYLnameReactionListViewController.m */,
+			);
+			name = nameReactionList;
+			sourceTree = "<group>";
+		};
+		4E5F79871D198923009AD7DC /* TotalSynthesisList */ = {
+			isa = PBXGroup;
+			children = (
+				4E5F79841D19891E009AD7DC /* CYLTotalSythesisListViewController.h */,
+				4E5F79851D19891E009AD7DC /* CYLTotalSythesisListViewController.m */,
+				4E5F798E1D1A51EA009AD7DC /* TSListViewController */,
+			);
+			name = TotalSynthesisList;
+			sourceTree = "<group>";
+		};
+		4E5F798E1D1A51EA009AD7DC /* TSListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4E5F798B1D1A4CFE009AD7DC /* CYLTotalSynDetailViewController.h */,
+				4E5F798C1D1A4CFE009AD7DC /* CYLTotalSynDetailViewController.m */,
+			);
+			name = TSListViewController;
+			sourceTree = "<group>";
+		};
 		4EAC5D771D1400C900199DAA /* Search ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				4E2A81F41D0DA0220082D785 /* CYLSearchViewController.h */,
 				4E2A81F51D0DA0220082D785 /* CYLSearchViewController.m */,
+				4E5F79831D1965EA009AD7DC /* nameReactionList */,
+				4E5F79871D198923009AD7DC /* TotalSynthesisList */,
 			);
 			name = "Search ViewController";
 			sourceTree = "<group>";
@@ -511,6 +556,10 @@
 			children = (
 				4ECC97C01D11029600D5000C /* UIImage+CYLImageExtension.h */,
 				4ECC97C11D11029600D5000C /* UIImage+CYLImageExtension.m */,
+				4E5F79881D1A492A009AD7DC /* NSString+CYLNsstring.h */,
+				4E5F79891D1A492A009AD7DC /* NSString+CYLNsstring.m */,
+				4E5F798F1D1A5ECC009AD7DC /* UIColor+CYLColor.h */,
+				4E5F79901D1A5ECC009AD7DC /* UIColor+CYLColor.m */,
 			);
 			path = catagory;
 			sourceTree = "<group>";
@@ -721,22 +770,27 @@
 				4E2A82251D0FE2860082D785 /* CYLHightLightModel.m in Sources */,
 				4E2A81EF1D0D9FE50082D785 /* CYLDrawViewController.m in Sources */,
 				4E2A81E91D0D9FB90082D785 /* CYLMainViewController.m in Sources */,
+				4E5F79821D196551009AD7DC /* CYLnameReactionListViewController.m in Sources */,
 				4E2A81AB1D0D9BCF0082D785 /* AppDelegate.m in Sources */,
 				4E1377F91D16640500857C36 /* CYLCarbonAtom.m in Sources */,
 				4ECC97C81D1197D800D5000C /* CYLResultViewController.m in Sources */,
 				4ECC97D11D12818A00D5000C /* CYLReactionDetailViewController.m in Sources */,
 				4E2A821C1D0EE7950082D785 /* CYLEditorChociseModel.m in Sources */,
 				4E2A81F61D0DA0220082D785 /* CYLSearchViewController.m in Sources */,
+				4E5F798A1D1A492A009AD7DC /* NSString+CYLNsstring.m in Sources */,
 				4E1377EC1D152A6900857C36 /* CYLDrawView.m in Sources */,
 				4ECC97CB1D1197E900D5000C /* CYLResultModel.m in Sources */,
 				4E2A82051D0DA6580082D785 /* CYLTabBarController.m in Sources */,
+				4E5F798D1D1A4CFE009AD7DC /* CYLTotalSynDetailViewController.m in Sources */,
 				4E2A81EC1D0D9FCC0082D785 /* CYLMineViewController.m in Sources */,
 				4E2A820E1D0DA7A40082D785 /* CYLBadgeView.m in Sources */,
 				4E2A82191D0EE0460082D785 /* CYLHeaderReusableView.m in Sources */,
+				4E5F79911D1A5ECC009AD7DC /* UIColor+CYLColor.m in Sources */,
 				4ECC97C21D11029600D5000C /* UIImage+CYLImageExtension.m in Sources */,
 				4ECC97CE1D1261C100D5000C /* CYLDetailModel.m in Sources */,
 				4E2A82081D0DA6B40082D785 /* CYLTabBar.m in Sources */,
 				4ECC97BE1D10F3F800D5000C /* CYLWebViewController.m in Sources */,
+				4E5F79861D19891E009AD7DC /* CYLTotalSythesisListViewController.m in Sources */,
 				4E2A81A81D0D9BCF0082D785 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

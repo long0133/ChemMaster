@@ -10,6 +10,8 @@
 #import "CYLResultModel.h"
 #import "CYLResultViewController.h"
 #import "CYLWebViewController.h"
+#import "CYLnameReactionListViewController.h"
+#import "CYLTotalSythesisListViewController.h"
 #import <SVProgressHUD.h>
 #import <Masonry.h>
 #import <TFHpple.h>
@@ -30,6 +32,9 @@
 @property (nonatomic ,strong) CYLResultViewController* resultVC;
 @property (nonatomic, strong) NSMutableArray *resultArray;
 @property (nonatomic, strong) NSData *htmlData;
+
+@property (nonatomic, strong) UIButton *nameReactionListBtn;
+@property (nonatomic, strong) UIButton *TotalSynthesisListBtn;
 
 @end
 
@@ -111,6 +116,19 @@
     [_NRSearchBtn addTarget:self action:@selector(searchBtnClicked) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_NRSearchBtn];
     
+    _nameReactionListBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [_nameReactionListBtn addTarget:self action:@selector(ShowNameReactionList) forControlEvents:UIControlEventTouchUpInside];
+    [_nameReactionListBtn setTitle:@"Name Reaction" forState:UIControlStateNormal];
+    [_nameReactionListBtn.titleLabel setFont:[UIFont systemFontOfSize:20]];
+    _nameReactionListBtn.backgroundColor = [UIColor getColor:@"00CDCD"];
+    [self.view addSubview:_nameReactionListBtn];
+    
+    _TotalSynthesisListBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [_TotalSynthesisListBtn addTarget:self action:@selector(showTotalSynthesisList) forControlEvents:UIControlEventTouchUpInside];
+    [_TotalSynthesisListBtn setTitle:@"Total Synthesis" forState:UIControlStateNormal];
+    [_TotalSynthesisListBtn.titleLabel setFont:[UIFont systemFontOfSize:20]];
+    _TotalSynthesisListBtn.backgroundColor = [UIColor getColor:@"4EEE94"];
+    [self.view addSubview:_TotalSynthesisListBtn];
 }
 
 - (void)viewWillLayoutSubviews
@@ -148,6 +166,21 @@
         make.centerY.equalTo(self.TextField.mas_centerY);
         make.width.mas_equalTo(30);
         make.height.mas_equalTo(30);
+    }];
+    
+    [_nameReactionListBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+       
+        make.left.equalTo(self.view).offset(20);
+        make.top.equalTo(self.selPicker.mas_bottom).offset(20);
+        make.width.height.mas_equalTo(150);
+    }];
+    
+    [_TotalSynthesisListBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+       
+        make.width.height.equalTo(self.nameReactionListBtn);
+        make.right.equalTo(self.view).offset(-20);
+        make.top.equalTo(self.nameReactionListBtn);
+        
     }];
 }
 
@@ -247,6 +280,21 @@
         [self.navigationController presentViewController:wenVC animated:YES completion:nil];
         
     }
+}
+
+#pragma mark - 显示NameReaction / TotalSynthesis listButton
+- (void)ShowNameReactionList
+{
+    CYLnameReactionListViewController *nameListVC = [CYLnameReactionListViewController listViewController];
+    nameListVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:nameListVC animated:YES];
+}
+
+- (void)showTotalSynthesisList
+{
+    CYLTotalSythesisListViewController *Tvc = [[CYLTotalSythesisListViewController alloc] initWithStyle:UITableViewStylePlain];
+    
+    [self.navigationController pushViewController:Tvc animated:YES];
 }
 
 #pragma mark - pickerView

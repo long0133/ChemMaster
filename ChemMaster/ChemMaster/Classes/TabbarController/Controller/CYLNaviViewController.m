@@ -14,6 +14,13 @@
 
 @implementation CYLNaviViewController
 
++ (void)initialize
+{
+    UINavigationBar *bar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[self class]]];
+    
+    bar.backgroundColor = [UIColor getColor:barColor];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

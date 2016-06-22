@@ -44,7 +44,7 @@
 @property (nonatomic,strong) UIView *AttachView;
 
 //给出建议化学键的方向线段
-@property (nonatomic, strong) UIImageView *suggestView;
+@property (nonatomic, strong) UIBezierPath *suggestPath;
 
 @property (nonatomic, strong) NSMutableArray *beArray;
 
@@ -66,7 +66,8 @@
         [bond.bezierPath stroke];
         
     }
-
+    
+    [self.suggestPath fill];
     
     CGContextSetLineWidth(self.ContextRef, 3);
     
@@ -305,6 +306,7 @@
 }
 #endif
 
+
 #pragma mark - pan手势
 - (void)pan:(UIPanGestureRecognizer*)pan
 {
@@ -339,6 +341,14 @@
     else if (_pan.state == UIGestureRecognizerStateChanged)
     {
 
+//        for (CYLChemicalBond *ExitBond in self.BondArray) {
+//            
+//            if (CGPointEqualToPoint(_bond.startP, ExitBond.startP)) {
+//
+//            }
+//            
+//        }
+        
         _bond.bezierPath = [UIBezierPath bezierPath];
         
         [_bond.bezierPath moveToPoint:_bond.startP];
@@ -418,6 +428,8 @@
 
 
 #pragma mark - 懒加载
+
+
 - (CYLToolBarView *)tooBarView
 {
     if (_tooBarView == nil) {
@@ -453,14 +465,6 @@
         _pointArray = [NSMutableArray array];
     }
     return _pointArray;
-}
-
-- (UIImageView *)suggestView
-{
-    if (_suggestView == nil) {
-        _suggestView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"sub_black_remove (1)"]];
-    }
-    return _suggestView;
 }
 
 - (UIView *)AttachView

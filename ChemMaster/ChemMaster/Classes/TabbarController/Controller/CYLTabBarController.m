@@ -36,7 +36,7 @@
     CYLTabBar *tabBar = [[CYLTabBar alloc] init];
     tabBar.frame = self.tabBar.bounds;
     
-    tabBar.backgroundColor = [UIColor grayColor];
+    tabBar.backgroundColor = [UIColor getColor:barColor];
     
     tabBar.delegate =self;
     

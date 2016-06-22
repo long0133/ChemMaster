@@ -12,4 +12,5 @@
 @property (nonatomic , strong) CYLDetailModel *detailModel;
 
 + (instancetype)DetailViewControllerWithDetailModel:(CYLDetailModel*)model;
++ (instancetype)DetailViewControllerWithURL:(NSURL *)url andUrlSetString:(NSString*)urlsetString;
 @end
