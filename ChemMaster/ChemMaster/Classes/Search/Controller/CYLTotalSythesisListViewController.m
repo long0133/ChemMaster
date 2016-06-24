@@ -168,6 +168,24 @@
     });
 }
 
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UILabel *header = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
+    
+    header.text = @"Alphabets Order:";
+    
+    header.textColor = [UIColor whiteColor];
+    
+    header.backgroundColor = [UIColor blackColor];
+    
+    header.alpha = 0.7;
+    
+    return header;
+}
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 20;
+}
 
 @end

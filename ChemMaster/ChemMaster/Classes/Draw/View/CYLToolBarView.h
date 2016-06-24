@@ -8,6 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
+@class CYLToolBarView;
+@protocol CYLToolBarViewDelegate <NSObject>
+
+- (void)toolBarDidClickSelectBtn;
+- (void)toolBarDidClickDrawBtn;
+- (void)toolBarDidClickDoubleBondBtn;
+- (void)toolBarDidClickTripleBondBtn;
+
+
+@end
+
 @interface CYLToolBarView : UIView
+
+@property (nonatomic,strong) id<CYLToolBarViewDelegate> delegate;
 
 @end

@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CYLToolBarView.h"
+#import "CYLChemicalBond.h"
 
 @interface CYLDrawView : UIView
+
+@property (nonatomic, strong) CYLToolBarView *tooBarView;
+@property (nonatomic, assign) BOOL isToSelect;
+@property (nonatomic, assign) BOOL isDraw;
+@property (nonatomic, assign) BOOL isGoDoubleBond;
+@property (nonatomic, assign) BOOL isGoTrinpleBond;
 
 @end

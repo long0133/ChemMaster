@@ -51,6 +51,8 @@ static NSString *reuse = @"totalSyn";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [SVProgressHUD show];
+    
     NSString *urlString = self.detailListArray[indexPath.row][Takelink];
     
     NSURL *url = [NSURL URLWithString:urlString];
@@ -58,9 +60,17 @@ static NSString *reuse = @"totalSyn";
     NSString *urlSet = [urlString stringByDeletingLastPathComponent];
     urlSet = [NSString stringWithFormat:@"%@/",urlSet];
     
-    CYLReactionDetailViewController *DetailVC = [CYLReactionDetailViewController DetailViewControllerWithURL:url andUrlSetString:urlSet];
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        
+        CYLReactionDetailViewController *DetailVC = [CYLReactionDetailViewController DetailViewControllerWithURL:url andUrlSetString:urlSet];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+            [SVProgressHUD dismiss];
+            [self.navigationController presentViewController:DetailVC animated:YES completion:nil];
+        });
+    });
     
-    [self.navigationController presentViewController:DetailVC animated:YES completion:nil];
 }
 
 #pragma mark - 懒加载

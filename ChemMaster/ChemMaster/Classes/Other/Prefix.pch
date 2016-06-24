@@ -12,6 +12,7 @@
 #import "UIColor+CYLColor.h"
 #import <Masonry.h>
 #import <SVProgressHUD.h>
+#import <TFHpple.h>
 
 #define ScreenW [UIScreen mainScreen].bounds.size.width
 #define ScreenH [UIScreen mainScreen].bounds.size.height

@@ -7,21 +7,21 @@
 //
 
 #import "CYLDrawView.h"
-#import "CYLToolBarView.h"
-#import "CYLChemicalBond.h"
+
 
 //highlightView 和 AttachView的半径
 #define CTLRadius 20.0
 //距离点多远时显示AttachView
 #define CYLSuggestDistance 30
 //建议的化学键键长
-#define CYLSuggestBondLength 60
-
+#define CYLSuggestBondLength 40
+//化学键线宽
+#define BondLineWidth 3
+//选中范围的半径
+#define selectRadius 20
 
 
 @interface CYLDrawView ()<UIGestureRecognizerDelegate>
-
-@property (nonatomic, strong) CYLToolBarView *tooBarView;
 
 @property (nonatomic, strong) CYLChemicalBond *bond;
 
@@ -30,7 +30,6 @@
 @property (nonatomic, assign) CGContextRef ContextRef;
 
 @property (nonatomic, strong) UIPanGestureRecognizer *pan;
-@property (nonatomic, strong) UITapGestureRecognizer *tap;
 
 @property (nonatomic, strong) NSMutableArray *BondArray;
 //存储每条线的双端点
@@ -42,11 +41,29 @@
 @property (nonatomic,strong) UIView *HighLightView;
 //方便识别线段端点将会依附在哪一个点上
 @property (nonatomic,strong) UIView *AttachView;
+//方便识别哪些点被选中了
+@property (nonatomic, strong)NSMutableArray *selectedViewArray;
+@property (nonatomic,strong) UIBezierPath *selectPath;
+//存储被选中的点
+@property (nonatomic, strong) NSMutableArray *selPointArray;
+/////////////////////////给出建议线条//////////////////////////////////////////
+//给出建议化学键的方向线段的数组
+@property (nonatomic, strong) NSMutableArray *suggestPathArray;
+//path终点的数组
+@property (nonatomic, strong) NSArray *SuggestPointArray;
+@property (nonatomic, strong) UIBezierPath *suggstLine1;
+@property (nonatomic, strong) UIBezierPath *suggstLine2;
+@property (nonatomic, strong) UIBezierPath *suggstLine3;
+@property (nonatomic, strong) UIBezierPath *suggstLine4;
+@property (nonatomic, strong) UIBezierPath *suggstLine5;
+@property (nonatomic, strong) UIBezierPath *suggstLine6;
 
-//给出建议化学键的方向线段
-@property (nonatomic, strong) UIBezierPath *suggestPath;
-
-@property (nonatomic, strong) NSMutableArray *beArray;
+@property (nonatomic, assign) CGPoint point1;
+@property (nonatomic, assign) CGPoint point2;
+@property (nonatomic, assign) CGPoint point3;
+@property (nonatomic, assign) CGPoint point4;
+@property (nonatomic, assign) CGPoint point5;
+@property (nonatomic, assign) CGPoint point6;
 
 @end
 
@@ -56,18 +73,24 @@
     self.ContextRef = UIGraphicsGetCurrentContext();
     
     //画出实时的线条
-    self.bond.bezierPath.lineWidth = 4;
+    self.bond.bezierPath.lineWidth = BondLineWidth;
     [self.bond.bezierPath stroke];
+    
+    //画出辅助线条
+    for (UIBezierPath *path in self.suggestPathArray) {
+        [path stroke];
+    }
+   
+    [self.selectPath stroke];
     
     //画出历史的线条
     for (CYLChemicalBond *bond in self.BondArray) {
         
-        bond.bezierPath.lineWidth = 4;
+        bond.bezierPath.lineWidth = BondLineWidth;
+        
         [bond.bezierPath stroke];
         
     }
-    
-    [self.suggestPath fill];
     
     CGContextSetLineWidth(self.ContextRef, 3);
     
@@ -80,33 +103,15 @@
         
         self.backgroundColor = [UIColor whiteColor];
         
+        self.isDraw = YES;
+        
         [self tooBarView];
-        [self setUpFunction];
     }
     return self;
 }
 
--(void)setUpFunction
-{
-    self.pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
-//    self.tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
-    
-    self.tap.delegate = self;
-    self.pan.delegate = self;
-    
-    [self addGestureRecognizer:self.pan];
-//    [self addGestureRecognizer:self.tap];
-}
-
--(NSMutableArray *)beArray
-{
-    if (_beArray == nil) {
-        _beArray = [NSMutableArray array];
-    }
-    return _beArray;
-}
 #pragma mark - tap手势 单击某一个原子时，自动画出合适长度，合适角度的化学键
-#if 0
+#if 1
 - (void)tap:(UITapGestureRecognizer*)tap
 {
      //单击某一个原子时，自动画出合适长度，合适角度的化学键
@@ -307,25 +312,59 @@
 #endif
 
 
-#pragma mark - pan手势
+
+#pragma ToolBar的按钮控制
+- (void)setIsDraw:(BOOL)isDraw
+{
+    _isDraw = isDraw;
+    
+    if (isDraw) {
+        [self dismissAllSelView];
+        
+        self.pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+        self.pan.delegate = self;
+        [self addGestureRecognizer:self.pan];
+    }
+    else
+    {
+        [self.pan removeTarget:self action:@selector(pan:)];
+    }
+}
+
+- (void)setIsToSelect:(BOOL)isToSelect
+{
+    _isToSelect = isToSelect;
+    
+    if (isToSelect) {
+        
+        [self.pan addTarget:self action:@selector(panToSelect:)];
+    }
+    else
+    {
+        [self.pan removeTarget:self action:@selector(panToSelect:)];
+    }
+    
+}
+
+#pragma mark - pan手势功能集合 :绘制基本碳骨架
 - (void)pan:(UIPanGestureRecognizer*)pan
 {
     CGPoint curP = [pan locationInView:self];
-
+    
     if (_pan.state == UIGestureRecognizerStateBegan) {
-        
         //初始化时，化学键为1
         _bond = [CYLChemicalBond CreatChemicalBondWithCarbon];
-
+        
         _bond.startP = curP;
         
         //判断起点与任意一条线的双端是否住够近 选出起点
+        
         for (NSValue *value in self.pointArray)
         {
             CGPoint point = value.CGPointValue;
             
             if ([self isStartPoint:_bond.startP aroundPoint:point WithRadius:CTLRadius])
-            {    
+            {
                 //如果与某个点很近 则显示高亮图片 并以此为起点
                 [self showHightViewOnPoint:point];
                 
@@ -337,17 +376,12 @@
                 atom.attachBondNum += 1;
             }
         }
+        
+        //显示辅助线条
+        [self drawAssitanceLine];
     }
     else if (_pan.state == UIGestureRecognizerStateChanged)
     {
-
-//        for (CYLChemicalBond *ExitBond in self.BondArray) {
-//            
-//            if (CGPointEqualToPoint(_bond.startP, ExitBond.startP)) {
-//
-//            }
-//            
-//        }
         
         _bond.bezierPath = [UIBezierPath bezierPath];
         
@@ -360,7 +394,7 @@
             CGPoint point = value.CGPointValue;
             
             if ([self isStartPoint:curP aroundPoint:point WithRadius:CTLRadius] && !CGPointEqualToPoint(point, _bond.startP)) {
-
+                
                 [self showAttachViewOnPoint:point];
                 
                 _bond.AttachPoint = point;
@@ -372,6 +406,26 @@
                 _bond.AttachPoint = CGPointZero;
             }
         }
+        
+        //显示辅助点的attachView
+        for (NSValue *value  in self.SuggestPointArray) {
+            
+            CGPoint point = value.CGPointValue;
+            
+            if ([self isStartPoint:curP aroundPoint:point WithRadius:CTLRadius] && !CGPointEqualToPoint(point, _bond.startP)) {
+                
+                [self showAttachViewOnPoint:point];
+                
+                _bond.AttachPoint = point;
+            }
+            else if (![self isStartPoint:curP aroundPoint:_bond.AttachPoint WithRadius:CTLRadius])
+            {
+                //如果移开 则移除attachview 并且attachPoint = (0,0)
+                [self dismissAttachView];
+                _bond.AttachPoint = CGPointZero;
+            }
+        }
+        
         
         [self setNeedsDisplay];
     }
@@ -408,32 +462,73 @@
             //没有attachPoint时 才缓存自己的atom
             [self.atomArray addObject:_bond.Atom];
         }
-
+        
         //缓存画好的bond
         [self.BondArray addObject:_bond];
-
-        //存储每条线的双端
-        [self.pointArray addObject:[NSValue valueWithCGPoint:_bond.endP]];
-        [self.pointArray addObject:[NSValue valueWithCGPoint:_bond.startP]];
+        
         
         [self dismissHightLightView];
         [self dismissAttachView];
         
-
+        //移除辅助线条的无用
+        self.SuggestPointArray = nil;
+        
+        //撤销辅助线条
+        [self.suggestPathArray removeAllObjects];
+        
+        //存储每条线的双端
+        [self.pointArray addObject:[NSValue valueWithCGPoint:_bond.endP]];
+        [self.pointArray addObject:[NSValue valueWithCGPoint:_bond.startP]];
+        
+        NSLog(@"%@",[NSValue valueWithCGPoint:_bond.startP]);
+        NSLog(@"%@",[NSValue valueWithCGPoint:_bond.endP]);
+        NSLog(@"%@",self.pointArray);
+        
         [self setNeedsDisplay];
-
+        
     }
     
 }
 
+#pragma mark - pan手势功能集合 :选择已存在的点
+- (void)panToSelect:(UIPanGestureRecognizer*)panToSelect
+{
+    CGPoint curP = [panToSelect locationInView:self];
+    
+    if (panToSelect.state == UIGestureRecognizerStateChanged) {
+        
+        //显示划过的路径
+        self.selectPath = [UIBezierPath bezierPathWithArcCenter:curP radius:selectRadius startAngle:0 endAngle:2*M_PI clockwise:YES];
+        
+        for (NSValue *value in self.pointArray) {
+            
+            CGPoint point = value.CGPointValue;
+            
+            if ([self isStartPoint:point aroundPoint:curP WithRadius:selectRadius]) {
+                
+               UIView *selectedView = [self showSelectViewOnPoint:point];
+                
+                [self.selectedViewArray addObject:selectedView];
+            }
+            
+        }
+        
+    }
+    else if (panToSelect.state == UIGestureRecognizerStateEnded)
+    {
+        self.selectPath = nil;
+    }
+    
+    [self setNeedsDisplay];
+}
+
+
 
 #pragma mark - 懒加载
-
-
 - (CYLToolBarView *)tooBarView
 {
     if (_tooBarView == nil) {
-        _tooBarView = [[CYLToolBarView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width / 4, self.frame.size.height)];
+        _tooBarView = [[CYLToolBarView alloc] initWithFrame:CGRectMake(0, self.frame.size.height - 150, self.frame.size.width,150)];
         [self addSubview:_tooBarView];
         _tooBarView.backgroundColor = [UIColor lightGrayColor];
     }
@@ -478,13 +573,12 @@
     return _AttachView;
 }
 
-- (CYLChemicalBond *)lastBond
+- (NSMutableArray *)selectedViewArray
 {
-    if (self.BondArray.count) {
-        
-        _lastBond = self.BondArray.firstObject;
+    if (_selectedViewArray == nil) {
+        _selectedViewArray = [NSMutableArray array];
     }
-    return _lastBond;
+    return _selectedViewArray;
 }
 
 - (NSMutableArray *)atomArray
@@ -494,7 +588,30 @@
     }
     return _atomArray;
 }
+
+- (NSMutableArray *)suggestPathArray
+{
+    if (_suggestPathArray == nil) {
+        _suggestPathArray = [NSMutableArray array];
+    }
+    return _suggestPathArray;
+}
+
+-(NSArray *)SuggestPointArray
+{
+    if (_SuggestPointArray == nil) {
+        _SuggestPointArray = @[[NSValue valueWithCGPoint:_point1],
+                               [NSValue valueWithCGPoint:_point2],
+                               [NSValue valueWithCGPoint:_point3],
+                               [NSValue valueWithCGPoint:_point4],
+                               [NSValue valueWithCGPoint:_point5],
+                               [NSValue valueWithCGPoint:_point6],
+                               ];
+    }
+    return _SuggestPointArray;
+}
 #pragma mark - 自定义function
+//一个点是否在另一个点的附近
 - (BOOL)isStartPoint:(CGPoint)Startpoint aroundPoint:(CGPoint)point WithRadius:(CGFloat)radius
 {
     CGFloat SPx = Startpoint.x;
@@ -508,6 +625,7 @@
     return distance <= radius ? YES : NO;
 }
 
+//取出在point上的atom
 - (CYLCarbonAtom*)atomAtPoint:(CGPoint)point
 {
     for (CYLCarbonAtom *atom in self.atomArray) {
@@ -519,6 +637,7 @@
     return nil;
 }
 
+//显示、撤销高亮view 和 建议view
 - (void)showHightViewOnPoint:(CGPoint)point
 {
     self.HighLightView.frame = CGRectMake(0, 0, CTLRadius,CTLRadius);
@@ -543,9 +662,86 @@
     self.AttachView = nil;
 }
 
-#pragma mark - UIGestureRecognizerDelegate
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
+- (UIView*)showSelectViewOnPoint:(CGPoint)point
 {
-    return YES;
+    UIView *selectView = [[UIView alloc] init];
+    selectView.backgroundColor = [UIColor getColor:@"458B74"];
+    selectView.layer.cornerRadius = CTLRadius / 2;
+    selectView.frame = CGRectMake(0, 0, CTLRadius,CTLRadius);
+    selectView.center = point;
+    [self addSubview:selectView];
+    return selectView;
+}
+
+- (void)dismissAllSelView
+{
+    for (__strong UIView *view in self.selectedViewArray) {
+        
+        [view removeFromSuperview];
+        view = nil;
+    }
+}
+
+//绘制辅助作图线条
+- (void)drawAssitanceLine
+{
+    //拖拽时显示辅助作图线
+    //suggstLine1 左上
+    CGFloat lineOneX = _bond.startP.x - CYLSuggestBondLength * cos(M_PI/6);
+    CGFloat lineOneY = _bond.startP.y - CYLSuggestBondLength * sin(M_PI/6);
+    _point1 = CGPointMake(lineOneX, lineOneY);
+    //suggstLine2 右上
+    CGFloat lineTwoX = _bond.startP.x + CYLSuggestBondLength * cos(M_PI/6);
+    CGFloat lineTwoY = _bond.startP.y - CYLSuggestBondLength * sin(M_PI/6);
+     _point2 = CGPointMake(lineTwoX, lineTwoY);
+    //suggstLine3 下
+    CGFloat lineThreeX = _bond.startP.x;
+    CGFloat lineThreeY = _bond.startP.y + CYLSuggestBondLength;
+    _point3 = CGPointMake(lineThreeX, lineThreeY);
+    //suggstLine4 左下
+    CGFloat lineFourX = _bond.startP.x - CYLSuggestBondLength * cos(M_PI/6);
+    CGFloat lineFourY = _bond.startP.y + CYLSuggestBondLength * sin(M_PI/6);
+   _point4 = CGPointMake(lineFourX, lineFourY);
+    //suggstLine5 右下
+    CGFloat lineFiveX = _bond.startP.x + CYLSuggestBondLength * cos(M_PI/6);
+    CGFloat lineFiveY = _bond.startP.y + CYLSuggestBondLength * sin(M_PI/6);
+    _point5 = CGPointMake(lineFiveX, lineFiveY);
+    //suggstLine6 上
+    CGFloat lineSixX = _bond.startP.x;
+    CGFloat lineSixY = _bond.startP.y - CYLSuggestBondLength;
+    _point6 = CGPointMake(lineSixX, lineSixY);
+    
+    _suggstLine1 = [UIBezierPath bezierPath];
+    [_suggstLine1 moveToPoint:CGPointMake(_bond.startP.x, _bond.startP.y)];
+    [_suggstLine1 addLineToPoint:_point1];
+    
+    _suggstLine2 = [UIBezierPath bezierPath];
+    [_suggstLine2 moveToPoint:CGPointMake(_bond.startP.x, _bond.startP.y)];
+    [_suggstLine2 addLineToPoint:_point2];
+    
+    _suggstLine3 = [UIBezierPath bezierPath];
+    [_suggstLine3 moveToPoint:CGPointMake(_bond.startP.x, _bond.startP.y)];
+    [_suggstLine3 addLineToPoint:_point3];
+    
+    _suggstLine4 = [UIBezierPath bezierPath];
+    [_suggstLine4 moveToPoint:CGPointMake(_bond.startP.x, _bond.startP.y)];
+    [_suggstLine4 addLineToPoint:_point4];
+    
+    _suggstLine5 = [UIBezierPath bezierPath];
+    [_suggstLine5 moveToPoint:CGPointMake(_bond.startP.x, _bond.startP.y)];
+    [_suggstLine5 addLineToPoint:_point5];
+    
+    _suggstLine6 = [UIBezierPath bezierPath];
+    [_suggstLine6 moveToPoint:CGPointMake(_bond.startP.x, _bond.startP.y)];
+    [_suggstLine6 addLineToPoint:_point6];
+    
+    [self.suggestPathArray addObject:_suggstLine1];
+    [self.suggestPathArray addObject:_suggstLine2];
+    [self.suggestPathArray addObject:_suggstLine3];
+    [self.suggestPathArray addObject:_suggstLine4];
+    [self.suggestPathArray addObject:_suggstLine5];
+    [self.suggestPathArray addObject:_suggstLine6];
+    
+//    [self.pointArray addObjectsFromArray:self.SuggestPointArray];
 }
 @end

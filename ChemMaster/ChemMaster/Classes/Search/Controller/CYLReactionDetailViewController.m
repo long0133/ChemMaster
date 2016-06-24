@@ -76,7 +76,7 @@ static NSInteger literatureLength = 0;
             }
 
             
-            UIButton *imageBtn = [[UIButton alloc] initWithFrame:CGRectMake(5, _CurrentH, image.size.width * Scale, image.size.height * Scale)];
+            UIButton *imageBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, _CurrentH, image.size.width * Scale, image.size.height * Scale)];
             
             [imageBtn setBackgroundImage:image forState:UIControlStateNormal];
         

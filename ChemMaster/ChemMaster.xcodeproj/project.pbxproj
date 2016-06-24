@@ -37,6 +37,8 @@
 		4E5F798A1D1A492A009AD7DC /* NSString+CYLNsstring.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F79891D1A492A009AD7DC /* NSString+CYLNsstring.m */; };
 		4E5F798D1D1A4CFE009AD7DC /* CYLTotalSynDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F798C1D1A4CFE009AD7DC /* CYLTotalSynDetailViewController.m */; };
 		4E5F79911D1A5ECC009AD7DC /* UIColor+CYLColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F79901D1A5ECC009AD7DC /* UIColor+CYLColor.m */; };
+		4E5F79941D1B6E27009AD7DC /* CYLHighLightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F79931D1B6E27009AD7DC /* CYLHighLightViewController.m */; };
+		4E5F79981D1B753E009AD7DC /* CYLHighLightMonthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F79971D1B753E009AD7DC /* CYLHighLightMonthViewController.m */; };
 		4EAC5D821D14094600199DAA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAC5D811D14094600199DAA /* CoreGraphics.framework */; };
 		4EAC5D841D14094D00199DAA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAC5D831D14094D00199DAA /* QuartzCore.framework */; };
 		4EAC5D861D1409E700199DAA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAC5D851D1409E700199DAA /* UIKit.framework */; };
@@ -130,6 +132,10 @@
 		4E5F798C1D1A4CFE009AD7DC /* CYLTotalSynDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLTotalSynDetailViewController.m; sourceTree = "<group>"; };
 		4E5F798F1D1A5ECC009AD7DC /* UIColor+CYLColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CYLColor.h"; sourceTree = "<group>"; };
 		4E5F79901D1A5ECC009AD7DC /* UIColor+CYLColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CYLColor.m"; sourceTree = "<group>"; };
+		4E5F79921D1B6E27009AD7DC /* CYLHighLightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLHighLightViewController.h; sourceTree = "<group>"; };
+		4E5F79931D1B6E27009AD7DC /* CYLHighLightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLHighLightViewController.m; sourceTree = "<group>"; };
+		4E5F79961D1B753E009AD7DC /* CYLHighLightMonthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLHighLightMonthViewController.h; sourceTree = "<group>"; };
+		4E5F79971D1B753E009AD7DC /* CYLHighLightMonthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLHighLightMonthViewController.m; sourceTree = "<group>"; };
 		4EAC5D811D14094600199DAA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4EAC5D831D14094D00199DAA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4EAC5D851D1409E700199DAA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -515,6 +521,25 @@
 			name = TSListViewController;
 			sourceTree = "<group>";
 		};
+		4E5F79951D1B6E2E009AD7DC /* HighLightViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4E5F79921D1B6E27009AD7DC /* CYLHighLightViewController.h */,
+				4E5F79931D1B6E27009AD7DC /* CYLHighLightViewController.m */,
+				4E5F79991D1B7542009AD7DC /* HLMonthViewController */,
+			);
+			name = HighLightViewController;
+			sourceTree = "<group>";
+		};
+		4E5F79991D1B7542009AD7DC /* HLMonthViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4E5F79961D1B753E009AD7DC /* CYLHighLightMonthViewController.h */,
+				4E5F79971D1B753E009AD7DC /* CYLHighLightMonthViewController.m */,
+			);
+			name = HLMonthViewController;
+			sourceTree = "<group>";
+		};
 		4EAC5D771D1400C900199DAA /* Search ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -522,6 +547,7 @@
 				4E2A81F51D0DA0220082D785 /* CYLSearchViewController.m */,
 				4E5F79831D1965EA009AD7DC /* nameReactionList */,
 				4E5F79871D198923009AD7DC /* TotalSynthesisList */,
+				4E5F79951D1B6E2E009AD7DC /* HighLightViewController */,
 			);
 			name = "Search ViewController";
 			sourceTree = "<group>";
@@ -783,6 +809,8 @@
 				4E2A82051D0DA6580082D785 /* CYLTabBarController.m in Sources */,
 				4E5F798D1D1A4CFE009AD7DC /* CYLTotalSynDetailViewController.m in Sources */,
 				4E2A81EC1D0D9FCC0082D785 /* CYLMineViewController.m in Sources */,
+				4E5F79981D1B753E009AD7DC /* CYLHighLightMonthViewController.m in Sources */,
+				4E5F79941D1B6E27009AD7DC /* CYLHighLightViewController.m in Sources */,
 				4E2A820E1D0DA7A40082D785 /* CYLBadgeView.m in Sources */,
 				4E2A82191D0EE0460082D785 /* CYLHeaderReusableView.m in Sources */,
 				4E5F79911D1A5ECC009AD7DC /* UIColor+CYLColor.m in Sources */,

@@ -44,7 +44,7 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.collectionView.backgroundColor = [UIColor lightTextColor];
+    self.collectionView.backgroundColor = [UIColor getColor:@"DCDCDC"];
 
     [self.collectionView registerClass:[CYLHightLightCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
@@ -93,7 +93,7 @@ static NSString * const reuseIdentifier = @"Cell";
         }
         else
         {
-            view.backgroundColor = randomColor;
+            view.backgroundColor = barColor;
         }
         
         

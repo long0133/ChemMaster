@@ -12,6 +12,7 @@
 #import "CYLWebViewController.h"
 #import "CYLnameReactionListViewController.h"
 #import "CYLTotalSythesisListViewController.h"
+#import "CYLHighLightViewController.h"
 #import <SVProgressHUD.h>
 #import <Masonry.h>
 #import <TFHpple.h>
@@ -35,6 +36,8 @@
 
 @property (nonatomic, strong) UIButton *nameReactionListBtn;
 @property (nonatomic, strong) UIButton *TotalSynthesisListBtn;
+@property (nonatomic, strong) UIButton *HightLightsListBtn;
+@property (nonatomic, strong) UIButton *ChemiscalResourceListBtn;
 
 @end
 
@@ -129,6 +132,20 @@
     [_TotalSynthesisListBtn.titleLabel setFont:[UIFont systemFontOfSize:20]];
     _TotalSynthesisListBtn.backgroundColor = [UIColor getColor:@"4EEE94"];
     [self.view addSubview:_TotalSynthesisListBtn];
+    
+    _HightLightsListBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [_HightLightsListBtn addTarget:self action:@selector(showHightLightList) forControlEvents:UIControlEventTouchUpInside];
+    [_HightLightsListBtn setTitle:@"HightLights" forState:UIControlStateNormal];
+    [_HightLightsListBtn.titleLabel setFont:[UIFont systemFontOfSize:20]];
+    _HightLightsListBtn.backgroundColor = [UIColor getColor:@"206bb6"];
+    [self.view addSubview:_HightLightsListBtn];
+    
+    _ChemiscalResourceListBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [_ChemiscalResourceListBtn addTarget:self action:@selector(showChemiscalResourceList) forControlEvents:UIControlEventTouchUpInside];
+    [_ChemiscalResourceListBtn setTitle:@"Chem Resource" forState:UIControlStateNormal];
+    [_ChemiscalResourceListBtn.titleLabel setFont:[UIFont systemFontOfSize:20]];
+    _ChemiscalResourceListBtn.backgroundColor = [UIColor getColor:@"894dd1"];
+    [self.view addSubview:_ChemiscalResourceListBtn];
 }
 
 - (void)viewWillLayoutSubviews
@@ -181,6 +198,20 @@
         make.right.equalTo(self.view).offset(-20);
         make.top.equalTo(self.nameReactionListBtn);
         
+    }];
+    
+    [_HightLightsListBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+       
+        make.width.height.equalTo(self.nameReactionListBtn);
+        make.left.equalTo(self.view).offset(20);
+        make.top.equalTo(self.nameReactionListBtn.mas_bottom).offset(20);
+    }];
+    
+    [_ChemiscalResourceListBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.width.height.equalTo(self.nameReactionListBtn);
+        make.right.equalTo(self.view).offset(-20);
+        make.top.equalTo(self.HightLightsListBtn);
     }];
 }
 
@@ -295,6 +326,18 @@
     CYLTotalSythesisListViewController *Tvc = [[CYLTotalSythesisListViewController alloc] initWithStyle:UITableViewStylePlain];
     
     [self.navigationController pushViewController:Tvc animated:YES];
+}
+
+-(void)showHightLightList
+{
+    CYLHighLightViewController *hvc = [CYLHighLightViewController highLightViewController];
+    hvc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:hvc animated:YES];
+}
+
+- (void)showChemiscalResourceList
+{
+    
 }
 
 #pragma mark - pickerView

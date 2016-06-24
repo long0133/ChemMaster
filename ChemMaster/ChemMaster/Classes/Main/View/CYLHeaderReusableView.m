@@ -48,7 +48,7 @@ typedef NS_ENUM(NSInteger, CYLFont)
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
-    NSTimer *timer = [NSTimer timerWithTimeInterval:2.5 target:self selector:@selector(rollTheImage) userInfo:nil repeats:YES];
+    NSTimer *timer = [NSTimer timerWithTimeInterval:3 target:self selector:@selector(rollTheImage) userInfo:nil repeats:YES];
     [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
     
    return [super initWithFrame:frame];
