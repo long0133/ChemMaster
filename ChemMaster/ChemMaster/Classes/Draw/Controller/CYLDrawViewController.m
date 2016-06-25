@@ -9,6 +9,7 @@
 #import "CYLDrawViewController.h"
 #import "CYLDrawView.h"
 #import "CYLToolBarView.h"
+#import <objc/runtime.h>
 @interface CYLDrawViewController ()<CYLToolBarViewDelegate>
 
 @property (nonatomic, strong) CYLDrawView *drawView;
@@ -34,25 +35,34 @@
 #pragma mark - toolBar delegate
 - (void)toolBarDidClickSelectBtn
 {
+    self.drawView.isGoDoubleBond = NO;
+    self.drawView.isGoTrinpleBond = NO;
     self.drawView.isDraw = NO;
     self.drawView.isToSelect = !self.drawView.isToSelect;
-    NSLog(@"sle : %d", self.drawView.isToSelect);
 }
 
 - (void)toolBarDidClickDrawBtn
 {
+    self.drawView.isGoDoubleBond = NO;
+    self.drawView.isGoTrinpleBond = NO;
     self.drawView.isToSelect = NO;
     self.drawView.isDraw = !self.drawView.isDraw;
-    NSLog(@"draw : %d", self.drawView.isDraw);
 }
 
 - (void)toolBarDidClickDoubleBondBtn
 {
-    self.drawView.isGoDoubleBond = YES;
+    self.drawView.isGoTrinpleBond = NO;
+    self.drawView.isDraw = NO;
+    self.drawView.isToSelect = NO;
+    self.drawView.isGoDoubleBond = !self.drawView.isGoDoubleBond;
 }
 
 - (void)toolBarDidClickTripleBondBtn
 {
-    self.drawView.isGoTrinpleBond = YES;
+    self.drawView.isGoDoubleBond = NO;
+    self.drawView.isDraw = NO;
+    self.drawView.isToSelect = NO;
+    self.drawView.isGoTrinpleBond = !self.drawView.isGoTrinpleBond;
 }
+
 @end

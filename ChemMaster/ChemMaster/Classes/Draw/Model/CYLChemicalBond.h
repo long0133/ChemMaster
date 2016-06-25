@@ -16,13 +16,13 @@
 
 @property (nonatomic, assign) CGPoint startP;
 @property (nonatomic, assign) CGPoint endP;
+//设置中点便于选中对应的化学键
+@property (nonatomic, assign) CGPoint midPoint;
 
 @property (nonatomic, strong) CYLCarbonAtom *Atom;
 
 @property (nonatomic,assign) CGPoint AttachPoint;
 
-//给出建议化学键的方向线段
-@property (nonatomic, assign) CGMutablePathRef suggestBondPath;
 
 + (instancetype)CreatChemicalBondWithCarbon;
 

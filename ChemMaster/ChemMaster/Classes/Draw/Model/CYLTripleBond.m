@@ -1,38 +1,36 @@
 //
-//  CYLChemicalBond.m
+//  CYLTripleBond.m
 //  ChemMaster
 //
-//  Created by GARY on 16/6/19.
+//  Created by GARY on 16/6/25.
 //  Copyright © 2016年 GARY. All rights reserved.
 //
 
-#import "CYLChemicalBond.h"
+#import "CYLTripleBond.h"
 
-@interface CYLChemicalBond ()
-
-@end
-
-@implementation CYLChemicalBond
+@implementation CYLTripleBond
 
 + (instancetype)CreatChemicalBondWithCarbon
 {
-    CYLChemicalBond *chemBond = [[CYLChemicalBond alloc] init];
+    CYLTripleBond *chemBond = [[CYLTripleBond alloc] init];
     
     //初始化ChemicalBond
     chemBond.startP = CGPointZero;
     chemBond.endP = CGPointZero;
-    chemBond.midPoint = CGPointZero;
+    chemBond.startPTwo = CGPointZero;
+    chemBond.endPTwo = CGPointZero;
+    chemBond.startPThree = CGPointZero;
+    chemBond.endPThree = CGPointZero;
     
     chemBond.AttachPoint = CGPointZero;
     chemBond.bondPath = NULL;
     
     chemBond.Atom = [[CYLCarbonAtom alloc] init];
     chemBond.Atom.attachBondNum = 1;
-
+    
     chemBond.Atom.atomPoint = chemBond.endP;
     
     return chemBond;
 }
-
 
 @end

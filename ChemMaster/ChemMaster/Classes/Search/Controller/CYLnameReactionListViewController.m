@@ -88,7 +88,6 @@ static NSString *reuse = @"reuse";
     CYLnameReactionListViewController *listVC = [[CYLnameReactionListViewController alloc] initWithStyle:UITableViewStylePlain];
     
     //查看caches是否有list的存档
-    NSString *cachePath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
     NSString *listPath = [cachePath stringByAppendingPathComponent:@"NameReactionList"];
     
     NSData *data = [NSData dataWithContentsOfFile:listPath];

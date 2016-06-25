@@ -39,6 +39,11 @@
 		4E5F79911D1A5ECC009AD7DC /* UIColor+CYLColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F79901D1A5ECC009AD7DC /* UIColor+CYLColor.m */; };
 		4E5F79941D1B6E27009AD7DC /* CYLHighLightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F79931D1B6E27009AD7DC /* CYLHighLightViewController.m */; };
 		4E5F79981D1B753E009AD7DC /* CYLHighLightMonthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F79971D1B753E009AD7DC /* CYLHighLightMonthViewController.m */; };
+		4E5F799C1D1CC525009AD7DC /* CYLDoubleBond.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F799B1D1CC525009AD7DC /* CYLDoubleBond.m */; };
+		4E5F799F1D1CD312009AD7DC /* NSObject+CYLStorageMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F799E1D1CD312009AD7DC /* NSObject+CYLStorageMethod.m */; };
+		4E5F79A21D1CE77C009AD7DC /* CYLResourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F79A11D1CE77C009AD7DC /* CYLResourceViewController.m */; };
+		4E5F79A61D1CECC2009AD7DC /* CYLSpecificResourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F79A51D1CECC2009AD7DC /* CYLSpecificResourceViewController.m */; };
+		4E6286631D1E5DEA005498F0 /* CYLTripleBond.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E6286621D1E5DEA005498F0 /* CYLTripleBond.m */; };
 		4EAC5D821D14094600199DAA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAC5D811D14094600199DAA /* CoreGraphics.framework */; };
 		4EAC5D841D14094D00199DAA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAC5D831D14094D00199DAA /* QuartzCore.framework */; };
 		4EAC5D861D1409E700199DAA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAC5D851D1409E700199DAA /* UIKit.framework */; };
@@ -136,6 +141,16 @@
 		4E5F79931D1B6E27009AD7DC /* CYLHighLightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLHighLightViewController.m; sourceTree = "<group>"; };
 		4E5F79961D1B753E009AD7DC /* CYLHighLightMonthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLHighLightMonthViewController.h; sourceTree = "<group>"; };
 		4E5F79971D1B753E009AD7DC /* CYLHighLightMonthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLHighLightMonthViewController.m; sourceTree = "<group>"; };
+		4E5F799A1D1CC525009AD7DC /* CYLDoubleBond.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLDoubleBond.h; sourceTree = "<group>"; };
+		4E5F799B1D1CC525009AD7DC /* CYLDoubleBond.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLDoubleBond.m; sourceTree = "<group>"; };
+		4E5F799D1D1CD312009AD7DC /* NSObject+CYLStorageMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CYLStorageMethod.h"; sourceTree = "<group>"; };
+		4E5F799E1D1CD312009AD7DC /* NSObject+CYLStorageMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CYLStorageMethod.m"; sourceTree = "<group>"; };
+		4E5F79A01D1CE77C009AD7DC /* CYLResourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLResourceViewController.h; sourceTree = "<group>"; };
+		4E5F79A11D1CE77C009AD7DC /* CYLResourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLResourceViewController.m; sourceTree = "<group>"; };
+		4E5F79A41D1CECC2009AD7DC /* CYLSpecificResourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLSpecificResourceViewController.h; sourceTree = "<group>"; };
+		4E5F79A51D1CECC2009AD7DC /* CYLSpecificResourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLSpecificResourceViewController.m; sourceTree = "<group>"; };
+		4E6286611D1E5DEA005498F0 /* CYLTripleBond.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTripleBond.h; sourceTree = "<group>"; };
+		4E6286621D1E5DEA005498F0 /* CYLTripleBond.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLTripleBond.m; sourceTree = "<group>"; };
 		4EAC5D811D14094600199DAA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4EAC5D831D14094D00199DAA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4EAC5D851D1409E700199DAA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -310,6 +325,10 @@
 				4E1377F61D1663F200857C36 /* Atoms */,
 				4E1377F31D16516400857C36 /* CYLChemicalBond.h */,
 				4E1377F41D16516400857C36 /* CYLChemicalBond.m */,
+				4E5F799A1D1CC525009AD7DC /* CYLDoubleBond.h */,
+				4E5F799B1D1CC525009AD7DC /* CYLDoubleBond.m */,
+				4E6286611D1E5DEA005498F0 /* CYLTripleBond.h */,
+				4E6286621D1E5DEA005498F0 /* CYLTripleBond.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -540,6 +559,17 @@
 			name = HLMonthViewController;
 			sourceTree = "<group>";
 		};
+		4E5F79A31D1CE781009AD7DC /* ResourceViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4E5F79A01D1CE77C009AD7DC /* CYLResourceViewController.h */,
+				4E5F79A11D1CE77C009AD7DC /* CYLResourceViewController.m */,
+				4E5F79A41D1CECC2009AD7DC /* CYLSpecificResourceViewController.h */,
+				4E5F79A51D1CECC2009AD7DC /* CYLSpecificResourceViewController.m */,
+			);
+			name = ResourceViewController;
+			sourceTree = "<group>";
+		};
 		4EAC5D771D1400C900199DAA /* Search ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -548,6 +578,7 @@
 				4E5F79831D1965EA009AD7DC /* nameReactionList */,
 				4E5F79871D198923009AD7DC /* TotalSynthesisList */,
 				4E5F79951D1B6E2E009AD7DC /* HighLightViewController */,
+				4E5F79A31D1CE781009AD7DC /* ResourceViewController */,
 			);
 			name = "Search ViewController";
 			sourceTree = "<group>";
@@ -586,6 +617,8 @@
 				4E5F79891D1A492A009AD7DC /* NSString+CYLNsstring.m */,
 				4E5F798F1D1A5ECC009AD7DC /* UIColor+CYLColor.h */,
 				4E5F79901D1A5ECC009AD7DC /* UIColor+CYLColor.m */,
+				4E5F799D1D1CD312009AD7DC /* NSObject+CYLStorageMethod.h */,
+				4E5F799E1D1CD312009AD7DC /* NSObject+CYLStorageMethod.m */,
 			);
 			path = catagory;
 			sourceTree = "<group>";
@@ -795,9 +828,12 @@
 				4E2A82041D0DA6580082D785 /* CYLNaviViewController.m in Sources */,
 				4E2A82251D0FE2860082D785 /* CYLHightLightModel.m in Sources */,
 				4E2A81EF1D0D9FE50082D785 /* CYLDrawViewController.m in Sources */,
+				4E5F799F1D1CD312009AD7DC /* NSObject+CYLStorageMethod.m in Sources */,
+				4E5F79A21D1CE77C009AD7DC /* CYLResourceViewController.m in Sources */,
 				4E2A81E91D0D9FB90082D785 /* CYLMainViewController.m in Sources */,
 				4E5F79821D196551009AD7DC /* CYLnameReactionListViewController.m in Sources */,
 				4E2A81AB1D0D9BCF0082D785 /* AppDelegate.m in Sources */,
+				4E6286631D1E5DEA005498F0 /* CYLTripleBond.m in Sources */,
 				4E1377F91D16640500857C36 /* CYLCarbonAtom.m in Sources */,
 				4ECC97C81D1197D800D5000C /* CYLResultViewController.m in Sources */,
 				4ECC97D11D12818A00D5000C /* CYLReactionDetailViewController.m in Sources */,
@@ -809,6 +845,7 @@
 				4E2A82051D0DA6580082D785 /* CYLTabBarController.m in Sources */,
 				4E5F798D1D1A4CFE009AD7DC /* CYLTotalSynDetailViewController.m in Sources */,
 				4E2A81EC1D0D9FCC0082D785 /* CYLMineViewController.m in Sources */,
+				4E5F79A61D1CECC2009AD7DC /* CYLSpecificResourceViewController.m in Sources */,
 				4E5F79981D1B753E009AD7DC /* CYLHighLightMonthViewController.m in Sources */,
 				4E5F79941D1B6E27009AD7DC /* CYLHighLightViewController.m in Sources */,
 				4E2A820E1D0DA7A40082D785 /* CYLBadgeView.m in Sources */,
@@ -819,6 +856,7 @@
 				4E2A82081D0DA6B40082D785 /* CYLTabBar.m in Sources */,
 				4ECC97BE1D10F3F800D5000C /* CYLWebViewController.m in Sources */,
 				4E5F79861D19891E009AD7DC /* CYLTotalSythesisListViewController.m in Sources */,
+				4E5F799C1D1CC525009AD7DC /* CYLDoubleBond.m in Sources */,
 				4E2A81A81D0D9BCF0082D785 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

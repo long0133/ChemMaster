@@ -7,7 +7,8 @@
 //
 
 #import "CYLDrawView.h"
-
+#import "CYLDoubleBond.h"
+#import "CYLTripleBond.h"
 
 //highlightView 和 AttachView的半径
 #define CTLRadius 20.0
@@ -16,9 +17,11 @@
 //建议的化学键键长
 #define CYLSuggestBondLength 40
 //化学键线宽
-#define BondLineWidth 3
+#define BondLineWidth 2
 //选中范围的半径
 #define selectRadius 20
+//双键间隔
+#define marginOfBonds 3
 
 
 @interface CYLDrawView ()<UIGestureRecognizerDelegate>
@@ -27,9 +30,8 @@
 
 @property (nonatomic, strong) CYLChemicalBond *lastBond;
 
-@property (nonatomic, assign) CGContextRef ContextRef;
-
 @property (nonatomic, strong) UIPanGestureRecognizer *pan;
+@property (nonatomic, strong) UITapGestureRecognizer *tap;
 
 @property (nonatomic, strong) NSMutableArray *BondArray;
 //存储每条线的双端点
@@ -46,6 +48,7 @@
 @property (nonatomic,strong) UIBezierPath *selectPath;
 //存储被选中的点
 @property (nonatomic, strong) NSMutableArray *selPointArray;
+
 /////////////////////////给出建议线条//////////////////////////////////////////
 //给出建议化学键的方向线段的数组
 @property (nonatomic, strong) NSMutableArray *suggestPathArray;
@@ -64,13 +67,11 @@
 @property (nonatomic, assign) CGPoint point4;
 @property (nonatomic, assign) CGPoint point5;
 @property (nonatomic, assign) CGPoint point6;
-
+/////////////////////////给出建议线条//////////////////////////////////////////
 @end
 
 @implementation CYLDrawView
 - (void)drawRect:(CGRect)rect {
-    
-    self.ContextRef = UIGraphicsGetCurrentContext();
     
     //画出实时的线条
     self.bond.bezierPath.lineWidth = BondLineWidth;
@@ -86,15 +87,33 @@
     //画出历史的线条
     for (CYLChemicalBond *bond in self.BondArray) {
         
-        bond.bezierPath.lineWidth = BondLineWidth;
+        if ([bond isKindOfClass:[CYLDoubleBond class]]) { //画出双键
+            
+            typeof(CYLDoubleBond*) DoubleBond = (CYLDoubleBond*)bond;
+            DoubleBond.bezierPath.lineWidth = BondLineWidth;
+            DoubleBond.bezierPathTwo.lineWidth = BondLineWidth;
+            [DoubleBond.bezierPath stroke];
+            [DoubleBond.bezierPathTwo stroke];
+        }
         
+        if ([bond isKindOfClass:[CYLTripleBond class]]) { //画出三键
+            
+            typeof (CYLTripleBond*)tripleBond = (CYLTripleBond*)bond;
+            
+            tripleBond.bezierPath.lineWidth = BondLineWidth;
+            tripleBond.bezierPathTwo.lineWidth = BondLineWidth;
+            tripleBond.bezierPathThree.lineWidth = BondLineWidth;
+            
+            [tripleBond.bezierPath stroke];
+            [tripleBond.bezierPathTwo stroke];
+            [tripleBond.bezierPathThree stroke];
+        }
+        
+        //画出单键
+        bond.bezierPath.lineWidth = BondLineWidth;
         [bond.bezierPath stroke];
         
     }
-    
-    CGContextSetLineWidth(self.ContextRef, 3);
-    
-    CGContextStrokePath(self.ContextRef);
 }
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -103,215 +122,17 @@
         
         self.backgroundColor = [UIColor whiteColor];
         
-        self.isDraw = YES;
+        self.tap = [[UITapGestureRecognizer alloc] init];
+        [self addGestureRecognizer:self.tap];
+        self.tap.delegate = self;
+        self.pan = [[UIPanGestureRecognizer alloc] init];
+        [self addGestureRecognizer:self.pan];
+        self.pan.delegate = self;
         
         [self tooBarView];
     }
     return self;
 }
-
-#pragma mark - tap手势 单击某一个原子时，自动画出合适长度，合适角度的化学键
-#if 1
-- (void)tap:(UITapGestureRecognizer*)tap
-{
-     //单击某一个原子时，自动画出合适长度，合适角度的化学键
-    CGPoint tapPoint = [tap locationInView:self];
-    
-    //新创建的化学键
-    CYLChemicalBond *NewBond = nil;
-    CGFloat assitanceX = 0;
-    CGFloat assistanceY = 0;
-    CGFloat assistancAngle = 0;
-    CGFloat wantedAngle = 0;
-    CGFloat wangtedX = 0;
-    CGFloat wangtedY = 0;
-    CGFloat L = 0;
-    
-    
-    for (CYLChemicalBond *bond in self.BondArray) {
-        
-        //tap点击住够近时，修正tap点的位置
-        if ([self isStartPoint:tapPoint aroundPoint:bond.startP WithRadius:CTLRadius])
-        {
-            tapPoint = bond.startP;
-        }
-        else if ([self isStartPoint:tapPoint aroundPoint:bond.endP WithRadius:CTLRadius])
-        {
-            tapPoint = bond.endP;
-        }
-        else
-        {
-            tapPoint = [tap locationInView:self];
-        }
-        
-        if (CGPointEqualToPoint(bond.startP, tapPoint)) { //点击了startPoint
-            
-            L = sqrt(pow((bond.startP.x - bond.endP.x), 2) + pow((bond.startP.y - bond.endP.y), 2));
-            assitanceX = 2 * bond.startP.x - bond.endP.x;
-            assistanceY = 2 * bond.startP.y - bond.endP.y;
-            
-            if (bond.startP.x <= bond.endP.x) {
-                
-                if (bond.startP.y <= bond.endP.y) {
-                    
-                    NSLog(@" < < sp ");
-                    // spx < epx spy < epy 点击了sp
-                    NewBond = [CYLChemicalBond CreatChemicalBondWithCarbon];
-                    
-                    assistancAngle = atan(ABS(assistanceY - bond.startP.y) / ABS(assitanceX - bond.startP.x));
-                    wantedAngle = M_PI / 6 - assistancAngle;
-                    
-                    wangtedX = bond.startP.x - (L * sin(wantedAngle));
-                    wangtedY = bond.startP.y - (L * cos(wantedAngle));
-                    
-                    NSLog(@"(%f %f) \n (%f %f) \n (%f %f) \n %f %f %f %f %f",bond.startP.x, bond.startP.y,bond.endP.x, bond.endP.y ,assitanceX, assistanceY, assistancAngle * 180.0 / M_PI, wantedAngle * 180.0 / M_PI, wangtedX, wangtedY, L);
-                }
-                else
-                {
-                    // spx < epx spy > epy 点击了sp
-                    NewBond = [CYLChemicalBond CreatChemicalBondWithCarbon];
-                    NSLog(@" < > sp ");
-                    
-                    assistancAngle = atan(ABS(assistanceY - bond.startP.y) / ABS(assitanceX - bond.startP.x));
-                    
-                    wantedAngle = M_PI * 2 / 3 - assistancAngle;
-                    
-                    wangtedX = bond.startP.x + L * cos(wantedAngle * 180.0 / M_PI);
-                    wangtedY = bond.startP.y + L * sin(wantedAngle * 180.0 / M_PI);
-                }
-            }
-            else
-            {
-  
-                if (bond.startP.y < bond.endP.y)
-                {
-                    
-                    // spx > epx spy < epy 点击了sp
-                    NewBond = [CYLChemicalBond CreatChemicalBondWithCarbon];
-                    NSLog(@" > < sp ");
-                    
-                    assistancAngle = atan(ABS(assitanceX - bond.startP.x) / ABS(assistanceY - bond.startP.y));
-                    
-                    wantedAngle = M_PI * 2 / 3 - assistancAngle;
-                    
-                    wangtedX = bond.startP.x + L * sin(wantedAngle * 180.0 / M_PI);
-                    wangtedY = bond.startP.y + L * cos(wantedAngle * 180.0 / M_PI);
-                    
-                }
-                else
-                {
-                    // spx > epx spy > epy 点击了sp
-                    NewBond = [CYLChemicalBond CreatChemicalBondWithCarbon];
-                    
-                    NSLog(@" > > sp ");
-                    assistancAngle = atan( ABS(assistanceY - bond.startP.y) / ABS(assitanceX - bond.startP.x));
-                    wantedAngle = M_PI/6 - assistancAngle;
-                    
-                    wangtedX = bond.startP.x + L * sin(wantedAngle * 180.0 / M_PI);
-                    wangtedY = bond.startP.y + L * cos(wantedAngle * 180.0 / M_PI);
-                    
-                }
-                
-            }
-
-        }
-        else if (CGPointEqualToPoint(bond.endP, tapPoint))
-        {
-            
-            L = sqrt(pow((bond.startP.x - bond.endP.x), 2) + pow((bond.startP.y - bond.endP.y), 2));
-            assitanceX = 2 * bond.endP.x - bond.startP.x;
-            assistanceY = 2 * bond.endP.y - bond.startP.y;
-            
-            if (bond.startP.x >= bond.endP.x) {
-                
-                if (bond.startP.y >= bond.endP.y)
-                {
-                    // spx > epx spy > epy 点击了ep
-                    NewBond = [CYLChemicalBond CreatChemicalBondWithCarbon];
-                    NSLog(@" > > ep ");
-
-                }
-                else
-                {
-                    // spx > epx spy < epy 点击了ep
-                    NewBond = [CYLChemicalBond CreatChemicalBondWithCarbon];
-                    NSLog(@" > < ep ");
-                    
-                    assistancAngle = atan( ABS(assistanceY - bond.endP.y) / ABS(assitanceX - bond.endP.x));
-                    
-                    wantedAngle = M_PI/6 - assistancAngle;
-                    
-                    wangtedX = bond.endP.x - L * sin(wantedAngle * 180.0 / M_PI);
-                    wangtedY = bond.endP.y + L * cos(wantedAngle * 180.0 / M_PI);
-                }
-                
-            }
-            else
-            {
-                if (bond.startP.y > bond.endP.y)
-                {
-                    // spx < epx spy > epy 点击了ep
-                    NewBond = [CYLChemicalBond CreatChemicalBondWithCarbon];
-                    
-                    NSLog(@" < > ep ");
-                    
-                    assistancAngle = atan(ABS(assitanceX - bond.startP.x) / ABS(assistanceY - bond.startP.x));
-                    
-                    wantedAngle = M_PI * 2 / 3 - assistancAngle;
-                    
-                    wangtedX = bond.endP.x + L * cos(wantedAngle * 180.0 / M_PI);
-                    wangtedY = bond.endP.y + L * sin(wantedAngle * 180.0 / M_PI);
-                    
-                }
-                else
-                {
-                    // spx < epx spy < epy 点击了ep
-                    NewBond = [CYLChemicalBond CreatChemicalBondWithCarbon];
-                    
-                    NSLog(@" < < ep ");
-                    
-                    assistancAngle = atan( ABS(assistanceY - bond.endP.y) / ABS(assitanceX - bond.endP.x));
-                    wantedAngle = M_PI/6 - assistancAngle;
-                    
-                    wangtedX = bond.endP.x + L * sin(wantedAngle * 180.0 / M_PI);
-                    wangtedY = bond.endP.y + L * cos(wantedAngle * 180.0 / M_PI);
-                }
-            }
-            
-        }
-    }
-    
-    
-    if ( NewBond == nil) {
-        return;
-    }
-    
-    NewBond.startP = tapPoint;
-    NewBond.endP = CGPointMake(wangtedY, wangtedY);
-    NewBond.bezierPath = [UIBezierPath bezierPath];
-    [NewBond.bezierPath moveToPoint:NewBond.startP];
-    [NewBond.bezierPath addLineToPoint:NewBond.endP];
-    
-    [self.atomArray addObject:NewBond.Atom];
-    [self.BondArray addObject:NewBond];
-    
-    
-    //tappoint位置的原子化学键加1
-    for (CYLCarbonAtom *atom in self.atomArray) {
-        
-        if (CGPointEqualToPoint(atom.atomPoint, tapPoint)) {
-            
-            atom.attachBondNum += 1;
-        }
-        
-    }
-    
-    
-    [self setNeedsDisplay];
-}
-#endif
-
-
 
 #pragma ToolBar的按钮控制
 - (void)setIsDraw:(BOOL)isDraw
@@ -321,7 +142,7 @@
     if (isDraw) {
         [self dismissAllSelView];
         
-        self.pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+        [self.pan addTarget:self action:@selector(pan:)];
         self.pan.delegate = self;
         [self addGestureRecognizer:self.pan];
     }
@@ -338,12 +159,45 @@
     if (isToSelect) {
         
         [self.pan addTarget:self action:@selector(panToSelect:)];
+
     }
     else
     {
         [self.pan removeTarget:self action:@selector(panToSelect:)];
     }
     
+}
+
+-(void)setIsGoDoubleBond:(BOOL)isGoDoubleBond
+{
+    
+    _isGoDoubleBond = isGoDoubleBond;
+    
+    if (isGoDoubleBond) {
+        
+        [self.tap addTarget:self action:@selector(tap:)];
+        
+    }
+    else
+    {
+        [self.tap removeTarget:self action:@selector(tap:)];
+    }
+    
+}
+
+- (void)setIsGoTrinpleBond:(BOOL)isGoTrinpleBond
+{
+    _isGoTrinpleBond = isGoTrinpleBond;
+    
+    if (isGoTrinpleBond) {
+        
+        [self.tap addTarget:self action:@selector(tap:)];
+        
+    }
+    else
+    {
+        [self.tap removeTarget:self action:@selector(tap:)];
+    }
 }
 
 #pragma mark - pan手势功能集合 :绘制基本碳骨架
@@ -463,9 +317,6 @@
             [self.atomArray addObject:_bond.Atom];
         }
         
-        //缓存画好的bond
-        [self.BondArray addObject:_bond];
-        
         
         [self dismissHightLightView];
         [self dismissAttachView];
@@ -480,9 +331,11 @@
         [self.pointArray addObject:[NSValue valueWithCGPoint:_bond.endP]];
         [self.pointArray addObject:[NSValue valueWithCGPoint:_bond.startP]];
         
-        NSLog(@"%@",[NSValue valueWithCGPoint:_bond.startP]);
-        NSLog(@"%@",[NSValue valueWithCGPoint:_bond.endP]);
-        NSLog(@"%@",self.pointArray);
+        //设置中点便于选中对应的化学键
+        _bond.midPoint = CGPointMake((_bond.startP.x + _bond.endP.x)/2, (_bond.startP.y + _bond.endP.y)/2);
+        
+        //缓存画好的bond
+        [self.BondArray addObject:_bond];
         
         [self setNeedsDisplay];
         
@@ -509,6 +362,16 @@
                UIView *selectedView = [self showSelectViewOnPoint:point];
                 
                 [self.selectedViewArray addObject:selectedView];
+                
+                //将备选到的点不重复的添加进数组
+                if (![self.selPointArray containsObject:value]) {
+                    
+                    [self.selPointArray addObject:value];
+                }
+                else
+                {
+                    continue;
+                }
             }
             
         }
@@ -522,6 +385,194 @@
     [self setNeedsDisplay];
 }
 
+#pragma mark - 点击双键，三键
+- (void)tap:(UITapGestureRecognizer*)tap
+{
+    CGPoint tapPoint = [tap locationInView:self];
+    CYLChemicalBond *bondPrepareToRemove = nil;
+    
+    if (self.isGoDoubleBond)
+    {//想添加双键时
+        
+        CYLDoubleBond *doubleBond = [CYLDoubleBond CreatChemicalBondWithCarbon];
+        
+        for (CYLChemicalBond *bond in self.BondArray)
+        {
+            
+            if (![bond isKindOfClass:[CYLDoubleBond class]])
+            {//如果不是双键的话
+                
+                
+                if ([self isStartPoint:tapPoint aroundPoint:bond.midPoint WithRadius:(CYLSuggestBondLength/2)])
+                {//找到待转变的化学键
+                    
+                    bondPrepareToRemove = bond;
+                    
+                    doubleBond.startP = bond.startP;
+                    doubleBond.endP = bond.endP;
+                    doubleBond.midPoint = bond.midPoint;
+                    doubleBond.bezierPath =bond.bezierPath;
+                    
+                    //计算斜率角度
+                    CGFloat angle = atan((bond.endP.y - bond.startP.y)/(bond.endP.x - bond.startP.x));
+                    
+                    if (angle < 0)
+                    {//斜率大于九十度时
+                        
+                        CGFloat spX = bond.startP.x + marginOfBonds * sin((M_PI - angle));
+                        CGFloat spY = bond.startP.y + marginOfBonds * cos((M_PI - angle));
+                        CGPoint startTwo = CGPointMake(spX, spY);
+                        
+                        CGFloat epX = bond.endP.x + marginOfBonds * sin((M_PI - angle));
+                        CGFloat epY = bond.endP.y + marginOfBonds * cos((M_PI - angle));
+                        CGPoint endTwo = CGPointMake(epX, epY);
+                        
+                        doubleBond.startPTwo = startTwo;
+                        doubleBond.endPTwo = endTwo;
+                        
+                        doubleBond.bezierPathTwo = [UIBezierPath bezierPath];
+                        [doubleBond.bezierPathTwo moveToPoint:startTwo];
+                        [doubleBond.bezierPathTwo addLineToPoint:endTwo];
+                        
+                    }
+                    else
+                    {
+                        //斜率小于90
+                        CGFloat spX = bond.startP.x + marginOfBonds * sin((angle));
+                        CGFloat spY = bond.startP.y - marginOfBonds * cos((angle));
+                        CGPoint startTwo = CGPointMake(spX, spY);
+                        
+                        CGFloat epX = bond.endP.x + marginOfBonds * sin((angle));
+                        CGFloat epY = bond.endP.y - marginOfBonds * cos((angle));
+                        CGPoint endTwo = CGPointMake(epX, epY);
+                        
+                        doubleBond.startPTwo = startTwo;
+                        doubleBond.endPTwo = endTwo;
+                        
+                        doubleBond.bezierPathTwo = [UIBezierPath bezierPath];
+                        [doubleBond.bezierPathTwo moveToPoint:startTwo];
+                        [doubleBond.bezierPathTwo addLineToPoint:endTwo];
+                        
+                    }
+                }
+                
+            }
+        }
+        
+        [self.BondArray addObject:doubleBond];
+
+    }//if（isGoDoubleBone）
+    else if (self.isGoTrinpleBond)
+    {
+        //想添加三键时
+        CYLTripleBond *tripleBond = [CYLTripleBond CreatChemicalBondWithCarbon];
+        
+        for (CYLChemicalBond *bond in self.BondArray) {
+            
+            if (![bond isKindOfClass:[CYLTripleBond class]]) {
+                
+                if ([self isStartPoint:tapPoint aroundPoint:bond.midPoint WithRadius:CYLSuggestBondLength/2]) {
+                    
+                    tripleBond.startP = bond.startP;
+                    tripleBond.endP = bond.endP;
+                    tripleBond.midPoint = bond.midPoint;
+                    tripleBond.bezierPath = bond.bezierPath;
+                    
+                    //计算斜率角度
+                    CGFloat angle = atan((bond.endP.y - bond.startP.y)/(bond.endP.x - bond.startP.x));
+                    
+                    if (angle < 0)
+                    {//斜率大于九十度时
+                        
+                        //第2条
+                        CGFloat spX = bond.startP.x + marginOfBonds * sin((M_PI - angle));
+                        CGFloat spY = bond.startP.y + marginOfBonds * cos((M_PI - angle));
+                        CGPoint startTwo = CGPointMake(spX, spY);
+                        
+                        CGFloat epX = bond.endP.x + marginOfBonds * sin((M_PI - angle));
+                        CGFloat epY = bond.endP.y + marginOfBonds * cos((M_PI - angle));
+                        CGPoint endTwo = CGPointMake(epX, epY);
+                        
+                        tripleBond.startPTwo = startTwo;
+                        tripleBond.endPTwo = endTwo;
+                        
+                        tripleBond.bezierPathTwo = [UIBezierPath bezierPath];
+                        [tripleBond.bezierPathTwo moveToPoint:startTwo];
+                        [tripleBond.bezierPathTwo addLineToPoint:endTwo];
+                        
+                        //第三条
+                        CGFloat spXTwo = bond.startP.x - marginOfBonds * sin((M_PI - angle));
+                        CGFloat spYTwo = bond.startP.y - marginOfBonds * cos((M_PI - angle));
+                        CGPoint startThree = CGPointMake(spXTwo, spYTwo);
+                        
+                        CGFloat epXTwo = bond.endP.x - marginOfBonds * sin((M_PI - angle));
+                        CGFloat epYTwo = bond.endP.y - marginOfBonds * cos((M_PI - angle));
+                        CGPoint endThree = CGPointMake(epXTwo, epYTwo);
+                        
+                        tripleBond.startPThree = startThree;
+                        tripleBond.endPThree = endThree;
+                        
+                        tripleBond.bezierPathThree = [UIBezierPath bezierPath];
+                        [tripleBond.bezierPathThree moveToPoint:startThree];
+                        [tripleBond.bezierPathThree addLineToPoint:endThree];
+                        
+                    }
+                    else
+                    {
+                        //斜率小于90
+                        //第2条
+                        CGFloat spX = bond.startP.x - marginOfBonds * sin((angle));
+                        CGFloat spY = bond.startP.y + marginOfBonds * cos((angle));
+                        CGPoint startTwo = CGPointMake(spX, spY);
+                        
+                        CGFloat epX = bond.endP.x - marginOfBonds * sin((angle));
+                        CGFloat epY = bond.endP.y + marginOfBonds * cos((angle));
+                        CGPoint endTwo = CGPointMake(epX, epY);
+                        
+                        tripleBond.startPTwo = startTwo;
+                        tripleBond.endPTwo = endTwo;
+                        
+                        tripleBond.bezierPathTwo = [UIBezierPath bezierPath];
+                        [tripleBond.bezierPathTwo moveToPoint:startTwo];
+                        [tripleBond.bezierPathTwo addLineToPoint:endTwo];
+                        
+                        //第三条
+                        CGFloat spXTwo = bond.startP.x + marginOfBonds * sin((angle));
+                        CGFloat spYTwo = bond.startP.y - marginOfBonds * cos((angle));
+                        CGPoint startThree = CGPointMake(spXTwo, spYTwo);
+                        
+                        CGFloat epXTwo = bond.endP.x + marginOfBonds * sin((angle));
+                        CGFloat epYTwo = bond.endP.y - marginOfBonds * cos((angle));
+                        CGPoint endThree = CGPointMake(epXTwo, epYTwo);
+                        
+                        tripleBond.startPThree = startThree;
+                        tripleBond.endPThree = endThree;
+                        
+                        tripleBond.bezierPathThree = [UIBezierPath bezierPath];
+                        [tripleBond.bezierPathThree moveToPoint:startThree];
+                        [tripleBond.bezierPathThree addLineToPoint:endThree];
+
+                        
+                    }
+
+                    
+                }
+                
+            }
+            
+        }
+        
+        [self.BondArray addObject:tripleBond];
+    }
+    
+    
+    if (bondPrepareToRemove != nil) {
+        //删除当前化学键
+        [self.BondArray removeObject:bondPrepareToRemove];
+    }
+    
+    [self setNeedsDisplay];
+}
 
 
 #pragma mark - 懒加载
@@ -610,6 +661,15 @@
     }
     return _SuggestPointArray;
 }
+
+- (NSMutableArray *)selPointArray
+{
+    if (_selPointArray == nil) {
+        _selPointArray = [NSMutableArray array];
+    }
+    return _selPointArray;
+}
+
 #pragma mark - 自定义function
 //一个点是否在另一个点的附近
 - (BOOL)isStartPoint:(CGPoint)Startpoint aroundPoint:(CGPoint)point WithRadius:(CGFloat)radius
@@ -743,5 +803,37 @@
     [self.suggestPathArray addObject:_suggstLine6];
     
 //    [self.pointArray addObjectsFromArray:self.SuggestPointArray];
+}
+
+- (BOOL)isPoint:(CGPoint)point InArray:(NSArray*)array
+{
+    for (NSValue *value in array) {
+        
+        CGPoint pointInArray = value.CGPointValue;
+        
+        if (CGPointEqualToPoint(point, pointInArray)) {
+            
+            return YES;
+        }
+    }
+    
+    return NO;
+}
+
+#pragma mark - 绘制双键
+- (void)drawDoubleBond
+{
+    
+}
+#pragma mark - 绘制三键
+- (void)drawTripleBond
+{
+    
+}
+
+#pragma mark - 手势delegate
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
+{
+    return YES;
 }
 @end

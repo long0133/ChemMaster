@@ -10,6 +10,7 @@
 #import "catagory/UIImage+CYLImageExtension.h"
 #import "NSString+CYLNsstring.h"
 #import "UIColor+CYLColor.h"
+#import "NSObject+CYLStorageMethod.h"
 #import <Masonry.h>
 #import <SVProgressHUD.h>
 #import <TFHpple.h>
@@ -20,6 +21,7 @@
 #define KWindow [UIApplication sharedApplication].keyWindow
 #define color(x) x/255 * 1.0
 
+#define cachePath [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject]
 
 #define barColor @"EEE9E9"
 
@@ -28,3 +30,4 @@
 #define TakeName @"name"
 #define TakeYear @"year"
 #define TakeAuthor @"author"
+#define TakeAbstract @"abstract"

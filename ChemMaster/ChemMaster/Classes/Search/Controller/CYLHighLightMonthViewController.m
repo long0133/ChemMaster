@@ -9,6 +9,7 @@
 #import "CYLHighLightMonthViewController.h"
 #import "CYLReactionDetailViewController.h"
 
+#define ContentDictFileNameInCacahe @"HighLightContentDict"
 #define Jan @"January"
 #define Feb @"February"
 #define Mar @"March"
@@ -167,41 +168,54 @@ static NSString *reuse = @"reuseID";
 }
 
 #pragma mark - 自定义fangfa
+#warning 待设置一段时间后自动更新cache内的文件
 + (instancetype)HighLightMonthViewControllerWithURL:(NSURL *)url andURLPrefixSet:(NSString *)urlPrefix
 {
     CYLHighLightMonthViewController *hmvc = [[CYLHighLightMonthViewController alloc] initWithStyle:UITableViewStylePlain];
-    NSData *htmlData = [NSData dataWithContentsOfURL:url];
     
-    TFHpple *monthList = [[TFHpple alloc] initWithHTMLData:htmlData];
     
-    NSArray *monthListArray = [monthList searchWithXPathQuery:@"//a[@href]"];
-
-    for (TFHppleElement *element in monthListArray) {
+    NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:[cachePath stringByAppendingPathComponent:ContentDictFileNameInCacahe]];
+    
+    if (dict != nil) {
+        hmvc.contentDict = dict;
+    }
+    else
+    {
+        NSData *htmlData = [NSData dataWithContentsOfURL:url];
         
-        NSString *monthKey = [hmvc MonthKeyTheContentBelonged:element.raw];
+        TFHpple *monthList = [[TFHpple alloc] initWithHTMLData:htmlData];
         
-        if (monthKey.length) {
+        NSArray *monthListArray = [monthList searchWithXPathQuery:@"//a[@href]"];
+        
+        for (TFHppleElement *element in monthListArray) {
             
-            NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+            NSString *monthKey = [hmvc MonthKeyTheContentBelonged:element.raw];
             
-            //link
-            NSRange hrefRangr = [element.raw rangeOfString:@"href"];
-            NSRange shtmRangr = [element.raw rangeOfString:@"shtm"];
-            NSString *subPath = [element.raw substringWithRange:NSMakeRange((hrefRangr.length + hrefRangr.location + 2),((shtmRangr.length + shtmRangr.location) - (hrefRangr.length + hrefRangr.location) - 2))];
-            NSString *link = [NSString stringWithFormat:@"%@/%@",urlPrefix, subPath];
-            
-            dict[Takelink] = link;
-            
-            NSString *name = [element.raw flattenHTML:element.raw trimWhiteSpace:NO];
-            name = [name stringByReplacingOccurrencesOfString:@"\n" withString:@""];
-            name = [name stringByReplacingOccurrencesOfString:@"\t" withString:@""];
-            name = [name stringByReplacingOccurrencesOfString:@"&#13;" withString:@""];
-            
-            dict[TakeName] = name;
-            
-            [hmvc.contentDict[monthKey] addObject:dict];
+            if (monthKey.length) {
+                
+                NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+                
+                //link
+                NSRange hrefRangr = [element.raw rangeOfString:@"href"];
+                NSRange shtmRangr = [element.raw rangeOfString:@"shtm"];
+                NSString *subPath = [element.raw substringWithRange:NSMakeRange((hrefRangr.length + hrefRangr.location + 2),((shtmRangr.length + shtmRangr.location) - (hrefRangr.length + hrefRangr.location) - 2))];
+                NSString *link = [NSString stringWithFormat:@"%@/%@",urlPrefix, subPath];
+                
+                dict[Takelink] = link;
+                
+                NSString *name = [element.raw flattenHTML:element.raw trimWhiteSpace:NO];
+                name = [name stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+                name = [name stringByReplacingOccurrencesOfString:@"\t" withString:@""];
+                name = [name stringByReplacingOccurrencesOfString:@"&#13;" withString:@""];
+                
+                dict[TakeName] = name;
+                
+                [hmvc.contentDict[monthKey] addObject:dict];
+            }
         }
     }
+    
+    [hmvc.contentDict writeToFile:[cachePath stringByAppendingPathComponent:ContentDictFileNameInCacahe] atomically:YES];
     
     return hmvc;
 }

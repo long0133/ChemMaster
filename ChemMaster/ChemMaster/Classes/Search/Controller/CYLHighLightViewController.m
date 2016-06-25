@@ -27,8 +27,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    NSLog(@"%@", self.yearListArray);
 }
 
 #pragma mark -  tableView DataSource
@@ -84,31 +82,42 @@
 {
     CYLHighLightViewController *hvc = [[CYLHighLightViewController alloc] initWithStyle:UITableViewStylePlain];
    
-    NSData *htmlData = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://www.organic-chemistry.org/Highlights/"]];
+    hvc.yearListArray = [NSMutableArray arrayWithContentsOfFile:[cachePath stringByAppendingString:@"yearList"]];
     
-    TFHpple *years = [[TFHpple alloc] initWithHTMLData:htmlData];
-    
-    NSArray *yearArray = [years searchWithXPathQuery:@"//a"];
-    
-    
-    
-    for (TFHppleElement *element in yearArray) {
+    if (hvc.yearListArray.count) {
+        return hvc;
+    }
+    else
+    {
+        NSData *htmlData = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://www.organic-chemistry.org/Highlights/"]];
         
-        if ([element.raw containsString:@"index"]) {
+        TFHpple *years = [[TFHpple alloc] initWithHTMLData:htmlData];
+        
+        NSArray *yearArray = [years searchWithXPathQuery:@"//a"];
+        
+        
+        
+        for (TFHppleElement *element in yearArray) {
             
-            NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-            
-            NSRange hrefRangr = [element.raw rangeOfString:@"href"];
-            NSRange shtmRangr = [element.raw rangeOfString:@"shtm"];
-            NSString *subPath = [element.raw substringWithRange:NSMakeRange((hrefRangr.length + hrefRangr.location + 2),((shtmRangr.length + shtmRangr.location) - (hrefRangr.length + hrefRangr.location) - 2))];
-            NSString *link = [NSString stringWithFormat:@"http://www.organic-chemistry.org/Highlights/%@", subPath];
-            
-            dict[Takelink] = link;
-            dict[TakeYear] = [subPath stringByDeletingLastPathComponent];
-            
-            [hvc.yearListArray addObject:dict];
+            if ([element.raw containsString:@"index"]) {
+                
+                NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+                
+                NSRange hrefRangr = [element.raw rangeOfString:@"href"];
+                NSRange shtmRangr = [element.raw rangeOfString:@"shtm"];
+                NSString *subPath = [element.raw substringWithRange:NSMakeRange((hrefRangr.length + hrefRangr.location + 2),((shtmRangr.length + shtmRangr.location) - (hrefRangr.length + hrefRangr.location) - 2))];
+                NSString *link = [NSString stringWithFormat:@"http://www.organic-chemistry.org/Highlights/%@", subPath];
+                
+                dict[Takelink] = link;
+                dict[TakeYear] = [subPath stringByDeletingLastPathComponent];
+                
+                [hvc.yearListArray addObject:dict];
+            }
         }
     }
+    
+    [hvc.yearListArray writeToFile:[cachePath stringByAppendingString:@"yearList"] atomically:YES];
+    
 
     return hvc;
 }

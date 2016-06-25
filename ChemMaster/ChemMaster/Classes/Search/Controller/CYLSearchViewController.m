@@ -13,6 +13,7 @@
 #import "CYLnameReactionListViewController.h"
 #import "CYLTotalSythesisListViewController.h"
 #import "CYLHighLightViewController.h"
+#import "CYLResourceViewController.h"
 #import <SVProgressHUD.h>
 #import <Masonry.h>
 #import <TFHpple.h>
@@ -317,6 +318,7 @@
 - (void)ShowNameReactionList
 {
     CYLnameReactionListViewController *nameListVC = [CYLnameReactionListViewController listViewController];
+    nameListVC.title = @"Name Reactions";
     nameListVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:nameListVC animated:YES];
 }
@@ -324,20 +326,24 @@
 - (void)showTotalSynthesisList
 {
     CYLTotalSythesisListViewController *Tvc = [[CYLTotalSythesisListViewController alloc] initWithStyle:UITableViewStylePlain];
-    
+    Tvc.title = @"Total Synthesis";
     [self.navigationController pushViewController:Tvc animated:YES];
 }
 
 -(void)showHightLightList
 {
     CYLHighLightViewController *hvc = [CYLHighLightViewController highLightViewController];
+    hvc.title = @"Hightlight";
     hvc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:hvc animated:YES];
 }
 
 - (void)showChemiscalResourceList
 {
-    
+    CYLResourceViewController *rvc = [CYLResourceViewController resouceViewController];
+    rvc.title = @"Chemical Resource";
+    rvc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:rvc animated:YES];
 }
 
 #pragma mark - pickerView
