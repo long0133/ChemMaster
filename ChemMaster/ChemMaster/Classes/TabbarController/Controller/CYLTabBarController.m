@@ -16,7 +16,7 @@
 
 @interface CYLTabBarController ()<CYLTabBarDelegate>
 @property (nonatomic, strong) NSMutableArray *tabBarItemArray;
-
+@property (nonatomic, assign) NSInteger lastSelectedIndex;
 @end
 
 #define color(x) x/255 * 1.0
@@ -94,10 +94,7 @@
 #pragma mark - CYLTabBarDelegate
 - (void)tabBar:(CYLTabBar *)tabBar DidClickButton:(UIButton *)button
 {
-    
     self.selectedIndex = button.tag;
-    
-    
 }
 
 #pragma mark - 懒加载

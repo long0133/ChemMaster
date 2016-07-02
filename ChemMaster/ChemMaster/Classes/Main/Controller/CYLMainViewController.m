@@ -93,7 +93,7 @@ static NSString * const reuseIdentifier = @"Cell";
         }
         else
         {
-            view.backgroundColor = barColor;
+            view.backgroundColor = [UIColor getColor:barColor];
         }
         
         

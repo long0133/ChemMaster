@@ -10,12 +10,16 @@
 
 @class CYLToolBarView;
 @protocol CYLToolBarViewDelegate <NSObject>
-
+@optional
 - (void)toolBarDidClickSelectBtn;
 - (void)toolBarDidClickDrawBtn;
 - (void)toolBarDidClickDoubleBondBtn;
 - (void)toolBarDidClickTripleBondBtn;
-
+- (void)toolBarDidClickReDoBtn;
+- (void)toolBarDidClickOtherAtomBtn;
+- (void)toolBarDidClickClearAllBtn;
+- (void)toolBarChoseOtherAtom;
+- (void)toolBarDidClickAtomBtnWithAtomName:(NSString*)name withColor:(UIColor*)color;
 
 @end
 

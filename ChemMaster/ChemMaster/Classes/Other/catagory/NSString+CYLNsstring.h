@@ -12,4 +12,7 @@
 
 - (NSString *)flattenHTML:(NSString *)html trimWhiteSpace:(BOOL)trim;
 
++ (NSDate*)dateFromString:(NSString*)string WithDateFormat:(NSString*)dateFormat;
+
++ (NSString*)stringFromDate:(NSDate*)date WithDateFormat:(NSString*)dateFormat;
 @end

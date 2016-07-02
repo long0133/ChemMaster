@@ -38,7 +38,8 @@
     self.drawView.isGoDoubleBond = NO;
     self.drawView.isGoTrinpleBond = NO;
     self.drawView.isDraw = NO;
-    self.drawView.isToSelect = !self.drawView.isToSelect;
+    self.drawView.isChoseOneAtom = NO;
+    self.drawView.isToSelect = YES;
 }
 
 - (void)toolBarDidClickDrawBtn
@@ -46,7 +47,8 @@
     self.drawView.isGoDoubleBond = NO;
     self.drawView.isGoTrinpleBond = NO;
     self.drawView.isToSelect = NO;
-    self.drawView.isDraw = !self.drawView.isDraw;
+    self.drawView.isChoseOneAtom = NO;
+    self.drawView.isDraw = YES;
 }
 
 - (void)toolBarDidClickDoubleBondBtn
@@ -54,7 +56,8 @@
     self.drawView.isGoTrinpleBond = NO;
     self.drawView.isDraw = NO;
     self.drawView.isToSelect = NO;
-    self.drawView.isGoDoubleBond = !self.drawView.isGoDoubleBond;
+    self.drawView.isChoseOneAtom = NO;
+    self.drawView.isGoDoubleBond = YES;
 }
 
 - (void)toolBarDidClickTripleBondBtn
@@ -62,7 +65,35 @@
     self.drawView.isGoDoubleBond = NO;
     self.drawView.isDraw = NO;
     self.drawView.isToSelect = NO;
-    self.drawView.isGoTrinpleBond = !self.drawView.isGoTrinpleBond;
+    self.drawView.isChoseOneAtom = NO;
+    self.drawView.isGoTrinpleBond = YES;
 }
 
+- (void)toolBarDidClickAtomBtnWithAtomName:(NSString *)name withColor:(UIColor *)color
+{
+    //位置不可以调换
+    self.drawView.atomName = name;
+    self.drawView.atomColor = color;
+    
+    self.drawView.isGoDoubleBond = NO;
+    self.drawView.isGoTrinpleBond = NO;
+    self.drawView.isDraw = NO;
+    self.drawView.isToSelect = NO;
+    self.drawView.isChoseOneAtom = YES;
+}
+
+- (void)toolBarDidClickReDoBtn
+{
+    self.drawView.isRedo = YES;
+}
+
+- (void)toolBarDidClickClearAllBtn
+{
+    self.drawView.isClear = YES;
+}
+
+- (void)toolBarChoseOtherAtom
+{
+    self.drawView.isShowOtherAtom = !self.drawView.isShowOtherAtom;
+}
 @end

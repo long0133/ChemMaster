@@ -22,10 +22,14 @@
 #define selectRadius 20
 //双键间隔
 #define marginOfBonds 3
-
+//toolbar的高度
+#define toolBarViewH 105
+//第一排按钮的高度
+#define firstLineBtnH 55
 
 @interface CYLDrawView ()<UIGestureRecognizerDelegate>
 
+//当前正在画的化学键
 @property (nonatomic, strong) CYLChemicalBond *bond;
 
 @property (nonatomic, strong) CYLChemicalBond *lastBond;
@@ -134,7 +138,7 @@
     return self;
 }
 
-#pragma ToolBar的按钮控制
+#pragma mark -ToolBar的按钮控制
 - (void)setIsDraw:(BOOL)isDraw
 {
     _isDraw = isDraw;
@@ -168,6 +172,7 @@
     
 }
 
+//绘制双键
 -(void)setIsGoDoubleBond:(BOOL)isGoDoubleBond
 {
     
@@ -185,6 +190,7 @@
     
 }
 
+//绘制三键
 - (void)setIsGoTrinpleBond:(BOOL)isGoTrinpleBond
 {
     _isGoTrinpleBond = isGoTrinpleBond;
@@ -200,12 +206,77 @@
     }
 }
 
+//撤销功能
+- (void)setIsRedo:(BOOL)isRedo
+{
+    _isRedo = isRedo;
+    
+    CYLChemicalBond *lastBond = [self.BondArray lastObject];
+        
+    //移除正在画的实时线条
+    _bond.bezierPath = nil;
+        
+    [self.BondArray removeLastObject];
+    
+    //移除点
+    [self.pointArray removeObject:[NSValue valueWithCGPoint:lastBond.endP]];
+    
+    [self setNeedsDisplay];
+}
+
+//清屏功能
+- (void)setIsClear:(BOOL)isClear
+{
+    _isClear = isClear;
+    
+    [self.BondArray removeAllObjects];
+    [self.pointArray removeAllObjects];
+    self.bond = nil;
+    [self setNeedsDisplay];
+}
+
+//显示出其他原子的显示界面
+- (void)setIsShowOtherAtom:(BOOL)isShowOtherAtom
+{
+    _isShowOtherAtom = isShowOtherAtom;
+    
+    if (isShowOtherAtom) {
+        
+        self.tooBarView.frame = CGRectMake(0, 65, ScreenW, toolBarViewH);
+    
+    }
+    else
+    {
+        [UIView animateWithDuration:0.5 delay:0 usingSpringWithDamping:0.6 initialSpringVelocity:0 options:UIViewAnimationOptionCurveLinear animations:^{
+            
+            self.tooBarView.frame = CGRectMake(0, 65, ScreenW, firstLineBtnH);
+            
+        } completion:nil];
+    }
+}
+
+//点击屏幕处显示出所选的原子
+- (void)setIsChoseOneAtom:(BOOL)isChoseOneAtom
+{
+    _isChoseOneAtom = isChoseOneAtom;
+    
+    if (isChoseOneAtom) {
+        [self.tap addTarget:self action:@selector(tapToAttachAtom:)];
+    }
+    else
+    {
+        [self.tap removeTarget:self action:@selector(tapToAttachAtom:)];
+    }
+
+}
+
 #pragma mark - pan手势功能集合 :绘制基本碳骨架
 - (void)pan:(UIPanGestureRecognizer*)pan
 {
     CGPoint curP = [pan locationInView:self];
     
     if (_pan.state == UIGestureRecognizerStateBegan) {
+        
         //初始化时，化学键为1
         _bond = [CYLChemicalBond CreatChemicalBondWithCarbon];
         
@@ -385,201 +456,233 @@
     [self setNeedsDisplay];
 }
 
-#pragma mark - 点击双键，三键
+#pragma mark - 点击创建双键，三键
 - (void)tap:(UITapGestureRecognizer*)tap
 {
     CGPoint tapPoint = [tap locationInView:self];
-    CYLChemicalBond *bondPrepareToRemove = nil;
     
-    if (self.isGoDoubleBond)
-    {//想添加双键时
+    /**************************需要创建双键三键时*****************************/
+    if (_isGoDoubleBond || _isGoTrinpleBond) {
         
-        CYLDoubleBond *doubleBond = [CYLDoubleBond CreatChemicalBondWithCarbon];
+        CYLChemicalBond *bondPrepareToRemove = nil;
         
-        for (CYLChemicalBond *bond in self.BondArray)
+        if (self.isGoDoubleBond)
+        {//想添加双键时
+            
+            CYLDoubleBond *doubleBond = [CYLDoubleBond CreatChemicalBondWithCarbon];
+            
+            for (CYLChemicalBond *bond in self.BondArray)
+            {
+                
+                if (![bond isKindOfClass:[CYLDoubleBond class]])
+                {//如果不是双键的话
+                    
+                    if ([self isStartPoint:tapPoint aroundPoint:bond.midPoint WithRadius:(CYLSuggestBondLength/2)])
+                    {//找到待转变的化学键
+                        
+                        bondPrepareToRemove = bond;
+                        
+                        doubleBond.startP = bond.startP;
+                        doubleBond.endP = bond.endP;
+                        doubleBond.midPoint = bond.midPoint;
+                        doubleBond.bezierPath =bond.bezierPath;
+                        
+                        //计算斜率角度
+                        CGFloat angle = atan((bond.endP.y - bond.startP.y)/(bond.endP.x - bond.startP.x));
+                        
+                        if (angle < 0)
+                        {//斜率大于九十度时
+                            
+                            CGFloat spX = bond.startP.x + marginOfBonds * sin((M_PI - angle));
+                            CGFloat spY = bond.startP.y + marginOfBonds * cos((M_PI - angle));
+                            CGPoint startTwo = CGPointMake(spX, spY);
+                            
+                            CGFloat epX = bond.endP.x + marginOfBonds * sin((M_PI - angle));
+                            CGFloat epY = bond.endP.y + marginOfBonds * cos((M_PI - angle));
+                            CGPoint endTwo = CGPointMake(epX, epY);
+                            
+                            doubleBond.startPTwo = startTwo;
+                            doubleBond.endPTwo = endTwo;
+                            
+                            doubleBond.bezierPathTwo = [UIBezierPath bezierPath];
+                            [doubleBond.bezierPathTwo moveToPoint:startTwo];
+                            [doubleBond.bezierPathTwo addLineToPoint:endTwo];
+                            
+                        }
+                        else
+                        {
+                            //斜率小于90
+                            CGFloat spX = bond.startP.x + marginOfBonds * sin((angle));
+                            CGFloat spY = bond.startP.y - marginOfBonds * cos((angle));
+                            CGPoint startTwo = CGPointMake(spX, spY);
+                            
+                            CGFloat epX = bond.endP.x + marginOfBonds * sin((angle));
+                            CGFloat epY = bond.endP.y - marginOfBonds * cos((angle));
+                            CGPoint endTwo = CGPointMake(epX, epY);
+                            
+                            doubleBond.startPTwo = startTwo;
+                            doubleBond.endPTwo = endTwo;
+                            
+                            doubleBond.bezierPathTwo = [UIBezierPath bezierPath];
+                            [doubleBond.bezierPathTwo moveToPoint:startTwo];
+                            [doubleBond.bezierPathTwo addLineToPoint:endTwo];
+                            
+                        }
+                    }
+                    
+                }
+            }
+            
+            [self.BondArray addObject:doubleBond];
+            
+        }//if（isGoDoubleBone）
+        else if (self.isGoTrinpleBond)
         {
+            //想添加三键时
+            CYLTripleBond *tripleBond = [CYLTripleBond CreatChemicalBondWithCarbon];
             
-            if (![bond isKindOfClass:[CYLDoubleBond class]])
-            {//如果不是双键的话
+            for (CYLChemicalBond *bond in self.BondArray) {
                 
-                
-                if ([self isStartPoint:tapPoint aroundPoint:bond.midPoint WithRadius:(CYLSuggestBondLength/2)])
-                {//找到待转变的化学键
+                if (![bond isKindOfClass:[CYLTripleBond class]]) {
                     
-                    bondPrepareToRemove = bond;
-                    
-                    doubleBond.startP = bond.startP;
-                    doubleBond.endP = bond.endP;
-                    doubleBond.midPoint = bond.midPoint;
-                    doubleBond.bezierPath =bond.bezierPath;
-                    
-                    //计算斜率角度
-                    CGFloat angle = atan((bond.endP.y - bond.startP.y)/(bond.endP.x - bond.startP.x));
-                    
-                    if (angle < 0)
-                    {//斜率大于九十度时
+                    if ([self isStartPoint:tapPoint aroundPoint:bond.midPoint WithRadius:CYLSuggestBondLength/2]) {
                         
-                        CGFloat spX = bond.startP.x + marginOfBonds * sin((M_PI - angle));
-                        CGFloat spY = bond.startP.y + marginOfBonds * cos((M_PI - angle));
-                        CGPoint startTwo = CGPointMake(spX, spY);
+                        tripleBond.startP = bond.startP;
+                        tripleBond.endP = bond.endP;
+                        tripleBond.midPoint = bond.midPoint;
+                        tripleBond.bezierPath = bond.bezierPath;
                         
-                        CGFloat epX = bond.endP.x + marginOfBonds * sin((M_PI - angle));
-                        CGFloat epY = bond.endP.y + marginOfBonds * cos((M_PI - angle));
-                        CGPoint endTwo = CGPointMake(epX, epY);
+                        //计算斜率角度
+                        CGFloat angle = atan((bond.endP.y - bond.startP.y)/(bond.endP.x - bond.startP.x));
                         
-                        doubleBond.startPTwo = startTwo;
-                        doubleBond.endPTwo = endTwo;
+                        if (angle < 0)
+                        {//斜率大于九十度时
+                            
+                            //第2条
+                            CGFloat spX = bond.startP.x + marginOfBonds * sin((M_PI - angle));
+                            CGFloat spY = bond.startP.y + marginOfBonds * cos((M_PI - angle));
+                            CGPoint startTwo = CGPointMake(spX, spY);
+                            
+                            CGFloat epX = bond.endP.x + marginOfBonds * sin((M_PI - angle));
+                            CGFloat epY = bond.endP.y + marginOfBonds * cos((M_PI - angle));
+                            CGPoint endTwo = CGPointMake(epX, epY);
+                            
+                            tripleBond.startPTwo = startTwo;
+                            tripleBond.endPTwo = endTwo;
+                            
+                            tripleBond.bezierPathTwo = [UIBezierPath bezierPath];
+                            [tripleBond.bezierPathTwo moveToPoint:startTwo];
+                            [tripleBond.bezierPathTwo addLineToPoint:endTwo];
+                            
+                            //第三条
+                            CGFloat spXTwo = bond.startP.x - marginOfBonds * sin((M_PI - angle));
+                            CGFloat spYTwo = bond.startP.y - marginOfBonds * cos((M_PI - angle));
+                            CGPoint startThree = CGPointMake(spXTwo, spYTwo);
+                            
+                            CGFloat epXTwo = bond.endP.x - marginOfBonds * sin((M_PI - angle));
+                            CGFloat epYTwo = bond.endP.y - marginOfBonds * cos((M_PI - angle));
+                            CGPoint endThree = CGPointMake(epXTwo, epYTwo);
+                            
+                            tripleBond.startPThree = startThree;
+                            tripleBond.endPThree = endThree;
+                            
+                            tripleBond.bezierPathThree = [UIBezierPath bezierPath];
+                            [tripleBond.bezierPathThree moveToPoint:startThree];
+                            [tripleBond.bezierPathThree addLineToPoint:endThree];
+                            
+                        }
+                        else
+                        {
+                            //斜率小于90
+                            //第2条
+                            CGFloat spX = bond.startP.x - marginOfBonds * sin((angle));
+                            CGFloat spY = bond.startP.y + marginOfBonds * cos((angle));
+                            CGPoint startTwo = CGPointMake(spX, spY);
+                            
+                            CGFloat epX = bond.endP.x - marginOfBonds * sin((angle));
+                            CGFloat epY = bond.endP.y + marginOfBonds * cos((angle));
+                            CGPoint endTwo = CGPointMake(epX, epY);
+                            
+                            tripleBond.startPTwo = startTwo;
+                            tripleBond.endPTwo = endTwo;
+                            
+                            tripleBond.bezierPathTwo = [UIBezierPath bezierPath];
+                            [tripleBond.bezierPathTwo moveToPoint:startTwo];
+                            [tripleBond.bezierPathTwo addLineToPoint:endTwo];
+                            
+                            //第三条
+                            CGFloat spXTwo = bond.startP.x + marginOfBonds * sin((angle));
+                            CGFloat spYTwo = bond.startP.y - marginOfBonds * cos((angle));
+                            CGPoint startThree = CGPointMake(spXTwo, spYTwo);
+                            
+                            CGFloat epXTwo = bond.endP.x + marginOfBonds * sin((angle));
+                            CGFloat epYTwo = bond.endP.y - marginOfBonds * cos((angle));
+                            CGPoint endThree = CGPointMake(epXTwo, epYTwo);
+                            
+                            tripleBond.startPThree = startThree;
+                            tripleBond.endPThree = endThree;
+                            
+                            tripleBond.bezierPathThree = [UIBezierPath bezierPath];
+                            [tripleBond.bezierPathThree moveToPoint:startThree];
+                            [tripleBond.bezierPathThree addLineToPoint:endThree];
+                            
+                            
+                        }
                         
-                        doubleBond.bezierPathTwo = [UIBezierPath bezierPath];
-                        [doubleBond.bezierPathTwo moveToPoint:startTwo];
-                        [doubleBond.bezierPathTwo addLineToPoint:endTwo];
                         
                     }
-                    else
-                    {
-                        //斜率小于90
-                        CGFloat spX = bond.startP.x + marginOfBonds * sin((angle));
-                        CGFloat spY = bond.startP.y - marginOfBonds * cos((angle));
-                        CGPoint startTwo = CGPointMake(spX, spY);
-                        
-                        CGFloat epX = bond.endP.x + marginOfBonds * sin((angle));
-                        CGFloat epY = bond.endP.y - marginOfBonds * cos((angle));
-                        CGPoint endTwo = CGPointMake(epX, epY);
-                        
-                        doubleBond.startPTwo = startTwo;
-                        doubleBond.endPTwo = endTwo;
-                        
-                        doubleBond.bezierPathTwo = [UIBezierPath bezierPath];
-                        [doubleBond.bezierPathTwo moveToPoint:startTwo];
-                        [doubleBond.bezierPathTwo addLineToPoint:endTwo];
-                        
-                    }
-                }
-                
-            }
-        }
-        
-        [self.BondArray addObject:doubleBond];
-
-    }//if（isGoDoubleBone）
-    else if (self.isGoTrinpleBond)
-    {
-        //想添加三键时
-        CYLTripleBond *tripleBond = [CYLTripleBond CreatChemicalBondWithCarbon];
-        
-        for (CYLChemicalBond *bond in self.BondArray) {
-            
-            if (![bond isKindOfClass:[CYLTripleBond class]]) {
-                
-                if ([self isStartPoint:tapPoint aroundPoint:bond.midPoint WithRadius:CYLSuggestBondLength/2]) {
-                    
-                    tripleBond.startP = bond.startP;
-                    tripleBond.endP = bond.endP;
-                    tripleBond.midPoint = bond.midPoint;
-                    tripleBond.bezierPath = bond.bezierPath;
-                    
-                    //计算斜率角度
-                    CGFloat angle = atan((bond.endP.y - bond.startP.y)/(bond.endP.x - bond.startP.x));
-                    
-                    if (angle < 0)
-                    {//斜率大于九十度时
-                        
-                        //第2条
-                        CGFloat spX = bond.startP.x + marginOfBonds * sin((M_PI - angle));
-                        CGFloat spY = bond.startP.y + marginOfBonds * cos((M_PI - angle));
-                        CGPoint startTwo = CGPointMake(spX, spY);
-                        
-                        CGFloat epX = bond.endP.x + marginOfBonds * sin((M_PI - angle));
-                        CGFloat epY = bond.endP.y + marginOfBonds * cos((M_PI - angle));
-                        CGPoint endTwo = CGPointMake(epX, epY);
-                        
-                        tripleBond.startPTwo = startTwo;
-                        tripleBond.endPTwo = endTwo;
-                        
-                        tripleBond.bezierPathTwo = [UIBezierPath bezierPath];
-                        [tripleBond.bezierPathTwo moveToPoint:startTwo];
-                        [tripleBond.bezierPathTwo addLineToPoint:endTwo];
-                        
-                        //第三条
-                        CGFloat spXTwo = bond.startP.x - marginOfBonds * sin((M_PI - angle));
-                        CGFloat spYTwo = bond.startP.y - marginOfBonds * cos((M_PI - angle));
-                        CGPoint startThree = CGPointMake(spXTwo, spYTwo);
-                        
-                        CGFloat epXTwo = bond.endP.x - marginOfBonds * sin((M_PI - angle));
-                        CGFloat epYTwo = bond.endP.y - marginOfBonds * cos((M_PI - angle));
-                        CGPoint endThree = CGPointMake(epXTwo, epYTwo);
-                        
-                        tripleBond.startPThree = startThree;
-                        tripleBond.endPThree = endThree;
-                        
-                        tripleBond.bezierPathThree = [UIBezierPath bezierPath];
-                        [tripleBond.bezierPathThree moveToPoint:startThree];
-                        [tripleBond.bezierPathThree addLineToPoint:endThree];
-                        
-                    }
-                    else
-                    {
-                        //斜率小于90
-                        //第2条
-                        CGFloat spX = bond.startP.x - marginOfBonds * sin((angle));
-                        CGFloat spY = bond.startP.y + marginOfBonds * cos((angle));
-                        CGPoint startTwo = CGPointMake(spX, spY);
-                        
-                        CGFloat epX = bond.endP.x - marginOfBonds * sin((angle));
-                        CGFloat epY = bond.endP.y + marginOfBonds * cos((angle));
-                        CGPoint endTwo = CGPointMake(epX, epY);
-                        
-                        tripleBond.startPTwo = startTwo;
-                        tripleBond.endPTwo = endTwo;
-                        
-                        tripleBond.bezierPathTwo = [UIBezierPath bezierPath];
-                        [tripleBond.bezierPathTwo moveToPoint:startTwo];
-                        [tripleBond.bezierPathTwo addLineToPoint:endTwo];
-                        
-                        //第三条
-                        CGFloat spXTwo = bond.startP.x + marginOfBonds * sin((angle));
-                        CGFloat spYTwo = bond.startP.y - marginOfBonds * cos((angle));
-                        CGPoint startThree = CGPointMake(spXTwo, spYTwo);
-                        
-                        CGFloat epXTwo = bond.endP.x + marginOfBonds * sin((angle));
-                        CGFloat epYTwo = bond.endP.y - marginOfBonds * cos((angle));
-                        CGPoint endThree = CGPointMake(epXTwo, epYTwo);
-                        
-                        tripleBond.startPThree = startThree;
-                        tripleBond.endPThree = endThree;
-                        
-                        tripleBond.bezierPathThree = [UIBezierPath bezierPath];
-                        [tripleBond.bezierPathThree moveToPoint:startThree];
-                        [tripleBond.bezierPathThree addLineToPoint:endThree];
-
-                        
-                    }
-
                     
                 }
                 
             }
             
+            [self.BondArray addObject:tripleBond];
         }
         
-        [self.BondArray addObject:tripleBond];
+        
+        if (bondPrepareToRemove != nil) {
+            //删除当前化学键
+            [self.BondArray removeObject:bondPrepareToRemove];
+        }
+        
+        [self setNeedsDisplay];
     }
-    
-    
-    if (bondPrepareToRemove != nil) {
-        //删除当前化学键
-        [self.BondArray removeObject:bondPrepareToRemove];
-    }
-    
-    [self setNeedsDisplay];
 }
 
+#pragma mark - 点击创建各种原子
+- (void)tapToAttachAtom:(UITapGestureRecognizer*)tap
+{
+    CGPoint tapPoint = [tap locationInView:self];
+    
+    for (NSValue *value in self.pointArray) {
+        
+        CGPoint point = value.CGPointValue;
+        
+        if ([self isStartPoint:tapPoint aroundPoint:point WithRadius:CTLRadius]) {
+            
+            UILabel *atom = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
+            atom.center = point;
+            atom.layer.cornerRadius = atom.frame.size.width/2;
+            
+            atom.backgroundColor = [UIColor colorWithWhite:1.0 alpha:1.0];
+            atom.textAlignment = NSTextAlignmentCenter;
+            atom.text = self.atomName;
+            atom.textColor = self.atomColor;
+            atom.font = [UIFont systemFontOfSize:15];
+            [self addSubview:atom];
+        }
+        
+    }
+    
+}
 
 #pragma mark - 懒加载
 - (CYLToolBarView *)tooBarView
 {
     if (_tooBarView == nil) {
-        _tooBarView = [[CYLToolBarView alloc] initWithFrame:CGRectMake(0, self.frame.size.height - 150, self.frame.size.width,150)];
+        
+        _tooBarView = [[CYLToolBarView alloc] initWithFrame:CGRectMake(0, 65, self.frame.size.width,firstLineBtnH)];
+        
         [self addSubview:_tooBarView];
         _tooBarView.backgroundColor = [UIColor lightGrayColor];
     }
@@ -818,17 +921,6 @@
     }
     
     return NO;
-}
-
-#pragma mark - 绘制双键
-- (void)drawDoubleBond
-{
-    
-}
-#pragma mark - 绘制三键
-- (void)drawTripleBond
-{
-    
 }
 
 #pragma mark - 手势delegate

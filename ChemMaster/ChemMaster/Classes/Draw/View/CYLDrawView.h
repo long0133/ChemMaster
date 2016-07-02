@@ -23,5 +23,15 @@
 @property (nonatomic, assign) BOOL isGoDoubleBond;
 //是否想变单键为三键
 @property (nonatomic, assign) BOOL isGoTrinpleBond;
-
+//是否要撤销
+@property (nonatomic, assign) BOOL isRedo;
+//是否clear
+@property (nonatomic, assign) BOOL isClear;
+//显示出其他原子的界面
+@property (nonatomic,assign) BOOL isShowOtherAtom;
+//是否选中的其他原子
+@property (nonatomic, assign) BOOL isChoseOneAtom;
+//选中的原子
+@property (nonatomic, strong) NSString *atomName;
+@property (nonatomic, strong) UIColor *atomColor;
 @end

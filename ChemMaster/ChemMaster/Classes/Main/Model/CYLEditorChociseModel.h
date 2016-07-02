@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CYLEditorChociseModel : NSObject
+@interface CYLEditorChociseModel : NSObject<NSCoding>
 /**authors*/
 @property (nonatomic ,copy) NSString *authors;
 /**title*/
