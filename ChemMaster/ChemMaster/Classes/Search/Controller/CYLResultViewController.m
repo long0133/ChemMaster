@@ -52,7 +52,7 @@ static NSString *ID = @"cell";
     
     cell.textLabel.text = [self.resultArray[indexPath.row] resultName];
     
-    cell.textLabel.textColor = [UIColor grayColor];
+    cell.textLabel.textColor = [UIColor blackColor];
     
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     

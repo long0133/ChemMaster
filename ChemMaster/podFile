@@ -5,4 +5,5 @@ pod ‘MJExtension’
 pod ‘SDWebImage’
 pod ’hpple’
 pod ‘SVProgressHUD’
+pod ‘AFNetworking’
 end

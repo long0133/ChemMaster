@@ -102,6 +102,16 @@
         [archiveDataArray addObject:data];
     }
     
+    //移除原有的文件
+    NSArray *subA = [fileManager subpathsAtPath:cachePath];
+    
+    for (NSString *sub in subA) {
+        
+        if ([sub containsString:fileNamesulffix]) {
+            [fileManager removeItemAtPath:[cachePath stringByAppendingPathComponent:sub] error:nil];
+        }
+    }
+    
     //偏移一定时间作为文件名
     NSDate *fileNameDate = [NSDate dateWithTimeInterval:secondOfWeek sinceDate:currentDate];
     

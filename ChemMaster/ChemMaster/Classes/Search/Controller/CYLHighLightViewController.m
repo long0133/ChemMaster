@@ -76,6 +76,20 @@
     });
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UILabel *lable = [[UILabel alloc] init];
+    lable.text = @"Years Order:";
+    lable.textColor = [UIColor whiteColor];
+    lable.backgroundColor = [UIColor blackColor];
+    lable.alpha = 0.7;
+    return lable;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 20;
+}
 
 #pragma mark - 自定义方法
 + (instancetype)highLightViewController

@@ -8,12 +8,12 @@
 
 #import "CYLToolBarView.h"
 #define BtnTitleFont 25
-#define BackGroundColor @"B9D3EE"
-#define selectedBackGroudColor @"EEC900"
+#define BackGroundColor @"bbd8cd"
+#define selectedBackGroudColor @"66f0bc"
 #define NColor @"0000FF"
 #define OColor @"DC143C"
 #define HColor @"6495ED"
-#define ClColor @"c3dc18"
+#define ClColor @"f0d666"
 #define BrColor @"cb7a1a"
 #define FColor @"a0cb1a"
 #define SColor @"708334"
@@ -27,7 +27,7 @@
 @property (nonatomic,strong) UIButton *clearAll;
 @property (nonatomic,strong) UIButton *Save;
 @property (nonatomic,strong) UIButton *OtherAtom;
-
+@property (nonatomic, strong) UIButton *selectedBtn;
 //其他原子选着按钮
 @property (nonatomic, strong) UIButton *NitroBtn;
 @property (nonatomic, strong) UIButton *OxygenBtn;
@@ -52,40 +52,41 @@
     return self;
 }
 
+
 - (void)setUpUI
 {
     _selectBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    _selectBtn.backgroundColor = randomColor;
+    _selectBtn.backgroundColor = [UIColor getColor:BackGroundColor];
     [_selectBtn setTitle:@"SEL" forState:UIControlStateNormal];
     [_selectBtn addTarget:self action:@selector(Select) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_selectBtn];
     
     _DrawBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    _DrawBtn.backgroundColor = randomColor;
+    _DrawBtn.backgroundColor = [UIColor getColor:BackGroundColor];
     [_DrawBtn setTitle:@"DRAW" forState:UIControlStateNormal];
     [_DrawBtn addTarget:self action:@selector(draw) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_DrawBtn];
     
     _doubleBondBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    _doubleBondBtn.backgroundColor = randomColor;
+    _doubleBondBtn.backgroundColor = [UIColor getColor:BackGroundColor];
     [_doubleBondBtn setTitle:@"double" forState:UIControlStateNormal];
     [_doubleBondBtn addTarget:self action:@selector(DoubleBond) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_doubleBondBtn];
     
     _TripleBondBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    _TripleBondBtn.backgroundColor = randomColor;
+    _TripleBondBtn.backgroundColor = [UIColor getColor:BackGroundColor];
     [_TripleBondBtn setTitle:@"triple" forState:UIControlStateNormal];
     [_TripleBondBtn addTarget:self action:@selector(TripleBond) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_TripleBondBtn];
     
     _redo = [UIButton buttonWithType:UIButtonTypeCustom];
-    _redo.backgroundColor = randomColor;
+    _redo.backgroundColor = [UIColor getColor:BackGroundColor];
     [_redo setTitle:@"redo" forState:UIControlStateNormal];
     [_redo addTarget:self action:@selector(retract) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_redo];
     
     _clearAll = [UIButton buttonWithType:UIButtonTypeCustom];
-    _clearAll.backgroundColor = randomColor;
+    _clearAll.backgroundColor = [UIColor getColor:BackGroundColor];
     [_clearAll setTitle:@"clearAll" forState:UIControlStateNormal];
     [_clearAll addTarget:self action:@selector(clearAllPic) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_clearAll];
@@ -97,7 +98,7 @@
 //    [self addSubview:_Save];
     
     _OtherAtom = [UIButton buttonWithType:UIButtonTypeCustom];
-    _OtherAtom.backgroundColor = randomColor;
+    _OtherAtom.backgroundColor = [UIColor getColor:BackGroundColor];
     [_OtherAtom setTitle:@"OA" forState:UIControlStateNormal];
     [_OtherAtom addTarget:self action:@selector(AddOtherAtom) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_OtherAtom];
@@ -132,6 +133,7 @@
     [_ChlorineBtn setTitle:@"Cl" forState:UIControlStateNormal];
     _ChlorineBtn.backgroundColor = [UIColor getColor:BackGroundColor];
     [_ChlorineBtn setTitleColor:[UIColor getColor:ClColor] forState:UIControlStateNormal];
+    _ChlorineBtn.titleLabel.font = [UIFont systemFontOfSize:BtnTitleFont];
     [_ChlorineBtn addTarget:self action:@selector(otherAtomSeleced:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_ChlorineBtn];
     
@@ -253,6 +255,7 @@
 #pragma mark - 按钮店家方法
 - (void)Select
 {
+    _selectedBtn = _selectBtn;
     if ([self.delegate respondsToSelector:@selector(toolBarDidClickSelectBtn)]) {
         [self.delegate toolBarDidClickSelectBtn];
     }
@@ -260,6 +263,7 @@
 
 - (void)draw
 {
+    _selectedBtn = _DrawBtn;
     if ([self.delegate respondsToSelector:@selector(toolBarDidClickDrawBtn)]) {
         [self.delegate toolBarDidClickDrawBtn];
     }
@@ -268,6 +272,7 @@
 
 - (void)DoubleBond
 {
+    _selectedBtn = _doubleBondBtn;
     if ([self.delegate respondsToSelector:@selector(toolBarDidClickDoubleBondBtn)]) {
         [self.delegate toolBarDidClickDoubleBondBtn];
     }
@@ -275,6 +280,7 @@
 
 - (void)TripleBond
 {
+    _selectedBtn = _TripleBondBtn;
     if ([self.delegate respondsToSelector:@selector(toolBarDidClickTripleBondBtn)]) {
         [self.delegate toolBarDidClickTripleBondBtn];
     }
@@ -282,6 +288,7 @@
 
 - (void)AddOtherAtom
 {
+    _selectedBtn = _OtherAtom;
     if ([self.delegate respondsToSelector:@selector(toolBarChoseOtherAtom)]) {
         [self.delegate toolBarChoseOtherAtom];
     }
@@ -290,6 +297,7 @@
 
 - (void)retract
 {
+    _selectedBtn = _redo;
     if ([self.delegate respondsToSelector:@selector(toolBarDidClickReDoBtn)]) {
         [self.delegate toolBarDidClickReDoBtn];
     }
@@ -297,6 +305,7 @@
 
 - (void)clearAllPic
 {
+    _selectedBtn = _clearAll;
     if ([self.delegate respondsToSelector:@selector(toolBarDidClickClearAllBtn)]) {
         [self.delegate toolBarDidClickClearAllBtn];
     }
@@ -304,6 +313,7 @@
 
 - (void)otherAtomSeleced:(UIButton*)btn
 {
+    _selectedBtn = _OtherAtom;
     if ([self.delegate respondsToSelector:@selector(toolBarDidClickAtomBtnWithAtomName: withColor:)]) {
         [self.delegate toolBarDidClickAtomBtnWithAtomName:btn.titleLabel.text withColor:btn.currentTitleColor];
     }

@@ -33,7 +33,7 @@ static NSString * const reuseIdentifier = @"Cell";
     
     flowLayOut.headerReferenceSize = CGSizeMake(ScreenW, 200);
     
-    flowLayOut.itemSize = CGSizeMake(ScreenW, 80);
+    flowLayOut.itemSize = CGSizeMake(ScreenW - 10, 90);
     
     flowLayOut.minimumLineSpacing = 10;
     

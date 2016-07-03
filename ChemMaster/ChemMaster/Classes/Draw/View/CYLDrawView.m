@@ -10,12 +10,14 @@
 #import "CYLDoubleBond.h"
 #import "CYLTripleBond.h"
 
+#define toolBarViewCololr @"FDF5E6"
 //highlightView 和 AttachView的半径
 #define CTLRadius 20.0
 //距离点多远时显示AttachView
 #define CYLSuggestDistance 30
 //建议的化学键键长
 #define CYLSuggestBondLength 40
+#define CYLAttachAtomBondLength 30
 //化学键线宽
 #define BondLineWidth 2
 //选中范围的半径
@@ -52,6 +54,8 @@
 @property (nonatomic,strong) UIBezierPath *selectPath;
 //存储被选中的点
 @property (nonatomic, strong) NSMutableArray *selPointArray;
+//存储其他原子
+@property (nonatomic, strong) NSMutableArray *otherAtomArray;
 
 /////////////////////////给出建议线条//////////////////////////////////////////
 //给出建议化学键的方向线段的数组
@@ -231,6 +235,12 @@
     
     [self.BondArray removeAllObjects];
     [self.pointArray removeAllObjects];
+    
+    for (__strong UIButton *btn in self.otherAtomArray) {
+        [btn removeFromSuperview];
+        btn = nil;
+    }
+    
     self.bond = nil;
     [self setNeedsDisplay];
 }
@@ -533,7 +543,9 @@
                 }
             }
             
-            [self.BondArray addObject:doubleBond];
+            if (doubleBond.bezierPathTwo != nil) {
+                [self.BondArray addObject:doubleBond];
+            }
             
         }//if（isGoDoubleBone）
         else if (self.isGoTrinpleBond)
@@ -545,8 +557,10 @@
                 
                 if (![bond isKindOfClass:[CYLTripleBond class]]) {
                     
+                    
                     if ([self isStartPoint:tapPoint aroundPoint:bond.midPoint WithRadius:CYLSuggestBondLength/2]) {
                         
+                        bondPrepareToRemove = bond;
                         tripleBond.startP = bond.startP;
                         tripleBond.endP = bond.endP;
                         tripleBond.midPoint = bond.midPoint;
@@ -636,7 +650,9 @@
                 
             }
             
-            [self.BondArray addObject:tripleBond];
+            if (tripleBond.bezierPathTwo != nil) {
+                [self.BondArray addObject:tripleBond];
+            }
         }
         
         
@@ -653,27 +669,129 @@
 - (void)tapToAttachAtom:(UITapGestureRecognizer*)tap
 {
     CGPoint tapPoint = [tap locationInView:self];
+    NSInteger count = 0;
     
     for (NSValue *value in self.pointArray) {
         
         CGPoint point = value.CGPointValue;
         
-        if ([self isStartPoint:tapPoint aroundPoint:point WithRadius:CTLRadius]) {
+        //点击处的店是否在记录中
+        if ([self isStartPoint:tapPoint aroundPoint:point WithRadius:CTLRadius])
+        {
             
-            UILabel *atom = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
+            //点击处有其他原子时，则删除原来的
+            for (__strong UIButton *atomBtn in self.otherAtomArray) {
+                
+                if (CGPointEqualToPoint(atomBtn.center, point)) {
+                    [atomBtn removeFromSuperview];
+                    atomBtn = nil;
+                }
+            }
+            
+            UIButton *atom = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 27, 27)];
             atom.center = point;
+
             atom.layer.cornerRadius = atom.frame.size.width/2;
+            atom.backgroundColor = [UIColor whiteColor];
+            atom.userInteractionEnabled = NO;
             
-            atom.backgroundColor = [UIColor colorWithWhite:1.0 alpha:1.0];
-            atom.textAlignment = NSTextAlignmentCenter;
-            atom.text = self.atomName;
-            atom.textColor = self.atomColor;
-            atom.font = [UIFont systemFontOfSize:15];
+            [atom setTitleColor:self.atomColor forState:UIControlStateNormal];
+            
+            if ([self.atomName isEqualToString:@"N"]) {
+                atom.titleLabel.font = [UIFont systemFontOfSize:13];
+            }
+            else atom.titleLabel.font = [UIFont systemFontOfSize:17];
+            
             [self addSubview:atom];
+            
+            //根据化学键的不同设置原子的不同显示形式
+            for (CYLChemicalBond *bond in self.BondArray)
+            {
+
+                // 判断此点处的键是双键还是单键
+                if (CGPointEqualToPoint(bond.startP, point) || CGPointEqualToPoint(bond.endP, point) )
+                {
+                    count += 1;
+                    
+                    if ([bond isKindOfClass:[CYLChemicalBond class]])
+                    {
+                        //三键
+                        if ([bond isKindOfClass:[CYLTripleBond class]]) {
+                            
+                            [atom setTitle:self.atomName forState:UIControlStateNormal];
+                            
+                        }
+                        else if ([bond isKindOfClass:[CYLDoubleBond class]])
+                        {//双键
+                            NSLog(@"%ld",count);
+                            if ([self.atomName isEqualToString:@"N"]) {
+                                
+                                if (count == 4 || count == 9) {
+                                    
+                                    [atom setTitle:@"N" forState:UIControlStateNormal];
+                                }
+                                else [atom setTitle:@"NH" forState:UIControlStateNormal];
+                            }
+                            else [atom setTitle:self.atomName forState:UIControlStateNormal];
+                        }
+                        else
+                        {//单键
+                            //计算有多少的单键与原子相连
+                            
+                            if (count == 1) {//一个单键
+                                if ([self.atomName isEqualToString:@"O"]) { //单键的话，O S N 需要变形
+                                    [atom setTitle:@"OH" forState:UIControlStateNormal];
+                                }
+                                else if ([self.atomName isEqualToString:@"S"])
+                                {
+                                    [atom setTitle:@"SH" forState:UIControlStateNormal];
+                                }
+                                else if ([self.atomName isEqualToString:@"N"])
+                                {
+                                    [atom setTitle:@"NH2" forState:UIControlStateNormal];
+                                    
+                                }
+                                 else [atom setTitle:self.atomName forState:UIControlStateNormal];
+                            }
+                            else if (count == 4)//两个单键
+                            {
+                                if ([self.atomName isEqualToString:@"O"]) {
+                                    [atom setTitle:@"O" forState:UIControlStateNormal];
+                                }
+                                else if ([self.atomName isEqualToString:@"S"])
+                                {
+                                    [atom setTitle:@"S" forState:UIControlStateNormal];
+                                }
+                                else if ([self.atomName isEqualToString:@"N"])
+                                {
+                                    [atom setTitle:@"NH" forState:UIControlStateNormal];
+                                    
+                                }
+                                else [atom setTitle:self.atomName forState:UIControlStateNormal];
+                            }
+                            else if (count == 9)//三个单键
+                            {
+                                if ([self.atomName isEqualToString:@"N"])
+                                {
+                                    [atom setTitle:@"N" forState:UIControlStateNormal];
+                                    
+                                }
+                                else [atom setTitle:self.atomName forState:UIControlStateNormal];
+                            }
+                            
+
+                        }
+                    
+                    }
+                   
+                    
+                }//if
+            }//for
+            
+            [self.otherAtomArray addObject:atom];
         }
         
     }
-    
 }
 
 #pragma mark - 懒加载
@@ -684,7 +802,7 @@
         _tooBarView = [[CYLToolBarView alloc] initWithFrame:CGRectMake(0, 65, self.frame.size.width,firstLineBtnH)];
         
         [self addSubview:_tooBarView];
-        _tooBarView.backgroundColor = [UIColor lightGrayColor];
+        _tooBarView.backgroundColor = [UIColor getColor:toolBarViewCololr];
     }
     return _tooBarView;
 }
@@ -695,6 +813,14 @@
         _BondArray = [NSMutableArray array];
     }
     return _BondArray;
+}
+
+- (NSMutableArray *)otherAtomArray
+{
+    if (_otherAtomArray == nil) {
+        _otherAtomArray = [NSMutableArray array];
+    }
+    return _otherAtomArray;
 }
 
 - (UIView *)HighLightView

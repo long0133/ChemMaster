@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChemMaster/Classes/Draw/View/CYLDrawView.m"
-            timestampString = "489131637.397914"
+            timestampString = "489212077.523375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "420"
-            endingLineNumber = "420"
+            startingLineNumber = "430"
+            endingLineNumber = "430"
             landmarkName = "-panToSelect:"
             landmarkType = "5">
          </BreakpointContent>

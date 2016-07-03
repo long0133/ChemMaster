@@ -30,8 +30,8 @@ static NSString *reuse = @"reuseID";
 /*
  eg:
  @{
-    Feb : @[ @{takeLink : aLink, takeName : @"name"}, @{takeLink : aLink, takeName : @"name"}]
-    }
+ Feb : @[ @{takeLink : aLink, takeName : @"name"}, @{takeLink : aLink, takeName : @"name"}]
+ }
  */
 @property (nonatomic, strong) NSDictionary *contentDict;
 
@@ -168,54 +168,43 @@ static NSString *reuse = @"reuseID";
 }
 
 #pragma mark - 自定义fangfa
-#warning 待设置一段时间后自动更新cache内的文件
 + (instancetype)HighLightMonthViewControllerWithURL:(NSURL *)url andURLPrefixSet:(NSString *)urlPrefix
 {
     CYLHighLightMonthViewController *hmvc = [[CYLHighLightMonthViewController alloc] initWithStyle:UITableViewStylePlain];
     
+    NSData *htmlData = [NSData dataWithContentsOfURL:url];
     
-    NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:[cachePath stringByAppendingPathComponent:ContentDictFileNameInCacahe]];
+    TFHpple *monthList = [[TFHpple alloc] initWithHTMLData:htmlData];
     
-    if (dict != nil) {
-        hmvc.contentDict = dict;
-    }
-    else
+    NSArray *monthListArray = [monthList searchWithXPathQuery:@"//a[@href]"];
+    
+    for (TFHppleElement *element in monthListArray)
     {
-        NSData *htmlData = [NSData dataWithContentsOfURL:url];
         
-        TFHpple *monthList = [[TFHpple alloc] initWithHTMLData:htmlData];
+        NSString *monthKey = [hmvc MonthKeyTheContentBelonged:element.raw];
         
-        NSArray *monthListArray = [monthList searchWithXPathQuery:@"//a[@href]"];
-        
-        for (TFHppleElement *element in monthListArray) {
+        if (monthKey.length) {
             
-            NSString *monthKey = [hmvc MonthKeyTheContentBelonged:element.raw];
+            NSMutableDictionary *dict = [NSMutableDictionary dictionary];
             
-            if (monthKey.length) {
-                
-                NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-                
-                //link
-                NSRange hrefRangr = [element.raw rangeOfString:@"href"];
-                NSRange shtmRangr = [element.raw rangeOfString:@"shtm"];
-                NSString *subPath = [element.raw substringWithRange:NSMakeRange((hrefRangr.length + hrefRangr.location + 2),((shtmRangr.length + shtmRangr.location) - (hrefRangr.length + hrefRangr.location) - 2))];
-                NSString *link = [NSString stringWithFormat:@"%@/%@",urlPrefix, subPath];
-                
-                dict[Takelink] = link;
-                
-                NSString *name = [element.raw flattenHTML:element.raw trimWhiteSpace:NO];
-                name = [name stringByReplacingOccurrencesOfString:@"\n" withString:@""];
-                name = [name stringByReplacingOccurrencesOfString:@"\t" withString:@""];
-                name = [name stringByReplacingOccurrencesOfString:@"&#13;" withString:@""];
-                
-                dict[TakeName] = name;
-                
-                [hmvc.contentDict[monthKey] addObject:dict];
-            }
+            //link
+            NSRange hrefRangr = [element.raw rangeOfString:@"href"];
+            NSRange shtmRangr = [element.raw rangeOfString:@"shtm"];
+            NSString *subPath = [element.raw substringWithRange:NSMakeRange((hrefRangr.length + hrefRangr.location + 2),((shtmRangr.length + shtmRangr.location) - (hrefRangr.length + hrefRangr.location) - 2))];
+            NSString *link = [NSString stringWithFormat:@"%@/%@",urlPrefix, subPath];
+            
+            dict[Takelink] = link;
+            
+            NSString *name = [element.raw flattenHTML:element.raw trimWhiteSpace:NO];
+            name = [name stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+            name = [name stringByReplacingOccurrencesOfString:@"\t" withString:@""];
+            name = [name stringByReplacingOccurrencesOfString:@"&#13;" withString:@""];
+            
+            dict[TakeName] = name;
+            
+            [hmvc.contentDict[monthKey] addObject:dict];
         }
     }
-    
-    [hmvc.contentDict writeToFile:[cachePath stringByAppendingPathComponent:ContentDictFileNameInCacahe] atomically:YES];
     
     return hmvc;
 }

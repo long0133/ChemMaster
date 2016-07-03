@@ -16,6 +16,7 @@
 #import <TFHpple.h>
 #import <AFNetworking.h>
 
+#define fileManager [NSFileManager defaultManager]
 #define ScreenW [UIScreen mainScreen].bounds.size.width
 #define ScreenH [UIScreen mainScreen].bounds.size.height
 #define randomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1]
@@ -24,6 +25,7 @@
 
 #define cachePath [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject]
 
+//颜色设置
 #define barColor @"EEE9E9"
 
 //keys for dict
@@ -33,6 +35,8 @@
 #define TakeAuthor @"author"
 #define TakeAbstract @"abstract"
 
+//date string互转
 #define dateFormatString @"yyyy-MM-dd"
 #define secondOfWeek 604800.0
+#define secondOfMonth 2419200.0
 #define currentDate [NSDate date]

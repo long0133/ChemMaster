@@ -22,5 +22,7 @@
 /**picture  tocGraphics[0] is the url of pic*/
 @property (nonatomic, strong) NSArray *tocGraphics;
 
+
+//获取editorChoice的模型数组
 + (NSMutableArray*)modelArray;
 @end
