@@ -57,37 +57,37 @@
 {
     _selectBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     _selectBtn.backgroundColor = [UIColor getColor:BackGroundColor];
-    [_selectBtn setTitle:@"SEL" forState:UIControlStateNormal];
+    [_selectBtn setBackgroundImage:[UIImage imageNamed:@"RetroErasor"] forState:UIControlStateNormal];
     [_selectBtn addTarget:self action:@selector(Select) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_selectBtn];
     
     _DrawBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     _DrawBtn.backgroundColor = [UIColor getColor:BackGroundColor];
-    [_DrawBtn setTitle:@"DRAW" forState:UIControlStateNormal];
+    [_DrawBtn setBackgroundImage:[UIImage imageNamed:@"BondOne"] forState:UIControlStateNormal];
     [_DrawBtn addTarget:self action:@selector(draw) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_DrawBtn];
     
     _doubleBondBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     _doubleBondBtn.backgroundColor = [UIColor getColor:BackGroundColor];
-    [_doubleBondBtn setTitle:@"double" forState:UIControlStateNormal];
+    [_doubleBondBtn setBackgroundImage:[UIImage imageNamed:@"BondTwo"] forState:UIControlStateNormal];
     [_doubleBondBtn addTarget:self action:@selector(DoubleBond) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_doubleBondBtn];
     
     _TripleBondBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     _TripleBondBtn.backgroundColor = [UIColor getColor:BackGroundColor];
-    [_TripleBondBtn setTitle:@"triple" forState:UIControlStateNormal];
+    [_TripleBondBtn setBackgroundImage:[UIImage imageNamed:@"BondThree"] forState:UIControlStateNormal];
     [_TripleBondBtn addTarget:self action:@selector(TripleBond) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_TripleBondBtn];
     
     _redo = [UIButton buttonWithType:UIButtonTypeCustom];
     _redo.backgroundColor = [UIColor getColor:BackGroundColor];
-    [_redo setTitle:@"redo" forState:UIControlStateNormal];
+    [_redo setBackgroundImage:[UIImage imageNamed:@"MainUndo"] forState:UIControlStateNormal];
     [_redo addTarget:self action:@selector(retract) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_redo];
     
     _clearAll = [UIButton buttonWithType:UIButtonTypeCustom];
     _clearAll.backgroundColor = [UIColor getColor:BackGroundColor];
-    [_clearAll setTitle:@"clearAll" forState:UIControlStateNormal];
+    [_clearAll setBackgroundImage:[UIImage imageNamed:@"MainDelete"] forState:UIControlStateNormal];
     [_clearAll addTarget:self action:@selector(clearAllPic) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_clearAll];
     
@@ -99,7 +99,8 @@
     
     _OtherAtom = [UIButton buttonWithType:UIButtonTypeCustom];
     _OtherAtom.backgroundColor = [UIColor getColor:BackGroundColor];
-    [_OtherAtom setTitle:@"OA" forState:UIControlStateNormal];
+    [_OtherAtom setTitle:@"A" forState:UIControlStateNormal];
+    _OtherAtom.titleLabel.font = [UIFont systemFontOfSize:20];
     [_OtherAtom addTarget:self action:@selector(AddOtherAtom) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_OtherAtom];
     

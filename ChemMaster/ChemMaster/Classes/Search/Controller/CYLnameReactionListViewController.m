@@ -10,8 +10,11 @@
 #import "CYLReactionDetailViewController.h"
 #import <SVProgressHUD.h>
 #import <TFHpple.h>
+//存储list时的文件后缀
 #define  fileNameSulffix @"NameReactionList"
 
+//传给result detailView的文件后缀
+#define fileNameForDetailViewSulffix @"ANameReaction"
 static NSString *reuse = @"reuse";
 
 @interface CYLnameReactionListViewController ()
@@ -70,6 +73,7 @@ static NSString *reuse = @"reuse";
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
        
         CYLReactionDetailViewController *rvc = [CYLReactionDetailViewController DetailViewControllerWithURL:[NSURL URLWithString:linkString] andUrlSetString:@"http://www.organic-chemistry.org/namedreactions/"];
+        rvc.title = [self.listArray[indexPath.row][TakeName] stringByAppendingString:fileNameForDetailViewSulffix];
         
         dispatch_async(dispatch_get_main_queue(), ^{
            

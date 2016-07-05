@@ -11,6 +11,9 @@
 #import <SVProgressHUD.h>
 #import <UIImageView+WebCache.h>
 #import <UIButton+WebCache.h>
+
+
+
 static NSInteger literatureLength = 0;
 #define deleteNumber 120
 
@@ -25,6 +28,7 @@ static NSInteger literatureLength = 0;
 @property (nonatomic, assign) NSInteger CurrentH;
 @property (nonatomic, assign) NSInteger maxWidth;
 
+//显示图片时的遮板
 @property (nonatomic, strong) UIView *CoverView;
 
 @property (nonatomic, strong) UIImageView *bigImageView;
@@ -38,6 +42,13 @@ static NSInteger literatureLength = 0;
 
 @property (nonatomic, strong) UIButton *showLiteratureBtn;
 
+@property (nonatomic, strong) UIButton *saveBtn;
+
+//toolbarView 让按钮显眼
+@property (nonatomic, strong) UIView *toolBarView;
+
+@property (nonatomic, strong) NSMutableArray *saveArray;
+
 @end
 
 @implementation CYLReactionDetailViewController
@@ -48,10 +59,14 @@ static NSInteger literatureLength = 0;
     
      self.view = self.contentScrollView;
     
-    _cancleBtn = [[UIButton alloc] initWithFrame:CGRectMake(ScreenW - 44, ScreenH - 44, 33, 33)];
+    _cancleBtn = [[UIButton alloc] initWithFrame:CGRectMake(ScreenW - 44, ScreenH - 40, 33, 33)];
     [_cancleBtn setImage:[UIImage imageNamed:@"Cancel-icon"] forState:UIControlStateNormal];
     [_cancleBtn addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
     [KWindow addSubview:_cancleBtn];
+    
+    [self saveBtn];
+    
+    [self toolBarView];
 }
 
 
@@ -87,6 +102,14 @@ static NSInteger literatureLength = 0;
                 _maxWidth = image.size.width;
             }
             
+            //将图片转为PNGdata以便存储
+            NSData *imgData = UIImagePNGRepresentation(image);
+            
+            if (imgData != nil) {
+                
+                [self.saveArray addObject:imgData];
+            }
+            
             [self.contentScrollView addSubview:imageBtn];
             
             _CurrentH += imageBtn.frame.size.height + 10;
@@ -105,6 +128,15 @@ static NSInteger literatureLength = 0;
             lable.font = attr[NSFontAttributeName];
             lable.text = content;
             
+            if ([content containsString:@"Recent Literature"]) {
+                
+                lable.frame = CGRectMake(0, _CurrentH, ScreenW, 30);
+                lable.textAlignment = NSTextAlignmentLeft;
+                lable.font = [UIFont systemFontOfSize:20];
+                
+            }
+            
+            [self.saveArray addObject:lable.text];
             [self.contentScrollView addSubview:lable];
             
             _CurrentH += lable.frame.size.height + 10;
@@ -136,7 +168,7 @@ static NSInteger literatureLength = 0;
             
             continue;
         }
-        //leterature部分的截串需要先与img属性
+        //leterature部分的截串需要先于img属性
         if ([contentString containsString:@"abstracts"])
         {
             //如果是lecture
@@ -198,6 +230,7 @@ static NSInteger literatureLength = 0;
     abstractString = [self flattenHTML:abstractString trimWhiteSpace:NO];
     abstractString = [abstractString stringByReplacingOccurrencesOfString:@"\n" withString:@" "];
     abstractString = [NSString stringWithFormat:@"  Referance : %@", abstractString];
+    abstractString = [abstractString stringByReplacingOccurrencesOfString:@";" withString:@""];
 
     return [NSString stringWithFormat:@"%@__%@",imageUrl,abstractString];
 
@@ -281,6 +314,27 @@ static NSInteger literatureLength = 0;
 }
 
 #pragma mark - 懒加载
+- (UIView *)toolBarView
+{
+    if (_toolBarView == nil) {
+        _toolBarView = [[UIView alloc] initWithFrame:CGRectMake(0, ScreenH - 44, ScreenW, 44)];
+        _toolBarView.backgroundColor = [UIColor getColor:barColor];
+        [KWindow insertSubview:_toolBarView belowSubview:self.cancleBtn];
+    }
+    return _toolBarView;
+}
+
+- (UIButton *)saveBtn
+{
+    if (_saveBtn == nil) {
+        _saveBtn = [[UIButton alloc] initWithFrame:CGRectMake(5, ScreenH - 40, 33, 33)];
+        [_saveBtn setBackgroundImage:[UIImage imageNamed:@"Save-icon"] forState:UIControlStateNormal];
+        [_saveBtn addTarget: self action:@selector(saveInCache) forControlEvents:UIControlEventTouchUpInside];
+        [KWindow addSubview:_saveBtn];
+    }
+    return _saveBtn;
+}
+
 - (UIButton *)showLiteratureBtn
 {
     if (_showLiteratureBtn == nil) {
@@ -363,7 +417,51 @@ static NSInteger literatureLength = 0;
 {
     [_cancleBtn removeFromSuperview];
     _cancleBtn = nil;
+    
+    [_saveBtn removeFromSuperview];
+    _saveBtn = nil;
+    
+    [_toolBarView removeFromSuperview];
+    _toolBarView = nil;
+    
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (NSMutableArray *)saveArray
+{
+    if (_saveArray == nil) {
+        _saveArray = [NSMutableArray array];
+    }
+    return _saveArray;
+}
+
+#pragma mark - 存储方法
+- (void)saveInCache
+{
+    NSString *fileName = self.title;
+    NSString *filePath = [cachePath stringByAppendingPathComponent:fileName];
+    [self.saveArray writeToFile:filePath atomically:YES];
+    
+    UIAlertController *alertC = nil;
+    
+    if ([self.title containsString:NameReactionCategory]) {
+        alertC = [UIAlertController alertControllerWithTitle:@"成功" message:@"请到我的反应查看" preferredStyle:UIAlertControllerStyleActionSheet];
+    }
+    else if([self.title containsString:TotalSynthesisCategory])
+    {
+        alertC = [UIAlertController alertControllerWithTitle:@"成功" message:@"请到我的全合成查看" preferredStyle:UIAlertControllerStyleActionSheet];
+    }
+    else if ([self.title containsString:HightLightCategory])
+    {
+        alertC = [UIAlertController alertControllerWithTitle:@"成功" message:@"请到我的收藏查看" preferredStyle:UIAlertControllerStyleActionSheet];
+    }
+    
+    
+    UIAlertAction *OkAction = [UIAlertAction actionWithTitle:@"知道了" style:UIAlertActionStyleDefault handler:nil];
+    
+    [alertC addAction:OkAction];
+    
+    [self presentViewController:alertC animated:YES completion:nil];
 }
 
 #pragma mark - 自定义方法
@@ -531,6 +629,16 @@ static NSInteger literatureLength = 0;
     
     return rVC;
     
+}
+
+//传入已处理完毕的array 让其直接显示
++ (instancetype)DetailViewControllerWithContentArray:(NSMutableArray *)contentArray
+{
+      CYLReactionDetailViewController *rVC = [[CYLReactionDetailViewController alloc] init];
+    
+    rVC.contentAfterTreatment = contentArray;
+    
+    return rVC;
 }
 
 -(BOOL)prefersStatusBarHidden

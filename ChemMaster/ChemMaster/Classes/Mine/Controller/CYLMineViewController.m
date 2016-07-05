@@ -2,11 +2,12 @@
 //  CYLMineViewController.m
 //  ChemMaster
 //
-//  Created by GARY on 16/6/12.
+//  Created by GARY on 16/7/4.
 //  Copyright © 2016年 GARY. All rights reserved.
 //
 
 #import "CYLMineViewController.h"
+#import "CYLShowSaveFileController.h"
 
 @interface CYLMineViewController ()
 
@@ -16,12 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.tableView.bounces = NO;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.tableView.separatorStyle = UITableViewCellSelectionStyleNone;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,68 +33,102 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 3;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 1;
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     
-    // Configure the cell...
+//    cell.textLabel.textAlignment = NSTextAlignmentCenter;
+    
+    if (indexPath.section == 0) {
+        cell.imageView.image = [UIImage imageNamed:@"laboratory-icon"];
+        cell.textLabel.text = @"我的反应";
+    }
+    else if ( indexPath.section == 1)
+    {
+        cell.imageView.image = [UIImage imageNamed:@"molecule_47.031440638198px_1199723_easyicon.net"];
+        cell.textLabel.text = @"我的全合成";
+    }
+    else
+    {
+        cell.imageView.image = [UIImage imageNamed:@"3D-Experiments-icon"];
+        cell.textLabel.text = @"我的收藏";
+    }
     
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSArray *subPath = [NSArray array];
+    subPath = [fileManager subpathsAtPath:cachePath];
+    
+    NSMutableArray *PathContentArray = [NSMutableArray array];
+    
+    if (indexPath.section == 0)
+    {
+        for (NSString *sub in subPath) {
+            
+            if ([sub containsString:NameReactionCategory]) {
+                
+                [PathContentArray addObject:[cachePath stringByAppendingPathComponent:sub]];
+            }
+            
+        }
+         
+    }
+    else if (indexPath.section == 1)
+    {
+        for (NSString *sub in subPath) {
+            
+            if ([sub containsString:TotalSynthesisCategory]) {
+                
+                [PathContentArray addObject:[cachePath stringByAppendingPathComponent:sub]];
+            }
+            
+        }
+    }
+    else
+    {
+        for (NSString *sub in subPath) {
+            
+            if ([sub containsString:HightLightCategory]) {
+                
+                [PathContentArray addObject:[cachePath stringByAppendingPathComponent:sub]];
+            }
+            
+        }
+    }
+    
+    CYLShowSaveFileController *showVC = [CYLShowSaveFileController showSaveFileWithContentPathArray:PathContentArray];
+    
+    [self.navigationController pushViewController:showVC animated:YES];
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UIImageView *imageView = [[UIImageView alloc] init];
+    if (section == 0) {
+        imageView.image = [UIImage imageNamed:@"logo2"];
+    }
+    return imageView;
 }
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    if (section == 0) {
+        return 75;
+    }
+    return 20;
 }
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

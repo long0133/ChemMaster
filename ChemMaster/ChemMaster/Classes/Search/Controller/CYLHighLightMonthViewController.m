@@ -9,7 +9,10 @@
 #import "CYLHighLightMonthViewController.h"
 #import "CYLReactionDetailViewController.h"
 
+//list存储在cache中的后缀
 #define ContentDictFileNameInCacahe @"HighLightContentDict"
+//将后缀传给detailView便于保存、识别在cache中的后缀
+#define fileNameForDetailVieSulffix @"AHighLight"
 #define Jan @"January"
 #define Feb @"February"
 #define Mar @"March"
@@ -121,6 +124,7 @@ static NSString *reuse = @"reuseID";
         [SVProgressHUD show];
         
         CYLReactionDetailViewController *Rvc = [CYLReactionDetailViewController DetailViewControllerWithURL:[NSURL URLWithString:linkString] andUrlSetString:urlset];
+        Rvc.title = [array[indexPath.row][TakeName] stringByAppendingString:fileNameForDetailVieSulffix];
         
         dispatch_async(dispatch_get_main_queue(), ^{
             

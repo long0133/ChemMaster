@@ -9,6 +9,7 @@
 #import "CYLDrawView.h"
 #import "CYLDoubleBond.h"
 #import "CYLTripleBond.h"
+#import "CYLAssistanceView.h"
 
 #define toolBarViewCololr @"FDF5E6"
 //highlightView 和 AttachView的半径
@@ -29,7 +30,7 @@
 //第一排按钮的高度
 #define firstLineBtnH 55
 
-@interface CYLDrawView ()<UIGestureRecognizerDelegate>
+@interface CYLDrawView ()<UIGestureRecognizerDelegate, CYLAssistanceViewDelegate>
 
 //当前正在画的化学键
 @property (nonatomic, strong) CYLChemicalBond *bond;
@@ -39,12 +40,16 @@
 @property (nonatomic, strong) UIPanGestureRecognizer *pan;
 @property (nonatomic, strong) UITapGestureRecognizer *tap;
 
+@property (nonatomic,strong) CYLAssistanceView *assistanceView;
+
+/////////////////////////缓存相关//////////////////////////////
 @property (nonatomic, strong) NSMutableArray *BondArray;
 //存储每条线的双端点
 @property (nonatomic, strong) NSMutableArray *pointArray;
 
 @property (nonatomic, strong) NSMutableArray *atomArray;
 
+/////////////////////////便于识别view//////////////////////////////
 //方便识别那一个点目前被选到
 @property (nonatomic,strong) UIView *HighLightView;
 //方便识别线段端点将会依附在哪一个点上
@@ -57,7 +62,7 @@
 //存储其他原子
 @property (nonatomic, strong) NSMutableArray *otherAtomArray;
 
-/////////////////////////给出建议线条//////////////////////////////////////////
+/////////////////////////给出建议线条//////////////////////////////
 //给出建议化学键的方向线段的数组
 @property (nonatomic, strong) NSMutableArray *suggestPathArray;
 //path终点的数组
@@ -138,6 +143,8 @@
         self.pan.delegate = self;
         
         [self tooBarView];
+        
+        [self assistanceView];
     }
     return self;
 }
@@ -235,6 +242,7 @@
     
     [self.BondArray removeAllObjects];
     [self.pointArray removeAllObjects];
+    [self.selectedViewArray removeAllObjects];
     
     for (__strong UIButton *btn in self.otherAtomArray) {
         [btn removeFromSuperview];
@@ -461,6 +469,8 @@
     else if (panToSelect.state == UIGestureRecognizerStateEnded)
     {
         self.selectPath = nil;
+        
+        
     }
     
     [self setNeedsDisplay];
@@ -899,6 +909,16 @@
     return _selPointArray;
 }
 
+- (UIView *)assistanceView
+{
+    if (_assistanceView == nil) {
+        _assistanceView = [[CYLAssistanceView alloc] initWithFrame:CGRectMake(0, 500, 40, 100)];
+        _assistanceView.delegate = self;
+        [self addSubview:_assistanceView];
+    }
+    return _assistanceView;
+}
+
 #pragma mark - 自定义function
 //一个点是否在另一个点的附近
 - (BOOL)isStartPoint:(CGPoint)Startpoint aroundPoint:(CGPoint)point WithRadius:(CGFloat)radius
@@ -1047,6 +1067,35 @@
     }
     
     return NO;
+}
+
+#pragma mark - 辅助view的代理
+- (void)assistanceViewDidClickClipScrennBtn:(UIButton*)btn
+{
+    //点击按钮时 先显示动画
+    [UIView animateWithDuration:.5 animations:^{
+        
+        btn.frame = CGRectMake(-33, 0, 33, 33);
+        
+    } completion:^(BOOL finished) {
+        
+        self.tooBarView.hidden = YES;
+        
+        UIGraphicsBeginImageContext(self.frame.size);
+        
+        [self.layer renderInContext:UIGraphicsGetCurrentContext()];
+        
+        UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+        
+        UIImageWriteToSavedPhotosAlbum(image, self, nil, nil);
+        
+        self.tooBarView.hidden = NO;
+        
+        [UIView animateWithDuration:.5 animations:^{
+            btn.frame = CGRectMake(5, 0, 33, 33);
+        }];
+        
+    }];
 }
 
 #pragma mark - 手势delegate

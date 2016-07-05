@@ -13,4 +13,5 @@
 
 + (instancetype)DetailViewControllerWithDetailModel:(CYLDetailModel*)model;
 + (instancetype)DetailViewControllerWithURL:(NSURL *)url andUrlSetString:(NSString*)urlsetString;
++ (instancetype)DetailViewControllerWithContentArray:(NSArray*)contentArray;
 @end

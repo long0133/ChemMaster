@@ -12,6 +12,7 @@
 #import "CYLReactionDetailViewController.h"
 #import <SVProgressHUD.h>
 #import <TFHpple.h>
+#define fileNameSulffix @"ANameReaction"
 @interface CYLResultViewController ()
 
 @property (nonatomic, strong) NSArray *resultArray;
@@ -70,6 +71,8 @@ static NSString *ID = @"cell";
         CYLResultModel *cellModel = self.resultArray[indexPath.row];
         
         CYLReactionDetailViewController *RVC = [CYLReactionDetailViewController DetailViewControllerWithURL:[NSURL URLWithString:cellModel.urlString] andUrlSetString:@"http://www.organic-chemistry.org/namedreactions/"];
+        
+        RVC.title = [cellModel.resultName stringByAppendingString:fileNameSulffix];
         
         dispatch_async(dispatch_get_main_queue(), ^{
             

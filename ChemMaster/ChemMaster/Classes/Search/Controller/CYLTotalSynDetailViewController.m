@@ -8,7 +8,8 @@
 
 #import "CYLTotalSynDetailViewController.h"
 #import "CYLReactionDetailViewController.h"
-
+//存储在cache中的后缀
+#define fileNameForDetailVieSulffix @"ATotalSynthesis"
 @interface CYLTotalSynDetailViewController ()
 
 @property (nonatomic, strong) NSArray *detailListArray;
@@ -63,6 +64,7 @@ static NSString *reuse = @"totalSyn";
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         
         CYLReactionDetailViewController *DetailVC = [CYLReactionDetailViewController DetailViewControllerWithURL:url andUrlSetString:urlSet];
+        DetailVC.title = [self.detailListArray[indexPath.row][TakeName] stringByAppendingString:fileNameForDetailVieSulffix];
         
         dispatch_async(dispatch_get_main_queue(), ^{
             

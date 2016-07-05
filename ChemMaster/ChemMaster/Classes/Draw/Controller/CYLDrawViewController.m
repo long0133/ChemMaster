@@ -20,7 +20,7 @@
 
 - (void)loadView
 {
-    self.drawView = [[CYLDrawView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.drawView = [[CYLDrawView alloc] initWithFrame:CGRectMake(0, 55, ScreenW, ScreenH - 44)];
     self.drawView.tooBarView.delegate = self;
     self.view = self.drawView;
 }
