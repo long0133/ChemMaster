@@ -9,7 +9,7 @@
 #import "CYLShowSaveFileController.h"
 #import "CYLDetailViewFromSaveViewController.h"
 @interface CYLShowSaveFileController ()
-@property (nonatomic, strong) NSArray *PathArray;
+@property (nonatomic, strong) NSMutableArray *PathArray;
 @end
 
 @implementation CYLShowSaveFileController
@@ -72,8 +72,25 @@
 
 }
 
+//editing style
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewCellEditingStyleDelete;
+}
 
-+ (instancetype)showSaveFileWithContentPathArray:(NSArray *)array
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        
+        [fileManager removeItemAtPath:self.PathArray[indexPath.row] error:nil];
+        
+        [self.PathArray removeObjectAtIndex:indexPath.row];
+        
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationLeft];
+    }
+}
+
++ (instancetype)showSaveFileWithContentPathArray:(NSMutableArray *)array
 {
     CYLShowSaveFileController *SaveVC = [[CYLShowSaveFileController alloc] init];
     SaveVC.PathArray = array;

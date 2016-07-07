@@ -10,6 +10,6 @@
 
 @interface CYLShowSaveFileController : UITableViewController
 
-+ (instancetype)showSaveFileWithContentPathArray:(NSArray*)array;
++ (instancetype)showSaveFileWithContentPathArray:(NSMutableArray*)array;
 
 @end

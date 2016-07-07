@@ -113,7 +113,7 @@
     }
     
     //偏移一定时间作为文件名
-    NSDate *fileNameDate = [NSDate dateWithTimeInterval:secondOfWeek sinceDate:currentDate];
+    NSDate *fileNameDate = [NSDate dateWithTimeInterval:secondsOfTwoDay sinceDate:currentDate];
     
     NSString *fileName = [NSString stringFromDate:fileNameDate WithDateFormat:dateFormatString];
     fileName = [fileName stringByAppendingString:fileNamesulffix];

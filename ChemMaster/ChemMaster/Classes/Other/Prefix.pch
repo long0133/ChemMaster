@@ -39,6 +39,7 @@
 #define dateFormatString @"yyyy-MM-dd"
 #define secondOfWeek 604800.0
 #define secondOfMonth 2419200.0
+#define secondsOfTwoDay 259200
 #define currentDate [NSDate date]
 
 //区别DetailView当前显示的内容属于哪一个类别

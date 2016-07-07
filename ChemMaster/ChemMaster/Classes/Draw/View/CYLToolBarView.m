@@ -7,6 +7,8 @@
 //
 
 #import "CYLToolBarView.h"
+#import "CYLAngleBtn.h"
+
 #define BtnTitleFont 25
 #define BackGroundColor @"bbd8cd"
 #define selectedBackGroudColor @"66f0bc"
@@ -26,7 +28,7 @@
 @property (nonatomic,strong) UIButton *redo;
 @property (nonatomic,strong) UIButton *clearAll;
 @property (nonatomic,strong) UIButton *Save;
-@property (nonatomic,strong) UIButton *OtherAtom;
+@property (nonatomic,strong) CYLAngleBtn *OtherAtom;
 @property (nonatomic, strong) UIButton *selectedBtn;
 //其他原子选着按钮
 @property (nonatomic, strong) UIButton *NitroBtn;
@@ -47,6 +49,7 @@
         
         [self setUpUI];
         
+        [self addObserverForBtns];
     }
     
     return self;
@@ -97,10 +100,12 @@
 //    [_Save addTarget:self action:@selector(SavePic) forControlEvents:UIControlEventTouchUpInside];
 //    [self addSubview:_Save];
     
-    _OtherAtom = [UIButton buttonWithType:UIButtonTypeCustom];
+    _OtherAtom = [CYLAngleBtn buttonWithType:UIButtonTypeCustom];
     _OtherAtom.backgroundColor = [UIColor getColor:BackGroundColor];
     [_OtherAtom setTitle:@"A" forState:UIControlStateNormal];
-    _OtherAtom.titleLabel.font = [UIFont systemFontOfSize:20];
+    [_OtherAtom setImage:[UIImage imageNamed:@"triangle_down_55.095652173913px_1189852_easyicon.net"] forState:UIControlStateNormal];
+    _OtherAtom.tag = 0;
+    _OtherAtom.titleLabel.font = [UIFont systemFontOfSize:30];
     [_OtherAtom addTarget:self action:@selector(AddOtherAtom) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_OtherAtom];
     
@@ -253,10 +258,44 @@
     }];
 }
 
+/**
+ *  监听按钮的selected
+ */
+- (void)addObserverForBtns
+{
+    for (UIButton *btn in self.subviews) {
+        
+        [btn addObserver:self forKeyPath:@"selected" options:NSKeyValueObservingOptionNew context:nil];
+    }
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(UIButton*)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
+{
+    if (object.selected == 1) {
+        object.backgroundColor = [UIColor getColor:selectedBackGroudColor];
+        
+        for (UIButton *btn in self.subviews) {
+            
+            if (btn != object) {
+                
+                btn.selected = NO;
+                
+            }
+            
+        }
+        
+    }
+    else
+    {
+        object.backgroundColor = [UIColor getColor:BackGroundColor];
+    }
+}
+
 #pragma mark - 按钮店家方法
 - (void)Select
 {
     _selectedBtn = _selectBtn;
+    _selectedBtn.selected = YES;
     if ([self.delegate respondsToSelector:@selector(toolBarDidClickSelectBtn)]) {
         [self.delegate toolBarDidClickSelectBtn];
     }
@@ -265,6 +304,7 @@
 - (void)draw
 {
     _selectedBtn = _DrawBtn;
+    _selectedBtn.selected = YES;
     if ([self.delegate respondsToSelector:@selector(toolBarDidClickDrawBtn)]) {
         [self.delegate toolBarDidClickDrawBtn];
     }
@@ -274,6 +314,8 @@
 - (void)DoubleBond
 {
     _selectedBtn = _doubleBondBtn;
+    _selectedBtn.selected = YES;
+    
     if ([self.delegate respondsToSelector:@selector(toolBarDidClickDoubleBondBtn)]) {
         [self.delegate toolBarDidClickDoubleBondBtn];
     }
@@ -282,6 +324,8 @@
 - (void)TripleBond
 {
     _selectedBtn = _TripleBondBtn;
+    _selectedBtn.selected = YES;
+    
     if ([self.delegate respondsToSelector:@selector(toolBarDidClickTripleBondBtn)]) {
         [self.delegate toolBarDidClickTripleBondBtn];
     }
@@ -290,6 +334,21 @@
 - (void)AddOtherAtom
 {
     _selectedBtn = _OtherAtom;
+    
+    
+    if (self.OtherAtom.tag == 0)
+    {
+        [self.OtherAtom setImage:[UIImage imageNamed:@"triangle_up_55.859649122807px_1189855_easyicon.net"] forState:UIControlStateNormal];
+        
+        self.OtherAtom.tag = 1;
+    }
+    else
+    {
+        [self.OtherAtom setImage:[UIImage imageNamed:@"triangle_down_55.095652173913px_1189852_easyicon.net"] forState:UIControlStateNormal];
+        
+        self.OtherAtom.tag = 0;
+    }
+    
     if ([self.delegate respondsToSelector:@selector(toolBarChoseOtherAtom)]) {
         [self.delegate toolBarChoseOtherAtom];
     }
@@ -299,6 +358,7 @@
 - (void)retract
 {
     _selectedBtn = _redo;
+    
     if ([self.delegate respondsToSelector:@selector(toolBarDidClickReDoBtn)]) {
         [self.delegate toolBarDidClickReDoBtn];
     }
@@ -307,6 +367,7 @@
 - (void)clearAllPic
 {
     _selectedBtn = _clearAll;
+    
     if ([self.delegate respondsToSelector:@selector(toolBarDidClickClearAllBtn)]) {
         [self.delegate toolBarDidClickClearAllBtn];
     }
@@ -315,6 +376,8 @@
 - (void)otherAtomSeleced:(UIButton*)btn
 {
     _selectedBtn = _OtherAtom;
+    btn.selected = YES;
+    
     if ([self.delegate respondsToSelector:@selector(toolBarDidClickAtomBtnWithAtomName: withColor:)]) {
         [self.delegate toolBarDidClickAtomBtnWithAtomName:btn.titleLabel.text withColor:btn.currentTitleColor];
     }

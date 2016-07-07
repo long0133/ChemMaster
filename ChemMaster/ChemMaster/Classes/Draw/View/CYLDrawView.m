@@ -49,6 +49,9 @@
 
 @property (nonatomic, strong) NSMutableArray *atomArray;
 
+//用于存储所有的操作 用于撤回时使用
+@property (nonatomic, strong) NSMutableArray *operationArray;
+
 /////////////////////////便于识别view//////////////////////////////
 //方便识别那一个点目前被选到
 @property (nonatomic,strong) UIView *HighLightView;
@@ -88,10 +91,12 @@
     
     //画出实时的线条
     self.bond.bezierPath.lineWidth = BondLineWidth;
+    self.bond.bezierPath.lineCapStyle = kCGLineCapRound;
     [self.bond.bezierPath stroke];
     
     //画出辅助线条
     for (UIBezierPath *path in self.suggestPathArray) {
+        path.lineJoinStyle = kCGLineCapRound;
         [path stroke];
     }
    
@@ -105,6 +110,10 @@
             typeof(CYLDoubleBond*) DoubleBond = (CYLDoubleBond*)bond;
             DoubleBond.bezierPath.lineWidth = BondLineWidth;
             DoubleBond.bezierPathTwo.lineWidth = BondLineWidth;
+            
+            DoubleBond.bezierPath.lineCapStyle = kCGLineCapRound;
+            DoubleBond.bezierPathTwo.lineCapStyle = kCGLineCapRound;
+            
             [DoubleBond.bezierPath stroke];
             [DoubleBond.bezierPathTwo stroke];
         }
@@ -117,6 +126,10 @@
             tripleBond.bezierPathTwo.lineWidth = BondLineWidth;
             tripleBond.bezierPathThree.lineWidth = BondLineWidth;
             
+            tripleBond.bezierPath.lineCapStyle = kCGLineCapRound;
+            tripleBond.bezierPathTwo.lineCapStyle = kCGLineCapRound;
+            tripleBond.bezierPathThree.lineCapStyle = kCGLineCapRound;
+            
             [tripleBond.bezierPath stroke];
             [tripleBond.bezierPathTwo stroke];
             [tripleBond.bezierPathThree stroke];
@@ -124,6 +137,7 @@
         
         //画出单键
         bond.bezierPath.lineWidth = BondLineWidth;
+        bond.bezierPath.lineCapStyle = kCGLineCapRound;
         [bond.bezierPath stroke];
         
     }
@@ -222,17 +236,39 @@
 {
     _isRedo = isRedo;
     
-    CYLChemicalBond *lastBond = [self.BondArray lastObject];
-        
-    //移除正在画的实时线条
-    _bond.bezierPath = nil;
-        
-    [self.BondArray removeLastObject];
+    id obj = self.operationArray.lastObject;
     
-    //移除点
-    [self.pointArray removeObject:[NSValue valueWithCGPoint:lastBond.endP]];
+    NSLog(@"%@",[obj class]);
     
-    [self setNeedsDisplay];
+    if ([obj isKindOfClass:[CYLChemicalBond class]]) {
+        
+        CYLChemicalBond *lastBond = [self.operationArray lastObject];
+        
+        [self.operationArray removeLastObject];
+        
+        //移除正在画的实时线条
+        _bond.bezierPath = nil;
+        
+        [self.BondArray removeLastObject];
+        
+        //移除点
+        [self.pointArray removeObject:[NSValue valueWithCGPoint:lastBond.endP]];
+        
+        [self setNeedsDisplay];
+        
+    }
+    else if ([obj isKindOfClass:[UIButton class]])
+    {
+        
+        UIButton *btn = self.operationArray.lastObject;
+        
+        [self.operationArray removeLastObject];
+        
+        [btn removeFromSuperview];
+        
+        btn = nil;
+    }
+        
 }
 
 //清屏功能
@@ -425,6 +461,7 @@
         
         //缓存画好的bond
         [self.BondArray addObject:_bond];
+        [self.operationArray addObject:_bond];
         
         [self setNeedsDisplay];
         
@@ -555,6 +592,7 @@
             
             if (doubleBond.bezierPathTwo != nil) {
                 [self.BondArray addObject:doubleBond];
+                [self.operationArray addObject:doubleBond];
             }
             
         }//if（isGoDoubleBone）
@@ -662,6 +700,7 @@
             
             if (tripleBond.bezierPathTwo != nil) {
                 [self.BondArray addObject:tripleBond];
+                [self.operationArray addObject:tripleBond];
             }
         }
         
@@ -669,6 +708,7 @@
         if (bondPrepareToRemove != nil) {
             //删除当前化学键
             [self.BondArray removeObject:bondPrepareToRemove];
+            
         }
         
         [self setNeedsDisplay];
@@ -680,6 +720,12 @@
 {
     CGPoint tapPoint = [tap locationInView:self];
     NSInteger count = 0;
+    //显示原子的btn
+    UIButton *atom = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 27, 27)];
+    atom.layer.cornerRadius = atom.frame.size.width/2;
+    atom.backgroundColor = [UIColor whiteColor];
+    atom.userInteractionEnabled = NO;
+    [atom setTitleColor:self.atomColor forState:UIControlStateNormal];
     
     for (NSValue *value in self.pointArray) {
         
@@ -693,19 +739,15 @@
             for (__strong UIButton *atomBtn in self.otherAtomArray) {
                 
                 if (CGPointEqualToPoint(atomBtn.center, point)) {
+                    
+                    [self.operationArray removeObject:atomBtn];
+                    
                     [atomBtn removeFromSuperview];
                     atomBtn = nil;
                 }
             }
             
-            UIButton *atom = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 27, 27)];
             atom.center = point;
-
-            atom.layer.cornerRadius = atom.frame.size.width/2;
-            atom.backgroundColor = [UIColor whiteColor];
-            atom.userInteractionEnabled = NO;
-            
-            [atom setTitleColor:self.atomColor forState:UIControlStateNormal];
             
             if ([self.atomName isEqualToString:@"N"]) {
                 atom.titleLabel.font = [UIFont systemFontOfSize:13];
@@ -733,7 +775,7 @@
                         }
                         else if ([bond isKindOfClass:[CYLDoubleBond class]])
                         {//双键
-                            NSLog(@"%ld",count);
+                            NSLog(@"%ld  double",count);
                             if ([self.atomName isEqualToString:@"N"]) {
                                 
                                 if (count == 4 || count == 9) {
@@ -749,6 +791,7 @@
                             //计算有多少的单键与原子相连
                             
                             if (count == 1) {//一个单键
+                                NSLog(@"%ld one ",count);
                                 if ([self.atomName isEqualToString:@"O"]) { //单键的话，O S N 需要变形
                                     [atom setTitle:@"OH" forState:UIControlStateNormal];
                                 }
@@ -765,6 +808,7 @@
                             }
                             else if (count == 4)//两个单键
                             {
+                                NSLog(@"%ld two",count);
                                 if ([self.atomName isEqualToString:@"O"]) {
                                     [atom setTitle:@"O" forState:UIControlStateNormal];
                                 }
@@ -781,6 +825,7 @@
                             }
                             else if (count == 9)//三个单键
                             {
+                                NSLog(@"%ld three",count);
                                 if ([self.atomName isEqualToString:@"N"])
                                 {
                                     [atom setTitle:@"N" forState:UIControlStateNormal];
@@ -788,8 +833,13 @@
                                 }
                                 else [atom setTitle:self.atomName forState:UIControlStateNormal];
                             }
+                            else
+                            {
+                                NSLog(@"%ld other", count);
+                                [atom setTitle:self.atomName forState:UIControlStateNormal];
+                            }
                             
-
+                            
                         }
                     
                     }
@@ -797,11 +847,12 @@
                     
                 }//if
             }//for
-            
-            [self.otherAtomArray addObject:atom];
         }
         
     }
+    [self.otherAtomArray addObject:atom];
+    [self.operationArray addObject:atom];
+    NSLog(@"%ld",self.otherAtomArray.count);
 }
 
 #pragma mark - 懒加载
@@ -901,6 +952,14 @@
     return _SuggestPointArray;
 }
 
+- (NSMutableArray *)operationArray
+{
+    if (_operationArray == nil) {
+        _operationArray = [NSMutableArray array];
+    }
+    return _operationArray;
+}
+
 - (NSMutableArray *)selPointArray
 {
     if (_selPointArray == nil) {
@@ -912,11 +971,40 @@
 - (UIView *)assistanceView
 {
     if (_assistanceView == nil) {
-        _assistanceView = [[CYLAssistanceView alloc] initWithFrame:CGRectMake(0, 500, 40, 100)];
+        _assistanceView = [[CYLAssistanceView alloc] initWithFrame:CGRectMake(0, 500, 33, 33)];
         _assistanceView.delegate = self;
+        [_assistanceView addGestureRecognizer:[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(dragToMove:)]];
         [self addSubview:_assistanceView];
     }
     return _assistanceView;
+}
+
+#pragma mark - assistanceView的拖拽功能
+- (void)dragToMove:(UIPanGestureRecognizer*)pan
+{
+    CGPoint curP = [pan locationInView:self];
+    
+    CGFloat assistancW = self.assistanceView.frame.size.width;
+    
+    if (pan.state == UIGestureRecognizerStateChanged) {
+        
+        self.assistanceView.center = curP;
+    }
+    else if (pan.state == UIGestureRecognizerStateEnded)
+    {
+        if (curP.x >= self.center.x) {
+            
+            [UIView animateWithDuration:.5 animations:^{
+                self.assistanceView.center = CGPointMake(375 - assistancW/2, curP.y);
+            }];
+        }
+        else
+        {
+            [UIView animateWithDuration:.5 animations:^{
+                self.assistanceView.center = CGPointMake(assistancW/2, curP.y);
+            }];
+        }
+    }
 }
 
 #pragma mark - 自定义function
@@ -970,7 +1058,7 @@
     [self.AttachView removeFromSuperview];
     self.AttachView = nil;
 }
-
+//在所给点出显示selView
 - (UIView*)showSelectViewOnPoint:(CGPoint)point
 {
     UIView *selectView = [[UIView alloc] init];
@@ -1069,32 +1157,54 @@
     return NO;
 }
 
-#pragma mark - 辅助view的代理
+#pragma mark - 辅助view的代理 点击截屏
 - (void)assistanceViewDidClickClipScrennBtn:(UIButton*)btn
 {
+    
+    CGRect frame = self.assistanceView.frame;
+    
     //点击按钮时 先显示动画
-    [UIView animateWithDuration:.5 animations:^{
+    [UIView animateWithDuration:.25 animations:^{
         
-        btn.frame = CGRectMake(-33, 0, 33, 33);
+        
+        if (self.assistanceView.center.x <= self.center.x) {
+            _assistanceView.frame = CGRectMake(-frame.size.width, frame.origin.y, frame.size.width, frame.size.height);
+        }
+        else if (self.assistanceView.center.x > self.center.x)
+        {
+            _assistanceView.frame = CGRectMake(ScreenW + frame.size.width, frame.origin.y, frame.size.width, frame.size.height);
+        }
+        
         
     } completion:^(BOOL finished) {
         
         self.tooBarView.hidden = YES;
         
-        UIGraphicsBeginImageContext(self.frame.size);
+        UIGraphicsBeginImageContextWithOptions(self.frame.size, NO, 0);
         
         [self.layer renderInContext:UIGraphicsGetCurrentContext()];
         
         UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
         
-        UIImageWriteToSavedPhotosAlbum(image, self, nil, nil);
+        UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
         
         self.tooBarView.hidden = NO;
         
-        [UIView animateWithDuration:.5 animations:^{
-            btn.frame = CGRectMake(5, 0, 33, 33);
+        [UIView animateWithDuration:.25 animations:^{
+            _assistanceView.frame = frame;
         }];
         
+    }];
+}
+
+- (void) image: (UIImage *)image didFinishSavingWithError: (NSError *) error contextInfo: (void *) contextInfo;
+{
+    [UIView animateWithDuration:0.25 animations:^{
+        
+        self.alpha = 0.0;
+        
+    } completion:^(BOOL finished) {
+        self.alpha = 1.0;
     }];
 }
 

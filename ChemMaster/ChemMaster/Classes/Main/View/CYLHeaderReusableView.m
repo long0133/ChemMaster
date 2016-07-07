@@ -259,6 +259,8 @@ typedef NS_ENUM(NSInteger, CYLFont)
     NSString *descString = [model.articleAbstract stringByReplacingOccurrencesOfString:@"<p>" withString:@""];
     
     descString = [descString stringByReplacingOccurrencesOfString:@"\n" withString:@" "];
+    descString = [descString stringByReplacingOccurrencesOfString:@"&#x" withString:@" "];
+    descString = [descString stringByReplacingOccurrencesOfString:@";" withString:@" "];
     descString = [NSString stringWithFormat:@"  %@",descString];
     descString = [self flattenHTML:descString trimWhiteSpace:NO];
     

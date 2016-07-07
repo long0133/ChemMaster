@@ -111,6 +111,8 @@
     
     CYLShowSaveFileController *showVC = [CYLShowSaveFileController showSaveFileWithContentPathArray:PathContentArray];
     
+    showVC.hidesBottomBarWhenPushed = YES;
+    
     [self.navigationController pushViewController:showVC animated:YES];
 }
 
