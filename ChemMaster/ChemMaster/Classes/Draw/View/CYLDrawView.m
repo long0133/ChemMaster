@@ -99,7 +99,7 @@
         path.lineJoinStyle = kCGLineCapRound;
         [path stroke];
     }
-   
+    
     [self.selectPath stroke];
     
     //画出历史的线条
@@ -188,7 +188,7 @@
     if (isToSelect) {
         
         [self.pan addTarget:self action:@selector(panToSelect:)];
-
+        
     }
     else
     {
@@ -268,7 +268,7 @@
         
         btn = nil;
     }
-        
+    
 }
 
 //清屏功能
@@ -297,7 +297,7 @@
     if (isShowOtherAtom) {
         
         self.tooBarView.frame = CGRectMake(0, 65, ScreenW, toolBarViewH);
-    
+        
     }
     else
     {
@@ -321,7 +321,7 @@
     {
         [self.tap removeTarget:self action:@selector(tapToAttachAtom:)];
     }
-
+    
 }
 
 #pragma mark - pan手势功能集合 :绘制基本碳骨架
@@ -469,7 +469,7 @@
     
 }
 
-#pragma mark - pan手势功能集合 :选择已存在的点
+#pragma mark - pan手势功能集合 :选择已存在的点删除
 - (void)panToSelect:(UIPanGestureRecognizer*)panToSelect
 {
     CGPoint curP = [panToSelect locationInView:self];
@@ -485,7 +485,7 @@
             
             if ([self isStartPoint:point aroundPoint:curP WithRadius:selectRadius]) {
                 
-               UIView *selectedView = [self showSelectViewOnPoint:point];
+                UIView *selectedView = [self showSelectViewOnPoint:point];
                 
                 [self.selectedViewArray addObject:selectedView];
                 
@@ -508,7 +508,55 @@
         self.selectPath = nil;
         
         
+        NSMutableArray *bondPrepareToDeleteA = [NSMutableArray array];
+        NSMutableArray *OtherAtomPrepareToDeleteA = [NSMutableArray array];
+        
+        for (NSValue *value in self.selPointArray)
+        {
+            CGPoint point = value.CGPointValue;
+            
+            for (CYLChemicalBond *bond in self.BondArray)
+            {
+                
+                if (CGPointEqualToPoint(bond.startP, point) || CGPointEqualToPoint(bond.endP, point)) {
+                    
+                    [bondPrepareToDeleteA addObject:bond];
+                    
+                }
+                
+            }
+            
+            for (UIButton *btn  in self.otherAtomArray) {
+                
+                if (CGPointEqualToPoint(btn.center,point)) {
+                    
+                    [OtherAtomPrepareToDeleteA addObject:btn];
+                    [btn removeFromSuperview];
+                }
+                
+            }
+            
+        }
+        
+        
+        //删除化学键
+        self.bond = nil;
+        [self.BondArray removeObjectsInArray:bondPrepareToDeleteA];
+        [self.pointArray removeObjectsInArray:self.selPointArray];
+        
+        //删除selectedView
+        for (UIView *view in self.selectedViewArray) {
+            [view removeFromSuperview];
+        }
+        
+        //删除其它原子btn
+        [self.otherAtomArray removeObjectsInArray:OtherAtomPrepareToDeleteA];
+        
+        [self.selectedViewArray removeAllObjects];
+        [self.selPointArray removeAllObjects];
     }
+    
+    
     
     [self setNeedsDisplay];
 }
@@ -518,7 +566,8 @@
 {
     CGPoint tapPoint = [tap locationInView:self];
     
-    /**************************需要创建双键三键时*****************************/
+    /**************************需要创建双键，三键时*****************************/
+    //双键
     if (_isGoDoubleBond || _isGoTrinpleBond) {
         
         CYLChemicalBond *bondPrepareToRemove = nil;
@@ -546,16 +595,30 @@
                         
                         //计算斜率角度
                         CGFloat angle = atan((bond.endP.y - bond.startP.y)/(bond.endP.x - bond.startP.x));
+                        NSInteger distance = CYLSuggestBondLength/5 * 2;
                         
                         if (angle < 0)
                         {//斜率大于九十度时
                             
+                            /************************1.绘制另一条与原键平行的等长的先***********************/
                             CGFloat spX = bond.startP.x + marginOfBonds * sin((M_PI - angle));
                             CGFloat spY = bond.startP.y + marginOfBonds * cos((M_PI - angle));
-                            CGPoint startTwo = CGPointMake(spX, spY);
                             
                             CGFloat epX = bond.endP.x + marginOfBonds * sin((M_PI - angle));
                             CGFloat epY = bond.endP.y + marginOfBonds * cos((M_PI - angle));
+                            
+                            /************************2.将此条线缩短一定距离***********************/
+                            //新线段的中心点
+                            CGPoint center = CGPointMake((spX + epX)/2, (spY + epY)/2);
+                            
+                            epX = center.x - distance * cos(M_PI - angle);
+                            epY = center.y + distance * sin(M_PI - angle);
+                            
+                            spX = center.x + distance * cos(M_PI - angle);
+                            spY = center.y - distance * sin(M_PI - angle);
+                            
+                            
+                            CGPoint startTwo = CGPointMake(spX, spY);
                             CGPoint endTwo = CGPointMake(epX, epY);
                             
                             doubleBond.startPTwo = startTwo;
@@ -571,11 +634,22 @@
                             //斜率小于90
                             CGFloat spX = bond.startP.x + marginOfBonds * sin((angle));
                             CGFloat spY = bond.startP.y - marginOfBonds * cos((angle));
-                            CGPoint startTwo = CGPointMake(spX, spY);
                             
                             CGFloat epX = bond.endP.x + marginOfBonds * sin((angle));
                             CGFloat epY = bond.endP.y - marginOfBonds * cos((angle));
+                            
+                            
+                            //新线段的中心点
+                            CGPoint center = CGPointMake((spX + epX)/2, (spY + epY)/2);
+                            
+                            epX = center.x - distance * cos(angle);
+                            epY = center.y - distance * sin(angle);
+                            
+                            spX = center.x + distance * cos(angle);
+                            spY = center.y + distance * sin(angle);
+                            
                             CGPoint endTwo = CGPointMake(epX, epY);
+                            CGPoint startTwo = CGPointMake(spX, spY);
                             
                             doubleBond.startPTwo = startTwo;
                             doubleBond.endPTwo = endTwo;
@@ -759,7 +833,7 @@
             //根据化学键的不同设置原子的不同显示形式
             for (CYLChemicalBond *bond in self.BondArray)
             {
-
+                
                 // 判断此点处的键是双键还是单键
                 if (CGPointEqualToPoint(bond.startP, point) || CGPointEqualToPoint(bond.endP, point) )
                 {
@@ -804,7 +878,7 @@
                                     [atom setTitle:@"NH2" forState:UIControlStateNormal];
                                     
                                 }
-                                 else [atom setTitle:self.atomName forState:UIControlStateNormal];
+                                else [atom setTitle:self.atomName forState:UIControlStateNormal];
                             }
                             else if (count == 4)//两个单键
                             {
@@ -841,9 +915,9 @@
                             
                             
                         }
-                    
+                        
                     }
-                   
+                    
                     
                 }//if
             }//for
@@ -986,7 +1060,13 @@
     
     CGFloat assistancW = self.assistanceView.frame.size.width;
     
-    if (pan.state == UIGestureRecognizerStateChanged) {
+    
+    if (pan.state == UIGestureRecognizerStateBegan)
+    {
+        self.pan.enabled = NO;
+        [self.suggestPathArray removeAllObjects];
+    }
+    else if (pan.state == UIGestureRecognizerStateChanged) {
         
         self.assistanceView.center = curP;
     }
@@ -1004,6 +1084,8 @@
                 self.assistanceView.center = CGPointMake(assistancW/2, curP.y);
             }];
         }
+        
+        self.pan.enabled = YES;
     }
 }
 
@@ -1090,7 +1172,7 @@
     //suggstLine2 右上
     CGFloat lineTwoX = _bond.startP.x + CYLSuggestBondLength * cos(M_PI/6);
     CGFloat lineTwoY = _bond.startP.y - CYLSuggestBondLength * sin(M_PI/6);
-     _point2 = CGPointMake(lineTwoX, lineTwoY);
+    _point2 = CGPointMake(lineTwoX, lineTwoY);
     //suggstLine3 下
     CGFloat lineThreeX = _bond.startP.x;
     CGFloat lineThreeY = _bond.startP.y + CYLSuggestBondLength;
@@ -1098,7 +1180,7 @@
     //suggstLine4 左下
     CGFloat lineFourX = _bond.startP.x - CYLSuggestBondLength * cos(M_PI/6);
     CGFloat lineFourY = _bond.startP.y + CYLSuggestBondLength * sin(M_PI/6);
-   _point4 = CGPointMake(lineFourX, lineFourY);
+    _point4 = CGPointMake(lineFourX, lineFourY);
     //suggstLine5 右下
     CGFloat lineFiveX = _bond.startP.x + CYLSuggestBondLength * cos(M_PI/6);
     CGFloat lineFiveY = _bond.startP.y + CYLSuggestBondLength * sin(M_PI/6);
@@ -1139,7 +1221,7 @@
     [self.suggestPathArray addObject:_suggstLine5];
     [self.suggestPathArray addObject:_suggstLine6];
     
-//    [self.pointArray addObjectsFromArray:self.SuggestPointArray];
+    //    [self.pointArray addObjectsFromArray:self.SuggestPointArray];
 }
 
 - (BOOL)isPoint:(CGPoint)point InArray:(NSArray*)array
