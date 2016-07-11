@@ -849,7 +849,7 @@
                         }
                         else if ([bond isKindOfClass:[CYLDoubleBond class]])
                         {//双键
-                            NSLog(@"%ld  double",count);
+                            
                             if ([self.atomName isEqualToString:@"N"]) {
                                 
                                 if (count == 4 || count == 9) {
@@ -865,7 +865,7 @@
                             //计算有多少的单键与原子相连
                             
                             if (count == 1) {//一个单键
-                                NSLog(@"%ld one ",count);
+                                
                                 if ([self.atomName isEqualToString:@"O"]) { //单键的话，O S N 需要变形
                                     [atom setTitle:@"OH" forState:UIControlStateNormal];
                                 }
@@ -882,7 +882,7 @@
                             }
                             else if (count == 4)//两个单键
                             {
-                                NSLog(@"%ld two",count);
+                                
                                 if ([self.atomName isEqualToString:@"O"]) {
                                     [atom setTitle:@"O" forState:UIControlStateNormal];
                                 }
@@ -899,7 +899,7 @@
                             }
                             else if (count == 9)//三个单键
                             {
-                                NSLog(@"%ld three",count);
+                                
                                 if ([self.atomName isEqualToString:@"N"])
                                 {
                                     [atom setTitle:@"N" forState:UIControlStateNormal];
@@ -909,7 +909,7 @@
                             }
                             else
                             {
-                                NSLog(@"%ld other", count);
+                                
                                 [atom setTitle:self.atomName forState:UIControlStateNormal];
                             }
                             
@@ -926,7 +926,7 @@
     }
     [self.otherAtomArray addObject:atom];
     [self.operationArray addObject:atom];
-    NSLog(@"%ld",self.otherAtomArray.count);
+    
 }
 
 #pragma mark - 懒加载

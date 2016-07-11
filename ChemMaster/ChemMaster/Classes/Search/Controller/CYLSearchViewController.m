@@ -18,6 +18,8 @@
 #import <Masonry.h>
 #import <TFHpple.h>
 
+#define cubeBtnWith ScreenW/5 * 2
+
 @interface CYLSearchViewController ()<UIPickerViewDelegate,UIPickerViewDataSource>
 
 @property (nonatomic, strong) UIImageView *logoView;
@@ -188,15 +190,16 @@
     
     [_nameReactionListBtn mas_makeConstraints:^(MASConstraintMaker *make) {
        
-        make.left.equalTo(self.view).offset(20);
+        make.width.height.mas_equalTo(cubeBtnWith);
+        make.left.equalTo(self.view).offset((ScreenW - 2 * cubeBtnWith) / 3);
         make.top.equalTo(self.selPicker.mas_bottom).offset(20);
-        make.width.height.mas_equalTo(150);
+        
     }];
     
     [_TotalSynthesisListBtn mas_makeConstraints:^(MASConstraintMaker *make) {
        
         make.width.height.equalTo(self.nameReactionListBtn);
-        make.right.equalTo(self.view).offset(-20);
+        make.left.equalTo(self.nameReactionListBtn.mas_right).offset((ScreenW - 2 * cubeBtnWith) / 3);
         make.top.equalTo(self.nameReactionListBtn);
         
     }];
@@ -204,14 +207,14 @@
     [_HightLightsListBtn mas_makeConstraints:^(MASConstraintMaker *make) {
        
         make.width.height.equalTo(self.nameReactionListBtn);
-        make.left.equalTo(self.view).offset(20);
+        make.left.equalTo(self.view).offset((ScreenW - 2 * cubeBtnWith) / 3);
         make.top.equalTo(self.nameReactionListBtn.mas_bottom).offset(20);
     }];
     
     [_ChemiscalResourceListBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.width.height.equalTo(self.nameReactionListBtn);
-        make.right.equalTo(self.view).offset(-20);
+        make.left.equalTo(self.HightLightsListBtn.mas_right).offset((ScreenW - 2 * cubeBtnWith) / 3);
         make.top.equalTo(self.HightLightsListBtn);
     }];
 }
@@ -317,10 +320,22 @@
 #pragma mark - 显示NameReaction / TotalSynthesis listButton
 - (void)ShowNameReactionList
 {
-    CYLnameReactionListViewController *nameListVC = [CYLnameReactionListViewController listViewController];
-    nameListVC.title = @"Name Reactions";
-    nameListVC.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:nameListVC animated:YES];
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        
+        [SVProgressHUD show];
+        [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
+        
+        CYLnameReactionListViewController *nameListVC = [CYLnameReactionListViewController listViewController];
+        nameListVC.title = @"Name Reactions";
+        nameListVC.hidesBottomBarWhenPushed = YES;
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+            [SVProgressHUD dismiss];
+            [self.navigationController pushViewController:nameListVC animated:YES];
+        });
+        
+    });
 }
 
 - (void)showTotalSynthesisList
@@ -332,18 +347,34 @@
 
 -(void)showHightLightList
 {
-    CYLHighLightViewController *hvc = [CYLHighLightViewController highLightViewController];
-    hvc.title = @"Hightlight";
-    hvc.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:hvc animated:YES];
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        
+        [SVProgressHUD show];
+        CYLHighLightViewController *hvc = [CYLHighLightViewController highLightViewController];
+        hvc.title = @"Hightlight";
+        hvc.hidesBottomBarWhenPushed = YES;
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [SVProgressHUD dismiss];
+            [self.navigationController pushViewController:hvc animated:YES];
+        });
+    });
+    
 }
 
 - (void)showChemiscalResourceList
 {
-    CYLResourceViewController *rvc = [CYLResourceViewController resouceViewController];
-    rvc.title = @"Chemical Resource";
-    rvc.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:rvc animated:YES];
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        [SVProgressHUD show];
+        CYLResourceViewController *rvc = [CYLResourceViewController resouceViewController];
+        rvc.title = @"Chemical Resource";
+        rvc.hidesBottomBarWhenPushed = YES;
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [SVProgressHUD dismiss];
+            [self.navigationController pushViewController:rvc animated:YES];
+        });
+    });
 }
 
 #pragma mark - pickerView

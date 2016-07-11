@@ -10,7 +10,7 @@
 
 @interface CYLSpecificResourceViewController : UITableViewController
 
-+ (instancetype)SpecificResourceViewControllerWithUrl:(NSURL*)url;
+//+ (instancetype)SpecificResourceViewControllerWithUrl:(NSURL*)url;
 
 + (instancetype)SpecificResourceViewControllerWithUrl:(NSURL*)url withTitle:(NSString*)title;
 

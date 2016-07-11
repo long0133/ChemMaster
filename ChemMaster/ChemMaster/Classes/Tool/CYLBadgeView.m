@@ -31,7 +31,7 @@
     
     badgeView.badgeValue = badgeValue;
     
-    [badgeView setTitle:[NSString stringWithFormat:@"%ld",badgeValue] forState:UIControlStateNormal];
+    [badgeView setTitle:[NSString stringWithFormat:@"%ld",(long)badgeValue] forState:UIControlStateNormal];
     
     [superView addSubview:badgeView];
     [superView bringSubviewToFront:badgeView];

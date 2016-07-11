@@ -174,7 +174,8 @@
     [_DrawBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.equalTo(self).offset(-5);
         make.left.equalTo(self).offset(3);
-        make.width.height.mas_equalTo(44);
+        make.height.mas_equalTo(44);
+        make.width.mas_equalTo(ScreenW/7 - 10);
     }];
     
     [_selectBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -218,7 +219,8 @@
     [_NitroBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.equalTo(self.DrawBtn.mas_top).offset(-10);
         make.centerX.equalTo(self.DrawBtn.mas_centerX);
-        make.width.height.mas_equalTo(44);
+        make.height.mas_equalTo(44);
+        make.width.mas_equalTo(ScreenW/7 - 10);
     }];
     
     [_OxygenBtn mas_makeConstraints:^(MASConstraintMaker *make) {
