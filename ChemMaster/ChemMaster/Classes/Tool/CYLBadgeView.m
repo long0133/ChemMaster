@@ -43,7 +43,7 @@
 {
     _badgeValue = badgeValue;
     
-    [self setTitle:[NSString stringWithFormat:@"%ld", badgeValue] forState:UIControlStateNormal];
+    [self setTitle:[NSString stringWithFormat:@"%ld", (long)badgeValue] forState:UIControlStateNormal];
 }
 
 @end

@@ -28,6 +28,8 @@
     
     chemBond.Atom.atomPoint = chemBond.endP;
     
+    chemBond.bondDirectionTag = 0;
+    
     return chemBond;
 }
 

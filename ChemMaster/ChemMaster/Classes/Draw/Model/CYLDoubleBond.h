@@ -15,4 +15,7 @@
 @property (nonatomic, assign) CGPoint startPTwo;
 @property (nonatomic, assign) CGPoint endPTwo;
 
+//用于指示双键第二条线在上还是在下
+@property (nonatomic, assign) BOOL bondDirectionTag;
+
 @end

@@ -567,31 +567,37 @@
     CGPoint tapPoint = [tap locationInView:self];
     
     /**************************需要创建双键，三键时*****************************/
-    //双键
     if (_isGoDoubleBond || _isGoTrinpleBond) {
         
         CYLChemicalBond *bondPrepareToRemove = nil;
         
         if (self.isGoDoubleBond)
-        {//想添加双键时
+        {//想添加/改变双键时
+            
+            //初始化第二条线段的双端
+            CGFloat spX = 0;
+            CGFloat spY = 0;
+            CGFloat epX = 0;
+            CGFloat epY = 0;
+            CGPoint startTwo = CGPointMake(spX, spY);
+            CGPoint endTwo = CGPointMake(epX, epY);
             
             CYLDoubleBond *doubleBond = [CYLDoubleBond CreatChemicalBondWithCarbon];
             
             for (CYLChemicalBond *bond in self.BondArray)
             {
-                
+                //想要添加双键
                 if (![bond isKindOfClass:[CYLDoubleBond class]])
                 {//如果不是双键的话
                     
                     if ([self isStartPoint:tapPoint aroundPoint:bond.midPoint WithRadius:(CYLSuggestBondLength/2)])
                     {//找到待转变的化学键
                         
-                        bondPrepareToRemove = bond;
-                        
                         doubleBond.startP = bond.startP;
                         doubleBond.endP = bond.endP;
                         doubleBond.midPoint = bond.midPoint;
                         doubleBond.bezierPath =bond.bezierPath;
+                        bondPrepareToRemove = bond;
                         
                         //计算斜率角度
                         CGFloat angle = atan((bond.endP.y - bond.startP.y)/(bond.endP.x - bond.startP.x));
@@ -601,11 +607,13 @@
                         {//斜率大于九十度时
                             
                             /************************1.绘制另一条与原键平行的等长的先***********************/
-                            CGFloat spX = bond.startP.x + marginOfBonds * sin((M_PI - angle));
-                            CGFloat spY = bond.startP.y + marginOfBonds * cos((M_PI - angle));
                             
-                            CGFloat epX = bond.endP.x + marginOfBonds * sin((M_PI - angle));
-                            CGFloat epY = bond.endP.y + marginOfBonds * cos((M_PI - angle));
+                            
+                            spX = bond.startP.x + marginOfBonds * sin((M_PI - angle));
+                            spY = bond.startP.y + marginOfBonds * cos((M_PI - angle));
+                            
+                            epX = bond.endP.x + marginOfBonds * sin((M_PI - angle));
+                            epY = bond.endP.y + marginOfBonds * cos((M_PI - angle));
                             
                             /************************2.将此条线缩短一定距离***********************/
                             //新线段的中心点
@@ -618,15 +626,8 @@
                             spY = center.y - distance * sin(M_PI - angle);
                             
                             
-                            CGPoint startTwo = CGPointMake(spX, spY);
-                            CGPoint endTwo = CGPointMake(epX, epY);
-                            
-                            doubleBond.startPTwo = startTwo;
-                            doubleBond.endPTwo = endTwo;
-                            
-                            doubleBond.bezierPathTwo = [UIBezierPath bezierPath];
-                            [doubleBond.bezierPathTwo moveToPoint:startTwo];
-                            [doubleBond.bezierPathTwo addLineToPoint:endTwo];
+                            startTwo = CGPointMake(spX, spY);
+                            endTwo = CGPointMake(epX, epY);
                             
                         }
                         else
@@ -648,17 +649,166 @@
                             spX = center.x + distance * cos(angle);
                             spY = center.y + distance * sin(angle);
                             
-                            CGPoint endTwo = CGPointMake(epX, epY);
-                            CGPoint startTwo = CGPointMake(spX, spY);
-                            
-                            doubleBond.startPTwo = startTwo;
-                            doubleBond.endPTwo = endTwo;
-                            
-                            doubleBond.bezierPathTwo = [UIBezierPath bezierPath];
-                            [doubleBond.bezierPathTwo moveToPoint:startTwo];
-                            [doubleBond.bezierPathTwo addLineToPoint:endTwo];
+                            endTwo = CGPointMake(epX, epY);
+                            startTwo = CGPointMake(spX, spY);
                             
                         }
+                        
+                        doubleBond.startPTwo = startTwo;
+                        doubleBond.endPTwo = endTwo;
+                        
+                        doubleBond.bezierPathTwo = [UIBezierPath bezierPath];
+                        [doubleBond.bezierPathTwo moveToPoint:startTwo];
+                        [doubleBond.bezierPathTwo addLineToPoint:endTwo];
+                    }
+                    
+                }
+                
+                /*********************************点击双键想要改变双键的方向********************************/
+                if ([bond isKindOfClass:[CYLDoubleBond class]]) {
+                    
+                   CYLDoubleBond* doublebondChange = (CYLDoubleBond*)bond;
+                    
+                     //找到点击的双键
+                    if ([self isStartPoint:tapPoint aroundPoint:bond.midPoint WithRadius:CYLSuggestBondLength/2]) {
+                        
+                        //计算斜率角度
+                        CGFloat angle = atan((bond.endP.y - bond.startP.y)/(bond.endP.x - bond.startP.x));
+                        NSInteger distance = CYLSuggestBondLength/5 * 2;
+                        
+                        if (angle < 0)
+                        {
+                            if (doublebondChange.bondDirectionTag == 0)
+                            {
+                                /************************1.绘制另一条与原键平行的等长的先***********************/
+                                
+                                
+                                spX = bond.startP.x - marginOfBonds * sin((M_PI - angle));
+                                spY = bond.startP.y - marginOfBonds * cos((M_PI - angle));
+                                
+                                epX = bond.endP.x - marginOfBonds * sin((M_PI - angle));
+                                epY = bond.endP.y - marginOfBonds * cos((M_PI - angle));
+                                
+                                /************************2.将此条线缩短一定距离***********************/
+                                //新线段的中心点
+                                CGPoint center = CGPointMake((spX + epX)/2, (spY + epY)/2);
+                                
+                                epX = center.x - distance * cos(M_PI - angle);
+                                epY = center.y + distance * sin(M_PI - angle);
+                                
+                                spX = center.x + distance * cos(M_PI - angle);
+                                spY = center.y - distance * sin(M_PI - angle);
+                                
+                                
+                                startTwo = CGPointMake(spX, spY);
+                                endTwo = CGPointMake(epX, epY);
+                                
+                                doublebondChange.bondDirectionTag = 1;
+                            }
+                            
+                            else if (doublebondChange.bondDirectionTag == 1)
+                            {
+                                /************************1.绘制另一条与原键平行的等长的先***********************/
+                                
+                                
+                                spX = bond.startP.x + marginOfBonds * sin((M_PI - angle));
+                                spY = bond.startP.y + marginOfBonds * cos((M_PI - angle));
+                                
+                                epX = bond.endP.x + marginOfBonds * sin((M_PI - angle));
+                                epY = bond.endP.y + marginOfBonds * cos((M_PI - angle));
+                                
+                                /************************2.将此条线缩短一定距离***********************/
+                                //新线段的中心点
+                                CGPoint center = CGPointMake((spX + epX)/2, (spY + epY)/2);
+                                
+                                epX = center.x - distance * cos(M_PI - angle);
+                                epY = center.y + distance * sin(M_PI - angle);
+                                
+                                spX = center.x + distance * cos(M_PI - angle);
+                                spY = center.y - distance * sin(M_PI - angle);
+                                
+                                
+                                startTwo = CGPointMake(spX, spY);
+                                endTwo = CGPointMake(epX, epY);
+                                
+                                doublebondChange.bondDirectionTag = 0;
+                            }
+                            
+                            doublebondChange.startPTwo = startTwo;
+                            doublebondChange.endPTwo = endTwo;
+                            
+                            doublebondChange.bezierPathTwo = [UIBezierPath bezierPath];
+                            [doublebondChange.bezierPathTwo moveToPoint:startTwo];
+                            [doublebondChange.bezierPathTwo addLineToPoint:endTwo];
+                            
+                        }//if
+                        
+                        else//斜率小于90
+                        {
+                            if (doublebondChange.bondDirectionTag == 0) {
+                                
+                                CGFloat spX = bond.startP.x - marginOfBonds * sin((angle));
+                                CGFloat spY = bond.startP.y + marginOfBonds * cos((angle));
+                                
+                                CGFloat epX = bond.endP.x - marginOfBonds * sin((angle));
+                                CGFloat epY = bond.endP.y + marginOfBonds * cos((angle));
+                                
+                                
+                                //新线段的中心点
+                                CGPoint center = CGPointMake((spX + epX)/2, (spY + epY)/2);
+                                
+                                epX = center.x - distance * cos(angle);
+                                epY = center.y - distance * sin(angle);
+                                
+                                spX = center.x + distance * cos(angle);
+                                spY = center.y + distance * sin(angle);
+                                
+                                CGPoint endTwo = CGPointMake(epX, epY);
+                                CGPoint startTwo = CGPointMake(spX, spY);
+                                
+                                doublebondChange.startPTwo = startTwo;
+                                doublebondChange.endPTwo = endTwo;
+                                
+                                doublebondChange.bezierPathTwo = [UIBezierPath bezierPath];
+                                [doublebondChange.bezierPathTwo moveToPoint:startTwo];
+                                [doublebondChange.bezierPathTwo addLineToPoint:endTwo];
+                                
+                                doublebondChange.bondDirectionTag = 1;
+                                
+                            }
+                            else
+                            {
+                                //斜率小于90
+                                CGFloat spX = bond.startP.x + marginOfBonds * sin((angle));
+                                CGFloat spY = bond.startP.y - marginOfBonds * cos((angle));
+                                
+                                CGFloat epX = bond.endP.x + marginOfBonds * sin((angle));
+                                CGFloat epY = bond.endP.y - marginOfBonds * cos((angle));
+                                
+                                
+                                //新线段的中心点
+                                CGPoint center = CGPointMake((spX + epX)/2, (spY + epY)/2);
+                                
+                                epX = center.x - distance * cos(angle);
+                                epY = center.y - distance * sin(angle);
+                                
+                                spX = center.x + distance * cos(angle);
+                                spY = center.y + distance * sin(angle);
+                                
+                                CGPoint endTwo = CGPointMake(epX, epY);
+                                CGPoint startTwo = CGPointMake(spX, spY);
+                                
+                                doublebondChange.startPTwo = startTwo;
+                                doublebondChange.endPTwo = endTwo;
+                                
+                                doublebondChange.bezierPathTwo = [UIBezierPath bezierPath];
+                                [doublebondChange.bezierPathTwo moveToPoint:startTwo];
+                                [doublebondChange.bezierPathTwo addLineToPoint:endTwo];
+                                
+                                doublebondChange.bondDirectionTag = 0;
+                            }
+                        }
+                        
                     }
                     
                 }
@@ -779,7 +929,8 @@
         }
         
         
-        if (bondPrepareToRemove != nil) {
+        if (bondPrepareToRemove != nil)
+        {
             //删除当前化学键
             [self.BondArray removeObject:bondPrepareToRemove];
             

@@ -136,7 +136,7 @@
 {
     [self.dismissBtn removeFromSuperview];
     self.dismissBtn = nil;
-    [self dismissViewControllerAnimated:self completion:nil];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)ShowBigImage:(UIButton*)btn
