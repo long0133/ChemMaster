@@ -17,10 +17,11 @@
 #define fileNameForDetailViewSulffix @"ANameReaction"
 static NSString *reuse = @"reuse";
 
-@interface CYLnameReactionListViewController ()
+@interface CYLnameReactionListViewController ()<UITextFieldDelegate>
 
 @property (nonatomic, strong) NSMutableArray *listArray;
-
+@property (nonatomic, strong) NSMutableArray *filtedListArray;
+@property (nonatomic, strong) UITextField *searchTextFiled;
 @end
 
 @implementation CYLnameReactionListViewController
@@ -33,9 +34,97 @@ static NSString *reuse = @"reuse";
     return _listArray;
 }
 
+- (NSMutableArray *)filtedListArray
+{
+    if (_filtedListArray == nil) {
+        _filtedListArray = [self.listArray mutableCopy];
+    }
+    return _filtedListArray;
+}
+
+- (UITextField *)searchTextFiled
+{
+    if (_searchTextFiled == nil) {
+        
+        _searchTextFiled = [[UITextField alloc] initWithFrame:CGRectMake(0, 64, ScreenW, 30)];
+        _searchTextFiled.backgroundColor = [UIColor getColor:@"FAEBD7"];
+        _searchTextFiled.borderStyle = UITextBorderStyleLine;
+        _searchTextFiled.hidden = YES;
+        _searchTextFiled.clearButtonMode = UITextFieldViewModeWhileEditing;
+        _searchTextFiled.delegate = self;
+        
+        //监听键盘输入，显示相关内容
+        [_searchTextFiled addTarget:self action:@selector(showFilterResulte) forControlEvents:UIControlEventEditingChanged];
+        [KWindow addSubview:_searchTextFiled];
+        
+    }
+    return _searchTextFiled;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setNavVC];
 }
+
+- (void)setNavVC
+{
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageCompressForSize:[UIImage imageNamed:@"search49"] targetSize:CGSizeMake(27, 27)] style:UIBarButtonItemStyleDone target:self action:@selector(searchBtnClicked)];
+}
+
+#pragma mark - search功能
+- (void)searchBtnClicked
+{
+    self.searchTextFiled.hidden = !self.searchTextFiled.hidden;
+    
+    if (!_searchTextFiled.hidden)
+    {
+        [self.searchTextFiled becomeFirstResponder];
+        self.tableView.frame = CGRectMake(0,self.searchTextFiled.frame.size.height, ScreenW, ScreenH);
+        [self showFilterResulte];
+    }
+    else
+    {
+        self.tableView.frame = CGRectMake(0, 0, ScreenW, ScreenH);
+        [self.searchTextFiled resignFirstResponder];
+    }
+}
+
+
+- (void)showFilterResulte
+{
+    NSString *text = self.searchTextFiled.text;
+    
+    [self.filtedListArray removeAllObjects];
+    
+    //遍历FiltedListArray获得带有text前缀的模型数组
+    for (NSDictionary *modelDict in self.listArray)
+    {
+        
+        NSString *name = modelDict[TakeName];
+        
+        if ([name hasPrefix:text])
+        {
+            
+            [self.filtedListArray addObject:modelDict];
+            
+        }
+    }
+    
+    //如果遍历完无结果
+    if (self.filtedListArray.count == 0 && [text isEqualToString:@""]) {
+        self.filtedListArray = [self.listArray mutableCopy];
+    }
+    
+    [self.tableView reloadData];
+    
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [self.searchTextFiled removeFromSuperview];
+    self.searchTextFiled = nil;
+}
+
 
 #pragma mark - Table view data source
 
@@ -43,9 +132,16 @@ static NSString *reuse = @"reuse";
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
-    return self.listArray.count;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+//    if (self.filtedListArray.count == 0)
+//    {
+//        return self.listArray.count;
+//    }
+//    else
+//    {
+        return self.filtedListArray.count;
+//    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -58,7 +154,14 @@ static NSString *reuse = @"reuse";
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuse];
     }
     
-    cell.textLabel.text = self.listArray[indexPath.row][TakeName];
+//    if (self.filtedListArray.count == 0)
+//    {
+//        cell.textLabel.text = self.listArray[indexPath.row][TakeName];
+//    }
+//    else
+//    {
+        cell.textLabel.text = self.filtedListArray[indexPath.row][TakeName];
+//    }
     
     return cell;
 }
@@ -66,6 +169,8 @@ static NSString *reuse = @"reuse";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *linkString = self.listArray[indexPath.row][Takelink];
+    
+    [self.searchTextFiled resignFirstResponder];
 
     [SVProgressHUD show];
     [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
@@ -79,6 +184,8 @@ static NSString *reuse = @"reuse";
            
             [SVProgressHUD dismiss];
             
+            self.searchTextFiled.hidden = YES;
+            
             [self.navigationController presentViewController:rvc animated:YES completion:nil];
     
         });
@@ -89,10 +196,19 @@ static NSString *reuse = @"reuse";
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     UILabel *lable = [[UILabel alloc] init];
-    lable.text = @"Alphabet Order:";
     lable.textColor = [UIColor whiteColor];
     lable.backgroundColor = [UIColor blackColor];
     lable.alpha = .7;
+    
+    if (self.filtedListArray.count == self.listArray.count)
+    {
+        lable.text = @"Alphabet Order:";
+    }
+    else
+    {
+        lable.text = @"Search Result:";
+    }
+    
     return lable;
 }
 
@@ -226,7 +342,16 @@ static NSString *reuse = @"reuse";
 }
 
 
-
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if (textField == self.searchTextFiled) {
+        
+        [self.searchTextFiled resignFirstResponder];
+        
+    }
+    
+    return YES;
+}
 
 
 

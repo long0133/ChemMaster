@@ -534,8 +534,7 @@
 				4E2A820D1D0DA7A40082D785 /* UpImageDownTitleButton.m */,
 				4E2E44DE1D2E69E700DFE058 /* CYLAngleBtn.h */,
 				4E2E44DF1D2E69E700DFE058 /* CYLAngleBtn.m */,
-				4E7E26BB1D408F670074B36C /* CYLGoToStore.h */,
-				4E7E26BC1D408F670074B36C /* CYLGoToStore.m */,
+				4E7E26C01D409E420074B36C /* gotoStore */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -596,6 +595,15 @@
 				4E5F79A51D1CECC2009AD7DC /* CYLSpecificResourceViewController.m */,
 			);
 			name = ResourceViewController;
+			sourceTree = "<group>";
+		};
+		4E7E26C01D409E420074B36C /* gotoStore */ = {
+			isa = PBXGroup;
+			children = (
+				4E7E26BB1D408F670074B36C /* CYLGoToStore.h */,
+				4E7E26BC1D408F670074B36C /* CYLGoToStore.m */,
+			);
+			name = gotoStore;
 			sourceTree = "<group>";
 		};
 		4EAC5D771D1400C900199DAA /* Search ViewController */ = {
