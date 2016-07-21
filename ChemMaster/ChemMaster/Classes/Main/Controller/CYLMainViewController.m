@@ -12,8 +12,7 @@
 #import "CYLHightLightCell.h"
 #import "CYLHightLightModel.h"
 #import "CYLWebViewController.h"
-
-
+#import "CYLGoToStore.h"
 
 @interface CYLMainViewController ()<CYLHeaderReusableViewDelegate,CYLHightLightCellDelegate>
 @property (nonatomic, strong) NSArray *headerModelArray;
@@ -51,6 +50,17 @@ static NSString * const reuseIdentifier = @"Cell";
     [self.collectionView registerClass:[CYLHeaderReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"header"];
     
     [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"footer"];
+
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    CYLGoToStore *gotoStore = [[CYLGoToStore alloc] init];
+    gotoStore.appID = @"1132955664";
+    [gotoStore goToAppleStore:self];
     
 }
 
