@@ -85,7 +85,7 @@
 
 - (void)setUpNameReactionListCell
 {
-    self.nameLable.text = [self.model[TakeName] stringByAppendingString:@"↓"];
+    self.nameLable.text = [self.model[TakeName] stringByAppendingString:@""];
     
     //取出图片
     NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"NameListPicture" ofType:@"bundle"];

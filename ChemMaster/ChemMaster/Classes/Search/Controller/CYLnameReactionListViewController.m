@@ -6,6 +6,10 @@
 //  Copyright © 2016年 GARY. All rights reserved.
 //
 
+/*
+ Section 的Header点击会显示出Cell，因此在模型数组中取出模型时，应当用section 而非Row
+ */
+
 #import "CYLnameReactionListViewController.h"
 #import "CYLReactionDetailViewController.h"
 #import "CYLDetaileCell.h"
@@ -23,6 +27,8 @@ static NSString *reuse = @"reuse";
 @property (nonatomic, strong) NSMutableArray *listArray;
 @property (nonatomic, strong) NSMutableArray *filtedListArray;
 @property (nonatomic, strong) UITextField *searchTextFiled;
+
+@property (nonatomic,assign) NSInteger selSection;
 @end
 
 @implementation CYLnameReactionListViewController
@@ -65,7 +71,7 @@ static NSString *reuse = @"reuse";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setNavVC];
-    self.tableView.rowHeight = nameReaCellH;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 
 - (void)setNavVC
@@ -94,7 +100,7 @@ static NSString *reuse = @"reuse";
 
 - (void)showFilterResulte
 {
-    NSString *text = self.searchTextFiled.text;
+    NSString *text = [self.searchTextFiled.text uppercaseString];
     
     [self.filtedListArray removeAllObjects];
     
@@ -131,7 +137,8 @@ static NSString *reuse = @"reuse";
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+//    return 1;
+    return self.filtedListArray.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -142,8 +149,10 @@ static NSString *reuse = @"reuse";
 //    }
 //    else
 //    {
-        return self.filtedListArray.count;
+//        return self.filtedListArray.count;
 //    }
+    
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -151,7 +160,7 @@ static NSString *reuse = @"reuse";
     
     CYLDetaileCell *cell = [tableView dequeueReusableCellWithIdentifier:reuse];
     
-    NSDictionary *modelDict = self.filtedListArray[indexPath.row];
+    NSDictionary *modelDict = self.filtedListArray[indexPath.section];
     
     if (cell == nil) {
         
@@ -193,25 +202,29 @@ static NSString *reuse = @"reuse";
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     UILabel *lable = [[UILabel alloc] init];
-    lable.textColor = [UIColor whiteColor];
-    lable.backgroundColor = [UIColor blackColor];
-    lable.alpha = .7;
-    
-    if (self.filtedListArray.count == self.listArray.count)
-    {
-        lable.text = @"Alphabet Order:";
-    }
-    else
-    {
-        lable.text = @"Search Result:";
-    }
+    lable.textColor = [UIColor blackColor];
+    lable.backgroundColor = [UIColor getColor:@"F0F0F0"];
+    lable.tag = section;
+    lable.userInteractionEnabled = YES;
+    [lable addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapSection:)]];
+
+    lable.text = [NSString stringWithFormat:@"  %@",self.filtedListArray[section][TakeName]];
     
     return lable;
 }
 
+//点击sectionHeader显示Cell
+- (void)tapSection:(UITapGestureRecognizer*)tap
+{
+    _selSection = tap.view.tag;
+    
+    [self.tableView reloadData];
+    
+}
+
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return 20;
+    return 40;
 }
 
 
@@ -219,12 +232,16 @@ static NSString *reuse = @"reuse";
 {
     NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"NameListPicture" ofType:@"bundle"];
     
-   NSData *picData = [NSData dataWithContentsOfFile:[bundlePath stringByAppendingPathComponent:self.filtedListArray[indexPath.row][TakeName]]];
+   NSData *picData = [NSData dataWithContentsOfFile:[bundlePath stringByAppendingPathComponent:self.filtedListArray[indexPath.section][TakeName]]];
     
     UIImage *image = [UIImage imageWithData:picData];
     
     //30 为cell的lable高度
-    return image.size.height + 30;
+    if (indexPath.section == _selSection)
+    {
+        return image.size.height + 30;
+    }
+    else return 2;
     
 }
 
