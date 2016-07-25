@@ -1,0 +1,160 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Prilezhaev Reaction</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+<a href="/related/epoxidation.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="corey-chaykovsky-reaction.shtm">Corey-Chaykovsky Reaction</a><br>
+<a href="jacobsen-katsuki-epoxidation.shtm">Jacobsen-Katsuki Epoxidation</a><br>
+<a href="sharpless-epoxidation.shtm">Sharpless Epoxidation</a><br>
+<a href="shi-epoxidation.shtm">Shi Epoxidation</a><br>
+<a href="rubottom-oxidation.shtm">Rubottom Oxidation</a><br>
+<a href="../synthesis/C1O/epoxides2.shtm">Synthesis of epoxides</a></p>
+
+</div>
+<h1>Prilezhaev Reaction</h1>
+<p><img src="priles1.gif" width="243" height="54"></p>
+<p>The 
+epoxidation of an alkene with <a href="../chemicals/oxidations/peroxyacids.shtm">peracid</a>
+to give an oxirane. The commercial available <a href="../chemicals/oxidations/meta-chloroperbenzoicacid.shtm"> 
+mCPBA</a> is a widely used reagent for this conversion, while magnesium 
+mono-perphthalate and peracetic acid are also employed.</p>
+<hr>
+<h2>Mechanism of the Prilezhaev Reaction</h2>
+<p>Peracids tend to adopt an intramolecularly hydrogen-bonded conformation in 
+solution, and the high degree of polarisation results in an electrophilic oxygen 
+atom that is able to add to alkenes.</p>
+<p><img src="priles3.gif" width="190" height="86"></p>
+<p>Hydrogen peroxide in combination with various additional catalysts may also 
+be used in these epoxidations (see below).</p>
+<p>The transition state, in which oxygen is added and the proton is shifted 
+simultaneously, resembles a butterfly and is known as the &quot;Butterfly Mechanism&quot;:</p>
+<p><img src="prilez1.gif" width="504" height="225"></p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit3/738.shtm"><img src="../abstracts/lit3/738a.gif"></a><br>
+Epoxidation of Olefins with a Silica-Supported Peracid<br>
+R. Mello, A. Alcalde-Aragonés, M. E. González Núñez, G. Asensio, <i>J. Org. Chem.</i>, <b>2012</b>,
+<i>77</i>, 6409-6413.</p>
+<p><a href="../abstracts/literature/654.shtm">
+<img src="../abstracts/literature/654d.gif"></a><br>
+Phase-Vanishing Methodology for Efficient Bromination, Alkylation,
+Epoxidation, and Oxidation Reactions of Organic Substrates<br>
+N. K. Jana, J. G. Verkade, <i>Org. Lett., </i><b>2003</b>, <i>5</i>, 3787-3790.</p>
+<p><a href="../abstracts/literature/990.shtm"><img src="../abstracts/literature/990d.gif"></a><br>
+Diastereoselective Epoxidation of Allylic Diols Derived from Baylis-Hillman
+Adducts<br>
+R. S. Porto, M. L. A. A. Vasconcellos, E. Ventura, F. Coelho, <i>
+Synthesis</i>, <b>2005</b>, 2297-2306.</p>
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

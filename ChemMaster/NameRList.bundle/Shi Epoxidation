@@ -1,0 +1,254 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Shi Epoxidation</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a></div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a></div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+	<a href="/related/%22shi+epoxidation%22.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="jacobsen-katsuki-epoxidation.shtm">
+Jacobsen-Katsuki Epoxidation</a><br>
+<a href="prilezhaev-reaction.shtm">Prilezhaev Reaction</a><br>
+<a href="sharpless-epoxidation.shtm">Sharpless Epoxidation</a><br>
+<a href="../synthesis/C1O/epoxides2.shtm">Synthesis of epoxides</a></p>
+
+</div>
+<h1>Shi Epoxidation</h1>
+<p><img border="0" src="shi-ep1.GIF"></p>
+<p>The Shi Epoxidation allows the synthesis of epoxides from various alkenes 
+using a fructose-derived <a href="../topics/organocatalysis.shtm">organocatalyst</a> 
+with <a href="../chemicals/oxidations/oxone-potassiumperoxomonosulfate.shtm">
+Oxone</a> as the primary oxidant.</p>
+<hr>
+<h2>Mechanism of the Shi Epoxidation</h2>
+<p>The epoxidizing species is believed to be a dioxirane, which is a powerful 
+epoxidation reagent. These are not indefinitely stable, but can be generated <i>in situ</i> 
+by oxidation of a ketone with potassium peroxymonosulfate (Oxone). The sulfate - as a good leaving 
+group - facilitates the ring closure to the dioxiranes. As the ketone 
+is regenerated, only catalytic amounts of it are needed. In addition, chiral ketones 
+can be used for a catalyzed, enantioselective epoxidation, since the ketone 
+substituents are close to the reacting center.</p>
+<p><img border="0" src="shi-ep2.GIF"></p>
+<p>Reactions are conducted in buffered, often biphasic mixtures with phase 
+transfers catalysts. Addition of K<sub>2</sub>CO<sub>3</sub> to the reaction mixture 
+increases the rate of formation of the dioxirane but also lowers the stability of Oxone. 
+However, a higher pH also disfavors the <a href="baeyer-villiger-oxidation.shtm">Bayer-Villiger Oxidation</a> as a side reaction, so the 
+catalysts remain more active. Therefore the autodecomposition of Oxone at 
+high pH can be overridden if the ketone is sufficiently reactive. The 
+enhancements in reaction rate can also be explained by a higher nucleophility of 
+Oxone under more basic conditions. In any case, a careful use of buffered media is often needed.</p>
+<p>The reactivity of the ketones can be increased by electron-withdrawing groups 
+in the &#945;-position. From early attempts at building active catalysts, it was 
+learned that trifluoromethyl ketones improved the activity, but other 
+electron-withdrawing groups can also be used. These factors also lower the rate 
+of the Bayer-Villiger Oxidation. As ketones with a hydrogen in the &#945;-position 
+are prone to racemization, chiral elements have often 
+been placed in other positions. Some early catalysts are shown here:</p>
+<p><img border="0" src="shi-ep3.GIF"></p>
+<p>In 1996, a fructose-derived ketone was developed as a highly effective 
+epoxidation catalyst. This ketone can be synthesized in two steps from the very 
+cheap chiral starting material D-fructose by ketalization and oxidation. As 
+L-fructose can be synthesized from L-sorbose, the enantiomer of this catalyst is 
+also conveniently available.</p>
+<p><img border="0" src="shi-ep4.GIF"></p>
+<p>In this catalyst, the stereocenters are close to the reacting center, so the 
+stereochemical communication between substrate and catalyst is efficient. The 
+presence of fused rings or quaternary centers &#945; to the carbonyl group minimizes 
+epimerization of the stereogenic centers. Electron-withdrawing substituents 
+activate the carbonyl.</p>
+<p>For this catalyst, the conversion of <i>trans</i>-&#946;-methylstyrene at a pH at 
+higher than 10 increased by 10 fold from that at a lower pH (7-8) and the 
+enantioselectivity remained high (90-92%). This dramatic pH effect allows the 
+use of a catalytic amount of the ketone. A pH of 10.5 can be conveniently 
+achieved by adding K<sub>2</sub>CO<sub>3</sub> as the reaction proceeds. This 
+first catalyst allowed highly enantioselective conversions of <i>trans</i>-disubstituted 
+and trisubstituted olefins, although the enantiomeric excesses remained low for
+<i>cis</i>-olefins and terminal olefins.</p>
+<p><a href="../abstracts/lit2/368.shtm">
+<img src="../abstracts/lit2/368a.gif"></a><br>
+Z.-X. Wang, Y. Tu, M. Frohn, J.-R. Zhang, Y. Shi, <i>J. Am. Chem. Soc.</i>, <b>
+1997</b>, <i>
+119</i>, 11224-11235.</p>
+<p>A spiro transition state seems to be favored due to a stabilizing oxygen lone 
+pair interaction with the &#960;* orbital of the alkene, which cannot be achieved in 
+the planar transition state.</p>
+<p>
+<img border="0" src="shi-ep5.GIF"></p>
+<p>
+The main competing mode is the planar transition state shown; this is somewhat 
+more favored with trisubstituted olefins if R' is bulky (a), whereas bulkier R 
+substituents disfavor the planar transition state (b).</p>
+<p>
+<img border="0" src="shi-ep6.GIF"></p>
+<p>
+Later developments enabled the conversion of <i>cis</i>-substituted alkenes and 
+terminal olefins by varying the substitution pattern of the catalyst. For example 
+a Boc-protected lactam allows the conversion of <i>cis</i>-olefins.</p>
+<p>
+<a href="../abstracts/lit2/370.shtm">
+<img src="../abstracts/lit2/370a.gif"></a><br>
+H. Tian, X. She, L. Shu, H. Yu, Y. Shi, <i>J. Am. Chem. Soc.</i>, <b>2000</b>, <i>
+122</i>, 11551-11552.</p>
+<p>
+Here, an interaction between groups with a &#960;-system and the spiro oxazolidinone 
+can be assumed, so conjugated styrenes and enynes give products in high 
+enantiomeric excess:</p>
+<p>
+<img border="0" src="../abstracts/lit2/370n.gif"></p>
+<p>
+A recent publication also shows selective conversions of terminal olefins. Here, 
+the planar transition state is favored due to steric reasons. With an <i>N</i>-tolyl 
+lactam ketone, the attractive interaction between aryl substituents of the 
+olefin and the catalyst could be improved even further.</p>
+<p>
+<a href="../abstracts/lit2/365.shtm">
+<img src="../abstracts/lit2/365a.gif"></a><br>
+B. Wang, O. A. Wong, M.-X. Zhao, Y. Shi, <i>J. Org. Chem.</i>, <b>2008</b>,
+<i>73</i>, 9539-9543.</p>
+<p>
+<img border="0" src="../abstracts/lit2/365n.gif"></p>
+<p>
+For historic developments, more ketone-based catalysts and the synthetic scope 
+of the initially reported fructose-based catalyst please refer to a review by 
+Frohn and Shi (<i>Synthesis</i> <b>2000</b>, 
+1979. <a target="_blank" href="http://dx.doi.org/10.1055/s-2000-8715">DOI</a>). 
+Recent developments can also be found in the subsequent literature section.</p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit2/368.shtm">
+<img src="../abstracts/lit2/368a.gif"></a><br>
+An Efficient Catalytic Asymmetric Epoxidation Method<br>
+Z.-X. Wang, Y. Tu, M. Frohn, J.-R. Zhang, Y. Shi, <i>J. Am. Chem. Soc.</i>, <b>
+1997</b>, <i>
+119</i>, 11224-11235.</p>
+<p><a href="../abstracts/lit2/370.shtm">
+<img src="../abstracts/lit2/370a.gif"></a><br>
+Highly Enantioselective Epoxidation of <i>cis</i>-Olefins by Chiral 
+Dioxirane<br>
+H. Tian, X. She, L. Shu, H. Yu, Y. Shi, <i>J. Am. Chem. Soc.</i>, <b>2000</b>, <i>
+122</i>, 11551-11552.</p>
+<p><a href="../abstracts/lit2/349.shtm">
+<img src="../abstracts/lit2/349a.gif"></a><br>
+Exploring Substrate Scope of Shi-Type Epoxidations<br>
+N. Nieto, I. J. Munslow, H. Fernández-Pérez, A. Vidal-Ferran, <i>Synlett</i>, <b>2008</b>, 
+2856-2858.</p>
+<p><a href="../abstracts/lit2/365.shtm">
+<img src="../abstracts/lit2/365a.gif"></a><br>
+Asymmetric Epoxidation of 1,1-Disubstituted Terminal Olefins by Chiral 
+Dioxirane via a Planar-like Transition State<br>
+B. Wang, O. A. Wong, M.-X. Zhao, Y. Shi, <i>J. Org. Chem.</i>, <b>2008</b>,
+<i>73</i>, 9539-9543.</p>
+<p><a href="../abstracts/lit1/699.shtm">
+<img src="../abstracts/lit1/699a.gif"></a><br>
+Enantioselective Epoxidation of Conjugated <i>cis</i>-Enynes by Chiral Dioxirane<br>
+C. P. Burke, Y. Shi, <i>J. Org. Chem.</i>, <b>2007</b>,
+<i>72</i>, 4093-4097.</p>
+
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

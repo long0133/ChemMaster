@@ -1,0 +1,170 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Ugi Reaction</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+<a href="/related/ugi+reaction.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="biginelli-reaction.shtm">Biginelli Reaction</a><br>
+<a href="passerini-reaction.shtm">Passerini Reaction</a><br>
+<a href="../topics/multicomponent-reactions.shtm">Multicomponent Reactions</a></p>
+
+</div>
+<h1>Ugi Reaction</h1>
+<p><img src="ugi-re1.gif" width="288" height="228"></p>
+<p>The Ugi 
+four-component condensation (U-4CC) between an aldehyde, an amine, a 
+carboxylic acid and an isocyanide allows the rapid preparation of 
+&#945;-aminoacyl amide derivatives. The Ugi Reaction products can exemplify a 
+wide variety of substitution patterns, and constitute peptidomimetics 
+that have potential pharmaceutical applications. This reaction is thus 
+very important for generating compound libraries for screening purposes.</p>
+<hr>
+<h2>Mechanism of the Ugi Reaction</h2>
+<p>The mechanism is believed to involve a prior formation of an imine by 
+condensation of the amine with the aldehyde, followed by addition of the 
+carboxylic acid oxygen and the imino carbon across the isocyanide carbon; the 
+resulting acylated isoamide rearranges by acyl transfer to generate the final 
+product.</p>
+<p><img src="Ugi1.gif" width="449" height="154"></p>
+<p><img src="Ugi.ht2.gif" width="458" height="244"></p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit1/050.shtm"><img src="../abstracts/lit1/050a.gif"></a>
+<br>Phenol Ugi-Smiles Systems: Strategies for the Multicomponent N-Arylation of 
+Primary Amines with Isocyanides, Aldehydes, and Phenols<br>
+L. El Kaim, L. Grimaud, J. Oble, <i>Angew. Chem. Int. Ed.</i>, <b>2005</b>,
+
+<i>44</i>, 7961-7964.</p>
+<p><a href="../abstracts/lit1/887.shtm"><img src="../abstracts/lit1/887a.gif"></a><br>
+Acid-Free, Aminoborane-Mediated Ugi-Type Reaction Leading to General 
+
+Utilization of Secondary Amines<br>
+Y. Tanaka, T. Hasui, M. Suginome, <i>Org. Lett.</i>, <b>2007</b>,
+
+<i>9</i>, 4407-4410.</p>
+<p><a href="../abstracts/literature/698.shtm">
+<img src="../abstracts/literature/698a.gif"></a><br>
+Use of a Design of Experiments approach for the optimisation of a microwave 
+assisted Ugi reaction<br>
+H. Tye, M. Whittaker, <i>Org. Biomol. Chem., </i><b>2004</b>, <i>2</i>, 813-815.</p>
+<p><a href="../abstracts/literature/976.shtm"><img src="../abstracts/literature/976b.gif"></a><br>
+A straightforward approach towards thiazoles and endothiopeptides via Ugi 
+reaction<br>
+U. Kazmaier, S. Ackermann, <i>Org. Biomol. Chem.</i>, <b>2005</b>, <i>3</i>, 3184-3187.</p>
+<p><a href="../abstracts/literature/504.shtm">
+<img src="../abstracts/literature/504a.gif"></a><br>
+A Modified U-4CR Reaction with 2-Nitrobenzylamine as an Ammonia Equivalent<br>
+K. Sung, F.-L. Chen, P.-C. Huang, <i>Synlett</i>, <b>2006</b>, 
+2667-2669.</p>
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body><br>
+</html>

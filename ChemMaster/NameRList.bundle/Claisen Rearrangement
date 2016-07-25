@@ -1,0 +1,231 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Claisen Rearrangement</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+<a href="/related/claisen+rearrangement.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="ireland-claisen-rearrangement.shtm">Ireland-Claisen Rearrangement</a><br>
+<a href="cope-rearrangement.shtm">Cope Rearrangement</a><br>
+<a href="overman-rearrangement.shtm">Overman Rearrangement</a><br>
+<a href="2,3-wittig-rearrangement.shtm">[2,3]-Wittig Rearrangement</a></p>
+</div>
+<h1>Claisen Rearrangement</h1>
+<p><img border="0" src="claise3.GIF"></p>
+<p>The aliphatic Claisen Rearrangement is a [3,3]-sigmatropic rearrangement in 
+which an allyl vinyl ether is converted thermally to an unsaturated 
+carbonyl compound.<p>The aromatic Claisen Rearrangement is accompanied by a rearomatization:</p>
+<p><img border="0" src="claise4.GIF"></p></p>
+<p>The etherification of alcohols or phenols and their subsequent Claisen 
+Rearrangement under thermal conditions makes possible an extension of 
+the carbon chain of the molecule.</p>
+<hr>
+<h2>Mechanism of the Claisen Rearrangement</h2>
+<p>The Claisen Rearrangement may be viewed as the oxa-variant of the <a href="cope-rearrangement.shtm">Cope Rearrangement</a>:</p>
+<p><img border="0" src="claise5.GIF">&nbsp;Mechanism 
+of the Cope Rearrangement</p>
+<p><img border="0" src="claise6.GIF">Mechanism 
+of the Claisen Rearrangement</p>
+<p>The reaction proceeds preferably <i> via</i> a chair transition state. 
+Chiral, enantiomerically enriched starting materials give products of high 
+optical purity.</p>
+<p><img border="0" src="claise7.GIF"></p>
+<p>A boat transition state is also possible, and can lead to side products:</p>
+<p><img border="0" src="claise10.GIF"></p>
+<p>The aromatic Claisen Rearrangement is followed by a rearomatization:</p>
+<p><img border="0" src="claise9.GIF"></p>
+<p>When the <i>ortho</i>-position is substituted, rearomatization cannot take 
+place. The allyl group must first undergo a
+<a href="cope-rearrangement.shtm">Cope Rearrangement</a> to the <i>para</i>-position 
+before tautomerization is possible.</p>
+<p><img border="0" src="claise8.GIF"></p>
+<p>All Claisen Rearrangement reactions described to date require temperatures of 
+&gt; 100 °C if uncatalyzed. The observation that electron withdrawing groups at C-1 
+of the vinyl moiety exert a positive influence on the reaction rate and the 
+yield has led to the development of the following variations:</p>
+<p><a href="ireland-claisen-rearrangement.shtm">
+<img src="irelan2.gif" width="534" height="94"></a><br>
+Ireland-Claisen Rearrangement</p>
+<p><img border="0" src="claise12.gif"><br>
+Eschenmoser-Claisen Rearrangement</p>
+<p><img border="0" src="claise13.gif"><br>
+Johnson-Claisen 
+Rearrangement</p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/literature/985.shtm"><img src="../abstracts/literature/985a.gif"></a><br>
+Using Geminal Dicationic Ionic Liquids as Solvents for High-Temperature 
+Organic Reactions<br>
+X. Han, D. W. Armstrong, <i>Org. Lett.</i>, <b>2005</b>, <i>7</i>, 4205-4208.</p>
+<p><font size="1"><a href="../abstracts/lit4/808.shtm">
+<img src="../abstracts/lit4/808b.gif"></a></font><br>
+Base-Mediated Cascade Rearrangements of Aryl-Substituted Diallyl Ethers<br>
+J. P. Reid, C. A. McAdam, A. J. S. Johnston, M. N. Grayson, J. M. Goodman, M. J. 
+Cook, <i>J. Org. Chem.</i>, <b>
+2015</b>,
+<i>80</i>, 1472-1498.</p>
+<p><font size="1"><a href="../abstracts/lit4/808.shtm">
+<img src="../abstracts/lit4/808d.gif"></a></font><br>
+Base-Mediated Cascade Rearrangements of Aryl-Substituted Diallyl Ethers<br>
+J. P. Reid, C. A. McAdam, A. J. S. Johnston, M. N. Grayson, J. M. Goodman, M. J. 
+Cook, <i>J. Org. Chem.</i>, <b>
+2015</b>,
+<i>80</i>, 1472-1498</p>
+<p><a href="../abstracts/lit1/726.shtm"><img src="../abstracts/lit1/726a.gif"></a><br>
+Stereoselective Olefin Isomerization Leading to Asymmetric Quaternary Carbon 
+Construction<br>
+K. Wang, C. J. Bungard, S. G. Nelson, <i>Org. Lett.</i>, <b>2007</b>,
+<i>9</i>, 2325-2328.</p>
+<p><a href="../abstracts/lit1/707.shtm"><img src="../abstracts/lit1/707a.gif"></a><br>
+Tandem Pd(II)-Catalyzed Vinyl Ether Exchange-Claisen Rearrangement as a 
+Facile Approach to &#947;,&#948;-Unsaturated Aldehydes<br>
+X. Wei, J. C. Lorenz, S. Kapadia, A. Saha, N. Haddad, C. A. Busacca, C. H. 
+Senanayake, <i>J. Org. Chem.</i>, <b>2007</b>,
+<i>72</i>, 4250-4253.</p>
+<p><a href="../abstracts/literature/124.shtm"><img src="../abstracts/literature/124a.gif"></a><br>
+A Domino Copper-Catalyzed C-O Coupling-Claisen Rearrangement Process<br>
+G. Nordmann, S. L. Buchwald, <i>J. Am. Chem. Soc.</i>, <b>2003</b>, <i>125</i>, 4978-4979.</p>
+<p><a href="../abstracts/lit1/047.shtm"><img src="../abstracts/lit1/047a.gif"></a><br>
+Tandem Horner-Wadsworth-Emmons Olefination/Claisen Rearrangement/Hydrolysis 
+Sequence: Remarkable Acceleration in Water with Microwave Irradiation<br>
+E. Quesada, R. J. K. Taylor, <i>
+Synthesis</i>, <b>2005</b>, 3193-3195.</p>
+<p><a href="../abstracts/lit1/302.shtm"><img src="../abstracts/lit1/302b.gif"></a><br>
+Asymmetric Claisen Rearrangements Enabled by Catalytic Asymmetric Di(allyl) 
+Ether Synthesis<br>
+S. G. Nelson, K. Wang, <i>J. Am. Chem. Soc.</i>, <b>2006</b>, <i>128</i>, 4232-4233.</p>
+<p><a href="../abstracts/lit2/583.shtm"><img src="../abstracts/lit2/583a.gif"></a><br>
+A Convenient Triisobutylaluminium (TIBAL)-Promoted Johnson-Claisen Approach 
+to &#947;,&#948;-Unsaturated Alcohols<br>
+K. L. Cosgrove, R. P. McGeary, <i>Synlett</i>, <b>2009</b>, 
+1749-1752.</p>
+<p><a href="../abstracts/literature/303.shtm">
+<img src="../abstracts/literature/303a.gif"></a><br>
+Gold(I)-Catalyzed Propargyl Claisen Rearrangement<br>
+B. D. Sherry, F. D. Toste, <i>J. Am. Chem. Soc.</i>, <b>
+2004</b>,
+<i>126</i>, 15978-15979.</p>
+<p><a href="../abstracts/lit4/156.shtm"><img src="../abstracts/lit4/156a.gif"></a><br>
+Stereocontrolled Synthesis of (<i>E,Z</i>)-Dienals via Tandem 
+Rh(I)-Catalyzed Rearrangement of Propargyl Vinyl Ethers<br>
+D. V. Vidhani, M. E. Krafft, I. V. Alabugin, <i>Org. Lett.</i>, <b>2013</b>,
+<i>15</i>, 4462-4465.</p>
+<p><a href="../abstracts/lit2/787.shtm"><img src="../abstracts/lit2/787a.gif"></a><br>
+Synthesis of Pyrroles by Gold(I)-Catalyzed Amino-Claisen Rearrangement of <i>
+N</i>-Propargyl Enaminone Derivatives<br>
+A. Saito, O. Konishi, Y. Hanzawa, <i>Org. Lett.</i>, <b>2010</b>,
+<i>12</i>, 372-374.</p>
+<p><a href="../abstracts/literature/969.shtm"><img src="../abstracts/literature/969a.gif"></a><br>
+Gold(I)-Catalyzed Synthesis of Highly Substituted Furans<br>
+M. H. Suhre, M. Reif, S. F. Kirsch, <i>Org. Lett.</i>, <b>2005</b>, <i>7</i>, 3873-3876.</p>
+<p><script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

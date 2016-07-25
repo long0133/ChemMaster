@@ -1,0 +1,186 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>De Kimpe Aziridine Synthesis</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+	<a href="/related/%22de+kimpe+aziridine+synthesis%22.htm">Literature</a></p><p><b>Related Reactions</b><br>
+	<a href="darzens-reaction.shtm">Darzens Reaction</a><br>
+	<a href="../synthesis/C1N/aziridines.shtm">Synthesis of aziridines</a></p>
+
+</div>
+<h1>De Kimpe Aziridine Synthesis</h1>
+<p><img border="0" src="de-kim1.GIF"></p>
+<p>The De Kimpe Azirdine Synthesis allows the generation of various aziridines 
+by the reaction of &#945;-chloroimines with nucleophiles such as hydride, cyanide, or 
+Grignard reagents.</p>
+<hr>
+<h2>Mechanism of the De Kimpe Aziridine Synthesis</h2>
+<p>Aziridines are formed by nucleophilic addition to the imino carbon and 
+subsequent intramolecular nucleophilic substitution:</p>
+<p><img border="0" src="de-kim2.GIF"><br>
+Normally, the intermediate open form cannot be isolated. However, if R''' 
+stabilizes anions, such as in the later mentioned <i>N</i>-(<i>tert</i>-butanesulfinyl)-imines, 
+aziridines can only be formed, if more forcing conditions are applied, for 
+example, with additional base under reflux conditions.</p>
+<p>The De Kimpe Azridine Synthesis is suitable for the conversion of both 
+aldimines and ketimines. A synthesis of a simple aziridine is shown, with 
+hydride as the nucleophile:</p>
+<p><img border="0" src="de-kim5.GIF"><br>
+N. De Kimpe, R. Verhé, L. De Buyck, N. Schamp, <i>Recl. Trav. Chim. Pays-Bas</i>, 
+<b>1977</b>, <i>96</i>, 242-246.</p>
+<p>However, for certain substrates, for example ketimines in which R' is not 
+equal to R, only mixtures of <i>cis</i>- and <i>trans</i>-substituted aziridines 
+are available with isomer ratios in the range of from 1:1 to 2:3 depending on 
+reaction temperature, rate of addition of the reagents and the scale. However, 
+there are remarkable exceptions of diastereoselective transformations, such as 
+the formation of <i>cis</i>-aziridines from &#945;,&#945;-dichloroarylketimines in the 
+presence of lithium aluminum hydride. Here, the mechanism involves the formation 
+of an azirinium chloride as an intermediate:</p>
+<p><img border="0" src="de-kim3.GIF"></p>
+<p>The intermediate azirinium chloride is attacked by hydride from the more 
+accessible side.</p>
+<p>The use of &#945;-chlorinated <i>N</i>-(<i>tert</i>-butanesulfinyl)-imines enables 
+a diastereoselective synthesis of chiral aziridines. The <i>tert</i>-butanesulfinyl group can later be removed with hydrogen chloride in dioxane:</p>
+<p><img src="../abstracts/lit3/895a.gif"></p>
+<p><img src="../abstracts/lit3/895b.gif"></p>
+<p>The situation in these reactions is slightly more complicated, as both the 
+chlorine atom as well 
+as the <i>tert</i>-butanesulfinyl group can form complexes with the 
+nucleophilic reagents used. Typical chelation-controlled transition states look like this:</p>
+<p><a href="../abstracts/lit3/895.shtm"><img src="de-kim4.GIF"></a><br>
+B. Denolf, E. Leemans, N. De Kimpe, <i>J. Org. Chem.</i>, <b>2007</b>,
+<i>72</i>, 3211-3217.</p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit3/898.shtm"><img src="../abstracts/lit3/898a.gif"></a><br>
+Synthesis of 1,2,3-trisubstituted and 1,2,2,3-tetrasubstituted aziridines from &#945;-chloroketimines<br>
+N. De Kimpe, L. Moens, <i>Tetrahedron</i>, <b>1990</b>,
+<i>46</i>, 2965-2974.</p>
+<p><a href="../abstracts/lit3/895.shtm"><img src="../abstracts/lit3/895a.gif"></a><br>
+Asymmetric Synthesis of Aziridines by Reduction of <i>N</i>-<i>tert</i>-Butanesulfinyl 
+&#945;-Chloro Imines<br>
+B. Denolf, E. Leemans, N. De Kimpe, <i>J. Org. Chem.</i>, <b>2007</b>,
+<i>72</i>, 3211-3217.</p>
+<p><a href="../abstracts/lit3/895.shtm"><img src="../abstracts/lit3/895b.gif"></a><br>
+Asymmetric Synthesis of Aziridines by Reduction of <i>N</i>-<i>tert</i>-Butanesulfinyl 
+&#945;-Chloro Imines<br>
+B. Denolf, E. Leemans, N. De Kimpe, <i>J. Org. Chem.</i>, <b>2007</b>,
+<i>72</i>, 3211-3217.</p>
+<p><a href="../abstracts/lit3/901.shtm"><img src="../abstracts/lit3/901a.gif"></a><br>
+Use of &#945;-Chlorinated <i>N</i>-(<i>tert</i>-Butanesulfinyl)imines in the 
+Synthesis of Chiral Aziridines<br>
+B. Denolf, S. Mangelinckx, K. W. Törnroos, N. De Kimpe, <i>Org. Lett.</i>, <b>2006</b>,
+<i>8</i>, 3129-3132.</p>
+
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

@@ -1,0 +1,272 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Diels-Alder Reaction</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+<a href="/related/diels-alder+reaction.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="alder-ene-reaction.shtm">Alder-Ene Reaction</a><br>
+<a href="huisgen-1,3-dipolar-cycloaddition.shtm">1,3-dipolar cycloaddition</a><br>
+<a href="../synthesis/C1C/cyclic/alkenes/cyclohexenes.shtm">Synthesis of cyclohexenes</a></p>
+
+</div>
+<h1>Diels-Alder Reaction</h1>
+<p><img src="diels-2.gif" width="277" height="61"></p>
+<p><img src="diels-3.gif" width="277" height="61"></p>
+<p> The [4+2]-cycloaddition of a conjugated diene and a dienophile (an alkene or 
+alkyne), an electrocyclic reaction that involves the 4 &#960;-electrons of the 
+diene and 2 &#960;-electrons of the dienophile. The driving force of the reaction 
+is the formation of new &#963;-bonds, which are energetically more stable than 
+the &#960;-bonds.</p>
+<p> In the case of an alkynyl dienophile, the initial adduct can still react as a 
+dienophile if not too sterically hindered. In addition, either the diene or 
+the dienophile can be substituted with cumulated double bonds, such as 
+substituted allenes.</p>
+<p> With its broad scope and simplicity of operation, the Diels-Alder is the most 
+powerful synthetic method for unsaturated six-membered rings.</p>
+<p> A variant is the hetero-Diels-Alder, in which either the diene or the 
+dienophile contains a heteroatom, most often nitrogen or oxygen. This 
+alternative constitutes a powerful synthesis of six-membered ring 
+heterocycles.</p>
+<hr>
+<h2>Mechanism of the Diels-Alder Reaction</h2>
+<p><img src="Diels-1.gif" width="277" height="69"></p>
+<p><img src="Diels-2a.gif" width="73" height="58"></p>
+<p>Overlap of the molecular orbitals (MOs) is required:</p>
+<p><img src="diels-8.GIF"><br>
+<br>
+Overlap between the highest occupied MO of the diene (HOMO) and the lowest 
+unoccupied MO of the dienophile (LUMO) is thermally allowed in the Diels Alder 
+Reaction, provided the orbitals are of similar energy. The reaction is 
+facilitated by electron-withdrawing groups on the dienophile, since this will 
+lower the energy of the LUMO. Good dienophiles often bear one or two of the 
+following substituents: CHO, COR, COOR, CN, C=C, Ph, or halogen. The diene 
+component should be as electron-rich as possible.</p>
+<p>There are &#8220;inverse demand&#8221; Diels Alder Reactions that involve the overlap of 
+the HOMO of the dienophile with the unoccupied MO of the diene. This alternative 
+scenario for the reaction is favored by electron-donating groups on the 
+dienophile and an electron-poor diene.</p>
+<p><img src="diels-9.GIF"></p>
+<p>The reaction is diastereoselective.</p>
+<p><img src="Diels-4.gif" width="312" height="121"></p>
+<p><img src="diels-6.gif" width="320" height="98"></p>
+<p><img border="0" src="diels-7a.GIF"></p>
+<p><img border="0" src="diels-7b.GIF"></p>
+<p>Cyclic dienes give stereoisomeric products. The endo product is usually 
+favored by kinetic control due to secondary orbital interactions.</p>
+<p><img src="Diels-5.gif" width="345" height="209"></p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit1/581.shtm"><img src="../abstracts/lit1/581a.gif"></a><br>
+Chiral Oxazaborolidine-Aluminum Bromide Complexes Are Unusually Powerful and 
+Effective Catalysts for Enantioselective Diels-Alder Reactions<br>
+D. Liu, E. Canales, E. J. Corey, <i>J. Am. Chem. Soc.</i>, <b>2007</b>, <i>
+129</i>, 1498-1499.</p>
+<p><a href="../abstracts/lit1/810.shtm"><img src="../abstracts/lit1/810a.gif"></a><br>
+Regioselective and Asymmetric Diels-Alder Reaction of 1- and 2-Substituted 
+
+Cyclopentadienes Catalyzed by a Brønsted Acid Activated Chiral Oxazaborolidine<br>
+J. N. Payette, H. Yamamoto, <i>J. Am. Chem. Soc.</i>, <b>2007</b>, <i>
+
+129</i>, 9536-9537.</p>
+<p><a href="../abstracts/lit1/790.shtm"><img src="../abstracts/lit1/790a.gif"></a><br>
+Diarylprolinol Silyl Ether as Catalyst of an <i>exo</i>-Selective, Enantioselective 
+
+Diels-Alder Reaction<br>
+H. Gotoh, Y. Hayashi, <i>Org. Lett.</i>, <b>2007</b>,
+
+<i>9</i>, 2859-2862.</p>
+<p><a href="../abstracts/lit1/805.shtm"><img src="../abstracts/lit1/805b.gif"></a><br>
+Asymmetric Diels-Alder Reactions of &#945;,&#946;-Unsaturated Aldehydes Catalyzed by a Diarylprolinol Silyl Ether Salt in the Presence of Water<br>
+Y. Hayashi, S. Samanta, H. Gotoh, H. Ishikawa, <i>Angew. Chem. Int. Ed.</i>, <b>2008</b>,
+
+<i>47</i>, 6634-6637.</p>
+<p><a href="../abstracts/literature/902.shtm"><img src="../abstracts/literature/902a.gif"></a><br>
+Catalytic Enantioselective Diels-Alder Reaction via a Chiral Indium(III) 
+Complex<br>
+Y.-Chua Teo, T.-P. Loh, <i>Org. Lett.</i>, <b>2005</b>, <i>7</i>, 2539-2541.</p>
+<p><a href="../abstracts/lit1/363.shtm"><img src="../abstracts/lit1/363a.gif"></a><br>
+Design of Chiral <i>N</i>-Triflyl Phosphoramide as a Strong Chiral Brønsted 
+Acid and Its Application to Asymmetric Diels-Alder Reaction<br>
+D. Nakashima, H. Yamamoto, <i>J. Am. Chem. Soc.</i>, <b>2006</b>, <i>128</i>, 9626-9627.</p>
+<p><a href="../abstracts/literature/952.shtm"><img src="../abstracts/literature/952a.gif"></a><br>
+A Mild and Efficient Asymmetric Hetero-Diels-Alder Reaction of the Brassard 
+Diene with Aldehydes<br>
+Q. Fan, L. Lin, J. Liu, Y. Huang, X. Feng, <i>Eur. J. Org. Chem.</i>, <b>2005</b>, 
+3542-3552.</p>
+<p><a href="../abstracts/lit1/495.shtm">
+<img border="2" src="../abstracts/lit1/495a.gif"></a><br>
+DIANANE-Cr(III)-salen Complexes as Highly Enantioselective Catalysts for 
+Hetero-Diels-Alder Reactions of Aldehydes with Dienes<br>
+A. Berkessel, N. Vogl, <i>Eur. J. Org. Chem.</i>, <b>2006</b>, 
+5029-5035.</p>
+<p><a href="../abstracts/lit1/556.shtm"><img src="../abstracts/lit1/556a.gif"></a><br>
+Highly Selective Diels-Alder Reactions of Directly Connected Enyne 
+Dienophiles<br>
+M. Dai, D. Sarlah, M. Yu, S. J. Danishefsky, G. O. Jones, K. N. Houk, <i>J. Am. Chem. Soc.</i>, <b>2007</b>, <i>
+129</i>, 645-657.</p>
+<p><a href="../abstracts/lit1/282.shtm"><img src="../abstracts/lit1/282a.gif"></a><br>
+[AlCl<sub>3</sub> + 2THF]: A New and Efficient Catalytic System for Diels-Alder Cycloaddition of 
+&#945;,&#946;-Unsaturated Carbonyl Compounds under Solvent-Free Conditions<br>
+F. Fringuelli, R. Girotti, F. Pizzo, L. Vaccaro, <i>Org. Lett.</i>, <b>2006</b>, <i>8</i>, 2487-2489.</p>
+<p><a href="../abstracts/lit1/054.shtm"><img src="../abstracts/lit1/054a.gif" width="503" height="83"></a><br>
+Strong Counteranion Effects on the Catalytic Activity of Cationic Silicon 
+Lewis Acids in Mukaiyama Aldol and Diels-Alder Reactions<br>
+L.-B. Han, C.-Q. Zhao, <i>J. Org. Chem.</i>, <b>2005</b>, <i>70</i>, 10121-10123.</p>
+<p><a href="../abstracts/lit4/568.shtm"><img src="../abstracts/lit4/568a.gif"></a><br>
+2-[(Trimethylsilyl)methyl]benzyl Methanesulfonates: Useful Precursors for 
+the Generation of <i>o</i>-Quinodimethanes<br>
+H. Shirakawa, H. Sano, <i>Synthesis</i>, <b>2014</b>, <i>46</i>, 
+1788-1792.</p>
+<p><a href="../abstracts/lit1/229.shtm"><img src="../abstracts/lit1/229a.gif"></a><br>
+Synthesis of Dihydronaphthalenes via Aryne Diels-Alder Reactions: Scope and 
+Diastereoselectivity<br>
+C. Dockendorff, S. Sahli, M. Olsen, L. Milhau, M. Lautens, <i>J. Am. Chem. Soc.</i>, <b>2005</b>, <i>127</i>, 15028-15029.<br></p>
+<p><a href="../abstracts/literature/844.shtm"><img src="../abstracts/literature/844a.gif"></a><br>
+Imidazolinium salts as catalysts for the aza-Diels-Alder reaction<br>
+V. Jurcik, R. Wilhelm, <i>Org. Biomol. Chem.</i>, <b>2005</b>, <i>3</i>, 239-244.</p>
+<p><a href="../abstracts/lit1/574.shtm"><img src="../abstracts/lit1/574a.gif"></a><br>
+Catalytic Asymmetric Inverse-Electron-Demand Diels-Alder Reaction of <i>N</i>-Sulfonyl-1-Aza-1,3-Dienes<br>
+J. Esquivias, R. G. Arrays, J. C. Carretero, <i>J. Am. Chem. Soc.</i>, <b>2007</b>, <i>
+129</i>, 1480-1481.</p>
+<p><a href="../abstracts/lit1/460.shtm"><img src="../abstracts/lit1/460a.gif"></a><br>
+Chiral Brønsted Acid-Catalyzed Inverse Electron-Demand Aza Diels-Alder 
+Reaction<br>
+T. Akiyama, H. Morita, K. Fuchibe, <i>J. Am. Chem. Soc.</i>, <b>2006</b>, <i>
+128</i>, 13070-13071.</p>
+<p><a href="../abstracts/lit2/189.shtm"><img src="../abstracts/lit2/189a.gif"></a><br>
+Regioselective Cobalt-Catalyzed Diels-Alder Reaction towards 
+
+1,3-Disubstituted and 1,2,3-Trisubstituted Benzene Derivatives<br>
+G. Hilt, M. Danz, <i>Synthesis</i>, <b>2008</b>, 
+
+2257-2263.</p>
+<p><a href="../abstracts/lit3/897.shtm"><img src="../abstracts/lit3/897a.gif"></a><br>
+Halocycloalkenones as Diels-Alder Dienophiles. Applications to Generating 
+Useful Structural Patterns<br>
+A. G. Ross, S. D. Townsend, S. J. Danishefsky, <i>J. Org. Chem.</i>, <b>2013</b>,
+<i>78</i>, 204-210.</p>
+<hr>
+<p><a href="../Highlights/index.htm">
+<img src="../Highlights/LogoS.JPG" alt="Organic Chemistry Highlights" width="200" height="28"></a></p>
+<p><b>Selected Articles</b></p>
+<p><a href="../Highlights/2007/13August.shtm">The Intramolecular Diels-Alder 
+Reaction in Natural Product Synthesis</a><br>
+<a href="../Highlights/2006/11December.shtm">Advances in the 
+Diels-Alder Reaction: Synthesis of (±)-Lycoridine and of 
+Dolabellatrienone</a><br>
+<a href="../Highlights/2006/14August.shtm">New Dienes and Dienophiles for Intermolecular and Intramolecular Diels-Alder Cycloadditions</a><br>
+<a href="../Highlights/2006/05April.shtm">Asymmetric 
+Hetero-Diels-Alder Reactions</a></p>
+<img src="http://vg06.met.vgwort.de/na/8b474bc43e8342438754314a822e1521" width="1" height="1" alt="">
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

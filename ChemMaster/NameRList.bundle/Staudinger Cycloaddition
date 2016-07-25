@@ -1,0 +1,236 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Staudinger Synthesis</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+<a href="/related/staudinger+synthesis.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="../synthesis/heterocycles/lactams/beta-lactams.shtm">Synthesis of &#946;-lactams</a></p>
+
+</div>
+<h1>Staudinger Synthesis<br>
+Staudinger Cycloaddition</h1>
+<p><img src="staudi1.GIF"></p>
+<p>The formal [2+2]-cycloaddition of imines to ketenes forms &#946;-lactams.</p>
+<hr>
+<h2>Mechanism of the Staudinger Synthesis</h2>
+<p>Both the ketene and the imine are molecules that can act as either 
+nucleophiles or electrophiles. In the first step, the imine adds to the ketene 
+as a nucleophile. The subsequent cycloaddition delivers the &#946;-lactam:</p>
+<p><img src="staudi3.GIF"></p>
+<p>The zwitterionic intermediate undergoes stepwise ring 
+closure to give the &#946;-lactam ring. The stereoselectivity is generated as a 
+result of the competition between the direct ring closure and the isomerization 
+of the imine moiety in the zwitterionic intermediate. The ring closure step is 
+most likely an intramolecular nucleophilic addition of the enolate to the imine 
+moiety, which is obviously affected by the electronic effect of the ketene and 
+imine substituents. Electron-donating ketene substituents and 
+electron-withdrawing imine substituents accelerate the direct ring closure, 
+leading to a preference for <i>cis</i>-&#946;-lactam formation, while 
+electron-withdrawing ketene substituents and electron-donating imine 
+substituents slow the direct ring closure, leading to a preference for <i>trans</i>-&#946;-lactam 
+formation (L. Jiao, X. Liang, J. X. Xu<i>, J. Am. 
+Chem. Soc.</i> <b>2006</b>, <i>128</i>, 6060-6069,
+<a target="_blank" href="http://dx.doi.org/10.1021/ja056711k">DOI</a>):</p>
+<p><img border="0" src="staudi10.GIF"></p>
+<p>At lower temperatures, a catalytic version involves the use of 
+non-nucleophilic imines (for example tosylated imines) and the Umpolung of the 
+ketene substrate using tertiary amines or other suitable nucleophiles, making 
+the ketene nucleophilic:</p>
+<p><img src="staudi4.GIF"></p>
+<p>This reversed reactivity mode allows the use of chiral nucleophilic catalysts 
+for enantioselective induction (see recent literature below).</p>
+<p>Diphenylketene is quite stable, but other ketenes readily polymerise and must 
+be prepared immediately before the reaction. Ketenes can also be formed <i>in 
+situ</i> in the presence of the imine by a light- or heat-induced
+<a href="wolff-rearrangement.shtm">Wolff-Rearrangement</a>:</p>
+<p><img src="staudi6.GIF"></p>
+<p>Using the reversed mode strategy, the reaction of acid chlorides with a 
+tertiary amine in the presence of a proton sponge readily produces ketenes:</p>
+<p><img src="staudi7.GIF"></p>
+<p>R<sub>3</sub>N could be an expensive chiral amine catalyst such as a 
+chinchona alkaloid, whereas the proton sponge is used stoichiometrically. For 
+achiral reactions, NEt<sub>3</sub> can serve both functions. The subsequent 
+reaction follows the pathway known from the reverse mode reactions, with the 
+catalyst recovered unchanged:</p>
+<p><img src="staudi8.GIF"></p>
+<p>A general overview about advances in the catalytic, asymmetric synthesis of 
+&#946;-lactams can be found in an article written by Thomas Lectka (<i>Acc. Chem. 
+Res.</i> <b>2004</b>, <i>37</i>, 592-600.
+<a target="_blank" href="http://dx.doi.org/10.1021/ar030055g">DOI</a>), whereas 
+a publication by Claudio Palomo discusses reactions of acyl chlorides with 
+imines, including diastereoselectivites and mechanistic insights of the ring 
+closure leading to <i>cis</i> or <i>trans</i> substituted &#946;-lactams and 
+asymmetric induction from the ketene component (<i>Eur. J. Org. Chem.</i> <b>1999</b>, 3223-3235.
+<a target="_blank" href="http://dx.doi.org/10.1002/(SICI)1099-0690(199912)1999:12%3C3223::AID-EJOC3223%3E3.0.CO;2-1">DOI</a>). 
+The influence of solvents and additives and the pathways of ketene generations 
+and addition modes on the stereoselectivity is described by Jiaxi Xu (<i>J. Org. 
+Chem.</i> <b>2006</b>, <i>71</i>, 6983-6990.
+<a target="_blank" href="http://dx.doi.org/10.1021/jo0611521">DOI</a>).</p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit2/002.shtm"><img src="../abstracts/lit2/002a.gif"></a><br>
+Chiral N-Heterocyclic Carbene Catalyzed Staudinger Reaction of Ketenes with 
+
+Imines: Highly Enantioselective Synthesis of <i>N</i>-Boc &#946;-Lactams<br>
+Y.-R. Zhang, L. He, X. Wu, P.-L. Shao, S. Ye, <i>Org. Lett.</i>, <b>2008</b>,
+
+<i>10</i>, 277-280.</p>
+<p><a href="../abstracts/literature/028.shtm"><img src="../abstracts/literature/028a.gif" width="405" height="101"></a><br>
+Enantioselective Staudinger Synthesis of &#946;-Lactams Catalyzed by a
+Planar-Chiral Nucleophile<br>
+B. L. Hodous, G. C. Fu, <i>J. Am. Chem. Soc.</i>, <b>2002</b>, <i>
+124</i>,
+1578-1579.</p>
+<p><font size="1"><a href="../abstracts/lit4/485.shtm">
+<img src="../abstracts/lit4/485a.gif"></a></font><br>
+Rhodium-Catalyzed Oxygenative [2 + 2] Cycloaddition of Terminal Alkynes and 
+Imines for the Synthesis of &#946;-Lactams<br>
+I. Kim, S. W. Roh, D. G. Lee, C. Lee, <i>Org. Lett.</i>, <b>2014</b>,
+<i>16</i>, 2482-2485.</p>
+<p><a href="../abstracts/lit3/208.shtm"><img src="../abstracts/lit3/208a.gif"></a><br>
+Pd-Catalyzed Carbonylation of Diazo Compounds at Atmospheric Pressure: A 
+Catalytic Approach to Ketenes<br>
+Z. Zhang, Y. Liu, L. Ling, Y. Li, Y. Dong, M. Gong, X. Zhao, Y. Zhang, J. Wang, <i>J. Am. Chem. Soc.</i>, <b>2011</b>, <i>
+133</i>, 4330-4341.</p>
+<p><a href="../abstracts/lit1/943.shtm"><img src="../abstracts/lit1/943a.gif"></a><br>
+Hexamethyldisilazane Sodium Salt as Highly Active Lewis Base Catalyst for 
+
+the Staudinger Reaction<br>
+O. Sereda, R. Wilhelm, <i>Synlett</i>, <b>2007</b>,
+
+3032-3036.</p>
+<p><a href="../abstracts/literature/205.shtm"><img src="../abstracts/literature/205a.gif"></a><br>
+Synthesis of &#946;-Lactams from Diazoketones and Imines: The Use of 
+Microwave Irradiation<br>
+M. R. Linder, J. Podlech, <i>Org. Lett.</i>,
+<b>2001</b>, <i>3</i>, 1849-1851.</p>
+<p><a href="../abstracts/literature/207.shtm"><img src="../abstracts/literature/207a.gif"></a><br>
+The Development of the First Catalyzed Reaction of Ketenes and Imines: Catalytic, Asymmetric Synthesis of &#946;-Lactams<br>
+A. E. Taggi, A. M. Hafez, H. Wack, B. Young, D. Ferraris, T. Lectka, <i>J. Am. 
+Chem. Soc.</i>,
+<b>2002</b>, <i>124</i>, 6626-6635.</p>
+<p><a href="../abstracts/lit3/445.shtm"><img src="../abstracts/lit3/445a.gif"></a><br>
+A Mild and Efficient Route to 2-Azetidinones Using the Cyanuric Chloride-DMF 
+Complex<br>
+M. Zarei, A. Jarrahpour, <i>Synlett</i>, <b>2011</b>,
+2572-2576.</p>
+<p><a href="../abstracts/lit1/396.shtm"><img src="../abstracts/lit1/396a.gif"></a><br>
+Asymmetric Synthesis of 1-(2- and 3-Haloalkyl)azetidin-2-ones as Precursors 
+for Novel Piperazine, Morpholine, and 1,4-Diazepane Annulated Beta-Lactams<br>
+W. Van Brabandt, M. Vanwalleghem, M. D'hooghe, N. De Kimpe, <i>J. Org. Chem.</i>, <b>2006</b>, <i>71</i>, 7083-7086.</p>
+<p><a href="../abstracts/lit1/693.shtm"><img src="../abstracts/lit1/693a.gif"></a><br>
+Catalytic Asymmetric Formation of &#946-Sultams<br>
+M. Zajac, R. Peters, <i>Org. Lett.</i>, <b>2007</b>,
+<i>9</i>, 2007-2010.</p>
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

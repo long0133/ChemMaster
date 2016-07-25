@@ -1,0 +1,213 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Newman-Kwart Rearrangement</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a></div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a></div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+	<a href="/related/newman-kwart+rearrangement.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="../synthesis/C1S/thiophenols.shtm">Synthesis of thiophenols</a></p>
+
+</div>
+<h1>Newman-Kwart Rearrangement</h1>
+<p><img border="0" src="newman1.GIF"><p>In the Newman-Kwart Rearrangement (NKR), 
+intramolecular aryl migration of <i>O</i>-thiocarbamates at high temperatures 
+leads to <i>S</i>-thiocarbamates. The NKR allows access to thiophenols from 
+phenols, as <i>O</i>-thiocarbamates are readily prepared and hydrolysis of <i>S</i>-thiocarbamates 
+can readily be achieved.</p>
+<hr>
+<h2>Mechanism of the Newman-Kwart Rearrangement</h2>
+<p>Relatively acidic phenols can be converted to with <i>N,N</i>-dialkylthiocarbamoyl 
+chlorides in the presence of a strong tertiary amine base, whereas less-acidic 
+phenols can be deprotonated prior to the thiocarbamoylation.</p>
+<p><img border="0" src="newman2.GIF"></p>
+<p>NKR reactions of <i>N</i>,<i>N</i>-dimethyl, <i>N</i>,<i>N</i>-diethyl, <i>N</i>-morpholino,
+<i>N</i>-methyl-<i>N</i>-phenyl thiocarbamates provide the desired product in comparable yields, 
+but with mono-<i>N</i>-alkylated substrates phenol elimination yields the isocyanate upon 
+warming.</p>
+<p><img border="0" src="newman3.GIF"></p>
+<p>As the Newman-Kwart Rearrangement requires elevated temperatures, several 
+side reactions can occur, and these can be catalyzed by trace impurities. The 
+use of <i>N,N</i>-dimethylthiocarbamates has a major advantage in that these 
+compounds tend to crystallize more easily, and can therefore by purified more 
+simply.</p>
+<p>The accepted mechanism for the Newman-Kwart Rearrangement has been confirmed 
+by kinetics experiments - the reaction exhibits the first order kinetics typical 
+for intramolecular reactions together with a large and negative entropy of 
+activation. The driving force is the thermodynamically favorable conversion of a 
+C=S into a C=O bond 
+(&#916;H ~ 13 kcal mol<sup>-1</sup>).</p>
+<p>The rearrangement can be viewed as an intramolecular aromatic nucleophilic 
+substitution reaction:</p>
+<p><img border="0" src="newman4.GIF"></p>
+<p>Typically for aromatic nucleophilic substitution reactions, electron 
+withdrawing groups in the <i>para</i>- and <i>ortho</i>-positions show a 
+substantial activating effect, favoring nucleophilic attack by lowering the 
+electron density on the aromatic ring and stabilizing the resultant negative 
+charge.</p>
+<p>Small substituents in the <i>ortho</i>-position have a beneficial effect: 
+restriction of rotation around the Ar-O bond, leads to a decrease in entropy 
+upon approach to the transition state for the rearrangement. The relative rates 
+of reaction between <i>O</i>-(<i>o</i>-tolyl) and <i>O</i>-(<i>p</i>-tolyl) <i>
+N,N</i>-dimethylthiocarbamates was 1.9. However, the 2,6-dimethyl analog reacts 
+slightly more slowly, and when the size of substituents is increased from methyl 
+to <i>tert</i>-butyl the rate decreases substantially, as steric compression 
+upon approach overwhelms the favorable entropic effect:</p>
+<p><img border="0" src="newman5.GIF"></p>
+<p>Some substrates require conditions so drastic that destruction of the 
+substrate on prolonged contact with the hot reaction vessel walls leads to side 
+products. For example, electron-rich aromatic compounds with higher activation 
+barriers and substrates that bear either thermally sensitive groups or 
+stereocenters (racemization) require specific conditions such as flash vacuum 
+pyrolysis, in which the substrate in toluene is passed in a stream of nitrogen 
+through a heated quartz tube (~ 400°C). Another solution is provided by the use 
+of thermally stable polar solvents in a microwave-assisted procedure:</p>
+<p><a href="../abstracts/lit2/157.shtm"><img src="../abstracts/lit2/157b.gif"></a><br>
+J. D. Moseley, P. Lenden, <i>Tetrahedron</i>, <b>2007</b>,
+<i>63</i>, 4120-4125.</p>
+<p>High temperature NKR reactions can be conducted more conveniently using 
+pressure-proof microwave equipment, because the temperatures and slightly 
+elevated pressures (10 bar) can be more easily accessed in a very short time, 
+and better controlled. However, there is no specific microwave effect, so 
+superheating alone is responsible for the acceleration of the reaction.</p>
+<p>The reaction is unimolecular, but the zwitterionic intermediate can be 
+stabilized to a certain extend by polar solvents or electrolytes. Reactions that 
+lead to only 10% of product in xylene can produce up to 80% in formic acid. DMA, 
+NMP and diphenyl ether are other solvents of choice that are polar and allow 
+high reaction temperatures.</p>
+<p>The formation of thiols from <i>S</i>-aryl thiocarbamates is readily achieved 
+using 10% aqueous NaOH or methanolic potassium hydroxide. Alternatively, 
+reduction with lithium aluminum hydride under non-hydrolytic conditions affords 
+aryl thiols in good yields.</p>
+<p><img border="0" src="newman6.GIF"></p>
+<p>For a full review of the Newman-Kwart Rearrangement covering historic 
+developments, mechanistic details, and applications please refer to a recent 
+publication by Lloyd-Jones, Moseley and Renny (<i>Synthesis</i> <b>2008</b>, 
+661. <a target="_blank" href="http://dx.doi.org/10.1055/s-2008-1032179">DOI</a>).</p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit2/487.shtm"><img src="../abstracts/lit2/487a.gif"></a><br>
+The Newman-Kwart Rearrangement of <i>O</i>-Aryl Thiocarbamates: Substantial 
+Reduction in Reaction Temperatures through Palladium Catalysis<br>
+J. N. Harvey, J. Jover, G. C. Lloyd-Jones, J. D. Moseley, P. Murray, J. S. 
+Renny, <i>Angew. Chem. Int. Ed.</i>, <b>2009</b>,
+<i>48</i>, 7612-7615.</p>
+<p><a href="../abstracts/lit2/157.shtm"><img src="../abstracts/lit2/157b.gif"></a><br>
+A high temperature investigation using microwave synthesis for 
+electronically and sterically disfavoured substrates of the Newman-Kwart 
+rearrangement<br>
+J. D. Moseley, P. Lenden, <i>Tetrahedron</i>, <b>2007</b>,
+<i>63</i>, 4120-4125.</p>
+<p><a href="../abstracts/lit2/154.shtm"><img src="../abstracts/lit2/154b.gif"></a><br>
+The Newman-Kwart rearrangement re-evaluated by microwave synthesis<br>
+J. D. Moseley, R. F. Sankey, O. N. Tang, J. P. Gilday, <i>Tetrahedron</i>, <b>2006</b>,
+<i>62</i>, 4685-4689.</p>
+
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

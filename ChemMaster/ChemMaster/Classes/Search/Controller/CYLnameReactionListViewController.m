@@ -8,6 +8,7 @@
 
 #import "CYLnameReactionListViewController.h"
 #import "CYLReactionDetailViewController.h"
+#import "CYLDetaileCell.h"
 #import <SVProgressHUD.h>
 #import <TFHpple.h>
 //存储list时的文件后缀
@@ -64,11 +65,12 @@ static NSString *reuse = @"reuse";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setNavVC];
+    self.tableView.rowHeight = nameReaCellH;
 }
 
 - (void)setNavVC
 {
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageCompressForSize:[UIImage imageNamed:@"search49"] targetSize:CGSizeMake(27, 27)] style:UIBarButtonItemStyleDone target:self action:@selector(searchBtnClicked)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageCompressForSize:[UIImage imageNamed:@"search49"] targetSize:CGSizeMake(25, 25)] style:UIBarButtonItemStyleDone target:self action:@selector(searchBtnClicked)];
 }
 
 #pragma mark - search功能
@@ -147,28 +149,23 @@ static NSString *reuse = @"reuse";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuse];
+    CYLDetaileCell *cell = [tableView dequeueReusableCellWithIdentifier:reuse];
+    
+    NSDictionary *modelDict = self.filtedListArray[indexPath.row];
     
     if (cell == nil) {
         
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuse];
+        cell = [CYLDetaileCell CellWithModeIdentifier:nameReactionList CellStyle:UITableViewCellStyleDefault andCellIdentifier:reuse CellName:modelDict[TakeName]];
     }
     
-//    if (self.filtedListArray.count == 0)
-//    {
-//        cell.textLabel.text = self.listArray[indexPath.row][TakeName];
-//    }
-//    else
-//    {
-        cell.textLabel.text = self.filtedListArray[indexPath.row][TakeName];
-//    }
+    cell.model = modelDict;
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *linkString = self.listArray[indexPath.row][Takelink];
+    NSString *linkString = self.filtedListArray[indexPath.row][Takelink];
     
     [self.searchTextFiled resignFirstResponder];
 
@@ -215,6 +212,20 @@ static NSString *reuse = @"reuse";
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
     return 20;
+}
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"NameListPicture" ofType:@"bundle"];
+    
+   NSData *picData = [NSData dataWithContentsOfFile:[bundlePath stringByAppendingPathComponent:self.filtedListArray[indexPath.row][TakeName]]];
+    
+    UIImage *image = [UIImage imageWithData:picData];
+    
+    //30 为cell的lable高度
+    return image.size.height + 30;
+    
 }
 
 #pragma mark - 初始化方法

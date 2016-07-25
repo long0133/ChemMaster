@@ -1,0 +1,212 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Hiyama-Denmark Coupling</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+	<a href="/related/hiyama-denmark+coupling.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="hiyama-coupling.shtm">Hiyama Coupling</a><br>
+<a href="suzuki-coupling.shtm">Suzuki Coupling</a></p>
+
+</div>
+<h1>Hiyama-Denmark Coupling</h1>
+<p><img border="0" src="hiyama5.GIF"></p>
+<p>The Hiyama-Denmark 
+Coupling is a modification of the <a href="hiyama-coupling.shtm">Hiyama Coupling</a>, 
+in which the palladium-catalyzed coupling of deprotonated silanols with vinyl 
+and aryl halides leads to cross-coupled products. In the Hiyama-Denmark coupling, 
+fluoride is not needed as activator, so the reaction is compatible with 
+substrates bearing silyl-protecting groups and can be performed in large-scale 
+reactors.</p>
+<hr>
+<h2>Mechanism of the Hiyama-Denmark Coupling</h2>
+<p>The mechanistic proposal for the Hiyama Coupling includes oxidative addition 
+to give a palladium(II) species, transmetalation and reductive elimination to 
+regenerate the palladium catalyst:</p>
+<p>&nbsp;<img src="Hiyama2.GIF"></p>
+<p>For the Hiyama-Denmark 
+Coupling, most of these steps are similar.</p>
+<p>For the transmetalation to occur in the Hiyama Coupling, fluoride activation 
+and the formation of a pentavalent silicon is essential. As the Hiyama-Denmark Coupling occurs 
+in the presence of a base and also strongly depends on the steric and electronic 
+properties of the silicon center, it was convenient to assume a  
+mechanism for the transmetalation, in which a pentavalent silicon species is 
+formed. Thus, it was first suggested that the <i>in situ</i>-generated 
+silanolate forms an organopalladium complex, which is activated by a second 
+equivalent of the silanolate prior to transmetalation.</p>
+<p><img border="0" src="hiyama6.GIF"></p>
+<p>Later, it has been shown, that the reaction is first-order in silanolate, so 
+the transmetalation proceeds directly from an organopalladium(II) silanolate 
+complex.</p>
+<p><img border="0" src="hiyama7.GIF"></p>
+<p>The new reaction is especially suitable for the conversion of aryl- and 
+alkenyldimethylsilanolates, although aryldimethylsilanolates react much more 
+slowly than alkenyl derivatives. Thus a second proof was established by the 
+isolation and X-ray characterization of a quite stable palladium silanolate 
+complex of an aryldimethylsilanolate. Heating to 100°C provided the biaryl 
+product in quantitative yield in the absence of an activator.</p>
+<p><img border="0" src="hiyama8.GIF"></p>
+<p>This argued against a requirement for a pentavalent silicon species. In 
+addition, the importance of complexation (Si-O-Pd) for this new transmetalation 
+pathway was shown.</p>
+<p>Since then, many protocols have been developed that allow the conversion of 
+ester, ketone, and silyl-protected substrates. Mild bases such as KOSiMe<sub>3</sub> 
+allow the reversible deprotonation of alkenyl- or alkynyldimethylsilanols. 
+Arylsilanolates need more forcing conditions, for example with Cs<sub>2</sub>CO<sub>3</sub> 
+in toluene at 90 °C. Here, the addition of water suppresses homocoupling of the 
+halide. For electron-rich heterocycles, the irreversible deprotonation using NaH 
+for the prior generation of silanolates proved to be a suitable alternative.</p>
+<p>Some of the protocols can be found in the recent literature section. A more 
+comprehensive review dealing with mechanistic details and scope of the reaction 
+has been written by Denmark and Regens (<i>Acc. Chem. Res.</i>, <b>2008</b>, DOI:
+<a target="_blank" href="http://dx.doi.org/10.1021/ar800037p">10.1021/ar800037p</a>).</p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit2/457.shtm"><img src="../abstracts/lit2/457a.gif"></a><br>
+Cross-Coupling Reactions of Aromatic and Heteroaromatic Silanolates with 
+Aromatic and Heteroaromatic Halides<br>
+S. E. Denmark, R. C. Smith, W.-T. T. Chang, J. M. Muhuhi, <i>J. Am. Chem. Soc.</i>, <b>2009</b>, <i>
+131</i>, 3104-3118.</p>
+<p><a href="../abstracts/lit1/525.shtm"><img src="../abstracts/lit1/525a.gif"></a><br>
+Stereospecific Palladium-Catalyzed Cross-Coupling of (<i>E</i>)- and (<i>Z</i>)-Alkenylsilanolates 
+with Aryl Chlorides<br>
+S. E. Denmark, J. M. Kallemeyn, <i>J. Am. Chem. Soc.</i>, <b>2006</b>, <i>
+128</i>, 15958-19959.</p>
+<p><a href="../abstracts/lit2/064.shtm"><img src="../abstracts/lit2/064a.gif"></a><br>
+Vinylation of Aromatic Halides Using Inexpensive Organosilicon Reagents. 
+Illustration of Design of Experiment Protocols<br>
+S. E. Denmark, C. R. Butler, <i>J. Am. Chem. Soc.</i>, <b>2008</b>, <i>
+130</i>, 3690-3704.</p>
+<p><a href="../abstracts/lit1/105.shtm"><img src="../abstracts/lit1/105a.gif"></a><br>
+Sequential Cross-Coupling of 1,4-Bissilylbutadienes: Synthesis of 
+Unsymmetrical 1,4-Disubstituted 1,3-Butadienes<br>
+S. E. Denmark, S. A. Tymonko, <i>J. Am. Chem. Soc.</i>, <b>2005</b>, <i>127</i>, 8004-8005.</p>
+<p><a href="../abstracts/lit1/740.shtm"><img src="../abstracts/lit1/740a.gif"></a><br>
+Cross-Coupling of Alkynylsilanols with Aryl Halides Promoted by Potassium 
+
+Trimethylsilanolate<br>
+S. E. Denmark, S. A. Tymonko, <i>J. Org. Chem.</i>, <b>2003</b>,
+
+<i>68</i>, 9151-9154.</p>
+<p><a href="../abstracts/lit1/738.shtm"><img src="../abstracts/lit1/738b.gif"></a><br>
+Palladium-Catalyzed Cross-Coupling Reactions of Substituted 
+Aryl(dimethyl)silanols<br>
+S. E. Denmark, M. H. Ober, <i>Adv. Synth. Catal.</i>, <b>2004</b>,
+<i>346</i>, 1703-1715.</p>
+<p><a href="../abstracts/lit2/362.shtm">
+<img src="../abstracts/lit2/362b.gif"></a><br>
+Cross-Coupling of Aromatic Bromides with Allylic Silanolate Salts<br>
+S. E. Denmark, N. S. Werner, <i>J. Am. Chem. Soc.</i>, <b>2008</b>, <i>
+130</i>, 16382-16393.</p>
+
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

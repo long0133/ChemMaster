@@ -1,0 +1,205 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Vicarious Nucleophilic Substitution</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+	<a href="/related/vicarious+nucleophilic+substitution.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="../synthesis/C1C/arenes/alkylations.shtm">Synthesis of substituted 
+arenes</a></p>
+
+</div>
+<h1>Vicarious Nucleophilic Substitution (VNS)</h1>
+<p><img border="0" src="vicari1.GIF"><p>Vicarious Nucleophilic Substitution 
+allows the nucleophilic replacement of hydrogen in nitroaromatics and 
+heteroaromatics by using carbanions that bear leaving groups at the nucleophilic 
+center.</p>
+<hr>
+<h2>Mechanism of the Vicarious Nucleophilic Substitution</h2>
+<p>It was well known that polynitroarenes form stable adducts with various 
+nucleophiles (Meisenheimer complexes) and that bond formation to carbon atoms 
+bearing hydrogen is faster than to those bearing other substituents, including 
+halogens. However, no general nucleophilic replacement of hydrogen was known 
+until the end of the 1970s, when Mieczys&#322;aw Makosza began elaborating the direct 
+nucleophilic replacement of hydrogen in electrophilic arenes.</p>
+<p>He hypothesized that &#963;-adducts formed from carbanions that contain leaving 
+groups at the carbanionic center proceed to lose the leaving group. This was 
+first proven by treatment of nitrobenzene with chloromethyl phenyl sulfone.</p>
+<p><img border="0" src="vicari2.GIF"></p>
+<p>As the chloride in this case acts vicariously as a leaving group, the 
+reaction was named &quot;vicarious nucleophilic substitution of hydrogen&quot; (VNS).</p>
+<p>In typical vicarious nucleophilic substitutions, nitroarenes react with 
+carbanions that are usually generated from active methylenes by reaction with a 
+base that is also consumed in a later elimination step. Thus, the reaction runs 
+best with more than two equivalents of a strong base. The proper choice of 
+solvent and base assures a fast deprotonation of the active methylenes and a 
+fast &#946;-elimination from the &#963;-adducts. The nitrobenzylic carbanions that form 
+are highly colored (blue, red, etc.), which offers some diagnostic value. Acidic 
+work-up leads to the products.</p>
+<p><img border="0" src="vicari3.GIF"></p>
+<p>For VNS of substituted nitroarenes: 4-substituted nitroarenes give only one product 
+(VNS <i>ortho</i> to nitro group), whereas 2- and 3-substituted 
+nitroarenes normally lead to mixtures of isomeric products (VNS <i>ortho</i> and
+<i>para</i> to nitro group). In halonitroarenes, 
+VNS is normally faster than aromatic nucleophilic substitution of halogen, 
+except for 2- or 4-F-substituted nitroarenes where fluoride is a superior 
+leaving group.</p>
+<p>Nucleophilic substitution is disfavored by direct conjugation of anions, such 
+as in the case of nitrophenolates. As the nitrobenzylic carbanions themselves do 
+not add nucleophiles, the reaction is very selective for monosubstitution. 
+However, a second or third nitro group substituent compensates the negative 
+charge, although here the rates of introduction of the substituents are very 
+different.</p>
+<p><img border="0" src="vicari4.GIF"></p>
+<p>VNS reactions have been reported between chloromethyl sulfone and 
+heterocycles such as 2- and 3-nitrothiophenes, 2-nitrofurans, 2-, 3- and 
+4-nitropyridines and many others.</p>
+<p><img border="0" src="vicari5.GIF"></p>
+<p>For nitropyrroles, replacement of the acidic N-H by an alkyl group is 
+necessary because the nitropyrrole anion itself does not undergo VNS.</p>
+<p>For carbanions stabilized with sulfonyl groups or phosphorus-containing 
+substituents, chloride is a convenient leaving group. For &#945;-cyanoalkylation, 
+though, (thio-)phenoxy nitriles (leaving group: PhO or PhS) often assure better 
+yields, because the chloronitriles are frequently unstable in basic media or 
+undergo fast self-condensation. For &#945;-carboalkoxyalkylation, carbanions of 
+esters that contain PhS are of general use, although ethyl &#945;-chloropropionate 
+and &#945;-chlorobutyrate also afford VNS products, often in good yields. The 
+following are some examples of suitable nucleophiles:</p>
+<p><img border="0" src="vicari6.GIF"></p>
+<p>As both the addition and elimination step are sensitive to steric effects, 
+tertiary carbanions (R: Me, Ph,...) react preferably at the para position.</p>
+<p>A general overview of VNS, including detailed mechanistic discussions and 
+examples dealing with the synthesis of heterocycles in which VNS is used for 
+ring closure, can be found in a review written by Makosza and Winiarski (<i>Acc. 
+Chem. Res.</i> <b>1987</b>, <i>20</i>, 282.
+<a target="_blank" href="http://dx.doi.org/10.1021/ar00140a003">DOI</a>). For recent 
+applications of VNS, including protocols for amination and hydroxylation, please 
+also refer to the recent literature section in this site.</p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit1/819.shtm"><img src="../abstracts/lit1/819a.gif"></a><br>
+<i>para</i>-Formylation of nitroarenes via vicarious nucleophilic substitution of 
+hydrogen with tris(benzotriazol-1-yl)methane<br>
+A. R. Katritzky, L. Xie, <i>Tetrahedron Lett.</i>, <b>1996</b>,
+<i>37</i>, 347-350.</p>
+<p><a href="../abstracts/lit1/817.shtm"><img src="../abstracts/lit1/817a.gif"></a><br>
+1,1,1-Trimethylhydrazinium Iodide: A Novel, Highly Reactive Reagent for 
+Aromatic Amination via Vicarious Nucleophilic Substitution of Hydrogen<br>
+P. F. Pagoria, A. R. Mitchell, R. D. Schmidt, <i>J. Org. Chem.</i>, <b>1996</b>,
+<i>61</i>, 2934-2935.</p>
+<p><a href="../abstracts/lit1/815.shtm"><img src="../abstracts/lit1/815a.gif"></a><br>
+Hydroxylation of Nitroarenes with Alkyl Hydroperoxide Anions via Vicarious 
+Nucleophilic Substitution of Hydrogen<br>
+M. Makosza, K. Sienkiewicz, <i>J. Org. Chem.</i>, <b>1998</b>,
+<i>63</i>, 4199-4208.</p>
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

@@ -1,0 +1,237 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Mitsunobu Reaction</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+<a href="/related/mitsunobu+reaction.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="appel-reaction.shtm">Appel Reaction</a><br>
+<a href="staudinger-reaction.shtm">Staudinger Reaction</a><br>
+<a href="../synthesis/C1O/esters/esterifications.shtm">Synthesis of esters</a></p>
+
+</div>
+<h1>Mitsunobu Reaction</h1>
+<p><img src="Mitsun1.gif" width="345" height="73"></p>
+<p><img src="Mitsun2.gif" width="338" height="53"></p>
+<p>The 
+Mitsunobu Reaction allows the conversion of primary and secondary 
+alcohols to esters, phenyl ethers, thioethers and various other 
+compounds. The nucleophile employed should be acidic, since one of the 
+reagents (<a href="../chemicals/oxidations/diethylazodicarboxylate-dead.shtm">DEAD</a>, diethylazodicarboxylate) must be protonated during the 
+course of the reaction to prevent from side reactions.</p>
+<p>Suitable 
+nitrogen nucleophiles include phthalimide or hydrogen azide; subsequent 
+hydrolysis (in the case of using phthalimide, see
+<a href="gabriel-synthesis.shtm"> Gabriel Synthesis</a>) or selective 
+reduction (in the case of azide formation, see
+<a href="staudinger-reaction.shtm"> Staudinger Reaction</a>) makes the 
+corresponding amines accessible.</p>
+<hr>
+<h2>Mechanism of the Mitsunobu Reaction</h2>
+<p>The <a href="../chemicals/reductions/triphenylphosphine.shtm">triphenylphosphine</a> combines with DEAD to generate a phosphonium 
+intermediate that binds to the alcohol oxygen, activating it as a leaving group. 
+Substitution by the carboxylate, mercaptyl, or other nucleophile completes the 
+process.</p>
+<p><img src="Mitsun2a.gif" width="603" height="119"></p>
+<p><img src="Mitsun3.gif" width="588" height="197"></p>
+<p>The reaction proceeds with clean inversion, which makes the Mitsunobu 
+Reaction with secondary alcohols a powerful method for the inversion of 
+stereogenic centers in natural product synthesis. </p>
+<p><img src="Mitsun4.gif" width="495" height="92"></p>
+<p>Side Reaction:</p>
+<p><img src="Mitsun5.gif" width="422" height="115"></p>
+<p>New protocols have been developed which allow better removal of side products 
+and/or the conversion of more basic nucleophiles. </p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit3/976.shtm"><img src="../abstracts/lit3/976a.gif"></a><br>
+Mitsunobu Reaction with 4-(Diphenylphosphino)benzoic Acid: A 
+Separation-Friendly Bifunctional Reagent that Serves as Both a Reductant and a 
+Pronucleophile<br>
+N. Muramoto, K. Yoshino, T. Misaki, T. Sugimura, <i>Synthesis</i>, <b>2013</b>, <i>45</i>, 
+931-935.</p>
+<p><font size="1"><a href="../abstracts/lit2/162.shtm">
+<img src="../abstracts/lit2/162a.gif"></a></font><br>
+Easily Prepared Azopyridines As Potent and Recyclable Reagents for Facile 
+Esterification Reactions. An Efficient Modified Mitsunobu Reaction<br>
+N. Iranpoor, H. Firouzabadi, D. Khalili, S. Motevalli, <i>J. Org. Chem.</i>, <b>2008</b>,
+
+<i>73</i>, 4882-4887.</p>
+<p><src="../abstracts/lit1/469a.gif"><a href="../abstracts/lit1/469.shtm">
+<img src="../abstracts/lit1/469a.gif"></a><br>
+Simplification of the Mitsunobu Reaction. Di-<i>p</i>-chlorobenzyl Azodicarboxylate: 
+A New Azodicarboxylate<br>
+B. H. Lipshutz, D. W. Chung, B. Rich, R. Corral, <i>Org. Lett.</i>, <b>2006</b>,
+<i>8</i>, 5069-5072.</p>
+<p><a href="../abstracts/lit2/438.shtm"><img src="../abstracts/lit2/438a.gif"></a><br>
+Mitsunobu Approach to the Synthesis of Optically Active &#945;,&#945;-Disubstituted 
+
+Amino Acids<br>
+J. E. Green, D. M. Bender, S. Jackson, M. J. O'Donnell, J. R. McCarthy, <i>Org. Lett.</i>, <b>2009</b>,
+
+<i>11</i>, 807-810.</p>
+<p><a href="../abstracts/literature/045.shtm"><img src="../abstracts/literature/045a.gif"></a><br>
+Fluorous Mitsunobu reagents and reactions<br>
+S. Dandapani, D. P. Curran, <i>Tetrahedron</i>,
+<b>2002</b>,<i>  58</i>, 3855-3864.</p>
+<p><a href="../abstracts/literature/010.shtm"><img src="../abstracts/literature/010a.gif"></a><br>
+A convenient Two-Step Procedure for the Synthesis of Substituted Allylic Amines 
+from Allylic Alcohols<br>
+S. E. Sen, S. L. Roach, <i>Synthesis</i>, <b>1995</b>, 756-758.</p>
+<p><a href="../abstracts/literature/014.shtm"><img src="../abstracts/literature/014a.gif"></a><br>
+Use of Sonication for the Coupling of Sterically Hindered Substrates in the 
+Phenolic Mitsunobu Reaction<br>
+S. D. Lepore, Y. He, <i>
+J. Org. Chem., </i><b>2003</b>, <i>68</i>, 8261-8263.</p>
+<p><a href="../abstracts/lit1/373.shtm"><img src="../abstracts/lit1/373a.gif"></a><br>
+Organocatalytic Mitsunobu Reactions<br>
+T. Y. S. But, P. H. Toy, <i>J. Am. Chem. Soc.</i>, <b>2006</b>, <i>
+128</i>, 9636-9637.</p>
+<p><a href="../abstracts/literature/069.shtm"><img src="../abstracts/literature/069a.gif" width="396" height="66"></a><br>
+Carbon Nucleophiles in the Mitsunobu Reaction. Mono and Dialkylation of 
+Bis(2,2,2-trifluorethyl) Malonates<br>
+J. M. Takacs, Z. Xu, X.-T. Jiang, A. P. Leonov, G. C. Theriot, <i>Org. Lett.</i>, <b>2002</b>, <i>4</i>, 3843-3845.</p>
+<p><a href="../abstracts/lit2/133.shtm"><img src="../abstracts/lit2/133a.gif"></a><br>
+<i>O</i>-TBS-<i>N</i>-tosylhydroxylamine: A Reagent for Facile Conversion of 
+
+Alcohols to Oximes<br>
+K. Kitahara, T. Toma, J. Shimokawa, T. Fukuyama, <i>Org. Lett.</i>, <b>2008</b>,
+
+<i>10</i>, 2259-2261.</p>
+<p><a href="../abstracts/lit2/020.shtm"><img src="../abstracts/lit2/020a.gif"></a><br>
+An Efficient, One-Pot Synthesis of <i>S</i>-Alkyl Thiocarbamates from the 
+Corresponding Thiols Using the Mitsunobu Reagent<br>
+D. Chaturvedi, N. Mishra, V. Mishra, <i>Synthesis</i>, <b>2008</b>, 
+
+355-357.</p>
+<p><a href="../abstracts/literature/038.shtm"><img src="../abstracts/literature/038b.gif"></a><br>
+Synthesis of <i>N</i>-H vinylaziridines: a comparative study<br>
+B. Olofsson, R. Wijtmans, P. Somfai, <i>Tetrahedron</i>, <b>2002</b>,<i>  58</i>, 5979-5982.</p>
+<p><a href="../abstracts/lit1/408.shtm"><img src="../abstracts/lit1/408a.gif"></a><br>
+Exploration of the Mitsunobu Reaction with Tosyl- and Boc-Hydrazones as 
+Nucleophilic Agents<br>
+J. M. Keith, L. Gomez, <i>J. Org. Chem.</i>, <b>2006</b>, <i>71</i>, 7113-7116.</p>
+<p><a href="../abstracts/lit2/522.shtm"><img src="../abstracts/lit2/522a.gif"></a><br>
+Single-Step Process for the Reductive Deoxygenation of Unhindered Alcohols<br>
+A. G. Myers, M. Movassaghi, B. Zheng, <i>J. Am. Chem. Soc.</i>, <b>
+
+1997</b>, <i>119</i>, 8572-8573.</p>
+<p><a href="../abstracts/literature/300.shtm">
+<img src="../abstracts/literature/300a.gif"></a><br>
+Conversion of Alcohols, Thiols, Carboxylic Acids, Trimethylsilyl Ethers, and 
+Carboxylates to Thiocyanates with Triphenylphosphine/Diethylazodicarboxylate/NH<sub>4</sub>SCN<br>
+N. Iranpoor, H. Firouzabadi, B. Akhlaghinia, R. Azadi, <i>Synthesis</i>, <b>2004</b>, 
+92-96.</p>
+<img src="http://vg05.met.vgwort.de/na/e68872b7d25e4fb5928fb967b712964d" width="1" height="1" alt="">
+
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

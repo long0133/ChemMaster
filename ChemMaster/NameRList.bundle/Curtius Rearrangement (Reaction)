@@ -1,0 +1,189 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Curtius Rearrangement</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+<a href="/related/curtius+rearrangement.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="schmidt-reaction.shtm">Schmidt Reaction</a></p>
+
+</div>
+<h1>Curtius Rearrangement</h1>
+<p><img src="curtiu1.gif" width="222" height="53"></p>
+<p>The Curtius Rearrangement is the thermal decomposition of carboxylic azides to produce an isocyanate. These intermediates may be isolated, or their corresponding reaction or hydrolysis products may be
+obtained.</p>
+<p>The reaction sequence - including subsequent reaction with water which leads to amines - is named the Curtius Reaction. This reaction is similar to the
+<a href="schmidt-reaction.shtm">Schmidt
+Reaction</a> with acids, differing in that the acyl azide in the present case is prepared from the acyl halide and an azide salt.</p>
+<p><img src="curtiu2.gif" width="385" height="53"></p>
+<hr>
+<h2>Mechanism of the Curtius Rearrangement</h2>
+<p>Preparation of azides:</p>
+<p><img src="curtiu1a.gif" width="548" height="84"></p>
+<p>Decomposition:</p>
+<p><img src="curtiu5.gif" width="255" height="50"></p>
+<p>Reaction with water to the unstable carbamic acid derivative which will undergo spontaneous decarboxylation:</p>
+<p><img src="curtiu6.gif" width="497" height="85"></p>
+<p><img src="curtiu7.gif" width="263" height="72"></p>
+<p>Isocyanates are versatile starting materials:</p>
+<p><img src="curtiu3.gif" width="420" height="129"></p>
+<p>Isocyanates are also of high interest as monomers for polymerization work and in the derivatisation of
+biomacromolecules.</p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit3/259.shtm"><img src="../abstracts/lit3/259a.gif"></a><br>
+Propylphosphonic Anhydride (T3P®)-Mediated One-Pot Rearrangement of 
+
+Carboxylic Acids to Carbamates<br>
+J. K. Augustine, A. Bombrun, A. B. Mandal, P. Alagarsamy, R. N. Atta, P. Selvam, <i>Synthesis</i>, <b>2011</b>, 
+
+1477-1483.</p>
+<p><a href="../abstracts/literature/977.shtm"><img src="../abstracts/literature/977a.gif"></a><br>
+Boc-Protected Amines via a Mild and Efficient One-Pot Curtius Rearrangement<br>
+H. Lebel, O. Leogane, <i>Org. Lett.</i>, <b>2005</b>, <i>7</i>, 4107-4110.</p>
+<p><a href="../abstracts/lit2/432.shtm"><img src="../abstracts/lit2/432a.gif"></a><br>
+One-Pot Synthesis of Ureido Peptides and Urea-Tethered Glycosylated Amino 
+
+Acids Employing Deoxo-Fluor and TMSN<sub>3<br>
+</sub>H. P. Hemantha, G. Chennakrishnareddy, T. M. Vishwanatha, V. V. Sureshbabu, <i>Synlett</i>, <b>2009</b>, 
+
+407-410.</p>
+<p><a href="../abstracts/literature/653.shtm">
+<img src="../abstracts/literature/653b.gif"></a><br>
+Radical Azidonation of Aldehydes<br>
+L. Marinescu, J. Thinggaard, I. B. Thomsen, M. Bols, <i>J.
+Org. Chem., </i><b>2003</b>, <i>68</i>, 9453-9455.</p>
+<p><a href="../abstracts/lit2/222.shtm">
+
+<img src="../abstracts/lit2/222a.gif"></a><br>
+
+Iodobenzene Dichloride in Combination with Sodium Azide for the Effective 
+
+Synthesis of Carbamoyl Azides from Aldehydes<br>
+
+X.-Q. Li, X.-F. Zhao, C. Zhang, <i>Synthesis</i>, <b>2008</b>, 
+
+2589-2593.</p>
+<p><a href="../abstracts/literature/653.shtm">
+<img src="../abstracts/literature/653c.gif"></a><br>
+Radical Azidonation of Aldehydes<br>
+L. Marinescu, J. Thinggaard, I. B. Thomsen, M. Bols, <i>J.
+Org. Chem., </i><b>2003</b>, <i>68</i>, 9453-9455.</p>
+<p><a href="../abstracts/literature/779.shtm">
+<img src="../abstracts/literature/779e.gif"></a><br>
+An Efficient Synthesis of a Probe for Protein Function: 2,3-Diaminopropionic
+Acid with Orthogonal Protecting Groups<br>
+E. A. Englund, H. N. Gopi, D. H. Appella, <i>Org. Lett., </i><b>2004</b>, <i>
+6</i>, 213-215.</p>
+
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

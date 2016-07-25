@@ -1,0 +1,189 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Corey-Seebach Reaction</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+<a href="/related/corey-seebach.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="../synthesis/C1C/carbonyls/acylations.shtm">Synthesis of carbonyl compounds</a><br>
+<a href="../synthesis/C1C/carbonyls/b-hydroxyketones-umpolung.shtm">Synthesis of 
+&#946;-hydroxy ketones</a><p>
+
+</div>
+<h1>Corey-Seebach Reaction<br>
+Seebach Umpolung</h1>
+<p><img src="corey-23.GIF"></p>
+<p>The Corey-Seebach Reaction uses lithiated 1,3-dithianes as nucleophilic 
+acylating agents.</p>
+<hr>
+<h2>Mechanism of the Corey-Seebach Reaction</h2>
+<p>The Corey-Seebach Reaction allows a reversal of the normal reactivity of acyl 
+carbon atoms, which combine only with nucleophiles. The German term &quot;Umpolung&quot; 
+is widely used for this inversion of reactivity.</p>
+<p><img src="corey-24.GIF"></p>
+<p>The lithiated 1,3-dithiane can be viewed as an masked acyl anion that is able 
+to react with various electrophiles.</p>
+<p>The acidity difference of hydrogen atoms adjacent to divalent sulfur compared 
+to oxygen stems from the greater polarizability of sulfur and the longer 
+C-S-bond length; d-orbitals are not involved. In most cases treatment of 
+dithianes with <i>n</i>-BuLi at temperatures of -30 °C is sufficient for the 
+preparation of the lithio-derivatives. With pK<sub>A</sub> values of approximately 30, 
+lithiated dithianes can react with aldehydes or ketones, epoxides and acid 
+derivatives, but also with alkyl halides without competing elimination reactions.</p>
+<p><img src="corey-25.GIF"></p>
+<p>Umpolung offers access to a wide range of products, especially
+<a href="../synthesis/C1C/carbonyls/a-diketones.shtm">1,2-diketones</a> and
+<a href="../synthesis/C1C/carbonyls/acyloins-benzoins.shtm">&#945;-hydroxy ketones</a>, 
+products that cannot be obtained using the normal reactivity (for example through
+<a href="aldol-addition.shtm">aldol addition</a>).</p>
+<p>Among the other thioacetals that could be used for Umpolung, metallated 
+dithiolanes undergo fragmentation and disproportionate to ethene and 
+dithiocarboxylates:</p>
+<p><img src="corey-26.GIF"></p>
+<p>1,3-Dithianes are readily prepared from aldehydes (for an overview, see
+<a href="../protectivegroups/carbonyl/1,3-dithiolanes.htm">1,3-dithianes as 
+protecting group</a>) and offer high stability towards acids and bases. 
+Therefore, use of the S,S-acetal unit is especially useful in multistep 
+synthesis. A crucial step is the hydrolysis of S,S-acetals, the difficulty of 
+which is due to the excellent nucleophilicity of sulfur.</p>
+<p><img src="corey-27.GIF"></p>
+<p>Only irreversible removal of the dithiol or of the solvolysis products can 
+push the equilibrium to the right. Methods of choice are transacetalization to a 
+highly reactive carbonyl derivative, alkylation to sulfide, oxidation of the 
+thiol (for recent methods see
+<a href="../protectivegroups/carbonyl/1,3-dithiolanes.htm">deprotection of 
+1,3-dithianes</a>) and formation of metal thiolates, for which mercury(II) salts 
+are frequently used.</p>
+<p>For a review on &quot;Umpolung of the Reactivity of Carbonyl Compounds Through 
+Sulfur-Containing Reagents&quot; please check out a publication by Seebach (<i>Synthesis</i>
+<b>1977</b>, 357.
+<a target="_blank" href="http://dx.doi.org/10.1055/s-1977-24412">DOI</a>).</p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/literature/409.shtm">
+<img src="../abstracts/literature/409a.gif"></a><br>
+Alkylation of 2-Lithio-1,3-dithianes with Arenesulfonates of Primary Alcohols<br>
+D. Seebach, E.-M. Wilka, <i>Synlett</i>, 
+<b>1976</b>, 476-477.</p>
+<p><a href="../abstracts/literature/407.shtm">
+<img src="../abstracts/literature/407a.gif"></a><br>
+Anion Relay Chemistry: An Effective Tactic for Diversity Oriented Synthesis<br>
+A. B. Smtih, III, M. Xiang, <i>J. Am. Chem. Soc.</i>, <b>2006</b>, <i>
+128</i>, 66-67.</p>
+<p><a href="../abstracts/literature/411.shtm">
+<img src="../abstracts/literature/411a.gif"></a><br>
+Trimethylene Dithioacetals of Carbohydrates, Part 6: C-C Coupling Reactions 
+of Dilithiated <i>N</i>-Acetyl-D-glucosamine Trimethylene Dithioacetal Derivatives<br>
+Y.-L. Chen, R. Leguijt, H. Redlich, R. Fröhlich, <i>
+Synthesis</i>, <b>2006</b>, 4212-4218.</p>
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

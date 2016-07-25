@@ -1,0 +1,213 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Jones Oxidation</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+	<a href="/related/jones+oxidation.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="corey-kim-oxidation.shtm">Corey-Kim Oxidation</a><br>
+<a href="dess-martin-oxidation.shtm">Dess-Martin Oxidation</a><br>
+<a href="swern-oxidation.shtm">Swern Oxidation</a><br>
+<a href="../synthesis/C2O/aldehydes/oxidationsalcohols.shtm">Synthesis of 
+aldehydes</a><br>
+<a href="../synthesis/C2O/carboxylicacids/oxidationsalcohols.shtm">Synthesis of 
+carboxylic acids</a><br>
+<a href="../synthesis/C2O/ketones/oxidationsalcohols.shtm">Synthesis of ketones</a></p>
+
+</div>
+<h1>Jones Oxidation</h1>
+<p><img border="0" src="jones-1.GIF"></p>
+<p><img border="0" src="jones-2.GIF"></p>
+<p>The Jones Oxidation allows a relatively inexpensive conversion of secondary 
+alcohols to ketones and of most primary alcohols to carboxylic acids. The 
+oxidation of primary allylic and benzylic alcohols gives aldehydes. Jones 
+described for the first time a conveniently and safe procedure for a chromium (VI)-based 
+oxidation, that paved the way for some further developments such as Collins 
+Reaction and
+<a href="../chemicals/oxidations/pyridinium-dichromate-pdc.shtm">pyridinium 
+dichromate</a>, which also enabled the oxidation of primary alcohols to 
+aldehydes.</p>
+<hr>
+<h2>Mechanism of the Jones Oxidation</h2>
+<p>The <a href="../chemicals/oxidations/jones-reagent.shtm">Jones Reagent</a> is 
+a mixture of chromic trioxide or sodium dichromate in diluted sulfuric acid, 
+which forms chromic acid in situ.</p>
+<p><img border="0" src="../chemicals/oxidations/jones-3.GIF"></p>
+<p>The alcohol and chromic acid form a chromate ester that either reacts 
+intramolecularly or intermolecularly in the presence of a base (water) to yield 
+the corresponding carbonyl compound:</p>
+<p><img border="0" src="jones-6.GIF"></p>
+<p>Aldehydes that can form hydrates in the presence of water are further 
+oxidized to carboxylic acids:</p>
+<p><img border="0" src="jones-7.GIF"></p>
+<p>Some alcohols such as benzylic and allylic alcohols give aldehydes that do 
+not form hydrates in significant amounts; these can therefore be selectively 
+oxidized with unmodified Jones Reagent to yield aldehydes. Although the reagent 
+is very acidic, the substrate in acetone is essentially titrated with the 
+oxidant solution and only very acid-sensitive groups are incompatible. For 
+example esters, even <i>tert</i>-butyl esters, remain unchanged. The 
+concentration of sulfuric acid can be decreased to minimize side reactions, 
+although the oxidation power increases too.</p>
+<p>Disproportionations and single electron transfers lead to chromium (V) acid 
+and stable Cr(III) hydroxide. The chromium (V) acid promotes a two-electron 
+oxidation of an alcohol and becomes Cr(III). Any residues of
+<a href="../chemicals/oxidations/chromium-compounds.shtm">toxic Cr(V) and Cr(VI) 
+compounds</a> can be destroyed by the addition of an excess of 2-propanol once 
+the intended reaction is complete. The formation of Cr(III) is indicated by a 
+color change to green.</p>
+<p>For the synthesis of aldehydes, the Collins Reaction or use of more modern - 
+although more expensive - chromium (VI) reagents such as
+<a href="../chemicals/oxidations/pyridinium-chlorochromate-pcc.shtm">PCC</a> and
+<a href="../chemicals/oxidations/pyridinium-dichromate-pdc.shtm">PDC</a> can be 
+an appropriate choice. If toxic chromium compounds must be avoided, there are 
+some greener alternative procedures available. For example, molecular oxygen can 
+be used in the presence of palladium as catalyst:
+<a href="../synthesis/C2O/aldehydes/oxidationsalcohols.shtm">synthesis of 
+aldehydes</a>, <a href="../synthesis/C2O/ketones/oxidationsalcohols.shtm">synthesis of ketones</a>,
+<a href="../synthesis/C2O/carboxylicacids/oxidationsalcohols.shtm">synthesis of 
+carboxylic acids</a>.</p>
+<p>Some newer protocols are available in which a catalytic amount of CrO<sub>3</sub> 
+in aqueous solution is used in tandem with a strong stoichiometric oxidant, 
+which is able to reoxidize Cr(IV) but does not interfere with the organic 
+compounds. These are also interesting for the development of greener methods, 
+and examples can be found in the recent literature section.</p>
+<p>A full review of chromium-based reagents can be found in the book written by 
+
+Tojo and Fernández (<a href="../books/reviews/0387236074.shtm">Oxidation of 
+
+Alcohols to Aldehydes and Ketones</a>, Springer Berlin, <b>2006</b>, 1-97.).</p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit1/727.shtm"><img src="../abstracts/lit1/727a.gif"></a><br>
+Selective oxidation of allylic alcohols with chromic acid<br>
+K. E. Harding, L. M. May, K. F. Dick, <i>J. Org. Chem.</i>, <b>1975</b>,
+
+<i>40</i>, 1664-1665.</p>
+<p><a href="../abstracts/lit1/724.shtm"><img src="../abstracts/lit1/724a.gif"></a><br>
+A novel chromium trioxide catalyzed oxidation of primary alcohols to the 
+carboxylic acids<br>
+M. Zhao, J. Li, Z. Song, R. Desmond, D. M. Tschaen, E. J. J. Grabowski, P. J. 
+Reider, <i>Tetrahedron Lett.</i>, <b>1998</b>,
+<i>39</i>, 5323-5326.</p>
+<p><a href="../abstracts/literature/940.shtm">
+<img src="../abstracts/literature/940a.gif"></a><br>
+Selective Oxidation of Benzylic Alcohols and TBDMS Ethers to Carbonyl
+Compounds with CrO<sub>3</sub>-H<sub>5</sub>IO<sub>6</sub><br>
+S. Zhang, L. Xu, M. L. Trudell, <i>Synthesis</i>, <b>2005</b>, 1757-1760.</p>
+<p><a href="../abstracts/literature/940.shtm">
+<img src="../abstracts/literature/940b.gif"></a><br>
+Selective Oxidation of Benzylic Alcohols and TBDMS Ethers to Carbonyl
+Compounds with CrO<sub>3</sub>-H<sub>5</sub>IO<sub>6</sub><br>
+S. Zhang, L. Xu, M. L. Trudell, <i>Synthesis</i>, <b>2005</b>, 
+1757-1760.</p>
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

@@ -1,0 +1,171 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Van Leusen Imidazole Synthesis</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+	<a href="/related/van+leusen+imidazole+synthesis.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="van-leusen-oxazole-synthesis.shtm">Van Leusen Oxazole Synthesis</a><br>
+<a href="van-leusen-reaction.shtm">Van Leusen Reaction</a><br>
+<a href="../synthesis/heterocycles/imidazoles.shtm">Synthesis of imidazoles</a></p>
+
+</div>
+<h1>Van Leusen Imidazole Synthesis<br>
+Van Leusen Three-Component Reaction (vL-3CR)</h1>
+<p><img border="0" src="van-leusen-imidazole-synthesis-1.GIF"></p>
+<p>The Van Leusen Imidazole Synthesis allows the preparation of imidazoles from 
+aldimines by reaction with tosylmethyl isocyanide 
+(TosMIC). The reaction has later been expanded to a two-step synthesis in which 
+the aldimine is generated <i>in situ</i>: the Van Leusen Three-Component 
+Reaction (vL-3CR).</p>
+<p><img border="0" src="van-leusen-imidazole-synthesis-2.GIF"></p>
+<hr>
+<h2>Mechanism of the Van Leusen Imidazole Synthesis</h2>
+<p>The mechanism according to a publication by Van 
+Leusen (<i>J. Org. Chem.</i>, <b>
+1977</b>, <i>42</i>, 1153-1159. <a href="../abstracts/lit3/004.shtm">Abstract</a>) 
+is driven by TosMIC, which contains a reactive isocyanide carbon, an active 
+methylene group and a leaving group.</p>
+<p><img border="0" src="van-leusen-reaction-2.GIF"></p>
+<p>The CH<sub>2</sub>N=C moiety can undergo a stepwise cycloaddition to a 
+polarized double bond under basic conditions.</p>
+<p><img border="0" src="van-leusen-imidazole-synthesis-3.GIF"></p>
+<p>Elimination of <i>p</i>-toluenesulfinic acid (TosH) from the intermediate 
+4-tosyl-2-imidazoline provides a 1,5-disubstituted imidazole::</p>
+<p><img border="0" src="van-leusen-imidazole-synthesis-4.GIF"></p>
+<p>The aldimine can also be generated in situ by condensation of an amine with 
+an aldehyde in approximately half an hour. The water formed as a byproduct does 
+not interfere with the cycloaddition, and addition of drying reagents such as 
+MgSO<sub>4</sub> is not needed. However, despite the name, the vL-3CR is not a 
+true
+<a href="../topics/multicomponent-reactions.shtm">multicomponent reaction</a>, 
+as the components react stepwise. Otherwise, in the absence of the initial imine 
+formation, the <a href="van-leusen-oxazole-synthesis.shtm">reaction of aldehydes 
+with TosMIC</a> leads to oxazoles.</p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit3/004.shtm"><img src="../abstracts/lit3/004a.gif"></a><br>
+Chemistry of sulfonylmethyl isocyanides. 12. Base-induced cycloaddition of 
+sulfonylmethyl isocyanides to carbon,nitrogen double bonds. Synthesis of 
+1,5-disubstituted and 1,4,5-trisubstituted imidazoles from aldimines and imidoyl 
+chlorides<br>
+A. M. Van Leusen, J. Wildeman, O. H. Oldenziel, <i>J. Org. Chem.</i>, <b>
+1977</b>, <i>42</i>, 1153-1159.</p>
+<p><a href="../abstracts/literature/932.shtm">
+<img src="../abstracts/literature/932a.gif"></a><br>
+Fused bicyclic imidazole rings have been prepared in good yields by a 
+sequence of the van Leusen three-component reaction and the ring-closing 
+metathesis reaction.<br>
+V. Gracias, A. F. Gasiecki, S. W. Djuric, <i>Org. Lett.</i>, <b>2005</b>, <i>7</i>, 3183-3186.</p>
+
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

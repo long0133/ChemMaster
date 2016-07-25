@@ -1,0 +1,215 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Bohlmann-Rahtz Pyridine Synthesis</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+	<a href="/related/bohlmann-rahtz+pyridine+synthesis.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="friedlaender-synthesis.shtm">Friedlaender Synthesis</a><br>
+<a href="hantzsch-dihydropyridine-synthesis.shtm">Hantzsch Dihydropyridine 
+Synthesis</a><br>
+<a href="../synthesis/heterocycles/pyridines.shtm">Synthesis of pyridines</a></p>
+
+</div>
+<h1>Bohlmann-Rahtz Pyridine Synthesis</h1>
+<p><img border="0" src="bohlma1.GIF"><p>The Bohlmann-Rahtz Pyridine Synthesis 
+allows the generation of substituted pyridines in two steps. Condensation of 
+enamines with ethynylketones leads to an aminodiene intermediate that, after 
+heat-induced <i>E</i>/<i>Z</i> isomerization, undergoes a cyclodehydration to 
+yield 2,3,6-trisubstituted pyridines.</p>
+<hr>
+<h2>Mechanism of the Bohlmann-Rahtz Pyridine Synthesis</h2>
+<p>The reaction is related to the well-known
+<a href="hantzsch-dihydropyridine-synthesis.shtm">Hantzsch Dihydropyridine 
+Synthesis</a>, in which <i>in situ</i>-generated enone and enamine species give 
+dihydropyridines. The direct use of ynones instead of enones obviates the need 
+for an aromatizing oxidation step to get the target pyridines. Although the 
+Bohlmann-Rahtz Synthesis is more versatile, purification of the intermediate and 
+the high temperatures required for the cyclodehydration are significant 
+drawbacks that have limited its synthetic utility. Some of the drawbacks have 
+been overcome recently, making the Bohlmann-Rahtz Synthesis more valuable for 
+the generation of pyridines.</p>
+<p>Although no mechanistic studies have been conducted, intermediates can be 
+characterized by <sup>1</sup>H-NMR, which clearly shows that the main product of 
+the initial <a href="michael-addition.shtm">Michael Addition</a> and subsequent 
+proton transfer is a 2<i>Z</i>-4<i>E</i>-heptadien-6-one, which is isolated and 
+purified by column chromatography. </p>
+<p><img border="0" src="bohlma2.GIF"></p>
+<p>High cyclodehydration temperatures are therefore required to facilitate <i>Z</i>/<i>E</i> 
+isomerizations that are a prerequisite for heteroannelation.</p>
+<p><img border="0" src="bohlma3.GIF"></p>
+<p>Some methods that allow the synthesis of tri- and tetrasubstituted pyridines 
+in a one-step procedure have recently been developed. Instead of using butynone 
+as the substrate, Bagley screened different solvents for the conversion of the 
+less volatile and cheaper 4-(trimethylsilyl)but-3-yn-2-one. It was shown that 
+only EtOH and DMSO are suitable solvents, with EtOH clearly favored as being 
+protic and polar solvent vs. DMSO as a polar aprotic solvent. In both solvents, 
+spontaneous protodesilylation took place. Bagley has also shown that acid 
+catalysis allowed the cyclodehydration to proceed at a significantly lower 
+temperature.</p>
+<p><img border="0" src="bohlma4.GIF"></p>
+<p>As Brønstedt acid catalysis also promotes the conjugate addition, a range of 
+enamines were then reacted with ethynyl ketones in a (5:1) mixture of toluene 
+and acetic acid to afford functionalized pyridines in a single step in good to 
+excellent yields.</p>
+<p><a href="../abstracts/lit1/877.shtm">
+<img src="../abstracts/lit1/877a.gif" width="469" height="88"></a><br>
+M. C. Bagley, J. W. Dale, J. Bower, <i>Synlett</i>, <b>2001</b>,
+1149-1151.</p>
+<p>Following the success of Brønstedt acid catalysis, Bagley investigated the 
+potential of Lewis acid catalysts. The best conditions utilized either 20 mol% 
+ytterbium triflate or 15 mol% zinc bromide in refluxing toluene. Although 
+mechanistic studies were not undertaken, it is assumed that coordination by the 
+catalyst accelerates the Michael Addition, isomerization and cyclodehydration 
+steps. A drawback is the limited compatibility with acid-sensitive substrates. 
+For example, acid-catalyzed decomposition of the starting enamines occurs with
+<i>tert</i>-butylester and cyano as electron withdrawing groups. A mild 
+alternative is the use of Amberlyst-15 ion exchange reagent that allows a simple 
+work up and tolerates <i>tert</i>-butylesters.</p>
+<p>As the enamines are not readily available, and to improve the facility of the 
+process, a three-component reaction was developed using ammonium acetate as the 
+amino group source. In this efficient procedure, the enamine is generated <i>in 
+situ</i> and then reacts with the alkynone present.</p>
+<p><img border="0" src="../abstracts/lit1/881n.gif"></p>
+<p>In a first attempt, AcOH and ZnBr<sub>2</sub> were used as additional 
+catalysts with toluene as solvent, but it has been shown more recently that 
+acid-sensitive substrates react under milder (acid-free) conditions with EtOH as 
+solvent.</p>
+<p><a href="../abstracts/lit1/881.shtm">
+<img src="../abstracts/lit1/881a.gif" width="490" height="94"></a><br>
+X. Xiong, M. C. Bagley, K. Chapaneri, <i>Tetrahedron Lett.</i>, <b>2004</b>,
+<i>45</i>, 6121-6124.</p>
+<p>A review of the Bohlmann-Rahtz Pyridine Synthesis can be found in a recent 
+report by Bagley (<i>Synthesis</i>, <b>2007</b>, 2459.
+<a target="_blank" href="http://dx.doi.org/10.1055/s-2007-986674">DOI</a>). 
+Here, some additional synthetic alternatives are described, such as the use of 
+microwaves, and recent applications such as the synthesis of fused heterocycles 
+and natural products are covered.</p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit1/881.shtm">
+<img src="../abstracts/lit1/881a.gif" width="490" height="94"></a><br>
+A new mild method for the one-pot synthesis of pyridines<br>
+X. Xiong, M. C. Bagley, K. Chapaneri, <i>Tetrahedron Lett.</i>, <b>2004</b>,
+<i>45</i>, 6121-6124.</p>
+<p><a href="../abstracts/lit1/879.shtm">
+<img src="../abstracts/lit1/879a.gif" width="444" height="71"></a><br>
+A new one-step synthesis of pyridines under microwave-assisted conditions<br>
+M. C. Bagley, R. Lunn, X. Xiong, <i>Tetrahedron Lett.</i>, <b>2002</b>,
+<i>43</i>, 8331-8334.</p>
+<p><a href="../abstracts/lit1/877.shtm">
+<img src="../abstracts/lit1/877a.gif" width="469" height="88"></a><br>
+A New Modification of the Bohlmann-Rahtz Pyridine Synthesis<br>
+M. C. Bagley, J. W. Dale, J. Bower, <i>Synlett</i>, <b>2001</b>,
+1149-1151.</p>
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

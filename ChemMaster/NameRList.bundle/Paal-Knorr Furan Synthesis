@@ -1,0 +1,165 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Paal-Knorr Furan Synthesis</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+<a href="/related/paal-knorr+furan+synthesis.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="paal-knorr-pyrrole-synthesis.shtm">Paal-Knorr Pyrrole Synthesis</a><br>
+<a href="paal-knorr-thiophene-synthesis.shtm">Paal-Knorr Thiophene Synthesis</a><br>
+<a href="../synthesis/heterocycles/furans/furans.shtm">Synthesis of furans</a></p>
+
+</div>
+<h1>Paal-Knorr Furan Synthesis</h1>
+<p><img src="paal-k1.GIF"></p>
+<p> The acid-catalyzed cyclization of 1,4-dicarbonyl compounds known as the 
+Paal-Knorr synthesis is one of the most important methods for the 
+preparation of furans. As many methods for the synthesis of 1,4-diones have 
+recently been developed, the synthetic utility of the Paal-Knorr reaction 
+has improved.</p>
+<hr>
+<h2>Mechanism of the Paal-Knorr Furan Synthesis</h2>
+<p><img src="paal-k2.GIF"></p>
+<p>A comparison of the cyclizations of <i>meso</i>- and <i>dl</i>-3,4-diethyl-2,5-hexanediones showed that these compounds cyclize at unequal rates, and that the 
+stereochemical configuration of unchanged dione is preserved during the reaction. 
+These findings are at odds with the commonly accepted mechanism shown here that involves 
+the ring closure of a rapidly formed monoenol.</p>
+<p><img src="paal-k3.GIF"></p>
+<p>The rate of acid-catalyzed enolization is known not to be very sensitive to 
+the structure of the ketone. Since the rate-determining step would be the same 
+for both substrates, the differences in the reaction rate cannot be explained by 
+this mechanism.</p>
+<p>A mechanism in which the substituents would interfere differently in the 
+rate-determining step is shown below. The ease of achieving a suitable 
+conformation for the cyclization is not the same for both molecules:</p>
+<p><img src="paal-k4.GIF"></p>
+<p>A more detailed description can be found in the work by Amarath and Amarath, 
+and references cited therein (<i>J. Org. Chem.</i>, <b>1995</b>, <i>60</i>, 301).</p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/literature/110.shtm"><img src="../abstracts/literature/110b.gif"></a><br>
+Facile Microwave-Mediated Transformations of 2-Butene-1,4-diones and 
+2-Butyne-1,4-diones to Furan Derivatives<br>
+H. S. P. Rao, S. Jothilingam, <i>J. Org. Chem.</i>, <b>2003</b>, <i>68</i>,
+5392-5394.</p>
+<p><a href="../abstracts/literature/109.shtm"><img src="../abstracts/literature/109b.gif"></a><br>
+Synthesis of Tri- and Tetrasubstituted Furans Catalyzed by Trifluoroacetic 
+Acid<br>
+F. Stauffer, R. Neier, <i>Org. Lett.</i>, <b>2000</b>, <i>2</i>,
+3535-3537.</p>
+<p><a href="../abstracts/lit1/066.shtm"><img src="../abstracts/lit1/066b.gif" width="443" height="67"></a><br>
+Microwave-Assisted Paal-Knorr Reaction - Three-Step Regiocontrolled 
+Synthesis of Polysubstituted Furans, Pyrroles and Thiophenes<br>
+G. Minetto, L. F. Raveglia, A. Sega, M. Taddei, <i>Eur. J. Org. Chem.</i>, <b>2005</b>, 
+5277-5288.</p>
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

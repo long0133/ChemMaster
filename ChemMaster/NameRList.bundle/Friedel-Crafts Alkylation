@@ -1,0 +1,185 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Friedel-Crafts Alkylation</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+<a href="/related/friedel-crafts+alkylation.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="friedel-crafts-acylation.shtm">Friedel-Crafts Acylation</a></p>
+
+</div>
+<h1>Friedel-Crafts Alkylation</h1>
+<p><img src="friede2.gif" width="295" height="61"></p>
+<p>This Lewis acid-catalyzed electrophilic aromatic substitution allows the 
+synthesis of alkylated products via the reaction of arenes with alkyl 
+halides or alkenes. Since alkyl substituents activate the arene 
+substrate, polyalkylation may occur. A valuable, two-step alternative is 
+Friedel-Crafts Acylation followed by a carbonyl reduction.</p>
+<hr>
+<h2>Mechanism of the Friedel-Crafts Alkylation</h2>
+<p><img src="Friede13.gif" width="439" height="68"></p>
+<p><img src="Friede14.gif" width="453" height="69"></p>
+<p>Using alkenes : </p>
+<p><img src="Friede11.gif" width="534" height="142"></p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit3/001.shtm"><img src="../abstracts/lit3/001a.gif"></a><br>
+Iron Oxide Nanoparticles Grown on Carboxy-Functionalized Graphite: An 
+
+Efficient Reusable Catalyst for Alkylation of Arenes<br>
+V. Rajpara, S. Banerjee, G. Sereda, <i>Synthesis</i>, <b>2010</b>, 
+
+2835-2840.</p>
+<p><a href="../abstracts/literature/538.shtm">
+<img src="../abstracts/literature/538b.gif" width="339" height="49"></a><br>
+Dicationic Electrophiles from Olefinic Amines in Superacid<br>
+Y. Zhang, A. McElrea, G. V. Sanchez, D. Do, A. Gomez, 
+S. L . Aguirre, R. Rendy, D. A. Klumpp, <i>J. Org. Chem.</i>, <b>2003</b>, <i>68</i>, 5119-5122.</p>
+<p><a href="../abstracts/lit1/776.shtm"><img src="../abstracts/lit1/776a.gif"></a><br>
+Samarium Triflate-Catalyzed Halogen-Promoted Friedel-Crafts Alkylation with 
+Alkenes<br>
+S. Haira, B. Maji, S. Bar, <i>Org. Lett.</i>, <b>2007</b>,
+<i>9</i>, 2783-2786.</p>
+<p><a href="../abstracts/literature/782.shtm">
+<img src="../abstracts/literature/782a.gif"></a><br>
+Dramatic Enhancement of Catalytic Activity in an Ionic Liquid: Highly
+Practical Friedel-Crafts Alkenylation of Arenes with Alkynes Catalyzed by Metal
+Triflates<br>
+C. E. Song, D.-U. Jung, S. Y. Choung, E. J. Roh, S.-G. Lee, <i>Angew. Chem. Int. 
+Ed., </i><b>
+2004</b>, <i>43</i>, 6183-6185.</p>
+<p><a href="../abstracts/lit2/152.shtm"><img src="../abstracts/lit2/152a.gif"></a><br>
+MA-Silica Gel Catalyzed Propargylation of Aromatic Compounds with 
+
+Arylpropargyl Alcohols under Solvent-Free Conditions<br>
+P. Srihari, J. S. S. Reddy, S. S. Mandal, K. Satyanarayana, J. S. Yadav, <i>Synthesis</i>, <b>2008</b>, 
+
+1853-1860.</p>
+<p><a href="../abstracts/lit3/623.shtm"><img src="../abstracts/lit3/623a.gif"></a><br>
+Metal-Free Tandem Friedel&#8211;Crafts/Lactonization Reaction to Benzofuranones 
+Bearing a Quaternary Center at C3 Position<br>
+L. Chen, F. Zhou, T.-D. Shi, J. Zhou, <i>J. Org. Chem.</i>, <b>2012</b>,
+<i>77</i>, 4354-4362.</p>
+<p><font size="1"><a href="../abstracts/lit3/424.shtm">
+<img src="../abstracts/lit3/424b.gif"></a></font><br>
+Addition of Arylboronic Acids to Arylpropargyl Alcohols en Route to Indenes 
+and Quinolines<br>
+J. Panteleev, R. Y. Huang, E. K. J. Lui, M. Lautens, <i>Org. Lett.</i>, <b>2011</b>,
+<i>13</i>, 5314-5317.</p>
+<p><a href="../abstracts/lit1/842.shtm"><img src="../abstracts/lit1/842a.gif"></a><br>
+Conversion of 2-Alkylcinnamaldehydes to 2-Alkylindanones via a Catalytic 
+Intramolecular Friedel-Crafts Reaction<br>
+G. B. Womack, J. G. Angeles, V. E. Fanelli, C. A. Heyer, <i>J. Org. Chem.</i>, <b>
+2007</b>, <i>72</i>, 7046-7049.</p>
+
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

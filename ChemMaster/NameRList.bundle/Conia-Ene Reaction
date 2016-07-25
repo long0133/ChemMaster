@@ -1,0 +1,214 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Conia-Ene Reaction</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+<a href="/related/conia-ene+reaction.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="alder-ene-reaction.shtm">Ene Reaction</a><br>
+<a href="../synthesis/C1C/cyclic/alkanes/cyclopentanes.shtm">Synthesis of 
+cyclopentanes</a><br>
+<a href="../synthesis/C1C/cyclic/alkanes/cyclohexanes.shtm">Synthesis of 
+cyclohexanes</a></p>
+
+</div>
+<h1>Conia-Ene Reaction</h1>
+<p><img src="conia-1.GIF"><p>The Conia-Ene reaction is an intramolecular, 
+thermal or Lewis acid-catalysed reaction of unsaturated carbonyl compounds to 
+yield cyclised products.</p>
+<hr>
+<h2>Mechanism of the Conia-Ene Reaction</h2>
+<p>In the Conia-Ene reaction, enolisation is followed by a concerted 
+1,5-hydrogen shift: </p>
+<p><img src="conia-2.GIF"></p>
+<p>Thus, the Conia-Ene Reaction is an intramolecular variant of the generally 
+intermolecular
+<a href="alder-ene-reaction.shtm">Ene Reaction</a>.</p>
+<p>Reactions that generate cyclopentane and cyclohexane derivatives in good 
+yields normally proceed at 350°C, but medium-sized rings need higher 
+temperatures and the yield is considerably lower.</p>
+<p><img src="conia-3.GIF"></p>
+<p>Each step of the Conia-Ene reaction is reversible, as shown by some 
+retro-Conia Ene reactions of cyclobutanes where the main product is the 
+open-chain isomer.</p>
+<p><img src="conia-4.GIF"></p>
+<p>The stereochemistry of the cyclisation is affected by the spatial arrangement 
+of the two reactive centres, and this mainly depends on the configuration at the 
+enol centre and the various steric effects arising from the chain conformation 
+in the ground state.</p>
+<p><img src="conia-5.GIF"></p>
+<p>In cases where the cyclic product is still enolisable, subsequent enolisation 
+results in epimerisation that can modify the product ratio and therefore no 
+simple conclusion regarding the stereoselectivity can be reached.</p>
+<p>The scope of substrates includes precursors of ketones such as acetals and 
+enol ethers, which also regenerate the ketone at high temperature. However, 
+unsaturated &#946;-ketoesters and &#946;-diketones are also suitable starting materials. 
+Their stronger enolic character enables reactions to proceed at lower 
+temperatures.</p>
+<p><img src="conia-6.GIF"></p>
+<p>For acetylenic substrates, double bond migration often occurs to favour a 
+higher degree of substitution. No such migration is observed when a terminal 
+methyl group stabilises the <i>exo</i>-double bond, or if the reaction is 
+conducted at lower temperatures - for example with a &#946;-diketone as substrate.</p>
+<p><img src="conia-7.GIF"></p>
+<p>For a review of thermal Conia-Ene reactions and a detailed mechanistic 
+discussion, please refer to a review by Conia and Le Perchec (<i>Synthesis</i> <b>
+1975</b>, 1. <a target="_blank" href="http://dx.doi.org/10.1055/s-1975-23652">
+DOI</a>)</p>
+<p>Nevertheless, the need for high temperatures severely limits the synthetic 
+utility of the Conia-Ene reaction. A catalytic version that proceeds at ambient 
+temperature and under neutral conditions would dramatically increase the 
+reaction&#8217;s usefulness. In 2004, Toste reported a phosphinegold(I)-catalysed 
+version for the intramolecular addition of a &#946;-ketoester to an unactivated 
+alkyne. For this reaction, two mechanistic hypotheses have been developed.</p>
+<p><a href="../abstracts/lit1/781.shtm"><img src="../abstracts/lit1/781n.gif"></a><br>
+J. J. Kennedy-Smith, S. T. Staben, F. D. Toste, <i>J. Am. Chem. Soc.</i>, <b>
+2004</b>, <i>
+126</i>, 4526-4527.</p>
+<p>For this system, the deuterium-labelling experiments depicted below supported 
+a mechanism involving enol addition to an Au-alkyne complex (mechanism A above).</p>
+<p><img src="../abstracts/lit1/781o.gif"></p>
+<p>Some recent developments for catalysed reactions, including enantioselective 
+reactions, can be found in the recent literature section.</p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit4/672.shtm"><img src="../abstracts/lit4/672a.gif"></a><br>
+A New Iron(III)-Salen Catalyst for Enantioselective Conia-ene 
+Carbocyclization<br>
+S. Shaw, J. D. White, <i>J. Am. Chem. Soc.</i>, <b>2014</b>, <i>
+136</i>, 13174-13177.</p>
+<p><a href="../abstracts/lit1/781.shtm"><img src="../abstracts/lit1/781a.gif"></a><br>
+Gold(I)-Catalyzed Conia-Ene Reaction of &#946;-Ketoesters with Alkynes<br>
+J. J. Kennedy-Smith, S. T. Staben, F. D. Toste, <i>J. Am. Chem. Soc.</i>, <b>2004</b>, <i>
+126</i>, 4526-4527.</p>
+<p><a href="../abstracts/lit1/779.shtm"><img src="../abstracts/lit1/779a.gif"></a><br>
+Catalytic Enantioselective Conia-Ene Reaction<br>
+B. K. Corkey, F. D. Toste, <i>J. Am. Chem. Soc.</i>, <b>2005</b>, <i>
+127</i>, 17168-17169.</p>
+<p><a href="../abstracts/literature/891.shtm">
+<img src="../abstracts/literature/891a.gif"></a><br>
+Ni(II)-Catalyzed Conia-Ene Reaction of 1,3-Dicarbonyl Compounds with Alkynes<br>
+Q. Gao, B.-F. Zheng, J.-H. Li, D. Yang, <i>Org. Lett.</i>, <b>2005</b>,
+<i>7</i>, 2185-2188.</p>
+<p><a href="../abstracts/lit1/015.shtm">
+<img src="../abstracts/lit1/015b.gif"></a><br>
+Rhenium-Catalyzed Insertion of Terminal Acetylenes into a C-H Bond of Active 
+Methylene Compounds<br>
+Y. Kuninobu, A. Kawata, K. Takai, <i>Org. Lett.</i>, <b>2005</b>, <i>7</i>, 
+4823-4825.</p>
+<p><a href="../abstracts/lit3/070.shtm"><img src="../abstracts/lit3/070a.gif"></a><br>
+Yb(OTf)<sub>3</sub>-Promoted ZnCl<sub>2</sub>-Catalyzed Conia-Ene Reaction of Linear &#946;-Alkynic 
+&#946;-Dicarbonyls<br>
+Y. Liu, R.-J. Song, J.-H. Li, <i>Synthesis</i>, <b>2010</b>, 3663-3669.</p>
+
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

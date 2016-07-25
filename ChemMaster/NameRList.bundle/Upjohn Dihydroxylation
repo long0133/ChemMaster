@@ -1,0 +1,186 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Upjohn Dihydroxylation</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+<a href="/related/upjohn+dihydroxylation.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="huisgen-1,3-dipolar-cycloaddition.shtm">1,3-Dipolar Cycloaddition</a><br>
+<a href="sharpless-dihydroxylation.shtm">Sharpless Dihydroxylation</a><br>
+<a href="woodward-reaction.shtm">Woodward <i>cis</i>-Hydroxylation</a><br>
+<a href="../synthesis/C1O/diols2.shtm">Synthesis of 1,2-diols</a></p>
+
+</div>
+<h1>Upjohn Dihydroxylation</h1>
+<p><img src="upjohn1.GIF"></p>
+<p>The Upjohn Dihydroxylation allows the <i>syn</i>-selective preparation 
+of 1,2-diols from alkenes by the use of
+<a href="../chemicals/oxidations/osmiumtetroxide.shtm">osmium tetroxide</a> as a catalyst 
+and a stoichiometric amount of an oxidant such as NMO (<a href="../chemicals/oxidations/n-methylmorpholine-n-oxide-nmo.shtm"><i>N</i>-methyl 
+morpholine-<i>N</i>-Oxide</a>).</p>
+<hr>
+<h2>Mechanism of the Upjohn Dihydroxylation</h2>
+<p>The toxic and volatile OsO<sub>4</sub> can also be prepared <i>in situ</i> by the 
+oxidation of K<sub>2</sub>OsO<sub>2</sub>(OH)<sub>4</sub> with NMO. NMO is also 
+the cooxidant that enables the use of a catalytic amount of OsO<sub>4</sub>, 
+because this reagent is able to reoxidize an Os(VI) species to an Os(VIII) 
+species:</p>
+<p><img src="upjohn3.GIF"></p>
+<p>The key step is the cycloaddition of OsO<sub>4</sub> to the olefin. There has been some speculation regarding the actual addition step, for which 
+experimental data suggest the possible involvement of two separate steps. Thus, 
+the question arises during these discussions of whether the key step takes place 
+via an initial (3+2)-addition (<a href="huisgen-1,3-dipolar-cycloaddition.shtm">1,3-dipolar 
+cycloaddition</a>), or by a (2+2)-addition followed by expansion of 
+the metallacycle.</p>
+<p><img src="upjohn4.GIF"></p>
+<p><img src="upjohn5.GIF"></p>
+<p>Quantum chemical calculations have shown an initial (3+2)-addition of OsO<sub>4</sub> 
+to be energetically more favorable. However, this energy difference is 
+substantially smaller in the related Re(VII) oxide additions, for example. (D. 
+V. Deubel, G. Frenking, <i>Acc. Chem. Res.</i>, <b>2003</b>, <i>36</i>, 645.
+<a target="_blank" href="http://dx.doi.org/10.1021/ar020268q">DOI</a>).</p>
+<p>Tertiary amines such as DMAP and pyridine accelerate the addition reaction.</p>
+<p><img src="upjohn6.GIF"></p>
+<p>The use of chiral amines enables enantioselective conversions, such as (DHQ)<sub>2</sub>-PHAL 
+and (DHQD)<sub>2</sub>-PHAL in the <a href="sharpless-dihydroxylation.shtm">Sharpless Dihydroxylation</a>.</p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit3/859.shtm"><img src="../abstracts/lit3/859a.gif"></a><br>
+An Osmium(III)/Osmium(V) Redox Couple Generating OsV(O)(OH) Center for <i>
+cis</i>-1,2-Dihydroxylation of Alkenes with H<sub>2</sub>O<sub>2</sub>: Os Complex with a 
+Nitrogen-Based Tetradentate Ligand<br>
+H. Sugimoto, K. Kitayama, S. Mori, S. Itho, <i>J. Am. Chem. Soc.</i>, <b>2012</b>, <i>
+134</i>, 19270-19280.</p>
+<p><a href="../abstracts/lit4/876.shtm"><img src="../abstracts/lit4/876a.gif"></a><br>
+Osmium on Chelate Resin: Nonvolatile Catalyst for the Synthesis of Diols 
+from Alkenes<br>
+Y. Monguchi, F. Wakayma, H. Takada, Y. Sawama, H. Sajiki, <i>
+Synlett</i>, <b>2015</b>, <i>26</i>, 700-704.</p>
+<p><a href="../abstracts/literature/044.shtm"><img src="../abstracts/literature/044a.gif"></a><br>
+Catalytic Asymmetric Dihydroxylation of Olefins with Reusable OsO<sub>4</sub><sup>2-</sup> on Ion-Exchangers: The Scope and Reactivity Using Various Cooxidants<br>
+B. M. Choudary, N. S. Chodari, K. Jyothi, M. L. Kantam, <i>J. Am. Chem. Soc.</i>, <b>2002</b>, <i>
+124</i>, 5341-5349.</p>
+<p><a href="../abstracts/literature/550.shtm"><img src="../abstracts/literature/550a.gif"></a><br>
+Microencapsulation of Osmium Tetroxide in Polyurea<br>
+S. V. Ley, C. Ramarao, A.-L. Lee, N. Ostergaard, S. C. Smith, I. M. Shirley,
+<i>Org. Lett.</i>, <b>2003</b>, <i>5</i>, 185-187.</p>
+<p><a href="../abstracts/lit4/013.shtm"><img src="../abstracts/lit4/013a.gif"></a><br>
+Magnetically Recoverable Osmium Catalysts with Osmium-Diolate Esters for 
+Dihydroxylation of Olefins<br>
+K.-i. Fuhita, S. Umeki, H. Yasuda, <i>Synlett</i>, <b>2013</b>, <i>24</i>, 
+947-950.</p>
+<p><a href="../abstracts/lit1/104.shtm"><img src="../abstracts/lit1/104a.gif"></a><br>
+<i>cis</i>-Dihydroxylation of Unsaturated Potassium Alkyl- and 
+Aryltrifluoroborates<br>
+G. A. Molander, R. Figueroa, <i>Org. Lett.</i>, <b>2006</b>, <i>8</i>, 75-78.</p>
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

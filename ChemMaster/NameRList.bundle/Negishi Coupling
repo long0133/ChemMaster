@@ -1,0 +1,317 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Negishi Coupling</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+<a href="/related/negishi+coupling.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="fukuyama-coupling.shtm">Fukuyama-Coupling</a><br>
+<a href="hiyama-coupling.shtm">Hiyama Coupling</a><br>
+<a href="kumada-coupling.shtm">Kumada Coupling</a><br>
+<a href="suzuki-coupling.shtm">Suzuki Coupling</a><br>
+<a href="stille-coupling.shtm">Stille Coupling</a></p>
+
+</div>
+<h1>Negishi Coupling</h1>
+<p><img src="negish2.gif" width="292" height="79"></p>
+<p>The Negishi Coupling, published in 1977, was the first reaction that 
+allowed the preparation of unsymmetrical biaryls in good yields. The 
+versatile nickel- or palladium-catalyzed coupling of organozinc 
+compounds with various halides (aryl, vinyl, benzyl, or allyl) has broad 
+scope, and is not restricted to the formation of biaryls.</p>
+<hr>
+<h2>Mechanism of the Negishi Coupling</h2>
+<p><img src="negish3.gif" width="504" height="395"></p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit4/109.shtm"><img src="../abstracts/lit4/109a.gif"></a><br>
+Mild Negishi Cross-Coupling Reactions Catalyzed by Acenaphthoimidazolylidene 
+Palladium Complexes at Low Catalyst Loadings<br>
+Z. Liu, N. Dong, M. Xu, Z. Sun, T. Tu, <i>J. Org. Chem.</i>, <b>2013</b>,
+<i>78</i>, 7436-7444.</p>
+<p><a href="../abstracts/literature/278.shtm"><img src="../abstracts/literature/278a.gif"></a><br>
+An Extremely Active Catalyst for the Negishi Cross-Coupling Reaction<br>
+J. E. Milne, S. L. Buchwald, <i>J. Am. Chem. Soc.</i>, <b>2004</b>, <i>126</i>, 
+13028-13032.</p>
+<p><a href="../abstracts/lit2/252.shtm"><img src="../abstracts/lit2/252a.gif"></a><br>
+One-Pot Negishi Cross-Coupling Reactions of In Situ Generated Zinc Reagents 
+
+with Aryl Chlorides, Bromides, and Triflates<br>
+S. Sase, M. Jaric, A. Metzger, V. Malakhov, P. Knochel, <i>J. Org. Chem.</i>, <b>2008</b>,
+
+<i>73</i>, 7380-7382.</p>
+<p><a href="../abstracts/lit2/324.shtm"><img src="../abstracts/lit2/324a.gif"></a><br>
+Efficient Negishi Coupling Reactions of Aryl Chlorides Catalyzed by 
+
+Binuclear and Mononuclear Nickel-N-Heterocyclic Carbene Complexes<br>
+Z. Xi, Y. Zhou, W. Chen, <i>J. Org. Chem.</i>, <b>2008</b>,
+
+<i>73</i>, 8497-8501.</p>
+<p><font size="1"><a href="../abstracts/lit3/599.shtm">
+<img src="../abstracts/lit3/599a.gif"></a></font><br>
+Cross-Coupling of Aryltrimethylammonium Iodides with Arylzinc Reagents 
+Catalyzed by Amido Pincer Nickel Complexes<br>
+X.-Q. Zhang, Z.-X. Wang, <i>J. Org. Chem.</i>, <b>2012</b>,
+<i>77</i>, 3658-3663.</p>
+<p><a href="../abstracts/literature/953.shtm"><img src="../abstracts/literature/953a.gif"></a><br>
+The First Negishi Cross-Coupling Reaction of Two Alkyl Centers Utilizing a
+Pd-N-Heterocyclic Carbene (NHC) Catalyst<br>
+N. Hadei, E. A. B. Kantchev, C. J. O'Brien, M. G. Organ, <i>Org. Lett.</i>, <b>2005</b>, <i>7</i>, 3805-3807.</p>
+<p><a href="../abstracts/lit2/562.shtm"><img src="../abstracts/lit2/562a.gif"></a><br>
+Negishi Coupling of Secondary Alkylzinc Halides with Aryl Bromides and 
+
+Chlorides<br>
+C. Han, S. L. Buchwald, <i>J. Am. Chem. Soc.</i>, <b>2009</b>, <i>
+
+131</i>, 7532-7533.</p>
+<p><a href="../abstracts/lit2/168.shtm"><img src="../abstracts/lit2/168a.gif"></a><br>
+Effective Pd-Nanoparticle (PdNP)-Catalyzed Negishi Coupling Involving 
+
+Alkylzinc Reagents at Room Temperature<br>
+J. Liu, Y. Deng, H. Wang, H. Zhang, G. Yu, B. Wu, H. Zhang, Q. Li, T. B. Marder, 
+Z. Yang, A. Lei, <i>Org. Lett.</i>, <b>2008</b>,
+
+<i>10</i>, 2661-2664.</p>
+<p><a href="../abstracts/lit2/045.shtm"><img src="../abstracts/lit2/045a.gif"></a><br>
+Nickel-Catalyzed Asymmetric Negishi Cross-Couplings of Secondary Allylic 
+
+Chlorides with Alkylzincs<br>
+S. Son, G. C. Fu, <i>J. Am. Chem. Soc.</i>, <b>2008</b>, <i>
+
+130</i>, 2756-2757.</p>
+<p><a href="../abstracts/lit1/884.shtm"><img src="../abstracts/lit1/884a.gif"></a><br>
+Efficient Cross-Coupling of Aryl Chlorides with Arylzinc Reagents Catalyzed 
+
+by Amido Pincer Complexes of Nickel<br>
+L. Wang, Z.-X. Wang, <i>Org. Lett.</i>, <b>2007</b>,
+
+<i>9</i>, 4335-4338.</p>
+<p><a href="../abstracts/literature/554.shtm">
+<img src="../abstracts/literature/554a.gif"></a><br>
+Highly Efficient, General Procedure for the Preparation of Alkylzinc
+Reagents from Unactivated Alkyl Bromides and Chlorides<br>
+S. Huo, <i>Org. Lett.</i>, <b>2003</b>, <i>5</i>, 423-425.</p>
+<p><a href="../abstracts/lit2/709.shtm"><img src="../abstracts/lit2/709a.gif"></a><br>
+Zn-Mediated, Pd-Catalyzed Cross-Couplings in Water at Room Temperature 
+
+Without Prior Formation of Organozinc Reagents<br>
+A. Krasovskiy, C. Duplais, B. H. Lipshutz, <i>J. Am. Chem. Soc.</i>, <b>2009</b>, <i>
+
+131</i>, 15592-15593.</p>
+<p><a href="../abstracts/literature/164.shtm"><img src="../abstracts/literature/164a.gif"></a><br>
+Palladium-Catalyzed Negishi Cross-Coupling Reactions of Unactivated Alkyl 
+Iodides, Bromides, Chlorides, and Tosylates<br>
+J. Zhou, G. C. Fu, <i>J. Am. Chem. Soc.</i>, <b>2003</b>, <i>125</i>, 12527-12530.</p>
+<p><a href="../abstracts/lit3/190.shtm"><img src="../abstracts/lit3/190a.gif"></a><br>
+Nickel-Catalyzed Negishi Cross-Coupling Reactions of Secondary Alkylzinc 
+
+Halides and Aryl Iodides<br>
+A. Joshi-Pangu, M. Ganesh, M. R. Biscoe, <i>Org. Lett.</i>, <b>2011</b>,
+
+<i>13</i>, 1218-1221.</p>
+<p><a href="../abstracts/lit1/898.shtm"><img src="../abstracts/lit1/898a.gif"></a><br>
+Superior Effect of a &#960;-Acceptor Ligand (Phosphine&#8722;Electron-Deficient Olefin 
+
+Ligand) in the Negishi Coupling Involving Alkylzinc Reagents<br>
+X. Luo, H. Zhang, H. Duan, Q. Liu, L. Zhu, T. Zhang, A. Lei, <i>Org. Lett.</i>, <b>2007</b>,
+
+<i>9</i>, 4571-4574.</p>
+<p><a href="../abstracts/lit3/341.shtm"><img src="../abstracts/lit3/341a.gif"></a><br>
+Highly Selective Reactions of Unbiased Alkenyl Halides and Alkylzinc Halides: 
+
+Negishi-Plus Couplings<br>
+A. Krasovskiy, B. H. Lipshutz, <i>Org. Lett.</i>, <b>2011</b>,
+
+<i>13</i>, 3822-3825.</p>
+<p><a href="../abstracts/lit3/339.shtm"><img src="../abstracts/lit3/339a.gif"></a><br>
+Ligand Effects on Negishi Couplings of Alkenyl Halides<br>
+A. Krasovskiy, B. H. Lipshutz, <i>Org. Lett.</i>, <b>2011</b>,
+
+<i>13</i>, 3818-3821.</p>
+<p><a href="../abstracts/lit3/073.shtm"><img src="../abstracts/lit3/073a.gif"></a><br>
+A nonionic amphiphile enables a simple approach to Pd-catalyzed stereoselective sp<sup>3</sup>-sp<sup>2</sup> 
+cross-couplings between alkyl and alkenyl bromides in the presence of zinc 
+powder in water to give coupled products in good yields without prior formation 
+of the organozinc reagents. The reaction is conducted at room temperature and 
+tolerates various functional groups.<br>
+A. Krasovskiy, C. Duplais, B. H. Lipshutz, <i>Org. Lett.</i>, <b>2010</b>,
+
+<i>12</i>, 4742-4744.</p>
+<p><a href="../abstracts/lit2/689.shtm"><img src="../abstracts/lit2/689a.gif"></a><br>
+Iron-Catalyzed Negishi Coupling Toward an Effective Olefin Synthesis<br>
+T. Niu, W. Zhang, D. Huang, C. Xu, H. Wang, Y. Hu, <i>Org. Lett.</i>, <b>2009</b>,
+
+<i>11</i>, 4474-4477.</p>
+<p><a href="../abstracts/lit2/661.shtm"><img src="../abstracts/lit2/661b.gif"></a><br>
+Highly Regio- and Stereoselective Synthesis of (<i>Z</i>)-Trisubstituted Alkenes 
+
+via Propyne Bromoboration and Tandem Pd-Catalyzed Cross-Coupling<br>
+C. Wang, T. Tobrman, Z. Xu, E.-i. Negishi, <i>Org. Lett.</i>, <b>2009</b>,
+
+<i>11</i>, 4092-4095.</p>
+<p><a href="../abstracts/lit2/089.shtm"><img src="../abstracts/lit2/089a.gif"></a><br>
+Highly Regioselective Synthesis of Trisubstituted Allenes via Lithiation of 
+
+1-Aryl-3-alkylpropadiene, Subsequent Transmetalation, and Pd-Catalyzed Negishi 
+
+Coupling Reaction<br>
+J. Zhao, Y. Liu, S. Ma, <i>Org. Lett.</i>, <b>2008</b>,
+
+<i>10</i>, 1521-1523.</p>
+<p><a href="../abstracts/lit1/949.shtm"><img src="../abstracts/lit1/949b.gif"></a><br>
+One-Pot Formation and Derivatization of Di- and Triynes Based on the 
+
+Fritsch-Buttenberg-Wiechell Rearrangement<br>
+T. Luu, Y. Morisaki, N. Cunningham, R. R. Tykwinski, <i>J. Org. Chem.</i>, <b>2007</b>,
+
+<i>72</i>, 9622-9629.</p>
+<p><a href="../abstracts/lit1/153.shtm"><img src="../abstracts/lit1/153a.gif"></a><br>
+Catalytic Enantioselective Negishi Reactions of Racemic Secondary Benzylic 
+Halides<br>
+F. O. Arp, G. C. Fu, <i>J. Am. Chem. Soc.</i>, <b>2005</b>, <i>127</i>, 10482-10483.</p>
+<p><a href="../abstracts/literature/189.shtm"><img src="../abstracts/literature/189a.gif"></a><br>
+Synthesis of the Precursor of Anti-Inflammatory Agents by Cross-Coupling 
+Using Electrogenerated Highly Reactive Zinc<br>
+A. A. Jalil, N. Kurono, M. Tokuda, <i>Synthesis,</i>
+<b>2002</b>, 2681-2686.</p>
+<p><a href="../abstracts/lit2/127.shtm"><img src="../abstracts/lit2/127c.gif"></a><br>
+General, Robust, and Stereocomplementary Preparation of &#946;-Ketoester Enol 
+
+Tosylates as Cross-Coupling Partners Utilizing TsCl-<i>N</i>-Methylimidazole 
+
+Agents<br>
+H. Nakatsuji, K. Ueno, T. Misaki, Y. Tanabe, <i>Org. Lett.</i>, <b>2008</b>,
+
+<i>10</i>, 2131-2134.</p>
+<p><a href="../abstracts/lit2/313.shtm"><img src="../abstracts/lit2/313a.gif"></a><br>
+High Temperature Metalation of Functionalized Aromatics and Heteroaromatics 
+
+using (tmp)<sub>2</sub>Zn·2MgCl<sub>2</sub>·2LiCl and Microwave Irradiation<br>
+S. Wunderlich, P. Knochel, <i>Org. Lett.</i>, <b>
+
+2008</b>,
+
+<i>10</i>, 4705-4707.</p>
+<p><a href="../abstracts/lit3/121.shtm"><img src="../abstracts/lit3/121a.gif"></a><br>
+A Mild Negishi Cross-Coupling of 2-Heterocyclic Organozinc Reagents and Aryl 
+Chlorides<br>
+M. R. Luzung, J. S. Patel, J. Yin, <i>J. Org. Chem.</i>, <b>2010</b>,
+
+<i>75</i>, 8330-8332.<p><a href="../abstracts/lit3/680.shtm">
+<img src="../abstracts/lit3/680a.gif"></a><br>
+Nickel-Catalyzed Negishi Alkylations of Styrenyl Aziridines<br>
+C.-Y. Huang, A. G. Doyle, <i>J. Am. Chem. Soc.</i>, <b>2012</b>, <i>
+134</i>, 9541-9544.<p><a href="../abstracts/lit1/290.shtm"><img src="../abstracts/lit1/290a.gif"></a><br>
+Enantioselective, Palladium-Catalyzed &#945;-Arylation of <i>N</i>-Boc-pyrrolidine<br>
+K. R. Campos, A. Klapars, J. H. Waldman, P. G. Dormer, C.-Y. Chen, <i>J. Am. Chem. Soc.</i>, <b>2006</b>, <i>128</i>, 3538-3539.</p>
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

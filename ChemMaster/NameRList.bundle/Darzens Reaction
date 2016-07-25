@@ -1,0 +1,200 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Darzens Reaction</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+<a href="/related/darzens-reaction.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="corey-chaykovsky-reaction.shtm">Corey-Chaykovsky Reaction</a><br>
+	<a href="de-kimpe-aziridine-synthesis.shtm">De Kimpe Aziridine Synthesis</a><br>
+<a href="prilezhaev-reaction.shtm">Prilezhaev Reaction</a><br>
+<a href="sharpless-epoxidation.shtm">Sharpless Epoxidation</a><br>
+<a href="../synthesis/C1N/aziridines3.shtm">Synthesis of aziridines</a><br>
+<a href="../synthesis/C1O/epoxides3.shtm">Synthesis of epoxides</a></p>
+
+</div>
+<h1>Darzens Reaction<br>
+Darzens Condensation</h1>
+<p><img src="darzen1.GIF"></p>
+<p>The Darzens Reaction is the condensation of a carbonyl compound with an 
+&#945;-halo ester in the presence of a base to form an &#945;,&#946;-epoxy ester.</p>
+<hr>
+<h2>Mechanism of the Darzens Reaction</h2>
+<p>After deprotonation, the &#945;-halo ester adds to the carbonyl compound to 
+give <i>syn</i> and <i>anti</i> diastereomers:</p>
+<p><img src="darzen2.GIF"></p>
+<p>In the subsequent step, an intramolecular <a href="nucleophilic-substitution-sn1-sn2.shtm">S<sub>N</sub>2 
+reaction</a> forms the epoxide:</p>
+<p><img src="darzen3.GIF"> </p>
+<p>Typically, the <i>cis:trans</i> ratio of the epoxide formation lies between 
+1:1 and 1:2.</p>
+<p>In the past, Darzens methodology was primarily used for the synthesis of 
+aldehydes and ketones, as a homologation reaction without any consideration of 
+stereocontrol in the epoxide formation. For this sequence, saponification of the 
+&#945;,&#946;-epoxy ester followed by decarboxylation gives the substituted carbonyl 
+compound:</p>
+<p><img src="darzen4.GIF"></p>
+<p><img src="darzen5.GIF"></p>
+<p>Darzens methodology for the construction of epoxides can also be used for 
+&#945;-halo carbonyl compounds, or similar compounds that can undergo deprotonation 
+and bear electron-withdrawing groups. In addition, the reaction can be carried 
+out with diazoacetate, where N<sub>2</sub> is the leaving group, or with a 
+sulphur ylide with SR<sub>2</sub> as the leaving group (see
+<a href="corey-chaykovsky-reaction.shtm">Corey Chaykovsky</a>).</p>
+<p>In the following specific substitution pattern, the outcome of the reaction 
+depends on the energy of the transition states of the addition, the rotation and 
+the ring closure, as described by Aggarwal. Although explanations for the 
+diastereoselectivity have been given, the enantioselectivity that is induced by 
+the camphor-derived sulphonium group is not yet fully understood:</p>
+<p><a href="../abstracts/literature/243.shtm"><img src="../abstracts/literature/243a.gif"></a><br>
+V. K. Aggarwal, G. Hynd, W. Picoul, J.-L. Vasse, <i>J. Am. Chem. Soc.</i>, <b>2006</b>, <i>128</i>, 2105-2114.
+<a target="_blank" href="http://dx.doi.org/10.1021/ja0568345">DOI</a></p>
+<p>Another concept for highly diastereoselective and enantioselective 
+transformations was developed by Arai:</p>
+<p><a href="../abstracts/literature/245.shtm"><img src="../abstracts/literature/245a.gif"></a><br>
+S. Arai, Y. Shirai, T. Ishida, T. Shioiri, <i>Tetrahedron</i>, <b>1999</b>, <i>55</i>, 6375-6386.</p>
+<p>In this system, the chiral phase transfer catalyst (PTC) is able to recognize 
+one aldolate selectively. There is an equilibrium between <i>syn</i>- and 
+<i>anti</i>-aldolates via retro-aldol addition, and the formation of a stable, 
+chelated lithium salt blocks the non-catalyzed subsequent reaction from yielding 
+the epoxide product:</p>
+<p><img src="darzen6.GIF"></p>
+<p>The following aza-Darzens reaction, in which a preformed lithium 
+&#945;-bromoenolate reacts with a sulphinimine to give an aziridine, features a 
+six-membered transition state that accounts for the high diastereoselectivity:</p>
+<p><img src="darzen7.GIF"><br>
+F. A. Davies, H. Liu, P. Zhou, T. Fang, G. V. Reddy, Y. Zhang, <i>J. Org. Chem.</i>, <b>1999</b>, <i>64</i>, 7559-7567.
+<a target="_blank" href="http://dx.doi.org/10.1021/jo990907j">DOI</a></p>
+<p>The development of enantioselective methods remains challenging. In principle, 
+any of the methods that are used for stereoselective <a href="aldol-addition.shtm">aldol 
+additions</a> can also be tested in the Darzens Reaction, as the first step is 
+an aldol addition.</p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/literature/182.shtm"><img src="../abstracts/literature/182a.gif" width="337" height="70"></a><br>
+The Brønsted Acid-Catalyzed Direct Aza-Darzens Synthesis of <i>N</i>-Alkyl
+<i>cis</i>-Aziridines<br>
+A. L. Williams, J. N. Johnston, <i>J. Am. Chem. Soc.</i>, <b>2004</b>, <i>126</i>, 1612-1613.</p>
+<p><a href="../abstracts/literature/230.shtm"><img src="../abstracts/literature/230a.gif"></a><br>
+Bi(OTf)<sub>3</sub>-[Bmim]PF<sub>6</sub>: A novel and 
+Reusable Catalytic System for the Synthesis of <i>cis</i>-Aziridine Carboxylates<br>
+J. S. Yaday, B. V. S. Reddy, P. N. Reddy, M. Shesha Rao, <i>Synthesis,</i>
+<b>2003</b>, 1387-1389.</p>
+<p><a href="../abstracts/literature/245.shtm"><img src="../abstracts/literature/245a.gif"></a><br>
+Phase-transfer-catalyzed asymmetric Darzens reaction <br>
+S. Arai, Y. Shirai, T. Ishida, T. Shioiri, <i>Tetrahedron</i>, <b>1999</b>, <i>55</i>, 6375-6386.</p>
+<p><a href="../abstracts/literature/243.shtm"><img src="../abstracts/literature/243a.gif"></a><br>
+Highly Enantioselective Darzens Reaction of a Camphor-Derived Sulfonium 
+Amide to Give Glycidic Amides and Their Applications in Synthesis<br>
+V. K. Aggarwal, G. Hynd, W. Picoul, J.-L. Vasse, <i>J. Am. Chem. Soc.</i>, <b>2002</b>, <i>124</i>, 9964-9965.</p>
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

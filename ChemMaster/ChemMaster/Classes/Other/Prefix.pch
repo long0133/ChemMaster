@@ -24,7 +24,7 @@
 #define color(x) x/255 * 1.0
 
 #define cachePath [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject]
-
+#define MainBundle [NSBundle mainBundle]
 //颜色设置
 #define barColor @"EEE9E9"
 
@@ -46,3 +46,13 @@
 #define NameReactionCategory @"ANameReaction"
 #define TotalSynthesisCategory @"ATotalSynthesis"
 #define HightLightCategory @"AHighLight"
+
+//模块id
+#define nameReactionList @"nameractionlist"
+#define nameReaCellH 200
+
+#define totalSynList @"totalSynList"
+#define totalSynCellH 80
+
+#define hightLight @"highLight"
+#define highLightCellH 80

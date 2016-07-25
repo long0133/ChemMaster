@@ -1,0 +1,202 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Kabachnik-Fields Reaction</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+<a href="/related/kabachnik-fields+reaction.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="arbuzov-reaction.shtm">Arbuzov Reaction</a><br>
+<a href="mannich-reaction.shtm">Mannich Reaction</a><br>
+<a href="../topics/multicomponent-reactions.shtm">Multicomponent Reactions</a><br>
+<a href="../synthesis/C1P/phosphonates/amino-phosphonates.shtm">Synthesis of &#945;-amino phosphonates</a></p>
+
+</div>
+<h1>Kabachnik-Fields Reaction</h1>
+<p><img src="kabach4.GIF"></p>
+<p>This 
+three-component coupling of a carbonyl, an amine and a hydrophosphoryl 
+compound leads to &#945;-aminophosphonates. The Kabachnik-Fields Reaction is 
+very important in drug discovery research for generating peptidomimetic 
+compounds.</p>
+<p>Early 
+protocols were limited to simple starting materials (for example 
+aldehydes) but newer methods permit reactions to take place even with 
+sterically demanding starting materials.</p>
+<hr>
+<h2>Mechanism of the Kabachnik-Fields Reaction</h2>
+<p>The pathway of the Kabachnik-Fields reaction depends on the nature of the 
+substrates. The amine and hydrophosphoryl compound form a complex in which 
+either one of the partners may react with the carbonyl compound. Often, the 
+basicity of the amine determines the reaction pathway. Weakly basic amines such 
+as anilines, which can act as proton donors, favour the formation of an imine, 
+whereas alkylamines such as cyclohexylamines do not form imines:</p>
+<p><img src="kabach1.GIF"></p>
+<p>If additional catalysts are used, both acids and bases can have a positive 
+influence on the reaction rate. Sometimes, the chemical yield and the 
+diastereoselectivity of the formation of &#945;-aminophosphonates are higher in 
+two-component systems using preformed imines. In this case, due to the 
+phosphonate &lt;-&gt; phosphite tautomerism, the addition to the imine could occur by 
+either a four- or five-membered transition state:</p>
+<p><img src="kabach3.GIF"></p>
+<p>A more detailed discussion of the mechanism of the Kabachnik-Fields reaction, 
+its synthetic potential and the biological activity of the &#945;-aminophosphonates 
+can be found in a review by R. A. Cherkasov and V. I. Galkin (<i>Russ. 
+Chem. Rev.</i> <b>1998</b>, <i>67</i>, 857-882.
+<a target="_blank" href="http://dx.doi.org/10.1070/RC1998v067n10ABEH000421">DOI</a>)</p>
+<p>An interesting recent publication of an enantioselective transformation using 
+quinine as an organocatalyst suggests the following transition state:</p>
+<p><a href="../abstracts/lit1/364.shtm"><img src="../abstracts/lit1/364n.gif"></a><br>
+D. Pettersen, M. Marcolini, L. Bernardi, F. Fini, R. P. Herrera, V. Sgarzani, 
+A. Ricci, <i>J. Org. Chem.</i>, <b>2006</b>, <i>71</i>, 6269-6272.</p>
+<p>As this example shows a high degree of complexity, one can imagine that the 
+design of an enantioselective three-component reaction would be somewhat more 
+difficult, and it is clear that some basic investigation into the stereocontrol 
+of the Kabachnik-Fields reaction is still needed.</p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit1/586.shtm"><img src="../abstracts/lit1/586a.gif"></a><br>
+An Extremely Efficient Three-Component Reaction of Aldehydes/Ketones, 
+Amines, and Phosphites (Kabachnik-Fields Reaction) for the Synthesis of 
+&#945;-Aminophosphonates Catalyzed by Magnesium Perchlorate<br>
+S. Bhagat, A. K. Chakraborti, <i>J. Org. Chem.</i>, <b>2007</b>,
+<i>72</i>, 1263-1270.</p>
+<p><a href="../abstracts/lit5/011.shtm"><img src="../abstracts/lit5/011a.gif"></a><br>
+A Simple and Green Procedure for the One-Pot Synthesis of &#945;-Aminophosphonates 
+with Quaternary Ammonium Salts as Efficient and Recyclable Reaction Media<br>
+Y.-Q. Yu, D.-Z. Xu, <i>
+Synthesis</i>, <b>2015</b>, <i>47</i>, 1869-1876.</p>
+<p><a href="../abstracts/lit1/257.shtm"><img src="../abstracts/lit1/257a.gif"></a><br>
+A facile and highly efficient route to &#945;-amino phosphonates via 
+three-component reactions catalyzed by Mg(ClO4)2 or molecular iodine<br>
+J. Wu, W. Sun, H.-G. Xia, X. Sun, <i>Org. Biomol. Chem.</i>, <b>2006</b>, <i>4</i>, 1663-1666.</p>
+<p><a href="../abstracts/literature/576.shtm">
+<img src="../abstracts/literature/576a.gif"></a><br>
+Microwave-assisted Kabachnik-Fields Reaction in Ionic Liquid<br>
+S.-G. Lee, J. K. Lee, C. E. Song, D.-C. Kim, <i>Bull. 
+Korean Chem. Soc.</i>, <b>2002</b>, <i>23</i>, 667-668.</p>
+<p><a href="../abstracts/literature/577.shtm">
+<img src="../abstracts/literature/577a.gif"></a><br>
+A Novel Catalytic Three-Component Synthesis (Kabachnick-Fields Reaction) of
+&#945;-Aminophosphonates from Ketones<br>
+E. D. Matveeva, T. A. Podrugina, E. V. Tishkovskaya, 
+L. G. Tomilova, N. S. Zefirov, <i>Synlett</i>, <b>2003</b>, 2321-2324.</p>
+<p><a href="../abstracts/lit1/364.shtm"><img src="../abstracts/lit1/364a.gif"></a><br>
+Direct Access to Enantiomerically Enriched &#945;-Amino Phosphonic Acid 
+Derivatives by Organocatalytic Asymmetric Hydrophosphonylation of Imines<br>
+D. Pettersen, M. Marcolini, L. Bernardi, F. Fini, R. P. Herrera, V. Sgarzani, 
+A. Ricci, <i>J. Org. Chem.</i>, <b>2006</b>, <i>71</i>, 6269-6272.</p>
+<p><a href="../abstracts/literature/202.shtm"><img src="../abstracts/literature/202a.gif"></a><br>
+Thiourea-Catalyzed Enantioselective Hydrophosphonylation of Imines: 
+Practical Access to Enantiomerically Enriched &#945;-Amino Phosphonic Acids<br>
+G. D. Joly, E. N. Jacobson, <i>J. Am. Chem. Soc.</i>, <b>2004</b>, <i>126</i>, 4102-4103.</p>
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

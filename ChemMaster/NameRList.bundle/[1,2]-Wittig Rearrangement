@@ -1,0 +1,212 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>[1,2]-Wittig Rearrangement</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+<a href="/related/wittig+rearrangement.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="2,3-wittig-rearrangement.shtm">[2,3]-Wittig Rearrangement</a><br>
+<a href="../synthesis/C1C/alcohols/additions.shtm">Synthesis of alcohols</a><p>
+
+</div>
+<h1>[1,2]-Wittig Rearrangement</h1>
+<p><img src="1,2-wi1.GIF"></p>
+<p>The [1,2]-Wittig Rearrangement is the base-promoted reaction of ethers to yield secondary or tertiary alcohols.</p>
+<hr>
+<h2>Mechanism of the [1,2]-Wittig Rearrangement</h2>
+<p>Compared to the <a href="2,3-wittig-rearrangement.shtm">[2,3]-Wittig Rearrangement</a>, 
+the [1,2]-rearrangement has received little attention because of the somewhat 
+limited substrate scope and moderate yields. The mechanism has been fully 
+elucidated, and a discussion can be found in a recent publication by Nakai (<i>J. Am. Chem. Soc.</i>, <b>1996</b>,
+<i>118</i>, 3317-3318. <a href="../abstracts/literature/324.shtm">Abstract</a>).</p>
+<p>The [1,2]-Wittig Rearrangement is a carbanion rearrangement that proceeds via 
+a radical dissociation-recombination mechanism. The lithiated intermediate forms 
+a ketyl radical and a carbon radical, which give an alcoholate after fast 
+recombination within the solvent cage:</p>
+<p><img src="1,2-wi2.GIF"></p>
+<p>Despite its radical character, the integrity of the two radical stereocenters 
+is retained to an appreciable extent, with retention of configuration at the 
+migrating carbon and inversion at the lithium-bearing center:</p>
+<p><img src="1,2-wi3.GIF"></p>
+<p>Regioselectivity and ease of reaction are determined by the substituents. The 
+R-groups must be able to stabilize either an anion for the lithiation step, or a 
+radical to facilitate the migration step. For example benzyl groups are able to 
+stabilize both the anionic charge and the radical. Tertiary alkyl groups are 
+able to stabilize radicals, and the combination with a benzyl group thus gives 
+an ideal substrate:</p>
+<p><img src="1,2-wi4.GIF"></p>
+<p>Some other very suitable substrates have been reported; for example, <i>O</i>-glycosides 
+can be selectively converted in high yields to the <i>C</i>-glycosides:</p>
+<p><a href="../abstracts/literature/324.shtm">
+<img src="../abstracts/literature/324a.gif" width="447" height="88"></a><br>
+K. Tomooka, H. Yamamoto, T. Nakai, <i>J. Am. Chem. Soc.</i>, <b>1996</b>,
+<i>118</i>, 3317-3318.</p>
+<p>For allyl-substituted substrates, the <a href="2,3-wittig-rearrangement.shtm">[2,3]-rearrangement</a> 
+competes with [1,2]-rearrangement. Normally in these cases, the 
+[1,2]-rearrangement is only a source of side products. Keeping the temperature 
+as low as possible avoids contamination with these [1,2]-rearrangement products:</p>
+<p><img border="0" src="1,2-wi5.GIF"></p>
+<p>The regioselectivity can be better controlled if &#945;-alkoxystannanes are used 
+as substrates. This modification is named the &quot;Wittig-Still Rearrangement&quot;. Here, 
+the intermediate organolithium compound is produced through transmetallation:</p>
+<p><img src="1,2-wi6.GIF"></p>
+<p>The Wittig-Still Rearrangement is also a suitable starting point for 
+performing mechanistic studies about the stereospecificity of this process, and 
+Maleczka and Feng have reported on the stereochemical outcome of the 
+[1,2]-Wittig Rearrangement (<i>J. Am. Chem. Soc.</i>, <b>1996</b>,
+<i>118</i>, 3317-3318.
+<a target="_blank" href="http://dx.doi.org/10.1021/ja981696n">DOI</a>):</p>
+<p><img src="1,2-wi7.GIF"></p>
+<p>They found that the &quot;normal&quot; stereochemical tendency can be overcome by 
+specific intramolecular chelation effects:</p>
+<p><img src="1,2-wi8.GIF"></p>
+<p>Similar reactions can be performed using the less toxic &#945;-alkoxysilanes as 
+starting materials:</p>
+<p><a href="../abstracts/literature/318.shtm">
+<img src="../abstracts/literature/318b.gif"></a><br>
+R. E. Maleczka, Jr., F. Geng, <i>Org. Lett.</i>, <b>1999</b>,
+<i>1</i>, 1115-1118.</p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit4/970.shtm"><img src="../abstracts/lit4/970a.gif"></a><br>
+(<i>Z</i>)-Selective Enol Triflation of &#945;-Alkoxyacetoaldehydes: Application to 
+Synthesis of (<i>Z</i>)-Allylic Alcohols via Cross-Coupling Reaction and [1,2]-Wittig 
+Rearrangement<br>
+F. Kurosawa, T. Nakano, T. Soeta, K. Endo, U. Ukaji, <i>J. Org. Chem.</i>, <b>
+2015</b>,
+<i>80</i>, 5696-5703.</p>
+<p><a href="../abstracts/literature/324.shtm">
+<img src="../abstracts/literature/324a.gif" width="447" height="88"></a><br>
+[1,2]-Wittig Rearrangement of Acetal Systems: A Highly Stereocontrolled 
+Conversion of <i>O</i>-Glycosides to <i>C</i>-Glycosides<br>
+K. Tomooka, H. Yamamoto, T. Nakai, <i>J. Am. Chem. Soc.</i>, <b>1996</b>,
+<i>118</i>, 3317-3318.</p>
+<p><a href="../abstracts/lit4/297.shtm"><img src="../abstracts/lit4/297a.gif"></a><br>
+Stereoselective Synthesis of (2<i>Z</i>,4<i>E</i>)-2,4-Pentadien-1-ols via 
+Sequential 1,4-Elimination Reaction and [1,2]-Wittig Rearrangement Starting from 
+(<i>E</i>)-4-Alkoxy-2-butenyl Benzoates<br>
+T. Nakano, T. Soeta, K. Endo, K. Inomata, Y. Ukaji, <i>J. Org. Chem.</i>, <b>2013</b>,
+<i>78</i>, 12654-12661.</p>
+<p><a href="../abstracts/lit1/434.shtm"><img src="../abstracts/lit1/434a.gif"></a><br>
+Tandem Wittig Rearrangement/Aldol Reactions for the Synthesis of Glycolate 
+Aldols<br>
+M. B. Bertrand, J. P. Wolfe, <i>Org. Lett.</i>, <b>
+2006</b>,
+<i>8</i>, 4661-4663.</p>
+<p><a href="../abstracts/literature/318.shtm">
+<img src="../abstracts/literature/318b.gif"></a><br>
+Methyllithium-Promoted Wittig Rearrangements of &#945;-Alkoxysilanes<br>
+R. E. Maleczka, Jr., F. Geng, <i>Org. Lett.</i>, <b>1999</b>,
+<i>1</i>, 1115-1118.</p>
+
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

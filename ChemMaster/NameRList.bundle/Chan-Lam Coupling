@@ -1,0 +1,302 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Chan-Lam Coupling</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+<a href="/related/chan-lam+coupling.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="buchwald-hartwig-reaction.shtm">Buchwald-Hartwig Cross Coupling</a><br>
+<a href="ullmann-reaction.shtm">Ullmann 
+Reaction</a><br>
+<a href="../synthesis/C1N/amines/arylamines.shtm">Synthesis of 
+arylamines</a><br>
+<a href="../synthesis/C1O/biarylethers.shtm">Synthesis of diarylethers</a></p>
+
+</div>
+<h1>Chan-Lam Coupling</h1>
+<p><img src="chan-l1.gif"></p>
+<p>This reaction allows aryl carbon-heteroatom bond formation via an 
+oxidative coupling of boronic acids, stannanes or siloxanes with N-H 
+or O-H containing compounds in air. Substrates include phenols, amines, 
+anilines, amides, imides, ureas, carbamates, and sulfonamides. The reaction is induced by a 
+stoichiometric amount of copper(II) or a catalytic amount of copper 
+catalyst which is reoxidized by atmospheric oxygen or another primary oxidant.</p>
+<p>The 
+Chan-Lam Coupling may be conducted at room temperature in air, which 
+gives it a certain advantage over the&nbsp;
+<a href="buchwald-hartwig-reaction.shtm">Buchwald-Hartwig Cross Coupling</a>.</p>
+<hr>
+<h2>Mechanism of the Chan-Lam Coupling</h2>
+<p>The reaction with a stoichiometric amount of copper(II) is also facilitated 
+by oxygen, because reductive elimination from a copper(III) species is faster.</p>
+<p><img src="chan-l2.gif" width="351" height="364"></p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/literature/669.shtm">
+<img src="../abstracts/literature/669a.gif"></a><br>
+Ligand- and Base-Free Copper(II)-Catalyzed C-N Bond Formation:
+Cross-Coupling Reactions of Organoboron Compounds with Aliphatic Amines and
+Anilines<br>
+T. D. Quach, R. A. Batey, <i>Org. Lett., </i><b>2003</b>, <i>5</i>, 4397-4400.</p>
+<p><a href="../abstracts/literature/571.shtm">
+<img src="../abstracts/literature/571a.gif"></a><br>
+Copper(II)-Catalyzed Ether Synthesis from Aliphatic Alcohols and Potassium
+Organotrifluoroborate Salts<br>
+T. D. Quach, R. A. Batey, <i>Org. Lett.</i>, <b>2003</b>, <i>5</i>, 1381-1384.</p>
+<p><a href="../abstracts/lit3/984.shtm"><img src="../abstracts/lit3/984a.gif"></a><br>
+Copper-Catalyzed <i>N</i>- and <i>O</i>-Alkylation of Amines and Phenols using 
+Alkylborane Reagents<br>
+S. Sueki, Y. Kuninobu, <i>Org. Lett.</i>, <b>2013</b>,
+<i>15</i>, 1544-1547.</p>
+<p><a href="../abstracts/lit4/032.shtm"><img src="../abstracts/lit4/032a.gif"></a><br>
+Selective Formation of Secondary Amides via the Copper-Catalyzed 
+Cross-Coupling of Alkylboronic Acids with Primary Amides<br>
+S. A. Rossi, K. W. Shimkin, Q. Xu, L. M. Mori-Quiroz, D. A. Watson, <i>Org. Lett.</i>, <b>2013</b>,
+<i>15</i>, 2314-2317.</p>
+<p><a href="../abstracts/lit1/517.shtm"><img src="../abstracts/lit1/517a.gif"></a><br>
+An Efficient Base-Free <i>N</i>-Arylation of Imidazoles and Amines with Arylboronic 
+Acids Using Copper-Exchanged Fluorapatite<br>
+M. L. Kantam, G. T. Venkanna, C. Sridhar, B. Sreedhar, B. M. Choudary, <i>J. Org. Chem.</i>, <b>2006</b>,
+<i>71</i>, 9522-9524.</p>
+<p><a href="../abstracts/lit3/773.shtm"><img src="../abstracts/lit3/773a.gif"></a><br>
+Nickel-Mediated <i>N</i>-Arylation with Arylboronic Acids: An Avenue to Chan-Lam 
+Coupling<br>
+D. S. Raghuvanshi, A. K. Gupta, K. N. Singh, <i>Org. Lett.</i>, <b>2012</b>,
+<i>14</i>, 4326-4329.</p>
+<p><a href="../abstracts/lit4/827.shtm"><img src="../abstracts/lit4/827a.gif"></a><br>
+A Synthetic Approach to <i>N</i>-Aryl Carbamates via Copper-Catalyzed 
+Chan-Lam Coupling at Room Temperature<br>
+S.-Y. Moon, U. Bin Kim, D.-B. Sung, W.-S. Kim, <i>J. Org. Chem.</i>, <b>
+2015</b>,
+<i>80</i>, 1856-1865.</p>
+<p><a href="../abstracts/lit4/387.shtm"><img src="../abstracts/lit4/387a.gif"></a><br>
+Microwave-assisted conditions enabled a simple, rapid, one-pot synthesis of 
+arylaminomethyl acetylenes in very good yields using arylboronic acids, aqueous 
+ammonia, propargyl halides, copper(I) oxide and water as the solvent within ten 
+minutes.<br>
+Y. Jiang, S. Huang, <i>Synlett</i>, <b>2014</b>, <i>25</i>, 
+407-410.</p>
+<p><a href="../abstracts/lit4/670.shtm"><img src="../abstracts/lit4/670a.gif"></a><br>
+One-Pot Approach to 1,2-Disubstituted Indoles via Cu(II)-Catalyzed 
+Coupling/Cyclization under Aerobic Conditions and Its Application for the 
+Synthesis of Polycyclic Indoles<br>
+J. Gao, Y. Shao, J. Zhu, H. Mao, X. Wang, X. Lv, <i>J. Org. Chem.</i>, <b>2014</b>,
+<i>79</i>, 9000-9008.</p>
+<p><a href="../abstracts/literature/031.shtm"><img src="../abstracts/literature/031a.gif"></a><br>
+Synthesis of Diaryl Ethers through the Copper-Promoted Arylation of Phenols
+with Arylboronic Acids. An Expedient Synthesis of Thyroxine<br>
+D. A. Evans, J. L. Katz, T. R. West, <i>Tetrahedron Letters</i>, <b>1998</b>,<i> 
+39</i>, 2937-2940.</p>
+<p><a href="../abstracts/lit3/078.shtm"><img src="../abstracts/lit3/078a.gif"></a><br>
+Cu(OTf)<sub>2</sub>-Mediated Chan-Lam Reaction of Carboxylic Acids to Access Phenolic 
+
+Esters<br>
+L. Zhang, G. Zhang, M. Zhang, J. Cheng, <i>J. Org. Chem.</i>, <b>2010</b>,
+
+<i>75</i>, 7472-7474.</p>
+<p><a href="../abstracts/lit4/083.shtm"><img src="../abstracts/lit4/083a.gif"></a><br>
+Copper-Catalyzed Formamidation of Arylboronic Acids: Direct Access to 
+Formanilides<br>
+V. P. Srivastava, D. K. Yadav, A. K. Yadav, G. Watal, L. D. S. Yadav, <i>Synlett</i>, <b>2013</b>, <i>24</i>, 
+1423-1427.</p>
+<p><a href="../abstracts/lit4/406.shtm"><img src="../abstracts/lit4/406a.gif"></a><br>
+Copper-Catalyzed N-Arylation of Sulfonamides with Boronic Acids in Water 
+under Ligand-Free and Aerobic Conditions<br>
+M. Nasrollahzadeh, A. Ehsani, M. Maham, <i>Synlett</i>, <b>2014</b>, <i>25</i>, 
+505-508.</p>
+<p><a href="../abstracts/lit4/325.shtm"><img src="../abstracts/lit4/325a.gif"></a><br>
+Copper-Catalyzed Chan-Lam Coupling between Sulfonyl Azides and Boronic Acids 
+at Room Temperature<br>
+S.-Y. Moon, J. Nam, K. Rathwell, W.-S. Kim, <i>Org. Lett.</i>, <b>2014</b>,
+<i>16</i>, 338-339.</p>
+<p><a href="../abstracts/lit4/070.shtm"><img src="../abstracts/lit4/070a.gif"></a><br>
+Copper-Catalyzed Nondecarboxylative Cross Coupling of Alkenyltrifluoroborate 
+Salts with Carboxylic Acids or Carboxylates: Synthesis of Enol Esters<br>
+F. Huang, T. D. Quach, R. A. Batey, <i>Org. Lett.</i>, <b>2013</b>,
+<i>15</i>, 3058-3061.</p>
+<p><a href="../abstracts/lit2/795.shtm"><img src="../abstracts/lit2/795a.gif"></a><br>
+Copper-Promoted Coupling of Vinyl Boronates and Alcohols: A Mild Synthesis 
+
+of Allyl Vinyl Ethers<br>
+R. E. Shade, A. M. Hyde, J.-C. Olsen, C. A. Merlic, <i>J. Am. Chem. Soc.</i>, <b>2010</b>, <i>
+
+132</i>, 1202-1203.</p>
+<p><a href="../abstracts/literature/196.shtm"><img src="../abstracts/literature/196a.gif"></a><br>
+New N- and O-arylations with phenylboronic acids and cupric acetate<br>
+D. M. T. Chan, K. L. Monaco, R.-P. Wang, M. P. Winteres, <i>Tetrahedron Lett.</i>,
+<b>1998</b>,<i> 39</i>,<i> </i>2933-2936.</p>
+<p><a href="../abstracts/lit2/513.shtm"><img src="../abstracts/lit2/513a.gif"></a><br>
+Selective Monomethylation of Anilines by Cu(OAc)<sub>2</sub>-Promoted Cross-Coupling 
+
+with MeB(OH)<sub>2</sub><font size="1"><br>
+</font>I. González, J. Mosquera, C. Guerrero, R. Rodríguez, Jacobo Cruces, <i>Org. Lett.</i>, <b>2009</b>,
+
+<i>11</i>, 1677-1680.</p>
+<p><a href="../abstracts/lit3/012.shtm"><img src="../abstracts/lit3/012a.gif"></a><br>
+Selective Copper-Promoted Cross-Coupling of Aromatic Amines with Alkyl 
+Boronic Acids<br>
+M. Larrosa, C. Guerrero, R. Rodríguez, J. Cruces, <i>Synlett</i>, <b>2010</b>, 
+
+2101-2105.</p>
+<p><a href="../abstracts/lit2/885.shtm"><img src="../abstracts/lit2/885a.gif"></a><br>
+Copper(II)-Catalyzed Conversion of Aryl/Heteroaryl Boronic Acids, Boronates, 
+
+and Trifluoroborates into the Corresponding Azides: Substrate Scope and 
+
+Limitations<br>
+K. D. Grimes, A. Gupte, C. C. Aldrich, <i>Synthesis</i>, <b>2010</b>, 
+
+1441-1448.</p>
+<p><a href="../abstracts/lit3/570.shtm"><img src="../abstracts/lit3/570a.gif"></a><br>
+Chan-Lam-Type S-Arylation of Thiols with Boronic Acids at Room Temperature<br>
+H.-J. Xu, Y.-Q. Zhao, T. Feng, Y.-S. Feng, <i>J. Org. Chem.</i>, <b>2012</b>,
+<i>77</i>, 2649-2658.</p>
+<p><a href="../abstracts/lit3/493.shtm"><img src="../abstracts/lit3/493a.gif"></a><br>
+An Efficient Copper-Catalyzed One-Pot Synthesis of Diaryl Thioethers by 
+Coupling of Arylboronic Acids with Potassium Ethyl Xanthogenate under Mild 
+Conditions<br>
+L. Wang, W.-Y. Zhou, S.-C. Chen, M.-Y. He, Q. Chen, <i>Synlett</i>, <b>2011</b>, 
+3041-3045.</p>
+<p><a href="../abstracts/lit4/086.shtm"><img src="../abstracts/lit4/086a.gif"></a><br>
+A cross-coupling reaction of arylboronic acids with KSCN salt to yield aryl 
+thiocyanates is catalyzed by copper acetate in the presence of 4-methylpyridine 
+serving both as ligand and base under 0.2 MPa of molecular oxygen. Various 
+arylboronic acids were suitable under the reaction conditions.<br>
+N. Sun, H. Zhang, W. Mo, B. Hu, Z. Shen, X. Hu, <i>Synlett</i>, <b>2013</b>, <i>24</i>, 
+1443-1447.</p>
+<p><a href="../abstracts/lit3/247.shtm"><img src="../abstracts/lit3/247a.gif"></a><br>
+Copper-Catalyzed C-P Bond Construction via Direct Coupling of Phenylboronic 
+
+Acids with H-Phosphonate Diesters<br>
+R. Zhuang, J. Xu, Z. Cai, G. Tang, M. Fang, Y. Zhao, <i>Org. Lett.</i>, <b>2011</b>,
+
+<i>13</i>, 2110-2113.</p>
+<p><a href="../abstracts/lit2/052.shtm"><img src="../abstracts/lit2/052a.gif"></a><br>
+Copper(I) Oxide Catalyzed <i>N</i>-Arylation of Azoles and Amines with Arylboronic 
+
+Acid at Room Temperature under Base-Free Conditions<br>
+B. Sreedhar, G. T. Venkanna, K. B. S. Kumar, V. Balasubrahmanyam, <i>Synthesis</i>, <b>2008</b>, 
+795-799.</p>
+<p><a href="../abstracts/literature/237.shtm"><img src="../abstracts/literature/237a.gif"></a><br>
+New aryl/heteroaryl C-N bond cross-coupling reactions via arylboronic acid/cupric 
+acetate arylation<br>
+P. Y. S. Lam, C. G. Clark, S. Saubern, J. Adams, M. P. Winters, D. M. T. Chan, 
+A. Combs, <i>Tetrahedron Lett.</i>,
+<b>1998</b>,<i> 39</i>,<i> </i>2941-2944.</p>
+<p><a href="../abstracts/literature/491.shtm">
+<img src="../abstracts/literature/491a.gif"></a><br>
+Comparison of Copper(II) Acetate Promoted N-Arylation of 5,5-Dimethyl 
+Hydantoin and Other Imides with Triarylbismuthanes and Aryl Boronic Acids<br>
+H. M. Hügel, C. J. Rix, K. Fleck, <i>Synlett</i>, <b>2006</b>, 
+2290-2292.</p>
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

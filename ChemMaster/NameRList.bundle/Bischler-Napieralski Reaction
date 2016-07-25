@@ -1,0 +1,208 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Bischler-Napieralski Reaction</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a></div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a></div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+	<a href="/related/bischler-napieralski+reaction.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="../synthesis/heterocycles/3,4-dihydroisoquinolines.shtm">Synthesis of 
+3,4-dihydroisoquinolines</a></p>
+
+</div>
+<h1>Bischler-Napieralski Reaction<br>
+Bischler-Napieralski Cyclization</h1>
+<p><img border="0" src="bischl1.GIF"><p>The Bischler-Napieralski Reaction allows 
+the synthesis of 3,4-dihydroisoquinolines from the &#946;-ethylamides of 
+electron-rich arenes using condensation reagents such as P<sub>2</sub>O<sub>5</sub>, POCl<sub>3</sub> 
+or ZnCl<sub>2</sub>.</p>
+<hr>
+<h2>Mechanism of the Bischler-Napieralski Reaction</h2>
+<p>According to detailed studies by Fodor and Nagubandi (<i>Tetrahedron</i> <b>
+1980</b>, <i>36</i>, 1279.
+<a target="_blank" href="http://dx.doi.org/10.1016/0040-4020(80)85039-3">DOI</a>), 
+the Bischler-Napieralski Reaction involves an initial dehydration step of the 
+amide followed by a cyclization. Fodor was able to prepare stable imidoyl salts 
+at room temperature that formed nitrilium salts upon mild heating, whereas the 
+Bischler-Napieralski Reaction required elevated temperatures to form 
+dihydroisoquinolines. A mechanism that includes nitrilium salts also accounts the 
+occurrence of styrenes as side products as will be explained later.</p>
+<p>In the dehydration, reagents such as PCl<sub>5</sub>, POCl<sub>3</sub>, SOCl<sub>2</sub>, 
+ZnCl<sub>2</sub> can be used to promote loss of the carbonyl oxygen. Use of POCl<sub>3</sub> 
+leads first to formation of imidoyl phosphates in which phosphate is a good 
+leaving group. Use of P<sub>2</sub>O<sub>5</sub> or addition of P<sub>2</sub>O<sub>5</sub> 
+to a reaction with POCl<sub>3</sub> leads to pyrophosphates, which are even 
+better leaving groups. </p>
+<p><img border="0" src="bischl2.GIF"></p>
+<p>For the cyclization, an activated arene is needed to effect ring closure at 
+reflux temperature if the solvent is toluene. Alternatively, xylene can be used, 
+and microwave-assisted chemistry in superheated solvents is also a viable 
+solution.</p>
+<p><img border="0" src="bischl3.GIF"></p>
+<p>One of the most important side reactions is the
+<a href="ritter-reaction.shtm">retro-Ritter reaction</a> forming styrenes, which 
+is also evidence for nitrilium salts as intermediates:</p>
+<p><img border="0" src="bischl5.GIF"></p>
+<p>In this example, the formation of a conjugated system favors the retro-Ritter 
+reaction. A possible solution is the use of the corresponding nitrile as 
+solvent, which shifts the equilibrium to the left side, but some nitriles (R' &#8800; 
+Me) can be expensive. Another solution was recently presented by Larsen using 
+oxalyl chloride to form an <i>N</i>-acyliminium intermediate, so that 
+elimination of the amide group as the nitrile is avoided.</p>
+<p><font size="1"><a href="../abstracts/lit2/137.shtm">
+<img src="../abstracts/lit2/137n.gif"></a><br>
+</font>R. D. Larsen, R. A. Reamer, E. G. Corley, P. Davis, E. J. J. Grabowski, P. J. 
+Reider, I. Shinkai, <i>J. Org. Chem.</i>, <b>1991</b>,
+<i>56</i>, 6034-6038.</p>
+<p>In the following recently published procedure by Movassaghi, Tf<sub>2</sub>O 
+is used in the presence of 2-chloropyridine to provide a mild cyclodehydration reaction. 
+Here the authors suggest that electrophilic activation of <i>N</i>-alkylamides 
+may lead to a transient highly electrophilic nitrilium ion (or pyridinium adduct) 
+that is trapped by the arene ring.</p>
+<p><a href="../abstracts/lit2/135.shtm"><img src="../abstracts/lit2/135n.gif"></a><br>
+M. Movassaghi, M. D. Hill, <i>Org. Lett.</i>, <b>2008</b>,
+<i>10</i>, 3485-3488.</p>
+<p>The two-step procedure reported by Larsen and the method described by 
+Movassaghi allow the transformation of a broad range of substrates into 
+3,4-dihydroisoquinolines and the use of milder conditions. Some more procedures 
+can be found in the Recent Literature section.</p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit2/135.shtm"><img src="../abstracts/lit2/135a.gif"></a><br>
+A Versatile Cyclodehydration Reaction for the Synthesis of Isoquinoline and 
+&#946;-Carboline Derivatives<br>
+M. Movassaghi, M. D. Hill, <i>Org. Lett.</i>, <b>2008</b>,
+<i>10</i>, 3485-3488.</p>
+<p><a href="../abstracts/lit2/334.shtm"><img src="../abstracts/lit2/334a.gif"></a><br>
+A Very Mild Access to 3,4-Dihydroisoquinolines Using Triphenyl 
+Phosphite-Bromine-Mediated Bischler-Napieralski-Type Cyclization<br>
+D. Vaccari, P. Davoli, C. Ori, A. Spaggiari, F. Prati, <i>Synlett</i>, <b>2008</b>, 
+2803-2806.</p>
+<p><a href="../abstracts/lit3/003.shtm"><img src="../abstracts/lit3/003b.gif"></a><br>
+
+Strategies and Synthetic Methods Directed Toward the Preparation of 
+Libraries of Substituted Isoquinolines<br>
+
+E. Awuah, A. Capretta, <i>J. Org. Chem.</i>, <b>2010</b>,
+
+<i>75</i>, 5627-5634.</p>
+<p><a href="../abstracts/lit2/137.shtm"><img src="../abstracts/lit2/137a.gif"></a><br>
+A modified Bischler-Napieralski procedure for the synthesis of 
+3-aryl-3,4-dihydroisoquinolines<br>
+R. D. Larsen, R. A. Reamer, E. G. Corley, P. Davis, E. J. J. Grabowski, P. J. 
+Reider, I. Shinkai, <i>J. Org. Chem.</i>, <b>1991</b>,
+<i>56</i>, 6034-6038.</p>
+<p><a href="../abstracts/lit2/139.shtm"><img src="../abstracts/lit2/139a.gif"></a><br>
+The first Bischler-Napieralski cyclization in a room temperature ionic 
+liquid<br>
+Z. M. A. Judeh, C. B. Ching, J. Bu, A. McCluskey, <i>Tetrahedron Lett.</i>, 
+<b>2002</b>,
+<i>43</i>, 5089-5091.</p>
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

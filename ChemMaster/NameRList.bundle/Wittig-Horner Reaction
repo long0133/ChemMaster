@@ -1,0 +1,202 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Wittig-Horner Reaction</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+<a href="/related/wittig-horner+reaction.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="arbuzov-reaction.shtm">Arbuzov 
+Reaction</a><br>
+<a href="schlosser-modification.shtm">Schlosser Modification</a><br>
+<a href="wittig-reaction.shtm">Wittig 
+Reaction</a></p>
+
+</div>
+<h1>Wittig-Horner Reaction<br>
+Horner-Wadsworth-Emmons Reaction</h1>
+<p><img src="Wittig1.gif" width="364" height="234"></p>
+<p>The reaction of aldehydes or ketones with stabilized phosphorus ylides 
+(phosphonate carbanions) leads to olefins with excellent
+<i>E</i>-selectivity.</p>
+<hr>
+<h2>Mechanism of the Wittig-Horner Reaction</h2>
+<p>The reaction mechanism is similar to the mechanism of the <a href="wittig-reaction.shtm">Wittig Reaction</a>. The stereochemistry is set by steric approach control, 
+where the antiperiplanar approach of the carbanion to the carbon of the carbonyl 
+group is favored when the smaller aldehydic hydrogen eclipses the bulky 
+phosphoranyl moiety. This places the ester group syn to the aldehyde R group, 
+but the incipient alkene assumes an
+<i>E</i>-orientation of these groups after rotation to form the oxaphosphetane. 
+As the lithium counterion does not interfere with oxaphosphetane formation, use 
+of BuLi is possible, but NaH and NaOMe are also suitable bases for forming the 
+ylide. The resulting phosphate byproduct is readily separated from the desired 
+products by simply washing with water.</p>
+<p><img src="Wittig1a.gif" width="733" height="104"></p>
+<p><img src="Wittig2.gif" width="550" height="126"></p>
+<p><img src="Wittig3.gif" width="443" height="100"></p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit2/363.shtm"><img src="../abstracts/lit2/363a.gif"></a><br>
+Highly (<i>E</i>)-Selective Wadsworth-Emmons Reactions Promoted by Methylmagnesium 
+
+Bromide<br>
+T. D. W. Claridge, S. G. Davies, J. A. Lee, R. L. Nicholson, P. M. Roberts, A. 
+J. Russel, A. D. Smith, S. M. Toms, <i>Org. Lett.</i>, <b>2008</b>,
+
+<i>10</i>, 5437-5440.</p>
+<p><a href="../abstracts/lit3/755.shtm"><img src="../abstracts/lit3/755a.gif"></a><br>
+Novel One-pot Three-component Coupling Reaction with 
+Trimethylsilylmethyl-phosphonate, Acyl Fluoride, and Aldehyde through the 
+Horner-Wadsworth-Emmons Reaction<br>
+T. Umezawa, T. Seino, F. Matsuda, <i>Org. Lett.</i>, <b>2012</b>,
+<i>14</i>, 4206-4209.</p>
+<p><a href="../abstracts/literature/132.shtm"><img src="../abstracts/literature/132b.gif"></a><br>
+Generation of Phosphoranes Derived from Phosphites. A New Class of 
+Phosphorus Ylides Leading to High <i>E</i> Selectivity with Semi-stabilizing Groups in 
+Wittig Olefinations<br>
+V. K. Aggarwal, J. R. Fulton, C. G. Sheldon, J. de Vicente, <i>J. Am. Chem. Soc.</i>, <b>2003</b>, <i>125</i>, 6034-6035.</p>
+<p><a href="../abstracts/lit1/489.shtm">
+<img border="2" src="../abstracts/lit1/489a.gif"></a><br>
+Mild Zinc-Promoted Horner-Wadsworth-Emmons Reactions of Diprotic Phosphonate 
+Reagents<br>
+D. J. Schauer, P. Helquist, <i>
+Synthesis</i>, <b>2006</b>, 3654-3660.</p>
+<p><a href="../abstracts/literature/374.shtm">
+<img src="../abstracts/literature/374a.gif"></a><br>
+Stereoselective Preparation of (<i>E</i>)-&#945;-Bromoacrylates from Mixtures of 
+Brominated Ando Phosphonates<br>
+T. Olpp, R. Brückner, <i>Synthesis</i>, 
+<b>2004</b>, 2135-2152.</p>
+<p><a href="../abstracts/lit1/047.shtm"><img src="../abstracts/lit1/047a.gif"></a><br>
+Tandem Horner-Wadsworth-Emmons Olefination/Claisen Rearrangement/Hydrolysis 
+Sequence: Remarkable Acceleration in Water with Microwave Irradiation<br>
+E. Quesada, R. J. K. Taylor, <i>
+Synthesis</i>, <b>2005</b>, 3193-3195.</p>
+<p><a href="../abstracts/literature/133.shtm"><img src="../abstracts/literature/133a.gif"></a><br>
+A Convenient Method for the Synthesis of Terminal (<i>E</i>)-1,3-Dienes<br>
+Y. Wang, F. G. West, <i>Synthesis</i>,
+<b>2002</b>, 99-103.</p>
+<p><a href="../abstracts/lit1/314.shtm"><img src="../abstracts/lit1/314a.gif" width="366" height="63"></a><br>
+Reliable and Versatile Synthesis of 2-Aryl-Substituted Cinnamic Acid Esters<br>
+A. Ianni, S. R. Waldvogel, <i>
+Synthesis</i>, <b>2006</b>, 2103-2112.</p>
+<p><a href="../abstracts/literature/260.shtm"><img src="../abstracts/literature/260a.gif"></a><br>
+Synthesis of Vinyl Sulfonamides Using the Horner Reaction<br>
+D. C. Reuter, J. E. McIntosh, A. C. Guinn, A. M. Madera, <i>Synthesis,</i>
+<b>2003</b>, 2321-2324.</p>
+<p><a href="../abstracts/literature/772.shtm">
+<img src="../abstracts/literature/772a.gif"></a><br>
+One-Pot Homolytic Aromatic Substitutions/HWE Olefinations under Microwave 
+Conditions for the Formation of a Small Oxindole Library<br>
+A. Teichert, K. Jantos, K. Harms, A. Studer, <i>Org. Lett., </i><b>2004</b>, <i>
+6</i>, 3477-3480.</p>
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

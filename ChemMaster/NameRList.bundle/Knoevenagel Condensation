@@ -1,0 +1,217 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Knoevenagel Condensation</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+<a href="/related/knoevenagel+condensation.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="acetoacetic-ester-synthesis.shtm">Acetoacetic Ester Synthesis</a><br>
+<a href="malonic-ester-synthesis.shtm">Malonic Ester Synthesis</a></p>
+
+</div>
+<h1>Knoevenagel Condensation<br>
+Doebner Modification</h1>
+<p><img src="knoeve3.gif" width="368" height="200"></p>
+<p>The condensation of carbon acid compounds with aldehydes 
+to afford &#945;,&#946;-unsaturated compounds.</p>
+<p>The Doebner Modification, which is possible in the 
+presence of carboxylic acid groups, includes a pyridine-induced 
+decarboxylation.</p>
+<hr>
+<h2>Mechanism of the Knoevenagel Condensation</h2>
+<p>An enol intermediate is formed initially:</p>
+<p><img src="Knoeve1.gif" width="470" height="188"></p>
+<p>This enol reacts with the aldehyde, and the resulting aldol undergoes 
+subsequent base-induced elimination:</p>
+<p><img src="Knoeve2.gif" width="465" height="212"></p>
+<p>A reasonable variation of the mechanism, in which piperidine acts as
+<a href="../topics/organocatalysis.shtm">organocatalyst</a>, involves the corresponding iminium 
+intermediate as the acceptor:</p>
+<p><img src="knoeve7.GIF"></p>
+<p>The Doebner-Modification in refluxing pyridine effects concerted 
+decarboxylation and elimination:</p>
+<p><img src="Knoeve4.gif" width="307" height="81"></p>
+<p>&nbsp;&nbsp;</p>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit2/084.shtm"><img src="../abstracts/lit2/084a.gif"></a><br>
+
+Facile and Highly Stereoselective One-Pot Synthesis of Either (<i>E</i>)- or (<i>Z</i>)-Nitro 
+
+Alkenes<br>
+
+S. Fioravanti, L. Pellacani, P. A. Tardella, M. C. Vergari, <i>Org. Lett.</i>, <b>2008</b>,
+
+<i>10</i>, 1449-1451.</p>
+<p><a href="../abstracts/literature/690.shtm">
+<img src="../abstracts/literature/690a.gif"></a><br>
+Phosphane-Catalyzed Knoevenagel Condensation: A Facile Synthesis of
+&#945;-Cyanoacrylates and &#945;-Cyanoacrylonitriles<br>
+J. S. Yadav, B. S. S. Reddy, A. K. Basak, B. Visali, A. 
+V. Narsaiah, K. Nagaiah, <i>Eur. J. Org. Chem., </i><b>2004</b>, 546-551.</p>
+<p><a href="../abstracts/lit1/326.shtm"><img src="../abstracts/lit1/326b.gif" width="344" height="61"></a><br>
+Reconstructed Hydrotalcite as a Highly Active Heterogeneous Base Catalyst 
+for Carbon-Carbon Bond Formations in the Presence of Water<br>
+K. Ebitani, K. Motokura, K. Mori, T. Mizugaki, K. Kaneda, <i>J. Org. Chem.</i>, <b>2006</b>, <i>71</i>, 5440-5447.</p>
+<p><a href="../abstracts/lit4/868.shtm"><img src="../abstracts/lit4/868a.gif"></a><br>
+Indium(III)-Catalyzed Knoevenagel Condensation of Aldehydes and Activated 
+Methylenes Using Acetic Anhydride as a Promoter<br>
+Y. Ogiwara, K. Takahashi, T. Kitazawa, N. Sakai, <i>J. Org. Chem.</i>, <b>
+2015</b>,
+<i>80</i>, 3101-3110.</p>
+<p><a href="../abstracts/literature/214.shtm"><img src="../abstracts/literature/214a.gif"></a><br>
+The ionic liquid 1-butyl-3-methylimidazonium tetrafluoroborate [bmim]BF<sub>4</sub> 
+was used for ethylenediammonium diacetate (EDDA)-catalyzed Knoevenagel 
+condensation between aldehydes or ketones with active methylene compounds. 
+Catalyst and solvent can be recycled.<br>
+C. Su, Z.-C. Chen, Q.-G. Zhen, <i>Synthesis,</i>
+<b>2003</b>, 555-559.</p>
+<p><a href="../abstracts/lit1/378.shtm"><img src="../abstracts/lit1/378a.gif" width="480" height="51"></a><br>
+Ionic Liquid as Catalyst and Reaction Medium - A Simple, Efficient and Green 
+Procedure for Knoevenagel Condensation of Aliphatic and Aromatic Carbonyl 
+Compounds Using a Task-Specific Basic Ionic Liquid<br>
+B. C. Ranu, R. Jana, <i>Eur. J. Org. Chem.</i>, <b>2006</b>, 3767-3770.</p>
+<p><a href="../abstracts/lit4/003.shtm"><img src="../abstracts/lit4/003a.gif"></a><br>
+Organocatalytic Knoevenagel Condensations by Means of Carbamic Acid Ammonium 
+Salts<br>
+N. Mase, T. Horibe, <i>Org. Lett.</i>, <b>2013</b>,
+<i>15</i>, 1854-1857.</p>
+<p><a href="../abstracts/lit1/972.shtm"><img src="../abstracts/lit1/972a.gif"></a><br>
+<i>gem</i>-Dibromomethylarenes: A Convenient Substitute for Noncommercial Aldehydes 
+
+in the Knoevenagel-Doebner Reaction for the Synthesis of &#945;,&#946;-Unsaturated 
+
+Carboxylic Acids<br>
+J. K. Augustine, Y. A. Naik, A. B. Mandal, N. Chowdappa, V. B. Praveen, <i>J. Org. Chem.</i>, <b>2007</b>,
+
+<i>72</i>, 9854-9856.</p>
+<p><a href="../abstracts/lit3/333.shtm"><img src="../abstracts/lit3/333a.gif"></a><br>
+A bifunctional polystyrene bearing both DMAP and piperidine groups is an 
+effective organocatalyst for decarboxylative Doebner-Knoevenagel reactions of 
+arylaldehydes and monoethyl malonate to give <i>E</i>-cinnamates in high yields. 
+A synergistic effect obtained by co-locating the two different catalytic amine 
+groups on the same polymer backbone has been detected.<br>
+J. Lu, P. H. Toy, <i>Synlett</i>, <b>2011</b>, 
+
+1723-1726.</p>
+<p><a href="../abstracts/lit4/161.shtm"><img src="../abstracts/lit4/161a.gif"></a><br>
+The use of FeCl<sub>3</sub> as catalyst enables a rapid decarboxylation of 
+methylene tethered cyclic 1,3-diesters in the presence of water to yield 
+&#945;,&#946;-unsaturated acids with high <i>E</i>-stereoselectivity under both microwave 
+and conventional heating conditions. This powerful approach proved to be 
+scalable to gram scale synthesis.<br>
+A. R. Mohite, R. G. Bhat, <i>Org. Lett.</i>, <b>2013</b>,
+<i>15</i>, 4564-4567.</p>
+<p><a href="../abstracts/lit1/378.shtm"><img src="../abstracts/lit1/378b.gif"></a><br>
+Ionic Liquid as Catalyst and Reaction Medium - A Simple, Efficient and Green 
+Procedure for Knoevenagel Condensation of Aliphatic and Aromatic Carbonyl 
+Compounds Using a Task-Specific Basic Ionic Liquid<br>
+B. C. Ranu, R. Jana, <i>Eur. J. Org. Chem.</i>, <b>2006</b>, 3767-3770.</p>
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

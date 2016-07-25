@@ -1,0 +1,201 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Fischer Esterification</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+<a href="/related/fischer+esterification.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="steglich-esterification.shtm">Steglich Esterification</a><br>
+<a href="yamaguchi-esterification.shtm">Yamaguchi Esterification</a><br>
+<a href="../synthesis/C1O/esters1.shtm">Synthesis of esters</a></p>
+
+</div>
+<h1>Fischer Esterification<br>
+Fischer-Speier Esterification</h1>
+<p><img src="fische5.GIF"> </p>
+<p>The Lewis or Brønstedt acid-catalyzed esterification of carboxylic acids 
+with alcohols to give esters is a typical reaction in which the products 
+and reactants are in equilibrium.</p>
+<p>The equilibrium may be influenced by either removing one product from 
+the reaction mixture (for example, removal of the water by azeotropic 
+distillation or absorption by molecular sieves) or by employing an 
+excess of one reactant.</p>
+<hr>
+<h2>Mechanism of the Fischer Esterification</h2>
+<p>Addition of a proton (e.g.: <i>p</i>-TsOH, H<sub>2</sub>SO<sub>4</sub>) or a 
+Lewis acid leads to a more reactive electrophile. Nucleophilic attack of the 
+alcohol gives a tetrahedral intermediate in which there are two equivalent 
+hydroxyl groups. One of these hydroxyl groups is eliminated after a proton shift 
+(tautomerism) to give water and the ester.</p>
+<p><img src="fische2.GIF"></p>
+<p>Alternative reactions employ coupling reagents such as DCC (<a href="steglich-esterification.shtm">Steglich 
+Esterification</a>), preformed esters (transesterification), carboxylic acid 
+chlorides or anhydrides (see <a href="../synthesis/C1O/esters/">overview</a>). These 
+reactions avoid the production of water. Another pathway for the production of 
+esters is the formation of a carboxylate anion, which then reacts as a 
+nucleophile with an electrophile (similar reactions can be <a href="../synthesis/C1O/esters2.shtm">found here</a>). Esters may also be produced by oxidations, namely by the
+<a href="baeyer-villiger-oxidation.shtm">Baeyer-Villiger oxidation</a> and
+<a href="../synthesis/C1O/oxidative-esterifications.shtm">oxidative 
+esterifications</a>.</p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/literature/011.shtm"><img src="../abstracts/literature/011a.gif"></a><br>
+Direct ester condensation from a 1:1 mixture of carboxylic acids and 
+alcohols catalyzed by hafnium(IV) or zirconium(IV) salts<br>
+K. Ishihara, M. Nakayama, S. Ohara, H. Yamamoto, <i>Tetrahedron, </i><b>2002</b>, <i>58</i>, 8179-8188.</p>
+<p><a href="../abstracts/lit1/049.shtm"><img src="../abstracts/lit1/049a.gif"></a><br>
+Bulky Diarylammonium Arenesulfonates as Selective Esterification Catalysts<br>
+K. Ishihara, S. Nakagawa, A. Sakakura, <i>J. Am. Chem. Soc.</i>, <b>2005</b>,
+
+<i>127</i>, 4168-4169.</p>
+<p><a href="../abstracts/lit2/320.shtm"><img src="../abstracts/lit2/320a.gif"></a><br>
+FeCl<sub>3</sub>·6H<sub>2</sub>O as a Versatile 
+
+Catalyst for the Esterification of Steroid Alcohols with Fatty Acids<br>
+K. Komura, A. Ozaki, N. Ieda, Y. Sugi, <i>Synthesis</i>, <b>2008</b>, 
+
+3407-3410.</p>
+<p><a href="../abstracts/lit1/008.shtm"><img src="../abstracts/lit1/008a.gif"></a><br>
+Direct Atom-Efficient Esterification between Carboxylic Acids and Alcohols 
+Catalyzed by Amphoteric, Water-Tolerant TiO(acac)<sub>2</sub><br>
+C.-T. Chen, Y. S. Munot, <i>J. Org. Chem.</i>, <b>2005</b>, <i>70</i>, 8625-8627.</p>
+<p><a href="../abstracts/lit2/638.shtm"><img src="../abstracts/lit2/638a.gif"></a><br>
+Protic Acid Immobilized on Solid Support as an Extremely Efficient 
+
+Recyclable Catalyst System for a Direct and Atom Economical Esterification of 
+
+Carboxylic Acids with Alcohols<br>
+A. K. Chakraborti, B. Singh, S. V. Chankeshwara, A. R. Patel, <i>J. Org. Chem.</i>, <b>2009</b>,
+
+<i>74</i>, 5967-5974.</p>
+<p><a href="../abstracts/literature/920.shtm">
+<img src="../abstracts/literature/920a.gif"></a><br>
+Scandium(III) or lanthanide(III) triflates as recyclable catalysts for the 
+direct acetylation of alcohols with acetic acid<br>
+A. G. M. Barrett, D. C. Braddock, <i>Chem. Commun.</i>, <b>1997</b>, 
+351-352.</p>
+<p><a href="../abstracts/literature/269.shtm"><img src="../abstracts/literature/269a.gif"></a><br>
+Silica Chloride: A Versatile Heterogeneous Catalyst for Esterification and 
+Transesterification<br>
+K. V. N. S. Srinivas, I. Mahender, B. Das, <i>Synthesis,</i>
+<b>2003</b>, 2479-2482.</p>
+<p><a href="../abstracts/literature/559.shtm"><img src="../abstracts/literature/559a.gif"></a><br>
+Al<sub>2</sub>O<sub>3</sub>/MeSO<sub>3</sub>H 
+(AMA) as a new reagent with high selective ability for monoesterification of 
+diols<br>
+H. Sharghi, M. Hosseini Sarvari, <i>Tetrahedron</i>, <b>2003</b>, <i>59</i>, 3627-3633.</p>
+<p><a href="../abstracts/lit1/224.shtm"><img src="../abstracts/lit1/224b.gif" width="293" height="44"></a><br>
+Efficient Synthesis of 2-Amino Acid by Homologation of &#946;<sup>2</sup>-Amino Acids 
+Involving the Reformatsky Reaction and Mannich-Type Imminium Electrophile<br>
+R. Moumne, S. Lavielle, P. Karoyan, <i>J. Org. Chem.</i>, <b>2006</b>, <i>71</i>, 3332-3334.</p>
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

@@ -1,0 +1,218 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>[2,3]-Wittig Rearrangement</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+<a href="/related/wittig+rearrangement.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="claisen-rearrangement.shtm">Claisen Rearrangement</a><br>
+<a href="1,2-wittig-rearrangement.shtm">[1,2]-Wittig Rearrangement</a><br>
+<a href="../synthesis/C1C/alcohols/homoallylic-alcohols.shtm">Synthesis of homoallylic alcohols</a><p>
+
+</div>
+<h1>[2,3]-Wittig Rearrangement</h1>
+<p><img src="2,3-wi1.GIF"></p>
+<p>The [2,3]-Wittig Rearrangement allows the synthesis of
+<a href="../synthesis/C1C/alcohols/homoallylic-alcohols.shtm">homoallylic 
+alcohols</a> by the base-induced rearrangement of allyl ethers at low 
+temperatures.</p>
+<hr>
+<h2>Mechanism of the [2,3]-Wittig Rearrangement</h2>
+<p>The [2,3]-Wittig Rearrangement is a [2,3]-sigmatropic reaction, a thermal 
+isomerization that proceeds through a six-electron, five-membered cyclic 
+transition state. A general scheme for [2,3]-sigmatropic reactions is given here:</p>
+<p><img src="2,3-wi2.GIF"></p>
+<p>[2,3]-Sigmatropic reactions encompass a vast number of synthetically useful 
+variants in terms of both the atom pair involved (X, Y) and the electronic state 
+(Y: anions, non-bonding electron pairs, ylides).</p>
+<p>The transformation of deprotonated allyl ethers into homoallylic alcohols is 
+the [2,3]-sigmatropic version of the <a href="1,2-wittig-rearrangement.shtm">
+[1,2]-Wittig Rearrangement</a>, and is therefore termed [2,3]-Wittig 
+Rearrangement:</p>
+<p><img src="2,3-wi3.GIF"></p>
+<p>These [2,3]-rearrangements feature regioselective carbon-carbon bond 
+formation with allylic transposition of the oxygen, generation of specific 
+olefin geometries and transfer of chirality. A discussion of the mechanism, 
+scope and limitations, stereochemical control and synthetic applications can be 
+found in the review by Nakai and Mikami (<i>Chem. Rev.</i>, <b>1986</b>,
+<i>86</i>, 885-902).</p>
+<p>The concerted [2,3]-shift competes with the [1,2]-shift in many cases:</p>
+<p><img src="1,2-wi5.GIF"></p>
+<p>The product ratio varies as a function of the temperature and structural 
+environment (see also <a href="1,2-wittig-rearrangement.shtm">[1,2]-Wittig 
+Rearrangement</a>). The [2,3]-Wittig Rearrangement should be conducted at a low 
+temperature to avoid contamination by the [1,2]-product.</p>
+<p>The reaction rate depends on the energy gap between HOMO (anion) and LUMO (allyl). 
+Roughly speaking, the less stable the carbanion, the faster the rearrangement.</p>
+<p><img src="2,3-wi4.GIF"></p>
+<p>For the Thio-[2,3]-Wittig Rearrangement, Nakai reported the following 
+relative reaction rates: R = Ph &gt; CO<sub>2</sub>Li &gt; CN &gt; CO<sub>2</sub>Et &gt; 
+COMe, and for R' = Ph &gt; H &gt; CH<sub>3</sub>. Reactions in this series were 
+conducted at temperatures of from -80 °C to +60 °C.</p>
+<p>The scope of the [2,3]-Wittig Rearrangement is mainly defined by the 
+availability of methods for generating carbanions at temperatures low enough to 
+minimize the occurrence of the [1,2]-rearrangement. Tin-lithium exchange, for 
+example, allows the selective preparation of extremely unstable carbanions in a 
+reaction known as the [2,3]-Wittig-Still rearrangement:</p>
+<p><img src="2,3-wi5.GIF"></p>
+<p>[2,3]-Wittig Rearrangements of propargyl ethers can afford allenic alcohols, 
+but the scope is relatively limited and the process is not general.</p>
+<p><img src="2,3-wi9.GIF"></p>
+<p>Terminal alkynyl groups, for example, are deprotonated; the use of a second 
+equivalent of base allows the generation of 1,2-rearrangement products via 
+dianion intermediates.</p>
+<p>Many diastereoselective rearrangements have been reported and chirality 
+transfer with the generation of new stereocenters can be explained by models for 
+the transition state based on an envelope conformation. The two putative 
+pathways are shown below:</p>
+<p><img src="2,3-wi7.GIF"></p>
+<p>A strong preference for <i>E</i> products has been confirmed by numerous 
+experiments.</p>
+<p>An originally chiral carbon becomes a planar sp<sup>2</sup> center in the 
+course of the rearrangement of some asymmetric substrates, while simultaneously 
+new chiral centers are generated at an originally sp<sup>2</sup> center and the 
+anionic carbon:</p>
+<p><img src="2,3-wi10.GIF"></p>
+<p>Properly designed strategies based on the [2,3]-Wittig Rearrangement are 
+powerful tools for asymmetric synthesis as exemplified by the many examples 
+presented in the review by Nakai and Mikami (<i>Chem. Rev.</i>, <b>1986</b>,
+<i>86</i>, 885-902).</p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit1/500.shtm">
+<img src="../abstracts/lit1/500a.gif" width="540" height="94"></a><br>
+Organocatalytic Sigmatropic Reactions: Development of a [2,3] Wittig 
+Rearrangement through Secondary Amine Catalysis<br>
+A. McNally, B. Evans, M. J. Gaunt, <i>Angew. Chem. Int. Ed.</i>, <b>2006</b>,
+<i>45</i>, 2116-2119.</p>
+<p><a href="../abstracts/literature/321.shtm">
+<img src="../abstracts/literature/321a.gif" width="457" height="84"></a><br>
+Synthesis and Fluoride-Promoted Wittig Rearrangements of &#945;-Alkoxysilanes<br>
+R. E. Maleczka, Jr., F. Geng, <i>Org. Lett.</i>, <b>1999</b>,
+<i>1</i>, 1111-1113.</p>
+<p><font size="1"><a href="../abstracts/lit4/808.shtm">
+<img src="../abstracts/lit4/808a.gif"></a></font><br>
+Base-Mediated Cascade Rearrangements of Aryl-Substituted Diallyl Ethers<br>
+J. P. Reid, C. A. McAdam, A. J. S. Johnston, M. N. Grayson, J. M. Goodman, M. J. 
+Cook, <i>J. Org. Chem.</i>, <b>
+2015</b>,
+<i>80</i>, 1472-1498.</p>
+<p><font size="1"><a href="../abstracts/lit4/808.shtm">
+<img src="../abstracts/lit4/808c.gif"></a></font><br>
+Base-Mediated Cascade Rearrangements of Aryl-Substituted Diallyl Ethers<br>
+J. P. Reid, C. A. McAdam, A. J. S. Johnston, M. N. Grayson, J. M. Goodman, M. J. 
+Cook, <i>J. Org. Chem.</i>, <b>
+2015</b>,
+<i>80</i>, 1472-1498.</p>
+
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

@@ -1,0 +1,306 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Huisgen 1,3-Dipolar Cycloaddition</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+<a href="/related/*dipolar+cycloaddition.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="click-chemistry.shtm">Click Chemistry</a><br>
+<a href="diels-alder-reaction.shtm">Diels-Alder Reaction</a><br>
+<a href="ozonolysis-criegee-mechanism.shtm">Ozonolysis</a><br>
+<a href="upjohn-dihydroxylation.shtm">Upjohn Dihydroxylation</a></p>
+</div>
+<h1>Huisgen Cycloaddition<br>
+1,3-Dipolar Cycloaddition</h1>
+<p><img src="huisge1.GIF"></p>
+<p><img src="huisge2.GIF"></p>
+<p> The Huisgen Cycloaddition is the reaction of a dipolarophile with a 1,3-dipolar 
+compound that leads to 5-membered (hetero)cycles. Examples of dipolarophiles 
+are alkenes and alkynes and molecules that possess related heteroatom 
+functional groups (such as carbonyls and nitriles). 1,3-Dipolar compounds 
+contain one or more heteroatoms and can be described as having at least one 
+mesomeric structure that represents a charged dipole.</p>
+<p> <img src="huisge3.GIF"><br>
+Examples of linear, propargyl-allenyl-type dipoles</p>
+<p> <img src="huisge4.GIF"><br>
+An example of an allyl-type dipole. See: 
+<a href="ozonolysis-criegee-mechanism.shtm">Ozonolysis</a></p>
+<hr>
+<h2>Mechanism of the Huisgen 1,3-Dipolar Cycloaddition</h2>
+<p><img src="huisge6.GIF"></p>
+<p>2 &#960;-electrons of the dipolarophile and 4 electrons of the dipolar compound 
+participate in a concerted, pericyclic shift. The addition is stereoconservative 
+(suprafacial), and the reaction is therefore a [2<sub>s</sub>+4<sub>s</sub>] 
+cycloaddition similar to the <a href="diels-alder-reaction.shtm">Diels-Alder 
+Reaction</a>. Attention: many authors still use &quot;[2+3] cycloaddition&quot;, which 
+counts the number of involved atoms but does not follow IUPAC recommendations (<a target="_blank" href="http://dx.doi.org/10.1351/goldbook">DOI</a>). 
+IUPAC recommends the use of &quot;(2+3)&quot; for the number of involved atoms instead.</p>
+<p>A condition for such a reaction to take place is a certain similarity of the 
+interacting HOMO and LUMO orbitals, depending on the relative orbital energies 
+of both the dipolarophile and the dipole. Electron-withdrawing groups on the 
+dipolarophile normally favour an interaction of the LUMO of the dipolarophile 
+with the HOMO of the dipole that leads to the formation of the new bonds, 
+whereas electron donating groups on the dipolarophile normally favour the 
+inverse of this interaction. Diazomethane as an electron-rich dipolar compound 
+therefore rapidly reacts with electron-poor alkenes, such as acrylates. Relative 
+reactivity patterns may be found in the literature&nbsp; (R. Huisgen, R. 
+Grashey, J. Sauer in <i>Chemistry of Alkenes</i>, Interscience, New York, <b>1964</b>, 806-877.).</p>
+<p>The regioselectivity of the reaction depends on electronic and steric effects 
+and is somewhat predictable. For example, the addition of alkynes to azides, 
+which is an interesting reaction for the generation of 1,2,3-triazole libraries 
+by the simple reaction of two molecules (&quot;<a href="click-chemistry.shtm">click chemistry</a>&quot;), leads to 
+regioisomers:</p>
+<p><a href="../abstracts/literature/961.shtm"><img src="../abstracts/literature/961b.gif" width="479" height="58"></a><br>
+V. V. Rostovtsev, L. G. Green, V. V. Fokin, K. B. Sharpless, <i>Angew. Chem. 
+Int. Ed.</i>, <b>
+2002</b>,
+<i>41</i>, 2596-2599.</p>
+<p>The reaction has been modified to a more regioselective, copper-catalyzed 
+stepwise process by the Sharpless group, which is no longer a classic Huisgen 
+Cycloaddition (for a discussion of the nonconcerted mechanism see:
+<a href="click-chemistry.shtm">click chemistry</a>) . Another 
+approach prefers the use of a directing electron withdrawing group, which is 
+removable later:</p>
+<p><a href="../abstracts/literature/945.shtm"><img src="../abstracts/literature/945n.gif" width="405" height="69"></a><br>
+D. Amantini, F. Fringuelli, O. Piermatti, F. Pizzo, E. Zunino, L. Vaccaro, <i>J. 
+Org. Chem.</i> <b>2005</b>, <i>70</i>, 6526-6529.</p>
+<p>In summary, the 1,3-dipolar cycloaddition allows the production of various 
+5-membered heterocycles. Many reactions can be performed with high 
+regioselectivity and even enantioselective transformations of prochiral 
+substrates have been published. Some interesting examples may be found in the 
+recent literature.</p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit1/369.shtm"><img src="../abstracts/lit1/369a.gif"></a><br>
+Tris(pentafluorophenyl)borane-Catalyzed Synthesis of <i>N</i>-Benzyl Pyrrolidines<br>
+P. Srihari, S. R. Yaragorla, D. Basu, S. Chandrasekhar, <i>
+Synthesis</i>, <b>2006</b>, 2646-2648.</p>
+<p><a href="../abstracts/lit3/049.shtm"><img src="../abstracts/lit3/049a.gif"></a><br>
+Remarkable [3+2] Annulations of Electron-Rich Olefins with Unstabilized 
+Azomethine Ylides<br>
+J. E. Davoren, D. L. Gray, A. R. Harris, D. M. Nason, W. Xu, <i>Synlett</i>, <b>2010</b>, 
+2490-2492</p>
+<p><a href="../abstracts/literature/960.shtm"><img src="../abstracts/literature/960a.gif"></a><br>
+Asymmetric 1,3-Dipolar Cycloaddition Reaction of Nitrones and Acrolein with
+a Bis-Titanium Catalyst as Chiral Lewis Acid<br>
+T. Kano, T. Hashimoto, K. Maruoka, <i>J. Am. Chem. Soc.</i>, <b>2005</b>, <i>70</i>, 11926-11927.</p>
+<p><a href="../abstracts/literature/962.shtm"><img src="../abstracts/literature/962a.gif"></a><br>
+Cu(I)-Catalyzed Highly Exo-selective and Enantioselective [3 + 2]
+Cycloaddition of Azomethine Ylides with Acrylates<br>
+W. Gao, X. Zhang, M. Raghunath, <i>Org. Lett.</i>, <b>2005</b>, <i>7</i>, 4241-4244.</p>
+<p><a href="../abstracts/lit2/100.shtm">
+<img src="../abstracts/lit2/100a.gif" width="607" height="108"></a><br>
+A copper(I)/ClickFerrophos complex catalyzed the asymmetric 1,3-dipolar 
+cycloaddition of methyl <i>N</i>-benzylideneglycinates with electron deficient alkenes 
+to give exo-2,4,5-trisubstituted and 2,3,4,5-substituted pyrrolidines in 
+good yields with high diastereo- and enantioselectivities.<br>
+S.-i. Fukuzawa, H. Oki, <i>Org. Lett.</i>, <b>2008</b>,
+<i>10</i>, 1747-1750.</p>
+<p><a href="../abstracts/lit2/877.shtm"><img src="../abstracts/lit2/877a.gif"></a><br>
+Highly <i>Endo</i>-Selective and Enantioselective 1,3-Dipolar Cycloaddition of 
+Azomethine Ylide with &#945;-Enones Catalyzed by a Silver(I)/ThioClickFerrophos 
+Complex<br>
+I. Oura, K. Shimizu, K. Ogata, S.-i. Fukuzawa, <i>Org. Lett.</i>, <b>2010</b>,
+<i>12</i>, 1752-1755.</p>
+<p><a href="../abstracts/lit1/559.shtm"><img src="../abstracts/lit1/559a.gif"></a><br>
+Hydrogen-Bonding Directed Reversal of Enantioselectivity<br>
+W. Zeng, G.-Y. Chen, Y.-G. Zhou, Y.-X. Li, <i>J. Am. Chem. Soc.</i>, <b>2007</b>, <i>
+129</i>, 750-751.</p>
+<p><a href="../abstracts/lit2/298.shtm"><img src="../abstracts/lit2/298a.gif"></a><br>
+2-Phospha[3]ferrocenophanes with Planar Chirality: Synthesis and Use in 
+Enantioselective Organocatalytic [3 + 2] Cyclizations<br>
+A. Voituriez, A. Panossian, N. Fleury-Brégeot, P. Retailleau, A. Marinetti, <i>J. Am. Chem. Soc.</i>, <b>2008</b>, <i>
+130</i>, 14030-14031.</p>
+<p><a href="../abstracts/lit2/497.shtm"><img src="../abstracts/lit2/497a.gif"></a><br>
+Oxidation of Oximes to Nitrile Oxides with Hypervalent Iodine Reagents<br>
+B. A. Mendelsohn, S. Lee, S. Kim, F. Tayssier, V. S. Aulakh, M. A. Ciufolini, <i>Org. Lett.</i>, <b>2009</b>,
+<i>11</i>, 1539-1542.</p>
+<p><a href="../abstracts/lit3/295.shtm"><img src="../abstracts/lit3/295a.gif"></a><br>
+Generation of Nitrile Oxides from Oximes Using <i>t</i>-BuOI and Their 
+Cycloaddition<br>
+S. Minakata, S. Okumura, T. Nagamachi, Y. Takeda, <i>Org. Lett.</i>, <b>2011</b>,
+<i>13</i>, 2966-2969.</p>
+<p><a href="../abstracts/lit3/651.shtm"><img src="../abstracts/lit3/651a.gif"></a><br>
+An Efficient One-Pot Synthesis of 3,5-Disubstituted 1<i>H</i>-Pyrazoles<br>
+L.-L. Wu, Y.-C. Ge, T. He, L. Zhang, X.-L. Fu, H.-Y. Fu, H. Chen, R.-X. Li, <i>Synthesis</i>, <b>2012</b>, <i>44</i>, 
+1577-1583.</p>
+<p><a href="../abstracts/lit3/924.shtm"><img src="../abstracts/lit3/924a.gif"></a><br>
+An Efficient One-Pot Synthesis of 3,5-Diaryl-4-bromopyrazoles by 1,3-Dipolar 
+Cycloaddition of In Situ Generated Diazo Compounds and 1-Bromoalk-1-ynes<br>
+Q. Sha, Y. Wei, <i>Synthesis</i>, <b>2013</b>, <i>45</i>, 
+413-420.</p>
+<p><a href="../abstracts/lit3/902.shtm"><img src="../abstracts/lit3/902a.gif"></a><br>
+Synthesis of 3,4-Disubsituted Isoxazoles via Enamine [3+2] Cycloaddition<br>
+Q.-f. Jia, P. M. S. Benjamin, J. Huang, Z. Du, X. Zheng, K. Zhang, A. H. Conney, 
+J. Wang, <i>Synlett</i>, <b>2013</b>, <i>24</i>, 
+79-84.</p>
+<p><a href="../abstracts/lit1/487.shtm">
+<img border="2" src="../abstracts/lit1/487b.gif"></a><br>
+1,4-Diazabicyclo[2.2.2]octane (DABCO) as an Efficient Reagent for the Synthesis 
+of Isoxazole Derivatives from Primary Nitro Compounds and Dipolarophiles: The 
+Role of the Base<br>
+L. Cecchi, F. De Sarlo, F. Machetti, <i>Eur. J. Org. Chem.</i>, <b>2006</b>, 
+4852-4860.</p>
+<p><a href="../abstracts/lit2/083.shtm"><img src="../abstracts/lit2/083a.gif"></a><br>
+Efficient Access to Isoxazoles from Alkenes<br>
+J. Xu, A. T. Hamme II, <i>Synlett</i>, <b>2008</b>,
+919-923.</p>
+<p><a href="../abstracts/lit2/011.shtm"><img src="../abstracts/lit2/011a.gif"></a><br>
+Novel Microwave-Assisted One-Pot Synthesis of Isoxazoles by a 
+Three-Component Coupling-Cycloaddition Sequence<br>
+B. Willy, F. Rominger, T. J. J. Müller, <i>Synthesis</i>, <b>2008</b>, 
+293-303.</p>
+<p><a href="../abstracts/lit1/916.shtm"><img src="../abstracts/lit1/916b.gif"></a><br>
+An Efficient Synthesis of 2-Diazo-2-(trimethylsilyl)ethanols and Their 
+Application to Pyrazole Synthesis<br>
+Y. Hari, S. Tsuchida, R. Sone, T. Aoyama, <i>Synthesis</i>, <b>2007</b>, 
+3371-3375.</p>
+<p><a href="../abstracts/literature/279.shtm"><img src="../abstracts/literature/279a.gif"></a><br>
+A 1,3-dipolar cycloaddition of phenyl vinylic selenide to nitrile oxides and 
+subsequent oxidation-elimination furnished 3-substituted isoxazoles with good 
+yields in a one-pot, two-step transformation.<br>
+S.-R. Sheng, X.-L. Liu, Q. Xu, C.-S. Song, <i>Synthesis,</i>
+<b>2003</b>, 2763-2764.</p>
+<p><a href="../abstracts/lit1/010.shtm"><img src="../abstracts/lit1/010a.gif"></a><br>
+Synthesis of 1,2,3-Triazoles by Cycloadditions of Azides with Enol Ethers<br>
+D. R. Rogue, J. L. Neill, J. W. Antoon, E. P. Stevens, <i>
+Synthesis</i>, <b>2005</b>, 2497-2502.</p>
+<p><a href="../abstracts/lit2/749.shtm"><img src="../abstracts/lit2/749a.gif"></a><br>
+Microwave Irradiation as an Effective Means of Synthesizing Unsubstituted
+N-Linked 1,2,3-Triazoles from Vinyl Acetate and Azides<br>
+S. G. Hansen, H. H. Jensen, <i>Synlett</i>, <b>2009</b>, 
+3275-3278.</p>
+<p><a href="../abstracts/lit4/165.shtm"><img src="../abstracts/lit4/165a.gif"></a><br>
+Zinc Mediated Azide-Alkyne Ligation to 1,5- and 1,4,5-Substituted 
+1,2,3-Triazoles<br>
+C. D. Smith, M. F. Greaney, <i>Org. Lett.</i>, <b>2013</b>,
+<i>15</i>, 4826-4829.</p>
+<p><a href="../abstracts/lit1/990.shtm"><img src="../abstracts/lit1/990a.gif"></a><br>
+Synthesis of Indazoles by the [3+2] Cycloaddition of Diazo Compounds with 
+Arynes and Subsequent Acyl Migration<br>
+Z. Liu, F. Shi, P. D. G. Martinze, C. Raminelli, R. C. Larock, <i>J. Org. Chem.</i>, <b>2008</b>,
+<i>73</i>, 219-226.</p>
+<p><a href="../abstracts/lit2/148.shtm"><img src="../abstracts/lit2/148a.gif"></a><br>
+Benzyne Click Chemistry: Synthesis of Benzotriazoles from Benzynes and 
+Azides<br>
+F. Shi, J. P. Waldo, Y. Chen, R. C. Larock, <i>Org. Lett.</i>, <b>2008</b>,
+<i>10</i>, 2409-2412</p>
+<p><a href="../abstracts/lit1/886.shtm"><img src="../abstracts/lit1/886a.gif"></a><br>
+A New Use of Wittig-Type Reagents as 1,3-Dipolar Cycloaddition Precursors 
+and in Pyrrole Synthesis<br>
+D. J. St. Cyr, B. A. Arndtsen, <i>J. Am. Chem. Soc.</i>, <b>
+2007</b>,
+<i>129</i>, 12366-12367.</p>
+
+
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

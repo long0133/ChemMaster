@@ -1,0 +1,393 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Click Chemistry</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a></div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a></div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+<a href="/related/click+chemistry.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="huisgen-1,3-dipolar-cycloaddition.shtm">Huisgen 1,3-Dipolar 
+Cycloaddition</a><br>
+<a href="../synthesis/heterocycles/1,2,3-triazoles.shtm">Synthesis of 
+1,2,3-Triazoles</a></p>
+
+</div>
+<h1>Click Chemistry<br>
+Azide-Alkyne Cycloaddition</h1>
+<p>&quot;Click Chemistry&quot; is a term that was introduced by K. B. Sharpless in 2001 to 
+describe reactions that are high yielding, wide in scope, create only byproducts 
+that can be removed without chromatography, are stereospecific, simple to 
+perform, and can be conducted in easily removable or benign solvents. This 
+concept was developed in parallel with the interest within the pharmaceutical, 
+materials, and other industries in capabilities for generating large libraries 
+of compounds for screening in discovery research. Several types of reaction have 
+been identified that fulfill these criteria, thermodynamically-favored 
+reactions that lead specifically to one product, such as nucleophilic ring opening 
+reactions of epoxides and aziridines, non-aldol type carbonyl reactions, such as 
+formation of hydrazones and heterocycles, additions to carbon-carbon multiple bonds, 
+such as oxidative formation of epoxides and <a href="michael-addition.shtm">Michael 
+Additions</a>, and cycloaddition reactions.</p>
+<p>For example, an examination of the azide-alkyne cycloaddition shows that it 
+fulfills many of the prerequisites. Many of the starting monosubstituted alkynes 
+and organic azides are available commercially, many others can easily be 
+synthesized with a wide range of functional groups, and their cycloaddition 
+reaction selectively gives 1,2,3-triazoles.</p>
+<p><img border="0" src="click-1.GIF"></p>
+<p>Unfortunately, the thermal
+<a href="huisgen-1,3-dipolar-cycloaddition.shtm">Huisgen 1,3-Dipolar 
+Cycloaddition</a> of alkynes to azides requires elevated temperatures and often 
+produces mixtures of the two regioisomers when using asymmetric alkynes. In this 
+respect, the classic 1,3-dipolar cycloaddition fails as a true click reaction. A 
+copper-catalyzed variant that follows a different mechanism can be conducted 
+under aqueous conditions, even at room temperature. Additionally, whereas the 
+classic Huisgen 1,3-dipolar cycloaddition often gives mixtures of regioisomers, 
+the copper-catalyzed reaction allows the synthesis of the 1,4-disubstituted 
+regioisomers specifically. By contrast, a later developed ruthenium-catalyzed 
+reaction gives the opposite regioselectivity with the formation of 
+1,5-disubstituted triazoles. Thus, these catalyzed reactions comply fully with 
+the definition of click chemistry and have put a focus on azide-alkyne 
+cycloaddition as a prototype click reaction.</p>
+<p><img border="0" src="click-2.GIF"></p>
+<p><img border="0" src="click-3.GIF"></p>
+<hr>
+<h2>Mechanism of the Huisgen Azide-Alkyne 1,3-Dipolar Cycloaddition</h2>
+<p>For the mechanism, please refer to the text on
+<a href="huisgen-1,3-dipolar-cycloaddition.shtm">1,3-dipolar cycloaddition</a>. 
+This reaction is highly exothermic, but the high activation barrier is 
+responsible for a very low reaction rate, even at elevated temperature. Another 
+drawback is the formation of regioisomers, as the two possible HOMO-LUMO 
+interactions of the substrates are closely related in terms of energy. The 
+thermal reaction therefore often gives approximately 1:1 mixtures of both the 
+1,4-substituted and the 1,5-substituted regioisomers.</p>
+<p><a href="../abstracts/literature/961.shtm"><img src="../abstracts/literature/961b.gif" width="479" height="58"></a><br>
+V. V. Rostovtsev, L. G. Green, V. V. Fokin, K. B. Sharpless, <i>Angew. Chem. 
+Int. Ed.</i>, <b>
+2002</b>,
+<i>41</i>, 2596-2599.</p>
+<h2>Mechanism of the Copper-Catalyzed Azide-Alkyne Cycloaddition (CuAAC)</h2>
+<p> As one of the best click reactions to date, the copper-catalyzed 
+azide-alkyne cycloaddition features an enormous rate acceleration of 10<sup>7</sup> 
+to 10<sup>8</sup> compared to the uncatalyzed 1,3-dipolar cycloaddition. It 
+succeeds over a broad temperature range, is insensitive to aqueous conditions 
+and a pH range over 4 to 12, and tolerates a broad range of functional groups. 
+Pure products can be isolated by simple filtration or extraction without the 
+need for chromatography or recrystallization.</p>
+<p> <img src="../abstracts/lit2/773a.gif" width="540" height="70"><br>
+F. Himo, T. Lovell, R. Hilgraf, V. V. Rostovtsev, L. Noodleman, K. B. Sharpless, 
+V. V. Fokin, <i>J. Am. Chem. Soc.</i>, <b>2005</b>, <i>
+127</i>, 210-216.</p>
+<p> The active Cu(I) catalyst can be generated from Cu(I) salts or Cu(II) salts 
+using sodium ascorbate as the reducing agent. Addition of a slight excess of 
+sodium ascorbate prevents the formation of oxidative homocoupling products. 
+Disproportionation of a Cu(II) salt in presence of a Cu wire can also be used to 
+form active Cu(I).</p>
+<p> DFT calculations have shown that coordination of Cu(I) to the alkyne is 
+slightly endothermic in MeCN, but exothermic in water, which is in agreement 
+with an observed rate acceleration in water. However, coordination of Cu to the 
+acetylene does not accelerate a 1,3-dipolar cycloaddition. Such a process has 
+been calculated to be even less favorable than the uncatalyzed 1,3-dipolar 
+cycloaddition. Instead, a copper acetylide forms, after which the azide 
+displaces another ligand and binds to the copper. Then, an unusual six-membered 
+copper(III) metallacycle is formed. The barrier for this process has been 
+calculated to be considerably lower than the one for the uncatalyzed reaction. 
+The calculated rate at room temperature is 1 s<sup>-1</sup>, which is quite 
+reasonable. Ring contraction to a triazolyl-copper derivative is followed by 
+protonolysis that delivers the triazole product and closes the catalytic cycle.</p>
+<p> <font size="1"><a href="../abstracts/lit2/773.shtm">
+<img src="../abstracts/lit2/773n.gif"></a></font><br>
+F. Himo, T. Lovell, R. Hilgraf, V. V. Rostovtsev, L. Noodleman, K. B. Sharpless, 
+V. V. Fokin, <i>J. Am. Chem. Soc.</i>, <b>2005</b>, <i>
+127</i>, 210-216.</p>
+<h2>Mechanism of the Ruthenium-Catalyzed Azide-Alkyne Cycloaddition (RuAAC)</h2>
+<p>A search for catalysts revealed that pentamethylcyclopentadienyl ruthenium 
+chloride [Cp*RuCl] complexes are able to catalyze the cycloaddition of azides to 
+terminal alkynes regioselectively leading to 1,5-disubstituted 1,2,3-triazoles. 
+In addition, RuAAC can also be used with internal alkynes, providing fully 
+substituted 1,2,3-triazoles, which contrasts with CuAAC.</p>
+<p><img border="0" src="../abstracts/lit2/770a.gif"></p>
+<p><img border="0" src="../abstracts/lit2/770b.gif"><br>
+B. C. Boren, S. Narayan, L. K. Rasmussen, L. Zhang, H. Zhao, Z. Lin, G. Jia, V. 
+V. Fokin, <i>J. Am. Chem. Soc.</i>, <b>2008</b>, <i>
+130</i>, 8923-8930.</p>
+<p>The ruthenium-catalyzed azide-alkyne cycloaddition (RuAAC) appears to proceed 
+via oxidative coupling of the azide and the alkyne to give a six-membered 
+ruthenacycle, in which the first new carbon-nitrogen bond is formed between the 
+more electronegative carbon of the alkyne and the terminal, electrophilic 
+nitrogen of the azide. This step is followed by reductive elimination, which 
+forms the triazole product. DFT calculations support this mechanistic proposal 
+and indicate that the reductive elimination step is rate-determining..</p>
+<p><a href="../abstracts/lit2/770.shtm"><img src="../abstracts/lit2/770n.gif"></a><br>
+B. C. Boren, S. Narayan, L. K. Rasmussen, L. Zhang, H. Zhao, Z. Lin, G. Jia, V. 
+V. Fokin, <i>J. Am. Chem. Soc.</i>, <b>2008</b>, <i>
+130</i>, 8923-8930.</p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit3/137.shtm"><img src="../abstracts/lit3/137a.gif"></a><br>
+A Novel Approach to 1-Monosubstituted 1,2,3-Triazoles by a Click 
+Cycloaddition/Decarboxylation Process<br>
+M. Xu, C. Kuang, Z. Wang, Q. Yang, Y. Jiang, <i>Synthesis</i>, <b>2011</b>, 
+223-228.</p>
+<p><a href="../abstracts/lit2/738.shtm">
+<img src="../abstracts/lit2/738a.gif"></a><br>
+The Use of Calcium Carbide in the Synthesis of 1-Monosubstituted Aryl 
+1,2,3-Triazole via Click Chemistry<br>
+Y. Jiang, C. Kuang, Q. Yang, <i>Synlett</i>, <b>2009</b>, 
+3163-3166.</p>
+<p><a href="../abstracts/lit2/749.shtm">
+<img src="../abstracts/lit2/749a.gif"></a><br>
+Microwave Irradiation as an Effective Means of Synthesizing Unsubstituted
+N-Linked 1,2,3-Triazoles from Vinyl Acetate and Azides<br>
+S. G. Hansen, H. H. Jensen, <i>Synlett</i>, <b>2009</b>, 
+3275-3278.</p>
+<p><a href="../abstracts/lit2/559.shtm">
+<img src="../abstracts/lit2/559a.gif"></a><br>
+A Convenient Synthesis of 1-Substituted 1,2,3-Triazoles via CuI/Et<sub>3</sub>N 
+Catalyzed &#8216;Click Chemistry' from Azides and Acetylene Gas<br>
+L.-Y. Wu, Y.-X. Xie, Z.-S. Chen, Y.-N. Niu, Y.-M. Liang, <i>Synlett</i>, <b>2009</b>, 
+1453-1456.</p>
+<p><a href="../abstracts/lit3/998.shtm"><img src="../abstracts/lit3/998a.gif"></a><br>
+2-Ethynylpyridine-Promoted Rapid Copper(I) Chloride Catalyzed Azide-Alkyne 
+Cycloaddition Reaction in Water<br>
+H. Hiroki, K. Ogata, S.-i. Fukuzawa, <i>Synlett</i>, <b>2013</b>, <i>24</i>, 
+843-846.</p>
+<p><a href="../abstracts/lit3/237.shtm"><img src="../abstracts/lit3/237a.gif"></a><br>
+Tandem Catalysis: From Alkynoic Acids and Aryl Iodides to 1,2,3-Triazoles in 
+One Pot<br>
+A. Kolarovi&#269;, M. Schnürch, M. D. Mihovilovic, <i>J. Org. Chem.</i>, <b>2011</b>,
+<i>76</i>, 2613-2618.</p>
+<p><a href="../abstracts/lit3/678.shtm"><img src="../abstracts/lit3/678a.gif"></a><br>
+Self-assembly of copper sulfate and a poly(imidazole-acrylamide) amphiphile 
+provides a highly active, reusable, globular, solid-phase catalyst for click 
+chemistry. The insoluble amphiphilic polymeric imidazole Cu catalyst drove the 
+cycloaddition of various of alkynes and organic azides at very low catalyst 
+loadings and can be readily reused without loss of activity to give the 
+corresponding triazoles quantitatively.<br>
+Y. M. A. Yamada, S. M. Sarkar, Y. Uozumi, <i>J. Am. Chem. Soc.</i>, <b>2012</b>, <i>
+134</i>, 9285-9286.</p>
+<p><a href="../abstracts/lit3/617.shtm"><img src="../abstracts/lit3/617a.gif"></a><br>
+Copper-Catalyzed Azide-Alkyne Cycloaddition Reaction in Water Using 
+Cyclodextrin as a Phase Transfer Catalyst<br>
+J.-A. Shin, Y.-G. Lim, K.-H. Lee, <i>J. Org. Chem.</i>, <b>2012</b>,
+<i>77</i>, 4117-4122.</p>
+<p><a href="../abstracts/lit3/891.shtm"><img src="../abstracts/lit3/891a.gif"></a><br>
+In the presence of a readily accessible nanosized Cu/Fe bimetallic system, 
+Cu-catalyzed azide-alkyne cycloadditions can easily be achieved at ambient 
+temperature with high efficiency. The catalyst produces significantly lower 
+copper contaminants compared to homogeneous copper complexes. Iron not only 
+behaves as support, but also acts as a redox scavenger that reduces the copper 
+contamination of the organic product.<br>
+S. Kovács, K. Zih-Peréni, Á. Révész, Z. Novák, <i>Synthesis</i>, <b>2012</b>, <i>44</i>, 
+3722-3730.</p>
+<p><a href="../abstracts/lit3/360.shtm"><img src="../abstracts/lit3/360a.gif"></a><br>
+CuI/DIPEA/HOAc is as a highly efficient catalytic system for CuAAC. In this 
+novel acid-base jointly promoted formation of 1,2,3-triazoles, HOAc was 
+recognized to accelerate the conversions of the C-Cu bond-containing 
+intermediates and buffer the basicity of DIPEA. As a result, all drawbacks 
+occurring in the popular catalytic system CuI/NR<sub>3</sub> were overcome 
+easily.<br>
+C. Shao, X. Wang, Q. Zhang, S. Luo, J. Zhao, Y. Hu, <i>J. Org. Chem.</i>, <b>2011</b>,
+<i>76</i>, 6832-6836.</p>
+<p><a href="../abstracts/lit3/232.shtm"><img src="../abstracts/lit3/232b.gif"></a><br>
+[CuBr(PPh<sub>3</sub>)<sub>3</sub>] for Azide-Alkyne Cycloaddition Reactions under Strict Click 
+Conditions<br>
+S. Lal, S. Díez-González, <i>J. Org. Chem.</i>, <b>2011</b>,
+<i>76</i>, 2367-2373.</p>
+<p><a href="../abstracts/lit3/187.shtm"><img src="../abstracts/lit3/187a.gif"></a><br>
+A Copper(I) Isonitrile Complex as a Heterogeneous Catalyst for Azide-Alkyne 
+Cycloaddition in Water<br>
+M. Liu, O. Reiser, <i>Org. Lett.</i>, <b>2011</b>,
+<i>13</i>, 1102-1105.</p>
+<p><a href="../abstracts/lit3/162.shtm"><img src="../abstracts/lit3/162a.gif"></a><br>
+An abnormal NHC complex of copper with 1,4-diphenyl-1,2,3-triazol-5-ylidene [CuCl(TPh)] 
+efficiently catalyzed click reactions of azides with alkynes to give 
+1,4-substituted 1,2,3-triazoles in excellent yields at room temperature with 
+short reaction times. CuCl(TPh) was particularly effective for the reaction 
+between sterically hindered azides and alkynes.<br>
+T. Nakamura, T. Terashima, K. Ogata, S.-i. Fukuzawa, <i>Org. Lett.</i>, <b>2011</b>,
+<i>13</i>, 620-623.</p>
+<p><a href="../abstracts/lit3/057.shtm"><img src="../abstracts/lit3/057a.gif"></a><br>
+Carboxylic Acid-Promoted Copper(I)-Catalyzed Azide-Alkyne Cycloaddition<br>
+C. Shao, X. Wang, J. Xu, J. Zhao, Q. Zhang, Y. Hu, <i>J. Org. Chem.</i>, <b>2010</b>,
+<i>75</i>, 7002-7005.</p>
+<p><a href="../abstracts/lit2/696.shtm">
+<img src="../abstracts/lit2/696a.gif"></a><br>
+A Highly Active Catalyst for Huisgen 1,3-Dipolar Cycloadditions Based on the 
+Tris(triazolyl)methanol-Cu(I) Structure<br>
+S. Özçubukçu, E. Ozkal, C. Jimeno, M. A. Pericàs, <i>Org. Lett.</i>, <b>2009</b>,
+<i>11</i>, 4680-4683.</p>
+<p><a href="../abstracts/lit1/899.shtm">
+<img src="../abstracts/lit1/899a.gif"></a><br>
+Benzimidazole and Related Ligands for Cu-Catalyzed Azide-Alkyne 
+Cycloaddition<br>
+V. O. Rodionov, S. I. Presolski, S. Gardinier, Y.-H. Lim, M. G. Finn, <i>J. Am. Chem. Soc.</i>, <b>2007</b>, <i>
+129</i>, 12696-12704.</p>
+<p><a href="../abstracts/lit2/340.shtm">
+<img src="../abstracts/lit2/340a.gif"></a><br>
+1,3-Dipolar Cycloaddition of Organic Azides to Alkynes by a 
+Dicopper-Substituted Silicotungstate<br>
+K. Kamata, Y. Nakagawa, K. Yamaguchi, N. Mizuno, <i>J. Am. Chem. Soc.</i>, <b>2008</b>, <i>
+130</i>, 15304-15310.</p>
+<p><a href="../abstracts/lit2/025.shtm">
+<img src="../abstracts/lit2/025a.gif"></a><br>
+Heterogeneous Copper Catalyst for the Cycloaddition of Azides and Alkynes 
+without Additives under Ambient Conditions<br>
+I. S. Park, M. S. Kwon, Y. Kim, J. S. Lee, J. Park, <i>Org. Lett.</i>, <b>2008</b>,
+<i>10</i>, 497-500.</p>
+<p><a href="../abstracts/lit1/539.shtm">
+<img src="../abstracts/lit1/539a.gif"></a><br>
+Heterogeneous Copper-in-Charcoal-Catalyzed Click Chemistry<br>
+B. H. Lipshutz, B. R. Taft, <i>Angew. Chem. Int. Ed.</i>, <b>2006</b>,
+<i>45</i>, 8235-8238.</p>
+<p><a href="../abstracts/literature/961.shtm">
+<img src="../abstracts/literature/961a.gif"></a><br>
+A Stepwise Huisgen Cycloaddition Process: Copper(I)-Catalyzed Regioselective
+Ligation of Azides and Terminal Alkynes<br>
+V. V. Rostovtsev, L. G. Green, V. V. Fokin, K. B. Sharpless, <i>Angew. Chem. 
+Int. Ed.</i>, <b>
+2002</b>,
+<i>41</i>, 2596-2599.</p>
+<p><a href="../abstracts/lit2/024.shtm">
+<img src="../abstracts/lit2/024a.gif"></a><br>
+Regioselective Synthesis of 1,2,3-Triazoles by Use of a Silica-Supported 
+Copper(I) Catalyst<br>
+T. Miaoa, L. Wang, <i>Synthesis</i>, <b>2008</b>, 
+363-368.</p>
+<p><a href="../abstracts/lit1/674.shtm">
+<img src="../abstracts/lit1/674b.gif" width="516" height="77"></a><br>
+Efficient Conversion of Aromatic Amines into Azides: A One-Pot Synthesis of 
+Triazole Linkages<br>
+K. Barral, A. D. Moorhouse, J. E. Moses, <i>Org. Lett.</i>, <b>2007</b>,
+<i>9</i>, 1809-1811.</p>
+<p><a href="../abstracts/lit3/082.shtm"><img src="../abstracts/lit3/082a.gif"></a><br>
+One-Pot Three-Step Synthesis of 1,2,3-Triazoles by Copper-Catalyzed 
+Cycloaddition of Azides with Alkynes formed by a Sonogashira Cross-Coupling and 
+Desilylation<br>
+F. Friscourt, G.-J. Boons, <i>Org. Lett.</i>, <b>2010</b>,
+<i>12</i>, 4936-4939.</p>
+<p><a href="../abstracts/lit2/885.shtm"><img src="../abstracts/lit2/885b.gif"></a><br>
+Copper(II)-Catalyzed Conversion of Aryl/Heteroaryl Boronic Acids, Boronates, 
+and Trifluoroborates into the Corresponding Azides: Substrate Scope and 
+Limitations<br>
+K. D. Grimes, A. Gupte, C. C. Aldrich, <i>Synthesis</i>, <b>2010</b>, 
+1441-1448.</p>
+<p><a href="../abstracts/lit1/966.shtm">
+<img src="../abstracts/lit1/966a.gif"></a><br>
+Ruthenium-Catalyzed Cycloaddition of Aryl Azides and Alkynes<br>
+L. K. Rasmussen, B. C. Boren, V. V. Fokin, <i>Org. Lett.</i>, <b>2007</b>,
+<i>9</i>, 5337-5339.</p>
+<p><a href="../abstracts/lit3/340.shtm"><img src="../abstracts/lit3/340a.gif"></a><br>
+Efficient one-pot synthesis of polysubstituted 
+6-[(1<i>H</i>-1,2,3-triazol-1-yl)methyl]uracils through the &quot;click&quot; protocol<br>
+P. Jansa, P. &#352;pa&#269;ek, I. Votruba, P. B&#345;ehová, M. Dra&#269;ínský, B. Klepetá&#345;ová, Z. 
+Janeba, <i>Collect. Czech. Chem. Commun.</i>, <b>2011</b>,
+<i>13</i>, 1121-1131.</p>
+<img src="http://vg05.met.vgwort.de/na/3351ce3bd33d4d2d8fd3dd29573bea71" width="1" height="1" alt="">
+
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

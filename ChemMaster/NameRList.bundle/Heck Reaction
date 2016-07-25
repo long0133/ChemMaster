@@ -1,0 +1,301 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Heck Reaction</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div>
+<div id="references"><p><b>Further Information</b><br>
+<a href="/related/heck+reaction.htm">Literature</a></p>
+<p><b>Related Reactions</b><br>
+<a href="stille-coupling.shtm">Stille Coupling</a><br>
+<a href="../synthesis/C1C/arenes/olefinations.shtm">Olefinations</a></p>
+
+</div>
+<h1>Heck Reaction</h1>
+<p><img src="heck-r3.gif" width="243" height="147"></p>
+<p>The 
+palladium-catalyzed C-C coupling between aryl halides or vinyl halides 
+and activated alkenes in the presence of a base is referred as the &quot;Heck 
+Reaction&quot;. Recent developments in the catalysts and reaction conditions 
+have resulted in a much broader range of donors and acceptors being 
+amenable to the Heck Reaction.</p>
+<p>One of the 
+benefits of the Heck Reaction is its outstanding <i>trans</i>
+selectivity.</p>
+<hr>
+<h2>Mechanism of the Heck Reaction</h2>
+<p><img src="heck-r4.gif"></p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit2/591.shtm"><img src="../abstracts/lit2/591a.gif"></a><br>
+Trifunctional <i>N,N,O</i>-terdentate amido/pyridyl carboxylate Pd(II) complexes 
+were highly active and stable phosphine-free catalysts for Heck and 
+room-temperature Suzuki reactions with high turnover numbers.<br>
+M. L. Kantam, P. Srinivas, J. Yadav, P. R. Likhar, S. Bhargava, <i>J. Org. Chem.</i>, <b>2009</b>,
+<i>74</i>, 4882-4885.</p>
+<p><a href="../abstracts/lit1/494.shtm"><img src="../abstracts/lit1/494a.gif"></a><br>
+New N-Heterocyclic Carbene Palladium Complex/Ionic Liquid Matrix Immobilized 
+on Silica: Application as Recoverable Catalyst for the Heck Reaction<br>
+B. Karimi, D. Enders, <i>Org. Lett.</i>, <b>2006</b>,
+<i>8</i>, 1237-1240.</p>
+<p><a href="../abstracts/lit1/929.shtm">
+<img src="../abstracts/lit1/929a.gif" width="506" height="89"></a><br>
+Pd(quinoline-8-carboxylate)<sub>2</sub> as a Low-Priced, 
+Phosphine-Free Catalyst for Heck and Suzuki Reactions<br>
+X. Cui, J. Li, Z.-P. Zhang, Y. Fu, L. Liu, Q.-X. Guo, <i>J. Org. Chem.</i>, <b>2007</b>,
+<i>72</i>, 9342-9345.</p>
+<p><font size="1"><a href="../abstracts/lit4/857.shtm">
+<img src="../abstracts/lit4/857a.gif"></a></font><br>
+1,1'-Methylene-3,3'-bis[(<i>N</i>-(<i>tert</i>-butyl)imidazol-2-ylidene] and 
+Its Effect in Palladium-Catalyzed C-C Coupling<br>
+S. Nadri, E. Rafiee, S. Jamali, M. Joshaghani, <i>
+Synlett</i>, <b>2015</b>, <i>26</i>, 619-624.</p>
+<p><a href="../abstracts/lit1/503.shtm"><img src="../abstracts/lit1/503a.gif"></a><br>
+Triethanolamine as an Efficient and Reusable Base, Ligand and Reaction 
+Medium for Phosphane-Free Palladium-Catalyzed Heck Reactions<br>
+H. J. Li, L. Wang, <i>Eur. J. Org. Chem.</i>, <b>2006</b>, 
+5101-5102.</p>
+<p><a href="../abstracts/literature/328.shtm">
+<img src="../abstracts/literature/328a.gif"></a><br>
+Triaryl phosphine-functionalized <i>N</i>-heterocyclic carbene ligands for Heck 
+reaction<br>
+A.-E. Wang, J.-H. Xie, L.-X. Wang, Q.-L. Zhou, <i>Tetrahedron</i>, <b>2005</b>, 
+<i>61</i>, 259-266.</p>
+<p><font size="1"><a href="../abstracts/lit3/434.shtm">
+<img src="../abstracts/lit3/434a.gif"></a></font><br>
+An Efficient and General Method for the Heck and Buchwald-Hartwig Coupling 
+Reactions of Aryl Chlorides<br>
+D.-H. Lee, A. Taher, S. Hossain, M.-J. Jin, <i>Org. Lett.</i>, <b>2011</b>,
+<i>13</i>, 5540-5543.</p>
+<p><a href="../abstracts/lit3/425.shtm"><img src="../abstracts/lit3/425a.gif"></a><br>
+Palladium-Catalyzed Heck Reaction of Aryl Chlorides under Mild Conditions 
+Promoted by Organic Ionic Bases<br>
+H.-J. Xu, Y.-Q. Zhao, X.-F. Zhou, <i>J. Org. Chem.</i>, <b>2011</b>,
+<i>76</i>, 8036-8041.</p>
+<p><font size="1"><a href="../abstracts/lit3/226.shtm">
+<img src="../abstracts/lit3/226a.gif"></a></font><br>
+Efficient Aqueous-Phase Heck Reaction Catalyzed by a Robust Hydrophilic 
+Pyridine-Bridged Bisbenzimidazolylidene-Palladium Pincer Complex<br>
+Z. Wang, X. Feng, W. Fang, T. Tu, <i>Synlett</i>, <b>2011</b>, 
+951-954.</p>
+<p><a href="../abstracts/lit4/359.shtm">
+<img src="../abstracts/lit4/359a.gif"></a><br>
+A palladacycle phosphine mono-ylide complex is as an efficient catalyst for 
+the Mizoroki-Heck cross-coupling reaction of aromatic or aliphatic olefins with 
+a broad range of aryl bromides and chlorides. The reactions proceeded in good 
+yields in the presence of low loadings of palladium (10 ppm) under aerobic 
+conditions. High catalyst activities with turnover frequencies of up to 20,000 h<sup>-1</sup> 
+were observed at 130°C.<br>
+S. J. Sabounchi, M. Ahmadi, T. Azizi, M. Panahimehr, <i>Synlett</i>, <b>2014</b>, <i>25</i>, 
+336-342.</p>
+<p><a href="../abstracts/lit3/230.shtm"><img src="../abstracts/lit3/230a.gif"></a><br>
+An efficient and simple protocol for phosphine-free Heck reactions in water in 
+the presence of a Pd(L-proline)<sub>2</sub> complex as the catalyst under 
+controlled microwave irradiation conditions is versatile and provides excellent 
+yields of products in short reaction times. The reaction system minimizes costs, 
+operational hazards and environmental pollution.<br>
+B. K. Allam, K. N. Singh, <i>Synthesis</i>, <b>2011</b>, 
+1125-1131.</p>
+<p><a href="../abstracts/lit2/077.shtm"><img src="../abstracts/lit2/077a.gif"></a><br>
+Heck Couplings at Room Temperature in Nanometer Aqueous Micelles<br>
+B. H. Lipshutz, B. R. Taft, <i>Org. Lett.</i>, <b>2008</b>,
+<i>10</i>, 1329-1332.</p>
+<p><a href="../abstracts/literature/675.shtm">
+<img src="../abstracts/literature/675a.gif"></a><br>
+Efficient Aqueous-Phase Heck and Suzuki Couplings of Aryl Bromides Using
+Tri(4,6-dimethyl-3- sulfonatophenyl)phosphine Trisodium Salt (TXPTS)<br>
+L. R. Moore, K. H. Shaughnessy, <i>Org. Lett., </i><b>2004</b>, <i>6</i>,
+225-228.</p>
+<p><b><a href="../abstracts/literature/083.shtm"><img src="../abstracts/literature/083a.gif"></a><br>
+</b>Poly(ethylene glycol) (PEG) as a Reusable Solvent Medium for Organic 
+Synthesis. Application in the Heck Reaction<b><br>
+</b>S. Chandrasekhar, C. Narsihmulu, S. S. Sultana, N. R. Reddy, <i>Org. Lett.</i>, <b>2002</b>, <i>4</i>, 4399-4401.</p>
+<p><a href="../abstracts/lit1/381.shtm"><img src="../abstracts/lit1/381a.gif"></a><br>
+Functionalized Ionic Liquid as an Efficient and Recyclable Reaction Medium 
+for Phosphine-Free Palladium-Catalyzed Heck Reaction<br>
+L. Zhou, L. Wang, <i>
+Synthesis</i>, <b>2006</b>, 2649-2652.</p>
+<p><a href="../abstracts/lit1/137.shtm"><img src="../abstracts/lit1/137a.gif"></a><br>
+Brønsted Guanidine Acid-Base Ionic Liquids: Novel Reaction Media for the 
+Palladium-Catalyzed Heck Reaction<br>
+S. Li, Y. Lin, H. Xie, S. Zhang, J. Xu, <i>Org. Lett.</i>, <b>2006</b>, <i>8</i>, 391-394.<p>
+<a href="../abstracts/lit2/248.shtm"><img src="../abstracts/lit2/248a.gif"></a><br>
+Practical Heck-Mizoroki Coupling Protocol for Challenging Substrates 
+Mediated by an N-Heterocyclic Carbene-Ligated Palladacycle<br>
+E. A. B. Kantchev, G.-R. Peh, C. Zhang, J. Y. Ying, <i>Org. Lett.</i>, <b>
+2008</b>,
+<i>10</i>, 3949-3952.<p>
+<a href="../abstracts/lit3/505.shtm"><img src="../abstracts/lit3/505a.gif"></a><br>
+A Sustainable Procedure Combining the Advantages of Both Homogeneous and 
+Heterogeneous Catalysis for the Heck-Matsuda Reaction<br>
+C. Rossy, E. Fouquet, F.-X. Felpin, <i>Synthesis</i>, <b>2012</b>, <i>44</i>, 
+37-41.<p>
+<a href="../abstracts/lit3/312.shtm"><img src="../abstracts/lit3/312a.gif"></a><br>
+Operationally Simple and Highly (<i>E</i>)-Styrenyl-Selective Heck Reactions 
+of Electronically Nonbiased Olefins<br>
+E. W. Werner, M. S. Sigman, <i>J. Am. Chem. Soc.</i>, <b>2011</b>, <i>
+133</i>, 9692-9695.<p><a href="../abstracts/lit1/415.shtm"><img src="../abstracts/lit1/415a.gif"></a><br>
+Pd-<i>m</i>BDPP-Catalyzed Regioselective Internal Arylation of Electron-Rich 
+Olefins by Aryl Halides<br>
+S. Liu, N. Berry, N. Thomson, A. Pettman, Z. Hyder, J. Mo, J. Xiao, <i>J. Org. Chem.</i>, <b>2006</b>, <i>71</i>, 7467-7470.<p>
+<a href="../abstracts/lit2/488.shtm"><img src="../abstracts/lit2/488a.gif"></a><br>
+Regioselective Heck Vinylation of Electron-Rich Olefins with Vinyl Halides: 
+Is the Neutral Pathway in Operation?<br>
+M. McConville, O. Saidi, J. Blacker, J. Xiao, <i>J. Org. Chem.</i>, <b>2009</b>,
+<i>74</i>, 2692-2698.<p><a href="../abstracts/lit1/286.shtm"><img src="../abstracts/lit1/286d.gif"></a><br>
+The Heck Reaction of Electron-Rich Olefins with Regiocontrol by 
+Hydrogen-Bond Donors<br>
+J. Mo, J. Xiao, <i>Angew. Chem. Int. Ed.</i>, <b>2006</b>, <i>45</i>, 4152-4157.</p>
+<p><a href="../abstracts/lit2/078.shtm"><img src="../abstracts/lit2/078a.gif"></a><br>
+Palladium-Tetraphosphine Complex Catalysed Heck Reaction of Vinyl Bromides 
+with Alkenes: A Powerful Access to Conjugated Dienes<br>
+M. Lemhadri, A. Battace, F. Berthiol, T. Zair, H. Doucet, M. Santelli, <i>Synthesis</i>, <b>2008</b>, 
+1142-1152.</p>
+<p><a href="../abstracts/lit1/249.shtm"><img src="../abstracts/lit1/249a.gif"></a><br>
+Heck Coupling with Nonactivated Alkenyl Tosylates and Phosphates: Examples 
+of Effective 1,2-Migrations of the Alkenyl Palladium(II) Intermediates<br>
+A. L. Hansen, J.-P. Ebran, M. Ahlquist, P.-O. Norrby, T. Skydstrup, <i>Angew. Chem. Int. Ed.</i>, <b>2006</b>, <i>45</i>, 3349-3353.</p>
+<p><a href="../abstracts/lit1/739.shtm"><img src="../abstracts/lit1/739a.gif"></a><br>
+A New Route to the Synthesis of (<i>E</i>)- and (<i>Z</i>)-2-Alkene-4-ynoates and Nitriles from
+<i>vic</i>-Diiodo-(<i>E</i>)-alkenes Catalyzed by Pd(0) Nanoparticles in Water<br>
+B. C. Ranu, K. Chattopadhyay, <i>Org. Lett.</i>, <b>2007</b>,
+<i>9</i>, 2409-2412.</p>
+<p><a href="../abstracts/lit1/398.shtm"><img src="../abstracts/lit1/398a.gif"></a><br>
+Synthesis of 2-Vinylic Indoles and Derivatives via a Pd-Catalyzed Tandem 
+Coupling Reaction<br>
+A. Fayol, Y.-Q. Fang, M. Lautens, <i>Org. Lett.</i>, <b>2006</b>, <i>8</i>, 4203-4206.</p>
+<p><a href="../abstracts/lit1/475.shtm"><img src="../abstracts/lit1/475a.gif"></a><br>
+Heck Vinylations Using Vinyl Sulfide, Vinyl Sulfoxide, Vinyl Sulfone, or 
+Vinyl Sulfonate Derivatives and Aryl Bromides Catalyzed by a Palladium Complex 
+Derived from a Tetraphosphine<br>
+A. Battace, T. Zair, H. Doucet, M. Santelli, <i>
+Synthesis</i>, <b>2006</b>, 3495-3505.</p>
+<p><a href="../abstracts/lit2/214.shtm"><img src="../abstracts/lit2/214a.gif"></a><br>
+Direct Acylation of Aryl Bromides with Aldehydes by Palladium Catalysis<br>
+J. Ruan, O. Saidi, J. A. Iggo, J. Xiao, <i>J. Am. Chem. Soc.</i>, <b>2008</b>, <i>
+130</i>, 10510-10511.</p>
+<p><a href="../abstracts/lit4/146.shtm"><img src="../abstracts/lit4/146a.gif"></a><br>
+Preparation of Vinyl Silyl Ethers and Disiloxanes via the Silyl-Heck 
+Reaction of Silyl Ditriflates<br>
+S. E. S. Martin, D. A. Watson, <i>J. Am. Chem. Soc.</i>, <b>2013</b>, <i>
+135</i>, 13330-13333.</p>
+<p><a href="../abstracts/lit4/313.shtm"><img src="../abstracts/lit4/313a.gif"></a><br>
+Asymmetric Intermolecular Heck Reaction of Aryl Halides<br>
+C. Wu, J. Zhou, <i>J. Am. Chem. Soc.</i>, <b>2014</b>, <i>
+136</i>, 650-652.</p>
+<p><a href="../abstracts/lit4/515.shtm"><img src="../abstracts/lit4/515a.gif"></a><br>
+Enantiospecific Intramolecular Heck Reactions of Secondary Benzylic Ethers<br>
+M. R. Harris, M. O. Konev, E. R. Jarvo, <i>J. Am. Chem. Soc.</i>, <b>2014</b>, <i>
+136</i>, 7825-7828.</p>
+
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

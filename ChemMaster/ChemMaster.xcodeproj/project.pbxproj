@@ -62,6 +62,9 @@
 		4ECC97CB1D1197E900D5000C /* CYLResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECC97CA1D1197E900D5000C /* CYLResultModel.m */; };
 		4ECC97CE1D1261C100D5000C /* CYLDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECC97CD1D1261C100D5000C /* CYLDetailModel.m */; };
 		4ECC97D11D12818A00D5000C /* CYLReactionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECC97D01D12818A00D5000C /* CYLReactionDetailViewController.m */; };
+		4EE5DB771D448C1500A26451 /* CYLDetaileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE5DB761D448C1500A26451 /* CYLDetaileCell.m */; };
+		4EE5DB7B1D449D0700A26451 /* NameRList.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4EE5DB7A1D449D0700A26451 /* NameRList.bundle */; };
+		4EE5DBBE1D45E24500A26451 /* NameListPicture.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4EE5DBBD1D45E24500A26451 /* NameListPicture.bundle */; };
 		CE31C95ACD49967E9DCE28CC /* libPods-ChemMaster.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A756A2C6D2E97427A9486FDB /* libPods-ChemMaster.a */; };
 /* End PBXBuildFile section */
 
@@ -187,6 +190,10 @@
 		4ECC97CD1D1261C100D5000C /* CYLDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLDetailModel.m; sourceTree = "<group>"; };
 		4ECC97CF1D12818A00D5000C /* CYLReactionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLReactionDetailViewController.h; sourceTree = "<group>"; };
 		4ECC97D01D12818A00D5000C /* CYLReactionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLReactionDetailViewController.m; sourceTree = "<group>"; };
+		4EE5DB751D448C1500A26451 /* CYLDetaileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLDetaileCell.h; sourceTree = "<group>"; };
+		4EE5DB761D448C1500A26451 /* CYLDetaileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLDetaileCell.m; sourceTree = "<group>"; };
+		4EE5DB7A1D449D0700A26451 /* NameRList.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NameRList.bundle; sourceTree = SOURCE_ROOT; };
+		4EE5DBBD1D45E24500A26451 /* NameListPicture.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NameListPicture.bundle; sourceTree = SOURCE_ROOT; };
 		730560DAAF9BC4822389DB9E /* Pods-ChemMaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChemMaster.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChemMaster/Pods-ChemMaster.release.xcconfig"; sourceTree = "<group>"; };
 		A756A2C6D2E97427A9486FDB /* libPods-ChemMaster.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChemMaster.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E01F783DFEA3D2E60DFA70CE /* Pods-ChemMaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChemMaster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChemMaster/Pods-ChemMaster.debug.xcconfig"; sourceTree = "<group>"; };
@@ -278,6 +285,7 @@
 		4E2A81A61D0D9BCF0082D785 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4EE5D7AE1D44823C00A26451 /* Resource */,
 				4E2A81B21D0D9BCF0082D785 /* Assets.xcassets */,
 				4E2A81B41D0D9BCF0082D785 /* LaunchScreen.storyboard */,
 				4E2A81B71D0D9BCF0082D785 /* Info.plist */,
@@ -489,6 +497,8 @@
 		4E2A81F31D0DA0120082D785 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4EE5DB751D448C1500A26451 /* CYLDetaileCell.h */,
+				4EE5DB761D448C1500A26451 /* CYLDetaileCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -659,6 +669,15 @@
 			path = catagory;
 			sourceTree = "<group>";
 		};
+		4EE5D7AE1D44823C00A26451 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				4EE5DBBD1D45E24500A26451 /* NameListPicture.bundle */,
+				4EE5DB7A1D449D0700A26451 /* NameRList.bundle */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
 		9D8459DEB8A9F70BCD5E3FEB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -785,6 +804,8 @@
 			files = (
 				4E2A81B61D0D9BCF0082D785 /* LaunchScreen.storyboard in Resources */,
 				4E2A81B31D0D9BCF0082D785 /* Assets.xcassets in Resources */,
+				4EE5DB7B1D449D0700A26451 /* NameRList.bundle in Resources */,
+				4EE5DBBE1D45E24500A26451 /* NameListPicture.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -861,6 +882,7 @@
 				4EADD1DD1D2AA31000DC7C94 /* CYLDetailViewFromSaveViewController.m in Sources */,
 				4E2A82221D0FE1C70082D785 /* CYLHightLightCell.m in Sources */,
 				4E1377F51D16516400857C36 /* CYLChemicalBond.m in Sources */,
+				4EE5DB771D448C1500A26451 /* CYLDetaileCell.m in Sources */,
 				4E1377EF1D152B2400857C36 /* CYLToolBarView.m in Sources */,
 				4E2A82131D0DB2970082D785 /* CYLTabBarButton.m in Sources */,
 				4E2A820F1D0DA7A40082D785 /* UpImageDownTitleButton.m in Sources */,

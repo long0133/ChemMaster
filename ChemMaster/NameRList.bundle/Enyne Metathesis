@@ -1,0 +1,295 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Enyne Metathesis</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+	<a href="/related/enyne+metathesis.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="cross-metathesis.shtm">Cross Metathesis</a><br>
+<a href="olefin-metathesis.shtm">Olefin Metathesis</a><br>
+<a href="ring-closing-metathesis.shtm">Ring Closing Metathesis</a><br>
+<a href="../synthesis/C2C/1,3-dienes/olefination.shtm">Synthesis of 1,3-dienes</a></p>
+
+</div>
+<h1>Enyne Metathesis</h1>
+<p><img border="0" src="enyne-1.GIF"></p>
+<p>The Enyne Metathesis is a ruthenium-catalyzed bond reorganization reaction 
+between alkynes and alkenes to produce 1,3-dienes. The intermolecular process is 
+called Cross-Enyne Metathesis, whereas intramolecular reactions are referred as 
+Ring-Closing Enyne Metathesis (RCEYM).</p>
+<p><img border="0" src="enyne-2.GIF"></p>
+<hr>
+<h2>Mechanism of the Enyne Metathesis</h2>
+<p>Enyne metathesis, or the so-called cycloisomerization reactions, were first 
+reported using palladium(II) and platinum(II) salts and are mechanistically 
+distinct from metal carbene-mediated pathways. As ruthenium carbenes are 
+nowadays 
+catalyst of choice in <a href="olefin-metathesis.shtm">alkene metathesis</a> and 
+currently also in enyne bond reorganizations, we will focus on this family of 
+catalysts. Ruthenium carbenes are commercially available, tolerate many 
+functional groups and new catalysts are constantly being developed.</p>
+<p>In the initiation step, the stable catalyst undergoes cycloaddition to the 
+substrate forming a ruthenacylcobutane. Subsequent cycloelimination releases a 
+stable styrene derivative, which generally does not interfere in cross 
+metathesis reactions. The 
+catalyst is then bound to the substrate in form of a metal carbene, which reacts 
+intramolecularly with the triple bond to yield a vinyl carbene. More details are 
+shown in the scheme for the catalytic cycle.</p>
+<p><img border="0" src="enyne-3.GIF"></p>
+<p>In the catalytic cycle (top), this vinyl carbene first adds to the 
+double bond of the substrate forming a ruthenacyclobutane. Cycloelimination at 
+this stage gives a ruthenium carbene under release of the product (lower right). 
+Subsequent intramolecular cycloaddition with the alkyne gives a 
+vinylcarbene intermediate via a ruthenacyclobutene transition state. The vinyl carbene reacts with another substrate molecule to give the product via methylene 
+transfer, and the catalytic cycle continous.</p>
+<p><img border="0" src="enyne-4.GIF"></p>
+<p>The driving force of the reaction is the formation of a thermodynamically 
+stable, conjugated 1,3-diene.</p>
+<p>As such reactions are conducted under conditions of dilution that favor the 
+RCEYM over competing <a href="cross-metathesis.shtm">cross-alkene metathesis</a> 
+or cross-enyne metathesis, the availability of the methylene is the 
+rate-limiting step. In addition, the vinyl carbene is quite stable. Using less 
+reactive catalysts, Mori has developed a system under an atmosphere of ethylene. 
+In the presence of excess ethylene, there is a much better opportunity for 
+catalyst regeneration to occur:</p>
+<p><a href="../abstracts/lit1/997.shtm"><img src="../abstracts/lit1/997a.gif"></a><br>
+M. Mori, N. Sakakibara, A. Kinoshita, <i>J. Org. Chem.</i>, 
+<b>1998</b>,
+<i>63</i>, 6082-6083.</p>
+<p>Ethylene thus maintains a higher concentration of active catalyst and reduces 
+the amount of catalyst that is in resting states.</p>
+<p><img border="0" src="enyne-5.GIF"></p>
+<p>Another striking feature is that self-metathesis of ethylene is a neutral 
+process in terms of the progress of the reaction. In addition, ethylene 
+suppresses alkyne polymerization, as shown by Fogg (<i>J. Am. Chem. Soc.</i> <b>
+2011</b>, <i>133</i>, 15918).</p>
+<p>We have discussed the mechanism in which catalyst attack occurs first at the 
+alkene followed by attack at the alkyne. This mechanistic variant is also known 
+as the &quot;ene-first&quot; mechanism or the &#8220;ene-then-yne&#8221; mechanism. An &quot;alkyne first&quot; 
+pathway would lead to a mixture of regioisomers, which can only be observed 
+for a few substrates:</p>
+<p><img border="0" src="enyne-8.GIF"></p>
+<p>NMR evidence favors the &quot;ene-first&quot; pathway, as new 
+carbene proton resonances can be observed. However, due to absence of carbene 
+protons in the &quot;alkyne pathway&quot;, NMR cannot rule out the yne-first mechanism as 
+a competitive pathway.</p>
+<p>Using an alkyne and only 2-3 fold of excess of an alkene, the enyne 
+metathesis allows the synthesis of cross-coupled products.
+Higher alkene concentration is beneficial to the reaction rate and helps keep 
+the reactive intermediates in the enyne metathesis catalytic cycle. The drawback is the low <i>E:Z</i> selectivity, which is also a point that must 
+be addressed in the <a href="cross-metathesis.shtm">cross alkene metathesis</a>.</p>
+<p><img border="0" src="enyne-9.GIF"></p>
+<p>Using 
+the second generation Grubbs' catalyst, the reaction is believed to involve 
+an initial reaction with the alkene followed by the alkyne (for a kinetic study 
+see: <i>J. Am. Chem. Soc.</i> <b>2005</b>,
+<i>127</i>, 5762. <a target="_blank" href="http://dx.doi.org/10.1021/ja050174m">DOI</a>). </p>
+<p>However, very useful yields of cross-enyne metathesis products can be obtained, 
+for example, by using an excess of ethylene:</p>
+<p><a href="../abstracts/lit2/000.shtm"><img src="../abstracts/lit2/000a.gif"></a><br>
+K. Tonogakia, M. Mori, <i>Tetrahedron Lett.</i>, 
+<b>2002</b>,
+<i>43</i>, 2235-2238.</p>
+<p>For a detailed mechanistic discussion and a plethora of further examples, 
+please refer to the recent review by Steven T. Diver and Anthony J. Giessert (<i>Chem. Rev.</i> <b>2004</b>,
+<i>104</i>, 1317. <a target="_blank" href="http://dx.doi.org/10.1021/cr020009e">DOI</a>). 
+Additional recent catalyst developments can also be found in the subsequent 
+literature section and in newer reviews by Steven T. Diver: &quot;Ene-yne metathesis&quot; 
+Diver, S. T., Griffiths, J. R., In: Olefin Metathesis: Theory and Practice. 
+Vol.; Grela, K., Ed.; Wiley: Hoboken, New Jersey, 2014.</p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit2/000.shtm"><img src="../abstracts/lit2/000a.gif"></a><br>
+An improved 1,3-diene synthesis from alkyne and ethylene using cross-enyne metathesis<br>
+K. Tonogakia, M. Mori, <i>Tetrahedron Lett.</i>, 
+<b>2002</b>,
+<i>43</i>, 2235-2238.</p>
+<p><font size="1"><a href="../abstracts/lit4/226.shtm">
+<img src="../abstracts/lit4/226a.gif"></a></font><br>
+Inhibitory Effect of Ethylene in Ene-Yne Metathesis: The Case for 
+Ruthenacyclobutane Resting States<br>
+T. M. Gregg, J. B. Keister, S. T. Diver, <i>J. Am. Chem. Soc.</i>, <b>2013</b>, <i>
+135</i>, 16777-16780.</p>
+<p><a href="../abstracts/lit3/751.shtm"><img src="../abstracts/lit3/751a.gif"></a><br>
+Geminal Alkene-Alkyne Cross Metathesis Using a Relay Strategy<br>
+J. R. Clark, J. M. French, E. Jecs, S. T. Diver, <i>Org. Lett.</i>, <b>2012</b>,
+<i>14</i>, 4178-4181.</p>
+<p><a href="../abstracts/lit2/017.shtm"><img src="../abstracts/lit2/017b.gif"></a><br>
+A Rapid and Simple Cleanup Procedure for Metathesis Reactions<br>
+B. R. Galan, K. P. Kalbarczyk, S. Szczepankiewicz, J. B. Keister, S. T. Diver, <i>Org. Lett.</i>, <b>2007</b>,
+<i>9</i>, 1203-1206.</p>
+<p><a href="../abstracts/lit1/995.shtm">
+<img src="../abstracts/lit1/995b.gif" width="475" height="124"></a><br>
+Phosphabicyclononane-Containing Ru Complexes: Efficient Pre-Catalysts for 
+Olefin Metathesis Reactions<br>
+F. Boeda, H. Clavier, M. Jordaan, W. H. Meyer, S. P. Nolan, <i>J. Org. Chem.</i>, <b>2008</b>,
+<i>73</i>, 259-263.</p>
+<p><a href="../abstracts/lit1/997.shtm"><img src="../abstracts/lit1/997a.gif"></a><br>
+Remarkable Effect of Ethylene Gas in the Intramolecular Enyne Metathesis of 
+Terminal Alkynes<br>
+M. Mori, N. Sakakibara, A. Kinoshita, <i>J. Org. Chem.</i>, 
+<b>1998</b>,
+<i>63</i>, 6082-6083.</p>
+<p><a href="../abstracts/lit1/619.shtm">
+<img src="../abstracts/lit1/619b.gif" width="507" height="95"></a><br>
+Convenient Access to Functionalized Vinylcyclopentenols from Alkynyloxiranes<br>
+L. Wang, M. L. Maddess, M. Lautens, <i>J. Org. Chem.</i>, <b>2007</b>,
+<i>72</i>, 1822-1825.</p>
+<p><a href="../abstracts/lit2/326.shtm"><img src="../abstracts/lit2/326a.gif"></a><br>
+Enyne Cross-Metathesis with Strained, Geminally-Substituted Alkenes: Direct 
+Access to Highly Substituted 1,3-Dienes<br>
+D. A. Clark, B. S. Basile, W. S. Karnofel, S. T. Diver, <i>Org. Lett.</i>, <b>
+2008</b>,
+<i>10</i>, 4927-4929.</p>
+<p>
+<font size="1"><a href="../abstracts/lit2/134.shtm">
+<img src="../abstracts/lit2/134b.gif"></a></font><br>
+Aminocarbonyl Group Containing Hoveyda-Grubbs-Type Complexes: Synthesis and 
+Activity in Olefin Metathesis Transformations<br>
+D. Rix, F. Caijo, I. Laurent, F. Boeda, H. Clavier, S. P. Nolan, M. Mauduit, <i>J. Org. Chem.</i>, <b>2008</b>,
+<i>73</i>, 4225-4228.</p>
+<p><a href="../abstracts/lit1/474.shtm">
+<img src="../abstracts/lit1/474b.gif" width="464" height="99"></a><br>
+Advanced Fine-Tuning of Grubbs/Hoveyda Olefin Metathesis Catalysts: A 
+Further Step toward an Optimum Balance between Antinomic Properties<br>
+M. Bieniek, R. Bujok, M. Cabaj, N. Lugan, G. Lavigne, D. Arlt, K. Grela, <i>J. Am. Chem. Soc.</i>, <b>2006</b>, <i>
+128</i>, 13652-13653.</p>
+<p><font size="1"><a href="../abstracts/lit4/951.shtm">
+<img src="../abstracts/lit4/951a.gif"></a></font><br>
+Synthesis of 1,2,3-Substituted Pyrroles from Propargylamines via a One-Pot 
+Tandem Enyne Cross Metathesis-Cyclization Reaction<br>
+H. Chachignon, N. Scalacci, E. Petricci, D. Castagnolo <i>J. Org. Chem.</i>, <b>
+2015</b>,
+<i>80</i>, 5287-5295.</p>
+<p><a href="../abstracts/lit2/180.shtm"><img src="../abstracts/lit2/180a.gif"></a><br>
+Synthesis of Styrenes Using Ruthenium-Catalyzed Ring-Closing Enyne 
+Metathesis<br>
+K. Yoshida, Y. Shishikura, H. Takahashi, T. Imamoto, <i>Org. Lett.</i>, <b>
+2008</b>,
+<i>10</i>, 2777-2780.</p>
+<p><a href="../abstracts/lit1/293.shtm">
+<img src="../abstracts/lit1/293d.gif" width="519" height="91"></a><br>
+Allenylidene-to-Indenylidene Rearrangement in Arene-Ruthenium Complexes: A 
+Key Step to Highly Active Catalysts for Olefin Metathesis Reactions<br>
+R. Castarlenas, C. Vovard, C. Fischmeister, P. H. Dixneuf, <i>J. Am. Chem. Soc.</i>, <b>
+2006</b>,
+<i>128</i>, 4079-4089.</p>
+<p><a href="../abstracts/lit1/611.shtm">
+<img src="../abstracts/lit1/611a.gif" width="286" height="87"></a><br>
+Efficient Method for the Synthesis of Chiral Pyrrolidine Derivatives via 
+Ring-Closing Enyne Metathesis Reaction<br>
+Q. Yang, H. Alper, W.-J Xiao, <i>Org. Lett.</i>, <b>2007</b>,
+<i>9</i>, 769-771.</p>
+
+
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

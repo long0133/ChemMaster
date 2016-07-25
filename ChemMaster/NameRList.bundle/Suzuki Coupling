@@ -1,0 +1,498 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Suzuki Coupling</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+<a href="/related/suzuki+coupling.htm">Literature</a></p>
+<p><b>Related Reactions</b><br>
+<a href="hiyama-coupling.shtm">Hiyama Coupling</a><br>
+<a href="kumada-coupling.shtm">Kumada Coupling</a><br>
+<a href="miyaura-borylation-reaction.shtm">Miyaura Borylation Reaction</a><br>
+<a href="negishi-coupling.shtm">Negishi Coupling</a><br>
+<a href="stille-coupling.shtm">Stille Coupling</a></p>
+
+</div>
+<h1>Suzuki Coupling</h1>
+<p><img src="suzuki7.gif" width="279" height="130"></p>
+<p>The scheme 
+above shows the first published Suzuki Coupling, which is the 
+palladium-catalysed cross coupling between organoboronic acid and 
+halides. Recent catalyst and methods developments have broadened the 
+possible applications enormously, so that the scope of the reaction 
+partners is not restricted to aryls, but includes alkyls, alkenyls and 
+alkynyls. Potassium trifluoroborates and organoboranes or boronate 
+esters may be used in place of boronic acids. Some pseudohalides (for 
+example triflates) may also be used as coupling partners.</p>
+<hr>
+<h2>Mechanism of the Suzuki Coupling</h2>
+<p>One difference between the Suzuki mechanism and that of the Stille Coupling 
+is that the boronic acid must be activated, for example with base. This 
+activation of the boron atom enhances the polarisation of the organic ligand, 
+and facilitates transmetallation. If starting materials are substituted with 
+base labile groups (for example esters), powdered KF effects this activation 
+while leaving base labile groups unaffected.</p>
+<p><img src="Suzuki6.gif" width="313" height="262"></p>
+<p>In part due to the stability, ease of preparation and low toxicity of the 
+boronic acid compounds, there is currently widespread interest in applications 
+of the Suzuki Coupling, with new developments and refinements being reported 
+constantly.</p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit1/821.shtm"><img src="../abstracts/lit1/821a.gif"></a><br>
+Alkyl-Alkyl Suzuki Cross-Couplings of Unactivated Secondary Alkyl Halides at 
+Room Temperature<br>
+B. Saito, G. C. Fu, <i>J. Am. Chem. Soc.</i>, <b>2007</b>, <i>
+
+129</i>, 9602-9603.</p>
+<p><a href="../abstracts/literature/079.shtm"><img src="../abstracts/literature/079a.gif"></a><br>
+Boronic Acids: New Coupling Partners in Room-Temperature Suzuki Reactions of 
+Alkyl Bromides. Crystallographic Characterization of an Oxidative-Addition 
+Adduct Generated under Remarkably Mild Conditions<br>
+J. H. Kirchhoff, M. R. Netherton, I. D. Hill, G. C. Fu, <i>J. Am. Chem. Soc.</i>, <b>
+2002</b>, <i>
+124</i>, 13662-13663.</p>
+<p><font size="1"><a href="../abstracts/lit4/683.shtm">
+<img src="../abstracts/lit4/683a.gif"></a></font><br>
+Stereospecific Pd-Catalyzed Cross-Coupling Reactions of Secondary Alkylboron 
+Nucleophiles and Aryl Chlorides<br>
+L. Li, S. Zhao, A. Joshi-Pangu, M. Diane, M. R. Biscoe, <i>
+J. Am. Chem. Soc.</i>, <b>2014</b>, <i>
+136</i>, 14027-14030.</p>
+<p><a href="../abstracts/lit3/700.shtm"><img src="../abstracts/lit3/700b.gif"></a><br>
+Rational Exploration of N-Heterocyclic Carbene (NHC) Palladacycle Diversity: 
+A Highly Active and Versatile Precatalyst for Suzuki-Miyaura Coupling Reactions 
+of Deactivated Aryl and Alkyl Substrates<br>
+G.-R. Peh, E. A. B. Kantchev, J.-C. Er, J. Y. Ying, <i>Chem. Eur. J.</i>, <b>2010</b>,
+<i>14</i>, 4010-4017.</p>
+<p><a href="../abstracts/lit3/288.shtm"><img src="../abstracts/lit3/288a.gif"></a><br>
+Stereoconvergent Amine-Directed Alkyl-Alkyl Suzuki Reactions of Unactivated 
+
+Secondary Alkyl Chlorides<br>
+Z. Lu, A. Wilsily, G. C. Fu, <i>J. Am. Chem. Soc.</i>, <b>2011</b>, <i>
+
+133</i>, 8154-8157.</p>
+<p><a href="../abstracts/lit4/475.shtm"><img src="../abstracts/lit4/475a.gif"></a><br>
+A Catalytic Enantiotopic-Group-Selective Suzuki Reaction for the 
+Construction of Chiral Organoboronates<br>
+C. Sun, B. Potter, J. P. Morken, <i>J. Am. Chem. Soc.</i>, <b>2014</b>, <i>
+136</i>, 6534-6537.</p>
+<p><a href="../abstracts/literature/729.shtm">
+<img src="../abstracts/literature/729a.gif"></a><br>
+Tetraphosphine/palladium catalysed Suzuki cross-coupling reactions of aryl
+
+halides with alkylboronic acids<br>
+I. Kondolff, H. Doucet, M. Santelli, <i>Tetrahedron, </i><b>2004</b>, <i>60</i>,
+
+3813-3818.</p>
+<p><a href="../abstracts/lit2/535.shtm"><img src="../abstracts/lit2/535a.gif"></a><br>
+Suzuki-Miyaura Cross-Coupling Reactions of Primary Alkyltrifluoroborates 
+with Aryl Chlorides<br>
+S. D. Dreher, S.-E. Lim, D. L. Sandrock, G. A. Molander, <i>J. Org. Chem.</i>, <b>2009</b>,
+<i>74</i>, 3626-3631.</p>
+<p><a href="../abstracts/lit1/577.shtm"><img src="../abstracts/lit1/577a.gif"></a><br>
+Pd(<i>N,N</i>-Dimethyl &#946;-alaninate)<sub>2</sub> as a High-Turnover-Number, Phosphine-Free 
+Catalyst for the Suzuki Reaction<br>
+X. Cui, T. Qin, J.-R. Wang, L. Liu, Q.-X. Guo, <i>Synthesis</i>, <b>2007</b>, 
+393-399.</p>
+<p><a href="../abstracts/lit1/692.shtm"><img src="../abstracts/lit1/692a.gif"></a><br>
+Guanidine/Pd(OAc)<sub>2</sub>-Catalyzed Room Temperature Suzuki 
+Cross-Coupling Reaction in Aqueous Media under Aerobic Conditions<br>
+S. Li, Y. Lin, J. Cao, S. Zhang, <i>J. Org. Chem.</i>, <b>2007</b>,
+<i>72</i>, 4067-4072.</p>
+<p><a href="../abstracts/lit4/603.shtm"><img src="../abstracts/lit4/603a.gif"></a><br>
+[Bmim]PF<sub>6</sub>-Promoted Ligandless Suzuki-Miyaura Coupling Reaction of Potassium 
+Aryltrifluoroborates in Water<br>
+L. Liu, Y. Dong, B. Pang, J. Ma, <i>J. Org. Chem.</i>, <b>2014</b>,
+<i>79</i>, 7193-7198.</p>
+<p><a href="../abstracts/lit4/404.shtm"><img src="../abstracts/lit4/404a.gif"></a><br>
+Copper-Catalyzed Suzuki-Miyaura Coupling of Arylboronate Esters: 
+Transmetalation with (PN)CuF and Identification of Intermediates<br>
+S. K. Gurung, S. Thapa, A. Kafle, D. A. Dickie, R. Giri, <i>Org. Lett.</i>, <b>2014</b>,
+<i>16</i>, 1264-1267.</p>
+<p><font size="1"><a href="../abstracts/lit2/918.shtm">
+<img src="../abstracts/lit2/918a.gif"></a></font><br>
+A Cyclobutene-1,2-Bis(imidazolium) Salt as Efficient Precursor of 
+
+Palladium-Catalyzed Room-Temperature Suzuki-Miyaura Reactions<br>
+A. Rahimi, A. Schmidt, <i>Synlett</i>, <b>2010</b>, 
+
+1327-1330.</p>
+<p><a href="../abstracts/lit3/141.shtm"><img src="../abstracts/lit3/141a.gif"></a><br>
+An Extremely Active and General Catalyst for Suzuki Coupling Reaction of 
+Unreactive Aryl Chlorides<br>
+D.-H. Lee, M.-J. Jin, <i>Org. Lett.</i>, <b>2011</b>,
+
+<i>13</i>, 252-255.</p>
+<p><a href="../abstracts/lit2/542.shtm"><img src="../abstracts/lit2/542a.gif"></a><br>
+A Triarylphosphine Ligand Bearing Dodeca(ethylene glycol) Chains: Enhanced 
+Efficiency in the Palladium-Catalyzed Suzuki-Miyaura Coupling Reaction<br>
+T. Fujihara, S. Yoshida, J. Terao, Y. Tsuji, <i>Org. Lett.</i>, <b>2009</b>,
+<i>11</i>, 2121-2124.</p>
+<p><a href="../abstracts/lit2/283.shtm"><img src="../abstracts/lit2/283a.gif"></a><br>
+A New Family of Tunable Indolylphosphine Ligands by One-Pot Assembly and 
+Their Applications in Suzuki-Miyaura Coupling of Aryl Chlorides<br>
+C. M. So, C. C. Yeung, C. P. Lau, F. Y. Kwong, <i>J. Org. Chem.</i>, <b>2008</b>,
+<i>73</i>, 7803-7806.</p>
+<p><a href="../abstracts/lit4/247.shtm"><img src="../abstracts/lit4/247a.gif"></a><br>
+An Active, General, and Long-Lived Palladium Catalyst for Cross-Couplings of 
+Deactivated (Hetero)aryl Chlorides and Bromides with Arylboronic Acids<br>
+T. Hoshi, T. Honma, A. Mori, M. Konishi, T. Sato, H. Hagiwara, T. Suzuki, <i>J. Org. Chem.</i>, <b>2013</b>,
+<i>78</i>, 11513-11524.</p>
+<p><a href="../abstracts/lit2/119.shtm"><img src="../abstracts/lit2/119a.gif"></a><br>
+Biphenylene-Substituted Ruthenocenylphosphine for Suzuki-Miyaura Coupling of 
+Aryl Chlorides<br>
+T. Hoshi, T. Nakazawa, I. Saitoh, Y. Mori, T. Suzuki, J.-i. Sakai, H. 
+Hagiwara, S. Akai, <i>Org. Lett.</i>, <b>2008</b>,
+<i>10</i>, 2063-2066.</p>
+<p><a href="../abstracts/lit3/819.shtm"><img src="../abstracts/lit3/819a.gif"></a><br>
+Scope of the Two-Step, One-Pot Palladium-Catalyzed Borylation/Suzuki 
+Cross-Coupling Reaction Utilizing Bis-Boronic Acid<br>
+G. A. Molander, S. L. J. Trice, S. M. Kennedy, <i>J. Org. Chem.</i>, <b>2012</b>,
+<i>77</i>, 8678-8688.</p>
+<p><a href="../abstracts/lit2/455.shtm"><img src="../abstracts/lit2/455a.gif"></a><br>
+Facile Synthesis of Highly Stable Gold Nanoparticles and Their Unexpected 
+Excellent Catalytic Activity for Suzuki-Miyaura Cross-Coupling Reaction in Water<br>
+J. Han, Y. Liu, R. Guo, <i>J. Am. Chem. Soc.</i>, <b>2009</b>, <i>
+131</i>, 2060-2061.</p>
+<p><a href="../abstracts/lit4/730.shtm"><img src="../abstracts/lit4/730a.gif"></a><br>
+Biscarboxy-Functionalized Imidazole and Palladium as Highly Active Catalytic 
+System in Protic Solvents: Methanol and Water<br>
+R. Martínez, I. M. Pastor, M. Yus, <i>Synthesis</i>, <b>2014</b>, <i>46</i>, 
+2965-2975.</p>
+<p><a href="../abstracts/lit2/080.shtm"><img src="../abstracts/lit2/080a.gif"></a><br>
+Room-Temperature Suzuki-Miyaura Couplings in Water Facilitated by Nonionic 
+Amphiphiles<br>
+B. H. Lipshutz, T. B. Petersen, A. R. Abela, <i>Org. Lett.</i>, <b>2008</b>,
+<i>10</i>, 1333-1336.</p>
+<p><a href="../abstracts/lit3/760.shtm"><img src="../abstracts/lit3/760a.gif"></a><br>
+Robust Acenaphthoimidazolylidene Palladium Complexes: Highly Efficient 
+Catalysts for Suzuki-Miyaura Couplings with Sterically Hindered Substrates<br>
+T. Tu, Z. Sun, W. Fang, M. Xu, Y. Zhou, <i>Org. Lett.</i>, <b>2012</b>,
+<i>14</i>, 4250-4253.</p>
+<p><a href="../abstracts/lit2/588.shtm"><img src="../abstracts/lit2/588a.gif"></a><br>
+Solvent-Free Microwave-Assisted Suzuki-Miyaura Coupling Catalyzed by 
+PEPPSI-iPr<br>
+P. Nun, J. Martinez, F. Lamaty, <i>Synlett</i>, <b>2009</b>, 
+1761-1764.</p>
+<p><a href="../abstracts/literature/735.shtm">
+<img src="../abstracts/literature/735a.gif"></a><br>
+Cross-Coupling and Dehalogenation Reactions Catalyzed by (<i>N</i>-Heterocyclic
+
+carbene)Pd(allyl)Cl Complexes<br>
+O. Navarro, H. Kaur, P. Mahjoor, S. P. Nolan, <i>J. Org. Chem., </i><b>2004</b>,
+
+<i>69</i>, 3173-3180.</p>
+<p><a href="../abstracts/literature/598.shtm">
+<img src="../abstracts/literature/598a.gif"></a><br>
+An N-Heterocyclic Carbene Ligand with Flexible Steric Bulk Allows Suzuki
+
+Cross-Coupling of Sterically Hindered Aryl Chlorides at Room Temperature<br>
+G. Altenhoff, R. Goddard, C. W. Lehmann, F. Glorius, <i>Angew. Chem. Int. Ed.</i>, <b>
+
+2003</b>, <i>42</i>, 3690-3693.</p>
+<p><a href="../abstracts/literature/817.shtm">
+<img src="../abstracts/literature/817a.gif"></a><br>
+Ferrocenyl Monophosphine Ligands: Synthesis and Applications in the
+Suzuki-Miyaura Coupling of Aryl Chlorides<br>
+C. Baillie, L. Zhang, J. Xiao, <i>J. Org. Chem.</i>, <b>2004</b>,
+<i>69</i>, 7779-7782.</p>
+<p><a href="../abstracts/lit1/199.shtm"><img src="../abstracts/lit1/199a.gif"></a><br>
+Reusable and Efficient Pd(OAc)<sub>2</sub>/TBAB/PEG-400 System for Suzuki-Miyaura 
+Cross-Coupling Reaction under Ligand-Free Conditions<br>
+W.-J. Liu, Y.-X. Xie, Y. Liang, J.-H. Li, <i>
+Synthesis</i>, <b>2006</b>, 860-864.</p>
+<p><a href="../abstracts/literature/933.shtm">
+<img src="../abstracts/literature/933a.gif"></a><br>
+Phosphine-Free Palladium Acetate Catalyzed Suzuki Reaction in Water<br>
+L. Liu, Y. Zhang, Y. Wang, <i>J. Org. Chem.</i>, <b>2005</b>,
+
+<i>70</i>, 6122-6125.</p>
+<p><a href="../abstracts/lit1/649.shtm"><img src="../abstracts/lit1/649a.gif"></a><br>
+Synthesis and Characterization of R2PN=P(<sup>i</sup>BuNCH<sub>2</sub>CH<sub>2</sub>)<sub>3</sub>N: A New Bulky 
+Electron-Rich Phosphine for Efficient Pd-Assisted Suzuki-Miyaura Cross-Coupling 
+Reactions<br>
+J. V. Kingston, J. G. Verkade, <i>J. Org. Chem.</i>, <b>2007</b>,
+<i>72</i>, 2816-2822.</p>
+<p><a href="../abstracts/lit1/299.shtm"><img src="../abstracts/lit1/299a.gif"></a><br>
+Modified (NHC)Pd(allyl)Cl (NHC = <i>N</i>-Heterocyclic Carbene) Complexes 
+for Room-Temperature Suzuki-Miyaura and Buchwald-Hartwig Reactions<br>
+N. Marion, O. Navarro, J. Mei, E. D. Stevens, N. M. Scott, S. P. Nolan, <i>J. Am. Chem. Soc.</i>, <b>2006</b>, <i>128</i>, 4101-4111.</p>
+<p><a href="../abstracts/lit1/254.shtm"><img src="../abstracts/lit1/254b.gif"></a><br>
+A Highly Active Catalyst for Suzuki-Miyaura Cross-Coupling Reactions of 
+Heteroaryl Compounds<br>
+K. L. Billingsley, K. W. Anderson, S. L. Buchwald, <i>Angew. Chem. Int. Ed.</i>, <b>2006</b>, <i>45</i>, 3484-3488.</p>
+<p><a href="../abstracts/literature/375.shtm">
+<img src="../abstracts/literature/375a.gif"></a><br>
+Palladium catalyzed Suzuki-Miyaura coupling with aryl chlorides using a 
+bulky phenanthryl <i>N</i>-heterocyclic carbene ligand<br>
+C. Song, Y. Ma, Q. Chai, C. Ma, W. Jiang, M. B. Andrus, <i>Tetrahedron</i>, <b>2005</b>, 
+<i>61</i>, 7438-7446.</p>
+<p><a href="../abstracts/lit4/010.shtm"><img src="../abstracts/lit4/010a.gif"></a><br>
+PVC-Supported Palladium Nanoparticles: An Efficient Catalyst for Suzuki 
+Cross-Coupling Reactions at Room Temperature<br>
+M. Samarasimhareddy, G. Prabhu, T. M. Vishwanatha, V. V. Sureshbabu, <i>Synthesis</i>, <b>2013</b>, <i>45</i>, 
+1201-1206.</p>
+<p><a href="../abstracts/lit3/249.shtm"><img src="../abstracts/lit3/249a.gif"></a><br>
+Recyclable Catalysts for Suzuki-Miyaura Cross-Coupling Reactions at Ambient 
+
+Temperature Based on a Simple Merrifield Resin Supported 
+
+Phenanthroline-Palladium(II) Complex<br>
+J. Yang, P. Li, L. Wang, <i>Synthesis</i>, <b>2011</b>, 
+
+1295-1301.</p>
+<p><a href="../abstracts/lit2/121.shtm"><img src="../abstracts/lit2/121a.gif"></a><br>
+Immobilization of Dipyridyl Complex to Magnetic Nanoparticle via Click 
+Chemistry as a Recyclable Catalyst for Suzuki Cross-Coupling Reactions<br>
+G. Lv, W. Mai, R. Jin, L. Gao, <i>Synlett</i>, <b>2008</b>, 
+1418-1422.</p>
+<p><a href="../abstracts/lit2/639.shtm"><img src="../abstracts/lit2/639a.gif"></a><br>
+PdEDTA Held in an Ionic Liquid Brush as a Highly Efficient and Reusable 
+
+Catalyst for Suzuki Reactions in Water<br>
+J.-F. Wei, J. Jiao, J.-J. Feng, J. Lv, X.-R. Zhang, X.-Y. Shi, Z.-G. Chen, <i>J. Org. Chem.</i>, <b>2009</b>,
+
+<i>74</i>, 5967-5974.</p>
+<p><a href="../abstracts/lit3/601.shtm"><img src="../abstracts/lit3/601a.gif"></a><br>
+Ligand Effects on the Stereochemical Outcome of Suzuki-Miyaura Couplings<br>
+G.-P. Lu, K. R. Voigtritter, C. Cai, B. H. Lipshutz, <i>J. Org. Chem.</i>, <b>2012</b>,
+<i>77</i>, 3700-3703.</p>
+<p><a href="../abstracts/lit4/772.shtm"><img src="../abstracts/lit4/772a.gif"></a><br>
+MIDA-Vinylsilanes: Selective Cross-Couplings and Applications to the 
+Synthesis of Functionalized Stilbenes<br>
+M. G. McLaughlin, C. A. McAdam, M. J. Cook, <i>Org. Lett.</i>, <b>
+2015</b>,
+<i>17</i>, 10-13.</p>
+<p><a href="../abstracts/lit3/406.shtm"><img src="../abstracts/lit3/406a.gif"></a><br>
+An Efficient and Recyclable Magnetic-Nanoparticle-Supported Palladium 
+Catalyst for the Suzuki Coupling Reactions of Organoboronic Acids with Alkynyl 
+Bromides<br>
+X. Zhang, P. Li, Y. Ji, L. Zhang, L. Wang, <i>Synthesis</i>, <b>2011</b>, 
+2975-2983.</p>
+<p><a href="../abstracts/lit3/532.shtm"><img src="../abstracts/lit3/532a.gif"></a><br>
+Efficient Palladium-Catalyzed Cross-Coupling Reaction of Alkynyl Halides 
+with Organoboronic Acids under Aerobic Conditions<br>
+J.-S. Tang, M. Tian, W.-B. Sheng, C.-C. Guo, <i>Synthesis</i>, <b>2012</b>, <i>44</i>, 
+541-546.</p>
+<p><a href="../abstracts/literature/657.shtm">
+<img src="../abstracts/literature/657a.gif" width="520" height="90"></a><br>
+Highly Active Catalyst for the Heterogeneous Suzuki-Miyaura Reaction:
+
+Assembled Complex of Palladium and Non-Cross-Linked Amphiphilic Polymer<br>
+Y. M. A. Yamada, K. Takeda, H. Takashashi, S. Ikegami, <i>J. Org. Chem., </i><b>
+
+2003</b>,
+
+<i>68</i>, 7733-7741.</p>
+<p><a href="../abstracts/lit1/755.shtm"><img src="../abstracts/lit1/755a.gif"></a><br>
+New Catalysts for Suzuki-Miyaura Coupling Reactions of 
+
+Heteroatom-Substituted Heteroaryl Chlorides<br>
+A. S. Guram, X. Wang, E. E. Bunel, M. M. Faul, R. D. Larsen, M. J. Martinelli, <i>J. Org. Chem.</i>, <b>2007</b>,
+
+<i>72</i>, 5104-5112.</p>
+<p><a href="../abstracts/lit2/351.shtm"><img src="../abstracts/lit2/351a.gif"></a><br>
+<i>C</i><sub>2</sub>-Symmetric Bis-Hydrazones as Ligands in the Asymmetric Suzuki&#8722;Miyaura 
+Cross-Coupling<br>
+A. Bermejo, A. Ros, R. Fernández, J. M. Lassaletta, <i>J. Am. Chem. Soc.</i>, <b>2008</b>, <i>
+130</i>, 15798-15799.</p>
+<p><a href="../abstracts/lit2/707.shtm"><img src="../abstracts/lit2/707a.gif"></a><br>
+General Reaction Conditions for the Palladium-Catalyzed Vinylation of Aryl 
+
+Chlorides with Potassium Alkenyltrifluoroborates<br>
+E. Alacid, C. Nájera, <i>J. Org. Chem.</i>, <b>2009</b>,
+
+<i>74</i>, 8191-8195.</p>
+<p><a href="../abstracts/literature/838.shtm"><img src="../abstracts/literature/838c.gif"></a><br>
+Stereoselective Enol Tosylation: Preparation of Trisubstituted
+&#945;,&#946;-Unsaturated Esters<br>
+J. Baxter, D. Steinhuebel, M. Palucki, I. W. Davies, <i>
+Org. Lett.</i>, <b>2005</b>, <i>7</i>, 215-218.</p>
+<p><a href="../abstracts/lit1/604.shtm"><img src="../abstracts/lit1/604a.gif"></a><br>
+<i>N</i>-Vinylpyridinium and -ammonium Tetrafluoroborate Salts: New Electrophilic 
+Coupling Partners for Pd(0)-Catalyzed Suzuki Cross-Coupling Reactions<br>
+K. R. Buszek, N. Brown, <i>Org. Lett.</i>, <b>2007</b>,
+<i>9</i>, 707-710.</p>
+<p><a href="../abstracts/lit2/107.shtm"><img src="../abstracts/lit2/107b.gif"></a><br>
+Suzuki-Miyaura Cross-Coupling of Potassium Trifluoroboratohomoenolates<br>
+G. A. Molander, D. E. Petrillo, <i>Org. Lett.</i>, <b>2008</b>,
+<i>10</i>, 1795-1798.</p>
+<p><a href="../abstracts/lit3/799.shtm"><img src="../abstracts/lit3/799a.gif"></a><br>
+Palladium-Catalyzed One-Pot Cross-Coupling of Phenols Using 
+Nonafluorobutanesulfonyl Fluoride<br>
+T. Ikawa, K. Saito, S. Akai, <i>Synlett</i>, <b>2012</b>, <i>23</i>, 
+2241-2246.</p>
+<p><a href="../abstracts/lit2/274.shtm"><img src="../abstracts/lit2/274a.gif"></a><br>
+A family of indolyl phosphine ligands was applied to Suzuki-Miyaura 
+cross-coupling of aryl tosylates with boronic acids, trifluoroborate salts, and 
+boronate esters. Catalyst loading can be reduced to 0.2 mol % for the coupling 
+of nonactivated aryl tosylates.<br>
+C. M. So, C. P. Lau, A. S. C. Chan, F. Y. Kwong, <i>J. Org. Chem.</i>, <b>2008</b>,
+<i>73</i>, 7731-7734.</p>
+<p><a href="../abstracts/lit2/980.shtm"><img src="../abstracts/lit2/980a.gif"></a><br>
+A General Palladium Catalyst System for Suzuki-Miyaura Coupling of Potassium 
+
+Aryltrifluoroborates and Aryl Mesylates<br>
+W. K. Chow, C. M. So, C. P. Lau, F. Y. Kwong, <i>J. Org. Chem.</i>, <b>2010</b>,
+
+<i>75</i>, 5109-5112.</p>
+<p><a href="../abstracts/lit3/482.shtm"><img src="../abstracts/lit3/482a.gif"></a><br>
+Ni(COD)<sub>2</sub>/PCy<sub>3</sub> Catalyzed Cross-Coupling of Aryl and Heteroaryl 
+Neopentylglycolboronates with Aryl and Heteroaryl Mesylates and Sulfamates in 
+THF at Room Temperature<br>
+P. Leowanawat, N. Zhang, A.-M. Remerita, B. M. Rosen, V. Percec, <i>J. Org. Chem.</i>, <b>2011</b>,
+<i>76</i>, 9946-9955.</p>
+<p><a href="../abstracts/literature/154.shtm"><img src="../abstracts/literature/154a.gif"></a><br>
+The First General Palladium Catalyst for the Suzuki-Miyaura and Carbonyl 
+Enolate Coupling of Aryl Arenesulfonates<br>
+H. N. Nguyen, X. Huang, S. L. Buchwald, <i>J. Am. Chem. Soc.</i>, <b>2003</b>, <i>125</i>, 11818-11819.</p>
+<p><a href="../abstracts/lit3/826.shtm"><img src="../abstracts/lit3/826a.gif"></a><br>
+Synthesis of Biaryl Derivatives via a Magnetic Pd-NPs-Catalyzed One-Pot 
+Diazotization-Cross-Coupling Reaction<br>
+Y. Zong, J. Hu, P. Sun, X. Jiang, <i>Synlett</i>, <b>2012</b>, <i>23</i>, 
+2393-2396.</p>
+<p><a href="../abstracts/lit2/476.shtm"><img src="../abstracts/lit2/476a.gif"></a><br>
+Palladium-Catalyzed Cross-Coupling Reactions of Potassium 
+Alkenyltrifluoroborates with Organic Halides in Aqueous Media<br>
+E. Alacid, C. Nájera, <i>J. Org. Chem.</i>, <b>2009</b>,
+<i>74</i>, 2321-2327.</p>
+<p><font size="1"><a href="../abstracts/lit1/637.shtm">
+<img src="../abstracts/lit1/637a.gif"></a></font><br>
+The use of bisphosphine ligands with a large P-Pd-P bite angle allowed to 
+synthesize <i>Z</i>-chlorinated internal alkenes in good yields by a selective 
+Suzuki-Miyaura monocoupling process of 9-alkyl-9-BBN with 
+1,1-dichloro-1-alkenes. These monochlorinated olefins could be further 
+transformed providing stereospecifically trisubstituted olefins.<br>
+F. Liron, C. Fosse, A. Pernolet, E. Roulland, <i>J. Org. Chem.</i>, <b>2007</b>,
+<i>72</i>, 2220-2223.</p>
+<p><a href="../abstracts/lit1/181.shtm"><img src="../abstracts/lit1/181a.gif"></a><br>
+Stereoselective Cross-Coupling Reaction of 1,1-Diboryl-1-alkenes with 
+Electrophiles: A Highly Stereocontrolled Approach to 1,1,2-Triaryl-1-alkenes<br>
+M. Shimizu, C. Nakamaki, K. Shimono, M. Schelper, T. Kurahashi, T. Hiyama, <i>J. Am. Chem. Soc.</i>, <b>2005</b>, <i>127</i>, 12506-12507.</p>
+<p><a href="../abstracts/literature/075.shtm"><img src="../abstracts/literature/075a.gif"></a><br>
+Suzuki-Miyaura Cross-Coupling Reactions of Potassium Alkenyltrifluoroborates<br>
+G. A. Molander, C. R. Bernardi, <i>J. Org. Chem.</i>,
+<b>2002</b>, <i>67</i>, 8424-8429.</p>
+<p><a href="../abstracts/lit4/525.shtm">
+<img src="../abstracts/lit4/525a.gif"></a><br>
+Pd/NHC-Catalyzed Enantiospecific and Regioselective Suzuki-Miyaura Arylation 
+of 2-Arylaziridines: Synthesis of Enantioenriched 2-Arylphenethylamine 
+Derivatives<br>
+Y. Takeda, Y. Ikeda, A. Kuroda, S. Tanaka, S. Minataka, <i>J. Am. Chem. Soc.</i>, <b>2014</b>, <i>
+136</i>, 8544-8547.</p>
+
+
+<img src="http://vg05.met.vgwort.de/na/8f9dbec73b854fef8eb643802e1847b9" width="1" height="1" alt="">
+
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

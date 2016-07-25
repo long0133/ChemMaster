@@ -1,0 +1,164 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Wohl-Ziegler Reaction</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+<a href="/related/wohl-ziegler+reaction.htm">Literature</a></p>
+
+</div>
+<h1>Wohl-Ziegler Reaction</h1>
+<p><img src="wohl-z1.gif" width="314" height="149"></p>
+<p>The 
+bromination of allylic positions with
+<a href="../chemicals/oxidations/n-bromosuccinimide-nbs.shtm">
+<i>N</i>-bromosuccinimide</a> (NBS) follows a radical pathway.</p>
+<hr>
+<h2>Mechanism of the Wohl-Ziegler Reaction</h2>
+<p>It is very important to keep the concentration of Br<sub>2</sub> and HBr low 
+to prevent side reactions derived from simple ionic addition with the alkene. 
+These reagents are therefore generated in situ from NBS. The catalytically 
+active species is Br<sub>2</sub>, which is almost always present in NBS samples 
+(red colour).</p>
+<p>A radical initiator (UV, AIBN) is needed for the homolytic bond cleavage of 
+Br<sub>2</sub>
+:</p>
+<p><img src="Wohl-Z3.gif" width="191" height="28"></p>
+<p><img src="Wohl-Z4.gif" width="327" height="53"></p>
+<p>The allylic position is favoured for hydrogen abstraction, because the 
+resulting radical intermediate is resonance stabilized:&nbsp;</p>
+<p><img src="Wohl-Z5.gif" width="264" height="69"></p>
+<p>Regeneration of Br<sub>2</sub>:</p>
+<p><img src="Wohl-Z7.gif" width="387" height="79"></p>
+<p>Bromination:</p>
+<p><img src="Wohl-Z8.gif" width="316" height="66"></p>
+<p><img src="Wohl-Z9.gif" width="257" height="67"></p>
+<p>Bromination is favored to occur at the more highly substituted position, 
+because the corresponding intermediate radicals are better stabilized.</p>
+<p><img src="Wohl-Z10.gif" width="420" height="50"></p>
+<p>CCl<sub>4</sub> is the solvent of choice, because NBS is poorly soluble and 
+resulting succinimide is insoluble and floats at the surface. This keeps the 
+concentration of reagents low and is a signal that the reaction is finished.</p>
+<p>However, environmental concerns have all but eliminated the use of CCl<sub>4</sub>, 
+and its replacement, CH<sub>2</sub>Cl<sub>2</sub>, is being restricted as well. 
+Many other solvents are reactive toward NBS, and are thus unsuitable, but 
+acetonitrile can be used to good effect.</p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit4/932.shtm"><img src="../abstracts/lit4/932a.gif"></a><br>
+A One-Pot, Transition-Metal-Free Procedure for C-O, C-S, and C-N Bond 
+Formation at the Benzylic Position of Methylarenes<br>
+H. Shimojo, K. Moriyama, H. Togo, <i>Synthesis</i>, <b>2015</b>, <i>47</i>, 
+1280-1290.</p>
+
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

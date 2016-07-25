@@ -1,0 +1,206 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Blaise Reaction</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a></div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a></div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+	<a href="/related/blaise+reaction.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="reformatsky-reaction.shtm">Reformatsky Reaction</a><br>
+<a href="../synthesis/C2C/unsaturated-compounds/enamines.shtm">Synthesis of &#946;-enamino esters</a><br>
+<a href="../synthesis/C1C/carboxyls/b-keto.shtm">Synthesis of &#946;-keto esters</a></p>
+
+</div>
+<h1>Blaise Reaction</h1>
+<p><img border="0" src="blaise1.GIF"></p>
+<p><img border="0" src="blaise2.GIF"></p>
+<p>The Blaise Reaction allows the synthesis of &#946;-enamino esters or &#946;-keto esters 
+(depending on the work-up conditions) via the zinc-mediated reaction of nitriles 
+with &#945;-haloesters.</p>
+<hr>
+<h2>Mechanism of the Blaise Reaction</h2>
+<p>Formation of an organozinc compound from the &#945;-haloester is followed by 
+addition to the nitrile, yielding the Blaise intermediate.</p>
+<p><img border="0" src="blaise3.GIF"></p>
+<p>The Blaise intermediates can either be hydrolyzed to &#946;-enamino esters or 
+&#946;-keto esters. Work-up with 50% aq. K<sub>2</sub>CO<sub>3</sub> delivers 
+&#946;-enamino esters in the organic phase. An additional acidification of the 
+product phase with 1 M aq. HCl hydrolyzes the &#946;-enamino esters to give &#946;-keto 
+esters.</p>
+<p><img border="0" src="blaise4.GIF"></p>
+<p>Further derivatization of the Blaise intermediate is possible, although 
+rarely described. Some examples can be found in the recent literature section.</p>
+<p>Drawbacks of the originally reported Blaise Reaction, such as low yield, 
+narrow scope and competing side reactions such as self-condensation of the 
+&#945;-haloesters, are overcome by some recent modifications:</p>
+<p>Use of activated zinc, tetrahydrofuran as solvent and an excess of 
+&#945;-haloester, added over 30 - 60 min, substantially improve the yield:</p>
+<p><a href="../abstracts/lit2/719.shtm">
+<img src="../abstracts/lit2/719a.gif" width="610" height="93"></a><br>
+S. M. Hannick, Y. Kishi, <i>J. Org. Chem.</i>, <b>1983</b>,
+<i>48</i>, 3833-3835.</p>
+<p>For the work-up, it is important that the reaction mixture is diluted with 
+THF until a total volume of 3 mL for each mmol of &#945;-haloester is reached and 
+then 1/3 mL of 50% aqueous K<sub>2</sub>CO<sub>3</sub> should be added with 
+vigorous stirring. Rapid stirring for 30 minutes gives two cleanly separated 
+layers. It's important to follow this protocol exactly; otherwise, emulsions 
+will form, making the work-up tedious and decreasing the yield. The organic 
+layer can be worked up using column chromatography on solvent-wetted silica gel 
+to isolate the pure enamino ester. For the isolation of &#946;-keto esters, the 
+organic phase is first treated with 1 M aq. HCl at room temperature for 30 min.</p>
+<p>The use of <a href="../topics/sonochemistry.shtm">ultrasound</a> allows a 
+more convenient, one-step synthesis using zinc powders without specific 
+activation. The amount of self-condensation side product is also lowered, as 
+exemplified by the use of only a slight excess of bromoacetate:</p>
+<p><a href="../abstracts/lit2/716.shtm">
+<img src="../abstracts/lit2/716a.gif" width="480" height="53"></a><br>
+A. S.-Y. Lee, R.-Y. Cheng, <i>Tetrahedron Lett.</i>, <b>1997</b>,
+<i>38</i>, 443-446.</p>
+<p>Some more reactions can also be found in the recent literature section, 
+making the Blaise Reaction a potentially useful method for the synthesis of 
+&#946;-enamino esters,&nbsp; &#946;-keto esters and related compounds.</p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit2/719.shtm">
+<img src="../abstracts/lit2/719a.gif" width="610" height="93"></a><br>
+An improved procedure for the Blaise reaction: a short, practical route to 
+the key intermediates of the saxitoxin synthesis<br>
+S. M. Hannick, Y. Kishi, <i>J. Org. Chem.</i>, <b>1983</b>,
+<i>48</i>, 3833-3835.</p>
+<p><a href="../abstracts/lit2/716.shtm">
+<img src="../abstracts/lit2/716a.gif" width="480" height="53"></a><br>
+A simple and highly efficient synthesis of &#946;-amino-&#945;,&#946;-unsaturated ester via 
+sonochemical Blaise reaction<br>
+A. S.-Y. Lee, R.-Y. Cheng, <i>Tetrahedron Lett.</i>, <b>1997</b>,
+<i>38</i>, 443-446.</p>
+<p><a href="../abstracts/lit1/983.shtm">
+<img src="../abstracts/lit1/983a.gif" width="422" height="66"></a><br>
+The Decarboxylative Blaise Reaction<br>
+J. H. Lee, B. S. Choi, J. H. Chang, H. B. Lee, J.-Y. Yoon, J. Lee, H. Shin, <i>J. Org. Chem.</i>, <b>2007</b>,
+<i>72</i>, 10261-10263.</p>
+<p><a href="../abstracts/lit2/629.shtm">
+<img src="../abstracts/lit2/629a.gif" width="570" height="94"></a><br>
+Tandem Blaise-Alkenylation with Unactivated Alkynes: One-Pot Synthesis of 
+&#945;-Vinylated &#946;-Enaminoesters from Nitriles<br>
+Y. S. Chun, Y. O. Ko, H. Shin, S.-g. Lee, <i>Org. Lett.</i>, <b>2009</b>,
+<i>11</i>, 3414-3417.</p>
+<p><a href="../abstracts/lit3/201.shtm"><img src="../abstracts/lit3/201a.gif"></a><br>
+Palladium-Catalyzed Intramolecular Trapping of the Blaise Reaction 
+Intermediate for Tandem One-Pot Synthesis of Indole Derivatives<br>
+J. H. Kim, S.-g. Lee, <i>Org. Lett.</i>, <b>2011</b>,
+<i>13</i>, 1350-1353.</p>
+<p><a href="../abstracts/lit2/674.shtm">
+<img src="../abstracts/lit2/674a.gif" width="610" height="101"></a><br>
+One-Pot Synthesis of 2-Pyridones via Chemo- and Regioselective Tandem Blaise 
+Reaction of Nitriles with Propiolates<br>
+Y. S. Chun, K. Y. Ryu, Y. O. Ko, J. Y. Hong, J. Hong, H. Shin, S.-g. Lee, <i>J. Org. Chem.</i>, <b>2009</b>,
+<i>74</i>, 7556-7558.</p>
+
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

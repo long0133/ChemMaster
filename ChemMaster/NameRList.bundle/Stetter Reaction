@@ -1,0 +1,192 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Stetter Reaction</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+<a href="/related/stetter+reaction.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="benzoin-condensation.shtm">Benzoin 
+Condensation</a></p>
+
+</div>
+<h1>Stetter Reaction</h1>
+<p><img src="stette1.gif" width="322" height="69"></p>
+<p>The Stetter Reaction is a 1,4-addition (conjugate addition) of an 
+aldehyde to an a,&#946;-unsaturated compound, catalyzed by cyanide or a 
+thiazolium salt. This reaction competes with the corresponding 
+1,2-addition, which is the Benzoin Condensation. However, the 
+Benzoin-Condensation is reversible, and since the Stetter Reaction leads 
+to more stable products, the main product will be derived from 
+1,4-addition.</p>
+<p>Some of the 
+possible products are: 1,4-diketones, 4-ketocarboxylic acids and the 
+corresponding nitriles.</p>
+<p><img src="stette2.gif" width="376" height="76"></p>
+<hr>
+<h2>Mechanism of the Stetter Reaction</h2>
+<p>The cyanide ion effects an <i> umpolung</i> of the normal carbonyl charge 
+affinity, and the electrophilic aldehyde carbon becomes nucleophilic after 
+deprotonation:</p>
+<p><img src="stette1a.gif" width="318" height="61"></p>
+<p>This <i> in situ</i> generated nucleophile reacts with the unsaturated 
+compound:</p>
+<p><img src="stette4.gif" width="456" height="157"></p>
+<p>The thiazolium salts may be converted into ylides by deprotonation. These 
+ylides are comparable to the cyanide adducts in their ability to catalyze the 
+Stetter Reaction effectively.</p>
+<p><img src="stette3.gif" width="579" height="215"></p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit4/038.shtm"><img src="../abstracts/lit4/038a.gif"></a><br>
+Catalytic Activation of Carbohydrates as Formaldehyde Equivalents for 
+Stetter Reaction with Enones<br>
+J. Zhang, C. Xing, B. Tiwari, Y. R. Chi, <i>J. Am. Chem. Soc.</i>, <b>2013</b>, <i>
+135</i>, 8113-8116.</p>
+<p><a href="../abstracts/lit3/635.shtm"><img src="../abstracts/lit3/635a.gif"></a><br>
+Dynamic Kinetic Resolution of &#945;-Keto Esters via Asymmetric Transfer 
+Hydrogenation<br>
+K. M. Steward, E. C. Gentry, J. S. Johnson, <i>J. Am. Chem. Soc.</i>, <b>2012</b>, <i>
+134</i>, 7329-7332.</p>
+<p><a href="../abstracts/lit4/659.shtm"><img src="../abstracts/lit4/659a.gif"></a><br>
+Facile Synthesis of &#947;-Ketophosphonates by an Intermolecular Stetter Reaction 
+onto Vinylphosphonates<br>
+A. Patra, A. Bhunia, A. T. Biju, <i>Org. Lett.</i>, <b>
+2014</b>,
+<i>16</i>, 4798-4801.</p>
+<p><a href="../abstracts/lit2/592.shtm"><img src="../abstracts/lit2/592a.gif"></a><br>
+Solvent-Free Synthesis of Alkylthiazolium-Based Ionic Liquids and their Use 
+
+as Catalysts in the Intramolecular Stetter Reaction<br>
+A. Aupoix, G. Vo-Thanh, <i>Synlett</i>, <b>2009</b>, 
+
+1915-1920.</p>
+<p><a href="../abstracts/lit3/246.shtm"><img src="../abstracts/lit3/246a.gif"></a><br>
+D-Camphor-Derived Triazolium Salts for Enantioselective Intramolecular 
+
+Stetter Reactions<br>
+Z.-Q. Rong, Y. Li, G.-Q. Yang, S.-L. You, <i>Synlett</i>, <b>2011</b>, 
+
+1033-1037.</p>
+<p><a href="../abstracts/literature/027.shtm"><img src="../abstracts/literature/027a.gif"></a><br>
+The First Asymmetric Intramolecular Stetter Reaction<br>
+D. Enders, K. Breuer, J. Runsink, <i>Helv. Chim. Acta</i>,
+<b>1996,</b> <i>79</i>, 1899-1902.</p>
+<p><a href="../abstracts/lit1/089.shtm"><img src="../abstracts/lit1/089a.gif"></a><br>
+A Highly Enantio- and Diastereoselective Catalytic Intramolecular Stetter 
+Reaction<br>
+J. Read de Alaniz, T. Rovis, <i>J. Am. Chem. Soc.</i>, <b>2005</b>, <i>127</i>, 6284-6289.</p>
+<p><a href="../abstracts/lit1/089.shtm"><img src="../abstracts/lit1/089b.gif"></a><br>
+A Highly Enantio- and Diastereoselective Catalytic Intramolecular Stetter 
+Reaction<br>
+J. Read de Alaniz, T. Rovis, <i>J. Am. Chem. Soc.</i>, <b>2005</b>, <i>127</i>, 6284-6289.</p>
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

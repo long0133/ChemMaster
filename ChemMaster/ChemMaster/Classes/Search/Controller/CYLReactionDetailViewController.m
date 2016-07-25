@@ -93,6 +93,8 @@ static NSInteger literatureLength = 0;
             
             UIButton *imageBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, _CurrentH, image.size.width * Scale, image.size.height * Scale)];
             
+            imageBtn.center = CGPointMake(self.view.center.x, _CurrentH + imageBtn.frame.size.height/2);
+            
             [imageBtn setBackgroundImage:image forState:UIControlStateNormal];
         
             [imageBtn addTarget:self action:@selector(ShowBigImage:) forControlEvents:UIControlEventTouchUpInside];

@@ -1,0 +1,225 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Modified Julia Olefination, Julia-Kocienski Olefination</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+<a href="/related/julia+olefination.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="julia-olefination.shtm">Julia Olefination</a><br>
+<a href="peterson-olefination.shtm">Peterson Olefination</a><br>
+<a href="tebbe-olefination.shtm">Tebbe Olefination</a><br>
+<a href="wittig-reaction.shtm">Wittig Reaction</a></p>
+
+</div>
+<h1>Modified Julia Olefination<br>
+Julia-Kocienski Olefination</h1>
+<p>The Modified <a href="julia-olefination.shtm">Julia Olefination</a>
+enables the preparation of alkenes from benzothiazol-2-yl sulfones and 
+aldehydes in a single step:</p>
+<p><img src="julia-2a.GIF"></p>
+<p>The 
+Julia-Kochienski Olefination - a further refinement of the Modified 
+Julia Olefination - offers very good <i>E</i>-selectivity.<p><img src="julia-3.GIF"></p>
+<hr>
+<h2>Mechanisms of Modified Julia Olefinations</h2>
+<p>The initial addition of the sulfonyl anion to the aldehyde is not reversible:</p>
+<p><img src="julia-2b.GIF"></p>
+<p>Whether the anti or syn intermediate is generated can be influenced to some 
+extent by the choice of reaction conditions:</p>
+<table id="table1" cellSpacing="0" cellPadding="9" width="79%">
+<tr>
+<td width="252"><img src="julia-8a.GIF"></td>
+<td>A chelate will form with small counterions (Li) and in apolar 
+solvents, leading to a closed transition state.</td>
+</tr>
+<tr>
+<td width="252"><img src="julia-9.GIF"></td>
+<td>With larger counterions (K) and polar solvents, an open transition 
+state becomes possible.</td>
+</tr>
+</table>
+<p>The intermediates that form react further to give <i>E</i>- and <i>Z</i>-isomers 
+of the alkene:</p>
+<p><img src="julia-7.GIF"></p>
+<p><img src="julia-6.GIF"></p>
+<p>A mechanistically related nucleophilic addition of the sulfonyl carbanion to 
+a second equivalent of the BT sulfone leads to a side product.</p>
+<p><img src="julia-10.GIF"></p>
+<p>Since the reaction with the aldehyde occurs faster, it is best to carry out 
+this reaction under &#8220;Barbier-like conditions&#8221;: in general, the base is added to 
+a mixture of the aldehyde and sulfone.</p>
+<p>The benzothiazolyl group (BT) can play several roles: in one, it enables a 
+more or less strongly pronounced complexation that influences the selectivity; 
+on the other hand, it can also undergo nucleophilic substitution at the carbon 
+attached to the sulfonyl group, which then becomes a leaving group. Other 
+(hetero)cyclic substituents can assume these roles, and offer somewhat different 
+selectivity:</p>
+<p><img src="julia-11.GIF"></p>
+<p>Specifically, the pyridinyl sulfone exhibits high <i>Z</i>-selectivity, while 
+the 1-phenyl-1<i>H</i>-tetrazol-5-yl sulfone (PT-SO<sub>2</sub>R) gives somewhat 
+better <i>E</i>-selectivity than the BT sulfones. The reason for this is the 
+sterically demanding phenyl group, which favors the following transition state:</p>
+<p><img src="julia-12.GIF"></p>
+<p>The 1-phenyl-1<i>H</i>-tetrazol-5-yl sulfones do not have a tendency to 
+self-condense, so they can first be deprotonated with base and then reacted with 
+the aldehyde. This makes possible a far milder reaction process, including 
+reactions with base-sensitive aldehydes.</p>
+<p>The following table shows the selectivity and yields for BT and PT sulfones 
+in various solvents, where they are first metalated with various bases and then 
+reacted with an aldehyde.</p>
+<p><img border="0" src="../abstracts/literature/802a.gif"></p>
+<p><a href="../abstracts/literature/802.shtm">
+<img src="../abstracts/literature/802m.gif"></a><br>
+P. R. Blakemore, W. J. Cole, P. J. Kocienski, A. Morley, <i>Synlett</i>, <b>1998</b>, 
+26-28.</p>
+<p>In contrast to the classical Julia Olefination, the Modified Julia 
+Olefination offers the possibility of saving one or two synthesis steps. In 
+addition, there are fewer problems with scale-up than with the classical 
+variant. The <i>E/Z</i>-selectivity can be controlled by varying the sulfonyl 
+group, solvent and base.</p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit4/956.shtm"><img src="../abstracts/lit4/956a.gif"></a><br>
+Practical Methylenation Reaction for Aldehydes and Ketones Using New 
+Julia-Type Reagents<br>
+K. Ando, T. Kobayashi, N. Uchida, <i>Org. Lett.</i>, <b>
+2015</b>,
+<i>17</i>, 2554-2557.</p>
+<p><a href="../abstracts/literature/794.shtm">
+<img src="../abstracts/literature/794a.gif"></a><br>
+3,5-Bis(trifluoromethyl)phenyl sulfones in the modified Julia olefination:
+application to the synthesis of resveratrol<br>
+D. A. Alonso, C. Najera, M. Varea, <i>Tetrahedron Lett., </i><b>2004</b>, <i>45</i>, 573-577.</p>
+<p><a href="../abstracts/literature/802.shtm">
+<img src="../abstracts/literature/802a.gif"></a><br>
+A Stereoselective Synthesis of <i>trans</i>-1,2-Disubstituted Alkenes Based
+on the Condensation of Aldehydes with Metallated 1-Phenyl-1<i>H</i>-tetrazol-5-yl
+Sulfones<br>
+P. R. Blakemore, W. J. Cole, P. J. Kocienski, A. Morley, <i>Synlett</i>, <b>1998</b>, 
+26-28.</p>
+<p><a href="../abstracts/lit1/532.shtm"><img src="../abstracts/lit1/532a.gif"></a><br>
+Efficient and Stereoselective Synthesis of Allylic Ethers and Alcohols<br>
+J. Pospisil, I. E. Marko, <i>Org. Lett.</i>, <b>2006</b>,
+<i>8</i>, 5983-5986.</p>
+<p><a href="../abstracts/literature/881.shtm"><img src="../abstracts/literature/881a.gif"></a><br>
+Ethyl (benzothiazol-2-ylsulfonyl)acetate: a new reagent for the
+stereoselective synthesis of &#945;,&#946;-unsaturated esters from aldehydes<br>
+P. R. Blakemore, D. K. H. Ho, W. M. Nap, <i>Org. Biomol. Chem.</i>, <b>2005</b>, <i>3</i>, 1365-1368.</p>
+<p><a href="../abstracts/lit3/734.shtm"><img src="../abstracts/lit3/734a.gif"></a><br>
+Julia-Kocienski Reaction-Based 1,3-Diene Synthesis: Aldehyde-Dependent (<i>E,E</i>/<i>E,Z</i>)-Selectivity<br>
+F. Billard, R. Robiette, J. Pospí&#353;il, <i>J. Org. Chem.</i>, <b>2012</b>,
+<i>77</i>, 6358-6364.</p>
+<p><a href="../abstracts/lit1/167.shtm"><img src="../abstracts/lit1/167a.gif"></a><br>
+Stereoselective Synthesis of <i>Z</i> Alkenyl Halides via Julia Olefination<br>
+M.-E. Lebrun, P. Le Marquand, C. Berthelette, <i>J. Org. Chem.</i>, <b>2006</b>, <i>71</i>, 2009-2013.</p>
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

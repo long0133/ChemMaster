@@ -1,0 +1,301 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Hiyama Coupling</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+<a href="/related/hiyama+coupling.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="hiyama-denmark-coupling.shtm">Hiyama-Denmark Coupling</a><br>
+<a href="kumada-coupling.shtm">Kumada Coupling</a><br>
+<a href="negishi-coupling.shtm">Negishi Coupling</a><br>
+<a href="stille-coupling.shtm">Stille Coupling</a><br>
+<a href="suzuki-coupling.shtm">Suzuki Coupling</a></p>
+
+</div>
+<h1>Hiyama Coupling</h1>
+<p><img src="hiyama1.GIF"></p>
+<p>The Hiyama 
+Coupling is the palladium-catalyzed C-C bond formation between aryl, 
+alkenyl, or alkyl halides or pseudohalides and organosilanes. This 
+reaction is comparable to the Suzuki Coupling and also requires an 
+activating agent such as fluoride ion or a base.</p>
+<hr>
+<h2>Mechanism of the Hiyama Coupling</h2>
+<p>Crucial for the success of the Hiyama Coupling is the polarization of the 
+Si-C bond. Activation of the silane with base or fluoride ions (TASF, TBAF) 
+leading to a pentavalent silicon compound is a first necessary step.</p>
+<p><img src="Hiyama2.GIF"></p>
+<p>However, the reaction rate is also increased by using silanes with R&#8221; groups 
+such as fluoro or alkoxy instead of alkyl. In fact, there are only a few 
+successful examples of coupling reactions using trimethylsilane derivatives.</p>
+<p>Another approach uses silacyclobutanes. These small-ring silanes offer 
+enhanced Lewis acidity because angle strain is released when the silicon 
+transitions from tetrahedral to pentavalent, which favors the activation.</p>
+<p><img src="Hiyama3.GIF" width="427" height="64"><br>
+Lewis acidity enhanced by strain release</p>
+<p>A careful investigation of the reaction mechanism by Denmark (<i>Org. Lett.</i>,
+<b>2000</b>, <i>2</i>, 2491.
+<a target="_blank" href="http://dx.doi.org/10.1021/ol006170y">DOI</a>) revealed 
+that silacyclobutanes undergo rapid ring opening with TBAF &#8226; 3 H<sub>2</sub>O to 
+afford a mixture of silanols and disiloxanes. Transmetallation occurs from a 
+fluoride-activated disiloxane.</p>
+<p><img border="0" src="hiyama4.GIF"></p>
+<p>Both silanols and siloxanes have been synthesized independently and both 
+underwent cross-coupling. These findings paved the way for the use of silanols 
+as cross-coupling partners. In a specific approach - the <a href="hiyama-denmark-coupling.shtm">
+Hiyama-Denmark Coupling</a> - a fluoride activator is no longer needed.</p>
+<p>Organosilanes are stable and easily prepared compounds with low toxicity. 
+With the many improvements in the reaction conditions that have been reported, 
+the Hiyama Coupling has become an interesting alternative to the Suzuki Coupling 
+that offers a comparable scope of conversions. On the other hand, the broad 
+commercial availability of boronic acids and boronates currently makes the 
+Suzuki Coupling the more convenient choice.</p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit1/036.shtm"><img src="../abstracts/lit1/036a.gif"></a><br>
+Room-Temperature Hiyama Cross-Couplings of Arylsilanes with Alkyl Bromides 
+and Iodides<br>
+J.-Y. Lee, G. C. Fu, <i>J. Am. Chem. Soc.</i>, <b>2003</b>, <i>125</i>, 5616-5617.</p>
+<p><a href="../abstracts/literature/221.shtm"><img src="../abstracts/literature/221a.gif"></a><br>
+Nickel-Catalyzed Cross-Couplings of Organosilicon Reagents with Unactivated 
+Secondary Alkyl Bromides<br>
+D. A. Powell, G. C. Fu, <i>J. Am. Chem. Soc.</i>, <b>2004</b>, <i>126</i>, 7788-7789.</p>
+<p><font size="1"><a href="../abstracts/lit2/066.shtm">
+<img src="../abstracts/lit2/066a.gif"></a></font><br>
+Aqueous Sodium Hydroxide Promoted Cross-Coupling Reactions of 
+Alkenyltrialkoxysilanes under Ligand-Free Conditions<br>
+E. Alacid, C. Nájera, <i>J. Org. Chem.</i>, <b>2008</b>,
+<i>73</i>, 2315-2322.</p>
+<p><a href="../abstracts/lit4/772.shtm"><img src="../abstracts/lit4/772a.gif"></a><br>
+MIDA-Vinylsilanes: Selective Cross-Couplings and Applications to the 
+Synthesis of Functionalized Stilbenes<br>
+M. G. McLaughlin, C. A. McAdam, M. J. Cook, <i>Org. Lett.</i>, <b>
+2015</b>,
+<i>17</i>, 10-13.</p>
+<p><a href="../abstracts/lit1/037.shtm"><img src="../abstracts/lit1/037b.gif"></a><br>
+Highly Stereospecific, Cross-Coupling Reactions of Alkenylsilacyclobutanes<br>
+S. E. Denmark, <i>J. Am. Chem. Soc.</i>, <b>1999</b>, <i>121</i>, 5821-5822.</p>
+<p><a href="../abstracts/lit1/105.shtm">
+<img src="../abstracts/lit1/105b.gif" width="440" height="66"></a><br>
+Sequential Cross-Coupling of 1,4-Bissilylbutadienes: Synthesis of 
+Unsymmetrical 1,4-Disubstituted 1,3-Butadienes<br>
+S. E. Denmark, S. A. Tymonko, <i>J. Am. Chem. Soc.</i>, <b>2005</b>, <i>127</i>, 8004-8005.</p>
+<p><a href="../abstracts/lit4/705.shtm"><img src="../abstracts/lit4/705b.gif"></a><br>
+Regioselective Allene Hydroarylation via One-Pot Allene Hydrosilylation/Pd-Catalyzed 
+Cross-Coupling<br>
+Z. D. Miller, J. Montgomery, <i>Org. Lett.</i>, <b>
+2014</b>,
+<i>16</i>, 5486-5489.</p>
+<p><font size="1"><a href="../abstracts/lit3/458.shtm">
+<img src="../abstracts/lit3/458a.gif"></a></font><br>
+Palladium-Catalyzed Hiyama Cross-Coupling of Aryltrifluorosilanes with Aryl 
+and Heteroaryl Chlorides<br>
+G. A. Molander, L. Iannazzo, <i>J. Org. Chem.</i>, <b>2011</b>,
+<i>76</i>, 9102-9108.</p>
+<p><a href="../abstracts/lit3/894.shtm"><img src="../abstracts/lit3/894a.gif"></a><br>
+A Practical Protocol for the Hiyama Cross-Coupling Reaction Catalyzed by 
+Palladium on Carbon<br>
+Y. Monguchi, T. Yanase, S. Mori, H. Sajiki, <i>Synthesis</i>, <b>2013</b>, <i>45</i>, 
+40-44.</p>
+<p><a href="../abstracts/lit1/360.shtm"><img src="../abstracts/lit1/360a.gif"></a><br>
+C-C Coupling Reactions of Aryl Bromides and Arylsiloxanes in Water Catalyzed 
+by Palladium Complexes of Phosphanes Modified with Crown Ethers<br>
+I. Gordillo, E. de Jesús, C. López-Mardomingo, <i>Org. Lett.</i>, <b>2006</b>, <i>8</i>, 3517-3520.</p>
+<p><a href="../abstracts/lit2/829.shtm"><img src="../abstracts/lit2/829a.gif"></a><br>
+Advantageous Use of <sup><i>t</i></sup>Bu<sub>2</sub>P-N=P(<sup><i>i</i></sup>BuNCH<sub>2</sub>CH<sub>2</sub>)<sub>3</sub>N 
+in the Hiyama Coupling of Aryl Bromides and Chlorides<br>
+S. M. Raders, J. V. Kingston, J. G. Verkade, <i>J. Org. Chem.</i>, <b>2010</b>,
+
+<i>75</i>, 1744-1747.</p>
+<p><a href="../abstracts/lit3/251.shtm"><img src="../abstracts/lit3/251a.gif"></a><br>
+Magnetically Recoverable Pd/Fe<sub>3</sub>O<sub>4</sub>-Catalyzed Hiyama Cross-Coupling of Aryl 
+
+Bromides with Aryl Siloxanes<br>
+B. Sreedhar, A. S. Kumar, D. Yada, <i>Synlett</i>, <b>2011</b>, 
+
+1081-1084.</p>
+<p><a href="../abstracts/lit1/840.shtm"><img src="../abstracts/lit1/840a.gif"></a><br>
+Convenient Synthesis of Palladium Nanoparticles and Catalysis of Hiyama 
+
+Coupling Reaction in Water<br>
+D. Srimani, S. Sawoo, A. Sarkar, <i>Org. Lett.</i>, <b>2007</b>,
+
+<i>9</i>, 3639-3642.</p>
+<p><a href="../abstracts/lit4/821.shtm"><img src="../abstracts/lit4/821a.gif"></a><br>
+Design, Synthesis, and Validation of an Effective, Reusable Silicon-Based 
+Transfer Agent for Room-Temperature Pd-Catalyzed Cross-Coupling Reactions of 
+Aryl and Heteroaryl Chlorides with Readily Available Aryl Lithium Reagents<br>
+D. Martinez-Solorio, B. Melillo, L. Sanchez, Y. Liang, E. Lam, K. N. Houk, A. B. 
+Smith, III, <i>J. Am. Chem. Soc.</i>, <b>2016</b>, <i>
+138</i>, 1836-1839.</p>
+<p><a href="../abstracts/lit1/801.shtm"><img src="../abstracts/lit1/801a.gif"></a><br>
+A Pd(OAc)<sub>2</sub>-catalyzed, mild, fluoride-free cross-coupling between aryl 
+bromides and arylsiloxanes in good to high yields has been achieved in aqueous 
+medium in the presence of poly(ethylene glycol) (PEG) and sodium hydroxide. The 
+product was easily separated with ethyl ether extraction, and the catalytic 
+system can be reused eight times with high efficiency.<br>
+S. Shi, Y. Zhang, <i>J. Org. Chem.</i>, <b>2007</b>,
+
+<i>72</i>, 5927-5930.</p>
+<p><a href="../abstracts/lit1/041.shtm"><img src="../abstracts/lit1/041a.gif"></a><br>
+Pd(OAc)<sub>2</sub>/DABCO as an Inexpensive and Efficient Catalytic System for Hiyama­ 
+Cross-Coupling Reactions of Aryl Halides with Aryltrimethoxysilanes<br>
+J.-H. Li, C.-L. Deng, W.-J. Liu, Y.-X. Xie, <i>
+Synthesis</i>, <b>2005</b>, 3039-3044.</p>
+<p><a href="../abstracts/lit2/408.shtm"><img src="../abstracts/lit2/408a.gif"></a><br>
+Palladium-Indolylphosphine-Catalyzed Hiyama Cross-Coupling of Aryl Mesylates<br>
+C. M. So, H. W. Lee, C. P. Lau, F. Y. Kwong, <i>Org. Lett.</i>, <b>2009</b>,
+<i>11</i>, 317-320.</p>
+<p><a href="../abstracts/lit2/246.shtm"><img src="../abstracts/lit2/246a.gif"></a><br>
+Palladium-Catalyzed Hiyama Cross-Couplings of Aryl Arenesulfonates with 
+Arylsilanes<br>
+L. Zhang, J. Wu, <i>J. Am. Chem. Soc.</i>, <b>2008</b>, <i>
+130</i>, 12250-12251.</p>
+<p><a href="../abstracts/literature/427.shtm">
+<img src="../abstracts/literature/427a.gif"></a><br>
+Palladium-Catalyzed Cross-Coupling Reaction of Aryltriethoxysilanes with 
+Aryl Bromides under Basic Aqueous Conditions<br>
+M. Murata, R. Shimazaki, S. Watanabe, Y. Masuda, <i>Synthesis</i>, <b>2001</b>, 
+2231-2233.</p>
+<p><a href="../abstracts/lit4/036.shtm"><img src="../abstracts/lit4/036a.gif"></a><br>
+Palladium-Catalyzed Hiyama-Type Cross-Coupling Reactions of Arenesulfinates 
+with Organosilanes<br>
+K. Cheng, S. Hu, B. Zhao, X.-M. Zhang, C. Qi, <i>J. Org. Chem.</i>, <b>2013</b>,
+<i>78</i>, 5022-5025.</p>
+<p><a href="../abstracts/lit2/938.shtm"><img src="../abstracts/lit2/938a.gif"></a><br>
+Palladium Nanoparticle Catalyzed Hiyama Coupling Reaction of Benzyl Halides<br>
+D. Srimani, A. Bej, A. Sarkar, <i>J. Org. Chem.</i>, <b>2010</b>,
+
+<i>75</i>, 4296-4299.</p>
+<p><a href="../abstracts/lit4/761.shtm"><img src="../abstracts/lit4/761a.gif"></a><br>
+An efficient Pd-catalyzed coupling of benzylic phosphates with arylsilanes 
+provides straightforward access to diarylmethanes in very good yields. The 
+reaction tolerates a wide range of functionalities such as halide, alkoxyl, and 
+nitro groups.<br>
+P. Zhang, J. Xu, Y. Gao, X. Li, G. Tang, Y. Zhao, <i>
+Synlett</i>, <b>2014</b>, <i>25</i>, 2928-2932.</p>
+<p><a href="../abstracts/lit2/372.shtm"><img src="../abstracts/lit2/372a.gif"></a><br>
+Palladium(0) Nanoparticle Catalyzed Cross-Coupling of Allyl Acetates and 
+Aryl and Vinyl Siloxanes<br>
+R. Dey, K. Chattopadhyay, B. C. Ranu, <i>J. Org. Chem.</i>, <b>2008</b>,
+<i>73</i>, 9461-9464.</p>
+<p><a href="../abstracts/lit4/369.shtm"><img src="../abstracts/lit4/369a.gif"></a><br>
+Palladium-Catalyzed Acetylation of Arenes<br>
+S. D. Ramgren, N. K. Garg, <i>Org. Lett.</i>, <b>2014</b>,
+<i>16</i>, 824-827.</p>
+<p><a href="../abstracts/lit2/055.shtm"><img src="../abstracts/lit2/055a.gif"></a><br>
+Catalytic Asymmetric Hiyama Cross-Couplings of Racemic &#945;-Bromo Esters<br>
+X. Dai, N. A. Strotman, G. C. Fu, <i>J. Am. Chem. Soc.</i>, <b>2008</b>, <i>
+130</i>, 3302-3303.</p>
+
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

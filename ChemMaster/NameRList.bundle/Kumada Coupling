@@ -1,0 +1,257 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Kumada Coupling</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+<a href="/related/kumada+coupling.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="grignard-reaction.shtm">Grignard Reaction</a><br>
+<a href="negishi-coupling.shtm">Negishi Coupling</a><br>
+<a href="suzuki-coupling.shtm">Suzuki Coupling</a><br>
+<a href="stille-coupling.shtm">Stille Coupling</a></p>
+
+</div>
+<h1>Kumada Coupling</h1>
+<p><img src="Kumada1.gif" width="326" height="88"></p>
+<p>The Kumada Coupling was the first Pd or Ni-catalyzed cross coupling 
+reaction, developed in 1972.</p>
+<p>The 
+coupling of Grignard reagents with alkyl, vinyl or aryl halides under 
+Ni-catalysis provides an economic transformation, but the reaction is 
+limited to halide partners that do not react with organomagnesium 
+compounds. One example is in the industrial-scale production of styrene 
+derivatives, and the Kumada Coupling is the method of choice for the 
+low-cost synthesis of unsymmetrical biaryls.</p>
+<p>The advantage of this reaction is the direct coupling of Grignard reagents, 
+which avoids additional reaction steps such as the conversion of 
+Grignard reagents to zinc compounds for the starting materials in the
+<a href="negishi-coupling.shtm">Negishi Coupling</a>.</p>
+<hr>
+<h2>Mechanism of the Kumada Coupling</h2>
+<p><img src="kumada6.gif" width="505" height="394"></p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit2/607.shtm"><img src="../abstracts/lit2/607a.gif"></a><br>
+Hydroxyphosphine Ligand for Nickel-Catalyzed Cross-Coupling through 
+
+Nickel/Magnesium Bimetallic Cooperation<br>
+N. Yoshikai, H. Matsuda, E. Nakamura, <i>J. Am. Chem. Soc.</i>, <b>2009</b>, <i>
+
+131</i>, 9590-9599.</p>
+<p><a href="../abstracts/lit4/178.shtm"><img src="../abstracts/lit4/178a.gif"></a><br>
+Amido Pincer Nickel Catalyzed Kumada Cross-Coupling of Aryl, Heteroaryl, and 
+Vinyl Chlorides<br>
+X.-Q. Zhang, Z.-X. Wang, <i>Synlett</i>, <b>2013</b>, <i>24</i>, 
+2081-2084.</p>
+<p><font size="1"><a href="../abstracts/lit3/494.shtm">
+<img src="../abstracts/lit3/494a.gif"></a></font><br>
+Kumada Coupling of Aryl, Heteroaryl, and Vinyl Chlorides Catalyzed by Amido 
+Pincer Nickel Complexes<br>
+N. Liu, Z.-X. Wang, <i>J. Org. Chem.</i>, <b>2011</b>,
+<i>76</i>, 10031-10032.</p>
+<p><a href="../abstracts/lit3/922.shtm"><img src="../abstracts/lit3/922a.gif"></a><br>
+Cross-Coupling of ArX with ArMgBr Catalyzed by <i>N</i>-Heterocyclic Carbene-Based 
+Nickel Complexes<br>
+W.-J. Guo, Z.-X. Wang, <i>J. Org. Chem.</i>, <b>2013</b>,
+<i>78</i>, 1054-1061.</p>
+<p><a href="../abstracts/lit1/985.shtm"><img src="../abstracts/lit1/985a.gif"></a><br>
+Phosphinous Acid-Catalyzed Cross-Coupling of Aryl Halides and Aryl Grignards<br>
+C. Wolf, H. Xu, <i>J. Org. Chem.</i>, <b>2008</b>,
+
+<i>73</i>, 162-167.</p>
+<p><a href="../abstracts/lit1/717.shtm"><img src="../abstracts/lit1/717a.gif"></a><br>
+Magnesiation of Electron-Rich Aryl Bromides and Their Use in 
+Nickel-Catalyzed Cross-Coupling Reactions<br>
+S. Y. W. Lau, G. Hughes, P. D. O'Shea, I. W. Davies, <i>Org. Lett.</i>, <b>2007</b>,
+<i>9</i>, 2239-2242.</p>
+<p><a href="../abstracts/lit2/120.shtm"><img src="../abstracts/lit2/120a.gif"></a><br>
+Room-Temperature Kumada Cross-Coupling of Unactivated Aryl Chlorides 
+
+Catalyzed by <i>N</i>-Heterocylic Carbene-Based Nickel(II) Complexes<br>
+Z. Xi, B. Liu, W. Chen, <i>J. Org. Chem.</i>, <b>2008</b>,
+
+<i>73</i>, 3954-3957.</p>
+<p><a href="../abstracts/lit3/110.shtm"><img src="../abstracts/lit3/110a.gif"></a><br>
+Bidentate P, N-P Ligand for Nickel-Catalyzed Cross-Coupling of Aryl or 
+
+Benzyl Chlorides with ArMgX<br>
+R. Ghosh, A. Sarkar, <i>J. Org. Chem.</i>, <b>2010</b>,
+
+<i>75</i>, 8283-8386.</p>
+<p><font size="1"><a href="../abstracts/lit3/771.shtm">
+<img src="../abstracts/lit3/771b.gif"></a></font><br>
+Kumada-Tamao-Corriu Coupling of Heteroaromatic Chlorides and Aryl Ethers 
+Catalyzed by (IPr)Ni(allyl)Cl<br>
+M. J. Iglesias, A. Prueto, M. C. Nicasio, <i>Org. Lett.</i>, <b>2012</b>,
+<i>14</i>, 4318-4321.</p>
+<p><a href="../abstracts/lit2/790.shtm"><img src="../abstracts/lit2/790a.gif"></a><br>
+Biaryl Construction through Kumada Coupling with Diaryl Sulfates as 
+
+One-by-One Electrophiles under Mild Conditions<br>
+B.-T. Guan, X.-Y. Lu, Y. Zheng, D.-G. Yu, T. Wu, K.-L. Li, B.-J. Li, Z.-J. Shi, <i>Org. Lett.</i>, <b>2010</b>,
+
+<i>12</i>, 396-399.</p>
+<p><font size="1"><a href="../abstracts/lit4/598.shtm">
+<img src="../abstracts/lit4/598a.gif"></a></font><br>
+Stereoretentive Pd-Catalyzed Kumada-Corriu Couplings of Alkenyl Halides at 
+Room Temperature<br>
+A. L. Krasovskiy, S. Haley, K. Voigtritter, B. H. Lipshutz, <i>Org. Lett.</i>, <b>
+2014</b>,
+<i>16</i>, 4066-4069.</p>
+<p><a href="../abstracts/lit2/911.shtm"><img src="../abstracts/lit2/911a.gif"></a><br>
+Air-Stable Secondary Phosphine Oxide or Chloride (Pre)Ligands for 
+
+Cross-Couplings of Unactivated Alkyl Chlorides<br>
+L. Ackermann, A. R. Kapdi, C. Schulzke, <i>Org. Lett.</i>, <b>2010</b>,
+
+<i>12</i>, 2298-2301.</p>
+<p><a href="../abstracts/lit2/743.shtm"><img src="../abstracts/lit2/743a.gif"></a><br>
+Palladium-Catalyzed Cross-Coupling Reaction of Secondary Benzylic Bromides 
+
+with Grignard Reagents<br>
+A. López-Pérez, J. Adrio, J. C. Carretero, <i>Org. Lett.</i>, <b>2009</b>,
+
+<i>11</i>, 5514-5517.</p>
+<p><a href="../abstracts/literature/092.shtm"><img src="../abstracts/literature/092a.gif"></a><br>
+Palladium-Catalyzed Coupling of Alkyl Chlorides and Grignard Reagents<br>A. C. Frisch, N. Shaikh, A. Zapf, M. Beller, <i> Angew. Chem.</i>, <b>2002</b>, <i>114</i>, 4218-4221.</p>
+<p><a href="../abstracts/lit3/302.shtm"><img src="../abstracts/lit3/302a.gif"></a><br>
+Nickel-Catalyzed Kumada Cross-Coupling Reactions of Tertiary Alkylmagnesium 
+
+Halides and Aryl Bromides/Triflates<br>
+A. Joshi-Pangu, C.-Y. Wang, M. R. Biscoe, <i>J. Am. Chem. Soc.</i>, <b>2011</b>, <i>
+
+133</i>, 8478-8481.</p>
+<p><a href="../abstracts/lit1/352.shtm"><img src="../abstracts/lit1/352a.gif"></a><br>
+Air-Stable PinP(O)H as Preligand for Palladium-Catalyzed Kumada Couplings of 
+Unactivated Tosylates<br>
+L. Ackermann, A. Althammer, <i>Org. Lett.</i>, <b>2006</b>, <i>8</i>, 3457-3460.</p>
+<p><a href="../abstracts/lit3/046.shtm"><img src="../abstracts/lit3/046a.gif"></a><br>
+Room Temperature Palladium-Catalyzed Cross Coupling of Aryltrimethylammonium 
+
+Triflates with Aryl Grignard Reagents<br>
+J. T. Reeves, D. R. Fandrick, Z. Tan, J. J. Song, H. Lee, N. K. Yee, C. H. 
+Senanayake, <i>Org. Lett.</i>, <b>2010</b>,
+
+<i>12</i>, 4388-4391.</p>
+<p><a href="../abstracts/literature/309.shtm">
+<img src="../abstracts/literature/309a.gif"></a><br>
+Nickel-Catalyzed Cross-Coupling Reaction of Aryl Fluorides and Chlorides 
+with Grignard Reagents under Nickel/Magnesium Bimetallic Cooperation<br>
+N. Yoshikai, H. Mashima, E. Nakamura, <i>J. Am. Chem. Soc.</i>, <b>
+2005</b>, <i>127</i>, 17978-17979.</p>
+<p><a href="../abstracts/literature/712.shtm">
+<img src="../abstracts/literature/712a.gif"></a><br>
+Kumada-Corriu Reactions of Alkyl Halides with Alkynyl Nucleophiles<br>
+L.-M. Yang, L.-F. Huang, T.-Y. Luh, <i>Org. Lett., </i><b>2004</b>, <i>6</i>, 
+1461-1463.</p>
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>

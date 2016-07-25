@@ -1,0 +1,257 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/navi/main.css">
+<link rel="stylesheet" type="text/css" href="navi/style.css">
+<title>Ullmann Reaction</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2125070-1', 'organic-chemistry.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<base target="_top">
+<meta name=viewport content="width=device-width, initial-scale=0.75"></head>
+<body>
+<div id="content">
+<div id="z1"><a href="/">Organic Chemistry Portal</a>
+</div>
+<div id="z2"><a href="../reactions.htm"> Reactions</a> &gt;&gt; <a href="/namedreactions/">Name Reactions</a>
+</div>
+<div id="top">
+<script type="text/javascript"
+src="/ads/square/300-250.htm">
+</script>
+</div><div id="references"><p><b>Further Information</b><br>
+<a href="/related/ullmann+reaction.htm">Literature</a></p><p><b>Related Reactions</b><br>
+<a href="buchwald-hartwig-reaction.shtm">Buchwald-Hartwig Coupling</a><br>
+<a href="chan-lam-coupling.shtm">Chan-Lam Coupling</a><br>
+<a href="rosenmund-von-braun-reaction.shtm">Rosenmund-von Braun Reaction</a></p>
+
+</div>
+<h1>Ullmann Reaction</h1>
+<p><img src="ullman2.gif" width="402" height="53"></p>
+<p>There are 
+two different transformations referred as the Ullmann Reaction. The 
+&quot;classic&quot; Ullmann Reaction is the synthesis of symmetric biaryls via 
+copper-catalyzed coupling. The &quot;Ullmann-type&quot; Reactions include 
+copper-catalyzed Nucleophilic Aromatic Substitution between various 
+nucleophiles (e.g. substituted phenoxides) with aryl halides. The most 
+common of these is the Ullmann Ether Synthesis.</p>
+<p><img src="ullman3.gif" width="331" height="73"></p>
+<hr>
+<h2>Mechanism of the Ullmann Reaction</h2>
+<p>Biaryls are available through coupling of the aryl halide with an excess of 
+copper at elevated temperatures (200 °C). The active species is a 
+copper(I)-compound which undergoes oxidative addition with the second equivalent 
+of halide, followed by reductive elimination and the formation of the aryl-aryl 
+carbon bond.</p>
+<p><img src="ullman4.gif" width="515" height="57"></p>
+<p><img src="ullman5.gif" width="676" height="83"></p>
+<p>The organocopper intermediate can be generated at a more moderate 70 °C using 
+a novel thiophenecarboxylate reagent. The reaction otherwise follows the same 
+reaction path as above.</p>
+<p><img src="ullman6.gif" width="753" height="92"></p>
+<p>Another possibility is the use of Cu(I) for the oxidative coupling of 
+aryllithium compounds at low temperatures. This method can also be used to 
+generate asymmetric biaryls, after addition of the appropriate halide.</p>
+<p><img src="ullman7a.gif" width="301" height="53"></p>
+<p>Ullmann-type reactions proceed through a catalytic cycle, and in one 
+mechanism the copper is postulated to undergo oxidation to Cu(III). As some 
+Cu(III) salts have been prepared, the suggestion for the 
+mechanism is intriguing (see also <a href="chan-lam-coupling.shtm">Chan-Lam Coupling</a>):</p>
+<p><img src="ullman7.gif" width="323" height="204">&nbsp;&nbsp; <img src="ullman8.gif" width="328" height="197">&nbsp;</p>
+<div style="margin: 15 0 5 -7; padding: 7 4 7 4; border: 1px solid #DDDDDD; clear:both">
+<script type="text/javascript" src="/ads/footer.htm"></script>
+</div>
+<p><b>Recent Literature</b></p>
+<p><a href="../abstracts/lit2/167.shtm"><img src="../abstracts/lit2/167a.gif"></a><br>
+Immobilization of Copper(II) in Organic-Inorganic Hybrid Materials: A Highly 
+
+Efficient and Reusable Catalyst for the Classic Ullmann Reaction<br>
+Q. Wu, L. Wang, <i>Synthesis</i>, <b>2008</b>, 
+
+2007-2012.</p>
+<p><a href="../abstracts/lit2/001.shtm">
+<img src="../abstracts/lit2/001a.gif"></a><br>
+An Improved Cu-Based Catalyst System for the Reactions of Alcohols with Aryl 
+
+Halides<br>
+R. A. Altman, A. Shafir, P. A. Lichtor, S. L. Buchwald, <i>J. Org. Chem.</i>, <b>2008</b>,
+
+<i>73</i>, 284-286.</p>
+<p><a href="../abstracts/lit2/289.shtm"><img src="../abstracts/lit2/289a.gif"></a><br>
+An Efficient Ullmann-Type C-O Bond Formation Catalyzed by an Air-Stable 
+
+Copper(I)-Bipyridyl Complex<br>
+J. Niu, H. Zhou, Z. Li, J. Xu, S. Hu, <i>J. Org. Chem.</i>, <b>2008</b>,
+
+<i>73</i>, 7814-7817.</p>
+<p><a href="../abstracts/lit2/665.shtm"><img src="../abstracts/lit2/665a.gif"></a><br>
+(2-Pyridyl)acetone-Promoted Cu-Catalyzed <i>O</i>-Arylation of Phenols with 
+
+Aryl Iodides, Bromides, and Chlorides<br>
+Q. Zhang, D. Wang, X. Wang, K. Ding, <i>J. Org. Chem.</i>, <b>2009</b>,
+
+<i>74</i>, 7187-7190.</p>
+<p><a href="../abstracts/lit1/502.shtm"><img src="../abstracts/lit1/502a.gif"></a><br>
+1,1,1-Tris(hydroxymethyl)ethane as a New, Efficient, and Versatile Tripod 
+Ligand for Copper-Catalyzed Cross-Coupling Reactions of Aryl Iodides with 
+Amides, Thiols, and Phenols<br>
+Y.-J. Chen, H.-H. Chen, <i>Org. Lett.</i>, <b>2006</b>,
+<i>8</i>, 5609-5612.</p>
+<p><a href="../abstracts/literature/659.shtm"><img src="../abstracts/literature/659a.gif"></a><br>
+<i>N,N</i>-Dimethyl Glycine-Promoted Ullmann Coupling Reaction of Phenols and 
+Aryl Halides<br>
+D. Ma, Q. Cai, <i>Org. Lett., </i><b>2003</b>, <i>5</i>, 3799-3802.</p>
+<p><a href="../abstracts/literature/678.shtm">
+<img src="../abstracts/literature/678a.gif"></a><br>
+A General and Mild Ullmann-Type Synthesis of Diaryl Ethers<br>
+H.-J. Cristau, P. P. Cellier, S. Hamada, J.-F. Spindler, M. Taillefer, <i>
+
+Org. Lett., </i><b>2004</b>, <i>6</i>, 913-916.</p>
+<p><a href="../abstracts/lit3/689.shtm"><img src="../abstracts/lit3/689a.gif"></a><br>
+CuI/DMPAO-Catalyzed <i>N</i>-Arylation of Acyclic Secondary Amines<br>
+Y. Zhang, X. Yang, Q. Yao, D. Ma, <i>Org. Lett.</i>, <b>2012</b>,
+<i>14</i>, 3056-3059.</p>
+<p><a href="../abstracts/lit3/169.shtm"><img src="../abstracts/lit3/169a.gif"></a><br>
+A Facile and Practical Copper Powder-Catalyzed, Organic Solvent- and 
+
+Ligand-Free Ullmann Amination of Aryl Halides<br>
+J. Jiao, X.-R. Zhang, N.-H. Chang, J. Wang, J.-F. Wei, X.-Y. Shi, Z.-G. Chen, <i>J. Org. Chem.</i>, <b>2011</b>,
+
+<i>76</i>, 1180-1183.</p>
+<p><a href="../abstracts/literature/023.shtm"><img src="../abstracts/literature/023a.gif"></a><br>
+Copper-Catalyzed Coupling of Alkylamines and Aryl Iodides: An Efficient System 
+Even in an Air Atmosphere<br>
+F. Y. Kwong, A. Klapars, S. L. Buchwald, <i>Org. 
+Lett.</i>,
+<b>2002</b>, <i>4</i>, 581-584.</p>
+<p><a href="../abstracts/lit1/219.shtm"><img src="../abstracts/lit1/219a.gif"></a><br>
+Regioselective Copper-Catalyzed Amination of Bromobenzoic Acids Using 
+Aliphatic and Aromatic Amines<br>
+C. Wolf, S. Liu, X. Mei, A. T. August, M. D. Casimir, <i>J. Org. Chem.</i>, <b>2006</b>, <i>71</i>, 3270-3273.</p>
+<p><a href="../abstracts/lit2/769.shtm"><img src="../abstracts/lit2/769a.gif"></a><br>
+Efficient Copper-Catalyzed Synthesis of 4-Aminoquinazoline and 
+
+2,4-Diaminoquinazoline Derivatives<br>
+X. Yang, H. Liu, R. Qiao, Y. Jiang, Y. Zhao, <i>Synlett</i>, <b>2010</b>, 
+
+101-106.</p>
+<p><a href="../abstracts/lit1/671.shtm"><img src="../abstracts/lit1/671a.gif"></a><br>
+Synthesis of Pyrroles via Copper-Catalyzed Coupling of Amines with 
+Bromoenones<br>
+Y. Pan, H. Lu, Y. Fang, X. Fang, L. Chen, J. Qian, J. Wang, C. Li, <i>Synthesis</i>, <b>2007</b>, 
+1242-1246.</p>
+<p><a href="../abstracts/lit1/490.shtm">
+<img border="2" src="../abstracts/lit1/490a.gif" width="430" height="86"></a><br>
+General and Highly Efficient Synthesis of 2-Alkylideneazetidines and 
+&#946;-Lactams via Copper-Catalyzed Intramolecular N-Vinylation<br>
+H. Lu, C. Li, <i>Org. Lett.</i>, <b>2006</b>,
+<i>8</i>, 5365-5367.<p><a href="../abstracts/lit1/756.shtm">
+<img src="../abstracts/lit1/756a.gif"></a><br>
+Preference of 4-<i>exo</i> Ring Closure in Copper-Catalyzed Intramolecular Coupling 
+
+of Vinyl Bromides with Alcohols<br>
+Y. Fang, C. Li, <i>J. Am. Chem. Soc.</i>, <b>2007</b>, <i>
+
+129</i>, 8092-8093.<p><a href="../abstracts/literature/116.shtm"><img src="../abstracts/literature/116a.gif"></a><br>
+A General Method for the Formation of Aryl-Sulfur Bonds Using Copper(I) 
+Catalysts<br>
+C. G. Bates, R. K. Gujadhur, D. Venkataraman, <i>Org. 
+Lett.,</i> <b>2002</b>, <i>4</i>, 2803-2806.</p>
+<p><a href="../abstracts/lit3/178.shtm"><img src="../abstracts/lit3/178a.gif"></a><br>
+Ligand-Free Copper-Catalyzed Arylation of Amidines<br>
+M. Cortes-Salva, C. Garvin, J. C. Antilla, <i>J. Org. Chem.</i>, <b>2011</b>,
+
+<i>76</i>, 1456-1459.</p>
+<script type="text/javascript" src="/ads/js/textbooks.js"></script></div>
+<script type="text/javascript">
+width=window.innerWidth-215;
+if (width > 1000)
+{width=width-185;
+document.writeln ("<style type='text/css'>#jobs {visibility:visible;}</style>");
+}
+document.write ("<style type='text/css'>#content, #banner {width:"+width+"px;} @media only screen and (max-width: 925px) {#content, #banner {width: 100%;}}</style>");
+window.onresize = divsize; 
+function divsize() {
+width=window.innerWidth-215;
+if (width > 1000){document.getElementById("jobs").style.visibility = "visible"; width = width - 185;}
+else {document.getElementById("jobs").style.visibility = "hidden";}
+size=width+"px";
+if (width < 710) {size=window.innerWidth-25+"px";}
+document.getElementById("content").style.width = size;
+document.getElementById("banner").style.width = size;
+}
+</script>
+<div id="banner">
+<script type="text/javascript" src="/social/int.js"></script>
+<script type="text/javascript">framecheck=frames.length;</script>
+<script type="text/javascript" src="/ads/banner/js.htm"></script>
+<script type="text/javascript">
+if (frames.length-framecheck > 0)
+{document.writeln ("<style type='text/css'>#paypal {display:none;}</style>");}
+else {document.writeln ("<iframe style='float:left; margin-top: 0px' src='/block.htm' height='105px' width='700px' scrolling='no' border='0' frameborder='0'></iframe>");}
+</script>
+<div id="paypal">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9624126">
+<input type="image" src="/donate.gif" border="0" name="submit">
+</form>
+</div>
+</div>
+<div id="navi" class="menu">
+<div id="logo">
+<a href="/">
+<img src="http://www.organic-chemistry.org/Logos/ocp1.gif" width="160" height="67" border="0" alt="Organic Chemistry"></a>
+<p>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin-bottom: 0px; margin-top: 0">
+<b>Site Search</b><br>
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="16" type="text" style="font-size: 8pt">
+<input type="submit" value="&gt;&gt;"><br>
+<input name="zoom_and" value="0" type="radio">any
+<input name="zoom_and" value="1" checked type="radio">all words<br>
+</form>
+</p>
+<p style="margin-bottom:5px"><b>Main Categories</b></p>
+</div>
+<ul>
+<li><a href="/reactions.htm">Organic Reactions</a></li>
+<li><a href="/Highlights/">Org. Chem. Highlights</a></li>
+<li><a href="/abstracts/">Abstracts</a></li>
+<li><a href="/chemicals/">Chemicals</a></li>
+<li><a href="/prog/">Chemistry Tools</a></li>
+<li><a href="/books/">Chemistry Books</a></li>
+<li><a href="/jobs/">Job Market</a></li>
+<script type="text/javascript" src="/navi/menu.js"></script>
+</ul>
+</div>
+<div id="jobs">
+<script type="text/javascript" src="/jobs/offers/js.php"></script>
+</div>
+<div id="mobile">
+<div style="float:left;">
+<button id="openbutton" type="button" onclick="menuopen()">Menu Open &#9660;</button>
+<script type="text/javascript">
+function menuopen()  {document.getElementById("navi").style.visibility = "visible"; document.getElementById("closebutton").style.display = "block"; document.getElementById("openbutton").style.display = "none";}
+</script>
+<button type="button" id="closebutton" style="display:none" onclick="menuclose()">Menu Close &#9650;</button>
+<script type="text/javascript">
+function menuclose()  {document.getElementById("navi").style.visibility = "hidden"; document.getElementById("closebutton").style.display = "none"; document.getElementById("openbutton").style.display = "block";}
+</script>
+</div>
+<form method="GET" action="http://www.organic-chemistry.org/search/search.cgi" style="margin: 0px 0px 0px 10px; float:right;">
+<input name="zoom_sort" value="0" type="hidden">
+<input name="zoom_query" size="17" type="text">
+<input type="submit" value="&gt;&gt;">
+<input name="zoom_and" value="1" type="hidden">
+</form>
+</div></body>
+</html>
