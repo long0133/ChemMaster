@@ -75,7 +75,7 @@
     }
     else if ([self.ModeIdentifier isEqualToString:totalSynList])
     {
-        
+        [self setUpTotalSynList];
     }
     else if ([self.ModeIdentifier isEqualToString:hightLight])
     {
@@ -101,7 +101,16 @@
 
 - (void)setUpTotalSynList
 {
+    self.nameLable.text = [self.model[TakeName] stringByAppendingString:@""];
     
+    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"TotalSynPic" ofType:@"bundle"];
+    NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
+    
+    NSString *picName = [NSString stringWithFormat:@"%@-%@-%@", self.model[TakeName],self.model[TakeYear],self.model[TakeAuthor]];
+    
+    NSData *picData = [NSData dataWithContentsOfFile:[bundle pathForResource:picName ofType:nil]];
+    
+    self.preImageView.image = [UIImage imageWithData:picData];
 }
 
 - (void)setUpHighLightList

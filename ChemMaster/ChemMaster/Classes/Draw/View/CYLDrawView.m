@@ -30,6 +30,8 @@
 //第一排按钮的高度
 #define firstLineBtnH 55
 
+#define atomRadius 27
+
 @interface CYLDrawView ()<UIGestureRecognizerDelegate, CYLAssistanceViewDelegate>
 
 //当前正在画的化学键
@@ -946,7 +948,7 @@
     CGPoint tapPoint = [tap locationInView:self];
     NSInteger count = 0;
     //显示原子的btn
-    UIButton *atom = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 27, 27)];
+    UIButton *atom = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, atomRadius, atomRadius)];
     atom.layer.cornerRadius = atom.frame.size.width/2;
     atom.backgroundColor = [UIColor whiteColor];
     atom.userInteractionEnabled = NO;
@@ -1072,6 +1074,8 @@
                     
                 }//if
             }//for
+            
+//            [self reDrawBondWithPoint:point];
         }
         
     }
@@ -1080,6 +1084,95 @@
     
 }
 
+////添加原子时，重新绘制化学键
+//- (void)reDrawBondWithPoint:(CGPoint)point
+//{
+//    NSMutableSet *reDrawArray = [NSMutableSet set];
+//    
+//    //获得原子所在点相连接的化学键
+//    for (CYLChemicalBond *bond in self.BondArray) {
+//        
+//        if ([self isStartPoint:bond.midPoint aroundPoint:point WithRadius:CYLSuggestBondLength/2 + 3])
+//        {
+//            [reDrawArray addObject:bond];
+//        }
+//    }
+//    
+//    
+//    for (CYLChemicalBond *bond in reDrawArray)
+//    {
+//        
+//        CGFloat distance = CYLSuggestBondLength/2 - atomRadius;
+//        CGFloat Spx = 0;
+//        CGFloat Spy = 0;
+//        CGFloat Epx = 0;
+//        CGFloat Epy = 0;
+//        
+//        //计算斜率角度
+//        CGFloat angle = atan((bond.endP.y - bond.startP.y)/(bond.endP.x - bond.startP.x));
+//        
+//        if (angle < 0)
+//        {
+//            if ([bond isKindOfClass:[CYLTripleBond class]])
+//            {
+//                
+//                continue;
+//            }
+//            else if ([bond isKindOfClass:[CYLDoubleBond class]])
+//            {
+//                
+//                continue;
+//            }
+//            else
+//            {
+//                if (CGPointEqualToPoint(bond.startP, point)) {
+//                    
+//                    Spx = bond.midPoint.x + distance * cos(angle);
+//                    Spy = bond.midPoint.y - distance *sin(angle);
+//                    bond.startP = CGPointMake(Spx, Spy);
+//
+//                }
+//                else
+//                {
+//                    
+//                    Epx = bond.midPoint.x - distance * cos(angle);
+//                    Epy = bond.midPoint.y + distance * sin(angle);
+//                    bond.endP = CGPointMake(Epx, Epy);
+//                }
+//                
+//                
+//                
+//                
+//                [bond.bezierPath moveToPoint:bond.startP];
+//                [bond.bezierPath addLineToPoint:bond.endP];
+//                continue;
+//            }
+//        }
+//        else
+//        {
+//            if ([bond isKindOfClass:[CYLTripleBond class]])
+//            {
+//                
+//                continue;
+//            }
+//            else if ([bond isKindOfClass:[CYLDoubleBond class]])
+//            {
+//                
+//                continue;
+//            }
+//            else
+//            {
+//             
+//                
+//                continue;
+//            }
+//        }
+//    }
+//    
+//    [self setNeedsDisplay];
+//    
+//}
+//
 #pragma mark - 懒加载
 - (CYLToolBarView *)tooBarView
 {

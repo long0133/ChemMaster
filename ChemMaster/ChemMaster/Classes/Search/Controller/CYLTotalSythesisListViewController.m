@@ -61,9 +61,6 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    [SVProgressHUD show];
-    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
-    
    __block NSMutableArray *tempArray = [NSMutableArray array];
     
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
@@ -74,7 +71,14 @@
         NSString *urlString = [NSString stringWithFormat:@"http://www.organic-chemistry.org/totalsynthesis/navi/%@.shtm", selCell.textLabel.text];
         urlString = [urlString lowercaseString];
         
-        NSData *htmlData = [NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]];
+        NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"TotalSynList" ofType:@"bundle"];
+        NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
+        
+        NSString *dataUrl = [bundle pathForResource:selCell.textLabel.text ofType:nil];
+        
+        NSData *htmlData = [NSData dataWithContentsOfFile:dataUrl];
+        
+        
         TFHpple *htmlHpple = [[TFHpple alloc] initWithHTMLData:htmlData];
         
         NSArray *trArray = [htmlHpple searchWithXPathQuery:@"//tr"];
@@ -153,8 +157,6 @@
         }
         
         dispatch_async(dispatch_get_main_queue(), ^{
-           
-            [SVProgressHUD dismiss];
             
             CYLTotalSynDetailViewController *detailVC = [CYLTotalSynDetailViewController detaileViewWithArray:tempArray];
             

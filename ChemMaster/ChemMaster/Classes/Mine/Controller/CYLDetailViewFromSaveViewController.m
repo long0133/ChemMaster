@@ -33,6 +33,7 @@
     _scrollView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:_scrollView];
     
+    
     _dismissBtn = [[UIButton alloc] initWithFrame:CGRectMake(ScreenW - 44, ScreenH - 44, 33, 33)];
     [_dismissBtn setImage:[UIImage imageNamed:@"Cancel-icon"] forState:UIControlStateNormal];
     [_dismissBtn addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
@@ -56,6 +57,7 @@
             if (image.size.width > ScreenW) {
                 
                 Scale = ScreenW / image.size.width;
+
             }
             
             

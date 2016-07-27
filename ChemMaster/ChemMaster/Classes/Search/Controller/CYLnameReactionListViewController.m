@@ -100,7 +100,9 @@ static NSString *reuse = @"reuse";
 
 - (void)showFilterResulte
 {
-    NSString *text = [self.searchTextFiled.text uppercaseString];
+    NSString *text = [self.searchTextFiled.text uppercaseStringWithLocale:[NSLocale currentLocale]];
+    
+    text = [text capitalizedStringWithLocale:[NSLocale currentLocale]];
     
     [self.filtedListArray removeAllObjects];
     
@@ -174,7 +176,7 @@ static NSString *reuse = @"reuse";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *linkString = self.filtedListArray[indexPath.row][Takelink];
+    NSString *linkString = self.filtedListArray[indexPath.section][Takelink];
     
     [self.searchTextFiled resignFirstResponder];
 
@@ -184,7 +186,7 @@ static NSString *reuse = @"reuse";
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
        
         CYLReactionDetailViewController *rvc = [CYLReactionDetailViewController DetailViewControllerWithURL:[NSURL URLWithString:linkString] andUrlSetString:@"http://www.organic-chemistry.org/namedreactions/"];
-        rvc.title = [self.listArray[indexPath.row][TakeName] stringByAppendingString:fileNameForDetailViewSulffix];
+        rvc.title = [self.listArray[indexPath.section][TakeName] stringByAppendingString:fileNameForDetailViewSulffix];
         
         dispatch_async(dispatch_get_main_queue(), ^{
            

@@ -11,6 +11,7 @@
 #import "NSString+CYLNsstring.h"
 #import "UIColor+CYLColor.h"
 #import "NSObject+CYLStorageMethod.h"
+#import "CYLScrollBtn.h"
 #import <Masonry.h>
 #import <SVProgressHUD.h>
 #import <TFHpple.h>

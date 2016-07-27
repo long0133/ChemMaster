@@ -47,6 +47,8 @@ static NSInteger literatureLength = 0;
 //toolbarView 让按钮显眼
 @property (nonatomic, strong) UIView *toolBarView;
 
+@property (nonatomic, strong) UIView *titleView;
+
 @property (nonatomic, strong) NSMutableArray *saveArray;
 
 @end
@@ -58,6 +60,8 @@ static NSInteger literatureLength = 0;
     [super viewDidLoad];
     
      self.view = self.contentScrollView;
+    
+    self.view.backgroundColor = [UIColor getColor:@"EEEED1"];
     
     _cancleBtn = [[UIButton alloc] initWithFrame:CGRectMake(ScreenW - 44, ScreenH - 40, 33, 33)];
     [_cancleBtn setImage:[UIImage imageNamed:@"Cancel-icon"] forState:UIControlStateNormal];
@@ -73,7 +77,7 @@ static NSInteger literatureLength = 0;
 #pragma mark - 获得处理后字符串计算高度与布局子控件
 - (NSInteger)caculateHightForContentScrollViw
 {
-    _CurrentH = 0;
+    _CurrentH = 20;
     _maxWidth = ScreenW;
     
     for (NSString *content in self.contentAfterTreatment) {
@@ -129,13 +133,28 @@ static NSInteger literatureLength = 0;
             lable.numberOfLines = 0;
             lable.font = attr[NSFontAttributeName];
             lable.text = content;
+//            lable.backgroundColor = [UIColor getColor:@"FFE4B5"];
             
             if ([content containsString:@"Recent Literature"]) {
+                
+                //调整位置
+                _CurrentH += 30;
+                
+                UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, _CurrentH - 3, ScreenW, 5)];
+                view.backgroundColor = [UIColor getColor:@"C6E2FF"];
+                [self.contentScrollView addSubview:view];
                 
                 lable.frame = CGRectMake(0, _CurrentH, ScreenW, 30);
                 lable.textAlignment = NSTextAlignmentLeft;
                 lable.font = [UIFont systemFontOfSize:20];
                 
+                }
+                
+            if ([content containsString:@"Referance"])
+            {
+                
+                lable.layer.borderWidth = 1;
+                lable.layer.borderColor = [UIColor blueColor].CGColor;
             }
             
             [self.saveArray addObject:lable.text];
@@ -231,7 +250,7 @@ static NSInteger literatureLength = 0;
     NSString *abstractString = abstractA.lastObject;
     abstractString = [self flattenHTML:abstractString trimWhiteSpace:NO];
     abstractString = [abstractString stringByReplacingOccurrencesOfString:@"\n" withString:@" "];
-    abstractString = [NSString stringWithFormat:@"  Referance : %@", abstractString];
+    abstractString = [NSString stringWithFormat:@" Referance : %@", abstractString];
     abstractString = [abstractString stringByReplacingOccurrencesOfString:@";" withString:@""];
 
     return [NSString stringWithFormat:@"%@__%@",imageUrl,abstractString];
@@ -316,6 +335,7 @@ static NSInteger literatureLength = 0;
 }
 
 #pragma mark - 懒加载
+
 - (UIView *)toolBarView
 {
     if (_toolBarView == nil) {
