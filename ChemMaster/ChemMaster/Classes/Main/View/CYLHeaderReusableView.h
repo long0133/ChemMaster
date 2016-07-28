@@ -18,5 +18,11 @@
 
 @property (nonatomic, weak) id<CYLHeaderReusableViewDelegate> delegate;
 
+@property (nonatomic, strong) UIImage *currentImage;
+
+@property (nonatomic, assign) NSInteger currentPage;
+
 - (void)HeaderScrollViewWithModelArray:(NSArray*)modelArray;
+
+- (UIScrollView*)getScrollView;
 @end

@@ -45,19 +45,24 @@
 
 - (void)layoutSubviews
 {
-    [_nameLable mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self).offset(3);
-        make.left.right.equalTo(self);
-        make.height.mas_equalTo(20);
-    }];
-    
+//    [_nameLable mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.equalTo(self).offset(3);
+//        make.left.right.equalTo(self);
+//        make.height.mas_equalTo(20);
+//    }];
+//    
+//
+//    [_preImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.equalTo(self.nameLable.mas_bottom).offset(3);
+//        make.left.right.equalTo(self);
+//        make.bottom.equalTo(self);
+//    }];
 
-    [_preImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.nameLable.mas_bottom).offset(3);
-        make.left.right.equalTo(self);
-        make.bottom.equalTo(self);
-    }];
     
+    _nameLable.frame = CGRectMake(0, 3, self.frame.size.width, 20);
+    
+    CGFloat Y = CGRectGetMaxY(_nameLable.frame) + 3;
+    _preImageView.frame = CGRectMake(0, Y, ScreenW, self.frame.size.height - Y);
 }
 
 -(void)setModel:(NSDictionary *)model

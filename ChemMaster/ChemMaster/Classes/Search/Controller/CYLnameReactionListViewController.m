@@ -106,6 +106,9 @@ static NSString *reuse = @"reuse";
     
     [self.filtedListArray removeAllObjects];
     
+    //输入时，cell默认选择第一个
+    _selSection = 0;
+    
     //遍历FiltedListArray获得带有text前缀的模型数组
     for (NSDictionary *modelDict in self.listArray)
     {
@@ -243,8 +246,19 @@ static NSString *reuse = @"reuse";
     {
         return image.size.height + 30;
     }
-    else return 2;
+    else return 1;
     
+}
+
+//添加cell的动画
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //设置x和y的初始值为0.1；
+    cell.layer.transform = CATransform3DMakeScale(0.1, 0.1, 1);
+    //x和y的最终值为1
+    [UIView animateWithDuration:.3 animations:^{
+        cell.layer.transform = CATransform3DMakeScale(1, 1, 1);
+    }];
 }
 
 #pragma mark - 初始化方法

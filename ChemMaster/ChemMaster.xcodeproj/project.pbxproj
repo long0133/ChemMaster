@@ -66,8 +66,8 @@
 		4EE5DB7B1D449D0700A26451 /* NameRList.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4EE5DB7A1D449D0700A26451 /* NameRList.bundle */; };
 		4EE5DBBE1D45E24500A26451 /* NameListPicture.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4EE5DBBD1D45E24500A26451 /* NameListPicture.bundle */; };
 		4EE5DBC01D47ADE700A26451 /* TotalSynList.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4EE5DBBF1D47ADE700A26451 /* TotalSynList.bundle */; };
-		4EE5DBC31D47C1B900A26451 /* CYLScrollBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE5DBC21D47C1B900A26451 /* CYLScrollBtn.m */; };
 		4EE5DBC51D48634200A26451 /* TotalSynPic.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4EE5DBC41D48634200A26451 /* TotalSynPic.bundle */; };
+		4EE5DBC81D49A23000A26451 /* CYLTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE5DBC71D49A23000A26451 /* CYLTextView.m */; };
 		CE31C95ACD49967E9DCE28CC /* libPods-ChemMaster.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A756A2C6D2E97427A9486FDB /* libPods-ChemMaster.a */; };
 /* End PBXBuildFile section */
 
@@ -198,9 +198,9 @@
 		4EE5DB7A1D449D0700A26451 /* NameRList.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NameRList.bundle; sourceTree = SOURCE_ROOT; };
 		4EE5DBBD1D45E24500A26451 /* NameListPicture.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NameListPicture.bundle; sourceTree = SOURCE_ROOT; };
 		4EE5DBBF1D47ADE700A26451 /* TotalSynList.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TotalSynList.bundle; sourceTree = SOURCE_ROOT; };
-		4EE5DBC11D47C1B900A26451 /* CYLScrollBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLScrollBtn.h; sourceTree = "<group>"; };
-		4EE5DBC21D47C1B900A26451 /* CYLScrollBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLScrollBtn.m; sourceTree = "<group>"; };
 		4EE5DBC41D48634200A26451 /* TotalSynPic.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TotalSynPic.bundle; sourceTree = SOURCE_ROOT; };
+		4EE5DBC61D49A23000A26451 /* CYLTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTextView.h; sourceTree = "<group>"; };
+		4EE5DBC71D49A23000A26451 /* CYLTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLTextView.m; sourceTree = "<group>"; };
 		730560DAAF9BC4822389DB9E /* Pods-ChemMaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChemMaster.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChemMaster/Pods-ChemMaster.release.xcconfig"; sourceTree = "<group>"; };
 		A756A2C6D2E97427A9486FDB /* libPods-ChemMaster.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChemMaster.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E01F783DFEA3D2E60DFA70CE /* Pods-ChemMaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChemMaster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChemMaster/Pods-ChemMaster.debug.xcconfig"; sourceTree = "<group>"; };
@@ -552,8 +552,8 @@
 				4E2E44DE1D2E69E700DFE058 /* CYLAngleBtn.h */,
 				4E2E44DF1D2E69E700DFE058 /* CYLAngleBtn.m */,
 				4E7E26C01D409E420074B36C /* gotoStore */,
-				4EE5DBC11D47C1B900A26451 /* CYLScrollBtn.h */,
-				4EE5DBC21D47C1B900A26451 /* CYLScrollBtn.m */,
+				4EE5DBC61D49A23000A26451 /* CYLTextView.h */,
+				4EE5DBC71D49A23000A26451 /* CYLTextView.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -923,6 +923,7 @@
 				4E5F79A61D1CECC2009AD7DC /* CYLSpecificResourceViewController.m in Sources */,
 				4E5F79981D1B753E009AD7DC /* CYLHighLightMonthViewController.m in Sources */,
 				4E5F79941D1B6E27009AD7DC /* CYLHighLightViewController.m in Sources */,
+				4EE5DBC81D49A23000A26451 /* CYLTextView.m in Sources */,
 				4E2A820E1D0DA7A40082D785 /* CYLBadgeView.m in Sources */,
 				4E2A82191D0EE0460082D785 /* CYLHeaderReusableView.m in Sources */,
 				4E5F79911D1A5ECC009AD7DC /* UIColor+CYLColor.m in Sources */,
@@ -933,7 +934,6 @@
 				4E2E44E01D2E69E700DFE058 /* CYLAngleBtn.m in Sources */,
 				4ECC97BE1D10F3F800D5000C /* CYLWebViewController.m in Sources */,
 				4E5F79861D19891E009AD7DC /* CYLTotalSythesisListViewController.m in Sources */,
-				4EE5DBC31D47C1B900A26451 /* CYLScrollBtn.m in Sources */,
 				4E5F799C1D1CC525009AD7DC /* CYLDoubleBond.m in Sources */,
 				4E2A81A81D0D9BCF0082D785 /* main.m in Sources */,
 			);

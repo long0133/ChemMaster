@@ -25,7 +25,7 @@ static NSString *reuse = @"totalSyn";
 {
     [super viewDidLoad];
     
-    self.tableView.rowHeight = 44;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 
 #pragma mark - data source
@@ -64,6 +64,8 @@ static NSString *reuse = @"totalSyn";
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     UILabel *headerLable = [[UILabel alloc] init];
+    headerLable.numberOfLines = 0;
+    headerLable.font = [UIFont systemFontOfSize:14];
     headerLable.textColor = [UIColor blackColor];
     headerLable.backgroundColor = [UIColor getColor:@"F0F0F0"];
     headerLable.tag = section;
@@ -73,7 +75,7 @@ static NSString *reuse = @"totalSyn";
 
     
     NSDictionary *DictModel = self.detailListArray[section];
-    headerLable.text = [NSString stringWithFormat:@"%@-%@-%@",DictModel[TakeName], DictModel[TakeYear],DictModel[TakeAuthor]];
+    headerLable.text = [NSString stringWithFormat:@"Name:%@\nYear:%@ Author:%@",DictModel[TakeName], DictModel[TakeYear],DictModel[TakeAuthor]];
     
     return headerLable;
 }
@@ -137,6 +139,17 @@ static NSString *reuse = @"totalSyn";
         });
     });
     
+}
+
+//添加cell的动画
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //设置x和y的初始值为0.1；
+    cell.layer.transform = CATransform3DMakeScale(0.1, 0.1, 1);
+    //x和y的最终值为1
+    [UIView animateWithDuration:.3 animations:^{
+        cell.layer.transform = CATransform3DMakeScale(1, 1, 1);
+    }];
 }
 
 #pragma mark - 懒加载

@@ -13,13 +13,21 @@
 #import "CYLHightLightModel.h"
 #import "CYLWebViewController.h"
 #import "CYLGoToStore.h"
+#import "CYLTextView.h"
 
+#define animationDuration .7
 @interface CYLMainViewController ()<CYLHeaderReusableViewDelegate,CYLHightLightCellDelegate>
 @property (nonatomic, strong) NSArray *headerModelArray;
 
 @property (nonatomic , strong) NSArray *highLightArray;
 
+@property (nonatomic,strong) UIView *coverView;
+
+@property (nonatomic, strong)CYLHeaderReusableView *headerView;
+
 @property (nonatomic,strong) CYLWebViewController *webVC;
+
+@property (nonatomic, strong) NSMutableArray *coverViewSubviews;
 @end
 
 @implementation CYLMainViewController
@@ -89,40 +97,45 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (UICollectionReusableView*)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {
-    CYLHeaderReusableView *view = nil;
+    self.headerView = nil;
+    
     
     if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
         
-        view = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"header" forIndexPath:indexPath];
+        self.headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"header" forIndexPath:indexPath];
         
         if (indexPath.section == 0) {
     
-            [view HeaderScrollViewWithModelArray:self.headerModelArray];
+            [self.headerView  HeaderScrollViewWithModelArray:self.headerModelArray];
             
-            view.delegate = self;
+            self.headerView.delegate = self;
         }
         else
         {
-            view.backgroundColor = [UIColor getColor:barColor];
+            self.headerView.backgroundColor = [UIColor getColor:barColor];
         }
         
         
     }
     else
     {
-        view = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"footer" forIndexPath:indexPath];
+        self.headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"footer" forIndexPath:indexPath];
     }
     
-    return view;
+    return self.headerView;
 }
 
 #pragma CYLHeaderReusableViewDelegate
 //显示webView
 - (void)HeaderReusableView:(CYLHeaderReusableView *)View didChoiceEditorModel:(CYLEditorChociseModel *)model
 {
-    self.webVC = nil;
-    [self.webVC setUrl:[NSURL URLWithString:[NSString stringWithFormat:@"http://pubs.acs.org/doi/full/%@",model.doi]]];
-    [self.navigationController presentViewController:_webVC animated:YES completion:nil];
+
+    self.coverView = nil;
+    
+    [self coverView];
+    
+    [self showDetailLableWithModel:model];
+    
 }
 
 
@@ -160,6 +173,26 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 #pragma mark - 懒加载
+
+- (UIView *)coverView
+{
+    if (_coverView == nil) {
+        _coverView = [[UIView alloc] initWithFrame:self.view.frame];
+        _coverView.backgroundColor = [UIColor blackColor];
+        _coverView.alpha = .7;
+        
+        [KWindow addSubview:_coverView];
+        
+        //设置CoverViewde动画
+        _coverView.transform = CGAffineTransformMakeTranslation(0, -ScreenH);
+        
+        [UIView animateWithDuration:animationDuration animations:^{
+            _coverView.transform = CGAffineTransformMakeTranslation(0, 0);
+        }];
+    }
+    return _coverView;
+}
+
 - (NSArray *)headerModelArray
 {
     if (_headerModelArray == nil) {
@@ -182,6 +215,120 @@ static NSString * const reuseIdentifier = @"Cell";
         _webVC = [[CYLWebViewController alloc] init];
     }
     return _webVC;
+}
+
+#pragma 自定义方法
+- (void)showDetailLableWithModel:(CYLEditorChociseModel*)model
+{
+    self.coverViewSubviews = [NSMutableArray array];
+
+    //image
+    UIImageView *imageV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 20, ScreenW, ScreenH/2)];
+    imageV.contentMode = UIViewContentModeScaleAspectFit;
+    UIButton *imageBtn = (UIButton*)[[self.headerView getScrollView] subviews][self.headerView.currentPage] ;
+    imageV.image = imageBtn.currentImage;
+    
+    
+    //动画
+    imageV.contentMode = UIViewContentModeScaleAspectFit;
+    
+    [self setAnimationOnView:imageV];
+    
+    [KWindow addSubview:imageV];
+    [self.coverViewSubviews addObject:imageV];
+    
+    //text
+    CGFloat Y = CGRectGetMaxY(imageV.frame);
+    CYLTextView *textView = [[CYLTextView alloc] initWithFrame:CGRectMake(0, Y, ScreenW, ScreenH - Y - 60)];
+    textView.font = [UIFont systemFontOfSize:17];
+    textView.backgroundColor = [UIColor getColor:@"edef9a"];
+    
+    //内容
+    NSString *content = model.articleAbstract;
+    content = [content flattenHTML:content trimWhiteSpace:NO];
+    content = [content stringByReplacingOccurrencesOfString:@"&#x" withString:@""];
+    textView.text = content;
+    
+    //动画
+    [self setAnimationOnView:textView];
+    
+    [self.coverViewSubviews addObject:textView];
+    [KWindow addSubview:textView];
+    
+    //按钮
+    UIButton *cancelBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    cancelBtn.frame = CGRectMake(self.view.center.x - 80, CGRectGetMaxY(textView.frame) + 10, 44, 44);
+    
+    [cancelBtn setImage:[UIImage imageNamed:@"Cancel_64px_1194741_easyicon.net"] forState:UIControlStateNormal];
+    [self setAnimationOnView:cancelBtn];
+    
+    [cancelBtn addTarget:self action:@selector(CancelBtn) forControlEvents:UIControlEventTouchUpInside];
+    
+    [KWindow insertSubview:cancelBtn aboveSubview:self.coverView];
+    [self.coverViewSubviews addObject:cancelBtn];
+    
+    UIButton *goToWebBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    goToWebBtn.frame = CGRectMake(self.view.center.x + 36, CGRectGetMaxY(textView.frame) + 10, 44, 44);
+    [goToWebBtn setImage:[UIImage imageNamed:@"Success_64px_1194837_easyicon.net"] forState:UIControlStateNormal];
+    
+    //利用title传递连接
+    [goToWebBtn setTitle:model.doi forState:UIControlStateNormal];
+    [goToWebBtn setTitleColor:[UIColor clearColor] forState:UIControlStateNormal];
+    
+    [self setAnimationOnView:goToWebBtn];
+    
+    [goToWebBtn addTarget:self action:@selector(goToWeb:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [KWindow insertSubview:goToWebBtn aboveSubview:self.coverView];
+    [self.coverViewSubviews addObject:goToWebBtn];
+    
+    
+    [self.coverViewSubviews addObject:_coverView];
+}
+
+
+- (void)CancelBtn
+{
+     //动画消失效果
+    
+    for (UIView *view in self.coverViewSubviews) {
+        
+//        [UIView animateWithDuration:animationDuration animations:^{
+//            
+//            view.transform = CGAffineTransformMakeTranslation(0, -ScreenH);
+//            
+//        } completion:^(BOOL finished) {
+//           
+//            [view removeFromSuperview];
+//        }];
+        
+        [UIView animateWithDuration:animationDuration delay:0 usingSpringWithDamping:0.4 initialSpringVelocity:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+            
+            view.transform = CGAffineTransformMakeTranslation(0, -ScreenH);
+            
+        } completion:^(BOOL finished) {
+            [view removeFromSuperview];
+        }];
+        
+    }
+}
+
+- (void)goToWeb:(UIButton*)btn
+{
+    [self CancelBtn];
+    
+    self.webVC = nil;
+    [self.webVC setUrl:[NSURL URLWithString:[NSString stringWithFormat:@"http://pubs.acs.org/doi/full/%@",btn.currentTitle]]];
+    [self.navigationController presentViewController:_webVC animated:YES completion:nil];
+}
+
+- (void)setAnimationOnView:(UIView*)view
+{
+    view.transform = CGAffineTransformMakeTranslation(0, - ScreenH);
+    
+    [UIView animateWithDuration:animationDuration animations:^{
+        view.transform = CGAffineTransformMakeTranslation(0, 0);
+    }];
 }
 
 @end

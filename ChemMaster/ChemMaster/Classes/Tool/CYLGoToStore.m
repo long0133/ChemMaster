@@ -19,14 +19,13 @@
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     int udtheDays = [[userDefaults objectForKey:@"theDays"] intValue];
     //userDefaults里的版本号
-    float udAppVersion = [[userDefaults objectForKey:@"appVersion"] intValue];
+    float udAppVersion = [[userDefaults objectForKey:@"appVersion"] floatValue];
     //userDefaults里用户上次的选项
     int udUserChoose = [[userDefaults objectForKey:@"userOptChoose"] intValue];
     //时间戳的天数
     NSTimeInterval interval = [[NSDate date] timeIntervalSince1970];
     int daySeconds = 24 * 60 * 60;
     NSInteger theDays = interval / daySeconds;
-    
     //版本升级之后的处理,全部规则清空,开始弹窗
     if (udAppVersion && appVersion>udAppVersion) {
         [userDefaults removeObjectForKey:@"theDays"];

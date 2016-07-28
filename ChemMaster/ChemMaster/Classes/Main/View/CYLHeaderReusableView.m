@@ -48,7 +48,7 @@ typedef NS_ENUM(NSInteger, CYLFont)
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
-    NSTimer *timer = [NSTimer timerWithTimeInterval:3 target:self selector:@selector(rollTheImage) userInfo:nil repeats:YES];
+    NSTimer *timer = [NSTimer timerWithTimeInterval:4 target:self selector:@selector(rollTheImage) userInfo:nil repeats:YES];
     [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
     
    return [super initWithFrame:frame];
@@ -69,41 +69,10 @@ typedef NS_ENUM(NSInteger, CYLFont)
         self.pageControll.currentPage = 0;
         [self showAbstractWithIndex:_pageControll.currentPage];
     }
-}
-
-#pragma mark - 懒加载
-- (NSMutableArray *)scrollViewBtnArray
-{
-    if (_scrollViewBtnArray == nil) {
-        _scrollViewBtnArray = [NSMutableArray array];
-    }
-    return _scrollViewBtnArray;
-}
-
--(UILabel *)descLable
-{
-    if (_descLable == nil) {
-        
-        _descLable = [[UILabel alloc] init];
-        _descLable.numberOfLines = 2;
-        _descLable.textColor = [UIColor whiteColor];
-        _descLable.font = [UIFont systemFontOfSize:CYLFontsmall];
-        
-        [self addSubview:_descLable];
-    }
-    return _descLable;
-}
-
-- (UILabel *)journalLable
-{
-    if (_journalLable == nil) {
-        _journalLable = [[UILabel alloc] init];
-        _journalLable.textColor = [UIColor yellowColor];
-        _journalLable.font = [UIFont systemFontOfSize:CYLFontsmall];
-        
-        [self addSubview:_journalLable];
-    }
-    return _journalLable;
+    
+//    _currentImage = [(UIButton*)self.scrollView.subviews[self.pageControll.currentPage] currentImage];
+    
+    _currentPage = self.pageControll.currentPage;
 }
 
 - (void)HeaderScrollViewWithModelArray:(NSArray *)modelArray
@@ -173,6 +142,7 @@ typedef NS_ENUM(NSInteger, CYLFont)
                 [self.scrollView addSubview:imageBtn];
                 
                 [self.scrollViewBtnArray addObject:imageBtn];
+                
             });
         });
     }
@@ -247,6 +217,14 @@ typedef NS_ENUM(NSInteger, CYLFont)
     [self showAbstractWithIndex:index];
     
     _pageControll.currentPage = index;
+    
+    _currentPage = index;
+    
+}
+
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
+{
+    [self scrollViewDidEndDecelerating:scrollView];
 }
 
 //scrollview显示对应推荐model的概述
@@ -256,15 +234,20 @@ typedef NS_ENUM(NSInteger, CYLFont)
     
     self.journalLable.text = model.journal[@"abbrevJournalTitle"];
 
+    //处理概述文字
     NSString *descString = [model.articleAbstract stringByReplacingOccurrencesOfString:@"<p>" withString:@""];
     
     descString = [descString stringByReplacingOccurrencesOfString:@"\n" withString:@" "];
     descString = [descString stringByReplacingOccurrencesOfString:@"&#x" withString:@" "];
     descString = [descString stringByReplacingOccurrencesOfString:@";" withString:@" "];
     descString = [NSString stringWithFormat:@"  %@",descString];
-    descString = [self flattenHTML:descString trimWhiteSpace:NO];
+    descString = [descString flattenHTML:descString trimWhiteSpace:NO];
     
-    self.descLable.text = descString;
+    model.articleAbstract = descString;
+    
+    //显示论文标题
+    model.title = [model.title flattenHTML:model.title trimWhiteSpace:NO];
+    self.descLable.text = model.title;
 }
 
 
@@ -278,26 +261,48 @@ typedef NS_ENUM(NSInteger, CYLFont)
     }
 }
 
-//去除html所有标签
-- (NSString *)flattenHTML:(NSString *)html trimWhiteSpace:(BOOL)trim
+- (UIScrollView *)getScrollView
 {
-    NSScanner *theScanner = [NSScanner scannerWithString:html];
-    NSString *text = nil;
-    
-    while ([theScanner isAtEnd] == NO) {
-        // find start of tag
-        [theScanner scanUpToString:@"<" intoString:NULL] ;
-        // find end of tag
-        [theScanner scanUpToString:@">" intoString:&text] ;
-        // replace the found tag with a space
-        //(you can filter multi-spaces out later if you wish)
-        html = [html stringByReplacingOccurrencesOfString:
-                [ NSString stringWithFormat:@"%@>", text]
-                                               withString:@""];
-    }
-    
-    return trim ? [html stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] : html;
+    return self.scrollView;
 }
+
+#pragma mark - 懒加载
+
+- (NSMutableArray *)scrollViewBtnArray
+{
+    if (_scrollViewBtnArray == nil) {
+        _scrollViewBtnArray = [NSMutableArray array];
+    }
+    return _scrollViewBtnArray;
+}
+
+-(UILabel *)descLable
+{
+    if (_descLable == nil) {
+        
+        _descLable = [[UILabel alloc] init];
+        _descLable.numberOfLines = 2;
+        _descLable.textColor = [UIColor whiteColor];
+        _descLable.font = [UIFont systemFontOfSize:CYLFontsmall];
+        
+        [self addSubview:_descLable];
+    }
+    return _descLable;
+}
+
+- (UILabel *)journalLable
+{
+    if (_journalLable == nil) {
+        _journalLable = [[UILabel alloc] init];
+        _journalLable.textColor = [UIColor yellowColor];
+        _journalLable.font = [UIFont systemFontOfSize:CYLFontsmall];
+        
+        [self addSubview:_journalLable];
+    }
+    return _journalLable;
+}
+
+
 @end
 
 
