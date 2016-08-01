@@ -293,15 +293,6 @@ static NSString * const reuseIdentifier = @"Cell";
     
     for (UIView *view in self.coverViewSubviews) {
         
-//        [UIView animateWithDuration:animationDuration animations:^{
-//            
-//            view.transform = CGAffineTransformMakeTranslation(0, -ScreenH);
-//            
-//        } completion:^(BOOL finished) {
-//           
-//            [view removeFromSuperview];
-//        }];
-        
         [UIView animateWithDuration:animationDuration delay:0 usingSpringWithDamping:0.4 initialSpringVelocity:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
             
             view.transform = CGAffineTransformMakeTranslation(0, -ScreenH);

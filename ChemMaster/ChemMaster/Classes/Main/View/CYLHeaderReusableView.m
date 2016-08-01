@@ -49,7 +49,7 @@ typedef NS_ENUM(NSInteger, CYLFont)
 - (instancetype)initWithFrame:(CGRect)frame
 {
     NSTimer *timer = [NSTimer timerWithTimeInterval:4 target:self selector:@selector(rollTheImage) userInfo:nil repeats:YES];
-    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
+    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
     
    return [super initWithFrame:frame];
 }
@@ -70,9 +70,8 @@ typedef NS_ENUM(NSInteger, CYLFont)
         [self showAbstractWithIndex:_pageControll.currentPage];
     }
     
-//    _currentImage = [(UIButton*)self.scrollView.subviews[self.pageControll.currentPage] currentImage];
+    _currentPage = offSet.x / ScreenW - 1;
     
-    _currentPage = self.pageControll.currentPage;
 }
 
 - (void)HeaderScrollViewWithModelArray:(NSArray *)modelArray
@@ -139,7 +138,7 @@ typedef NS_ENUM(NSInteger, CYLFont)
                 
                 imageBtn.backgroundColor = [UIColor whiteColor];
                 
-                [self.scrollView addSubview:imageBtn];
+                [self.scrollView insertSubview:imageBtn atIndex:imageBtn.tag];
                 
                 [self.scrollViewBtnArray addObject:imageBtn];
                 
@@ -230,24 +229,29 @@ typedef NS_ENUM(NSInteger, CYLFont)
 //scrollview显示对应推荐model的概述
 - (void)showAbstractWithIndex:(NSInteger)index
 {
-    CYLEditorChociseModel *model = _modelArray[index];
     
-    self.journalLable.text = model.journal[@"abbrevJournalTitle"];
-
-    //处理概述文字
-    NSString *descString = [model.articleAbstract stringByReplacingOccurrencesOfString:@"<p>" withString:@""];
+    if (index < 7) {
+        
+        CYLEditorChociseModel *model = _modelArray[index];
+        
+        self.journalLable.text = model.journal[@"abbrevJournalTitle"];
+        
+        //处理概述文字
+        NSString *descString = [model.articleAbstract stringByReplacingOccurrencesOfString:@"<p>" withString:@""];
+        
+        descString = [descString stringByReplacingOccurrencesOfString:@"\n" withString:@" "];
+        descString = [descString stringByReplacingOccurrencesOfString:@"&#x" withString:@" "];
+        descString = [descString stringByReplacingOccurrencesOfString:@";" withString:@" "];
+        descString = [NSString stringWithFormat:@"  %@",descString];
+        descString = [descString flattenHTML:descString trimWhiteSpace:NO];
+        
+        model.articleAbstract = descString;
+        
+        //显示论文标题
+        model.title = [model.title flattenHTML:model.title trimWhiteSpace:NO];
+        self.descLable.text = model.title;
+    }
     
-    descString = [descString stringByReplacingOccurrencesOfString:@"\n" withString:@" "];
-    descString = [descString stringByReplacingOccurrencesOfString:@"&#x" withString:@" "];
-    descString = [descString stringByReplacingOccurrencesOfString:@";" withString:@" "];
-    descString = [NSString stringWithFormat:@"  %@",descString];
-    descString = [descString flattenHTML:descString trimWhiteSpace:NO];
-    
-    model.articleAbstract = descString;
-    
-    //显示论文标题
-    model.title = [model.title flattenHTML:model.title trimWhiteSpace:NO];
-    self.descLable.text = model.title;
 }
 
 
@@ -256,9 +260,15 @@ typedef NS_ENUM(NSInteger, CYLFont)
 {
     CYLEditorChociseModel *model = self.modelArray[btn.tag];
     
+    btn.userInteractionEnabled = NO;
+    
     if ([self.delegate respondsToSelector:@selector(HeaderReusableView:didChoiceEditorModel:)]) {
         [self.delegate HeaderReusableView:self didChoiceEditorModel:model];
     }
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        btn.userInteractionEnabled = YES;
+    });
 }
 
 - (UIScrollView *)getScrollView
