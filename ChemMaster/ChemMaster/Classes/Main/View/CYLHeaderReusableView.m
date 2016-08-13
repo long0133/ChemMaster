@@ -45,6 +45,8 @@ typedef NS_ENUM(NSInteger, CYLFont)
 
 @end
 
+//指示scroll数组是否已经排序过
+static BOOL isSorted = 0;
 
 @implementation CYLHeaderReusableView
 
@@ -93,7 +95,6 @@ typedef NS_ENUM(NSInteger, CYLFont)
 //设置scrollview
 - (void)setUpScrollView
 {
-   __block NSArray *sortedArray = [NSArray array];
     
     _scrollView = [[UIScrollView alloc] init];
     
@@ -144,26 +145,7 @@ typedef NS_ENUM(NSInteger, CYLFont)
                 
                 [self.scrollViewBtnArray addObject:imageBtn];
                 
-                //排序子控件
-                sortedArray = [self.scrollViewBtnArray sortedArrayWithOptions:NSSortStable usingComparator:^NSComparisonResult(UIButton *  _Nonnull obj1, UIButton *  _Nonnull obj2) {
-                    
-                    if (obj1.tag > obj2.tag) {
-                        return NSOrderedDescending;
-                    }
-                    return NSOrderedAscending;
-                }];
-                
-                //按顺序将子控件添加到scrollview中
-                for (NSInteger i = 0; i < sortedArray.count; i ++) {
-                    
-                    UIButton *btn = sortedArray[i];
-                    
-                    if (![self.scrollView.subviews containsObject:btn]) {
-                        [self.scrollView addSubview:btn];
-                    }
-                }
-                
-                
+                [self.scrollView addSubview:imageBtn];
             });
         });
         
@@ -230,7 +212,40 @@ typedef NS_ENUM(NSInteger, CYLFont)
         make.bottom.equalTo(_pageControll.mas_top).offset(12);
     }];
     
-    NSLog(@"%@",self.scrollViewBtnArray);
+    if (!isSorted)
+    {
+        NSArray *sortedArray = [NSArray array];
+        
+        //排序子控件
+        sortedArray = [self.scrollViewBtnArray sortedArrayWithOptions:NSSortStable usingComparator:^NSComparisonResult(UIButton *  _Nonnull obj1, UIButton *  _Nonnull obj2) {
+            
+            if (obj1.tag > obj2.tag) {
+                return NSOrderedDescending;
+            }
+            return NSOrderedAscending;
+        }];
+        
+        //按顺序将子控件添加到scrollview中
+        for (NSInteger i = 0; i < sortedArray.count; i ++) {
+            
+            UIButton *btn = sortedArray[i];
+            
+            if (![self.scrollView.subviews containsObject:btn]) {
+                [self.scrollView addSubview:btn];
+            }
+        }
+        
+        isSorted = 1;
+        
+        NSLog(@"%@",self.scrollView.subviews);
+    }
+    
+    
+    if (self.scrollView.subviews.count != editorsChoiceNum) {
+        
+        isSorted = 0;
+    }
+    
 }
 
 

@@ -56,3 +56,6 @@
 
 #define hightLight @"highLight"
 #define highLightCellH 80
+
+//图片轮播器展示的图片数
+#define editorsChoiceNum 7
