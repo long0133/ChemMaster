@@ -30,6 +30,8 @@ typedef NS_ENUM(NSInteger, CYLFont)
 
 @property (nonatomic, strong) NSMutableArray *scrollViewBtnArray;
 
+@property (nonatomic, strong) UIButton *lastImgBtn;
+
 //首页推荐文章的概述
 @property (nonatomic,strong) UILabel *descLable;
 //首页推荐文章的所属期刊
@@ -91,6 +93,8 @@ typedef NS_ENUM(NSInteger, CYLFont)
 //设置scrollview
 - (void)setUpScrollView
 {
+   __block NSArray *sortedArray = [NSArray array];
+    
     _scrollView = [[UIScrollView alloc] init];
     
     NSInteger count = _modelArray.count;
@@ -138,16 +142,36 @@ typedef NS_ENUM(NSInteger, CYLFont)
                 
                 imageBtn.backgroundColor = [UIColor whiteColor];
                 
-                [self.scrollView insertSubview:imageBtn atIndex:imageBtn.tag];
-                
                 [self.scrollViewBtnArray addObject:imageBtn];
+                
+                //排序子控件
+                sortedArray = [self.scrollViewBtnArray sortedArrayWithOptions:NSSortStable usingComparator:^NSComparisonResult(UIButton *  _Nonnull obj1, UIButton *  _Nonnull obj2) {
+                    
+                    if (obj1.tag > obj2.tag) {
+                        return NSOrderedDescending;
+                    }
+                    return NSOrderedAscending;
+                }];
+                
+                //按顺序将子控件添加到scrollview中
+                for (NSInteger i = 0; i < sortedArray.count; i ++) {
+                    
+                    UIButton *btn = sortedArray[i];
+                    
+                    if (![self.scrollView.subviews containsObject:btn]) {
+                        [self.scrollView addSubview:btn];
+                    }
+                }
+                
                 
             });
         });
+        
+        
     }
 }
 
-
+#pragma mark - 懒加载
 
 //设置pageControll
 - (void)setUpPageControll
@@ -205,6 +229,8 @@ typedef NS_ENUM(NSInteger, CYLFont)
         make.top.equalTo(_coverView).offset(15);
         make.bottom.equalTo(_pageControll.mas_top).offset(12);
     }];
+    
+    NSLog(@"%@",self.scrollViewBtnArray);
 }
 
 
