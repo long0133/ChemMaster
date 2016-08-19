@@ -14,8 +14,14 @@
 #import "CYLWebViewController.h"
 #import "CYLGoToStore.h"
 #import "CYLTextView.h"
+#import "CYLFlowLayOut.h"
+#import "CYLSectonTwoReusableView.h"
+#import "CYLSectionTwoCardCell.h"
+
 
 #define animationDuration .7
+static CGFloat lastOffSetY;
+
 @interface CYLMainViewController ()<CYLHeaderReusableViewDelegate,CYLHightLightCellDelegate>
 @property (nonatomic, strong) NSArray *headerModelArray;
 
@@ -25,18 +31,23 @@
 
 @property (nonatomic, strong)CYLHeaderReusableView *headerView;
 
+@property (nonatomic, strong) CYLSectonTwoReusableView *sectionTwoHeader;
+
+
 @property (nonatomic,strong) CYLWebViewController *webVC;
 
 @property (nonatomic, strong) NSMutableArray *coverViewSubviews;
+
 @end
 
 @implementation CYLMainViewController
 
 static NSString * const reuseIdentifier = @"Cell";
+static NSString * const reuseIdentifierTwo = @"CellTwo";
 
 - (instancetype)init
 {
-    UICollectionViewFlowLayout *flowLayOut = [[UICollectionViewFlowLayout alloc] init];
+    CYLFlowLayOut *flowLayOut = [[CYLFlowLayOut alloc] init];
     
     flowLayOut.headerReferenceSize = CGSizeMake(ScreenW, 200);
     
@@ -54,8 +65,11 @@ static NSString * const reuseIdentifier = @"Cell";
     self.collectionView.backgroundColor = [UIColor getColor:@"DCDCDC"];
 
     [self.collectionView registerClass:[CYLHightLightCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    [self.collectionView registerClass:[CYLSectionTwoCardCell class] forCellWithReuseIdentifier:reuseIdentifierTwo];
     
     [self.collectionView registerClass:[CYLHeaderReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"header"];
+    
+    [self.collectionView registerClass:[CYLSectonTwoReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"sectionTwo"];
     
     [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"footer"];
 
@@ -75,54 +89,132 @@ static NSString * const reuseIdentifier = @"Cell";
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 1;
+    return 2;
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
 
-    return self.highLightArray.count;
+    if (section == 0)
+    {
+        return self.highLightArray.count;
+    }
+    else if (section == 1)
+    {
+        return 3;
+    }
+    
+    return 4;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     CYLHightLightCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    CYLSectionTwoCardCell *cellSectionTwo = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifierTwo forIndexPath:indexPath];
     
-    cell.model = self.highLightArray[indexPath.row];
+    if (indexPath.section == 0) {
+        
+        cell.model = self.highLightArray[indexPath.row];
+        
+        cell.delegate = self;
+        
+        return cell;
+        
+    }
+    else if (indexPath.section == 1)
+    {
+        
+        if (indexPath.row == 0) {
+            
+            //功能1
+            cellSectionTwo.backgroundColor = [UIColor grayColor];
+        }
+        else if (indexPath.row == 1)
+        {
+            //功能2
+            cellSectionTwo.backgroundColor = [UIColor blueColor];
+        }
+        else
+        {
+            //功能3
+            cellSectionTwo.backgroundColor = [UIColor orangeColor];
+        }
+        
+        return cellSectionTwo;
+    }
     
-    cell.delegate = self;
-    
-    return cell;
+    return nil;
 }
 
 - (UICollectionReusableView*)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {
     self.headerView = nil;
-    
+    self.sectionTwoHeader = nil;
     
     if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
         
         self.headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"header" forIndexPath:indexPath];
         
+        self.sectionTwoHeader = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"sectionTwo" forIndexPath:indexPath];
+        
         if (indexPath.section == 0) {
-    
-            [self.headerView  HeaderScrollViewWithModelArray:self.headerModelArray];
+            
+//            [self.headerView  HeaderScrollViewWithModelArray:self.headerModelArray];
             
             self.headerView.delegate = self;
+            
+            return self.headerView;
         }
-        else
+        else if(indexPath.section == 1)
         {
-            self.headerView.backgroundColor = [UIColor getColor:barColor];
+            [self.sectionTwoHeader setSectionTwoReusableView];
+            
+            return self.sectionTwoHeader;
         }
-        
-        
     }
     else
     {
         self.headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"footer" forIndexPath:indexPath];
     }
     
-    return self.headerView;
+    return nil;
+}
+
+
+- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    CGFloat X = cell.frame.origin.x;
+    CGFloat Y = cell.frame.origin.y;
+    
+    CGFloat offSetY = collectionView.contentOffset.y;
+
+    if (indexPath.section == 1) {
+       
+        if (lastOffSetY <= offSetY) {
+            
+            cell.transform = CGAffineTransformMakeTranslation(X, Y + 10);
+            
+            [UIView animateWithDuration:1 delay:0 usingSpringWithDamping:0.9 initialSpringVelocity:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+                
+                cell.transform = CGAffineTransformIdentity;
+                
+            } completion:^(BOOL finished) {
+                
+                
+            }];
+            
+        }
+
+        lastOffSetY = offSetY;
+    }
+    
+//    NSInteger cellCount = [collectionView numberOfItemsInSection:1];
+//    
+//    if (indexPath.row == cellCount - 1) {
+//        lastOffSetY = 0;
+//    }
+    
 }
 
 #pragma CYLHeaderReusableViewDelegate
@@ -172,62 +264,16 @@ static NSString * const reuseIdentifier = @"Cell";
     [self.navigationController presentViewController:_webVC animated:YES completion:nil];
 }
 
-#pragma mark - 懒加载
-
-- (UIView *)coverView
-{
-    if (_coverView == nil) {
-        _coverView = [[UIView alloc] initWithFrame:self.view.frame];
-        _coverView.backgroundColor = [UIColor blackColor];
-        _coverView.alpha = .7;
-        
-        [KWindow addSubview:_coverView];
-        
-        //设置CoverViewde动画
-        _coverView.transform = CGAffineTransformMakeTranslation(0, -ScreenH);
-        
-        [UIView animateWithDuration:animationDuration animations:^{
-            _coverView.transform = CGAffineTransformMakeTranslation(0, 0);
-        }];
-    }
-    return _coverView;
-}
-
-- (NSArray *)headerModelArray
-{
-    if (_headerModelArray == nil) {
-        _headerModelArray = [CYLEditorChociseModel modelArray];
-    }
-   return _headerModelArray;
-}
-
--(NSArray *)highLightArray
-{
-    if (_highLightArray == nil) {
-        _highLightArray = [CYLHightLightModel highLightModelArray];
-    }
-    return _highLightArray;
-}
-
--(CYLWebViewController *)webVC
-{
-    if (_webVC == nil) {
-        _webVC = [[CYLWebViewController alloc] init];
-    }
-    return _webVC;
-}
-
 #pragma 自定义方法
 - (void)showDetailLableWithModel:(CYLEditorChociseModel*)model
 {
     self.coverViewSubviews = [NSMutableArray array];
-
+#warning 下弹框的图片不显示问题待解决
     //image
     UIImageView *imageV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 20, ScreenW, ScreenH/2)];
     imageV.contentMode = UIViewContentModeScaleAspectFit;
     UIButton *imageBtn = (UIButton*)[[self.headerView getScrollView] subviews][self.headerView.currentPage] ;
     imageV.image = imageBtn.currentImage;
-    
     
     //动画
     imageV.contentMode = UIViewContentModeScaleAspectFit;
@@ -321,5 +367,51 @@ static NSString * const reuseIdentifier = @"Cell";
         view.transform = CGAffineTransformMakeTranslation(0, 0);
     }];
 }
+
+#pragma mark - 懒加载
+
+- (UIView *)coverView
+{
+    if (_coverView == nil) {
+        _coverView = [[UIView alloc] initWithFrame:self.view.frame];
+        _coverView.backgroundColor = [UIColor blackColor];
+        _coverView.alpha = .7;
+        
+        [KWindow addSubview:_coverView];
+        
+        //设置CoverViewde动画
+        _coverView.transform = CGAffineTransformMakeTranslation(0, -ScreenH);
+        
+        [UIView animateWithDuration:animationDuration animations:^{
+            _coverView.transform = CGAffineTransformMakeTranslation(0, 0);
+        }];
+    }
+    return _coverView;
+}
+
+- (NSArray *)headerModelArray
+{
+    if (_headerModelArray == nil) {
+        _headerModelArray = [CYLEditorChociseModel modelArray];
+    }
+    return _headerModelArray;
+}
+
+-(NSArray *)highLightArray
+{
+    if (_highLightArray == nil) {
+        _highLightArray = [CYLHightLightModel highLightModelArray];
+    }
+    return _highLightArray;
+}
+
+-(CYLWebViewController *)webVC
+{
+    if (_webVC == nil) {
+        _webVC = [[CYLWebViewController alloc] init];
+    }
+    return _webVC;
+}
+
 
 @end

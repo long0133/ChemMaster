@@ -18,11 +18,11 @@
     
      CYLHightLightModel *rsc = [self modelWithImage:[UIImage imageNamed:@"RSC"] andName:@"rsc"];
     
-    CYLHightLightModel *scifinder = [self modelWithImage:[UIImage imageNamed:@"scifinder"] andName:@"scifinder"];
+//    CYLHightLightModel *scifinder = [self modelWithImage:[UIImage imageNamed:@"scifinder"] andName:@"scifinder"];
+//    
+//    CYLHightLightModel *reaxys = [self modelWithImage:[UIImage imageNamed:@"reaxys"] andName:@"reaxys"];
     
-    CYLHightLightModel *reaxys = [self modelWithImage:[UIImage imageNamed:@"reaxys"] andName:@"reaxys"];
-    
-    NSArray *modelArray = @[acs,wiley,rsc,scifinder,reaxys];
+    NSArray *modelArray = @[acs,wiley,rsc];
     
     return modelArray;
 }

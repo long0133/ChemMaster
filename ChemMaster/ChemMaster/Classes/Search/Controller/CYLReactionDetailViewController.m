@@ -133,7 +133,6 @@ static NSInteger literatureLength = 0;
             lable.numberOfLines = 0;
             lable.font = attr[NSFontAttributeName];
             lable.text = content;
-//            lable.backgroundColor = [UIColor getColor:@"FFE4B5"];
             
             if ([content containsString:@"Recent Literature"]) {
                 

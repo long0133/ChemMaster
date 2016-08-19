@@ -44,6 +44,10 @@
 		4E5F79A21D1CE77C009AD7DC /* CYLResourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F79A11D1CE77C009AD7DC /* CYLResourceViewController.m */; };
 		4E5F79A61D1CECC2009AD7DC /* CYLSpecificResourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F79A51D1CECC2009AD7DC /* CYLSpecificResourceViewController.m */; };
 		4E6286631D1E5DEA005498F0 /* CYLTripleBond.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E6286621D1E5DEA005498F0 /* CYLTripleBond.m */; };
+		4E72983C1D6559E70070160D /* CYLFlowLayOut.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E72983B1D6559E70070160D /* CYLFlowLayOut.m */; };
+		4E7298421D6568AC0070160D /* CYLCardInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7298411D6568AC0070160D /* CYLCardInfoModel.m */; };
+		4E7298481D6573630070160D /* CYLSectonTwoReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7298471D6573630070160D /* CYLSectonTwoReusableView.m */; };
+		4E72984B1D65793C0070160D /* CYLSectionTwoCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E72984A1D65793C0070160D /* CYLSectionTwoCardCell.m */; };
 		4E7E26BD1D408F670074B36C /* CYLGoToStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7E26BC1D408F670074B36C /* CYLGoToStore.m */; };
 		4E7E26BF1D40980C0074B36C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E7E26BE1D40980C0074B36C /* StoreKit.framework */; };
 		4E8B0D4A1D2BC5980086AE67 /* CYLAssistanceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8B0D491D2BC5980086AE67 /* CYLAssistanceView.m */; };
@@ -163,6 +167,14 @@
 		4E5F79A51D1CECC2009AD7DC /* CYLSpecificResourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLSpecificResourceViewController.m; sourceTree = "<group>"; };
 		4E6286611D1E5DEA005498F0 /* CYLTripleBond.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTripleBond.h; sourceTree = "<group>"; };
 		4E6286621D1E5DEA005498F0 /* CYLTripleBond.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLTripleBond.m; sourceTree = "<group>"; };
+		4E72983A1D6559E70070160D /* CYLFlowLayOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLFlowLayOut.h; sourceTree = "<group>"; };
+		4E72983B1D6559E70070160D /* CYLFlowLayOut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLFlowLayOut.m; sourceTree = "<group>"; };
+		4E7298401D6568AC0070160D /* CYLCardInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLCardInfoModel.h; sourceTree = "<group>"; };
+		4E7298411D6568AC0070160D /* CYLCardInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLCardInfoModel.m; sourceTree = "<group>"; };
+		4E7298461D6573630070160D /* CYLSectonTwoReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLSectonTwoReusableView.h; sourceTree = "<group>"; };
+		4E7298471D6573630070160D /* CYLSectonTwoReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLSectonTwoReusableView.m; sourceTree = "<group>"; };
+		4E7298491D65793C0070160D /* CYLSectionTwoCardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLSectionTwoCardCell.h; sourceTree = "<group>"; };
+		4E72984A1D65793C0070160D /* CYLSectionTwoCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLSectionTwoCardCell.m; sourceTree = "<group>"; };
 		4E7E26BB1D408F670074B36C /* CYLGoToStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLGoToStore.h; sourceTree = "<group>"; };
 		4E7E26BC1D408F670074B36C /* CYLGoToStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLGoToStore.m; sourceTree = "<group>"; };
 		4E7E26BE1D40980C0074B36C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -407,6 +419,8 @@
 				4E2A821B1D0EE7950082D785 /* CYLEditorChociseModel.m */,
 				4E2A82231D0FE2860082D785 /* CYLHightLightModel.h */,
 				4E2A82241D0FE2860082D785 /* CYLHightLightModel.m */,
+				4E7298401D6568AC0070160D /* CYLCardInfoModel.h */,
+				4E7298411D6568AC0070160D /* CYLCardInfoModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -418,6 +432,12 @@
 				4E2A82181D0EE0460082D785 /* CYLHeaderReusableView.m */,
 				4E2A82201D0FE1C70082D785 /* CYLHightLightCell.h */,
 				4E2A82211D0FE1C70082D785 /* CYLHightLightCell.m */,
+				4E72983A1D6559E70070160D /* CYLFlowLayOut.h */,
+				4E72983B1D6559E70070160D /* CYLFlowLayOut.m */,
+				4E7298461D6573630070160D /* CYLSectonTwoReusableView.h */,
+				4E7298471D6573630070160D /* CYLSectonTwoReusableView.m */,
+				4E7298491D65793C0070160D /* CYLSectionTwoCardCell.h */,
+				4E72984A1D65793C0070160D /* CYLSectionTwoCardCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -903,11 +923,13 @@
 				4E2A82251D0FE2860082D785 /* CYLHightLightModel.m in Sources */,
 				4E2A81EF1D0D9FE50082D785 /* CYLDrawViewController.m in Sources */,
 				4E5F799F1D1CD312009AD7DC /* NSObject+CYLStorageMethod.m in Sources */,
+				4E72984B1D65793C0070160D /* CYLSectionTwoCardCell.m in Sources */,
 				4E8B0D4A1D2BC5980086AE67 /* CYLAssistanceView.m in Sources */,
 				4E5F79A21D1CE77C009AD7DC /* CYLResourceViewController.m in Sources */,
 				4E2A81E91D0D9FB90082D785 /* CYLMainViewController.m in Sources */,
 				4E5F79821D196551009AD7DC /* CYLnameReactionListViewController.m in Sources */,
 				4E2A81AB1D0D9BCF0082D785 /* AppDelegate.m in Sources */,
+				4E7298481D6573630070160D /* CYLSectonTwoReusableView.m in Sources */,
 				4E6286631D1E5DEA005498F0 /* CYLTripleBond.m in Sources */,
 				4E1377F91D16640500857C36 /* CYLCarbonAtom.m in Sources */,
 				4ECC97C81D1197D800D5000C /* CYLResultViewController.m in Sources */,
@@ -915,6 +937,7 @@
 				4E2A821C1D0EE7950082D785 /* CYLEditorChociseModel.m in Sources */,
 				4E2A81F61D0DA0220082D785 /* CYLSearchViewController.m in Sources */,
 				4E5F798A1D1A492A009AD7DC /* NSString+CYLNsstring.m in Sources */,
+				4E72983C1D6559E70070160D /* CYLFlowLayOut.m in Sources */,
 				4E1377EC1D152A6900857C36 /* CYLDrawView.m in Sources */,
 				4EADD1DA1D2A3CEB00DC7C94 /* CYLShowSaveFileController.m in Sources */,
 				4ECC97CB1D1197E900D5000C /* CYLResultModel.m in Sources */,
@@ -933,6 +956,7 @@
 				4E2A82081D0DA6B40082D785 /* CYLTabBar.m in Sources */,
 				4E2E44E01D2E69E700DFE058 /* CYLAngleBtn.m in Sources */,
 				4ECC97BE1D10F3F800D5000C /* CYLWebViewController.m in Sources */,
+				4E7298421D6568AC0070160D /* CYLCardInfoModel.m in Sources */,
 				4E5F79861D19891E009AD7DC /* CYLTotalSythesisListViewController.m in Sources */,
 				4E5F799C1D1CC525009AD7DC /* CYLDoubleBond.m in Sources */,
 				4E2A81A81D0D9BCF0082D785 /* main.m in Sources */,

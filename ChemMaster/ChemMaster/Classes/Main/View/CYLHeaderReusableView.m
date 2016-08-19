@@ -148,8 +148,6 @@ static BOOL isSorted = 0;
                 [self.scrollView addSubview:imageBtn];
             });
         });
-        
-        
     }
 }
 
@@ -237,9 +235,7 @@ static BOOL isSorted = 0;
         
         isSorted = 1;
         
-        NSLog(@"%@",self.scrollView.subviews);
     }
-    
     
     if (self.scrollView.subviews.count != editorsChoiceNum) {
         
