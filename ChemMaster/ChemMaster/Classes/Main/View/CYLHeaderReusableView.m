@@ -96,23 +96,13 @@ static BOOL isSorted = 0;
 - (void)setUpScrollView
 {
     
-    _scrollView = [[UIScrollView alloc] init];
+    [self scrollView];
     
     NSInteger count = _modelArray.count;
     
-    _scrollView.showsHorizontalScrollIndicator = NO;
-    
-    _scrollView.showsVerticalScrollIndicator = NO;
-    
-    _scrollView.pagingEnabled = YES;
-    
-    _scrollView.delegate = self;
-    
-    _scrollView.contentSize = CGSizeMake(count * self.frame.size.width, _scrollView.frame.size.height);
-    
-    [self addSubview:_scrollView];
-    
     //设置srollview显示内容
+    
+//    self.scrollViewBtnArray = [NSMutableArray array];
     
     for (NSInteger i = 0; i < count; i ++) {
         
@@ -129,10 +119,13 @@ static BOOL isSorted = 0;
                     picPath = dict[@"imageHighResRelativeURL"];
                 }
             }
+            
+            
+            
             dispatch_async(dispatch_get_main_queue(), ^{
-                
-                UIButton *imageBtn = [[UIButton alloc] initWithFrame:CGRectMake(i * ScreenW, 0, ScreenW, self.scrollView.frame.size.height)];
-                
+            
+               UIButton *imageBtn = [[UIButton alloc] initWithFrame:CGRectMake(i * ScreenW, 0, ScreenW, self.scrollView.frame.size.height)];
+
                 imageBtn.tag = i;
                 
                 NSString *imageUrl = [NSString stringWithFormat:@"http://pubs.acs.org/editorschoice/%@",picPath];
@@ -145,37 +138,35 @@ static BOOL isSorted = 0;
                 
                 [self.scrollViewBtnArray addObject:imageBtn];
                 
-                [self.scrollView addSubview:imageBtn];
+                //确保imagebtn在scrollView的subviews里只有一份
+                BOOL flag = true;
+                for (UIButton *btn in self.scrollView.subviews) {
+                    
+                    if (btn.tag == imageBtn.tag) {
+                        
+                        flag = false;
+                    }
+                }
+                
+                if (flag) {
+                    [self.scrollView addSubview:imageBtn];
+                }
+                
             });
         });
     }
 }
 
-#pragma mark - 懒加载
-
 //设置pageControll
 - (void)setUpPageControll
 {
-    NSInteger count = _modelArray.count;
-    
-    _pageControll = [[UIPageControl alloc] init];
-    
-    _pageControll.numberOfPages = count;
-    
-    _pageControll.currentPageIndicatorTintColor = [UIColor yellowColor];
-    
-    _pageControll.pageIndicatorTintColor = [UIColor whiteColor];
-    
-    [self addSubview:_pageControll];
+    [self pageControll];
 }
 
 //设置coverview
 - (void)setUpCoverView
 {
-    _coverView = [[UIView alloc] init];
-    [self addSubview:_coverView];
-    _coverView.backgroundColor = [UIColor blackColor];
-    _coverView.alpha = 0.8;
+    [self coverView];
 }
 
 - (void)layoutSubviews
@@ -276,10 +267,11 @@ static BOOL isSorted = 0;
         //处理概述文字
         NSString *descString = [model.articleAbstract stringByReplacingOccurrencesOfString:@"<p>" withString:@""];
         
+        descString = [descString stringByReplacingOccurrencesOfString:@"\t" withString:@" "];
         descString = [descString stringByReplacingOccurrencesOfString:@"\n" withString:@" "];
         descString = [descString stringByReplacingOccurrencesOfString:@"&#x" withString:@" "];
         descString = [descString stringByReplacingOccurrencesOfString:@";" withString:@" "];
-        descString = [NSString stringWithFormat:@"  %@",descString];
+        descString = [NSString stringWithFormat:@"\t%@",descString];
         descString = [descString flattenHTML:descString trimWhiteSpace:NO];
         
         model.articleAbstract = descString;
@@ -297,10 +289,12 @@ static BOOL isSorted = 0;
 {
     CYLEditorChociseModel *model = self.modelArray[btn.tag];
     
+    NSLog(@"%@",self.scrollViewBtnArray);
+    
     btn.userInteractionEnabled = NO;
     
-    if ([self.delegate respondsToSelector:@selector(HeaderReusableView:didChoiceEditorModel:)]) {
-        [self.delegate HeaderReusableView:self didChoiceEditorModel:model];
+    if ([self.delegate respondsToSelector:@selector(HeaderReusableView:didChoiceEditorModel:andSubviews:andCurrentPage:)]) {
+        [self.delegate HeaderReusableView:self didChoiceEditorModel:model andSubviews:self.scrollViewBtnArray andCurrentPage:btn.tag];
     }
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -308,12 +302,69 @@ static BOOL isSorted = 0;
     });
 }
 
-- (UIScrollView *)getScrollView
+- (NSMutableArray *)getScrollViewSubviews
 {
-    return self.scrollView;
+    
+    return self.scrollViewBtnArray;
 }
 
 #pragma mark - 懒加载
+
+- (UIScrollView *)scrollView
+{
+    if (_scrollView == nil) {
+        _scrollView = [[UIScrollView alloc] init];
+        
+        NSInteger count = _modelArray.count;
+        
+        _scrollView.showsHorizontalScrollIndicator = NO;
+        
+        _scrollView.showsVerticalScrollIndicator = NO;
+        
+        _scrollView.pagingEnabled = YES;
+        
+        _scrollView.delegate = self;
+        
+        _scrollView.contentSize = CGSizeMake(count * self.frame.size.width, _scrollView.frame.size.height);
+        
+        [self addSubview:_scrollView];
+        
+    }
+    return _scrollView;
+}
+
+- (UIPageControl *)pageControll
+{
+    if (_pageControll == nil) {
+        
+        NSInteger count = _modelArray.count;
+        
+        _pageControll = [[UIPageControl alloc] init];
+        
+        _pageControll.numberOfPages = count;
+        
+        _pageControll.currentPageIndicatorTintColor = [UIColor yellowColor];
+        
+        _pageControll.pageIndicatorTintColor = [UIColor whiteColor];
+        
+        [self addSubview:_pageControll];
+        
+    }
+    return _pageControll;
+}
+
+- (UIView *)coverView
+{
+    if (_coverView == nil)
+    {
+        _coverView = [[UIView alloc] init];
+        [self addSubview:_coverView];
+        _coverView.backgroundColor = [UIColor blackColor];
+        _coverView.alpha = 0.8;
+        
+    }
+    return _coverView;
+}
 
 - (NSMutableArray *)scrollViewBtnArray
 {
@@ -348,7 +399,6 @@ static BOOL isSorted = 0;
     }
     return _journalLable;
 }
-
 
 @end
 

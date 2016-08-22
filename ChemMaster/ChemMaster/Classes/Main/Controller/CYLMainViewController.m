@@ -159,7 +159,7 @@ static NSString * const reuseIdentifierTwo = @"CellTwo";
         
         if (indexPath.section == 0) {
             
-//            [self.headerView  HeaderScrollViewWithModelArray:self.headerModelArray];
+            [self.headerView  HeaderScrollViewWithModelArray:self.headerModelArray];
             
             self.headerView.delegate = self;
             
@@ -219,14 +219,14 @@ static NSString * const reuseIdentifierTwo = @"CellTwo";
 
 #pragma CYLHeaderReusableViewDelegate
 //显示webView
-- (void)HeaderReusableView:(CYLHeaderReusableView *)View didChoiceEditorModel:(CYLEditorChociseModel *)model
+- (void)HeaderReusableView:(CYLHeaderReusableView *)View didChoiceEditorModel:(CYLEditorChociseModel *)model andSubviews:(NSMutableArray *)subViews andCurrentPage:(NSInteger)currentPage
 {
 
     self.coverView = nil;
     
     [self coverView];
     
-    [self showDetailLableWithModel:model];
+    [self showDetailLableWithModel:model andSubViews:subViews andCurrentPagr:currentPage];
     
 }
 
@@ -265,14 +265,14 @@ static NSString * const reuseIdentifierTwo = @"CellTwo";
 }
 
 #pragma 自定义方法
-- (void)showDetailLableWithModel:(CYLEditorChociseModel*)model
+- (void)showDetailLableWithModel:(CYLEditorChociseModel*)model andSubViews:(NSMutableArray*)subviews andCurrentPagr:(NSInteger)page
 {
     self.coverViewSubviews = [NSMutableArray array];
 #warning 下弹框的图片不显示问题待解决
     //image
     UIImageView *imageV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 20, ScreenW, ScreenH/2)];
     imageV.contentMode = UIViewContentModeScaleAspectFit;
-    UIButton *imageBtn = (UIButton*)[[self.headerView getScrollView] subviews][self.headerView.currentPage] ;
+    UIButton *imageBtn = (UIButton*)subviews[page] ;
     imageV.image = imageBtn.currentImage;
     
     //动画

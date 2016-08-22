@@ -10,7 +10,7 @@
 @class CYLHeaderReusableView;
 @class CYLEditorChociseModel;
 @protocol CYLHeaderReusableViewDelegate <NSObject>
-- (void)HeaderReusableView:(CYLHeaderReusableView*)View didChoiceEditorModel:(CYLEditorChociseModel*)model;
+- (void)HeaderReusableView:(CYLHeaderReusableView*)View didChoiceEditorModel:(CYLEditorChociseModel*)model andSubviews:(NSMutableArray*)subViews andCurrentPage:(NSInteger)currentPage;
 @end
 
 
@@ -24,5 +24,5 @@
 
 - (void)HeaderScrollViewWithModelArray:(NSArray*)modelArray;
 
-- (UIScrollView*)getScrollView;
+- (NSMutableArray*)getScrollViewSubviews;
 @end
