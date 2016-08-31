@@ -42,10 +42,11 @@
 #define secondsOfTwoDay 259200
 #define currentDate [NSDate date]
 
-//区别DetailView当前显示的内容属于哪一个类别
+//区别DetailView当前显示的内容属于哪一个类别(各个控制器储存文件的后缀名)
 #define NameReactionCategory @"ANameReaction"
 #define TotalSynthesisCategory @"ATotalSynthesis"
 #define HightLightCategory @"AHighLight"
+#define DrawViewBondSaveArray @"_bondSaveArray"
 
 //模块id
 #define nameReactionList @"nameractionlist"
@@ -59,3 +60,9 @@
 
 //图片轮播器展示的图片数
 #define editorsChoiceNum 7
+
+
+#define startPointDV @"startPoint"
+#define endPointDV @"endPoint"
+#define bondClassDV @"class"
+#define structureInCache @"saveStruct"

@@ -86,6 +86,8 @@
 @property (nonatomic, assign) CGPoint point5;
 @property (nonatomic, assign) CGPoint point6;
 /////////////////////////给出建议线条//////////////////////////////////////////
+//存入字典--》每个键对应一个字典 {startP：  endP:  status: }
+@property (nonatomic, strong) NSMutableSet *saveArray;
 @end
 
 @implementation CYLDrawView
@@ -141,6 +143,8 @@
         bond.bezierPath.lineWidth = BondLineWidth;
         bond.bezierPath.lineCapStyle = kCGLineCapRound;
         [bond.bezierPath stroke];
+        
+        [self saveBondInArray:bond];
         
     }
 }
@@ -239,8 +243,6 @@
     _isRedo = isRedo;
     
     id obj = self.operationArray.lastObject;
-    
-    NSLog(@"%@",[obj class]);
     
     if ([obj isKindOfClass:[CYLChemicalBond class]]) {
         
@@ -588,12 +590,15 @@
             
             for (CYLChemicalBond *bond in self.BondArray)
             {
+                
                 //想要添加双键
                 if (![bond isKindOfClass:[CYLDoubleBond class]])
                 {//如果不是双键的话
                     
                     if ([self isStartPoint:tapPoint aroundPoint:bond.midPoint WithRadius:(CYLSuggestBondLength/2)])
                     {//找到待转变的化学键
+                        
+//                        NSLog(@"%d", bond.isAttached);
                         
                         doubleBond.startP = bond.startP;
                         doubleBond.endP = bond.endP;
@@ -1174,6 +1179,14 @@
 //}
 //
 #pragma mark - 懒加载
+- (NSMutableSet *)saveArray
+{
+    if (_saveArray == nil) {
+        _saveArray = [NSMutableSet set];
+    }
+    return _saveArray;
+}
+
 - (CYLToolBarView *)tooBarView
 {
     if (_tooBarView == nil) {
@@ -1289,7 +1302,7 @@
 - (UIView *)assistanceView
 {
     if (_assistanceView == nil) {
-        _assistanceView = [[CYLAssistanceView alloc] initWithFrame:CGRectMake(0, 500, 33, 33)];
+        _assistanceView = [[CYLAssistanceView alloc] initWithFrame:CGRectMake(0, 500, 33, 66)];
         _assistanceView.delegate = self;
         [_assistanceView addGestureRecognizer:[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(dragToMove:)]];
         [self addSubview:_assistanceView];
@@ -1483,6 +1496,31 @@
     return NO;
 }
 
+#warning 数组存储问题待解决
+//传入bong存入saveArrray
+- (void)saveBondInArray:(CYLChemicalBond*)bond
+{
+    NSData *bondData = [NSKeyedArchiver archivedDataWithRootObject:bond];
+    
+    [self.saveArray addObject:bondData];
+}
+
+//存储分子结构
+- (void)assistanceViewDidClickSaveBtn:(UIButton *)btn
+{
+    NSMutableArray *arr = [NSMutableArray array];
+    
+    for (NSDictionary *dict in self.saveArray) {
+        
+        [arr addObject:dict];
+        
+    }
+    
+    if ([self.delegate respondsToSelector:@selector(DrawViewShowAlertControllerWithSaveArray:)]) {
+        [self.delegate DrawViewShowAlertControllerWithSaveArray:arr];
+    }
+}
+
 #pragma mark - 辅助view的代理 点击截屏
 - (void)assistanceViewDidClickClipScrennBtn:(UIButton*)btn
 {
@@ -1522,6 +1560,8 @@
         
     }];
 }
+
+
 
 - (void) image: (UIImage *)image didFinishSavingWithError: (NSError *) error contextInfo: (void *) contextInfo;
 {

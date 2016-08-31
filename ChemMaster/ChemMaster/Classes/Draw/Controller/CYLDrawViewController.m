@@ -10,7 +10,7 @@
 #import "CYLDrawView.h"
 #import "CYLToolBarView.h"
 #import <objc/runtime.h>
-@interface CYLDrawViewController ()<CYLToolBarViewDelegate>
+@interface CYLDrawViewController ()<CYLToolBarViewDelegate,CYLDrawViewDelegate>
 
 @property (nonatomic, strong) CYLDrawView *drawView;
 
@@ -22,6 +22,7 @@
 {
     self.drawView = [[CYLDrawView alloc] initWithFrame:CGRectMake(0, 55, ScreenW, ScreenH - 44)];
     self.drawView.tooBarView.delegate = self;
+    self.drawView.delegate = self;
     self.view = self.drawView;
 }
 
@@ -95,5 +96,43 @@
 - (void)toolBarChoseOtherAtom
 {
     self.drawView.isShowOtherAtom = !self.drawView.isShowOtherAtom;
+}
+
+#pragma mark - DrawViewDelegate
+/**
+ *  点击save时，将弹出alert要求填入存储文件的名称
+ *
+ *  @param array 存储bond的集合
+ */
+- (void)DrawViewShowAlertControllerWithSaveArray:(NSMutableArray *)array
+{
+    
+    UIAlertController *alertC = [UIAlertController alertControllerWithTitle:@"请输入化合物的名字" message:nil preferredStyle:UIAlertControllerStyleAlert];
+    
+    
+    [alertC addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        
+        textField.placeholder = @"化合物名称";
+        
+    }];
+    
+    __block NSString *name = nil;
+    
+    UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        
+        name = alertC.textFields.firstObject.text;
+        
+        
+        if (array.count) {
+            
+            [array writeToFile:[cachePath stringByAppendingPathComponent:[name stringByAppendingString:DrawViewBondSaveArray]] atomically:YES];
+        }
+        
+    }];
+    
+    [alertC addAction:action];
+    
+    [self presentViewController:alertC animated:YES completion:nil];
+    
 }
 @end

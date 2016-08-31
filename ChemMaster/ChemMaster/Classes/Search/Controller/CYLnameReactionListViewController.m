@@ -36,7 +36,7 @@ static NSString *reuse = @"reuse";
 - (NSMutableArray *)listArray
 {
     if (_listArray == nil) {
-        _listArray = [NSMutableArray array];
+        _listArray = [NSMutableArray array];        
     }
     return _listArray;
 }
@@ -44,6 +44,7 @@ static NSString *reuse = @"reuse";
 - (NSMutableArray *)filtedListArray
 {
     if (_filtedListArray == nil) {
+        
         _filtedListArray = [self.listArray mutableCopy];
     }
     return _filtedListArray;
@@ -142,20 +143,13 @@ static NSString *reuse = @"reuse";
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-//    return 1;
+
+    
     return self.filtedListArray.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-//    if (self.filtedListArray.count == 0)
-//    {
-//        return self.listArray.count;
-//    }
-//    else
-//    {
-//        return self.filtedListArray.count;
-//    }
     
     return 1;
 }
@@ -239,6 +233,7 @@ static NSString *reuse = @"reuse";
     
    NSData *picData = [NSData dataWithContentsOfFile:[bundlePath stringByAppendingPathComponent:self.filtedListArray[indexPath.section][TakeName]]];
     
+    
     UIImage *image = [UIImage imageWithData:picData];
     
     //30 为cell的lable高度
@@ -313,6 +308,7 @@ static NSString *reuse = @"reuse";
         
         [listVC.listArray writeToFile:[cachePath stringByAppendingPathComponent:shouldReloadFileName] atomically:YES];
     }
+    
     return listVC;
 }
 

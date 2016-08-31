@@ -188,10 +188,11 @@ static NSString * const reuseIdentifierTwo = @"CellTwo";
     CGFloat Y = cell.frame.origin.y;
     
     CGFloat offSetY = collectionView.contentOffset.y;
-
+    
     if (indexPath.section == 1) {
        
-        if (lastOffSetY <= offSetY) {
+        if (lastOffSetY < offSetY)
+        {
             
             cell.transform = CGAffineTransformMakeTranslation(X, Y + 10);
             
@@ -205,16 +206,16 @@ static NSString * const reuseIdentifierTwo = @"CellTwo";
             }];
             
         }
-
+        
         lastOffSetY = offSetY;
     }
     
-//    NSInteger cellCount = [collectionView numberOfItemsInSection:1];
-//    
-//    if (indexPath.row == cellCount - 1) {
-//        lastOffSetY = 0;
-//    }
+    NSInteger cellCount = [collectionView numberOfItemsInSection:1];
     
+    if (indexPath.row == cellCount - 1) {
+        lastOffSetY = 0;
+    }
+
 }
 
 #pragma CYLHeaderReusableViewDelegate
@@ -268,7 +269,7 @@ static NSString * const reuseIdentifierTwo = @"CellTwo";
 - (void)showDetailLableWithModel:(CYLEditorChociseModel*)model andSubViews:(NSMutableArray*)subviews andCurrentPagr:(NSInteger)page
 {
     self.coverViewSubviews = [NSMutableArray array];
-#warning 下弹框的图片不显示问题待解决
+    
     //image
     UIImageView *imageV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 20, ScreenW, ScreenH/2)];
     imageV.contentMode = UIViewContentModeScaleAspectFit;

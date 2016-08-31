@@ -48,6 +48,7 @@
 		4E7298421D6568AC0070160D /* CYLCardInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7298411D6568AC0070160D /* CYLCardInfoModel.m */; };
 		4E7298481D6573630070160D /* CYLSectonTwoReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7298471D6573630070160D /* CYLSectonTwoReusableView.m */; };
 		4E72984B1D65793C0070160D /* CYLSectionTwoCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E72984A1D65793C0070160D /* CYLSectionTwoCardCell.m */; };
+		4E72984E1D6F365D0070160D /* LaunchAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E72984D1D6F365D0070160D /* LaunchAnimationController.m */; };
 		4E7E26BD1D408F670074B36C /* CYLGoToStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7E26BC1D408F670074B36C /* CYLGoToStore.m */; };
 		4E7E26BF1D40980C0074B36C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E7E26BE1D40980C0074B36C /* StoreKit.framework */; };
 		4E8B0D4A1D2BC5980086AE67 /* CYLAssistanceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8B0D491D2BC5980086AE67 /* CYLAssistanceView.m */; };
@@ -175,6 +176,8 @@
 		4E7298471D6573630070160D /* CYLSectonTwoReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLSectonTwoReusableView.m; sourceTree = "<group>"; };
 		4E7298491D65793C0070160D /* CYLSectionTwoCardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLSectionTwoCardCell.h; sourceTree = "<group>"; };
 		4E72984A1D65793C0070160D /* CYLSectionTwoCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLSectionTwoCardCell.m; sourceTree = "<group>"; };
+		4E72984C1D6F365D0070160D /* LaunchAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchAnimationController.h; sourceTree = "<group>"; };
+		4E72984D1D6F365D0070160D /* LaunchAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchAnimationController.m; sourceTree = "<group>"; };
 		4E7E26BB1D408F670074B36C /* CYLGoToStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLGoToStore.h; sourceTree = "<group>"; };
 		4E7E26BC1D408F670074B36C /* CYLGoToStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLGoToStore.m; sourceTree = "<group>"; };
 		4E7E26BE1D40980C0074B36C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -334,6 +337,7 @@
 		4E2A81D91D0D9E080082D785 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4E72984F1D6F36630070160D /* LaunchAnimationController */,
 				4E2A82091D0DA7A40082D785 /* Tool */,
 				4E2A81F71D0DA0400082D785 /* TabbarController */,
 				4E2A81DA1D0D9E080082D785 /* Draw */,
@@ -636,6 +640,15 @@
 			name = ResourceViewController;
 			sourceTree = "<group>";
 		};
+		4E72984F1D6F36630070160D /* LaunchAnimationController */ = {
+			isa = PBXGroup;
+			children = (
+				4E72984C1D6F365D0070160D /* LaunchAnimationController.h */,
+				4E72984D1D6F365D0070160D /* LaunchAnimationController.m */,
+			);
+			name = LaunchAnimationController;
+			sourceTree = "<group>";
+		};
 		4E7E26C01D409E420074B36C /* gotoStore */ = {
 			isa = PBXGroup;
 			children = (
@@ -932,6 +945,7 @@
 				4E7298481D6573630070160D /* CYLSectonTwoReusableView.m in Sources */,
 				4E6286631D1E5DEA005498F0 /* CYLTripleBond.m in Sources */,
 				4E1377F91D16640500857C36 /* CYLCarbonAtom.m in Sources */,
+				4E72984E1D6F365D0070160D /* LaunchAnimationController.m in Sources */,
 				4ECC97C81D1197D800D5000C /* CYLResultViewController.m in Sources */,
 				4ECC97D11D12818A00D5000C /* CYLReactionDetailViewController.m in Sources */,
 				4E2A821C1D0EE7950082D785 /* CYLEditorChociseModel.m in Sources */,

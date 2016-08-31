@@ -10,6 +10,11 @@
 #import "CYLToolBarView.h"
 #import "CYLChemicalBond.h"
 
+@protocol CYLDrawViewDelegate <NSObject>
+
+- (void)DrawViewShowAlertControllerWithSaveArray:(NSMutableArray*)array;
+
+@end
 
 @interface CYLDrawView : UIView
 
@@ -35,4 +40,6 @@
 //选中的原子
 @property (nonatomic, strong) NSString *atomName;
 @property (nonatomic, strong) UIColor *atomColor;
+
+@property (nonatomic, strong) id<CYLDrawViewDelegate> delegate;
 @end

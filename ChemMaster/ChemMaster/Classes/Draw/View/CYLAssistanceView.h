@@ -13,6 +13,7 @@
 @protocol CYLAssistanceViewDelegate  <NSObject>
 
 - (void)assistanceViewDidClickClipScrennBtn:(UIButton*)btn;
+- (void)assistanceViewDidClickSaveBtn:(UIButton*)btn;
 
 @end
 

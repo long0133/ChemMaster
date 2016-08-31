@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "CYLCarbonAtom.h"
 
-@interface CYLChemicalBond : NSObject
+@interface CYLChemicalBond : NSObject<NSCoding>
 
 @property (nonatomic, assign) CGMutablePathRef bondPath;
 @property (nonatomic, strong) UIBezierPath *bezierPath;
@@ -23,7 +23,15 @@
 
 @property (nonatomic,assign) CGPoint AttachPoint;
 
+//是否与其他键相连
+@property (nonatomic, assign) BOOL isAttached;
+
+@property (nonatomic, copy) NSString *BondClass;
+
 
 + (instancetype)CreatChemicalBondWithCarbon;
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder;
+- (void)encodeWithCoder:(NSCoder *)aCoder;
 
 @end
