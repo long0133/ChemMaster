@@ -41,5 +41,7 @@
 @property (nonatomic, strong) NSString *atomName;
 @property (nonatomic, strong) UIColor *atomColor;
 
+@property (nonatomic, strong) NSData *StructureData;
+
 @property (nonatomic, strong) id<CYLDrawViewDelegate> delegate;
 @end

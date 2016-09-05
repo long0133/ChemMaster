@@ -46,7 +46,7 @@
 {
     if (_saveBtn == nil) {
         _saveBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _saveBtn.frame = CGRectMake(0, 33, 33, 33);
+        _saveBtn.frame = CGRectMake(0, 33, 30, 30);
         [_saveBtn setBackgroundImage:[UIImage imageCompressForSize:[UIImage imageNamed:@"Save-icon"] targetSize:CGSizeMake(33, 33)] forState:UIControlStateNormal];
         _saveBtn.alpha = .3;
         [_saveBtn addTarget:self action:@selector(saveStructure) forControlEvents:UIControlEventTouchUpInside];

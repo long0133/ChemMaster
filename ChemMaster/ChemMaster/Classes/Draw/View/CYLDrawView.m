@@ -1570,7 +1570,9 @@
         self.alpha = 0.0;
         
     } completion:^(BOOL finished) {
+        
         self.alpha = 1.0;
+    
     }];
 }
 

@@ -43,10 +43,10 @@ typedef NS_ENUM(NSInteger, CYLFont)
 
 @property (nonatomic,strong) CYLEditorChociseModel *currentModel;
 
+@property (nonatomic, strong) NSArray *sortedArray;
+
 @end
 
-//指示scroll数组是否已经排序过
-static BOOL isSorted = 0;
 
 @implementation CYLHeaderReusableView
 
@@ -102,8 +102,6 @@ static BOOL isSorted = 0;
     
     //设置srollview显示内容
     
-//    self.scrollViewBtnArray = [NSMutableArray array];
-    
     for (NSInteger i = 0; i < count; i ++) {
         
         CYLEditorChociseModel *model = _modelArray[i];
@@ -138,20 +136,25 @@ static BOOL isSorted = 0;
                 
                 [self.scrollViewBtnArray addObject:imageBtn];
                 
-                //确保imagebtn在scrollView的subviews里只有一份
-                BOOL flag = true;
-                for (UIButton *btn in self.scrollView.subviews) {
+                //排序子控件
+                self.sortedArray = [self.scrollViewBtnArray sortedArrayWithOptions:NSSortStable usingComparator:^NSComparisonResult(UIButton *  _Nonnull obj1, UIButton *  _Nonnull obj2) {
                     
-                    if (btn.tag == imageBtn.tag) {
+                    if (obj1.tag > obj2.tag) {
+                        return NSOrderedDescending;
+                    }
+                    return NSOrderedAscending;
+                }];
+                
+                //确保imagebtn在scrollView的subviews里只有一份
+                
+                if (self.sortedArray.count == editorsChoiceNum) {
+                    
+                    for (UIButton *btn in self.sortedArray) {
+                      
+                        [self.scrollView addSubview:btn];
                         
-                        flag = false;
                     }
                 }
-                
-                if (flag) {
-                    [self.scrollView addSubview:imageBtn];
-                }
-                
             });
         });
     }
@@ -200,39 +203,6 @@ static BOOL isSorted = 0;
         make.top.equalTo(_coverView).offset(15);
         make.bottom.equalTo(_pageControll.mas_top).offset(12);
     }];
-    
-    if (!isSorted)
-    {
-        NSArray *sortedArray = [NSArray array];
-        
-        //排序子控件
-        sortedArray = [self.scrollViewBtnArray sortedArrayWithOptions:NSSortStable usingComparator:^NSComparisonResult(UIButton *  _Nonnull obj1, UIButton *  _Nonnull obj2) {
-            
-            if (obj1.tag > obj2.tag) {
-                return NSOrderedDescending;
-            }
-            return NSOrderedAscending;
-        }];
-        
-        //按顺序将子控件添加到scrollview中
-        for (NSInteger i = 0; i < sortedArray.count; i ++) {
-            
-            UIButton *btn = sortedArray[i];
-            
-            if (![self.scrollView.subviews containsObject:btn]) {
-                [self.scrollView addSubview:btn];
-            }
-        }
-        
-        isSorted = 1;
-        
-    }
-    
-    if (self.scrollView.subviews.count != editorsChoiceNum) {
-        
-        isSorted = 0;
-    }
-    
 }
 
 
@@ -289,12 +259,10 @@ static BOOL isSorted = 0;
 {
     CYLEditorChociseModel *model = self.modelArray[btn.tag];
     
-    NSLog(@"%@",self.scrollViewBtnArray);
-    
     btn.userInteractionEnabled = NO;
     
     if ([self.delegate respondsToSelector:@selector(HeaderReusableView:didChoiceEditorModel:andSubviews:andCurrentPage:)]) {
-        [self.delegate HeaderReusableView:self didChoiceEditorModel:model andSubviews:self.scrollViewBtnArray andCurrentPage:btn.tag];
+        [self.delegate HeaderReusableView:self didChoiceEditorModel:model andSubviews:self.scrollView.subviews andCurrentPage:btn.tag];
     }
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{

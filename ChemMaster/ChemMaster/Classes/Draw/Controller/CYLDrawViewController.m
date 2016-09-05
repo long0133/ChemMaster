@@ -29,9 +29,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"读取" style:UIBarButtonItemStyleDone target:self action:@selector(readFromCache)];
 }
-
-
 
 #pragma mark - toolBar delegate
 - (void)toolBarDidClickSelectBtn
@@ -133,6 +134,12 @@
     [alertC addAction:action];
     
     [self presentViewController:alertC animated:YES completion:nil];
+    
+}
+
+//从cache中读取data转为分子式
+- (void)readFromCache
+{
     
 }
 @end

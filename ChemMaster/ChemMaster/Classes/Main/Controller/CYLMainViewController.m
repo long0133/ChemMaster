@@ -220,7 +220,7 @@ static NSString * const reuseIdentifierTwo = @"CellTwo";
 
 #pragma CYLHeaderReusableViewDelegate
 //显示webView
-- (void)HeaderReusableView:(CYLHeaderReusableView *)View didChoiceEditorModel:(CYLEditorChociseModel *)model andSubviews:(NSMutableArray *)subViews andCurrentPage:(NSInteger)currentPage
+- (void)HeaderReusableView:(CYLHeaderReusableView *)View didChoiceEditorModel:(CYLEditorChociseModel *)model andSubviews:(NSArray *)subViews andCurrentPage:(NSInteger)currentPage
 {
 
     self.coverView = nil;
@@ -266,7 +266,7 @@ static NSString * const reuseIdentifierTwo = @"CellTwo";
 }
 
 #pragma 自定义方法
-- (void)showDetailLableWithModel:(CYLEditorChociseModel*)model andSubViews:(NSMutableArray*)subviews andCurrentPagr:(NSInteger)page
+- (void)showDetailLableWithModel:(CYLEditorChociseModel*)model andSubViews:(NSArray*)subviews andCurrentPagr:(NSInteger)page
 {
     self.coverViewSubviews = [NSMutableArray array];
     
@@ -287,7 +287,7 @@ static NSString * const reuseIdentifierTwo = @"CellTwo";
     //text
     CGFloat Y = CGRectGetMaxY(imageV.frame);
     CYLTextView *textView = [[CYLTextView alloc] initWithFrame:CGRectMake(0, Y, ScreenW, ScreenH - Y - 60)];
-    textView.font = [UIFont systemFontOfSize:17];
+    textView.font = [UIFont systemFontOfSize:15];
     textView.backgroundColor = [UIColor getColor:@"edef9a"];
     
     //内容
