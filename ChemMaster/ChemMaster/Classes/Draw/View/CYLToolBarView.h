@@ -6,6 +6,8 @@
 //  Copyright © 2016年 GARY. All rights reserved.
 //
 
+ /// 主界面上方的功能条
+
 #import <UIKit/UIKit.h>
 
 @class CYLToolBarView;

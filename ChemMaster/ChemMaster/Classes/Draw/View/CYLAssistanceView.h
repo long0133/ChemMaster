@@ -6,6 +6,9 @@
 //  Copyright © 2016年 GARY. All rights reserved.
 //
 
+/// 可以拖拽的辅助功能条
+
+
 #import <UIKit/UIKit.h>
 
 @class CYLAssistanceView;

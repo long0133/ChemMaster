@@ -65,4 +65,7 @@
 #define startPointDV @"startPoint"
 #define endPointDV @"endPoint"
 #define bondClassDV @"class"
+#define FirstbezierPath @"firstPath"
+#define SecondbezierPath @"SecondPath"
+#define ThirdbezierPath @"ThirdPath"
 #define structureInCache @"saveStruct"

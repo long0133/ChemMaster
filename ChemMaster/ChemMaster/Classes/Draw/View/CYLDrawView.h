@@ -5,6 +5,9 @@
 //  Created by GARY on 16/6/18.
 //  Copyright © 2016年 GARY. All rights reserved.
 //
+/**
+ *  进行绘制的主界面
+ */
 
 #import <UIKit/UIKit.h>
 #import "CYLToolBarView.h"
@@ -41,7 +44,7 @@
 @property (nonatomic, strong) NSString *atomName;
 @property (nonatomic, strong) UIColor *atomColor;
 
-@property (nonatomic, strong) NSData *StructureData;
+@property (nonatomic, strong) NSArray *StructureArray;
 
 @property (nonatomic, strong) id<CYLDrawViewDelegate> delegate;
 @end

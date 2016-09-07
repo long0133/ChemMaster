@@ -143,9 +143,6 @@
         bond.bezierPath.lineWidth = BondLineWidth;
         bond.bezierPath.lineCapStyle = kCGLineCapRound;
         [bond.bezierPath stroke];
-        
-        [self saveBondInArray:bond];
-        
     }
 }
 
@@ -565,6 +562,11 @@
     [self setNeedsDisplay];
 }
 
+//- (CYLDoubleBond*)DoubleBondFromBond:(CYLChemicalBond*)bond
+//{
+//    
+//}
+
 #pragma mark - 点击创建双键，三键
 - (void)tap:(UITapGestureRecognizer*)tap
 {
@@ -597,8 +599,6 @@
                     
                     if ([self isStartPoint:tapPoint aroundPoint:bond.midPoint WithRadius:(CYLSuggestBondLength/2)])
                     {//找到待转变的化学键
-                        
-//                        NSLog(@"%d", bond.isAttached);
                         
                         doubleBond.startP = bond.startP;
                         doubleBond.endP = bond.endP;
@@ -1496,29 +1496,46 @@
     return NO;
 }
 
-#warning 数组存储问题待解决
-//传入bong存入saveArrray
-- (void)saveBondInArray:(CYLChemicalBond*)bond
-{
-    NSData *bondData = [NSKeyedArchiver archivedDataWithRootObject:bond];
-    
-    [self.saveArray addObject:bondData];
-}
-
 //存储分子结构
 - (void)assistanceViewDidClickSaveBtn:(UIButton *)btn
 {
     NSMutableArray *arr = [NSMutableArray array];
     
-    for (NSDictionary *dict in self.saveArray) {
+    for (CYLChemicalBond *bond in self.BondArray) {
         
-        [arr addObject:dict];
+        NSData *bondData = [NSKeyedArchiver archivedDataWithRootObject:bond];
+        
+        [arr addObject:bondData];
         
     }
     
     if ([self.delegate respondsToSelector:@selector(DrawViewShowAlertControllerWithSaveArray:)]) {
         [self.delegate DrawViewShowAlertControllerWithSaveArray:arr];
     }
+}
+
+#warning 解档获得了bond 待显示在画板上，待提取绘制双三键的代码
+#pragma mark - 传入结构dataArray,解档后显示在界面
+- (void)setStructureArray:(NSArray *)StructureArray
+{
+    //清除屏幕
+    [self setIsClear:YES];
+    
+    _StructureArray = StructureArray;
+    
+    NSMutableArray *bondArray = [NSMutableArray array];
+    
+    for (NSData *bondData in StructureArray) {
+        
+        CYLChemicalBond *bond = [NSKeyedUnarchiver unarchiveObjectWithData:bondData];
+        
+        [bondArray addObject:bond];
+    }
+    
+    self.BondArray = bondArray;
+    
+    [self setNeedsDisplay];
+    
 }
 
 #pragma mark - 辅助view的代理 点击截屏

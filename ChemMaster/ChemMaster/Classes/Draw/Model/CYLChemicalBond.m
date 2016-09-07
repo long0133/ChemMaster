@@ -41,8 +41,6 @@
         self.startP = [(NSValue*)[coder decodeObjectForKey:startPointDV] CGPointValue];
         self.endP = [(NSValue*)[coder decodeObjectForKey:endPointDV] CGPointValue];
         self.BondClass = [coder decodeObjectForKey:bondClassDV];
-        
-        
     }
     return self;
 }
