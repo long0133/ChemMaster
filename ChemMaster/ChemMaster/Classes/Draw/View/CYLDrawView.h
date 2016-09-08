@@ -15,7 +15,8 @@
 
 @protocol CYLDrawViewDelegate <NSObject>
 
-- (void)DrawViewShowAlertControllerWithSaveArray:(NSMutableArray*)array;
+//传入化学键以及原子的数组
+- (void)DrawViewShowAlertControllerWithSaveArray:(NSMutableArray*)array andAtomArray:(NSMutableArray*)atomArray;
 
 @end
 
@@ -44,7 +45,10 @@
 @property (nonatomic, strong) NSString *atomName;
 @property (nonatomic, strong) UIColor *atomColor;
 
+//化学键归档数组
 @property (nonatomic, strong) NSArray *StructureArray;
+//原子归档数组
+@property (nonatomic, strong) NSArray *AtomUnArchiveArray;
 
 @property (nonatomic, strong) id<CYLDrawViewDelegate> delegate;
 @end

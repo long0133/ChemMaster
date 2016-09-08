@@ -11,6 +11,7 @@
 #import "CYLTripleBond.h"
 #import "CYLAssistanceView.h"
 #import "CYLTools.h"
+#import "CYLButton.h"
 
 #define toolBarViewCololr @"FDF5E6"
 //highlightView 和 AttachView的半径
@@ -1053,7 +1054,8 @@
     CGPoint tapPoint = [tap locationInView:self];
     NSInteger count = 0;
     //显示原子的btn
-    UIButton *atom = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, atomRadius, atomRadius)];
+    CYLButton *atom = [[CYLButton alloc] initWithFrame:CGRectMake(0, 0, atomRadius, atomRadius)];
+    
     atom.layer.cornerRadius = atom.frame.size.width/2;
     atom.backgroundColor = [UIColor whiteColor];
     atom.userInteractionEnabled = NO;
@@ -1184,6 +1186,7 @@
         }
         
     }
+    
     [self.otherAtomArray addObject:atom];
     [self.operationArray addObject:atom];
     
@@ -1654,6 +1657,30 @@
     
 }
 
+- (void)setAtomUnArchiveArray:(NSArray *)AtomUnArchiveArray
+{
+    _AtomUnArchiveArray = AtomUnArchiveArray;
+    
+    for (NSData *data in AtomUnArchiveArray) {
+        
+        CYLButton *UnArchievedbtn = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        
+        //自定义的按钮，归档不完全，只能获得origin，size，color，name 需要重建btn
+        CYLButton *atom = [[CYLButton alloc] initWithFrame:CGRectMake(UnArchievedbtn.BtnPoint.x, UnArchievedbtn.BtnPoint.y, atomRadius, atomRadius)];
+        
+        atom.layer.cornerRadius = atom.frame.size.width/2;
+        atom.backgroundColor = [UIColor whiteColor];
+        atom.userInteractionEnabled = NO;
+        [atom setTitleColor:UnArchievedbtn.atomColor forState:UIControlStateNormal];
+        [atom setTitle:UnArchievedbtn.atomName forState:UIControlStateNormal];
+        
+        [self addSubview:atom];
+        
+        [self.otherAtomArray addObject:atom];
+        [self.operationArray addObject:atom];
+    }
+}
+
 #pragma mark - 辅助view的代理 点击截屏, 与保存
 - (void)assistanceViewDidClickClipScrennBtn:(UIButton*)btn
 {
@@ -1695,10 +1722,13 @@
 }
 
 
-//存储分子结构
+//存储分子结构以及原子
 - (void)assistanceViewDidClickSaveBtn:(UIButton *)btn
 {
+    //存储分子结构
     NSMutableArray *arr = [NSMutableArray array];
+    //存储原子
+    NSMutableArray *atomArr = [NSMutableArray array];
     
     for (CYLChemicalBond *bond in self.BondArray) {
         
@@ -1708,8 +1738,14 @@
         
     }
     
-    if ([self.delegate respondsToSelector:@selector(DrawViewShowAlertControllerWithSaveArray:)]) {
-        [self.delegate DrawViewShowAlertControllerWithSaveArray:arr];
+    for (CYLButton *btn in self.otherAtomArray) {
+        
+        NSData *atomData = [NSKeyedArchiver archivedDataWithRootObject:btn];
+        [atomArr addObject:atomData];
+    }
+    
+    if ([self.delegate respondsToSelector:@selector(DrawViewShowAlertControllerWithSaveArray: andAtomArray:)]) {
+        [self.delegate DrawViewShowAlertControllerWithSaveArray:arr andAtomArray:atomArr];
     }
 }
 

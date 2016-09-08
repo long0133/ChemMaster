@@ -48,6 +48,7 @@
 #define TotalSynthesisCategory @"ATotalSynthesis"
 #define HightLightCategory @"AHighLight"
 #define DrawViewBondSaveArray @"_bondSaveArray"
+#define DrawViewAtomSaveArray @"_atomSaveArray"
 
 //模块id
 #define nameReactionList @"nameractionlist"

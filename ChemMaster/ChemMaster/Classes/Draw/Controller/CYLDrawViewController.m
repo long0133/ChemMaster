@@ -11,7 +11,7 @@
 #import "CYLToolBarView.h"
 #import <objc/runtime.h>
 #import "CYLStructureSelectView.h"
-#define SelViewWidth ScreenW
+#define SelViewWidth ScreenW * 2 / 3
 
 
 @interface CYLDrawViewController ()<CYLToolBarViewDelegate,CYLDrawViewDelegate,UITableViewDelegate,UITableViewDataSource>
@@ -159,7 +159,7 @@
  *
  *  @param array 存储bond的集合
  */
-- (void)DrawViewShowAlertControllerWithSaveArray:(NSMutableArray *)array
+- (void)DrawViewShowAlertControllerWithSaveArray:(NSMutableArray *)array andAtomArray:(NSMutableArray *)atomArray
 {
     
     UIAlertController *alertC = [UIAlertController alertControllerWithTitle:@"请输入化合物的名字" message:nil preferredStyle:UIAlertControllerStyleAlert];
@@ -177,11 +177,11 @@
         
         name = alertC.textFields.firstObject.text;
         
-        
         if (array.count) {
             
+            //存储数组写入cache
             [array writeToFile:[cachePath stringByAppendingPathComponent:[name stringByAppendingString:DrawViewBondSaveArray]] atomically:YES];
-            
+            [atomArray writeToFile:[cachePath stringByAppendingPathComponent:[name stringByAppendingString:DrawViewAtomSaveArray]] atomically:YES];
             //添加新的内容
             self.StructureSelectView.ModelArray = [self ModelArrayFromCache];
         }
@@ -199,7 +199,7 @@
     if (self.drawView.frame.origin.x == 0) {
         
         [UIView animateWithDuration:.5 animations:^{
-            self.drawView.transform = CGAffineTransformMakeTranslation(SelViewWidth * 3 /4, 0);
+            self.drawView.transform = CGAffineTransformMakeTranslation(ScreenW - (ScreenW - SelViewWidth), 0);
         }];
         
     }
@@ -250,14 +250,52 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    NSString *filePath = [cachePath stringByAppendingPathComponent:[cell.textLabel.text stringByAppendingString:DrawViewBondSaveArray]];
+    NSString *filePathStructure = [cachePath stringByAppendingPathComponent:[cell.textLabel.text stringByAppendingString:DrawViewBondSaveArray]];
+    NSString *filePathAtom = [cachePath stringByAppendingPathComponent:[cell.textLabel.text stringByAppendingString:DrawViewAtomSaveArray]];
     
-    NSArray *array = [NSArray arrayWithContentsOfFile:filePath];
+    NSArray *array = [NSArray arrayWithContentsOfFile:filePathStructure];
+    NSArray *atomA = [NSArray arrayWithContentsOfFile:filePathAtom];
     
     self.drawView.StructureArray = array;
+    self.drawView.AtomUnArchiveArray = atomA;
     
     [self readFromCacheAnimation];
 }
 
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewCellEditingStyleDelete;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    
+    NSString *filePathStructure = [cachePath stringByAppendingPathComponent:[cell.textLabel.text stringByAppendingString:DrawViewBondSaveArray]];
+    NSString *filePathAtom = [cachePath stringByAppendingPathComponent:[cell.textLabel.text stringByAppendingString:DrawViewAtomSaveArray]];
+    
+    [fileManager removeItemAtPath:filePathStructure error:nil];
+    [fileManager removeItemAtPath:filePathAtom error:nil];
+    
+    [self.StructureSelectView.ModelArray removeObjectAtIndex:indexPath.row];
+    [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationTop];
+
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UILabel *lable = [[UILabel alloc] init];
+    lable.text = @"分子结构";
+    lable.alpha = .7;
+    lable.textColor = [UIColor whiteColor];
+    lable.backgroundColor = [UIColor blackColor];
+    return lable;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 20;
+}
 
 @end
