@@ -10,6 +10,7 @@
 #import "CYLDoubleBond.h"
 #import "CYLTripleBond.h"
 #import "CYLAssistanceView.h"
+#import "CYLTools.h"
 
 #define toolBarViewCololr @"FDF5E6"
 //highlightView 和 AttachView的半径
@@ -646,7 +647,7 @@
     return @[doubleBond, bondPrepareToRemove];
 }
 
-#warning 三键创建报错
+#warning 三键创建报错,且再现的单键无法点击创建双键，不会调用点击创建方法。
 //传入bond转换成三键
 - (NSArray*)tripleBondFromBond:(CYLChemicalBond*)bond andRemoveBond:(CYLChemicalBond*)bondPrepareToRemove
 {
@@ -1022,8 +1023,6 @@
                             tripleBond.bezierPathThree = [UIBezierPath bezierPath];
                             [tripleBond.bezierPathThree moveToPoint:startThree];
                             [tripleBond.bezierPathThree addLineToPoint:endThree];
-                            
-                            
                         }
                     
                     }
@@ -1597,24 +1596,6 @@
     return NO;
 }
 
-//存储分子结构
-- (void)assistanceViewDidClickSaveBtn:(UIButton *)btn
-{
-    NSMutableArray *arr = [NSMutableArray array];
-    
-    for (CYLChemicalBond *bond in self.BondArray) {
-        
-        NSData *bondData = [NSKeyedArchiver archivedDataWithRootObject:bond];
-        
-        [arr addObject:bondData];
-        
-    }
-    
-    if ([self.delegate respondsToSelector:@selector(DrawViewShowAlertControllerWithSaveArray:)]) {
-        [self.delegate DrawViewShowAlertControllerWithSaveArray:arr];
-    }
-}
-
 #warning 解档获得了bond 待显示在画板上，待提取绘制双三键的代码
 #pragma mark - 传入结构dataArray,解档后显示在界面
 - (void)setStructureArray:(NSArray *)StructureArray
@@ -1624,22 +1605,56 @@
     
     _StructureArray = StructureArray;
     
+    CYLChemicalBond *bondPrepareToRemove = nil;
+    
     NSMutableArray *bondArray = [NSMutableArray array];
+    
+    NSMutableSet *set = [NSMutableSet set];
     
     for (NSData *bondData in StructureArray) {
         
         CYLChemicalBond *bond = [NSKeyedUnarchiver unarchiveObjectWithData:bondData];
         
+        UIBezierPath *path = [UIBezierPath bezierPath];
+        
+        //设置键中点
+        bond.midPoint = CGPointMake(((bond.startP.x + bond.endP.x) / 2), ((bond.startP.y + bond.endP.y) / 2));
+        
+        //设置BezierPath
+        [path moveToPoint:bond.startP];
+        [path addLineToPoint:bond.endP];
+        
+        bond.bezierPath = path;
+        
+        if ([bond isKindOfClass:[CYLTripleBond class]]) {
+
+            NSArray *array = [self tripleBondFromBond:bond andRemoveBond:bondPrepareToRemove];
+            bond = array.firstObject;
+            
+            
+        }
+        else if([bond isKindOfClass:[CYLDoubleBond class]])
+        {
+            NSArray *array = [self DoubleBondFromBond:bond andRemoveBond:bondPrepareToRemove];
+            bond = array.firstObject;
+        }
+        
+        //加入点
+        [set addObject:[NSValue valueWithCGPoint:bond.startP]];
+        [set addObject:[NSValue valueWithCGPoint:bond.endP]];
+        
         [bondArray addObject:bond];
     }
     
+    
+    self.pointArray = [CYLTools mutableArrayFromSet:set];
     self.BondArray = bondArray;
     
     [self setNeedsDisplay];
     
 }
 
-#pragma mark - 辅助view的代理 点击截屏
+#pragma mark - 辅助view的代理 点击截屏, 与保存
 - (void)assistanceViewDidClickClipScrennBtn:(UIButton*)btn
 {
     
@@ -1677,6 +1692,25 @@
         }];
         
     }];
+}
+
+
+//存储分子结构
+- (void)assistanceViewDidClickSaveBtn:(UIButton *)btn
+{
+    NSMutableArray *arr = [NSMutableArray array];
+    
+    for (CYLChemicalBond *bond in self.BondArray) {
+        
+        NSData *bondData = [NSKeyedArchiver archivedDataWithRootObject:bond];
+        
+        [arr addObject:bondData];
+        
+    }
+    
+    if ([self.delegate respondsToSelector:@selector(DrawViewShowAlertControllerWithSaveArray:)]) {
+        [self.delegate DrawViewShowAlertControllerWithSaveArray:arr];
+    }
 }
 
 

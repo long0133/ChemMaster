@@ -15,6 +15,7 @@
 #import <SVProgressHUD.h>
 #import <TFHpple.h>
 #import <AFNetworking.h>
+#import "CYLTools.h"
 
 #define fileManager [NSFileManager defaultManager]
 #define ScreenW [UIScreen mainScreen].bounds.size.width
@@ -65,6 +66,10 @@
 #define startPointDV @"startPoint"
 #define endPointDV @"endPoint"
 #define bondClassDV @"class"
+#define midPointDV @"midPoint"
+
+
+
 #define FirstbezierPath @"firstPath"
 #define SecondbezierPath @"SecondPath"
 #define ThirdbezierPath @"ThirdPath"

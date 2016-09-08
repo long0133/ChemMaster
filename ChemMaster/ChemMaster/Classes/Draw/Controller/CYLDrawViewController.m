@@ -255,6 +255,8 @@
     NSArray *array = [NSArray arrayWithContentsOfFile:filePath];
     
     self.drawView.StructureArray = array;
+    
+    [self readFromCacheAnimation];
 }
 
 
