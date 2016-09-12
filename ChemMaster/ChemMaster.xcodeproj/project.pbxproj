@@ -53,6 +53,7 @@
 		4E7E26BD1D408F670074B36C /* CYLGoToStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7E26BC1D408F670074B36C /* CYLGoToStore.m */; };
 		4E7E26BF1D40980C0074B36C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E7E26BE1D40980C0074B36C /* StoreKit.framework */; };
 		4E8B0D4A1D2BC5980086AE67 /* CYLAssistanceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8B0D491D2BC5980086AE67 /* CYLAssistanceView.m */; };
+		4EA7697A1D8666EF005CCC99 /* CYLTileButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA769791D8666EF005CCC99 /* CYLTileButton.m */; };
 		4EAC5D821D14094600199DAA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAC5D811D14094600199DAA /* CoreGraphics.framework */; };
 		4EAC5D841D14094D00199DAA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAC5D831D14094D00199DAA /* QuartzCore.framework */; };
 		4EAC5D861D1409E700199DAA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAC5D851D1409E700199DAA /* UIKit.framework */; };
@@ -188,6 +189,8 @@
 		4E7E26BE1D40980C0074B36C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		4E8B0D481D2BC5980086AE67 /* CYLAssistanceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLAssistanceView.h; sourceTree = "<group>"; };
 		4E8B0D491D2BC5980086AE67 /* CYLAssistanceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLAssistanceView.m; sourceTree = "<group>"; };
+		4EA769781D8666EF005CCC99 /* CYLTileButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTileButton.h; sourceTree = "<group>"; };
+		4EA769791D8666EF005CCC99 /* CYLTileButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLTileButton.m; sourceTree = "<group>"; };
 		4EAC5D811D14094600199DAA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4EAC5D831D14094D00199DAA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4EAC5D851D1409E700199DAA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -271,6 +274,15 @@
 				730560DAAF9BC4822389DB9E /* Pods-ChemMaster.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		4E07D4041D82885100300E03 /* ProtectedGroud */ = {
+			isa = PBXGroup;
+			children = (
+				4E7298491D65793C0070160D /* CYLSectionTwoCardCell.h */,
+				4E72984A1D65793C0070160D /* CYLSectionTwoCardCell.m */,
+			);
+			name = ProtectedGroud;
 			sourceTree = "<group>";
 		};
 		4E1377F61D1663F200857C36 /* Atoms */ = {
@@ -451,8 +463,7 @@
 				4E72983B1D6559E70070160D /* CYLFlowLayOut.m */,
 				4E7298461D6573630070160D /* CYLSectonTwoReusableView.h */,
 				4E7298471D6573630070160D /* CYLSectonTwoReusableView.m */,
-				4E7298491D65793C0070160D /* CYLSectionTwoCardCell.h */,
-				4E72984A1D65793C0070160D /* CYLSectionTwoCardCell.m */,
+				4E07D4041D82885100300E03 /* ProtectedGroud */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -730,6 +741,8 @@
 			children = (
 				4ED4548E1D812A9400EF47F8 /* CYLButton.h */,
 				4ED4548F1D812A9400EF47F8 /* CYLButton.m */,
+				4EA769781D8666EF005CCC99 /* CYLTileButton.h */,
+				4EA769791D8666EF005CCC99 /* CYLTileButton.m */,
 			);
 			name = CYLButton;
 			sourceTree = "<group>";
@@ -953,6 +966,7 @@
 				4E1377F51D16516400857C36 /* CYLChemicalBond.m in Sources */,
 				4EE5DB771D448C1500A26451 /* CYLDetaileCell.m in Sources */,
 				4E1377EF1D152B2400857C36 /* CYLToolBarView.m in Sources */,
+				4EA7697A1D8666EF005CCC99 /* CYLTileButton.m in Sources */,
 				4E2A82131D0DB2970082D785 /* CYLTabBarButton.m in Sources */,
 				4E2A820F1D0DA7A40082D785 /* UpImageDownTitleButton.m in Sources */,
 				4E2A82041D0DA6580082D785 /* CYLNaviViewController.m in Sources */,

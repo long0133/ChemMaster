@@ -12,7 +12,7 @@
 #import <objc/runtime.h>
 #import "CYLStructureSelectView.h"
 #define SelViewWidth ScreenW * 2 / 3
-
+static BOOL clicked = true;
 
 @interface CYLDrawViewController ()<CYLToolBarViewDelegate,CYLDrawViewDelegate,UITableViewDelegate,UITableViewDataSource>
 
@@ -161,8 +161,20 @@
  */
 - (void)DrawViewShowAlertControllerWithSaveArray:(NSMutableArray *)array andAtomArray:(NSMutableArray *)atomArray
 {
+    //获得已存在的文件名
+//    NSArray *cacheFile = [fileManager subpathsAtPath:cachePath];
+//    
+//    NSMutableArray *existedFileName = [NSMutableArray array];
+//    
+//    for (NSString *fimeName in cacheFile) {
+//        
+//        if ([fimeName containsString:DrawViewBondSaveArray]) {
+//            [existedFileName addObject:fimeName];
+//        }
+//        
+//    }
     
-    UIAlertController *alertC = [UIAlertController alertControllerWithTitle:@"请输入化合物的名字" message:nil preferredStyle:UIAlertControllerStyleAlert];
+    __block UIAlertController *alertC = [UIAlertController alertControllerWithTitle:@"请输入化合物的名字" message:nil preferredStyle:UIAlertControllerStyleAlert];
     
     
     [alertC addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
@@ -209,6 +221,17 @@
             self.drawView.transform = CGAffineTransformMakeTranslation(0, 0);
         }];
     }
+
+    
+    if (clicked) {
+        self.navigationItem.leftBarButtonItem.title = @"返回";
+    }
+    else
+    {
+        self.navigationItem.leftBarButtonItem.title = @"读取";
+    }
+    
+    clicked = !clicked;
 }
 
 - (void)setShadowForView

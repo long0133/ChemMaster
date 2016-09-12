@@ -59,7 +59,7 @@
     }
     else if (indexPath.section == 1)
     {
-        attr.frame = CGRectMake(10, _maxHeight, (ScreenW - 20), 400);
+        attr.frame = CGRectMake(10, _maxHeight, (ScreenW - 20), ScreenW-20);
         
         _maxHeight = CGRectGetMaxY(attr.frame) + 10;
         

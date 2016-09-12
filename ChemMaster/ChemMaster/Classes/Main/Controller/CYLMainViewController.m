@@ -72,8 +72,6 @@ static NSString * const reuseIdentifierTwo = @"CellTwo";
     [self.collectionView registerClass:[CYLSectonTwoReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"sectionTwo"];
     
     [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"footer"];
-
-    
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -127,17 +125,17 @@ static NSString * const reuseIdentifierTwo = @"CellTwo";
         if (indexPath.row == 0) {
             
             //功能1
-            cellSectionTwo.backgroundColor = [UIColor grayColor];
+            
         }
         else if (indexPath.row == 1)
         {
             //功能2
-            cellSectionTwo.backgroundColor = [UIColor blueColor];
+            
         }
-        else
+        else if(indexPath.row == 2)
         {
             //功能3
-            cellSectionTwo.backgroundColor = [UIColor orangeColor];
+            
         }
         
         return cellSectionTwo;
@@ -196,7 +194,7 @@ static NSString * const reuseIdentifierTwo = @"CellTwo";
             
             cell.transform = CGAffineTransformMakeTranslation(X, Y + 10);
             
-            [UIView animateWithDuration:1 delay:0 usingSpringWithDamping:0.9 initialSpringVelocity:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+            [UIView animateWithDuration:.5 delay:0 usingSpringWithDamping:0.9 initialSpringVelocity:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
                 
                 cell.transform = CGAffineTransformIdentity;
                 
