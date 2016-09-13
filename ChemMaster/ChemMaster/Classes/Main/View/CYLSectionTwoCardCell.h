@@ -13,4 +13,9 @@
 
 @interface CYLSectionTwoCardCell : UICollectionViewCell
 
+/**
+ *  存入的array为四个按钮的contentArray。
+ */
+@property (nonatomic, strong) NSMutableArray *ContentArray;
+
 @end

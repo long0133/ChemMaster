@@ -17,7 +17,8 @@
 #import "CYLFlowLayOut.h"
 #import "CYLSectonTwoReusableView.h"
 #import "CYLSectionTwoCardCell.h"
-
+#import "CYLSectionSecondTwoCell.h"
+#import "CYLSectionSecondThirdCell.h"
 
 #define animationDuration .7
 static CGFloat lastOffSetY;
@@ -43,7 +44,10 @@ static CGFloat lastOffSetY;
 @implementation CYLMainViewController
 
 static NSString * const reuseIdentifier = @"Cell";
-static NSString * const reuseIdentifierTwo = @"CellTwo";
+static NSString * const reuseIdentifierSectionOne = @"CellOne";
+static NSString * const reuseIdentifierSectionTwo = @"CellTwo";
+static NSString * const reuseIdentifierSectionThird = @"CellThird";
+
 
 - (instancetype)init
 {
@@ -65,7 +69,9 @@ static NSString * const reuseIdentifierTwo = @"CellTwo";
     self.collectionView.backgroundColor = [UIColor getColor:@"DCDCDC"];
 
     [self.collectionView registerClass:[CYLHightLightCell class] forCellWithReuseIdentifier:reuseIdentifier];
-    [self.collectionView registerClass:[CYLSectionTwoCardCell class] forCellWithReuseIdentifier:reuseIdentifierTwo];
+    [self.collectionView registerClass:[CYLSectionTwoCardCell class] forCellWithReuseIdentifier:reuseIdentifierSectionOne];
+    [self.collectionView registerClass:[CYLSectionSecondTwoCell class] forCellWithReuseIdentifier:reuseIdentifierSectionTwo];
+    [self.collectionView registerClass:[CYLSectionSecondThirdCell class] forCellWithReuseIdentifier:reuseIdentifierSectionThird];
     
     [self.collectionView registerClass:[CYLHeaderReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"header"];
     
@@ -108,7 +114,7 @@ static NSString * const reuseIdentifierTwo = @"CellTwo";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     CYLHightLightCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    CYLSectionTwoCardCell *cellSectionTwo = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifierTwo forIndexPath:indexPath];
+    
     
     if (indexPath.section == 0) {
         
@@ -125,20 +131,29 @@ static NSString * const reuseIdentifierTwo = @"CellTwo";
         if (indexPath.row == 0) {
             
             //功能1
+          CYLSectionTwoCardCell *sectionSecondCell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifierSectionOne forIndexPath:indexPath];
+            
+            return sectionSecondCell;
             
         }
         else if (indexPath.row == 1)
         {
             //功能2
+           CYLSectionSecondTwoCell *sectionSecondCell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifierSectionTwo forIndexPath:indexPath];
+            sectionSecondCell.backgroundColor = [UIColor grayColor];
+            return sectionSecondCell;
             
         }
         else if(indexPath.row == 2)
         {
             //功能3
+           CYLSectionSecondThirdCell *sectionSecondCell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifierSectionThird forIndexPath:indexPath];
+            sectionSecondCell.backgroundColor = [UIColor orangeColor];
             
+            return sectionSecondCell;
         }
         
-        return cellSectionTwo;
+        return nil;
     }
     
     return nil;

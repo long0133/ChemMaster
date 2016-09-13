@@ -12,8 +12,8 @@
 static int NinePathX[] = {0,-1,-1,-1,0,1,1,1};
 static int NinePathY[] = {-1,-1,0,1,1,1,0,-1};
 //十二格
-static int twelvePathX[] = {-1,0,1,2,2,2,2,1,0,2,1,-1};
-static int twelvePathY[] = {-1,-1,-1,-1,0,1,2,2,2,0,0,0};
+static int twelvePathX[] = {-1,0,1,2,2,2,2,1,0,-1,-1,-1};
+static int twelvePathY[] = {-1,-1,-1,-1,0,1,2,2,2,2,1,0};
 
 static CGFloat width = 0;
 static int count;
@@ -32,24 +32,28 @@ static int count;
 @implementation CYLTileButton
 
 #pragma mark - 显示动画，生成cell
-- (void)showAnimationAtPoint:(CGPoint)point onView:(UIView *)view
+- (void)showAnimationAtPoint:(CGPoint)point onView:(UIView *)view andDelay:(CGFloat)delay
 {
-    [self.layer removeAllAnimations];
-    
-    _originFrame = self.frame;
-    width = self.frame.size.width;
-    _superView = view;
-    count = 0;
-    
-    CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:@"position"];
-    anim.toValue = [NSValue valueWithCGPoint:point];
-    anim.duration = .5;
-    anim.removedOnCompletion = NO;
-    anim.fillMode = kCAFillModeForwards;
-    anim.delegate = self;
-    [self.layer addAnimation:anim forKey:@"position"];
-    
-    [self addContentBtn];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delay * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        [self.layer removeAllAnimations];
+        
+        _originFrame = self.frame;
+        width = self.frame.size.width;
+        _superView = view;
+        count = 0;
+        
+        CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:@"position"];
+        anim.toValue = [NSValue valueWithCGPoint:point];
+        anim.duration = .5;
+        anim.removedOnCompletion = NO;
+        anim.fillMode = kCAFillModeForwards;
+        anim.delegate = self;
+        [self.layer addAnimation:anim forKey:@"position"];
+        
+        [self addContentBtn];
+        
+    });
 }
 
 - (void)addContentBtn
@@ -62,6 +66,8 @@ static int count;
         UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(width/2, width/2, height, height)];
         btn.tag = i;
         btn.backgroundColor = randomColor;
+        
+        [self.btnArray addObject:btn];
         [self addSubview:btn];
         
         [self setButtonAnimation:btn];
@@ -118,6 +124,7 @@ static int count;
         anim.fillMode = kCAFillModeForwards;
         anim.removedOnCompletion = NO;
         anim.duration = .5;
+        
         [btn.layer addAnimation:anim forKey:@"position"];
         
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -127,12 +134,16 @@ static int count;
     }
 }
 
+//-(void)setContentArray:(NSArray *)contentArray
+//{
+//    self.contentArray = contentArray;
+//}
 
 #pragma mark - 懒加载
 -(NSArray *)contentArray
 {
     if (_contentArray == nil) {
-        _contentArray = @[@"A",@"A",@"s",@"a",@"s",@"s",@"s",@"s",@"s",@"s"];
+        _contentArray = @[@"A",@"A",@"s",@"a",@"s",@"s",@"s",@"s",@"s",@"s",@"s",@"s"];
     }
     return _contentArray;
 }

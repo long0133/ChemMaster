@@ -12,7 +12,7 @@
 
 @property (nonatomic, strong) NSArray *contentArray;
 
-- (void)showAnimationAtPoint:(CGPoint)point onView:(UIView*)view;
+- (void)showAnimationAtPoint:(CGPoint)point onView:(UIView*)view andDelay:(CGFloat)delay;
 - (void)backToOrigin;
 
 @end

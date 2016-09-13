@@ -8,6 +8,7 @@
 
 #import "CYLSectionTwoCardCell.h"
 #import "CYLTileButton.h"
+static NSInteger lastBtnTag = 99999;
 
 @interface CYLSectionTwoCardCell ()
 
@@ -90,7 +91,15 @@
     }];
 }
 
-static NSInteger lastBtnTag = 99999;
+- (void)setContentArray:(NSMutableArray *)ContentArray
+{
+    _ContentArray = ContentArray;
+    
+    _AminoBtn.contentArray = ContentArray[0];
+    _CarbonylBtn.contentArray = ContentArray[1];
+    _CarboxylBtn.contentArray = ContentArray[2];
+    _HydroxylBtn.contentArray = ContentArray[3];
+}
 
 #pragma mark - 设置按钮单击后的动画效果
 - (void)DidClickButton:(CYLTileButton*)btn
@@ -101,7 +110,7 @@ static NSInteger lastBtnTag = 99999;
         btn.userInteractionEnabled = YES;
     });
     
-    if (lastBtnTag == btn.tag) {
+    if (lastBtnTag == btn.tag) { //第2次点击此按钮
         
         for (CYLTileButton *botton in self.subviews) {
             
@@ -114,30 +123,31 @@ static NSInteger lastBtnTag = 99999;
                 
             }];
             
-            
-            [UIView animateWithDuration:1 animations:^{
-                
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [UIView animateWithDuration:1 animations:^{
+                    
                     botton.alpha = 1;
-            }];
+                }];
+            });
         }
         
         lastBtnTag = 9999;
         
     }
-    else
+    else //第1次点击此按钮
     {
         for (CYLTileButton *button in self.subviews) {
             
             if (btn.tag != button.tag) {
                 
-                [UIView animateWithDuration:.1 animations:^{
+                [UIView animateWithDuration:.5 animations:^{
                     button.alpha = 0;
                 }];
             }
         }
         
         CGPoint center = CGPointMake(self.frame.size.width/2, self.frame.size.width/2);
-        [btn showAnimationAtPoint:center onView:self];
+        [btn showAnimationAtPoint:center onView:self andDelay:.5];
         
         lastBtnTag = btn.tag;
     }

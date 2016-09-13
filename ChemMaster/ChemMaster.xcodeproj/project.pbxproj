@@ -61,6 +61,8 @@
 		4EADD1D21D2A2FA200DC7C94 /* CYLMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EADD1D01D2A2FA200DC7C94 /* CYLMineViewController.m */; };
 		4EADD1DA1D2A3CEB00DC7C94 /* CYLShowSaveFileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EADD1D91D2A3CEB00DC7C94 /* CYLShowSaveFileController.m */; };
 		4EADD1DD1D2AA31000DC7C94 /* CYLDetailViewFromSaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EADD1DC1D2AA31000DC7C94 /* CYLDetailViewFromSaveViewController.m */; };
+		4EB9769A1D86D6E300ABF70B /* CYLSectionSecondTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB976991D86D6E300ABF70B /* CYLSectionSecondTwoCell.m */; };
+		4EB9769D1D86D6FD00ABF70B /* CYLSectionSecondThirdCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB9769C1D86D6FD00ABF70B /* CYLSectionSecondThirdCell.m */; };
 		4ECC97B81D10F16200D5000C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ECC97B71D10F16200D5000C /* WebKit.framework */; };
 		4ECC97BE1D10F3F800D5000C /* CYLWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECC97BD1D10F3F800D5000C /* CYLWebViewController.m */; };
 		4ECC97C21D11029600D5000C /* UIImage+CYLImageExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECC97C11D11029600D5000C /* UIImage+CYLImageExtension.m */; };
@@ -201,6 +203,10 @@
 		4EADD1D91D2A3CEB00DC7C94 /* CYLShowSaveFileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLShowSaveFileController.m; sourceTree = "<group>"; };
 		4EADD1DB1D2AA31000DC7C94 /* CYLDetailViewFromSaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLDetailViewFromSaveViewController.h; sourceTree = "<group>"; };
 		4EADD1DC1D2AA31000DC7C94 /* CYLDetailViewFromSaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLDetailViewFromSaveViewController.m; sourceTree = "<group>"; };
+		4EB976981D86D6E300ABF70B /* CYLSectionSecondTwoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLSectionSecondTwoCell.h; sourceTree = "<group>"; };
+		4EB976991D86D6E300ABF70B /* CYLSectionSecondTwoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLSectionSecondTwoCell.m; sourceTree = "<group>"; };
+		4EB9769B1D86D6FD00ABF70B /* CYLSectionSecondThirdCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLSectionSecondThirdCell.h; sourceTree = "<group>"; };
+		4EB9769C1D86D6FD00ABF70B /* CYLSectionSecondThirdCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLSectionSecondThirdCell.m; sourceTree = "<group>"; };
 		4ECC97B71D10F16200D5000C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		4ECC97BC1D10F3F800D5000C /* CYLWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLWebViewController.h; sourceTree = "<group>"; };
 		4ECC97BD1D10F3F800D5000C /* CYLWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLWebViewController.m; sourceTree = "<group>"; };
@@ -464,6 +470,10 @@
 				4E7298461D6573630070160D /* CYLSectonTwoReusableView.h */,
 				4E7298471D6573630070160D /* CYLSectonTwoReusableView.m */,
 				4E07D4041D82885100300E03 /* ProtectedGroud */,
+				4EB976981D86D6E300ABF70B /* CYLSectionSecondTwoCell.h */,
+				4EB976991D86D6E300ABF70B /* CYLSectionSecondTwoCell.m */,
+				4EB9769B1D86D6FD00ABF70B /* CYLSectionSecondThirdCell.h */,
+				4EB9769C1D86D6FD00ABF70B /* CYLSectionSecondThirdCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -721,6 +731,15 @@
 			name = "loading Animation";
 			sourceTree = "<group>";
 		};
+		4EB9769E1D87BF0100ABF70B /* CYLTileButton */ = {
+			isa = PBXGroup;
+			children = (
+				4EA769781D8666EF005CCC99 /* CYLTileButton.h */,
+				4EA769791D8666EF005CCC99 /* CYLTileButton.m */,
+			);
+			name = CYLTileButton;
+			sourceTree = "<group>";
+		};
 		4ECC97BF1D11027B00D5000C /* catagory */ = {
 			isa = PBXGroup;
 			children = (
@@ -741,8 +760,7 @@
 			children = (
 				4ED4548E1D812A9400EF47F8 /* CYLButton.h */,
 				4ED4548F1D812A9400EF47F8 /* CYLButton.m */,
-				4EA769781D8666EF005CCC99 /* CYLTileButton.h */,
-				4EA769791D8666EF005CCC99 /* CYLTileButton.m */,
+				4EB9769E1D87BF0100ABF70B /* CYLTileButton */,
 			);
 			name = CYLButton;
 			sourceTree = "<group>";
@@ -971,6 +989,7 @@
 				4E2A820F1D0DA7A40082D785 /* UpImageDownTitleButton.m in Sources */,
 				4E2A82041D0DA6580082D785 /* CYLNaviViewController.m in Sources */,
 				4E2A82251D0FE2860082D785 /* CYLHightLightModel.m in Sources */,
+				4EB9769A1D86D6E300ABF70B /* CYLSectionSecondTwoCell.m in Sources */,
 				4E2A81EF1D0D9FE50082D785 /* CYLDrawViewController.m in Sources */,
 				4ED454901D812A9400EF47F8 /* CYLButton.m in Sources */,
 				4E5F799F1D1CD312009AD7DC /* NSObject+CYLStorageMethod.m in Sources */,
@@ -1001,6 +1020,7 @@
 				4E5F79981D1B753E009AD7DC /* CYLHighLightMonthViewController.m in Sources */,
 				4E5F79941D1B6E27009AD7DC /* CYLHighLightViewController.m in Sources */,
 				4E2A820E1D0DA7A40082D785 /* CYLBadgeView.m in Sources */,
+				4EB9769D1D86D6FD00ABF70B /* CYLSectionSecondThirdCell.m in Sources */,
 				4E2A82191D0EE0460082D785 /* CYLHeaderReusableView.m in Sources */,
 				4E5F79911D1A5ECC009AD7DC /* UIColor+CYLColor.m in Sources */,
 				4EADD1D21D2A2FA200DC7C94 /* CYLMineViewController.m in Sources */,
