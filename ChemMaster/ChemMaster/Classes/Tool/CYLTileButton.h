@@ -8,9 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CYLTileButton : UIButton
+@protocol CYLTileButtonDelegate <NSObject>
 
+- (void)tileBtnDidClickBackBtn;
+
+@end
+
+@interface CYLTileButton : UIButton
 @property (nonatomic, strong) NSArray *contentArray;
+@property (nonatomic, strong) NSBundle *contentBundle;
+@property (nonatomic,weak) id<CYLTileButtonDelegate> delegate;
 
 - (void)showAnimationAtPoint:(CGPoint)point onView:(UIView*)view andDelay:(CGFloat)delay;
 - (void)backToOrigin;

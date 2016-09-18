@@ -8,9 +8,17 @@
 
 #import "CYLSectionTwoCardCell.h"
 #import "CYLTileButton.h"
+#define animationDuration .3
 static NSInteger lastBtnTag = 99999;
 
-@interface CYLSectionTwoCardCell ()
+typedef NS_ENUM(NSUInteger, ProtectedGroupType) {
+    ProtectedGroupAmino,
+    ProtectedGroupCarbonyl,
+    ProtectedGroupCarboxyl,
+    ProtectedGroupHydroxyl
+};
+
+@interface CYLSectionTwoCardCell ()<CYLTileButtonDelegate>
 
 @property (nonatomic, strong) CYLTileButton *AminoBtn;
 @property (nonatomic, strong) CYLTileButton *CarbonylBtn;
@@ -38,32 +46,41 @@ static NSInteger lastBtnTag = 99999;
     _CarboxylBtn = [[CYLTileButton alloc] init];
     _HydroxylBtn = [[CYLTileButton alloc] init];
     
-    _AminoBtn.tag = 0;
-    _CarbonylBtn.tag = 1;
-    _CarboxylBtn.tag = 2;
-    _HydroxylBtn.tag = 3;
+    _AminoBtn.tag = ProtectedGroupAmino;
+    _CarbonylBtn.tag = ProtectedGroupCarbonyl;
+    _CarboxylBtn.tag = ProtectedGroupCarboxyl;
+    _HydroxylBtn.tag = ProtectedGroupHydroxyl;
     
     [_AminoBtn addTarget:self action:@selector(DidClickButton:) forControlEvents:UIControlEventTouchUpInside];
     [_CarboxylBtn addTarget:self action:@selector(DidClickButton:) forControlEvents:UIControlEventTouchUpInside];
     [_CarbonylBtn addTarget:self action:@selector(DidClickButton:) forControlEvents:UIControlEventTouchUpInside];
     [_HydroxylBtn addTarget:self action:@selector(DidClickButton:) forControlEvents:UIControlEventTouchUpInside];
     
+    [_AminoBtn setTitle:@"Amino_Stability" forState:UIControlStateNormal];
+    [_CarbonylBtn setTitle:@"Carbonyl_Stability" forState:UIControlStateNormal];
+    [_CarboxylBtn setTitle:@"Carboxyl_Stability" forState:UIControlStateNormal];
+    [_HydroxylBtn setTitle:@"Hydroxyl_Stability" forState:UIControlStateNormal];
     
-    [_AminoBtn setBackgroundColor:randomColor];
-    [_CarbonylBtn setBackgroundColor:randomColor];
-    [_CarboxylBtn setBackgroundColor:randomColor];
-    [_HydroxylBtn setBackgroundColor:randomColor];
+    [_AminoBtn setBackgroundColor:[UIColor getColor:@"54A271"]];
+    [_CarbonylBtn setBackgroundColor:[UIColor getColor:@"45ADA8"]];
+    [_CarboxylBtn setBackgroundColor:[UIColor getColor:@"3280B7"]];
+    [_HydroxylBtn setBackgroundColor:[UIColor getColor:@"814F14"]];
     
-    [self addSubview:_AminoBtn];
-    [self addSubview:_CarboxylBtn];
-    [self addSubview:_CarbonylBtn];
-    [self addSubview:_HydroxylBtn];
+    [self.contentView addSubview:_AminoBtn];
+    [self.contentView addSubview:_CarboxylBtn];
+    [self.contentView addSubview:_CarbonylBtn];
+    [self.contentView addSubview:_HydroxylBtn];
+    
+    _AminoBtn.delegate = self;
+    _CarbonylBtn.delegate = self;
+    _CarboxylBtn.delegate = self;
+    _HydroxylBtn.delegate = self;
 }
 
 - (void)layoutSubviews
 {
     [_AminoBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-       
+        
         make.left.top.equalTo(self);
         make.height.width.mas_equalTo(self.frame.size.width/2);
         
@@ -91,67 +108,88 @@ static NSInteger lastBtnTag = 99999;
     }];
 }
 
-- (void)setContentArray:(NSMutableArray *)ContentArray
-{
-    _ContentArray = ContentArray;
-    
-    _AminoBtn.contentArray = ContentArray[0];
-    _CarbonylBtn.contentArray = ContentArray[1];
-    _CarboxylBtn.contentArray = ContentArray[2];
-    _HydroxylBtn.contentArray = ContentArray[3];
-}
+
 
 #pragma mark - 设置按钮单击后的动画效果
 - (void)DidClickButton:(CYLTileButton*)btn
 {
+    
+    switch (btn.tag) {
+        case ProtectedGroupAmino:
+        {
+            NSBundle *aminoBundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"Amino" ofType:@"bundle"]];
+            btn.contentBundle = aminoBundle;
+        }
+            break;
+            
+        case ProtectedGroupCarbonyl:
+        {
+            NSBundle *carbonlyBundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"Carbonyl" ofType:@"bundle"]];
+            btn.contentBundle = carbonlyBundle;
+        }
+            break;
+            
+        case ProtectedGroupCarboxyl:
+        {
+            NSBundle *carboxylBundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"Carboxyl" ofType:@"bundle"]];
+            btn.contentBundle = carboxylBundle;
+        }
+            break;
+            
+        case ProtectedGroupHydroxyl:
+        {
+            NSBundle *HydroxylBundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"Hydroxyl" ofType:@"bundle"]];
+            btn.contentBundle = HydroxylBundle;
+        }
+            break;
+            
+        default:
+            break;
+    }
+    
+    [self setBtnAnimation:btn];
+}
+
+- (void)setBtnAnimation:(CYLTileButton*)btn
+{
     btn.userInteractionEnabled = NO;
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(animationDuration * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         btn.userInteractionEnabled = YES;
     });
     
-    if (lastBtnTag == btn.tag) { //第2次点击此按钮
+    for (CYLTileButton *button in self.contentView.subviews) {
         
-        for (CYLTileButton *botton in self.subviews) {
+        if (btn != button) {
             
-            [UIView animateWithDuration:.5 animations:^{
-                
-                if (botton.tag == lastBtnTag) {
-                    
-                    [btn backToOrigin];
-                }
-                
+            [UIView animateWithDuration:animationDuration animations:^{
+                button.alpha = 0;
             }];
-            
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                [UIView animateWithDuration:1 animations:^{
-                    
-                    botton.alpha = 1;
-                }];
-            });
         }
         
-        lastBtnTag = 9999;
-        
-    }
-    else //第1次点击此按钮
-    {
-        for (CYLTileButton *button in self.subviews) {
-            
-            if (btn.tag != button.tag) {
-                
-                [UIView animateWithDuration:.5 animations:^{
-                    button.alpha = 0;
-                }];
-            }
-        }
+        [self.contentView insertSubview:btn atIndex:(self.contentView.subviews.count - 1)];
         
         CGPoint center = CGPointMake(self.frame.size.width/2, self.frame.size.width/2);
-        [btn showAnimationAtPoint:center onView:self andDelay:.5];
+        [btn showAnimationAtPoint:center onView:self.contentView andDelay:animationDuration];
         
-        lastBtnTag = btn.tag;
+//        lastBtnTag = btn.tag;
     }
     
+    [btn setTitle:btn.currentTitle forState:UIControlStateNormal];
+    
+}
+#pragma mark - CYLTileButtonDelegate
+- (void)tileBtnDidClickBackBtn
+{
+    for (CYLTileButton *botton in self.contentView.subviews) {
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(animationDuration * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [UIView animateWithDuration:1 animations:^{
+                
+                botton.alpha = 1;
+            }];
+        });
+    }
 }
 
 @end

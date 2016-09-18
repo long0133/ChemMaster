@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E0288861D8D15BE009544F9 /* Carboxyl.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4E0288851D8D15BD009544F9 /* Carboxyl.bundle */; };
+		4E0288881D8D16F2009544F9 /* Carbonyl.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4E0288871D8D16F2009544F9 /* Carbonyl.bundle */; };
+		4E02888A1D8D187D009544F9 /* Hydroxyl.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4E0288891D8D187D009544F9 /* Hydroxyl.bundle */; };
 		4E1377EC1D152A6900857C36 /* CYLDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1377EB1D152A6900857C36 /* CYLDrawView.m */; };
 		4E1377EF1D152B2400857C36 /* CYLToolBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1377EE1D152B2400857C36 /* CYLToolBarView.m */; };
 		4E1377F51D16516400857C36 /* CYLChemicalBond.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1377F41D16516400857C36 /* CYLChemicalBond.m */; };
@@ -32,6 +35,7 @@
 		4E2A82221D0FE1C70082D785 /* CYLHightLightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2A82211D0FE1C70082D785 /* CYLHightLightCell.m */; };
 		4E2A82251D0FE2860082D785 /* CYLHightLightModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2A82241D0FE2860082D785 /* CYLHightLightModel.m */; };
 		4E2E44E01D2E69E700DFE058 /* CYLAngleBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2E44DF1D2E69E700DFE058 /* CYLAngleBtn.m */; };
+		4E36FF5F1D890E9B001759FE /* Amino.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4E36FF5E1D890E9B001759FE /* Amino.bundle */; };
 		4E5F79821D196551009AD7DC /* CYLnameReactionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F79811D196551009AD7DC /* CYLnameReactionListViewController.m */; };
 		4E5F79861D19891E009AD7DC /* CYLTotalSythesisListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F79851D19891E009AD7DC /* CYLTotalSythesisListViewController.m */; };
 		4E5F798A1D1A492A009AD7DC /* NSString+CYLNsstring.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F79891D1A492A009AD7DC /* NSString+CYLNsstring.m */; };
@@ -100,6 +104,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E0288851D8D15BD009544F9 /* Carboxyl.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Carboxyl.bundle; sourceTree = "<group>"; };
+		4E0288871D8D16F2009544F9 /* Carbonyl.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Carbonyl.bundle; sourceTree = "<group>"; };
+		4E0288891D8D187D009544F9 /* Hydroxyl.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Hydroxyl.bundle; sourceTree = "<group>"; };
 		4E1377EA1D152A6900857C36 /* CYLDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLDrawView.h; sourceTree = "<group>"; };
 		4E1377EB1D152A6900857C36 /* CYLDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLDrawView.m; sourceTree = "<group>"; };
 		4E1377ED1D152B2400857C36 /* CYLToolBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLToolBarView.h; sourceTree = "<group>"; };
@@ -150,6 +157,7 @@
 		4E2A82241D0FE2860082D785 /* CYLHightLightModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLHightLightModel.m; sourceTree = "<group>"; };
 		4E2E44DE1D2E69E700DFE058 /* CYLAngleBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLAngleBtn.h; sourceTree = "<group>"; };
 		4E2E44DF1D2E69E700DFE058 /* CYLAngleBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLAngleBtn.m; sourceTree = "<group>"; };
+		4E36FF5E1D890E9B001759FE /* Amino.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Amino.bundle; sourceTree = "<group>"; };
 		4E5F79801D196551009AD7DC /* CYLnameReactionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLnameReactionListViewController.h; sourceTree = "<group>"; };
 		4E5F79811D196551009AD7DC /* CYLnameReactionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLnameReactionListViewController.m; sourceTree = "<group>"; };
 		4E5F79841D19891E009AD7DC /* CYLTotalSythesisListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTotalSythesisListViewController.h; sourceTree = "<group>"; };
@@ -617,6 +625,19 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		4E36FF5D1D890E82001759FE /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				4E0288891D8D187D009544F9 /* Hydroxyl.bundle */,
+				4E0288871D8D16F2009544F9 /* Carbonyl.bundle */,
+				4E0288851D8D15BD009544F9 /* Carboxyl.bundle */,
+				4E36FF5E1D890E9B001759FE /* Amino.bundle */,
+				4EE5DBBD1D45E24500A26451 /* NameListPicture.bundle */,
+				4EE5DBC41D48634200A26451 /* TotalSynPic.bundle */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
 		4E5F79831D1965EA009AD7DC /* nameReactionList */ = {
 			isa = PBXGroup;
 			children = (
@@ -768,9 +789,8 @@
 		4EE5D7AE1D44823C00A26451 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				4EE5DBC41D48634200A26451 /* TotalSynPic.bundle */,
+				4E36FF5D1D890E82001759FE /* Image */,
 				4EE5DBBF1D47ADE700A26451 /* TotalSynList.bundle */,
-				4EE5DBBD1D45E24500A26451 /* NameListPicture.bundle */,
 				4EE5DB7A1D449D0700A26451 /* NameRList.bundle */,
 			);
 			name = Resource;
@@ -900,12 +920,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E02888A1D8D187D009544F9 /* Hydroxyl.bundle in Resources */,
 				4E2A81B61D0D9BCF0082D785 /* LaunchScreen.storyboard in Resources */,
+				4E36FF5F1D890E9B001759FE /* Amino.bundle in Resources */,
+				4E0288881D8D16F2009544F9 /* Carbonyl.bundle in Resources */,
 				4E2A81B31D0D9BCF0082D785 /* Assets.xcassets in Resources */,
 				4EE5DB7B1D449D0700A26451 /* NameRList.bundle in Resources */,
 				4EE5DBBE1D45E24500A26451 /* NameListPicture.bundle in Resources */,
 				4EE5DBC51D48634200A26451 /* TotalSynPic.bundle in Resources */,
 				4EE5DBC01D47ADE700A26451 /* TotalSynList.bundle in Resources */,
+				4E0288861D8D15BE009544F9 /* Carboxyl.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
