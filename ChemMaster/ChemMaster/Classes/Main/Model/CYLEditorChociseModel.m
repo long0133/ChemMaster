@@ -90,6 +90,7 @@
     
     NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:URL]];
     
+    
     NSArray *array = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
     
    NSMutableArray *modelArray = [CYLEditorChociseModel mj_objectArrayWithKeyValuesArray:array];

@@ -55,7 +55,6 @@
 		4E72984B1D65793C0070160D /* CYLSectionTwoCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E72984A1D65793C0070160D /* CYLSectionTwoCardCell.m */; };
 		4E72984E1D6F365D0070160D /* LaunchAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E72984D1D6F365D0070160D /* LaunchAnimationController.m */; };
 		4E7E26BD1D408F670074B36C /* CYLGoToStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7E26BC1D408F670074B36C /* CYLGoToStore.m */; };
-		4E7E26BF1D40980C0074B36C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E7E26BE1D40980C0074B36C /* StoreKit.framework */; };
 		4E8B0D4A1D2BC5980086AE67 /* CYLAssistanceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8B0D491D2BC5980086AE67 /* CYLAssistanceView.m */; };
 		4EA7697A1D8666EF005CCC99 /* CYLTileButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA769791D8666EF005CCC99 /* CYLTileButton.m */; };
 		4EAC5D821D14094600199DAA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAC5D811D14094600199DAA /* CoreGraphics.framework */; };
@@ -196,7 +195,6 @@
 		4E72984D1D6F365D0070160D /* LaunchAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchAnimationController.m; sourceTree = "<group>"; };
 		4E7E26BB1D408F670074B36C /* CYLGoToStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLGoToStore.h; sourceTree = "<group>"; };
 		4E7E26BC1D408F670074B36C /* CYLGoToStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLGoToStore.m; sourceTree = "<group>"; };
-		4E7E26BE1D40980C0074B36C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		4E8B0D481D2BC5980086AE67 /* CYLAssistanceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLAssistanceView.h; sourceTree = "<group>"; };
 		4E8B0D491D2BC5980086AE67 /* CYLAssistanceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLAssistanceView.m; sourceTree = "<group>"; };
 		4EA769781D8666EF005CCC99 /* CYLTileButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTileButton.h; sourceTree = "<group>"; };
@@ -252,7 +250,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E7E26BF1D40980C0074B36C /* StoreKit.framework in Frameworks */,
 				4E1377FB1D17DFB400857C36 /* libxml2.tbd in Frameworks */,
 				4EAC5D881D1409F100199DAA /* Foundation.framework in Frameworks */,
 				4EAC5D861D1409E700199DAA /* UIKit.framework in Frameworks */,
@@ -478,8 +475,7 @@
 				4E7298461D6573630070160D /* CYLSectonTwoReusableView.h */,
 				4E7298471D6573630070160D /* CYLSectonTwoReusableView.m */,
 				4E07D4041D82885100300E03 /* ProtectedGroud */,
-				4EB976981D86D6E300ABF70B /* CYLSectionSecondTwoCell.h */,
-				4EB976991D86D6E300ABF70B /* CYLSectionSecondTwoCell.m */,
+				4ECFEF4B1D8FAF490051B736 /* RecentHightLight */,
 				4EB9769B1D86D6FD00ABF70B /* CYLSectionSecondThirdCell.h */,
 				4EB9769C1D86D6FD00ABF70B /* CYLSectionSecondThirdCell.m */,
 			);
@@ -776,6 +772,15 @@
 			path = catagory;
 			sourceTree = "<group>";
 		};
+		4ECFEF4B1D8FAF490051B736 /* RecentHightLight */ = {
+			isa = PBXGroup;
+			children = (
+				4EB976981D86D6E300ABF70B /* CYLSectionSecondTwoCell.h */,
+				4EB976991D86D6E300ABF70B /* CYLSectionSecondTwoCell.m */,
+			);
+			name = RecentHightLight;
+			sourceTree = "<group>";
+		};
 		4ED454911D812AA700EF47F8 /* CYLButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -799,7 +804,6 @@
 		9D8459DEB8A9F70BCD5E3FEB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4E7E26BE1D40980C0074B36C /* StoreKit.framework */,
 				4E1377FA1D17DFB400857C36 /* libxml2.tbd */,
 				4EAC5D871D1409F100199DAA /* Foundation.framework */,
 				4EAC5D851D1409E700199DAA /* UIKit.framework */,
@@ -884,6 +888,11 @@
 					4E2A81A21D0D9BCF0082D785 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 8WBSNNM3Z6;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 					4E2A81BB1D0D9BCF0082D785 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -1123,7 +1132,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos10.0]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1168,7 +1177,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos10.0]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -1194,7 +1203,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos10.0]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8WBSNNM3Z6;
 				GCC_PREFIX_HEADER = ChemMaster/Classes/Other/Prefix.pch;
 				INFOPLIST_FILE = ChemMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1212,7 +1222,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos10.0]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8WBSNNM3Z6;
 				GCC_PREFIX_HEADER = ChemMaster/Classes/Other/Prefix.pch;
 				INFOPLIST_FILE = ChemMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

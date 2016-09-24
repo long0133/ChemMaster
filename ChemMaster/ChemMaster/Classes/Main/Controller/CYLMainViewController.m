@@ -105,10 +105,10 @@ static NSString * const reuseIdentifierSectionThird = @"CellThird";
     }
     else if (section == 1)
     {
-        return 3;
+        return 1;
     }
     
-    return 4;
+    return 0;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -138,19 +138,18 @@ static NSString * const reuseIdentifierSectionThird = @"CellThird";
         }
         else if (indexPath.row == 1)
         {
-            //功能2
-           CYLSectionSecondTwoCell *sectionSecondCell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifierSectionTwo forIndexPath:indexPath];
-            sectionSecondCell.backgroundColor = [UIColor grayColor];
-            return sectionSecondCell;
+//            //功能2
+//           CYLSectionSecondTwoCell *sectionSecondCell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifierSectionTwo forIndexPath:indexPath];
+//            return sectionSecondCell;
             
         }
         else if(indexPath.row == 2)
         {
             //功能3
-           CYLSectionSecondThirdCell *sectionSecondCell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifierSectionThird forIndexPath:indexPath];
-            sectionSecondCell.backgroundColor = [UIColor orangeColor];
-            
-            return sectionSecondCell;
+//           CYLSectionSecondThirdCell *sectionSecondCell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifierSectionThird forIndexPath:indexPath];
+//            sectionSecondCell.backgroundColor = [UIColor orangeColor];
+//            
+//            return sectionSecondCell;
         }
         
         return nil;
@@ -209,7 +208,7 @@ static NSString * const reuseIdentifierSectionThird = @"CellThird";
             
             cell.transform = CGAffineTransformMakeTranslation(X, Y + 10);
             
-            [UIView animateWithDuration:.5 delay:0 usingSpringWithDamping:0.9 initialSpringVelocity:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+            [UIView animateWithDuration:.3 delay:0 usingSpringWithDamping:0.9 initialSpringVelocity:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
                 
                 cell.transform = CGAffineTransformIdentity;
                 
@@ -219,9 +218,9 @@ static NSString * const reuseIdentifierSectionThird = @"CellThird";
             }];
             
         }
-        
         lastOffSetY = offSetY;
     }
+    
     
     NSInteger cellCount = [collectionView numberOfItemsInSection:1];
     

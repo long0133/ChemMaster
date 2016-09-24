@@ -51,15 +51,20 @@ typedef NS_ENUM(NSUInteger, ProtectedGroupType) {
     _CarboxylBtn.tag = ProtectedGroupCarboxyl;
     _HydroxylBtn.tag = ProtectedGroupHydroxyl;
     
+    _AminoBtn.titleLabel.numberOfLines = 0;
+    _CarbonylBtn.titleLabel.numberOfLines = 0;
+    _CarboxylBtn.titleLabel.numberOfLines = 0;
+    _HydroxylBtn.titleLabel.numberOfLines = 0;
+    
     [_AminoBtn addTarget:self action:@selector(DidClickButton:) forControlEvents:UIControlEventTouchUpInside];
     [_CarboxylBtn addTarget:self action:@selector(DidClickButton:) forControlEvents:UIControlEventTouchUpInside];
     [_CarbonylBtn addTarget:self action:@selector(DidClickButton:) forControlEvents:UIControlEventTouchUpInside];
     [_HydroxylBtn addTarget:self action:@selector(DidClickButton:) forControlEvents:UIControlEventTouchUpInside];
     
-    [_AminoBtn setTitle:@"Amino_Stability" forState:UIControlStateNormal];
-    [_CarbonylBtn setTitle:@"Carbonyl_Stability" forState:UIControlStateNormal];
-    [_CarboxylBtn setTitle:@"Carboxyl_Stability" forState:UIControlStateNormal];
-    [_HydroxylBtn setTitle:@"Hydroxyl_Stability" forState:UIControlStateNormal];
+    [_AminoBtn setTitle:@"Amino Group \nStability" forState:UIControlStateNormal];
+    [_CarbonylBtn setTitle:@"Carbonyl Group \nStability" forState:UIControlStateNormal];
+    [_CarboxylBtn setTitle:@"Carboxyl Group \nStability" forState:UIControlStateNormal];
+    [_HydroxylBtn setTitle:@"Hydroxyl Group \nStability" forState:UIControlStateNormal];
     
     [_AminoBtn setBackgroundColor:[UIColor getColor:@"54A271"]];
     [_CarbonylBtn setBackgroundColor:[UIColor getColor:@"45ADA8"]];

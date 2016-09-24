@@ -28,7 +28,7 @@ static CGFloat width = 0;
 static int count;
 
 
-@interface CYLTileButton ()
+@interface CYLTileButton ()<CAAnimationDelegate>
 /***********************记录相关****************************/
 @property (nonatomic, strong) NSMutableArray *btnArray;
 
@@ -157,7 +157,7 @@ static int count;
     [self.DetailView addSubview:closeBtn];
     
     //图片设置
-    UIImageView *picView = [[UIImageView alloc] initWithFrame:CGRectMake((_DetailView.frame.size.width - 100)/2, 200, picImage.size.width, picImage.size.height)];
+    UIImageView *picView = [[UIImageView alloc] initWithFrame:CGRectMake((_DetailView.frame.size.width - picImage.size.width)/2, 150, picImage.size.width, picImage.size.height)];
     picView.image = picImage;
     [self.DetailView addSubview:picView];
     
